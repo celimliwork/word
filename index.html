@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelime Tablosu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 5px;
+            }
+        }
+
+        @media (max-width: 390px) {
+            body {
+                padding: 3px;
+            }
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                border-radius: 12px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                border-radius: 8px;
+            }
+        }
+
+        @media (max-width: 390px) {
+            .container {
+                border-radius: 6px;
+                margin: 0;
+            }
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 20px 15px;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+                margin-bottom: 8px;
+            }
+
+            .header p {
+                font-size: 0.85rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                padding: 15px 10px;
+            }
+
+            .header h1 {
+                font-size: 1.25rem;
+                margin-bottom: 5px;
+            }
+
+            .header p {
+                font-size: 0.8rem;
+            }
+        }
+
+        .controls {
+            padding: 25px 30px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .controls h2 {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .controls {
+                padding: 20px 15px;
+            }
+
+            .controls h2 {
+                font-size: 1rem;
+                margin-bottom: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .controls {
+                padding: 15px 10px;
+            }
+
+            .controls h2 {
+                font-size: 0.95rem;
+                margin-bottom: 10px;
+            }
+        }
+
+        .filter-section {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .filter-section:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        @media (max-width: 768px) {
+            .filter-section {
+                margin-bottom: 15px;
+                padding-bottom: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .filter-section {
+                margin-bottom: 12px;
+                padding-bottom: 12px;
+            }
+        }
+
+        .date-filter {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .date-filter label {
+            font-size: 0.95rem;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .date-filter select {
+            padding: 10px 15px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            background: white;
+            color: #333;
+            cursor: pointer;
+            transition: all 0.2s;
+            min-width: 200px;
+            font-family: inherit;
+        }
+
+        .date-filter select:hover {
+            border-color: #667eea;
+        }
+
+        .date-filter select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .date-filter {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .date-filter label {
+                margin-bottom: 8px;
+            }
+
+            .date-filter select {
+                min-width: 100%;
+                padding: 12px 15px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .date-filter select {
+                padding: 14px 15px;
+                font-size: 1rem;
+            }
+        }
+
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 12px;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .checkbox-item input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: #667eea;
+        }
+
+        .checkbox-item label {
+            cursor: pointer;
+            font-size: 0.9rem;
+            color: #555;
+            user-select: none;
+        }
+
+        @media (max-width: 768px) {
+            .checkbox-group {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 10px;
+            }
+
+            .checkbox-item {
+                gap: 10px;
+            }
+
+            .checkbox-item input[type="checkbox"] {
+                width: 22px;
+                height: 22px;
+                min-width: 22px;
+            }
+
+            .checkbox-item label {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .checkbox-group {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .checkbox-item {
+                padding: 8px;
+                background: white;
+                border-radius: 6px;
+                border: 1px solid #e9ecef;
+            }
+
+            .checkbox-item input[type="checkbox"] {
+                width: 24px;
+                height: 24px;
+                min-width: 24px;
+            }
+
+            .checkbox-item label {
+                font-size: 1rem;
+            }
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            overflow-y: auto;
+            max-height: calc(100vh - 300px);
+            -webkit-overflow-scrolling: touch;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            min-width: 600px;
+        }
+
+        @media (max-width: 768px) {
+            .table-wrapper {
+                max-height: calc(100vh - 250px);
+                overflow-y: auto;
+            }
+
+            table {
+                font-size: 0.85rem;
+                min-width: 500px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .table-wrapper {
+                max-height: calc(100vh - 220px);
+                overflow-x: visible;
+                overflow-y: auto;
+                height: auto;
+            }
+
+            table {
+                font-size: 0.8rem;
+                min-width: auto;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 390px) {
+            .table-wrapper {
+                max-height: calc(100vh - 200px);
+                overflow-x: visible;
+                overflow-y: auto;
+                height: auto;
+            }
+
+            table {
+                font-size: 0.75rem;
+                min-width: auto;
+                width: 100%;
+                table-layout: auto;
+            }
+
+            table td,
+            table th {
+                width: auto;
+            }
+        }
+
+        thead {
+            position: sticky;
+            top: 0;
+            background: #667eea;
+            color: white;
+            z-index: 10;
+        }
+
+        th {
+            padding: 15px 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #e9ecef;
+            transition: background-color 0.2s;
+        }
+
+        tbody tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #fafbfc;
+        }
+
+        tbody tr:nth-child(even):hover {
+            background-color: #f0f1f3;
+        }
+
+        td {
+            padding: 12px;
+            color: #333;
+            vertical-align: top;
+        }
+
+        @media (max-width: 768px) {
+            th {
+                padding: 12px 8px;
+                font-size: 0.75rem;
+            }
+
+            td {
+                padding: 10px 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            th {
+                padding: 10px 6px;
+                font-size: 0.7rem;
+                letter-spacing: 0.3px;
+            }
+
+            td {
+                padding: 8px 6px;
+            }
+        }
+
+        @media (max-width: 390px) {
+            th {
+                padding: 8px 4px;
+                font-size: 0.65rem;
+                letter-spacing: 0.2px;
+            }
+
+            td {
+                padding: 6px 4px;
+            }
+        }
+
+        .word-container {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .word {
+            font-weight: 600;
+            color: #667eea;
+            font-size: 1rem;
+            word-break: break-word;
+        }
+
+        .pronunciation {
+            color: #6c757d;
+            font-style: italic;
+            font-size: 0.85rem;
+            margin-top: 2px;
+            word-break: break-word;
+        }
+
+        .word-meaning {
+            color: #495057;
+            font-size: 0.9rem;
+            margin-top: 6px;
+            padding-top: 6px;
+            border-top: 1px solid #e9ecef;
+            word-break: break-word;
+        }
+
+        .verb-form-inline {
+            font-size: 0.85rem;
+            margin-top: 4px;
+            color: #495057;
+            word-break: break-word;
+        }
+
+        .verb-label {
+            font-weight: 600;
+            color: #667eea;
+            margin-right: 4px;
+        }
+
+        .verb-pronunciation {
+            color: #6c757d;
+            font-style: italic;
+            font-size: 0.8rem;
+        }
+
+        td.word {
+            max-width: 200px;
+        }
+
+        @media (max-width: 480px) {
+            td.word {
+                max-width: 150px;
+            }
+
+            .word-meaning {
+                font-size: 0.85rem;
+                margin-top: 4px;
+                padding-top: 4px;
+            }
+
+            .verb-form-inline {
+                font-size: 0.8rem;
+            }
+
+            .verb-pronunciation {
+                font-size: 0.75rem;
+            }
+        }
+
+        @media (max-width: 390px) {
+            td.word {
+                max-width: 120px;
+                min-width: 100px;
+            }
+
+            .word-meaning {
+                font-size: 0.8rem;
+                margin-top: 3px;
+                padding-top: 3px;
+            }
+
+            .verb-form-inline {
+                font-size: 0.75rem;
+            }
+
+            .verb-label {
+                font-size: 0.7rem;
+            }
+
+            .verb-pronunciation {
+                font-size: 0.7rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .word {
+                font-size: 0.95rem;
+            }
+
+            .pronunciation {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .word {
+                font-size: 0.9rem;
+            }
+
+            .pronunciation {
+                font-size: 0.75rem;
+            }
+        }
+
+        @media (max-width: 390px) {
+            .word {
+                font-size: 0.85rem;
+            }
+
+            .pronunciation {
+                font-size: 0.7rem;
+            }
+
+            .word-container {
+                gap: 4px;
+            }
+        }
+
+        .type {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 480px) {
+            .type {
+                padding: 3px 8px;
+                font-size: 0.7rem;
+                border-radius: 8px;
+            }
+        }
+
+        .type-Fiil {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+
+        .type-İsim {
+            background: #f3e5f5;
+            color: #7b1fa2;
+        }
+
+        .type-Sıfat {
+            background: #fff3e0;
+            color: #e65100;
+        }
+
+        .type-Zarf {
+            background: #e8f5e9;
+            color: #388e3c;
+        }
+
+        .type-Edat {
+            background: #fce4ec;
+            color: #c2185b;
+        }
+
+        .type-Phrasal {
+            background: #fff9c4;
+            color: #f57f17;
+        }
+
+        .type-Yardımcı {
+            background: #e0f2f1;
+            color: #00695c;
+        }
+
+        .type-İfade {
+            background: #ede7f6;
+            color: #512da8;
+        }
+
+        .examples {
+            max-width: 400px;
+        }
+
+        .example-item {
+            margin-bottom: 8px;
+            padding: 8px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            border-left: 3px solid #667eea;
+        }
+
+        .example-sentence {
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 4px;
+            word-break: break-word;
+        }
+
+        .example-meaning {
+            color: #6c757d;
+            font-size: 0.85rem;
+            font-style: italic;
+            word-break: break-word;
+        }
+
+        td.examples {
+            max-width: 250px;
+        }
+
+        @media (max-width: 768px) {
+            .examples {
+                max-width: 300px;
+            }
+
+            td.examples {
+                max-width: 200px;
+            }
+
+            .example-item {
+                padding: 6px;
+                margin-bottom: 6px;
+            }
+
+            .example-sentence {
+                font-size: 0.9rem;
+            }
+
+            .example-meaning {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .examples {
+                max-width: 250px;
+            }
+
+            td.examples {
+                max-width: 180px;
+            }
+
+            .example-item {
+                padding: 6px;
+                margin-bottom: 6px;
+                border-left-width: 2px;
+            }
+
+            .example-sentence {
+                font-size: 0.85rem;
+            }
+
+            .example-meaning {
+                font-size: 0.75rem;
+            }
+        }
+
+        @media (max-width: 390px) {
+            .examples {
+                max-width: none;
+            }
+
+            td.examples {
+                max-width: 250px;
+                min-width: 200px;
+            }
+
+            .example-item {
+                padding: 5px;
+                margin-bottom: 5px;
+                border-left-width: 2px;
+            }
+
+            .example-sentence {
+                font-size: 0.8rem;
+                line-height: 1.3;
+            }
+
+            .example-meaning {
+                font-size: 0.7rem;
+                line-height: 1.3;
+            }
+        }
+
+        .verb-form {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .verb-form-item {
+            font-size: 0.85rem;
+        }
+
+        .verb-form-label {
+            font-weight: 600;
+            color: #667eea;
+            margin-right: 5px;
+        }
+
+        @media (max-width: 480px) {
+            .verb-form-item {
+                font-size: 0.8rem;
+            }
+
+            .verb-form-label {
+                font-size: 0.75rem;
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .stats {
+            padding: 15px 30px;
+            background: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+            text-align: center;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .stats {
+                padding: 12px 15px;
+                font-size: 0.85rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .stats {
+                padding: 10px;
+                font-size: 0.8rem;
+                line-height: 1.4;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Kelime Tablosu</h1>
+            <p>Görmek istediğiniz kolonları seçin</p>
+        </div>
+
+        <div class="controls">
+            <div class="filter-section">
+                <h2>Tarih Filtresi</h2>
+                <div class="date-filter">
+                    <label for="dateFilter">Tarih Seçin:</label>
+                    <select id="dateFilter">
+                        <option value="all">Tümünü Göster</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter-section">
+                <h2>Kolon Seçimi</h2>
+                <div class="checkbox-group" id="columnControls"></div>
+            </div>
+        </div>
+
+        <div class="table-wrapper">
+            <table id="wordsTable">
+                <thead id="tableHead"></thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+
+        <div class="stats" id="stats"></div>
+    </div>
+
+    <script>
+        let wordsData = [];
+        let filteredWordsData = [];
+        const columnDefinitions = {
+            word: { label: 'Kelime', default: true },
+            pronunciation: { label: 'Okunuş', default: false },
+            type: { label: 'Tür', default: false },
+            meaning: { label: 'Anlam', default: false },
+            v2: { label: 'V2 Formu', default: false },
+            v3: { label: 'V3 Formu', default: false },
+            gerundInfinitive: { label: 'Gerund/Infinitive', default: false },
+            examples: { label: 'Örnek Cümleler', default: true },
+            date: { label: 'Tarih', default: false }
+        };
+
+        let visibleColumns = {};
+        let selectedDate = 'all';
+
+        // JSON dosyasını yükle
+        async function loadWords() {
+            try {
+                const response = await fetch('words.json');
+                wordsData = await response.json();
+                filteredWordsData = [...wordsData];
+                initializeDateFilter();
+                initializeColumns();
+                renderTable();
+                updateStats();
+            } catch (error) {
+                console.error('Dosya yüklenirken hata:', error);
+                document.getElementById('tableBody').innerHTML = 
+                    '<tr><td colspan="10" style="text-align: center; padding: 20px; color: #dc3545;">Dosya yüklenirken bir hata oluştu. words.json dosyasının mevcut olduğundan emin olun.</td></tr>';
+            }
+        }
+
+        // Tarih filtresini başlat
+        function initializeDateFilter() {
+            const dateFilter = document.getElementById('dateFilter');
+            const uniqueDates = [...new Set(wordsData.map(word => word.date).filter(date => date))].sort();
+            
+            uniqueDates.forEach(date => {
+                const option = document.createElement('option');
+                option.value = date;
+                option.textContent = date;
+                dateFilter.appendChild(option);
+            });
+
+            dateFilter.addEventListener('change', (e) => {
+                selectedDate = e.target.value;
+                filterByDate();
+                renderTable();
+                updateStats();
+            });
+        }
+
+        // Tarihe göre filtrele
+        function filterByDate() {
+            if (selectedDate === 'all') {
+                filteredWordsData = [...wordsData];
+            } else {
+                filteredWordsData = wordsData.filter(word => word.date === selectedDate);
+            }
+        }
+
+        // Kolonları başlat
+        function initializeColumns() {
+            Object.keys(columnDefinitions).forEach(key => {
+                visibleColumns[key] = columnDefinitions[key].default;
+            });
+            renderColumnControls();
+        }
+
+        // Kolon kontrol checkbox'larını oluştur
+        function renderColumnControls() {
+            const controlsDiv = document.getElementById('columnControls');
+            controlsDiv.innerHTML = '';
+
+            Object.keys(columnDefinitions).forEach(key => {
+                const item = document.createElement('div');
+                item.className = 'checkbox-item';
+
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.id = `col-${key}`;
+                checkbox.checked = visibleColumns[key];
+                checkbox.addEventListener('change', () => {
+                    visibleColumns[key] = checkbox.checked;
+                    renderTable();
+                });
+
+                const label = document.createElement('label');
+                label.htmlFor = `col-${key}`;
+                label.textContent = columnDefinitions[key].label;
+
+                item.appendChild(checkbox);
+                item.appendChild(label);
+                controlsDiv.appendChild(item);
+            });
+        }
+
+        // Tabloyu oluştur
+        function renderTable() {
+            const thead = document.getElementById('tableHead');
+            const tbody = document.getElementById('tableBody');
+
+            // Başlıkları oluştur
+            thead.innerHTML = '';
+            const headerRow = document.createElement('tr');
+            Object.keys(columnDefinitions).forEach(key => {
+                if (visibleColumns[key]) {
+                    const th = document.createElement('th');
+                    th.textContent = columnDefinitions[key].label;
+                    th.dataset.column = key;
+                    headerRow.appendChild(th);
+                }
+            });
+            thead.appendChild(headerRow);
+
+            // Satırları oluştur
+            tbody.innerHTML = '';
+            if (filteredWordsData.length === 0) {
+                const row = document.createElement('tr');
+                const td = document.createElement('td');
+                td.colSpan = Object.keys(visibleColumns).filter(k => visibleColumns[k]).length;
+                td.style.textAlign = 'center';
+                td.style.padding = '30px';
+                td.style.color = '#6c757d';
+                td.textContent = 'Bu tarihe ait kelime bulunamadı.';
+                row.appendChild(td);
+                tbody.appendChild(row);
+            } else {
+                filteredWordsData.forEach(word => {
+                    const row = document.createElement('tr');
+                    Object.keys(columnDefinitions).forEach(key => {
+                        if (visibleColumns[key]) {
+                            const td = document.createElement('td');
+                            td.className = key;
+                            td.innerHTML = formatCellValue(word, key);
+                            row.appendChild(td);
+                        }
+                    });
+                    tbody.appendChild(row);
+                });
+            }
+        }
+
+        // Hücre değerini formatla
+        function formatCellValue(word, key) {
+            switch (key) {
+                case 'word':
+                    const pronunciationHtml = word.pronunciation 
+                        ? `<div class="pronunciation">${word.pronunciation}</div>` 
+                        : '';
+                    const meaningHtml = word.meaning 
+                        ? `<div class="word-meaning">${word.meaning}</div>` 
+                        : '';
+                    
+                    let v2Html = '';
+                    if (word.v2 && word.v2.form) {
+                        const v2Pron = word.v2.pronunciation ? ` <span class="verb-pronunciation">(${word.v2.pronunciation})</span>` : '';
+                        v2Html = `<div class="verb-form-inline"><span class="verb-label">V2:</span> ${word.v2.form}${v2Pron}</div>`;
+                    }
+                    
+                    let v3Html = '';
+                    if (word.v3 && word.v3.form) {
+                        const v3Pron = word.v3.pronunciation ? ` <span class="verb-pronunciation">(${word.v3.pronunciation})</span>` : '';
+                        v3Html = `<div class="verb-form-inline"><span class="verb-label">V3:</span> ${word.v3.form}${v3Pron}</div>`;
+                    }
+                    
+                    return `<div class="word-container">
+                        <span class="word">${word.word || '-'}</span>
+                        ${pronunciationHtml}
+                        ${meaningHtml}
+                        ${v2Html}
+                        ${v3Html}
+                    </div>`;
+                
+                case 'pronunciation':
+                    return `<span class="pronunciation">${word.pronunciation || '-'}</span>`;
+                
+                case 'type':
+                    const typeClass = word.type ? word.type.replace(/\s+/g, '').replace(/[^a-zA-Z0-9]/g, '') : '';
+                    return `<span class="type type-${typeClass}">${word.type || '-'}</span>`;
+                
+                case 'meaning':
+                    return word.meaning || '-';
+                
+                case 'v2':
+                    if (word.v2 && word.v2.form) {
+                        return `<div class="verb-form">
+                            <div class="verb-form-item"><span class="verb-form-label">Form:</span>${word.v2.form}</div>
+                            ${word.v2.pronunciation ? `<div class="verb-form-item"><span class="verb-form-label">Okunuş:</span>${word.v2.pronunciation}</div>` : ''}
+                        </div>`;
+                    }
+                    return '-';
+                
+                case 'v3':
+                    if (word.v3 && word.v3.form) {
+                        return `<div class="verb-form">
+                            <div class="verb-form-item"><span class="verb-form-label">Form:</span>${word.v3.form}</div>
+                            ${word.v3.pronunciation ? `<div class="verb-form-item"><span class="verb-form-label">Okunuş:</span>${word.v3.pronunciation}</div>` : ''}
+                        </div>`;
+                    }
+                    return '-';
+                
+                case 'gerundInfinitive':
+                    return word.gerundInfinitive || '-';
+                
+                case 'examples':
+                    if (word.examples && word.examples.length > 0) {
+                        return `<div class="examples">
+                            ${word.examples.map(ex => `
+                                <div class="example-item">
+                                    <div class="example-sentence">${ex.sentence || ''}</div>
+                                    <div class="example-meaning">${ex.meaning || ''}</div>
+                                </div>
+                            `).join('')}
+                        </div>`;
+                    }
+                    return '-';
+                
+                case 'date':
+                    return word.date || '-';
+                
+                default:
+                    return '-';
+            }
+        }
+
+        // İstatistikleri güncelle
+        function updateStats() {
+            const statsDiv = document.getElementById('stats');
+            const totalWords = wordsData.length;
+            const filteredCount = filteredWordsData.length;
+            const visibleCount = Object.values(visibleColumns).filter(v => v).length;
+            
+            let statsText = `Toplam ${totalWords} kelime`;
+            if (selectedDate !== 'all') {
+                statsText += ` | Filtrelenmiş: ${filteredCount} kelime (${selectedDate})`;
+            } else {
+                statsText += ` | Gösterilen: ${filteredCount} kelime`;
+            }
+            statsText += ` | ${visibleCount} kolon görünüyor`;
+            
+            statsDiv.textContent = statsText;
+        }
+
+        // Sayfa yüklendiğinde
+        loadWords();
+    </script>
+</body>
+</html>

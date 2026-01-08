@@ -1,0 +1,84 @@
+KELİME EKLEME PROMPT'U
+=====================
+
+Bu dosya, willaddednewwords.txt dosyasındaki kelimeleri words.json dosyasına eklemek için hazırlanmıştır.
+
+GÖREV:
+- willaddednewwords.txt dosyasındaki kelimeleri oku
+- Her kelimeyi words.json dosyasına ekle
+- Eksik alanları tamamla
+
+KELİME FORMATI:
+- Dosyada "kelime=anlam" formatında yazılmıştır
+- Örnek: "forward=ileri"
+
+YAPILMASI GEREKENLER:
+
+1. willaddednewwords.txt dosyasını oku
+
+2. Her kelime için words.json'a şu yapıda ekle:
+   {
+     "word": "kelime",
+     "pronunciation": "amerikan telaffuzu",
+     "type": "kelime türü (İsim/Fiil/Sıfat/Zarf/Edat/İfade/Phrasal Verb)",
+     "meaning": "türkçe anlam",
+     "v2": {
+       "form": "v2 formu (fiil ise)",
+       "pronunciation": "v2 amerikan  telaffuzu"
+     },
+     "v3": {
+       "form": "v3 formu (fiil ise)",
+       "pronunciation": "v3 amerikan telaffuzu"
+     },
+     "gerundInfinitive": "gerund/infinitive (gerektiğinde)",
+     "examples": [
+       {
+         "sentence": "örnek cümle",
+         "meaning": "türkçe çevirisi"
+       }
+     ],
+     "date": "08.01.2026"
+   }
+
+3. EKSİK ALANLARI TAMAMLA:
+   - Amerikan telaffuzunu ekle (phonetic olarak Türkçe karakterlerle)
+   - Kelime türünü belirle (İsim, Fiil, Sıfat, Zarf, Edat, İfade, Phrasal Verb)
+   - Fiiller için V2 ve V3 formlarını ekle
+   - Her kelime için en az 1 örnek cümle ekle
+   - Tarih: 08.01.2026
+
+4. YAZIM HATALARINI DÜZELT:
+   - Kullanıcı bazı kelimeleri yanlış yazmış olabilir, dikkat et
+   - Örnek: "enterprice" → "enterprise", "sensetive" → "sensitive"
+
+5. KELİME TÜRLERİ:
+   - İsim: noun
+   - Fiil: verb
+   - Sıfat: adjective
+   - Zarf: adverb
+   - Edat: preposition
+   - İfade: expression/phrase
+   - Phrasal Verb: phrasal verb
+
+6. ÖNEMLİ NOTLAR:
+   - words.json dosyasının sonundaki "]" işaretinden önce virgül ekle
+   - Her kelime objesi arasına virgül ekle
+   - Son kelimeden sonra virgül olmamalı
+   - JSON formatını koru
+   - Linter hatalarını kontrol et
+
+7. TEKRAR EDEN KELİMELER:
+   - Eğer bir kelime zaten varsa, yine de ekleyebilirsin (kullanıcı isterse)
+
+ÖRNEK İŞLEM:
+1. willaddednewwords.txt dosyasını oku
+2. Kelimeleri parse et (kelime=anlam formatından)
+3. Her kelime için JSON objesi oluştur
+4. words.json dosyasının sonuna ekle
+5. Linter kontrolü yap
+
+HATIRLATMA:
+- Tüm işlemler Türkçe olmalı
+- Telaffuzlar Amerikan İngilizcesi olmalı
+- Örnek cümleler anlamlı ve kullanışlı olmalı
+- Tarih her zaman bugünün tarihi olmalı (kullanıcı farklı bir tarih belirtmediyse)

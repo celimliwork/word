@@ -11,6 +11,7 @@
         <div class="header">
             <h1>📚 Kelime Kartları</h1>
             <p>İngilizce Kelime Öğrenme Sistemi</p>
+            <p id="totalWordsCount" style="font-size: 0.85rem; margin-top: 5px; opacity: 0.9;">Toplam kelime sayısı yükleniyor...</p>
         </div>
 
         <div class="controls">
@@ -91,6 +92,7 @@
         let wordsIndex = null;
         let wordsIndexLoaded = false;
         let dateFilterInitialized = false;
+        let totalWordsCount = 0;
 
         async function loadWordsIndex() {
             // Eğer zaten yüklendiyse tekrar yükleme
@@ -102,10 +104,54 @@
                 const response = await fetch('words_index.json');
                 wordsIndex = await response.json();
                 wordsIndexLoaded = true;
+                
+                // Toplam kelime sayısını hesapla
+                await calculateTotalWordsCount();
+                
                 return true;
             } catch (error) {
                 console.error('Index dosyası yüklenirken hata:', error);
                 return false;
+            }
+        }
+        
+        async function calculateTotalWordsCount() {
+            if (!wordsIndex || !wordsIndex.files || wordsIndex.files.length === 0) {
+                totalWordsCount = 0;
+                updateTotalWordsDisplay();
+                return;
+            }
+            
+            try {
+                let total = 0;
+                // Tüm dosyalardaki kelime sayılarını topla
+                for (const filename of wordsIndex.files) {
+                    try {
+                        const response = await fetch(filename);
+                        if (response.ok) {
+                            const data = await response.json();
+                            if (Array.isArray(data)) {
+                                total += data.length;
+                            }
+                        }
+                    } catch (error) {
+                        // Dosya yüklenemezse sessizce devam et
+                        console.warn(`${filename} yüklenemedi, toplam sayıma dahil edilmedi`);
+                    }
+                }
+                totalWordsCount = total;
+                updateTotalWordsDisplay();
+            } catch (error) {
+                console.error('Toplam kelime sayısı hesaplanırken hata:', error);
+                totalWordsCount = 0;
+                updateTotalWordsDisplay();
+            }
+        }
+        
+        function updateTotalWordsDisplay() {
+            const totalWordsElement = document.getElementById('totalWordsCount');
+            if (totalWordsElement) {
+                totalWordsElement.textContent = `📊 Toplam ${totalWordsCount.toLocaleString('tr-TR')} kelime`;
             }
         }
 

@@ -470,10 +470,84 @@
         }
 
         // ==================== DATA LOADING ====================
+        let wordsIndex = null;
+
+        async function loadWordsIndex() {
+            try {
+                const response = await fetch('words_index.json');
+                wordsIndex = await response.json();
+                return true;
+            } catch (error) {
+                console.error('Index dosyası yüklenirken hata:', error);
+                return false;
+            }
+        }
+
+        function getDateFromDateStr(dateStr) {
+            // DD.MM.YYYY formatından YYYY_MM_DD çıkar
+            try {
+                const parts = dateStr.split('.');
+                if (parts.length === 3) {
+                    const day = parts[0];
+                    const month = parts[1];
+                    const year = parts[2];
+                    return `${year}_${month}_${day}`;
+                }
+            } catch (e) {
+                console.error('Tarih parse hatası:', e);
+            }
+            return null;
+        }
+
+        async function loadWordsFromFile(filename) {
+            try {
+                const response = await fetch(filename);
+                const data = await response.json();
+                return data;
+            } catch (error) {
+                console.error(`${filename} yüklenirken hata:`, error);
+                return [];
+            }
+        }
+
         async function loadWords() {
             try {
-                const response = await fetch('words.json');
-                wordsData = await response.json();
+                // Index dosyasını yükle
+                const indexLoaded = await loadWordsIndex();
+                
+                if (!indexLoaded || !wordsIndex || wordsIndex.files.length === 0) {
+                    // Index yoksa eski words.json'u dene
+                    console.log('Index bulunamadı, words.json yükleniyor...');
+                    const response = await fetch('words.json');
+                    wordsData = await response.json();
+                } else {
+                    // Tarih filtresine göre dosya yükle
+                    if (selectedDate === 'all') {
+                        // Tüm dosyaları yükle
+                        wordsData = [];
+                        for (const filename of wordsIndex.files) {
+                            const fileData = await loadWordsFromFile(filename);
+                            wordsData = wordsData.concat(fileData);
+                        }
+                    } else if (selectedDate === 'today') {
+                        // Bugünün tarihine göre dosya yükle
+                        const today = new Date();
+                        const todayStr = `${String(today.getDate()).padStart(2, '0')}.${String(today.getMonth() + 1).padStart(2, '0')}.${today.getFullYear()}`;
+                        const dateKey = getDateFromDateStr(todayStr);
+                        const filename = `words_${dateKey}.json`;
+                        wordsData = await loadWordsFromFile(filename);
+                    } else {
+                        // Seçilen tarihe göre dosya yükle
+                        const dateKey = getDateFromDateStr(selectedDate);
+                        if (dateKey) {
+                            const filename = `words_${dateKey}.json`;
+                            wordsData = await loadWordsFromFile(filename);
+                        } else {
+                            wordsData = [];
+                        }
+                    }
+                }
+
                 loadState(); // Kaydedilmiş durumu yükle
                 initializeDateFilter();
                 applyFilters();
@@ -489,7 +563,9 @@
         // ==================== DATE FILTER ====================
         function initializeDateFilter() {
             const dateFilter = document.getElementById('dateFilter');
-            const uniqueDates = [...new Set(wordsData.map(word => word.date).filter(date => date))].sort();
+            
+            // Mevcut seçenekleri temizle (sadece "Tümünü Göster" kalsın)
+            dateFilter.innerHTML = '<option value="all">Tümünü Göster</option>';
             
             // Bugünün tarihini al (DD.MM.YYYY formatında)
             const today = new Date();
@@ -501,25 +577,57 @@
             todayOption.textContent = `Bugün (${todayStr})`;
             dateFilter.appendChild(todayOption);
             
-            // Diğer tarihleri ekle
-            uniqueDates.forEach(date => {
-                if (date !== todayStr) {
-                const option = document.createElement('option');
-                option.value = date;
-                option.textContent = date;
-                dateFilter.appendChild(option);
-                }
-            });
+            // Index'ten mevcut dosyaları kullanarak tarih seçenekleri oluştur
+            if (wordsIndex && wordsIndex.dates) {
+                wordsIndex.dates.forEach(dateKey => {
+                    // YYYY_MM_DD formatından DD.MM.YYYY formatına çevir
+                    const parts = dateKey.split('_');
+                    if (parts.length === 3) {
+                        const year = parts[0];
+                        const month = parts[1];
+                        const day = parts[2];
+                        const dateStr = `${day}.${month}.${year}`;
+                        const option = document.createElement('option');
+                        option.value = dateStr;
+                        option.textContent = dateStr;
+                        dateFilter.appendChild(option);
+                    }
+                });
+            } else if (wordsIndex && wordsIndex.months) {
+                // Eski format (ay bazlı) - geriye dönük uyumluluk
+                wordsIndex.months.forEach(monthKey => {
+                    const parts = monthKey.split('_');
+                    if (parts.length === 2) {
+                        const year = parts[0];
+                        const month = parts[1];
+                        const dateStr = `01.${month}.${year}`;
+                        const option = document.createElement('option');
+                        option.value = dateStr;
+                        option.textContent = `${month}.${year}`;
+                        dateFilter.appendChild(option);
+                    }
+                });
+            } else {
+                // Index yoksa mevcut wordsData'dan tarihleri al
+                const uniqueDates = [...new Set(wordsData.map(word => word.date).filter(date => date))].sort();
+                uniqueDates.forEach(date => {
+                    if (date !== todayStr) {
+                        const option = document.createElement('option');
+                        option.value = date;
+                        option.textContent = date;
+                        dateFilter.appendChild(option);
+                    }
+                });
+            }
 
             // Kaydedilmiş değeri seç
             dateFilter.value = selectedDate;
 
-            dateFilter.addEventListener('change', (e) => {
+            dateFilter.addEventListener('change', async (e) => {
                 selectedDate = e.target.value;
                 currentPage = 1;
-                applyFilters();
-                renderCards();
-                updateStats();
+                // Tarih değiştiğinde yeni dosyayı yükle
+                await loadWords();
                 saveState(); // Durumu kaydet
             });
         }

@@ -1,0 +1,364 @@
+01.01.2026
+
+
+fall=düşmek
+feel=hissetmek
+study=ders çalışmak
+work=çalışmak, işe yaramak
+listen to=dinlemek
+live=yaşamak
+leave=bırakmak, ayrılmak
+cause=sebep olmak
+chop down=ağacı kesmek
+grab=yakalamak
+deal with=uğraşmak
+fire=işten çıkarmak
+lay off=işten çıkarmak
+hire=işe almak
+quit=istifa etmek, bırakmak
+run out of=tükenmek
+stand in line=sırada beklemek
+land a job=iş bulmak
+snort=burun çekmek, horlamak
+second=saniye, ikinci
+throat=boğaz
+neck=boyun
+taxes=vergiler
+exam=sınav
+major=bölüm (üniversitede)
+flaw=kusur
+creatures=canlılar, yaratıklar
+comet=kuyruklu yıldız
+mourning=yas, ağıt
+treatment=tedavi
+transition=geçiş
+workload=iş yükü
+layoffs=işten çıkarma
+overhiring=aşırı işe alım
+unemployment=işsizlik
+salary=maaş
+company culture=şirket kültürü
+job security=iş güvenliği (pozisyonun garantide olması)
+good=iyi
+foreign=yabancı
+faster=daha hızlı
+hectic=yoğun
+unfair=haksız
+significantly=önemli ölçüde
+instead=yerine
+unfairly=haksızca
+indeed=gerçekten, gerçekten de
+by the way=bu arada, bu sırada
+big deal for me=benim için büyük bir olay
+
+
+
+02012026
+
+
+
+purchase=satın almak
+care=önemsemek, umursamak
+build=inşa etmek
+built=inşa etti
+send=göndermek
+sent=gönderdi
+wanna=want to
+gonna=go to
+course=kurs, ders
+village=köy
+air=hava
+weather=hava durumu
+relative=akraba
+aunt=teyze, hala
+domesticated=evcil
+wild=vahşi, yabani
+when=-tığında, -tığı zaman, -ken
+how can I say=nasıl desem, nasıl söyleyebilirim
+
+
+
+08012025
+
+
+forward=ileri
+regulation=düzen
+method=yöntem, metod
+experience=tecrübe
+agreement=anlaşma
+salvation=kurtuluş
+backache=sırt ağrısı
+repair=onarmak, tamir etmek
+set=kurmak
+memorize=ezberlemek
+realize=fark etmek
+hire=işe almak
+succeed=başarmak
+educate=eğitmek
+tell=söylemek
+told=söyledi
+look at=bakmak
+look=görünmek
+look for=aramak
+get well soon=geçmiş olsun
+once=bir defa
+since=-den beri
+until=-e kadar
+often=sık sık
+banned=yasak
+adverb=zarf
+verb=fiil
+
+
+22122025
+
+
+literally=gerçekten
+tie=bağ, ilişki, bağlantı, kravat, bağlamak
+dubbing=dublaj, seslendirme
+bug=hata, yazılım hatası
+debug=hata ayıklamak, debug yapmak
+deploy=dağıtmak, yayınlamak
+merge=birleştirmek, merge etmek
+commit=kaydetmek, commit yapmak
+branch=dal, şube
+pull=çekmek
+push=itmek, göndermek
+framework=çerçeve, framework
+snippet=kod parçası, parçacık
+
+
+
+23122025
+
+
+because=çünkü, -dığı için
+drink=içmek, içecek
+service=hizmet, servis
+project=proje
+office=ofis, büro
+continue=devam etmek, sürdürmek
+provide=sağlamak, temin etmek
+listen=dinlemek
+answer=cevap vermek, cevap
+situation=durum, vaziyet
+caregiver=bakıcı, hasta bakıcı
+economy=ekonomi
+stock market=borsa
+moving=hareketli, hareket eden
+movie=film, sinema
+fund=fon, sermaye
+recently=son zamanlarda, yakın zamanda
+increase=artırmak, artmak
+silver=gümüş
+river=nehir
+buy=satın almak
+take=almak, götürmek
+once=bir defa, bir kez
+even=bile, hatta
+gamble=kumar, kumar oynamak
+as=olarak, gibi, -dığı gibi
+true=doğru, gerçek
+government=hükümet
+item=öğe, madde, ürün
+loan=borç, kredi
+borrow=ödünç almak, borç almak
+after=sonra, -den sonra
+about=hakkında, ile ilgili, yaklaşık
+through=içinden geçerek, baştan sona
+throughout=boyunca, her yerinde
+iterator=yineleyici
+iterating=tekrarlamak, yinelemek
+sequence=dizi, sıra
+completely=tamamen
+versus=karşı, -e karşı
+explicit=açık, açıkça, belirgin
+accomplish=sonuçlandırmak, başarmak
+underscore=alt çizgi
+bunch of=bir sürü, bir grup
+so to recap=özetlemek gerekirse, kısacası
+interest=ilgi, faiz, çıkar
+policies=politikalar, kurallar
+regulations=düzenlemeler, yönetmelikler
+productivity=verimlilik, üretkenlik
+investing=yatırım yapmak, yatırım
+refinement=iyileştirme, düzenleme, rafine etme
+structure=yapı, yapılandırma
+assignment=ödev, görev, atama
+
+
+
+25122025
+
+
+acquiring=elde etmek, kazanmak
+adjusting=ayarlamak, uyarlamak
+all of a sudden=aniden, birdenbire
+apparently=görünüşe göre, anlaşılan
+anyway=her neyse, yine de
+achieve=başarmak, elde etmek
+after that=ondan sonra
+all right=tamam, peki
+alright=tamam, peki
+beet=pancar
+believe=inanmak, düşünmek
+charge of=sorumlu olmak
+concept of=kavram, fikir
+competitors=rakipler
+conclusions=sonuçlar, kararlar
+consistency=tutarlılık
+conversation=konuşma, sohbet
+conversion=dönüşüm, çevirme
+corporate=kurumsal, şirket
+cover=kapsamak, ele almak
+confident=kendinden emin, güvenli
+confidence=güven, özgüven
+consultant=danışman
+consultancy=danışmanlık
+different=farklı
+difference=fark
+deal with=uğraşmak, başa çıkmak
+dedicated=özel, adanmış
+disease=hastalık
+due to=yüzünden, nedeniyle
+getting instantiated=örnek oluşturma, somutlaştırma
+give=vermek
+go over=gözden geçirmek, incelemek
+heart=kalp
+efficiently=verimli bir şekilde
+equip=donatmak, ekipman sağlamak
+eventually=sonunda, nihayetinde
+examine=incelemek, kontrol etmek
+hug=sarılmak, kucaklamak
+hurt=acıtmak, incitmek
+ignorant=cahil, bilgisiz
+ignorance=cehalet, bilgisizlik
+importance=önem
+important=önemli
+in fact=aslında, gerçekte
+individual=birey, kişi
+instead of=yerine
+interview=mülakat, görüşme
+new=yeni
+news=haber
+New York=New York
+nowadays=günümüzde, bugünlerde
+leverage=yararlanmak, kullanmak
+pillar=dayanak, sütun
+prior=önceki, önceden
+read=okumak
+retrieve=geri almak, getirmek
+reusability=yeniden kullanılabilirlik
+robust=sağlam, güçlü
+scam=dolandırıcılık, aldatmaca
+scalability=ölçeklenebilirlik
+send=göndermek
+stand out=öne çıkmak, dikkat çekmek
+sword=kılıç
+term=dönem, terim
+then=sonra, o zaman
+they thought=düşündüler, inandılar
+tremendous=müthiş, muazzam
+unfortunately=maalesef, ne yazık ki
+upcoming post=yakında yayınlanacak gönderi
+weird=garip, tuhaf
+write=yazmak
+wrote=yazdı
+
+
+29122025
+
+look at=bakmak
+look=görünmek
+to take care of=ilgilenmek
+get off=inmek
+get on=binmek
+transform=dönüşmek
+show up=ortaya çıkmak
+imprison=hapsetmek, hapse atmak
+request=rica etmek, talep etmek
+bread=ekmek
+news=haber
+document=belge
+government=hükümet
+criminal=suçlu
+prison=hapis
+need=ihtiyaç duymak
+need to=gerekiyor
+have to=gerekiyor
+a lot of=çok
+tell=söylemek
+told=söyledi
+
+
+
+
+30122025
+
+
+reuse=yeniden kullanmak
+clarify=açıklamak
+prioritize=önceliklendirmek
+fit in=uyum sağlamak
+turn someone down=birini reddetmek
+emerge=ortaya çıkmak
+emerged=ortaya çıkmak
+facilitate=kolaylaştırmak, rahatlatmak
+carry=taşımak
+transport=taşımak
+deceive=aldatmak, kandırmak
+work out=işe yaramak
+commute=ev ile iş arasında seyahat etmek, çevirmek
+campout=kamp yapmak
+look forward=dört gözle beklemek
+spoil=engellemek, önlemek
+frustrate=engellemek, önlemek
+ruin=engellemek, önlemek
+block=engellemek, önlemek
+compute=hesaplamak
+pick up=satın almak
+make sense=mantıklı olmak
+to illustrate=örneğin, örnek vermek gerekirse
+phrases=cümleler
+complaint=şikayet
+maintenance=bakım
+guidelines=yönergeler
+reunion=buluşma
+loner=yalnız
+guts=cesaret
+courage=cesaret
+convenience=uygunluk
+scissors=makas
+advancement=ilerleme, gelişme
+officer=memur
+competition=müsabaka
+complicated=karmaşık mesele
+engagement=nişan
+eternity=sonsuzluk
+vein=damar
+tradition=gelenek
+utilities=kamu hizmeti
+vacancies=boş pozisyon
+nonsense=anlamsız
+circumstance=durum
+impact=etki
+vulnerability=zaafiyet
+balance=denge
+rest=kalan
+outdated=eskimiş
+awkward=garip
+intelligent=zeki
+convenient=uygun
+sufficient=yeterli
+reasonable=mantıklı, makul
+thoroughly=iyice
+tirelessly=yorulmaksızın
+extremely=şaşırtıcı şekilde, son derece
+separately=ayrı ayrı
+it may sound weird=kulağa garip gelmek
+to put it briefly=özetlemek gerekirse
+I have to admit=itiraf etmek gerekirse
+on the spur of the moment=aniden
+decked out=süslenmek
+formal occasion=resmi etkinlik
+slacks=pantolon

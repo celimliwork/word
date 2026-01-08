@@ -1,0 +1,1652 @@
+[
+  {
+    "word": "argue",
+    "pronunciation": "argyu",
+    "type": "Fiil",
+    "meaning": "tartışmak, çekişmek",
+    "v2": {
+      "form": "argued",
+      "pronunciation": "argyud"
+    },
+    "v3": {
+      "form": "argued",
+      "pronunciation": "argyud"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "They always argue about money.",
+        "meaning": "Her zaman para hakkında tartışırlar."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "arrange",
+    "pronunciation": "areync",
+    "type": "Fiil",
+    "meaning": "ayarlamak, düzenlemek",
+    "v2": {
+      "form": "arranged",
+      "pronunciation": "areyncd"
+    },
+    "v3": {
+      "form": "arranged",
+      "pronunciation": "areyncd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I need to arrange a meeting.",
+        "meaning": "Bir toplantı ayarlamam gerekiyor."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "bend",
+    "pronunciation": "bend",
+    "type": "Fiil",
+    "meaning": "eğilmek",
+    "v2": {
+      "form": "bent",
+      "pronunciation": "bent"
+    },
+    "v3": {
+      "form": "bent",
+      "pronunciation": "bent"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Don't bend the paper.",
+        "meaning": "Kağıdı eğme."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "bet",
+    "pronunciation": "bet",
+    "type": "Fiil",
+    "meaning": "iddiaya girmek",
+    "v2": {
+      "form": "bet",
+      "pronunciation": "bet"
+    },
+    "v3": {
+      "form": "bet",
+      "pronunciation": "bet"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I bet you can't do it.",
+        "meaning": "Yapamayacağına iddiaya girerim."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "bid",
+    "pronunciation": "bid",
+    "type": "Fiil",
+    "meaning": "teklif vermek",
+    "v2": {
+      "form": "bid",
+      "pronunciation": "bid"
+    },
+    "v3": {
+      "form": "bid",
+      "pronunciation": "bid"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I bid 100 dollars.",
+        "meaning": "100 dolar teklif ettim."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "bleed",
+    "pronunciation": "bliid",
+    "type": "Fiil",
+    "meaning": "kanamak",
+    "v2": {
+      "form": "bled",
+      "pronunciation": "bled"
+    },
+    "v3": {
+      "form": "bled",
+      "pronunciation": "bled"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "My finger is bleeding.",
+        "meaning": "Parmağım kanıyor."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "blow",
+    "pronunciation": "blov",
+    "type": "Fiil",
+    "meaning": "üflemek",
+    "v2": {
+      "form": "blew",
+      "pronunciation": "bluv"
+    },
+    "v3": {
+      "form": "blown",
+      "pronunciation": "blovn"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The wind is blowing hard.",
+        "meaning": "Rüzgar sert esiyor."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "break",
+    "pronunciation": "breyk",
+    "type": "Fiil",
+    "meaning": "kırmak, kurala uymamak",
+    "v2": {
+      "form": "broke",
+      "pronunciation": "brok"
+    },
+    "v3": {
+      "form": "broken",
+      "pronunciation": "brokın"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Don't break the window.",
+        "meaning": "Pencereyi kırma."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "breed",
+    "pronunciation": "briid",
+    "type": "Fiil",
+    "meaning": "üretmek, çoğaltmak",
+    "v2": {
+      "form": "bred",
+      "pronunciation": "bred"
+    },
+    "v3": {
+      "form": "bred",
+      "pronunciation": "bred"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "They breed horses on the farm.",
+        "meaning": "Çiftlikte at yetiştiriyorlar."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "burst",
+    "pronunciation": "börst",
+    "type": "Fiil",
+    "meaning": "patlamak, fırlamak",
+    "v2": {
+      "form": "burst",
+      "pronunciation": "börst"
+    },
+    "v3": {
+      "form": "burst",
+      "pronunciation": "börst"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The balloon burst.",
+        "meaning": "Balon patladı."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "creep",
+    "pronunciation": "kriip",
+    "type": "Fiil",
+    "meaning": "ürkütmek, sürünmek",
+    "v2": {
+      "form": "crept",
+      "pronunciation": "krept"
+    },
+    "v3": {
+      "form": "crept",
+      "pronunciation": "krept"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The cat crept silently.",
+        "meaning": "Kedi sessizce süründü."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "deal",
+    "pronunciation": "diil",
+    "type": "Fiil",
+    "meaning": "uğraşmak, çaresine bakmak",
+    "v2": {
+      "form": "dealt",
+      "pronunciation": "delt"
+    },
+    "v3": {
+      "form": "dealt",
+      "pronunciation": "delt"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I can deal with this problem.",
+        "meaning": "Bu problemle başa çıkabilirim."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "depend",
+    "pronunciation": "dipend",
+    "type": "Fiil",
+    "meaning": "itimat etmek, bağlı olmak",
+    "v2": {
+      "form": "depended",
+      "pronunciation": "dipendıd"
+    },
+    "v3": {
+      "form": "depended",
+      "pronunciation": "dipendıd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I depend on my family.",
+        "meaning": "Aileme bağlıyım."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "describe",
+    "pronunciation": "diskrayb",
+    "type": "Fiil",
+    "meaning": "tarif etmek, tanımlamak",
+    "v2": {
+      "form": "described",
+      "pronunciation": "diskraybd"
+    },
+    "v3": {
+      "form": "described",
+      "pronunciation": "diskraybd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Can you describe him?",
+        "meaning": "Onu tarif edebilir misin?"
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "express",
+    "pronunciation": "ekspres",
+    "type": "Fiil",
+    "meaning": "ifade etmek, belli etmek",
+    "v2": {
+      "form": "expressed",
+      "pronunciation": "eksprest"
+    },
+    "v3": {
+      "form": "expressed",
+      "pronunciation": "eksprest"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I want to express my feelings.",
+        "meaning": "Duygularımı ifade etmek istiyorum."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "take care of",
+    "pronunciation": "teyk ker ov",
+    "type": "Phrasal Verb (Fiil)",
+    "meaning": "ilgilenmek",
+    "v2": {
+      "form": "took care of",
+      "pronunciation": "tuk ker ov"
+    },
+    "v3": {
+      "form": "taken care of",
+      "pronunciation": "teykın ker ov"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I take care of my plants.",
+        "meaning": "Bitkilerimle ilgileniyorum."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "fold",
+    "pronunciation": "fold",
+    "type": "Fiil",
+    "meaning": "katlamak",
+    "v2": {
+      "form": "folded",
+      "pronunciation": "foldıd"
+    },
+    "v3": {
+      "form": "folded",
+      "pronunciation": "foldıd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Please fold your clothes.",
+        "meaning": "Lütfen kıyafetlerini katla."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "get",
+    "pronunciation": "get",
+    "type": "Fiil",
+    "meaning": "almak, elde etmek, varmak",
+    "v2": {
+      "form": "got",
+      "pronunciation": "got"
+    },
+    "v3": {
+      "form": "gotten",
+      "pronunciation": "gotın"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I need to get some milk.",
+        "meaning": "Biraz süt almam gerekiyor."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "hang",
+    "pronunciation": "heng",
+    "type": "Fiil",
+    "meaning": "asmak",
+    "v2": {
+      "form": "hung",
+      "pronunciation": "hang"
+    },
+    "v3": {
+      "form": "hung",
+      "pronunciation": "hang"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Hang the picture on the wall.",
+        "meaning": "Resmi duvara as."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "relevant",
+    "pronunciation": "relıvınt",
+    "type": "Sıfat",
+    "meaning": "konuyla ilgili",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "This information is relevant.",
+        "meaning": "Bu bilgi konuyla ilgilidir."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "hold",
+    "pronunciation": "hold",
+    "type": "Fiil",
+    "meaning": "tutmak, beklemek",
+    "v2": {
+      "form": "held",
+      "pronunciation": "held"
+    },
+    "v3": {
+      "form": "held",
+      "pronunciation": "held"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Hold my hand.",
+        "meaning": "Elimi tut."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "lean",
+    "pronunciation": "liin",
+    "type": "Fiil",
+    "meaning": "eğilmek, yaslanmak",
+    "v2": {
+      "form": "leaned",
+      "pronunciation": "liind"
+    },
+    "v3": {
+      "form": "leaned",
+      "pronunciation": "liind"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Don't lean on the wall.",
+        "meaning": "Duvara yaslanma."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "matter",
+    "pronunciation": "metır",
+    "type": "Fiil/İsim",
+    "meaning": "önem taşımak, önemli olmak",
+    "v2": {
+      "form": "mattered",
+      "pronunciation": "metırd"
+    },
+    "v3": {
+      "form": "mattered",
+      "pronunciation": "metırd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It doesn't matter.",
+        "meaning": "Önemli değil."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "may",
+    "pronunciation": "mey",
+    "type": "Yardımcı Fiil",
+    "meaning": "mümkün kılmak, yapabilmek",
+    "v2": {
+      "form": "might",
+      "pronunciation": "mayt"
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "You may go now.",
+        "meaning": "Şimdi gidebilirsin."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "mean",
+    "pronunciation": "miin",
+    "type": "Fiil",
+    "meaning": "kastetmek, niyet etmek",
+    "v2": {
+      "form": "meant",
+      "pronunciation": "ment"
+    },
+    "v3": {
+      "form": "meant",
+      "pronunciation": "ment"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "What do you mean?",
+        "meaning": "Ne demek istiyorsun?"
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "meet",
+    "pronunciation": "miit",
+    "type": "Fiil",
+    "meaning": "buluşmak",
+    "v2": {
+      "form": "met",
+      "pronunciation": "met"
+    },
+    "v3": {
+      "form": "met",
+      "pronunciation": "met"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Let's meet tomorrow.",
+        "meaning": "Yarın buluşalım."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "mind",
+    "pronunciation": "maynd",
+    "type": "Fiil/İsim",
+    "meaning": "önemsemek, aldırış etmek, akıl",
+    "v2": {
+      "form": "minded",
+      "pronunciation": "mayndıd"
+    },
+    "v3": {
+      "form": "minded",
+      "pronunciation": "mayndıd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I don't mind waiting.",
+        "meaning": "Beklemeyi umursamam."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "mention",
+    "pronunciation": "menşın",
+    "type": "Fiil",
+    "meaning": "bahsetmek",
+    "v2": {
+      "form": "mentioned",
+      "pronunciation": "menşınd"
+    },
+    "v3": {
+      "form": "mentioned",
+      "pronunciation": "menşınd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Don't mention it.",
+        "meaning": "Bahsetme."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "move",
+    "pronunciation": "muv",
+    "type": "Fiil",
+    "meaning": "taşınmak",
+    "v2": {
+      "form": "moved",
+      "pronunciation": "muvd"
+    },
+    "v3": {
+      "form": "moved",
+      "pronunciation": "muvd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We moved to a new house.",
+        "meaning": "Yeni bir eve taşındık."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "notice",
+    "pronunciation": "notıs",
+    "type": "Fiil",
+    "meaning": "fark etmek",
+    "v2": {
+      "form": "noticed",
+      "pronunciation": "notıst"
+    },
+    "v3": {
+      "form": "noticed",
+      "pronunciation": "notıst"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Did you notice the change?",
+        "meaning": "Değişikliği fark ettin mi?"
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "obtain",
+    "pronunciation": "obteyn",
+    "type": "Fiil",
+    "meaning": "edinmek, temin etmek",
+    "v2": {
+      "form": "obtained",
+      "pronunciation": "obteynd"
+    },
+    "v3": {
+      "form": "obtained",
+      "pronunciation": "obteynd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I need to obtain a visa.",
+        "meaning": "Vize almam gerekiyor."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "occur",
+    "pronunciation": "okör",
+    "type": "Fiil",
+    "meaning": "meydana gelmek, vuku bulmak",
+    "v2": {
+      "form": "occurred",
+      "pronunciation": "okörd"
+    },
+    "v3": {
+      "form": "occurred",
+      "pronunciation": "okörd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "When did this occur?",
+        "meaning": "Bu ne zaman oldu?"
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "pass",
+    "pronunciation": "pas",
+    "type": "Fiil",
+    "meaning": "geçmek, pas geçmek",
+    "v2": {
+      "form": "passed",
+      "pronunciation": "past"
+    },
+    "v3": {
+      "form": "passed",
+      "pronunciation": "past"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I passed the exam.",
+        "meaning": "Sınavı geçtim."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "perform",
+    "pronunciation": "pırform",
+    "type": "Fiil",
+    "meaning": "sahnelemek, yapmak",
+    "v2": {
+      "form": "performed",
+      "pronunciation": "pırformd"
+    },
+    "v3": {
+      "form": "performed",
+      "pronunciation": "pırformd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The actor performed well.",
+        "meaning": "Aktör iyi oynadı."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "pick",
+    "pronunciation": "pik",
+    "type": "Fiil",
+    "meaning": "seçmek",
+    "v2": {
+      "form": "picked",
+      "pronunciation": "pikt"
+    },
+    "v3": {
+      "form": "picked",
+      "pronunciation": "pikt"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Pick a number.",
+        "meaning": "Bir sayı seç."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "place",
+    "pronunciation": "pleys",
+    "type": "Fiil",
+    "meaning": "yerleştirmek",
+    "v2": {
+      "form": "placed",
+      "pronunciation": "pleyst"
+    },
+    "v3": {
+      "form": "placed",
+      "pronunciation": "pleyst"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Place the book on the table.",
+        "meaning": "Kitabı masaya koy."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "quit",
+    "pronunciation": "kvit",
+    "type": "Fiil",
+    "meaning": "bırakmak, vazgeçmek",
+    "v2": {
+      "form": "quit",
+      "pronunciation": "kvit"
+    },
+    "v3": {
+      "form": "quit",
+      "pronunciation": "kvit"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I quit my job.",
+        "meaning": "İşimi bıraktım."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "reach",
+    "pronunciation": "riiiç",
+    "type": "Fiil",
+    "meaning": "erişmek, ulaşmak",
+    "v2": {
+      "form": "reached",
+      "pronunciation": "riiçt"
+    },
+    "v3": {
+      "form": "reached",
+      "pronunciation": "riiçt"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We reached the city.",
+        "meaning": "Şehre ulaştık."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "receive",
+    "pronunciation": "risiiv",
+    "type": "Fiil",
+    "meaning": "almak, teslim almak",
+    "v2": {
+      "form": "received",
+      "pronunciation": "risiivd"
+    },
+    "v3": {
+      "form": "received",
+      "pronunciation": "risiivd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I received a letter.",
+        "meaning": "Bir mektup aldım."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "reflect",
+    "pronunciation": "riflekt",
+    "type": "Fiil",
+    "meaning": "yansıtmak",
+    "v2": {
+      "form": "reflected",
+      "pronunciation": "riflektıd"
+    },
+    "v3": {
+      "form": "reflected",
+      "pronunciation": "riflektıd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The mirror reflects light.",
+        "meaning": "Ayna ışığı yansıtır."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "regard",
+    "pronunciation": "rigard",
+    "type": "Fiil",
+    "meaning": "saymak, görmek",
+    "v2": {
+      "form": "regarded",
+      "pronunciation": "rigardıd"
+    },
+    "v3": {
+      "form": "regarded",
+      "pronunciation": "rigardıd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I regard him as a friend.",
+        "meaning": "Onu arkadaş olarak görüyorum."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "release",
+    "pronunciation": "rilis",
+    "type": "Fiil",
+    "meaning": "serbest bırakmak",
+    "v2": {
+      "form": "released",
+      "pronunciation": "rilist"
+    },
+    "v3": {
+      "form": "released",
+      "pronunciation": "rilist"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "They released the prisoner.",
+        "meaning": "Mahkumu serbest bıraktılar."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "reply",
+    "pronunciation": "riplay",
+    "type": "Fiil",
+    "meaning": "cevap vermek",
+    "v2": {
+      "form": "replied",
+      "pronunciation": "riplayd"
+    },
+    "v3": {
+      "form": "replied",
+      "pronunciation": "riplayd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Please reply to my message.",
+        "meaning": "Lütfen mesajıma cevap ver."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "report",
+    "pronunciation": "riport",
+    "type": "Fiil",
+    "meaning": "ihbar etmek, bildirmek",
+    "v2": {
+      "form": "reported",
+      "pronunciation": "riportıd"
+    },
+    "v3": {
+      "form": "reported",
+      "pronunciation": "riportıd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I need to report this.",
+        "meaning": "Bunu bildirmem gerekiyor."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "represent",
+    "pronunciation": "reprizent",
+    "type": "Fiil",
+    "meaning": "temsil etmek",
+    "v2": {
+      "form": "represented",
+      "pronunciation": "reprizentıd"
+    },
+    "v3": {
+      "form": "represented",
+      "pronunciation": "reprizentıd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He represents our company.",
+        "meaning": "Şirketimizi temsil ediyor."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "require",
+    "pronunciation": "rikvayır",
+    "type": "Fiil",
+    "meaning": "ihtiyacı olmak",
+    "v2": {
+      "form": "required",
+      "pronunciation": "rikvayırd"
+    },
+    "v3": {
+      "form": "required",
+      "pronunciation": "rikvayırd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "This job requires experience.",
+        "meaning": "Bu iş deneyim gerektirir."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "rest",
+    "pronunciation": "rest",
+    "type": "Fiil",
+    "meaning": "geri çekilmek, dinlenmek",
+    "v2": {
+      "form": "rested",
+      "pronunciation": "restıd"
+    },
+    "v3": {
+      "form": "rested",
+      "pronunciation": "restıd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I need to rest.",
+        "meaning": "Dinlenmem gerekiyor."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "return",
+    "pronunciation": "ritörn",
+    "type": "Fiil",
+    "meaning": "geri dönmek",
+    "v2": {
+      "form": "returned",
+      "pronunciation": "ritörnd"
+    },
+    "v3": {
+      "form": "returned",
+      "pronunciation": "ritörnd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I will return tomorrow.",
+        "meaning": "Yarın döneceğim."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "reveal",
+    "pronunciation": "riviiil",
+    "type": "Fiil",
+    "meaning": "ortaya çıkarmak, gözler önüne sermek",
+    "v2": {
+      "form": "revealed",
+      "pronunciation": "riviiild"
+    },
+    "v3": {
+      "form": "revealed",
+      "pronunciation": "riviiild"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He revealed the secret.",
+        "meaning": "Sırrı ortaya çıkardı."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "rise",
+    "pronunciation": "rayz",
+    "type": "Fiil",
+    "meaning": "doğmak, yükselmek",
+    "v2": {
+      "form": "rose",
+      "pronunciation": "roz"
+    },
+    "v3": {
+      "form": "risen",
+      "pronunciation": "rizın"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The sun rises in the east.",
+        "meaning": "Güneş doğuda doğar."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "roll",
+    "pronunciation": "rol",
+    "type": "Fiil",
+    "meaning": "yuvarlamak",
+    "v2": {
+      "form": "rolled",
+      "pronunciation": "rold"
+    },
+    "v3": {
+      "form": "rolled",
+      "pronunciation": "rold"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Roll the ball to me.",
+        "meaning": "Topu bana yuvarla."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "settle",
+    "pronunciation": "sedıl",
+    "type": "Fiil",
+    "meaning": "razı olmak, yerleşmek",
+    "v2": {
+      "form": "settled",
+      "pronunciation": "sedıld"
+    },
+    "v3": {
+      "form": "settled",
+      "pronunciation": "sedıld"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "They settled in Istanbul.",
+        "meaning": "İstanbul'a yerleştiler."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "insist on",
+    "pronunciation": "insist on",
+    "type": "Phrasal Verb (Fiil)",
+    "meaning": "ısrar etmek",
+    "v2": {
+      "form": "insisted on",
+      "pronunciation": "insistıd on"
+    },
+    "v3": {
+      "form": "insisted on",
+      "pronunciation": "insistıd on"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I insist on coming with you.",
+        "meaning": "Seninle gelmekte ısrar ediyorum."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "shake",
+    "pronunciation": "şeyk",
+    "type": "Fiil",
+    "meaning": "sallamak",
+    "v2": {
+      "form": "shook",
+      "pronunciation": "şuk"
+    },
+    "v3": {
+      "form": "shaken",
+      "pronunciation": "şeykın"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Shake the bottle.",
+        "meaning": "Şişeyi salla."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "shine",
+    "pronunciation": "şayn",
+    "type": "Fiil",
+    "meaning": "parlamak",
+    "v2": {
+      "form": "shone",
+      "pronunciation": "şon"
+    },
+    "v3": {
+      "form": "shone",
+      "pronunciation": "şon"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The sun shines brightly.",
+        "meaning": "Güneş parlak parlar."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "shoe",
+    "pronunciation": "şu",
+    "type": "Fiil",
+    "meaning": "nallamak",
+    "v2": {
+      "form": "shod",
+      "pronunciation": "şad"
+    },
+    "v3": {
+      "form": "shod",
+      "pronunciation": "şad"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The blacksmith shod the horse.",
+        "meaning": "Demirci atı nalladı."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "shoot",
+    "pronunciation": "şuut",
+    "type": "Fiil",
+    "meaning": "film çekmek, vurmak",
+    "v2": {
+      "form": "shot",
+      "pronunciation": "şot"
+    },
+    "v3": {
+      "form": "shot",
+      "pronunciation": "şot"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The photographer shoots photos.",
+        "meaning": "Fotoğrafçı fotoğraf çeker."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "beg",
+    "pronunciation": "beg",
+    "type": "Fiil",
+    "meaning": "yalvarmak",
+    "v2": {
+      "form": "begged",
+      "pronunciation": "begd"
+    },
+    "v3": {
+      "form": "begged",
+      "pronunciation": "begd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I beg you to help me.",
+        "meaning": "Sana yalvarıyorum, bana yardım et."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "shrink",
+    "pronunciation": "şrink",
+    "type": "Fiil",
+    "meaning": "küçülmek",
+    "v2": {
+      "form": "shrank",
+      "pronunciation": "şrenk"
+    },
+    "v3": {
+      "form": "shrunk",
+      "pronunciation": "şrank"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The shirt shrank in the wash.",
+        "meaning": "Gömlek yıkamada küçüldü."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "shut",
+    "pronunciation": "şat",
+    "type": "Fiil",
+    "meaning": "kapatmak",
+    "v2": {
+      "form": "shut",
+      "pronunciation": "şat"
+    },
+    "v3": {
+      "form": "shut",
+      "pronunciation": "şat"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Please shut the door.",
+        "meaning": "Lütfen kapıyı kapat."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "slap",
+    "pronunciation": "slep",
+    "type": "Fiil",
+    "meaning": "tokatlamak",
+    "v2": {
+      "form": "slapped",
+      "pronunciation": "slept"
+    },
+    "v3": {
+      "form": "slapped",
+      "pronunciation": "slept"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Don't slap me.",
+        "meaning": "Beni tokatlama."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "slay",
+    "pronunciation": "sley",
+    "type": "Fiil",
+    "meaning": "katletmek",
+    "v2": {
+      "form": "slew",
+      "pronunciation": "sluv"
+    },
+    "v3": {
+      "form": "slain",
+      "pronunciation": "sleyn"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The hero slew the dragon.",
+        "meaning": "Kahraman ejderhayı öldürdü."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "slide",
+    "pronunciation": "slayd",
+    "type": "Fiil",
+    "meaning": "kaymak",
+    "v2": {
+      "form": "slid",
+      "pronunciation": "slid"
+    },
+    "v3": {
+      "form": "slid",
+      "pronunciation": "slid"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The children slide on the ice.",
+        "meaning": "Çocuklar buzda kayıyor."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "slip",
+    "pronunciation": "slip",
+    "type": "Fiil",
+    "meaning": "kaydırmak, kayarak gitmek",
+    "v2": {
+      "form": "slipped",
+      "pronunciation": "slipt"
+    },
+    "v3": {
+      "form": "slipped",
+      "pronunciation": "slipt"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I slipped on the ice.",
+        "meaning": "Buzda kaydım."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "spill",
+    "pronunciation": "spil",
+    "type": "Fiil",
+    "meaning": "dökmek, tükürmek",
+    "v2": {
+      "form": "spilled",
+      "pronunciation": "spild"
+    },
+    "v3": {
+      "form": "spilled",
+      "pronunciation": "spild"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Don't spill the water.",
+        "meaning": "Suyu dökme."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "stick",
+    "pronunciation": "stik",
+    "type": "Fiil",
+    "meaning": "yapışmak",
+    "v2": {
+      "form": "stuck",
+      "pronunciation": "stak"
+    },
+    "v3": {
+      "form": "stuck",
+      "pronunciation": "stak"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The glue sticks well.",
+        "meaning": "Yapıştırıcı iyi yapışır."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "sting",
+    "pronunciation": "stin",
+    "type": "Fiil",
+    "meaning": "canını yakmak, batmak",
+    "v2": {
+      "form": "stung",
+      "pronunciation": "stan"
+    },
+    "v3": {
+      "form": "stung",
+      "pronunciation": "stan"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The bee stung me.",
+        "meaning": "Arı beni soktu."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "stink",
+    "pronunciation": "stink",
+    "type": "Fiil",
+    "meaning": "kokuşmak",
+    "v2": {
+      "form": "stank",
+      "pronunciation": "stenk"
+    },
+    "v3": {
+      "form": "stunk",
+      "pronunciation": "stank"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "This fish stinks.",
+        "meaning": "Bu balık kokuyor."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "swear",
+    "pronunciation": "sver",
+    "type": "Fiil",
+    "meaning": "küfretmek, yemin etmek",
+    "v2": {
+      "form": "swore",
+      "pronunciation": "svor"
+    },
+    "v3": {
+      "form": "sworn",
+      "pronunciation": "svorn"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I swear I didn't do it.",
+        "meaning": "Yemin ederim yapmadım."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "sweep",
+    "pronunciation": "svip",
+    "type": "Fiil",
+    "meaning": "süpürmek",
+    "v2": {
+      "form": "swept",
+      "pronunciation": "svept"
+    },
+    "v3": {
+      "form": "swept",
+      "pronunciation": "svept"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I sweep the floor every day.",
+        "meaning": "Her gün yeri süpürüyorum."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "swing",
+    "pronunciation": "sving",
+    "type": "Fiil",
+    "meaning": "sallanmak",
+    "v2": {
+      "form": "swung",
+      "pronunciation": "svang"
+    },
+    "v3": {
+      "form": "swung",
+      "pronunciation": "svang"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The children swing on the swing.",
+        "meaning": "Çocuklar salıncakta sallanıyor."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "tear",
+    "pronunciation": "ter",
+    "type": "Fiil",
+    "meaning": "yırtmak",
+    "v2": {
+      "form": "tore",
+      "pronunciation": "tor"
+    },
+    "v3": {
+      "form": "torn",
+      "pronunciation": "torn"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Don't tear the paper.",
+        "meaning": "Kağıdı yırtma."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "throw",
+    "pronunciation": "trov",
+    "type": "Fiil",
+    "meaning": "fırlatmak",
+    "v2": {
+      "form": "threw",
+      "pronunciation": "truv"
+    },
+    "v3": {
+      "form": "thrown",
+      "pronunciation": "trovn"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Throw the ball to me.",
+        "meaning": "Topu bana fırlat."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "treat",
+    "pronunciation": "çiit",
+    "type": "Fiil",
+    "meaning": "davranmak, tedavi etmek",
+    "v2": {
+      "form": "treated",
+      "pronunciation": "triitıd"
+    },
+    "v3": {
+      "form": "treated",
+      "pronunciation": "triitıd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Treat others with respect.",
+        "meaning": "Başkalarına saygıyla davran."
+      }
+    ],
+    "date": "04.01.2026"
+  },
+  {
+    "word": "vote",
+    "pronunciation": "vot",
+    "type": "Fiil",
+    "meaning": "oy vermek",
+    "v2": {
+      "form": "voted",
+      "pronunciation": "votıd"
+    },
+    "v3": {
+      "form": "voted",
+      "pronunciation": "votıd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I will vote in the election.",
+        "meaning": "Seçimde oy vereceğim."
+      }
+    ],
+    "date": "04.01.2026"
+  }
+]

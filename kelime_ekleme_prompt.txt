@@ -1,11 +1,16 @@
 KELİME EKLEME PROMPT'U
 =====================
 
-Bu dosya, willaddednewwords.txt dosyasındaki kelimeleri words.json dosyasına eklemek için hazırlanmıştır.
+Bu dosya, willaddednewwords.txt dosyasındaki kelimeleri doğru aylık dosyaya eklemek için hazırlanmıştır.
+
+ÖNEMLİ: Kelimeler artık words.json yerine gün bazlı bölünmüş dosyalara ekleniyor!
+- words_2026_01_03.json (03 Ocak 2026)
+- words_2026_01_08.json (08 Ocak 2026)
+- vb.
 
 GÖREV:
 - willaddednewwords.txt dosyasındaki kelimeleri oku
-- Her kelimeyi words.json dosyasına ekle
+- Her kelimeyi doğru aylık dosyaya ekle (words_YYYY_MM.json formatında)
 - Eksik alanları tamamla
 
 KELİME FORMATI:
@@ -16,7 +21,7 @@ YAPILMASI GEREKENLER:
 
 1. willaddednewwords.txt dosyasını oku
 
-2. Her kelime için words.json'a şu yapıda ekle:
+2. Her kelime için doğru günlük dosyaya (words_YYYY_MM_DD.json) şu yapıda ekle:
    {
      "word": "kelime",
      "pronunciation": "amerikan telaffuzu",
@@ -61,11 +66,14 @@ YAPILMASI GEREKENLER:
    - Phrasal Verb: phrasal verb
 
 6. ÖNEMLİ NOTLAR:
-   - words.json dosyasının sonundaki "]" işaretinden önce virgül ekle
+   - Doğru günlük dosyayı belirle (tarihe göre: words_YYYY_MM_DD.json)
+   - Dosyanın sonundaki "]" işaretinden önce virgül ekle
    - Her kelime objesi arasına virgül ekle
    - Son kelimeden sonra virgül olmamalı
    - JSON formatını koru
    - Linter hatalarını kontrol et
+   - Tarih formatı: DD.MM.YYYY (örn: 08.01.2026)
+   - Dosya adı formatı: words_YYYY_MM_DD.json (örn: words_2026_01_08.json)
 
 7. TEKRAR EDEN KELİMELER:
    - Eğer bir kelime zaten varsa, yine de ekleyebilirsin (kullanıcı isterse)
@@ -73,9 +81,10 @@ YAPILMASI GEREKENLER:
 ÖRNEK İŞLEM:
 1. willaddednewwords.txt dosyasını oku
 2. Kelimeleri parse et (kelime=anlam formatından)
-3. Her kelime için JSON objesi oluştur
-4. words.json dosyasının sonuna ekle
-5. Linter kontrolü yap
+3. Tarihe göre doğru dosyayı belirle (örn: 08.01.2026 -> words_2026_01_08.json)
+4. Her kelime için JSON objesi oluştur
+5. Doğru günlük dosyanın sonuna ekle
+6. Linter kontrolü yap
 
 HATIRLATMA:
 - Tüm işlemler Türkçe olmalı

@@ -1,0 +1,464 @@
+[
+  {
+    "word": "look at",
+    "pronunciation": "luk et",
+    "type": "Phrasal Verb",
+    "meaning": "bakmak",
+    "v2": {
+      "form": "looked at",
+      "pronunciation": "lukt et"
+    },
+    "v3": {
+      "form": "looked at",
+      "pronunciation": "lukt et"
+    },
+    "gerundInfinitive": "looking at",
+    "examples": [
+      {
+        "sentence": "Look at this picture.",
+        "meaning": "Bu resme bak."
+      }
+    ],
+    "date": "29.12.2025"
+  },
+  {
+    "word": "look",
+    "pronunciation": "luk",
+    "type": "Fiil",
+    "meaning": "görünmek",
+    "v2": {
+      "form": "looked",
+      "pronunciation": "lukt"
+    },
+    "v3": {
+      "form": "looked",
+      "pronunciation": "lukt"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "You look tired.",
+        "meaning": "Yorgun görünüyorsun."
+      }
+    ],
+    "date": "29.12.2025"
+  },
+  {
+    "word": "to take care of",
+    "pronunciation": "tu teyk ker ov",
+    "type": "İfade",
+    "meaning": "ilgilenmek",
+    "v2": {
+      "form": "took care of",
+      "pronunciation": "tuk ker ov"
+    },
+    "v3": {
+      "form": "taken care of",
+      "pronunciation": "teykın ker ov"
+    },
+    "gerundInfinitive": "taking care of",
+    "examples": [
+      {
+        "sentence": "I'll take care of this problem.",
+        "meaning": "Bu sorunla ilgileneceğim."
+      }
+    ],
+    "date": "29.12.2025"
+  },
+  {
+    "word": "get off",
+    "pronunciation": "get of",
+    "type": "Phrasal Verb",
+    "meaning": "inmek",
+    "v2": {
+      "form": "got off",
+      "pronunciation": "gat of"
+    },
+    "v3": {
+      "form": "gotten off",
+      "pronunciation": "gatın of"
+    },
+    "gerundInfinitive": "getting off",
+    "examples": [
+      {
+        "sentence": "Get off the bus at the next stop.",
+        "meaning": "Bir sonraki durakta otobüsten in."
+      }
+    ],
+    "date": "29.12.2025"
+  },
+  {
+    "word": "get on",
+    "pronunciation": "get on",
+    "type": "Phrasal Verb",
+    "meaning": "binmek",
+    "v2": {
+      "form": "got on",
+      "pronunciation": "gat on"
+    },
+    "v3": {
+      "form": "gotten on",
+      "pronunciation": "gatın on"
+    },
+    "gerundInfinitive": "getting on",
+    "examples": [
+      {
+        "sentence": "Get on the train quickly.",
+        "meaning": "Trene hızlıca bin."
+      }
+    ],
+    "date": "29.12.2025"
+  },
+  {
+    "word": "transform",
+    "pronunciation": "trensförm",
+    "type": "Fiil",
+    "meaning": "dönüşmek",
+    "v2": {
+      "form": "transformed",
+      "pronunciation": "trensförmd"
+    },
+    "v3": {
+      "form": "transformed",
+      "pronunciation": "trensförmd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The caterpillar transforms into a butterfly.",
+        "meaning": "Tırtıl kelebeğe dönüşür."
+      }
+    ],
+    "date": "29.12.2025"
+  },
+  {
+    "word": "show up",
+    "pronunciation": "şo ap",
+    "type": "Phrasal Verb",
+    "meaning": "ortaya çıkmak",
+    "v2": {
+      "form": "showed up",
+      "pronunciation": "şod ap"
+    },
+    "v3": {
+      "form": "shown up",
+      "pronunciation": "şon ap"
+    },
+    "gerundInfinitive": "showing up",
+    "examples": [
+      {
+        "sentence": "He didn't show up at the meeting.",
+        "meaning": "Toplantıda ortaya çıkmadı."
+      }
+    ],
+    "date": "29.12.2025"
+  },
+  {
+    "word": "imprison",
+    "pronunciation": "imprizın",
+    "type": "Fiil",
+    "meaning": "hapsetmek, hapse atmak",
+    "v2": {
+      "form": "imprisoned",
+      "pronunciation": "imprizınd"
+    },
+    "v3": {
+      "form": "imprisoned",
+      "pronunciation": "imprizınd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "They imprisoned him for ten years.",
+        "meaning": "Onu on yıl hapse attılar."
+      }
+    ],
+    "date": "29.12.2025"
+  },
+  {
+    "word": "request",
+    "pronunciation": "rikvest",
+    "type": "Fiil",
+    "meaning": "rica etmek, talep etmek",
+    "v2": {
+      "form": "requested",
+      "pronunciation": "rikvestıd"
+    },
+    "v3": {
+      "form": "requested",
+      "pronunciation": "rikvestıd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I request your help.",
+        "meaning": "Yardımınızı rica ediyorum."
+      }
+    ],
+    "date": "29.12.2025"
+  },
+  {
+    "word": "bread",
+    "pronunciation": "bred",
+    "type": "İsim",
+    "meaning": "ekmek",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I bought some bread.",
+        "meaning": "Biraz ekmek aldım."
+      }
+    ],
+    "date": "29.12.2025"
+  },
+  {
+    "word": "news",
+    "pronunciation": "nuz",
+    "type": "İsim",
+    "meaning": "haber",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I heard the news.",
+        "meaning": "Haberi duydum."
+      }
+    ],
+    "date": "29.12.2025"
+  },
+  {
+    "word": "document",
+    "pronunciation": "dokyumınt",
+    "type": "İsim",
+    "meaning": "belge",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Please sign this document.",
+        "meaning": "Lütfen bu belgeyi imzalayın."
+      }
+    ],
+    "date": "29.12.2025"
+  },
+  {
+    "word": "government",
+    "pronunciation": "gavırmınt",
+    "type": "İsim",
+    "meaning": "hükümet",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The government announced new policies.",
+        "meaning": "Hükümet yeni politikalar açıkladı."
+      }
+    ],
+    "date": "29.12.2025"
+  },
+  {
+    "word": "criminal",
+    "pronunciation": "kriminıl",
+    "type": "İsim",
+    "meaning": "suçlu",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The criminal was arrested.",
+        "meaning": "Suçlu tutuklandı."
+      }
+    ],
+    "date": "29.12.2025"
+  },
+  {
+    "word": "prison",
+    "pronunciation": "prizın",
+    "type": "İsim",
+    "meaning": "hapis",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He was sent to prison.",
+        "meaning": "Hapse gönderildi."
+      }
+    ],
+    "date": "29.12.2025"
+  },
+  {
+    "word": "need",
+    "pronunciation": "nid",
+    "type": "Fiil",
+    "meaning": "ihtiyaç duymak",
+    "v2": {
+      "form": "needed",
+      "pronunciation": "nidıd"
+    },
+    "v3": {
+      "form": "needed",
+      "pronunciation": "nidıd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I need your help.",
+        "meaning": "Yardımına ihtiyacım var."
+      }
+    ],
+    "date": "29.12.2025"
+  },
+  {
+    "word": "need to",
+    "pronunciation": "nid tu",
+    "type": "İfade",
+    "meaning": "gerekiyor",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "You need to study harder.",
+        "meaning": "Daha sıkı çalışman gerekiyor."
+      }
+    ],
+    "date": "29.12.2025"
+  },
+  {
+    "word": "have to",
+    "pronunciation": "hev tu",
+    "type": "İfade",
+    "meaning": "gerekiyor",
+    "v2": {
+      "form": "had to",
+      "pronunciation": "hed tu"
+    },
+    "v3": {
+      "form": "had to",
+      "pronunciation": "hed tu"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I have to go now.",
+        "meaning": "Şimdi gitmem gerekiyor."
+      }
+    ],
+    "date": "29.12.2025"
+  },
+  {
+    "word": "a lot of",
+    "pronunciation": "ı lat ov",
+    "type": "İfade",
+    "meaning": "çok",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I have a lot of work.",
+        "meaning": "Çok işim var."
+      }
+    ],
+    "date": "29.12.2025"
+  },
+  {
+    "word": "tell",
+    "pronunciation": "tel",
+    "type": "Fiil",
+    "meaning": "söylemek",
+    "v2": {
+      "form": "told",
+      "pronunciation": "told"
+    },
+    "v3": {
+      "form": "told",
+      "pronunciation": "told"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Tell me the truth.",
+        "meaning": "Bana gerçeği söyle."
+      }
+    ],
+    "date": "29.12.2025"
+  },
+  {
+    "word": "told",
+    "pronunciation": "told",
+    "type": "Fiil",
+    "meaning": "söyledi",
+    "v2": {
+      "form": "told",
+      "pronunciation": "told"
+    },
+    "v3": {
+      "form": "told",
+      "pronunciation": "told"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He told me everything.",
+        "meaning": "Bana her şeyi söyledi."
+      }
+    ],
+    "date": "29.12.2025"
+  }
+]

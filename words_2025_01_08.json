@@ -1,0 +1,596 @@
+[
+  {
+    "word": "forward",
+    "pronunciation": "forvırd",
+    "type": "Zarf",
+    "meaning": "ileri",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Move forward.",
+        "meaning": "İleri git."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "regulation",
+    "pronunciation": "regyuleyşın",
+    "type": "İsim",
+    "meaning": "düzen",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "New regulations were introduced.",
+        "meaning": "Yeni düzenlemeler getirildi."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "method",
+    "pronunciation": "metıd",
+    "type": "İsim",
+    "meaning": "yöntem, metod",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "This is the best method.",
+        "meaning": "Bu en iyi yöntem."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "experience",
+    "pronunciation": "ikspiriıns",
+    "type": "İsim",
+    "meaning": "tecrübe",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I have five years of experience.",
+        "meaning": "Beş yıllık tecrübem var."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "agreement",
+    "pronunciation": "agrimınt",
+    "type": "İsim",
+    "meaning": "anlaşma",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We reached an agreement.",
+        "meaning": "Bir anlaşmaya vardık."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "salvation",
+    "pronunciation": "salveyşın",
+    "type": "İsim",
+    "meaning": "kurtuluş",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Education is the salvation of society.",
+        "meaning": "Eğitim toplumun kurtuluşudur."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "backache",
+    "pronunciation": "bekeyk",
+    "type": "İsim",
+    "meaning": "sırt ağrısı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I have a backache.",
+        "meaning": "Sırt ağrım var."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "repair",
+    "pronunciation": "riper",
+    "type": "Fiil",
+    "meaning": "onarmak, tamir etmek",
+    "v2": {
+      "form": "repaired",
+      "pronunciation": "riperd"
+    },
+    "v3": {
+      "form": "repaired",
+      "pronunciation": "riperd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I need to repair my car.",
+        "meaning": "Arabamı tamir etmem gerekiyor."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "set",
+    "pronunciation": "set",
+    "type": "Fiil",
+    "meaning": "kurmak",
+    "v2": {
+      "form": "set",
+      "pronunciation": "set"
+    },
+    "v3": {
+      "form": "set",
+      "pronunciation": "set"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Set the table.",
+        "meaning": "Masayı kur."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "memorize",
+    "pronunciation": "memorayz",
+    "type": "Fiil",
+    "meaning": "ezberlemek",
+    "v2": {
+      "form": "memorized",
+      "pronunciation": "memorayzd"
+    },
+    "v3": {
+      "form": "memorized",
+      "pronunciation": "memorayzd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I need to memorize these words.",
+        "meaning": "Bu kelimeleri ezberlemem gerekiyor."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "realize",
+    "pronunciation": "riılayz",
+    "type": "Fiil",
+    "meaning": "fark etmek",
+    "v2": {
+      "form": "realized",
+      "pronunciation": "riılayzd"
+    },
+    "v3": {
+      "form": "realized",
+      "pronunciation": "riılayzd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I just realized my mistake.",
+        "meaning": "Az önce hatamı fark ettim."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "hire",
+    "pronunciation": "hayır",
+    "type": "Fiil",
+    "meaning": "işe almak",
+    "v2": {
+      "form": "hired",
+      "pronunciation": "hayırd"
+    },
+    "v3": {
+      "form": "hired",
+      "pronunciation": "hayırd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "They hired a new employee.",
+        "meaning": "Yeni bir çalışan işe aldılar."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "succeed",
+    "pronunciation": "saksid",
+    "type": "Fiil",
+    "meaning": "başarmak",
+    "v2": {
+      "form": "succeeded",
+      "pronunciation": "saksidıd"
+    },
+    "v3": {
+      "form": "succeeded",
+      "pronunciation": "saksidıd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I will succeed.",
+        "meaning": "Başaracağım."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "educate",
+    "pronunciation": "ecukeyt",
+    "type": "Fiil",
+    "meaning": "eğitmek",
+    "v2": {
+      "form": "educated",
+      "pronunciation": "ecukeytıd"
+    },
+    "v3": {
+      "form": "educated",
+      "pronunciation": "ecukeytıd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We need to educate children.",
+        "meaning": "Çocukları eğitmemiz gerekiyor."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "tell",
+    "pronunciation": "tel",
+    "type": "Fiil",
+    "meaning": "söylemek",
+    "v2": {
+      "form": "told",
+      "pronunciation": "told"
+    },
+    "v3": {
+      "form": "told",
+      "pronunciation": "told"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Tell me the truth.",
+        "meaning": "Bana gerçeği söyle."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "told",
+    "pronunciation": "told",
+    "type": "Fiil",
+    "meaning": "söyledi",
+    "v2": {
+      "form": "told",
+      "pronunciation": "told"
+    },
+    "v3": {
+      "form": "told",
+      "pronunciation": "told"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He told me everything.",
+        "meaning": "Bana her şeyi söyledi."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "look at",
+    "pronunciation": "luk et",
+    "type": "İfade",
+    "meaning": "bakmak",
+    "v2": {
+      "form": "looked at",
+      "pronunciation": "lukt et"
+    },
+    "v3": {
+      "form": "looked at",
+      "pronunciation": "lukt et"
+    },
+    "gerundInfinitive": "looking at",
+    "examples": [
+      {
+        "sentence": "Look at me.",
+        "meaning": "Bana bak."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "look",
+    "pronunciation": "luk",
+    "type": "Fiil",
+    "meaning": "görünmek",
+    "v2": {
+      "form": "looked",
+      "pronunciation": "lukt"
+    },
+    "v3": {
+      "form": "looked",
+      "pronunciation": "lukt"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "You look tired.",
+        "meaning": "Yorgun görünüyorsun."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "look for",
+    "pronunciation": "luk for",
+    "type": "İfade",
+    "meaning": "aramak",
+    "v2": {
+      "form": "looked for",
+      "pronunciation": "lukt for"
+    },
+    "v3": {
+      "form": "looked for",
+      "pronunciation": "lukt for"
+    },
+    "gerundInfinitive": "looking for",
+    "examples": [
+      {
+        "sentence": "I'm looking for my keys.",
+        "meaning": "Anahtarlarımı arıyorum."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "get well soon",
+    "pronunciation": "get vel sun",
+    "type": "İfade",
+    "meaning": "geçmiş olsun",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Get well soon!",
+        "meaning": "Geçmiş olsun!"
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "once",
+    "pronunciation": "vans",
+    "type": "Zarf",
+    "meaning": "bir defa",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I've been there once.",
+        "meaning": "Oraya bir kez gittim."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "since",
+    "pronunciation": "sins",
+    "type": "Edat",
+    "meaning": "-den beri",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I've been here since Monday.",
+        "meaning": "Pazartesiden beri buradayım."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "until",
+    "pronunciation": "antil",
+    "type": "Edat",
+    "meaning": "-e kadar",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Wait until I come back.",
+        "meaning": "Geri dönene kadar bekle."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "often",
+    "pronunciation": "ofın",
+    "type": "Zarf",
+    "meaning": "sık sık",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I often go to the gym.",
+        "meaning": "Sık sık spor salonuna giderim."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "banned",
+    "pronunciation": "bend",
+    "type": "Sıfat",
+    "meaning": "yasak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Smoking is banned here.",
+        "meaning": "Burada sigara içmek yasak."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "adverb",
+    "pronunciation": "edvörb",
+    "type": "İsim",
+    "meaning": "zarf",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "An adverb modifies a verb.",
+        "meaning": "Bir zarf bir fiili niteler."
+      }
+    ],
+    "date": "08.01.2025"
+  },
+  {
+    "word": "verb",
+    "pronunciation": "vörb",
+    "type": "İsim",
+    "meaning": "fiil",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "A verb shows action.",
+        "meaning": "Bir fiil eylem gösterir."
+      }
+    ],
+    "date": "08.01.2025"
+  }
+]

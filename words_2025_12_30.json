@@ -1,0 +1,1454 @@
+[
+  {
+    "word": "reuse",
+    "pronunciation": "riuz",
+    "type": "Fiil",
+    "meaning": "yeniden kullanmak",
+    "v2": {
+      "form": "reused",
+      "pronunciation": "riuzd"
+    },
+    "v3": {
+      "form": "reused",
+      "pronunciation": "riuzd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We should reuse these materials.",
+        "meaning": "Bu malzemeleri yeniden kullanmalıyız."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "clarify",
+    "pronunciation": "klerifay",
+    "type": "Fiil",
+    "meaning": "açıklamak",
+    "v2": {
+      "form": "clarified",
+      "pronunciation": "klerifayd"
+    },
+    "v3": {
+      "form": "clarified",
+      "pronunciation": "klerifayd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Let me clarify this point.",
+        "meaning": "Bu noktayı açıklayayım."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "prioritize",
+    "pronunciation": "prayoritayz",
+    "type": "Fiil",
+    "meaning": "önceliklendirmek",
+    "v2": {
+      "form": "prioritized",
+      "pronunciation": "prayoritayzd"
+    },
+    "v3": {
+      "form": "prioritized",
+      "pronunciation": "prayoritayzd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We need to prioritize our tasks.",
+        "meaning": "Görevlerimizi önceliklendirmemiz gerekiyor."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "fit in",
+    "pronunciation": "fit in",
+    "type": "Phrasal Verb",
+    "meaning": "uyum sağlamak",
+    "v2": {
+      "form": "fit in",
+      "pronunciation": "fit in"
+    },
+    "v3": {
+      "form": "fit in",
+      "pronunciation": "fit in"
+    },
+    "gerundInfinitive": "fitting in",
+    "examples": [
+      {
+        "sentence": "I don't fit in with this group.",
+        "meaning": "Bu grupla uyum sağlayamıyorum."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "turn someone down",
+    "pronunciation": "törn samvan daun",
+    "type": "İfade",
+    "meaning": "birini reddetmek",
+    "v2": {
+      "form": "turned someone down",
+      "pronunciation": "törnd samvan daun"
+    },
+    "v3": {
+      "form": "turned someone down",
+      "pronunciation": "törnd samvan daun"
+    },
+    "gerundInfinitive": "turning someone down",
+    "examples": [
+      {
+        "sentence": "She turned him down.",
+        "meaning": "Onu reddetti."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "emerge",
+    "pronunciation": "imörc",
+    "type": "Fiil",
+    "meaning": "ortaya çıkmak",
+    "v2": {
+      "form": "emerged",
+      "pronunciation": "imörcd"
+    },
+    "v3": {
+      "form": "emerged",
+      "pronunciation": "imörcd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "New problems emerged.",
+        "meaning": "Yeni sorunlar ortaya çıktı."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "emerged",
+    "pronunciation": "imörcd",
+    "type": "Fiil",
+    "meaning": "ortaya çıkmak",
+    "v2": {
+      "form": "emerged",
+      "pronunciation": "imörcd"
+    },
+    "v3": {
+      "form": "emerged",
+      "pronunciation": "imörcd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The truth emerged later.",
+        "meaning": "Gerçek daha sonra ortaya çıktı."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "facilitate",
+    "pronunciation": "fısilitayt",
+    "type": "Fiil",
+    "meaning": "kolaylaştırmak, rahatlatmak",
+    "v2": {
+      "form": "facilitated",
+      "pronunciation": "fısilitaytıd"
+    },
+    "v3": {
+      "form": "facilitated",
+      "pronunciation": "fısilitaytıd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "This tool will facilitate your work.",
+        "meaning": "Bu araç işinizi kolaylaştıracak."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "carry",
+    "pronunciation": "keri",
+    "type": "Fiil",
+    "meaning": "taşımak",
+    "v2": {
+      "form": "carried",
+      "pronunciation": "kerid"
+    },
+    "v3": {
+      "form": "carried",
+      "pronunciation": "kerid"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Can you carry this box?",
+        "meaning": "Bu kutuyu taşıyabilir misin?"
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "transport",
+    "pronunciation": "trensport",
+    "type": "Fiil",
+    "meaning": "taşımak",
+    "v2": {
+      "form": "transported",
+      "pronunciation": "trensportıd"
+    },
+    "v3": {
+      "form": "transported",
+      "pronunciation": "trensportıd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We need to transport these goods.",
+        "meaning": "Bu malları taşımamız gerekiyor."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "deceive",
+    "pronunciation": "disiv",
+    "type": "Fiil",
+    "meaning": "aldatmak, kandırmak",
+    "v2": {
+      "form": "deceived",
+      "pronunciation": "disivd"
+    },
+    "v3": {
+      "form": "deceived",
+      "pronunciation": "disivd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Don't deceive me.",
+        "meaning": "Beni aldatma."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "work out",
+    "pronunciation": "vörk aut",
+    "type": "Phrasal Verb",
+    "meaning": "işe yaramak",
+    "v2": {
+      "form": "worked out",
+      "pronunciation": "vörkt aut"
+    },
+    "v3": {
+      "form": "worked out",
+      "pronunciation": "vörkt aut"
+    },
+    "gerundInfinitive": "working out",
+    "examples": [
+      {
+        "sentence": "The plan worked out well.",
+        "meaning": "Plan iyi işe yaradı."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "commute",
+    "pronunciation": "komut",
+    "type": "Fiil",
+    "meaning": "ev ile iş arasında seyahat etmek, çevirmek",
+    "v2": {
+      "form": "commuted",
+      "pronunciation": "komutıd"
+    },
+    "v3": {
+      "form": "commuted",
+      "pronunciation": "komutıd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I commute to work every day.",
+        "meaning": "Her gün işe gidip geliyorum."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "campout",
+    "pronunciation": "kempaut",
+    "type": "İsim",
+    "meaning": "kamp yapmak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We're planning a campout this weekend.",
+        "meaning": "Bu hafta sonu kamp yapmayı planlıyoruz."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "look forward",
+    "pronunciation": "luk forvırd",
+    "type": "İfade",
+    "meaning": "dört gözle beklemek",
+    "v2": {
+      "form": "looked forward",
+      "pronunciation": "lukt forvırd"
+    },
+    "v3": {
+      "form": "looked forward",
+      "pronunciation": "lukt forvırd"
+    },
+    "gerundInfinitive": "looking forward",
+    "examples": [
+      {
+        "sentence": "I look forward to seeing you.",
+        "meaning": "Seni görmeyi dört gözle bekliyorum."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "spoil",
+    "pronunciation": "spoyl",
+    "type": "Fiil",
+    "meaning": "engellemek, önlemek",
+    "v2": {
+      "form": "spoiled",
+      "pronunciation": "spoyld"
+    },
+    "v3": {
+      "form": "spoiled",
+      "pronunciation": "spoyld"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Don't spoil the surprise.",
+        "meaning": "Sürprizi bozma."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "frustrate",
+    "pronunciation": "frastreyt",
+    "type": "Fiil",
+    "meaning": "engellemek, önlemek",
+    "v2": {
+      "form": "frustrated",
+      "pronunciation": "frastreytıd"
+    },
+    "v3": {
+      "form": "frustrated",
+      "pronunciation": "frastreytıd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "This situation frustrates me.",
+        "meaning": "Bu durum beni engelliyor."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "ruin",
+    "pronunciation": "ruin",
+    "type": "Fiil",
+    "meaning": "engellemek, önlemek",
+    "v2": {
+      "form": "ruined",
+      "pronunciation": "ruind"
+    },
+    "v3": {
+      "form": "ruined",
+      "pronunciation": "ruind"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The rain ruined our picnic.",
+        "meaning": "Yağmur pikniğimizi mahvetti."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "block",
+    "pronunciation": "blak",
+    "type": "Fiil",
+    "meaning": "engellemek, önlemek",
+    "v2": {
+      "form": "blocked",
+      "pronunciation": "blakt"
+    },
+    "v3": {
+      "form": "blocked",
+      "pronunciation": "blakt"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Don't block the door.",
+        "meaning": "Kapıyı engelleme."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "compute",
+    "pronunciation": "komput",
+    "type": "Fiil",
+    "meaning": "hesaplamak",
+    "v2": {
+      "form": "computed",
+      "pronunciation": "komputıd"
+    },
+    "v3": {
+      "form": "computed",
+      "pronunciation": "komputıd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The computer will compute the result.",
+        "meaning": "Bilgisayar sonucu hesaplayacak."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "pick up",
+    "pronunciation": "pik ap",
+    "type": "Phrasal Verb",
+    "meaning": "satın almak",
+    "v2": {
+      "form": "picked up",
+      "pronunciation": "pikt ap"
+    },
+    "v3": {
+      "form": "picked up",
+      "pronunciation": "pikt ap"
+    },
+    "gerundInfinitive": "picking up",
+    "examples": [
+      {
+        "sentence": "I'll pick up some groceries.",
+        "meaning": "Biraz bakkaliye alacağım."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "make sense",
+    "pronunciation": "meyk sens",
+    "type": "İfade",
+    "meaning": "mantıklı olmak",
+    "v2": {
+      "form": "made sense",
+      "pronunciation": "meyd sens"
+    },
+    "v3": {
+      "form": "made sense",
+      "pronunciation": "meyd sens"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "That doesn't make sense.",
+        "meaning": "Bu mantıklı değil."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "to illustrate",
+    "pronunciation": "tu ilıstreyt",
+    "type": "İfade",
+    "meaning": "örneğin, örnek vermek gerekirse",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "To illustrate my point, let me give an example.",
+        "meaning": "Noktamı açıklamak için bir örnek vereyim."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "phrases",
+    "pronunciation": "freyzız",
+    "type": "İsim",
+    "meaning": "cümleler",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Learn these phrases by heart.",
+        "meaning": "Bu cümleleri ezberle."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "complaint",
+    "pronunciation": "kompleynt",
+    "type": "İsim",
+    "meaning": "şikayet",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I have a complaint about the service.",
+        "meaning": "Hizmet hakkında bir şikayetim var."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "maintenance",
+    "pronunciation": "meyntınıns",
+    "type": "İsim",
+    "meaning": "bakım",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Regular maintenance is important.",
+        "meaning": "Düzenli bakım önemlidir."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "guidelines",
+    "pronunciation": "gaydlaynz",
+    "type": "İsim",
+    "meaning": "yönergeler",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Follow these guidelines carefully.",
+        "meaning": "Bu yönergeleri dikkatlice takip edin."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "reunion",
+    "pronunciation": "riyunyın",
+    "type": "İsim",
+    "meaning": "buluşma",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We're having a family reunion.",
+        "meaning": "Bir aile buluşması yapıyoruz."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "loner",
+    "pronunciation": "lonır",
+    "type": "İsim",
+    "meaning": "yalnız",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He's a bit of a loner.",
+        "meaning": "O biraz yalnız biridir."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "guts",
+    "pronunciation": "gats",
+    "type": "İsim",
+    "meaning": "cesaret",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "You have guts to do that.",
+        "meaning": "Bunu yapmak için cesaretin var."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "courage",
+    "pronunciation": "karıc",
+    "type": "İsim",
+    "meaning": "cesaret",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It takes courage to speak up.",
+        "meaning": "Konuşmak cesaret gerektirir."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "convenience",
+    "pronunciation": "konvinyıns",
+    "type": "İsim",
+    "meaning": "uygunluk",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "For your convenience, we offer free delivery.",
+        "meaning": "Sizin için uygunluk sağlamak adına ücretsiz teslimat sunuyoruz."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "scissors",
+    "pronunciation": "sizırs",
+    "type": "İsim",
+    "meaning": "makas",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I need a pair of scissors.",
+        "meaning": "Bir makasa ihtiyacım var."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "advancement",
+    "pronunciation": "edvensmınt",
+    "type": "İsim",
+    "meaning": "ilerleme, gelişme",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Technology advancement is rapid.",
+        "meaning": "Teknoloji ilerlemesi hızlı."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "officer",
+    "pronunciation": "ofisır",
+    "type": "İsim",
+    "meaning": "memur",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The police officer helped us.",
+        "meaning": "Polis memuru bize yardım etti."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "competition",
+    "pronunciation": "kompetişın",
+    "type": "İsim",
+    "meaning": "müsabaka",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The competition was fierce.",
+        "meaning": "Müsabaka çetin geçti."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "complicated",
+    "pronunciation": "komplikeytıd",
+    "type": "Sıfat",
+    "meaning": "karmaşık mesele",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "This is a complicated issue.",
+        "meaning": "Bu karmaşık bir mesele."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "engagement",
+    "pronunciation": "ingeycmınt",
+    "type": "İsim",
+    "meaning": "nişan",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "They announced their engagement.",
+        "meaning": "Nişanlarını açıkladılar."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "eternity",
+    "pronunciation": "itörnıti",
+    "type": "İsim",
+    "meaning": "sonsuzluk",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Love lasts for eternity.",
+        "meaning": "Aşk sonsuzluğa kadar sürer."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "vein",
+    "pronunciation": "veyn",
+    "type": "İsim",
+    "meaning": "damar",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The doctor found a vein.",
+        "meaning": "Doktor bir damar buldu."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "tradition",
+    "pronunciation": "tredişın",
+    "type": "İsim",
+    "meaning": "gelenek",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "This is an old tradition.",
+        "meaning": "Bu eski bir gelenektir."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "utilities",
+    "pronunciation": "yutilıtiz",
+    "type": "İsim",
+    "meaning": "kamu hizmeti",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We pay for utilities every month.",
+        "meaning": "Her ay kamu hizmetleri için ödeme yapıyoruz."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "vacancies",
+    "pronunciation": "veykınsiz",
+    "type": "İsim",
+    "meaning": "boş pozisyon",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "There are no vacancies at the moment.",
+        "meaning": "Şu anda boş pozisyon yok."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "nonsense",
+    "pronunciation": "nansens",
+    "type": "İsim",
+    "meaning": "anlamsız",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "That's nonsense!",
+        "meaning": "Bu anlamsız!"
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "circumstance",
+    "pronunciation": "sörkımstens",
+    "type": "İsim",
+    "meaning": "durum",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Under the circumstances, we had to leave.",
+        "meaning": "Durumlar gereği ayrılmak zorunda kaldık."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "impact",
+    "pronunciation": "impekt",
+    "type": "İsim",
+    "meaning": "etki",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "This decision will have a big impact.",
+        "meaning": "Bu karar büyük bir etki yaratacak."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "vulnerability",
+    "pronunciation": "valnırıbiliti",
+    "type": "İsim",
+    "meaning": "zaafiyet",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We need to address this vulnerability.",
+        "meaning": "Bu zaafiyeti ele almamız gerekiyor."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "balance",
+    "pronunciation": "belıns",
+    "type": "İsim",
+    "meaning": "denge",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "You need to find a balance.",
+        "meaning": "Bir denge bulman gerekiyor."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "rest",
+    "pronunciation": "rest",
+    "type": "İsim",
+    "meaning": "kalan",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The rest of the money is yours.",
+        "meaning": "Kalan para senin."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "outdated",
+    "pronunciation": "autdeytıd",
+    "type": "Sıfat",
+    "meaning": "eskimiş",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "This system is outdated.",
+        "meaning": "Bu sistem eskimiş."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "awkward",
+    "pronunciation": "okvırd",
+    "type": "Sıfat",
+    "meaning": "garip",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "That was awkward.",
+        "meaning": "Bu garip oldu."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "intelligent",
+    "pronunciation": "intelicınt",
+    "type": "Sıfat",
+    "meaning": "zeki",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She's very intelligent.",
+        "meaning": "O çok zeki."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "convenient",
+    "pronunciation": "konvinyınt",
+    "type": "Sıfat",
+    "meaning": "uygun",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Is this time convenient for you?",
+        "meaning": "Bu zaman sizin için uygun mu?"
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "sufficient",
+    "pronunciation": "safişınt",
+    "type": "Sıfat",
+    "meaning": "yeterli",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "This is sufficient for now.",
+        "meaning": "Bu şimdilik yeterli."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "reasonable",
+    "pronunciation": "rizınıbıl",
+    "type": "Sıfat",
+    "meaning": "mantıklı, makul",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "That's a reasonable request.",
+        "meaning": "Bu mantıklı bir talep."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "thoroughly",
+    "pronunciation": "torolı",
+    "type": "Zarf",
+    "meaning": "iyice",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Clean it thoroughly.",
+        "meaning": "İyice temizle."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "tirelessly",
+    "pronunciation": "tayırlısli",
+    "type": "Zarf",
+    "meaning": "yorulmaksızın",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He worked tirelessly.",
+        "meaning": "Yorulmaksızın çalıştı."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "extremely",
+    "pronunciation": "ikstrimli",
+    "type": "Zarf",
+    "meaning": "şaşırtıcı şekilde, son derece",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It's extremely important.",
+        "meaning": "Bu son derece önemli."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "separately",
+    "pronunciation": "seperıtlı",
+    "type": "Zarf",
+    "meaning": "ayrı ayrı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Let's discuss these separately.",
+        "meaning": "Bunları ayrı ayrı tartışalım."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "it may sound weird",
+    "pronunciation": "it mey saund viyırd",
+    "type": "İfade",
+    "meaning": "kulağa garip gelmek",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It may sound weird, but I agree.",
+        "meaning": "Kulağa garip gelebilir ama katılıyorum."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "to put it briefly",
+    "pronunciation": "tu put it brifli",
+    "type": "İfade",
+    "meaning": "özetlemek gerekirse",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "To put it briefly, we need more time.",
+        "meaning": "Özetlemek gerekirse, daha fazla zamana ihtiyacımız var."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "I have to admit",
+    "pronunciation": "ay hev tu edmit",
+    "type": "İfade",
+    "meaning": "itiraf etmek gerekirse",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I have to admit, you're right.",
+        "meaning": "İtiraf etmek gerekirse, haklısın."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "on the spur of the moment",
+    "pronunciation": "on dı spör ov dı moment",
+    "type": "İfade",
+    "meaning": "aniden",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I decided on the spur of the moment.",
+        "meaning": "Aniden karar verdim."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "decked out",
+    "pronunciation": "dekt aut",
+    "type": "İfade",
+    "meaning": "süslenmek",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She was decked out in her best dress.",
+        "meaning": "En iyi elbisesiyle süslenmişti."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "formal occasion",
+    "pronunciation": "formıl okeyjın",
+    "type": "İsim",
+    "meaning": "resmi etkinlik",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "This is a formal occasion.",
+        "meaning": "Bu resmi bir etkinlik."
+      }
+    ],
+    "date": "30.12.2025"
+  },
+  {
+    "word": "slacks",
+    "pronunciation": "sleks",
+    "type": "İsim",
+    "meaning": "pantolon",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He wore black slacks.",
+        "meaning": "Siyah pantolon giydi."
+      }
+    ],
+    "date": "30.12.2025"
+  }
+]

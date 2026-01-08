@@ -1,0 +1,398 @@
+[
+  {
+    "word": "purchase",
+    "pronunciation": "pörçıs",
+    "type": "Fiil",
+    "meaning": "satın almak",
+    "v2": {
+      "form": "purchased",
+      "pronunciation": "pörçıst"
+    },
+    "v3": {
+      "form": "purchased",
+      "pronunciation": "pörçıst"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I purchased a new car.",
+        "meaning": "Yeni bir araba satın aldım."
+      }
+    ],
+    "date": "02.01.2026"
+  },
+  {
+    "word": "care",
+    "pronunciation": "ker",
+    "type": "Fiil",
+    "meaning": "önemsemek, umursamak",
+    "v2": {
+      "form": "cared",
+      "pronunciation": "kerd"
+    },
+    "v3": {
+      "form": "cared",
+      "pronunciation": "kerd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I don't care.",
+        "meaning": "Umurumda değil."
+      }
+    ],
+    "date": "02.01.2026"
+  },
+  {
+    "word": "build",
+    "pronunciation": "bild",
+    "type": "Fiil",
+    "meaning": "inşa etmek",
+    "v2": {
+      "form": "built",
+      "pronunciation": "bilt"
+    },
+    "v3": {
+      "form": "built",
+      "pronunciation": "bilt"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "They build houses.",
+        "meaning": "Ev inşa ediyorlar."
+      }
+    ],
+    "date": "02.01.2026"
+  },
+  {
+    "word": "built",
+    "pronunciation": "bilt",
+    "type": "Fiil",
+    "meaning": "inşa etti",
+    "v2": {
+      "form": "built",
+      "pronunciation": "bilt"
+    },
+    "v3": {
+      "form": "built",
+      "pronunciation": "bilt"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "They built a bridge.",
+        "meaning": "Bir köprü inşa ettiler."
+      }
+    ],
+    "date": "02.01.2026"
+  },
+  {
+    "word": "send",
+    "pronunciation": "send",
+    "type": "Fiil",
+    "meaning": "göndermek",
+    "v2": {
+      "form": "sent",
+      "pronunciation": "sent"
+    },
+    "v3": {
+      "form": "sent",
+      "pronunciation": "sent"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I'll send you an email.",
+        "meaning": "Sana bir e-posta göndereceğim."
+      }
+    ],
+    "date": "02.01.2026"
+  },
+  {
+    "word": "sent",
+    "pronunciation": "sent",
+    "type": "Fiil",
+    "meaning": "gönderdi",
+    "v2": {
+      "form": "sent",
+      "pronunciation": "sent"
+    },
+    "v3": {
+      "form": "sent",
+      "pronunciation": "sent"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I sent the package yesterday.",
+        "meaning": "Paketi dün gönderdim."
+      }
+    ],
+    "date": "02.01.2026"
+  },
+  {
+    "word": "wanna",
+    "pronunciation": "vana",
+    "type": "İfade",
+    "meaning": "want to",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I wanna go home.",
+        "meaning": "Eve gitmek istiyorum."
+      }
+    ],
+    "date": "02.01.2026"
+  },
+  {
+    "word": "gonna",
+    "pronunciation": "gana",
+    "type": "İfade",
+    "meaning": "go to",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I'm gonna leave now.",
+        "meaning": "Şimdi gideceğim."
+      }
+    ],
+    "date": "02.01.2026"
+  },
+  {
+    "word": "course",
+    "pronunciation": "kors",
+    "type": "İsim",
+    "meaning": "kurs, ders",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I'm taking an English course.",
+        "meaning": "Bir İngilizce kursu alıyorum."
+      }
+    ],
+    "date": "02.01.2026"
+  },
+  {
+    "word": "village",
+    "pronunciation": "vilıc",
+    "type": "İsim",
+    "meaning": "köy",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I live in a small village.",
+        "meaning": "Küçük bir köyde yaşıyorum."
+      }
+    ],
+    "date": "02.01.2026"
+  },
+  {
+    "word": "air",
+    "pronunciation": "er",
+    "type": "İsim",
+    "meaning": "hava",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The air is fresh here.",
+        "meaning": "Burada hava temiz."
+      }
+    ],
+    "date": "02.01.2026"
+  },
+  {
+    "word": "weather",
+    "pronunciation": "vedır",
+    "type": "İsim",
+    "meaning": "hava durumu",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "What's the weather like?",
+        "meaning": "Hava nasıl?"
+      }
+    ],
+    "date": "02.01.2026"
+  },
+  {
+    "word": "relative",
+    "pronunciation": "relıtiv",
+    "type": "İsim",
+    "meaning": "akraba",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She's a relative of mine.",
+        "meaning": "O benim bir akrabam."
+      }
+    ],
+    "date": "02.01.2026"
+  },
+  {
+    "word": "aunt",
+    "pronunciation": "ent",
+    "type": "İsim",
+    "meaning": "teyze, hala",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "My aunt lives in Ankara.",
+        "meaning": "Teyzem Ankara'da yaşıyor."
+      }
+    ],
+    "date": "02.01.2026"
+  },
+  {
+    "word": "domesticated",
+    "pronunciation": "domestikeytıd",
+    "type": "Sıfat",
+    "meaning": "evcil",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Dogs are domesticated animals.",
+        "meaning": "Köpekler evcil hayvanlardır."
+      }
+    ],
+    "date": "02.01.2026"
+  },
+  {
+    "word": "wild",
+    "pronunciation": "vayld",
+    "type": "Sıfat",
+    "meaning": "vahşi, yabani",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Wild animals live in the forest.",
+        "meaning": "Vahşi hayvanlar ormanda yaşar."
+      }
+    ],
+    "date": "02.01.2026"
+  },
+  {
+    "word": "when",
+    "pronunciation": "ven",
+    "type": "Edat",
+    "meaning": "-tığında, -tığı zaman, -ken",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "When I arrived, he was sleeping.",
+        "meaning": "Geldiğimde, o uyuyordu."
+      }
+    ],
+    "date": "02.01.2026"
+  },
+  {
+    "word": "how can I say",
+    "pronunciation": "hav ken ay sey",
+    "type": "İfade",
+    "meaning": "nasıl desem, nasıl söyleyebilirim",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "How can I say this in English?",
+        "meaning": "Bunu İngilizce nasıl söyleyebilirim?"
+      }
+    ],
+    "date": "02.01.2026"
+  }
+]

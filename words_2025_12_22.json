@@ -1,0 +1,314 @@
+[
+  {
+    "word": "literally",
+    "pronunciation": "litırılı",
+    "type": "Zarf",
+    "meaning": "gerçekten",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I literally just arrived.",
+        "meaning": "Gerçekten az önce geldim."
+      }
+    ],
+    "date": "22.12.2025"
+  },
+  {
+    "word": "tie",
+    "pronunciation": "tay",
+    "type": "İsim",
+    "meaning": "bağ, ilişki, bağlantı, kravat",
+    "v2": {
+      "form": "tied",
+      "pronunciation": "tayd"
+    },
+    "v3": {
+      "form": "tied",
+      "pronunciation": "tayd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I need to tie my shoes.",
+        "meaning": "Ayakkabılarımı bağlamam gerekiyor."
+      },
+      {
+        "sentence": "He's wearing a tie.",
+        "meaning": "Kravat takıyor."
+      }
+    ],
+    "date": "22.12.2025"
+  },
+  {
+    "word": "tie",
+    "pronunciation": "tay",
+    "type": "Fiil",
+    "meaning": "bağlamak",
+    "v2": {
+      "form": "tied",
+      "pronunciation": "tayd"
+    },
+    "v3": {
+      "form": "tied",
+      "pronunciation": "tayd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Tie the rope.",
+        "meaning": "İpi bağla."
+      }
+    ],
+    "date": "22.12.2025"
+  },
+  {
+    "word": "dubbing",
+    "pronunciation": "dabın",
+    "type": "İsim",
+    "meaning": "dublaj, seslendirme",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The dubbing is excellent.",
+        "meaning": "Dublaj mükemmel."
+      }
+    ],
+    "date": "22.12.2025"
+  },
+  {
+    "word": "bug",
+    "pronunciation": "bag",
+    "type": "İsim",
+    "meaning": "hata, yazılım hatası",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "There's a bug in the code.",
+        "meaning": "Kodda bir hata var."
+      }
+    ],
+    "date": "22.12.2025"
+  },
+  {
+    "word": "debug",
+    "pronunciation": "dibag",
+    "type": "Fiil",
+    "meaning": "hata ayıklamak, debug yapmak",
+    "v2": {
+      "form": "debugged",
+      "pronunciation": "dibagd"
+    },
+    "v3": {
+      "form": "debugged",
+      "pronunciation": "dibagd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I need to debug this code.",
+        "meaning": "Bu kodu debug etmem gerekiyor."
+      }
+    ],
+    "date": "22.12.2025"
+  },
+  {
+    "word": "deploy",
+    "pronunciation": "diploy",
+    "type": "Fiil",
+    "meaning": "dağıtmak, yayınlamak",
+    "v2": {
+      "form": "deployed",
+      "pronunciation": "diployd"
+    },
+    "v3": {
+      "form": "deployed",
+      "pronunciation": "diployd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We'll deploy the app tomorrow.",
+        "meaning": "Uygulamayı yarın yayınlayacağız."
+      }
+    ],
+    "date": "22.12.2025"
+  },
+  {
+    "word": "merge",
+    "pronunciation": "mörc",
+    "type": "Fiil",
+    "meaning": "birleştirmek, merge etmek",
+    "v2": {
+      "form": "merged",
+      "pronunciation": "mörcd"
+    },
+    "v3": {
+      "form": "merged",
+      "pronunciation": "mörcd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Let's merge these branches.",
+        "meaning": "Bu dalları birleştirelim."
+      }
+    ],
+    "date": "22.12.2025"
+  },
+  {
+    "word": "commit",
+    "pronunciation": "komit",
+    "type": "Fiil",
+    "meaning": "kaydetmek, commit yapmak",
+    "v2": {
+      "form": "committed",
+      "pronunciation": "komitıd"
+    },
+    "v3": {
+      "form": "committed",
+      "pronunciation": "komitıd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Don't forget to commit your changes.",
+        "meaning": "Değişikliklerini commit etmeyi unutma."
+      }
+    ],
+    "date": "22.12.2025"
+  },
+  {
+    "word": "branch",
+    "pronunciation": "brenç",
+    "type": "İsim",
+    "meaning": "dal, şube",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Create a new branch.",
+        "meaning": "Yeni bir dal oluştur."
+      }
+    ],
+    "date": "22.12.2025"
+  },
+  {
+    "word": "pull",
+    "pronunciation": "pul",
+    "type": "Fiil",
+    "meaning": "çekmek",
+    "v2": {
+      "form": "pulled",
+      "pronunciation": "puld"
+    },
+    "v3": {
+      "form": "pulled",
+      "pronunciation": "puld"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Pull the door.",
+        "meaning": "Kapıyı çek."
+      }
+    ],
+    "date": "22.12.2025"
+  },
+  {
+    "word": "push",
+    "pronunciation": "puş",
+    "type": "Fiil",
+    "meaning": "itmek, göndermek",
+    "v2": {
+      "form": "pushed",
+      "pronunciation": "puşt"
+    },
+    "v3": {
+      "form": "pushed",
+      "pronunciation": "puşt"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Push the button.",
+        "meaning": "Butona bas."
+      }
+    ],
+    "date": "22.12.2025"
+  },
+  {
+    "word": "framework",
+    "pronunciation": "freyvörk",
+    "type": "İsim",
+    "meaning": "çerçeve, framework",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I'm learning a new framework.",
+        "meaning": "Yeni bir framework öğreniyorum."
+      }
+    ],
+    "date": "22.12.2025"
+  },
+  {
+    "word": "snippet",
+    "pronunciation": "snipıt",
+    "type": "İsim",
+    "meaning": "kod parçası, parçacık",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Here's a code snippet.",
+        "meaning": "İşte bir kod parçası."
+      }
+    ],
+    "date": "22.12.2025"
+  }
+]

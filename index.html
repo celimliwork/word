@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelime Tablosu</title>
+    <title>Kelime Kartları - Öğrenme Sistemi</title>
     <style>
         * {
             margin: 0;
@@ -15,29 +15,11 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            padding: 20px;
-        }
-
-        @media (max-width: 768px) {
-            body {
                 padding: 10px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            body {
-                padding: 5px;
-            }
-        }
-
-        @media (max-width: 390px) {
-            body {
-                padding: 3px;
-            }
         }
 
         .container {
-            max-width: 1400px;
+            max-width: 500px;
             margin: 0 auto;
             background: white;
             border-radius: 16px;
@@ -45,551 +27,180 @@
             overflow: hidden;
         }
 
-        @media (max-width: 768px) {
-            .container {
-                border-radius: 12px;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                border-radius: 8px;
-            }
-        }
-
-        @media (max-width: 390px) {
-            .container {
-                border-radius: 6px;
-                margin: 0;
-            }
-        }
-
         .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 30px;
+            padding: 20px;
             text-align: center;
         }
 
         .header h1 {
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 600;
             margin-bottom: 10px;
         }
 
-        .header p {
-            opacity: 0.9;
-            font-size: 0.95rem;
-        }
-
-        @media (max-width: 768px) {
-            .header {
-                padding: 20px 15px;
-            }
-
-            .header h1 {
-                font-size: 1.5rem;
-                margin-bottom: 8px;
-            }
-
-            .header p {
-                font-size: 0.85rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .header {
-                padding: 15px 10px;
-            }
-
-            .header h1 {
-                font-size: 1.25rem;
-                margin-bottom: 5px;
-            }
-
-            .header p {
-                font-size: 0.8rem;
-            }
-        }
-
         .controls {
-            padding: 25px 30px;
+            padding: 15px;
             background: #f8f9fa;
             border-bottom: 1px solid #e9ecef;
         }
 
-        .controls h2 {
-            font-size: 1.1rem;
+        .control-group {
             margin-bottom: 15px;
-            color: #333;
-            font-weight: 600;
         }
 
-        @media (max-width: 768px) {
-            .controls {
-                padding: 20px 15px;
-            }
-
-            .controls h2 {
-                font-size: 1rem;
-                margin-bottom: 12px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .controls {
-                padding: 15px 10px;
-            }
-
-            .controls h2 {
-                font-size: 0.95rem;
-                margin-bottom: 10px;
-            }
-        }
-
-        .filter-section {
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #dee2e6;
-        }
-
-        .filter-section:last-child {
+        .control-group:last-child {
             margin-bottom: 0;
-            padding-bottom: 0;
-            border-bottom: none;
         }
 
-        @media (max-width: 768px) {
-            .filter-section {
-                margin-bottom: 15px;
-                padding-bottom: 15px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .filter-section {
-                margin-bottom: 12px;
-                padding-bottom: 12px;
-            }
-        }
-
-        .date-filter {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-
-        .date-filter label {
-            font-size: 0.95rem;
+        .control-group label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 600;
             color: #333;
-            font-weight: 500;
+            margin-bottom: 8px;
         }
 
-        .date-filter select {
-            padding: 10px 15px;
+        .control-group select,
+        .control-group button {
+            width: 100%;
+            padding: 12px;
             border: 2px solid #dee2e6;
             border-radius: 8px;
-            font-size: 0.9rem;
+            font-size: 1rem;
             background: white;
             color: #333;
             cursor: pointer;
             transition: all 0.2s;
-            min-width: 200px;
             font-family: inherit;
         }
 
-        .date-filter select:hover {
+        .control-group select:hover,
+        .control-group button:hover {
             border-color: #667eea;
         }
 
-        .date-filter select:focus {
+        .control-group select:focus,
+        .control-group button:focus {
             outline: none;
             border-color: #667eea;
             box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
         }
 
-        @media (max-width: 768px) {
-            .date-filter {
-                flex-direction: column;
-                align-items: stretch;
-            }
-
-            .date-filter label {
-                margin-bottom: 8px;
-            }
-
-            .date-filter select {
-                min-width: 100%;
-                padding: 12px 15px;
-                font-size: 1rem;
-            }
+        .cards-container {
+            padding: 15px;
+            min-height: 400px;
         }
 
-        @media (max-width: 480px) {
-            .date-filter select {
-                padding: 14px 15px;
-                font-size: 1rem;
-            }
-        }
-
-        .checkbox-group {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 12px;
-        }
-
-        .checkbox-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .checkbox-item input[type="checkbox"] {
-            width: 18px;
-            height: 18px;
+        .word-card {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
             cursor: pointer;
-            accent-color: #667eea;
+            touch-action: manipulation;
+            position: relative;
         }
 
-        .checkbox-item label {
-            cursor: pointer;
-            font-size: 0.9rem;
-            color: #555;
-            user-select: none;
+        .word-card:active {
+            transform: scale(0.98);
         }
 
-        @media (max-width: 768px) {
-            .checkbox-group {
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-                gap: 10px;
-            }
-
-            .checkbox-item {
-                gap: 10px;
-            }
-
-            .checkbox-item input[type="checkbox"] {
-                width: 22px;
-                height: 22px;
-                min-width: 22px;
-            }
-
-            .checkbox-item label {
-                font-size: 0.95rem;
-            }
+        .word-card.revealed {
+            border-color: #667eea;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
         }
 
-        @media (max-width: 480px) {
-            .checkbox-group {
-                grid-template-columns: 1fr;
-                gap: 12px;
-            }
-
-            .checkbox-item {
-                padding: 8px;
-                background: white;
-                border-radius: 6px;
-                border: 1px solid #e9ecef;
-            }
-
-            .checkbox-item input[type="checkbox"] {
-                width: 24px;
-                height: 24px;
-                min-width: 24px;
-            }
-
-            .checkbox-item label {
-                font-size: 1rem;
-            }
+        .card-field {
+            margin-bottom: 12px;
         }
 
-        .table-wrapper {
-            overflow-x: auto;
-            overflow-y: auto;
-            max-height: calc(100vh - 300px);
-            -webkit-overflow-scrolling: touch;
+        .card-field:last-child {
+            margin-bottom: 0;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.9rem;
-            min-width: 600px;
-        }
-
-        @media (max-width: 768px) {
-            .table-wrapper {
-                max-height: calc(100vh - 250px);
-                overflow-y: auto;
-            }
-
-            table {
-                font-size: 0.85rem;
-                min-width: 500px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .table-wrapper {
-                max-height: calc(100vh - 220px);
-                overflow-x: visible;
-                overflow-y: auto;
-                height: auto;
-            }
-
-            table {
-                font-size: 0.8rem;
-                min-width: auto;
-                width: 100%;
-            }
-        }
-
-        @media (max-width: 390px) {
-            .table-wrapper {
-                max-height: calc(100vh - 200px);
-                overflow-x: visible;
-                overflow-y: auto;
-                height: auto;
-            }
-
-            table {
+        .field-label {
                 font-size: 0.75rem;
-                min-width: auto;
-                width: 100%;
-                table-layout: auto;
-            }
-
-            table td,
-            table th {
-                width: auto;
-            }
-        }
-
-        thead {
-            position: sticky;
-            top: 0;
-            background: #667eea;
-            color: white;
-            z-index: 10;
-        }
-
-        th {
-            padding: 15px 12px;
-            text-align: left;
             font-weight: 600;
-            font-size: 0.85rem;
+            color: #6c757d;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            white-space: nowrap;
+            margin-bottom: 4px;
         }
 
-        tbody tr {
-            border-bottom: 1px solid #e9ecef;
-            transition: background-color 0.2s;
-        }
-
-        tbody tr:hover {
-            background-color: #f8f9fa;
-        }
-
-        tbody tr:nth-child(even) {
-            background-color: #fafbfc;
-        }
-
-        tbody tr:nth-child(even):hover {
-            background-color: #f0f1f3;
-        }
-
-        td {
-            padding: 12px;
-            color: #333;
-            vertical-align: top;
-        }
-
-        @media (max-width: 768px) {
-            th {
-                padding: 12px 8px;
-                font-size: 0.75rem;
-            }
-
-            td {
-                padding: 10px 8px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            th {
-                padding: 10px 6px;
-                font-size: 0.7rem;
-                letter-spacing: 0.3px;
-            }
-
-            td {
-                padding: 8px 6px;
-            }
-        }
-
-        @media (max-width: 390px) {
-            th {
-                padding: 8px 4px;
-                font-size: 0.65rem;
-                letter-spacing: 0.2px;
-            }
-
-            td {
-                padding: 6px 4px;
-            }
-        }
-
-        .word-container {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-        }
-
-        .word {
-            font-weight: 600;
-            color: #667eea;
+        .field-value {
             font-size: 1rem;
+            color: #333;
             word-break: break-word;
+            line-height: 1.5;
         }
 
-        .pronunciation {
-            color: #6c757d;
-            font-style: italic;
-            font-size: 0.85rem;
-            margin-top: 2px;
-            word-break: break-word;
-        }
-
-        .word-meaning {
-            color: #495057;
-            font-size: 0.9rem;
-            margin-top: 6px;
-            padding-top: 6px;
-            border-top: 1px solid #e9ecef;
-            word-break: break-word;
-        }
-
-        .verb-form-inline {
-            font-size: 0.85rem;
-            margin-top: 4px;
-            color: #495057;
-            word-break: break-word;
-        }
-
-        .verb-label {
-            font-weight: 600;
+        .field-value.hidden {
             color: #667eea;
-            margin-right: 4px;
+            font-weight: 600;
+            font-style: italic;
+            opacity: 0.7;
         }
 
-        .verb-pronunciation {
+        .word-main {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+            padding-right: 80px;
+        }
+
+        .word-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #667eea;
+        }
+
+        .sound-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: all 0.2s;
+            flex-shrink: 0;
+        }
+
+        .sound-btn:hover {
+            background: #5568d3;
+            transform: scale(1.1);
+        }
+
+        .sound-btn:active {
+            transform: scale(0.95);
+            }
+
+            .pronunciation {
+                font-size: 0.9rem;
             color: #6c757d;
             font-style: italic;
-            font-size: 0.8rem;
         }
 
-        td.word {
-            max-width: 200px;
-        }
-
-        @media (max-width: 480px) {
-            td.word {
-                max-width: 150px;
-            }
-
-            .word-meaning {
-                font-size: 0.85rem;
-                margin-top: 4px;
-                padding-top: 4px;
-            }
-
-            .verb-form-inline {
-                font-size: 0.8rem;
-            }
-
-            .verb-pronunciation {
-                font-size: 0.75rem;
-            }
-        }
-
-        @media (max-width: 390px) {
-            td.word {
-                max-width: 120px;
-                min-width: 100px;
-            }
-
-            .word-meaning {
-                font-size: 0.8rem;
-                margin-top: 3px;
-                padding-top: 3px;
-            }
-
-            .verb-form-inline {
-                font-size: 0.75rem;
-            }
-
-            .verb-label {
-                font-size: 0.7rem;
-            }
-
-            .verb-pronunciation {
-                font-size: 0.7rem;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .word {
-                font-size: 0.95rem;
-            }
-
-            .pronunciation {
-                font-size: 0.8rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .word {
-                font-size: 0.9rem;
-            }
-
-            .pronunciation {
-                font-size: 0.75rem;
-            }
-        }
-
-        @media (max-width: 390px) {
-            .word {
-                font-size: 0.85rem;
-            }
-
-            .pronunciation {
-                font-size: 0.7rem;
-            }
-
-            .word-container {
-                gap: 4px;
-            }
-        }
-
-        .type {
+        .type-badge {
             display: inline-block;
             padding: 4px 10px;
             border-radius: 12px;
             font-size: 0.75rem;
             font-weight: 600;
             text-transform: uppercase;
-        }
-
-        @media (max-width: 480px) {
-            .type {
-                padding: 3px 8px;
-                font-size: 0.7rem;
-                border-radius: 8px;
-            }
+            position: absolute;
+            top: 12px;
+            right: 12px;
         }
 
         .type-Fiil {
@@ -622,127 +233,22 @@
             color: #f57f17;
         }
 
-        .type-Yardımcı {
-            background: #e0f2f1;
-            color: #00695c;
-        }
-
         .type-İfade {
             background: #ede7f6;
             color: #512da8;
         }
 
-        .examples {
-            max-width: 400px;
-        }
-
-        .example-item {
-            margin-bottom: 8px;
-            padding: 8px;
-            background: #f8f9fa;
-            border-radius: 6px;
-            border-left: 3px solid #667eea;
-        }
-
-        .example-sentence {
-            font-weight: 500;
-            color: #333;
-            margin-bottom: 4px;
-            word-break: break-word;
-        }
-
-        .example-meaning {
-            color: #6c757d;
-            font-size: 0.85rem;
-            font-style: italic;
-            word-break: break-word;
-        }
-
-        td.examples {
-            max-width: 250px;
-        }
-
-        @media (max-width: 768px) {
-            .examples {
-                max-width: 300px;
-            }
-
-            td.examples {
-                max-width: 200px;
-            }
-
-            .example-item {
-                padding: 6px;
-                margin-bottom: 6px;
-            }
-
-            .example-sentence {
-                font-size: 0.9rem;
-            }
-
-            .example-meaning {
-                font-size: 0.8rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .examples {
-                max-width: 250px;
-            }
-
-            td.examples {
-                max-width: 180px;
-            }
-
-            .example-item {
-                padding: 6px;
-                margin-bottom: 6px;
-                border-left-width: 2px;
-            }
-
-            .example-sentence {
-                font-size: 0.85rem;
-            }
-
-            .example-meaning {
-                font-size: 0.75rem;
-            }
-        }
-
-        @media (max-width: 390px) {
-            .examples {
-                max-width: none;
-            }
-
-            td.examples {
-                max-width: 250px;
-                min-width: 200px;
-            }
-
-            .example-item {
-                padding: 5px;
-                margin-bottom: 5px;
-                border-left-width: 2px;
-            }
-
-            .example-sentence {
-                font-size: 0.8rem;
-                line-height: 1.3;
-            }
-
-            .example-meaning {
-                font-size: 0.7rem;
-                line-height: 1.3;
-            }
-        }
-
-        .verb-form {
+        .verb-forms {
             display: flex;
-            flex-direction: column;
-            gap: 4px;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 8px;
         }
 
         .verb-form-item {
+            background: #f8f9fa;
+            padding: 8px 12px;
+            border-radius: 8px;
             font-size: 0.85rem;
         }
 
@@ -752,41 +258,132 @@
             margin-right: 5px;
         }
 
-        @media (max-width: 480px) {
-            .verb-form-item {
-                font-size: 0.8rem;
-            }
-
-            .verb-form-label {
-                font-size: 0.75rem;
-            }
+        .examples-list {
+            margin-top: 12px;
         }
 
-        .hidden {
-            display: none;
+        .example-item {
+            background: #f8f9fa;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border-left: 3px solid #667eea;
+        }
+
+        .example-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .example-sentence {
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .example-meaning {
+            color: #6c757d;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        .pagination {
+            padding: 15px;
+            background: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .pagination-info {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .pagination-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .pagination-btn {
+            padding: 8px 16px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            background: white;
+            color: #333;
+            cursor: pointer;
+                font-size: 0.9rem;
+            transition: all 0.2s;
+            font-family: inherit;
+        }
+
+        .pagination-btn:hover:not(:disabled) {
+            border-color: #667eea;
+            background: #667eea;
+            color: white;
+        }
+
+        .pagination-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
         }
 
         .stats {
-            padding: 15px 30px;
+            padding: 10px 15px;
             background: #f8f9fa;
             border-top: 1px solid #e9ecef;
             text-align: center;
             color: #6c757d;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 768px) {
-            .stats {
-                padding: 12px 15px;
                 font-size: 0.85rem;
             }
+
+        .empty-state {
+            text-align: center;
+            padding: 40px 20px;
+            color: #6c757d;
         }
 
-        @media (max-width: 480px) {
-            .stats {
-                padding: 10px;
-                font-size: 0.8rem;
-                line-height: 1.4;
+        .empty-state-icon {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .empty-state-text {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 390px) {
+            body {
+                padding: 5px;
+            }
+
+            .container {
+                border-radius: 12px;
+            }
+
+            .header {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 1.25rem;
+            }
+
+            .word-card {
+                padding: 15px;
+            }
+
+            .word-text {
+                font-size: 1.3rem;
+            }
+
+            .field-value {
+                font-size: 0.95rem;
             }
         }
     </style>
@@ -794,285 +391,510 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>📚 Kelime Tablosu</h1>
-            <p>Görmek istediğiniz kolonları seçin</p>
+            <h1>📚 Kelime Kartları</h1>
+            <p>İngilizce Kelime Öğrenme Sistemi</p>
         </div>
 
         <div class="controls">
-            <div class="filter-section">
-                <h2>Tarih Filtresi</h2>
-                <div class="date-filter">
-                    <label for="dateFilter">Tarih Seçin:</label>
+            <div class="control-group">
+                <label for="modeSelect">Öğrenme Modu</label>
+                <select id="modeSelect">
+                    <option value="full">Tam Öğrenme Modu</option>
+                    <option value="en-tr">İngilizce → Türkçe</option>
+                    <option value="tr-en">Türkçe → İngilizce</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="dateFilter">Tarih Filtresi</label>
                     <select id="dateFilter">
                         <option value="all">Tümünü Göster</option>
+                    <option value="today">Bugün Eklenenler</option>
                     </select>
                 </div>
             </div>
-            <div class="filter-section">
-                <h2>Kolon Seçimi</h2>
-                <div class="checkbox-group" id="columnControls"></div>
-            </div>
+
+        <div class="cards-container" id="cardsContainer">
+            <!-- Kartlar buraya eklenecek -->
         </div>
 
-        <div class="table-wrapper">
-            <table id="wordsTable">
-                <thead id="tableHead"></thead>
-                <tbody id="tableBody"></tbody>
-            </table>
+        <div class="pagination" id="pagination">
+            <div class="pagination-info" id="paginationInfo"></div>
+            <div class="pagination-buttons">
+                <button class="pagination-btn" id="prevBtn">Önceki</button>
+                <button class="pagination-btn" id="nextBtn">Sonraki</button>
+            </div>
         </div>
 
         <div class="stats" id="stats"></div>
     </div>
 
     <script>
+        // ==================== GLOBAL STATE ====================
         let wordsData = [];
         let filteredWordsData = [];
-        const columnDefinitions = {
-            word: { label: 'Kelime', default: true },
-            pronunciation: { label: 'Okunuş', default: false },
-            type: { label: 'Tür', default: false },
-            meaning: { label: 'Anlam', default: false },
-            v2: { label: 'V2 Formu', default: false },
-            v3: { label: 'V3 Formu', default: false },
-            gerundInfinitive: { label: 'Gerund/Infinitive', default: false },
-            examples: { label: 'Örnek Cümleler', default: true },
-            date: { label: 'Tarih', default: false }
-        };
-
-        let visibleColumns = {};
+        let currentPage = 1;
+        const CARDS_PER_PAGE = 20;
+        let currentMode = 'full';
         let selectedDate = 'all';
+        let longPressTimer = null;
+        const LONG_PRESS_DURATION = 500;
+        const STORAGE_KEY = 'wordCardAppState';
 
-        // JSON dosyasını yükle
+        // ==================== LOCALSTORAGE ====================
+        function saveState() {
+            const state = {
+                currentMode: currentMode,
+                selectedDate: selectedDate,
+                currentPage: currentPage
+            };
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+            } catch (error) {
+                console.error('localStorage kayıt hatası:', error);
+            }
+        }
+
+        function loadState() {
+            try {
+                const savedState = localStorage.getItem(STORAGE_KEY);
+                if (savedState) {
+                    const state = JSON.parse(savedState);
+                    if (state.currentMode) currentMode = state.currentMode;
+                    if (state.selectedDate) selectedDate = state.selectedDate;
+                    if (state.currentPage) currentPage = state.currentPage;
+                }
+            } catch (error) {
+                console.error('localStorage yükleme hatası:', error);
+            }
+        }
+
+        // ==================== DATA LOADING ====================
         async function loadWords() {
             try {
                 const response = await fetch('words.json');
                 wordsData = await response.json();
-                filteredWordsData = [...wordsData];
+                loadState(); // Kaydedilmiş durumu yükle
                 initializeDateFilter();
-                initializeColumns();
-                renderTable();
+                applyFilters();
+                renderCards();
                 updateStats();
             } catch (error) {
                 console.error('Dosya yüklenirken hata:', error);
-                document.getElementById('tableBody').innerHTML = 
-                    '<tr><td colspan="10" style="text-align: center; padding: 20px; color: #dc3545;">Dosya yüklenirken bir hata oluştu. words.json dosyasının mevcut olduğundan emin olun.</td></tr>';
+                document.getElementById('cardsContainer').innerHTML = 
+                    '<div class="empty-state"><div class="empty-state-icon">❌</div><div class="empty-state-text">Dosya yüklenirken bir hata oluştu.</div></div>';
             }
         }
 
-        // Tarih filtresini başlat
+        // ==================== DATE FILTER ====================
         function initializeDateFilter() {
             const dateFilter = document.getElementById('dateFilter');
             const uniqueDates = [...new Set(wordsData.map(word => word.date).filter(date => date))].sort();
             
+            // Bugünün tarihini al (DD.MM.YYYY formatında)
+            const today = new Date();
+            const todayStr = `${String(today.getDate()).padStart(2, '0')}.${String(today.getMonth() + 1).padStart(2, '0')}.${today.getFullYear()}`;
+            
+            // Bugün seçeneğini ekle
+            const todayOption = document.createElement('option');
+            todayOption.value = 'today';
+            todayOption.textContent = `Bugün (${todayStr})`;
+            dateFilter.appendChild(todayOption);
+            
+            // Diğer tarihleri ekle
             uniqueDates.forEach(date => {
+                if (date !== todayStr) {
                 const option = document.createElement('option');
                 option.value = date;
                 option.textContent = date;
                 dateFilter.appendChild(option);
+                }
             });
+
+            // Kaydedilmiş değeri seç
+            dateFilter.value = selectedDate;
 
             dateFilter.addEventListener('change', (e) => {
                 selectedDate = e.target.value;
-                filterByDate();
-                renderTable();
+                currentPage = 1;
+                applyFilters();
+                renderCards();
                 updateStats();
+                saveState(); // Durumu kaydet
             });
         }
 
-        // Tarihe göre filtrele
-        function filterByDate() {
-            if (selectedDate === 'all') {
+        // ==================== MODE SELECTION ====================
+        function initializeModeSelect() {
+            const modeSelect = document.getElementById('modeSelect');
+            
+            // Kaydedilmiş değeri seç
+            modeSelect.value = currentMode;
+            
+            modeSelect.addEventListener('change', (e) => {
+                currentMode = e.target.value;
+                currentPage = 1;
+                renderCards();
+                saveState(); // Durumu kaydet
+            });
+        }
+
+        // ==================== FILTERING ====================
+        function applyFilters() {
                 filteredWordsData = [...wordsData];
-            } else {
-                filteredWordsData = wordsData.filter(word => word.date === selectedDate);
+            
+            if (selectedDate === 'today') {
+                const today = new Date();
+                const todayStr = `${String(today.getDate()).padStart(2, '0')}.${String(today.getMonth() + 1).padStart(2, '0')}.${today.getFullYear()}`;
+                filteredWordsData = filteredWordsData.filter(word => word.date === todayStr);
+            } else if (selectedDate !== 'all') {
+                filteredWordsData = filteredWordsData.filter(word => word.date === selectedDate);
+            }
+            
+            // Sayfa numarasının geçerli olup olmadığını kontrol et
+            const totalPages = Math.ceil(filteredWordsData.length / CARDS_PER_PAGE);
+            if (currentPage > totalPages && totalPages > 0) {
+                currentPage = totalPages;
+            } else if (currentPage < 1) {
+                currentPage = 1;
             }
         }
 
-        // Kolonları başlat
-        function initializeColumns() {
-            Object.keys(columnDefinitions).forEach(key => {
-                visibleColumns[key] = columnDefinitions[key].default;
-            });
-            renderColumnControls();
+        // ==================== CARD RENDERING ====================
+        function renderCards() {
+            const container = document.getElementById('cardsContainer');
+            const startIndex = (currentPage - 1) * CARDS_PER_PAGE;
+            const endIndex = startIndex + CARDS_PER_PAGE;
+            const pageData = filteredWordsData.slice(startIndex, endIndex);
+
+            if (pageData.length === 0) {
+                container.innerHTML = '<div class="empty-state"><div class="empty-state-icon">📭</div><div class="empty-state-text">Bu filtreye uygun kelime bulunamadı.</div></div>';
+                return;
+            }
+
+            container.innerHTML = pageData.map(word => createCardHTML(word)).join('');
+            
+            // Event listener'ları ekle
+            attachCardListeners();
+            updatePagination();
         }
 
-        // Kolon kontrol checkbox'larını oluştur
-        function renderColumnControls() {
-            const controlsDiv = document.getElementById('columnControls');
-            controlsDiv.innerHTML = '';
+        function createCardHTML(word) {
+            const cardId = `card-${word.word.replace(/\s+/g, '-')}`;
+            const typeClass = word.type ? word.type.replace(/\s+/g, '').replace(/[^a-zA-Z0-9]/g, '') : '';
+            
+            let cardHTML = `<div class="word-card" id="${cardId}" data-word="${word.word}">`;
+            
+            // Moda göre içerik
+            if (currentMode === 'full') {
+                cardHTML += createFullModeHTML(word, typeClass);
+            } else if (currentMode === 'en-tr') {
+                cardHTML += createEnTrModeHTML(word, typeClass);
+            } else if (currentMode === 'tr-en') {
+                cardHTML += createTrEnModeHTML(word, typeClass);
+            }
+            
+            cardHTML += '</div>';
+            return cardHTML;
+        }
 
-            Object.keys(columnDefinitions).forEach(key => {
-                const item = document.createElement('div');
-                item.className = 'checkbox-item';
+        function createFullModeHTML(word, typeClass) {
+            let html = `
+                ${word.type ? `<span class="type-badge type-${typeClass}">${word.type}</span>` : ''}
+                <div class="card-field">
+                    <div class="word-main">
+                        <span class="word-text">${word.word || '-'}</span>
+                        ${word.word ? `<button class="sound-btn" onclick="speakText('${word.word.replace(/'/g, "\\'")}')" title="Seslendir">🔊</button>` : ''}
+                    </div>
+                    ${word.pronunciation ? `<div class="pronunciation">${word.pronunciation}</div>` : ''}
+                </div>
+                
+                ${word.meaning ? `<div class="card-field">
+                    <div class="field-value">${word.meaning}</div>
+                </div>` : ''}
+            `;
 
-                const checkbox = document.createElement('input');
-                checkbox.type = 'checkbox';
-                checkbox.id = `col-${key}`;
-                checkbox.checked = visibleColumns[key];
-                checkbox.addEventListener('change', () => {
-                    visibleColumns[key] = checkbox.checked;
-                    renderTable();
+            // Fiil formları
+            if (word.v2?.form || word.v3?.form || word.gerundInfinitive) {
+                html += '<div class="card-field"><div class="verb-forms">';
+                if (word.v2?.form) {
+                    html += `<div class="verb-form-item"><span class="verb-form-label">V2:</span>${word.v2.form}${word.v2.pronunciation ? ` <span style="color: #6c757d; font-style: italic;">(${word.v2.pronunciation})</span>` : ''}</div>`;
+                }
+                if (word.v3?.form) {
+                    html += `<div class="verb-form-item"><span class="verb-form-label">V3:</span>${word.v3.form}${word.v3.pronunciation ? ` <span style="color: #6c757d; font-style: italic;">(${word.v3.pronunciation})</span>` : ''}</div>`;
+                }
+                if (word.gerundInfinitive) {
+                    html += `<div class="verb-form-item"><span class="verb-form-label">Gerund/Infinitive:</span>${word.gerundInfinitive}</div>`;
+                }
+                html += '</div></div>';
+            }
+
+            // Örnek cümleler
+            if (word.examples && word.examples.length > 0) {
+                html += '<div class="card-field"><div class="examples-list">';
+                word.examples.forEach(ex => {
+                    html += `
+                        <div class="example-item">
+                            <div class="example-sentence">
+                                ${ex.sentence || '-'}
+                                ${ex.sentence ? `<button class="sound-btn" style="width: 28px; height: 28px; font-size: 1rem; margin-left: auto;" onclick="speakText('${(ex.sentence || '').replace(/'/g, "\\'")}')" title="Seslendir">🔊</button>` : ''}
+                            </div>
+                            <div class="example-meaning">${ex.meaning || '-'}</div>
+                        </div>
+                    `;
+                });
+                html += '</div></div>';
+            }
+
+            html += `<div class="card-field"><div class="field-label">Tarih</div><div class="field-value">${word.date || '-'}</div></div>`;
+            
+            return html;
+        }
+
+        function createEnTrModeHTML(word, typeClass) {
+            let html = `
+                ${word.type ? `<span class="type-badge type-${typeClass}">${word.type}</span>` : ''}
+                <div class="card-field">
+                    <div class="word-main">
+                        <span class="word-text">${word.word || '-'}</span>
+                        ${word.word ? `<button class="sound-btn" onclick="speakText('${word.word.replace(/'/g, "\\'")}')" title="Seslendir">🔊</button>` : ''}
+                    </div>
+                    ${word.pronunciation ? `<div class="pronunciation">${word.pronunciation}</div>` : ''}
+                </div>
+                
+                <div class="card-field hidden-field" data-reveal="tr">
+                    <div class="field-value hidden">Göster</div>
+                    <div class="field-value" style="display: none;">${word.meaning || '-'}</div>
+                </div>
+            `;
+
+            // Örnek cümleler
+            if (word.examples && word.examples.length > 0) {
+                html += '<div class="card-field"><div class="examples-list">';
+                word.examples.forEach(ex => {
+                    html += `
+                        <div class="example-item">
+                            <div class="example-sentence">
+                                ${ex.sentence || '-'}
+                                ${ex.sentence ? `<button class="sound-btn" style="width: 28px; height: 28px; font-size: 1rem; margin-left: auto;" onclick="speakText('${(ex.sentence || '').replace(/'/g, "\\'")}')" title="Seslendir">🔊</button>` : ''}
+                            </div>
+                            <div class="example-meaning hidden-field" data-reveal="tr">
+                                <span class="field-value hidden">Görmek için tıklayın</span>
+                                <span class="field-value" style="display: none;">${ex.meaning || '-'}</span>
+                            </div>
+                        </div>
+                    `;
+                });
+                html += '</div></div>';
+            }
+            
+            return html;
+        }
+
+        function createTrEnModeHTML(word, typeClass) {
+            let html = `
+                ${word.type ? `<span class="type-badge type-${typeClass} hidden-field" data-reveal="en" style="display: none;">${word.type}</span>` : ''}
+                <div class="card-field hidden-field" data-reveal="en">
+                    <div class="word-main">
+                        <span class="word-text hidden">Göster</span>
+                        <span class="word-text" style="display: none;">${word.word || '-'}</span>
+                        ${word.word ? `<button class="sound-btn" style="display: none;" onclick="speakText('${word.word.replace(/'/g, "\\'")}')" title="Seslendir">🔊</button>` : ''}
+                    </div>
+                    <div class="pronunciation" style="display: none;">${word.pronunciation || ''}</div>
+                </div>
+                
+                <div class="card-field">
+                    <div class="field-value">${word.meaning || '-'}</div>
+                </div>
+            `;
+
+            // Örnek cümleler
+            if (word.examples && word.examples.length > 0) {
+                html += '<div class="card-field"><div class="examples-list">';
+                word.examples.forEach(ex => {
+                    html += `
+                        <div class="example-item">
+                            <div class="example-sentence hidden-field" data-reveal="en">
+                                <span class="hidden" style="display: inline;">Görmek için tıklayın</span>
+                                <span class="hidden-content" style="display: none;">${ex.sentence || '-'}</span>
+                                ${ex.sentence ? `<button class="sound-btn hidden-content" style="width: 28px; height: 28px; font-size: 1rem; margin-left: auto; display: none;" onclick="speakText('${(ex.sentence || '').replace(/'/g, "\\'")}')" title="Seslendir">🔊</button>` : ''}
+                            </div>
+                            <div class="example-meaning">${ex.meaning || '-'}</div>
+                        </div>
+                    `;
+                });
+                html += '</div></div>';
+            }
+            
+            return html;
+        }
+
+        // ==================== CARD INTERACTIONS ====================
+        function attachCardListeners() {
+            const cards = document.querySelectorAll('.word-card');
+            cards.forEach(card => {
+                // Tap/Click
+                card.addEventListener('click', (e) => {
+                    if (e.target.classList.contains('sound-btn')) return;
+                    revealHiddenFields(card);
                 });
 
-                const label = document.createElement('label');
-                label.htmlFor = `col-${key}`;
-                label.textContent = columnDefinitions[key].label;
+                // Long press
+                card.addEventListener('touchstart', (e) => {
+                    if (e.target.classList.contains('sound-btn')) return;
+                    longPressTimer = setTimeout(() => {
+                        revealHiddenFields(card);
+                    }, LONG_PRESS_DURATION);
+                });
 
-                item.appendChild(checkbox);
-                item.appendChild(label);
-                controlsDiv.appendChild(item);
+                card.addEventListener('touchend', () => {
+                    if (longPressTimer) {
+                        clearTimeout(longPressTimer);
+                        longPressTimer = null;
+                    }
+                });
+
+                card.addEventListener('touchcancel', () => {
+                    if (longPressTimer) {
+                        clearTimeout(longPressTimer);
+                        longPressTimer = null;
+                    }
+                });
+
+                // Mouse long press (desktop)
+                card.addEventListener('mousedown', (e) => {
+                    if (e.target.classList.contains('sound-btn')) return;
+                    longPressTimer = setTimeout(() => {
+                        revealHiddenFields(card);
+                    }, LONG_PRESS_DURATION);
+                });
+
+                card.addEventListener('mouseup', () => {
+                    if (longPressTimer) {
+                        clearTimeout(longPressTimer);
+                        longPressTimer = null;
+                    }
+                });
+
+                card.addEventListener('mouseleave', () => {
+                    if (longPressTimer) {
+                        clearTimeout(longPressTimer);
+                        longPressTimer = null;
+                    }
+                });
             });
         }
 
-        // Tabloyu oluştur
-        function renderTable() {
-            const thead = document.getElementById('tableHead');
-            const tbody = document.getElementById('tableBody');
-
-            // Başlıkları oluştur
-            thead.innerHTML = '';
-            const headerRow = document.createElement('tr');
-            Object.keys(columnDefinitions).forEach(key => {
-                if (visibleColumns[key]) {
-                    const th = document.createElement('th');
-                    th.textContent = columnDefinitions[key].label;
-                    th.dataset.column = key;
-                    headerRow.appendChild(th);
+        function revealHiddenFields(card) {
+            card.classList.add('revealed');
+            const hiddenFields = card.querySelectorAll('.hidden-field');
+            hiddenFields.forEach(field => {
+                // Gizli placeholder'ları gizle
+                const hiddenElements = field.querySelectorAll('.hidden');
+                hiddenElements.forEach(el => el.style.display = 'none');
+                
+                // Gizli içerikleri göster (hidden-content class'ı veya display: none olanlar)
+                const hiddenContent = field.querySelectorAll('.hidden-content');
+                hiddenContent.forEach(el => {
+                    el.style.display = '';
+                });
+                
+                // Tüm gizli elementleri bul ve göster (display: none olanlar, hidden class'ı olmayanlar)
+                const allElements = field.querySelectorAll('*');
+                allElements.forEach(el => {
+                    if (el.style.display === 'none' && !el.classList.contains('hidden')) {
+                        // Eğer button ise inline-flex, span ise inline, diğerleri için uygun display
+                        if (el.classList.contains('sound-btn')) {
+                            el.style.display = 'flex';
+                        } else if (el.tagName === 'SPAN' || el.tagName === 'DIV') {
+                            el.style.display = '';
+                        } else {
+                            el.style.display = '';
+                        }
+                    }
+                });
+                
+                // Field'ın kendisi gizliyse göster
+                if (field.style.display === 'none') {
+                    field.style.display = '';
                 }
             });
-            thead.appendChild(headerRow);
+        }
 
-            // Satırları oluştur
-            tbody.innerHTML = '';
-            if (filteredWordsData.length === 0) {
-                const row = document.createElement('tr');
-                const td = document.createElement('td');
-                td.colSpan = Object.keys(visibleColumns).filter(k => visibleColumns[k]).length;
-                td.style.textAlign = 'center';
-                td.style.padding = '30px';
-                td.style.color = '#6c757d';
-                td.textContent = 'Bu tarihe ait kelime bulunamadı.';
-                row.appendChild(td);
-                tbody.appendChild(row);
+        // ==================== SPEECH API ====================
+        function speakText(text) {
+            if (!text || text === '-') return;
+            
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'en-US';
+                utterance.rate = 0.9;
+                utterance.pitch = 1;
+                window.speechSynthesis.speak(utterance);
             } else {
-                filteredWordsData.forEach(word => {
-                    const row = document.createElement('tr');
-                    Object.keys(columnDefinitions).forEach(key => {
-                        if (visibleColumns[key]) {
-                            const td = document.createElement('td');
-                            td.className = key;
-                            td.innerHTML = formatCellValue(word, key);
-                            row.appendChild(td);
-                        }
-                    });
-                    tbody.appendChild(row);
-                });
+                alert('Tarayıcınız seslendirme özelliğini desteklemiyor.');
             }
         }
 
-        // Hücre değerini formatla
-        function formatCellValue(word, key) {
-            switch (key) {
-                case 'word':
-                    const pronunciationHtml = word.pronunciation 
-                        ? `<div class="pronunciation">${word.pronunciation}</div>` 
-                        : '';
-                    const meaningHtml = word.meaning 
-                        ? `<div class="word-meaning">${word.meaning}</div>` 
-                        : '';
-                    
-                    let v2Html = '';
-                    if (word.v2 && word.v2.form) {
-                        const v2Pron = word.v2.pronunciation ? ` <span class="verb-pronunciation">(${word.v2.pronunciation})</span>` : '';
-                        v2Html = `<div class="verb-form-inline"><span class="verb-label">V2:</span> ${word.v2.form}${v2Pron}</div>`;
-                    }
-                    
-                    let v3Html = '';
-                    if (word.v3 && word.v3.form) {
-                        const v3Pron = word.v3.pronunciation ? ` <span class="verb-pronunciation">(${word.v3.pronunciation})</span>` : '';
-                        v3Html = `<div class="verb-form-inline"><span class="verb-label">V3:</span> ${word.v3.form}${v3Pron}</div>`;
-                    }
-                    
-                    return `<div class="word-container">
-                        <span class="word">${word.word || '-'}</span>
-                        ${pronunciationHtml}
-                        ${meaningHtml}
-                        ${v2Html}
-                        ${v3Html}
-                    </div>`;
-                
-                case 'pronunciation':
-                    return `<span class="pronunciation">${word.pronunciation || '-'}</span>`;
-                
-                case 'type':
-                    const typeClass = word.type ? word.type.replace(/\s+/g, '').replace(/[^a-zA-Z0-9]/g, '') : '';
-                    return `<span class="type type-${typeClass}">${word.type || '-'}</span>`;
-                
-                case 'meaning':
-                    return word.meaning || '-';
-                
-                case 'v2':
-                    if (word.v2 && word.v2.form) {
-                        return `<div class="verb-form">
-                            <div class="verb-form-item"><span class="verb-form-label">Form:</span>${word.v2.form}</div>
-                            ${word.v2.pronunciation ? `<div class="verb-form-item"><span class="verb-form-label">Okunuş:</span>${word.v2.pronunciation}</div>` : ''}
-                        </div>`;
-                    }
-                    return '-';
-                
-                case 'v3':
-                    if (word.v3 && word.v3.form) {
-                        return `<div class="verb-form">
-                            <div class="verb-form-item"><span class="verb-form-label">Form:</span>${word.v3.form}</div>
-                            ${word.v3.pronunciation ? `<div class="verb-form-item"><span class="verb-form-label">Okunuş:</span>${word.v3.pronunciation}</div>` : ''}
-                        </div>`;
-                    }
-                    return '-';
-                
-                case 'gerundInfinitive':
-                    return word.gerundInfinitive || '-';
-                
-                case 'examples':
-                    if (word.examples && word.examples.length > 0) {
-                        return `<div class="examples">
-                            ${word.examples.map(ex => `
-                                <div class="example-item">
-                                    <div class="example-sentence">${ex.sentence || ''}</div>
-                                    <div class="example-meaning">${ex.meaning || ''}</div>
-                                </div>
-                            `).join('')}
-                        </div>`;
-                    }
-                    return '-';
-                
-                case 'date':
-                    return word.date || '-';
-                
-                default:
-                    return '-';
-            }
+        // ==================== PAGINATION ====================
+        function updatePagination() {
+            const totalPages = Math.ceil(filteredWordsData.length / CARDS_PER_PAGE);
+            const startIndex = (currentPage - 1) * CARDS_PER_PAGE + 1;
+            const endIndex = Math.min(currentPage * CARDS_PER_PAGE, filteredWordsData.length);
+            
+            document.getElementById('paginationInfo').textContent = 
+                `Sayfa ${currentPage} / ${totalPages} (${startIndex}-${endIndex} / ${filteredWordsData.length})`;
+            
+            document.getElementById('prevBtn').disabled = currentPage === 1;
+            document.getElementById('nextBtn').disabled = currentPage >= totalPages;
         }
 
-        // İstatistikleri güncelle
+        function initializePagination() {
+            document.getElementById('prevBtn').addEventListener('click', () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    renderCards();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    saveState(); // Durumu kaydet
+                }
+            });
+
+            document.getElementById('nextBtn').addEventListener('click', () => {
+                const totalPages = Math.ceil(filteredWordsData.length / CARDS_PER_PAGE);
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    renderCards();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    saveState(); // Durumu kaydet
+                }
+            });
+        }
+
+        // ==================== STATS ====================
         function updateStats() {
             const statsDiv = document.getElementById('stats');
             const totalWords = wordsData.length;
             const filteredCount = filteredWordsData.length;
-            const visibleCount = Object.values(visibleColumns).filter(v => v).length;
             
             let statsText = `Toplam ${totalWords} kelime`;
             if (selectedDate !== 'all') {
-                statsText += ` | Filtrelenmiş: ${filteredCount} kelime (${selectedDate})`;
+                statsText += ` | Filtrelenmiş: ${filteredCount} kelime`;
             } else {
                 statsText += ` | Gösterilen: ${filteredCount} kelime`;
             }
-            statsText += ` | ${visibleCount} kolon görünüyor`;
             
             statsDiv.textContent = statsText;
         }
 
-        // Sayfa yüklendiğinde
+        // ==================== INITIALIZATION ====================
+        function init() {
+            initializeModeSelect();
+            initializePagination();
         loadWords();
+        }
+
+        // Sayfa yüklendiğinde başlat
+        init();
     </script>
 </body>
 </html>

@@ -1,72 +1,87 @@
 KELİME EKLEME PROMPT'U
 =====================
 
-Bu dosya, willaddednewwords.txt dosyasındaki kelimeleri doğru aylık dosyaya eklemek için hazırlanmıştır.
+Bu dosya, willaddednewwords.txt dosyasındaki kelimeleri doğru günlük dosyaya eklemek için hazırlanmıştır.
 
-ÖNEMLİ: Kelimeler artık words.json yerine gün bazlı bölünmüş dosyalara ekleniyor!
+ÖNEMLİ: Kelimeler gün bazlı bölünmüş dosyalara ekleniyor!
 - words_2026_01_03.json (03 Ocak 2026)
 - words_2026_01_08.json (08 Ocak 2026)
+- words_2025_12_25.json (25 Aralık 2025)
 - vb.
 
 GÖREV:
 - willaddednewwords.txt dosyasındaki kelimeleri oku
-- Her kelimeyi doğru aylık dosyaya ekle (words_YYYY_MM.json formatında)
-- Eksik alanları tamamla
+- Her kelimeyi doğru günlük dosyaya ekle (words_YYYY_MM_DD.json formatında)
+- Eksik alanları tamamla (telaffuz, kelime türü, fiil formları, örnek cümleler)
 
 KELİME FORMATI:
 - Dosyada "kelime=anlam" formatında yazılmıştır
 - Örnek: "forward=ileri"
+- Tarih bilgisi dosyanın başında veya kelimelerin üstünde belirtilmiş olabilir
+- Tarih formatı: DD.MM.YYYY veya YYYYMMDD (örn: 08.01.2026 veya 08012026)
 
 YAPILMASI GEREKENLER:
 
 1. willaddednewwords.txt dosyasını oku
 
-2. Her kelime için doğru günlük dosyaya (words_YYYY_MM_DD.json) şu yapıda ekle:
+2. Tarih bilgisini belirle:
+   - Dosyanın başında tarih varsa onu kullan
+   - Yoksa bugünün tarihini kullan
+   - Tarih formatını DD.MM.YYYY'ye çevir
+
+3. Doğru dosyayı belirle:
+   - Tarih: 08.01.2026 -> Dosya: words_2026_01_08.json
+   - Tarih: 25.12.2025 -> Dosya: words_2025_12_25.json
+   - Format: DD.MM.YYYY -> words_YYYY_MM_DD.json
+
+4. Her kelime için doğru günlük dosyaya şu yapıda ekle:
    {
      "word": "kelime",
-     "pronunciation": "amerikan telaffuzu",
+     "pronunciation": "amerikan telaffuzu (Türkçe karakterlerle)",
      "type": "kelime türü (İsim/Fiil/Sıfat/Zarf/Edat/İfade/Phrasal Verb)",
      "meaning": "türkçe anlam",
      "v2": {
-       "form": "v2 formu (fiil ise)",
-       "pronunciation": "v2 amerikan  telaffuzu"
+       "form": "v2 formu (fiil ise, yoksa null)",
+       "pronunciation": "v2 amerikan telaffuzu (varsa)"
      },
      "v3": {
-       "form": "v3 formu (fiil ise)",
-       "pronunciation": "v3 amerikan telaffuzu"
+       "form": "v3 formu (fiil ise, yoksa null)",
+       "pronunciation": "v3 amerikan telaffuzu (varsa)"
      },
-     "gerundInfinitive": "gerund/infinitive (gerektiğinde)",
+     "gerundInfinitive": "gerund/infinitive (gerektiğinde, yoksa null)",
      "examples": [
        {
-         "sentence": "örnek cümle",
+         "sentence": "örnek cümle (İngilizce)",
          "meaning": "türkçe çevirisi"
        }
      ],
      "date": "08.01.2026"
    }
 
-3. EKSİK ALANLARI TAMAMLA:
+5. EKSİK ALANLARI TAMAMLA:
    - Amerikan telaffuzunu ekle (phonetic olarak Türkçe karakterlerle)
    - Kelime türünü belirle (İsim, Fiil, Sıfat, Zarf, Edat, İfade, Phrasal Verb)
-   - Fiiller için V2 ve V3 formlarını ekle
-   - Her kelime için en az 1 örnek cümle ekle
-   - Tarih: 08.01.2026
+   - Fiiller için V2 ve V3 formlarını ekle (düzensiz fiiller için doğru formları kullan)
+   - Her kelime için en az 1 örnek cümle ekle (anlamlı ve kullanışlı)
+   - Tarih: Dosyada belirtilen tarih veya bugünün tarihi
 
-4. YAZIM HATALARINI DÜZELT:
+6. YAZIM HATALARINI DÜZELT:
    - Kullanıcı bazı kelimeleri yanlış yazmış olabilir, dikkat et
    - Örnek: "enterprice" → "enterprise", "sensetive" → "sensitive"
+   - Kelimeyi doğru şekilde düzelt ama anlamı koru
 
-5. KELİME TÜRLERİ:
-   - İsim: noun
-   - Fiil: verb
-   - Sıfat: adjective
-   - Zarf: adverb
-   - Edat: preposition
-   - İfade: expression/phrase
-   - Phrasal Verb: phrasal verb
+7. KELİME TÜRLERİ:
+   - İsim: İsim (noun)
+   - Fiil: Fiil (verb)
+   - Sıfat: Sıfat (adjective)
+   - Zarf: Zarf (adverb)
+   - Edat: Edat (preposition)
+   - İfade: İfade (expression/phrase)
+   - Phrasal Verb: Phrasal Verb (phrasal verb)
 
-6. ÖNEMLİ NOTLAR:
+8. ÖNEMLİ NOTLAR:
    - Doğru günlük dosyayı belirle (tarihe göre: words_YYYY_MM_DD.json)
+   - Dosya yoksa oluştur
    - Dosyanın sonundaki "]" işaretinden önce virgül ekle
    - Her kelime objesi arasına virgül ekle
    - Son kelimeden sonra virgül olmamalı
@@ -74,20 +89,26 @@ YAPILMASI GEREKENLER:
    - Linter hatalarını kontrol et
    - Tarih formatı: DD.MM.YYYY (örn: 08.01.2026)
    - Dosya adı formatı: words_YYYY_MM_DD.json (örn: words_2026_01_08.json)
+   - words_index.json dosyasını güncelle (yeni tarih eklendiyse)
 
-7. TEKRAR EDEN KELİMELER:
-   - Eğer bir kelime zaten varsa, yine de ekleyebilirsin (kullanıcı isterse)
+9. TEKRAR EDEN KELİMELER:
+   - Eğer bir kelime aynı tarihli dosyada zaten varsa, yine de ekleyebilirsin (kullanıcı isterse)
+   - Ancak aynı kelime ve aynı anlam varsa kontrol et
 
-ÖRNEK İŞLEM:
-1. willaddednewwords.txt dosyasını oku
-2. Kelimeleri parse et (kelime=anlam formatından)
-3. Tarihe göre doğru dosyayı belirle (örn: 08.01.2026 -> words_2026_01_08.json)
-4. Her kelime için JSON objesi oluştur
-5. Doğru günlük dosyanın sonuna ekle
-6. Linter kontrolü yap
+10. ÖRNEK İŞLEM:
+    1. willaddednewwords.txt dosyasını oku
+    2. Tarih bilgisini belirle (dosyada varsa veya bugünün tarihi)
+    3. Kelimeleri parse et (kelime=anlam formatından)
+    4. Tarihe göre doğru dosyayı belirle (örn: 08.01.2026 -> words_2026_01_08.json)
+    5. Her kelime için JSON objesi oluştur (eksik alanları tamamla)
+    6. Doğru günlük dosyanın sonuna ekle
+    7. words_index.json dosyasını güncelle (yeni tarih eklendiyse)
+    8. Linter kontrolü yap
 
 HATIRLATMA:
 - Tüm işlemler Türkçe olmalı
-- Telaffuzlar Amerikan İngilizcesi olmalı
+- Telaffuzlar Amerikan İngilizcesi olmalı (Türkçe karakterlerle yazılmalı)
 - Örnek cümleler anlamlı ve kullanışlı olmalı
-- Tarih her zaman bugünün tarihi olmalı (kullanıcı farklı bir tarih belirtmediyse)
+- Tarih her zaman dosyada belirtilen tarih veya bugünün tarihi olmalı
+- Kelime türünü doğru belirle (fiil mi, isim mi, sıfat mı?)
+- Fiil formlarını doğru ekle (düzensiz fiiller için özellikle dikkat et)

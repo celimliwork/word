@@ -207,10 +207,9 @@
                 const indexLoaded = await loadWordsIndex();
                 
                 if (!indexLoaded || !wordsIndex || wordsIndex.files.length === 0) {
-                    // Index yoksa eski words.json'u dene
-                    console.log('Index bulunamadı, words.json yükleniyor...');
-                    const response = await fetch('words.json');
-                    wordsData = await response.json();
+                    // Index bulunamadı
+                    console.error('Index dosyası bulunamadı!');
+                    wordsData = [];
                 } else {
                     // Tarih filtresine göre dosya yükle
                     if (selectedDate === 'all') {

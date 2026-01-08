@@ -11210,5 +11210,1677 @@
       }
     ],
     "date": "08.01.2026"
+  },
+  {
+    "word": "spread",
+    "pronunciation": "spred",
+    "type": "Fiil",
+    "meaning": "yaymak",
+    "v2": {
+      "form": "spread",
+      "pronunciation": "spred"
+    },
+    "v3": {
+      "form": "spread",
+      "pronunciation": "spred"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Spread the butter on the bread.",
+        "meaning": "Ekmeğe tereyağı sür."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "grab a menu",
+    "pronunciation": "greb ı menyu",
+    "type": "İfade",
+    "meaning": "menu almak",
+    "v2": {
+      "form": "grabbed a menu",
+      "pronunciation": "grebd ı menyu"
+    },
+    "v3": {
+      "form": "grabbed a menu",
+      "pronunciation": "grebd ı menyu"
+    },
+    "gerundInfinitive": "grabbing a menu",
+    "examples": [
+      {
+        "sentence": "Let me grab a menu for you.",
+        "meaning": "Sana bir menu getireyim."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "silently",
+    "pronunciation": "saylentlı",
+    "type": "Zarf",
+    "meaning": "sessizce",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He left silently.",
+        "meaning": "Sessizce gitti."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "in the hole",
+    "pronunciation": "in dı hol",
+    "type": "İfade",
+    "meaning": "salonda",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The ball is in the hole.",
+        "meaning": "Top salonda."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "concert",
+    "pronunciation": "konsırt",
+    "type": "İsim",
+    "meaning": "konser",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I'm going to a concert tonight.",
+        "meaning": "Bu gece bir konsere gidiyorum."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "fall down",
+    "pronunciation": "fol daun",
+    "type": "İfade",
+    "meaning": "düşmek",
+    "v2": {
+      "form": "fell down",
+      "pronunciation": "fel daun"
+    },
+    "v3": {
+      "form": "fallen down",
+      "pronunciation": "folın daun"
+    },
+    "gerundInfinitive": "falling down",
+    "examples": [
+      {
+        "sentence": "Be careful not to fall down.",
+        "meaning": "Düşmemeye dikkat et."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "fall out with",
+    "pronunciation": "fol aut vit",
+    "type": "İfade",
+    "meaning": "ile anlaşmazlığa düşmek",
+    "v2": {
+      "form": "fell out with",
+      "pronunciation": "fel aut vit"
+    },
+    "v3": {
+      "form": "fallen out with",
+      "pronunciation": "folın aut vit"
+    },
+    "gerundInfinitive": "falling out with",
+    "examples": [
+      {
+        "sentence": "I fell out with my friend.",
+        "meaning": "Arkadaşımla anlaşmazlığa düştüm."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "ladder",
+    "pronunciation": "ledır",
+    "type": "İsim",
+    "meaning": "merdiven",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I need a ladder to reach the roof.",
+        "meaning": "Çatıya ulaşmak için bir merdivene ihtiyacım var."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "stomachache",
+    "pronunciation": "stomakeyk",
+    "type": "İsim",
+    "meaning": "karın ağrısı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I have a stomachache.",
+        "meaning": "Karın ağrım var."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "into water",
+    "pronunciation": "intu votır",
+    "type": "İfade",
+    "meaning": "suyun içine, suya",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He jumped into water.",
+        "meaning": "Suya atladı."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "on time",
+    "pronunciation": "on taym",
+    "type": "İfade",
+    "meaning": "zamanında",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Please arrive on time.",
+        "meaning": "Lütfen zamanında gel."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "pass me",
+    "pronunciation": "pes mi",
+    "type": "İfade",
+    "meaning": "bana uzat",
+    "v2": {
+      "form": "passed me",
+      "pronunciation": "pest mi"
+    },
+    "v3": {
+      "form": "passed me",
+      "pronunciation": "pest mi"
+    },
+    "gerundInfinitive": "passing me",
+    "examples": [
+      {
+        "sentence": "Pass me the salt, please.",
+        "meaning": "Lütfen bana tuzu uzat."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "do a favor",
+    "pronunciation": "du ı feyvır",
+    "type": "İfade",
+    "meaning": "iyilik yapmak",
+    "v2": {
+      "form": "did a favor",
+      "pronunciation": "did ı feyvır"
+    },
+    "v3": {
+      "form": "done a favor",
+      "pronunciation": "dan ı feyvır"
+    },
+    "gerundInfinitive": "doing a favor",
+    "examples": [
+      {
+        "sentence": "Can you do me a favor?",
+        "meaning": "Bana bir iyilik yapabilir misin?"
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "sure",
+    "pronunciation": "şur",
+    "type": "Zarf",
+    "meaning": "elbette",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Sure, I can help you.",
+        "meaning": "Elbette, sana yardım edebilirim."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "of course",
+    "pronunciation": "ov kors",
+    "type": "İfade",
+    "meaning": "elbette",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Of course, you can come.",
+        "meaning": "Elbette, gelebilirsin."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "have a haircut",
+    "pronunciation": "hev ı herkat",
+    "type": "İfade",
+    "meaning": "saç kestirmek",
+    "v2": {
+      "form": "had a haircut",
+      "pronunciation": "hed ı herkat"
+    },
+    "v3": {
+      "form": "had a haircut",
+      "pronunciation": "hed ı herkat"
+    },
+    "gerundInfinitive": "having a haircut",
+    "examples": [
+      {
+        "sentence": "I need to have a haircut.",
+        "meaning": "Saç kestirmem gerekiyor."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "hairdresser",
+    "pronunciation": "herdresır",
+    "type": "İsim",
+    "meaning": "kuaför",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I'm going to the hairdresser.",
+        "meaning": "Kuaföre gidiyorum."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "trip",
+    "pronunciation": "trip",
+    "type": "İsim",
+    "meaning": "yolculuk",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Have a safe trip!",
+        "meaning": "İyi yolculuklar!"
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "aircraft",
+    "pronunciation": "erkreft",
+    "type": "İsim",
+    "meaning": "uçak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The aircraft landed safely.",
+        "meaning": "Uçak güvenli bir şekilde indi."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "ignore",
+    "pronunciation": "ignor",
+    "type": "Fiil",
+    "meaning": "yok saymak, önemsememek",
+    "v2": {
+      "form": "ignored",
+      "pronunciation": "ignord"
+    },
+    "v3": {
+      "form": "ignored",
+      "pronunciation": "ignord"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Don't ignore me.",
+        "meaning": "Beni yok sayma."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "profession",
+    "pronunciation": "profesın",
+    "type": "İsim",
+    "meaning": "meslek",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "What's your profession?",
+        "meaning": "Mesleğin nedir?"
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "demand",
+    "pronunciation": "dimend",
+    "type": "İsim",
+    "meaning": "talep",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "There's a high demand for this product.",
+        "meaning": "Bu ürüne yüksek talep var."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "trust",
+    "pronunciation": "trast",
+    "type": "Fiil",
+    "meaning": "güvenmek",
+    "v2": {
+      "form": "trusted",
+      "pronunciation": "trastıd"
+    },
+    "v3": {
+      "form": "trusted",
+      "pronunciation": "trastıd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I trust you.",
+        "meaning": "Sana güveniyorum."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "rely on",
+    "pronunciation": "rilay on",
+    "type": "İfade",
+    "meaning": "güvenmek",
+    "v2": {
+      "form": "relied on",
+      "pronunciation": "rilayd on"
+    },
+    "v3": {
+      "form": "relied on",
+      "pronunciation": "rilayd on"
+    },
+    "gerundInfinitive": "relying on",
+    "examples": [
+      {
+        "sentence": "You can rely on me.",
+        "meaning": "Bana güvenebilirsin."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "be late",
+    "pronunciation": "bi leyt",
+    "type": "İfade",
+    "meaning": "geç kalmak",
+    "v2": {
+      "form": "was late",
+      "pronunciation": "vaz leyt"
+    },
+    "v3": {
+      "form": "been late",
+      "pronunciation": "bin leyt"
+    },
+    "gerundInfinitive": "being late",
+    "examples": [
+      {
+        "sentence": "Don't be late.",
+        "meaning": "Geç kalma."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "be on a diet",
+    "pronunciation": "bi on ı dayıt",
+    "type": "İfade",
+    "meaning": "diyet yapmak",
+    "v2": {
+      "form": "was on a diet",
+      "pronunciation": "vaz on ı dayıt"
+    },
+    "v3": {
+      "form": "been on a diet",
+      "pronunciation": "bin on ı dayıt"
+    },
+    "gerundInfinitive": "being on a diet",
+    "examples": [
+      {
+        "sentence": "I'm on a diet.",
+        "meaning": "Diyet yapıyorum."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "lunch",
+    "pronunciation": "lanç",
+    "type": "İsim",
+    "meaning": "öğle yemeği",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Let's have lunch together.",
+        "meaning": "Birlikte öğle yemeği yiyelim."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "evening meal",
+    "pronunciation": "ivnin mil",
+    "type": "İsim",
+    "meaning": "akşam yemeği",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We have our evening meal at 7 PM.",
+        "meaning": "Akşam yemeğimizi saat 7'de yeriz."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "shift",
+    "pronunciation": "şift",
+    "type": "İsim",
+    "meaning": "vardiya",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I work the night shift.",
+        "meaning": "Gece vardiyasında çalışıyorum."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "shift",
+    "pronunciation": "şift",
+    "type": "Fiil",
+    "meaning": "yerini değiştirmek",
+    "v2": {
+      "form": "shifted",
+      "pronunciation": "şiftıd"
+    },
+    "v3": {
+      "form": "shifted",
+      "pronunciation": "şiftıd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Shift the table to the left.",
+        "meaning": "Masayı sola kaydır."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "extraordinary",
+    "pronunciation": "ikstrorıdınari",
+    "type": "Sıfat",
+    "meaning": "olağanüstü",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "That's extraordinary!",
+        "meaning": "Bu olağanüstü!"
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "fresh start",
+    "pronunciation": "freş start",
+    "type": "İfade",
+    "meaning": "yeni bir başlangıç",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Let's make a fresh start.",
+        "meaning": "Yeni bir başlangıç yapalım."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "be back",
+    "pronunciation": "bi bek",
+    "type": "İfade",
+    "meaning": "geri gelmek",
+    "v2": {
+      "form": "was back",
+      "pronunciation": "vaz bek"
+    },
+    "v3": {
+      "form": "been back",
+      "pronunciation": "bin bek"
+    },
+    "gerundInfinitive": "being back",
+    "examples": [
+      {
+        "sentence": "I'll be back soon.",
+        "meaning": "Yakında geri döneceğim."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "belly",
+    "pronunciation": "beli",
+    "type": "İsim",
+    "meaning": "karın",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "My belly hurts.",
+        "meaning": "Karnım ağrıyor."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "in time",
+    "pronunciation": "in taym",
+    "type": "İfade",
+    "meaning": "zamanla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "You'll understand in time.",
+        "meaning": "Zamanla anlayacaksın."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "chop down",
+    "pronunciation": "çop daun",
+    "type": "İfade",
+    "meaning": "kesip biçmek",
+    "v2": {
+      "form": "chopped down",
+      "pronunciation": "çopt daun"
+    },
+    "v3": {
+      "form": "chopped down",
+      "pronunciation": "çopt daun"
+    },
+    "gerundInfinitive": "chopping down",
+    "examples": [
+      {
+        "sentence": "They're chopping down the trees.",
+        "meaning": "Ağaçları kesip biçiyorlar."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "age",
+    "pronunciation": "eyc",
+    "type": "İsim",
+    "meaning": "çağ",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We live in the digital age.",
+        "meaning": "Dijital çağda yaşıyoruz."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "drawing",
+    "pronunciation": "droin",
+    "type": "İsim",
+    "meaning": "çizim",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "This is a beautiful drawing.",
+        "meaning": "Bu güzel bir çizim."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "mine",
+    "pronunciation": "mayn",
+    "type": "İsim",
+    "meaning": "maden",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "They found gold in the mine.",
+        "meaning": "Madende altın buldular."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "melt",
+    "pronunciation": "melt",
+    "type": "Fiil",
+    "meaning": "erimek",
+    "v2": {
+      "form": "melted",
+      "pronunciation": "meltıd"
+    },
+    "v3": {
+      "form": "melted",
+      "pronunciation": "meltıd"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Ice melts in the sun.",
+        "meaning": "Buz güneşte erir."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "married couple",
+    "pronunciation": "merid kapıl",
+    "type": "İsim",
+    "meaning": "evli çift",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "They are a happy married couple.",
+        "meaning": "Onlar mutlu bir evli çift."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "feed",
+    "pronunciation": "fiid",
+    "type": "Fiil",
+    "meaning": "beslemek",
+    "v2": {
+      "form": "fed",
+      "pronunciation": "fed"
+    },
+    "v3": {
+      "form": "fed",
+      "pronunciation": "fed"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I feed my cat every morning.",
+        "meaning": "Her sabah kedimi besliyorum."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "feed",
+    "pronunciation": "fiid",
+    "type": "İsim",
+    "meaning": "yem",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I need to buy feed for the animals.",
+        "meaning": "Hayvanlar için yem almam gerekiyor."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "goldfish",
+    "pronunciation": "goldfiş",
+    "type": "İsim",
+    "meaning": "akvaryum balığı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I have a goldfish in my aquarium.",
+        "meaning": "Akvaryumumda bir akvaryum balığım var."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "whenever",
+    "pronunciation": "venevır",
+    "type": "Zarf",
+    "meaning": "her ne zaman",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Call me whenever you need help.",
+        "meaning": "Yardıma ihtiyacın olduğunda beni ara."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "less",
+    "pronunciation": "les",
+    "type": "Sıfat",
+    "meaning": "az",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I have less money now.",
+        "meaning": "Şimdi daha az param var."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "agency",
+    "pronunciation": "eycınsi",
+    "type": "İsim",
+    "meaning": "kurum",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I work for a travel agency.",
+        "meaning": "Bir seyahat acentesinde çalışıyorum."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "mouse",
+    "pronunciation": "maus",
+    "type": "İsim",
+    "meaning": "fare",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I saw a mouse in the kitchen.",
+        "meaning": "Mutfakta bir fare gördüm."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "mice",
+    "pronunciation": "mays",
+    "type": "İsim",
+    "meaning": "fareler",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "There are mice in the basement.",
+        "meaning": "Bodrumda fareler var."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "realtor",
+    "pronunciation": "riıltır",
+    "type": "İsim",
+    "meaning": "emlakçı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I'm meeting with a realtor today.",
+        "meaning": "Bugün bir emlakçıyla buluşuyorum."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "how many residences on average",
+    "pronunciation": "hav meni rezidınsız on evırıc",
+    "type": "İfade",
+    "meaning": "kaç konut ortalama",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "How many residences on average does a realtor sell?",
+        "meaning": "Bir emlakçı ortalama kaç konut satar?"
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "investigation",
+    "pronunciation": "investigeyşın",
+    "type": "İsim",
+    "meaning": "soruşturma",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The investigation is ongoing.",
+        "meaning": "Soruşturma devam ediyor."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "collateral",
+    "pronunciation": "kolaterıl",
+    "type": "İsim",
+    "meaning": "teminat",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The bank requires collateral for the loan.",
+        "meaning": "Banka kredi için teminat istiyor."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "fiction",
+    "pronunciation": "fikşın",
+    "type": "İsim",
+    "meaning": "kurgu",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I love reading science fiction.",
+        "meaning": "Bilim kurgu okumayı seviyorum."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "would you like",
+    "pronunciation": "vud yu layk",
+    "type": "İfade",
+    "meaning": "ister misiniz",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Would you like some coffee?",
+        "meaning": "Biraz kahve ister misiniz?"
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "would you like to drink",
+    "pronunciation": "vud yu layk tu drink",
+    "type": "İfade",
+    "meaning": "içer misiniz",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Would you like to drink something?",
+        "meaning": "Bir şey içer misiniz?"
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "grape",
+    "pronunciation": "greyp",
+    "type": "İsim",
+    "meaning": "üzüm",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I love eating grapes.",
+        "meaning": "Üzüm yemeyi seviyorum."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "quite",
+    "pronunciation": "kwayt",
+    "type": "Zarf",
+    "meaning": "oldukça",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It's quite good.",
+        "meaning": "Oldukça iyi."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "rather",
+    "pronunciation": "redır",
+    "type": "Zarf",
+    "meaning": "oldukça",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It's rather expensive.",
+        "meaning": "Oldukça pahalı."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "hold a meeting",
+    "pronunciation": "hold ı mitin",
+    "type": "İfade",
+    "meaning": "toplantı yapmak",
+    "v2": {
+      "form": "held a meeting",
+      "pronunciation": "held ı mitin"
+    },
+    "v3": {
+      "form": "held a meeting",
+      "pronunciation": "held ı mitin"
+    },
+    "gerundInfinitive": "holding a meeting",
+    "examples": [
+      {
+        "sentence": "We'll hold a meeting tomorrow.",
+        "meaning": "Yarın bir toplantı yapacağız."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "bread",
+    "pronunciation": "bred",
+    "type": "İsim",
+    "meaning": "ekmek",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I need to buy bread.",
+        "meaning": "Ekmek almam gerekiyor."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "tub",
+    "pronunciation": "tab",
+    "type": "İsim",
+    "meaning": "küvet",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I'm taking a bath in the tub.",
+        "meaning": "Küvette banyo yapıyorum."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "anymore",
+    "pronunciation": "enimor",
+    "type": "Zarf",
+    "meaning": "artık",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I don't go there anymore.",
+        "meaning": "Artık oraya gitmiyorum."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "on the highway",
+    "pronunciation": "on dı hayvey",
+    "type": "İfade",
+    "meaning": "otoyolda",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We're driving on the highway.",
+        "meaning": "Otoyolda sürüyoruz."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "effort",
+    "pronunciation": "efort",
+    "type": "İsim",
+    "meaning": "zahmet",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It requires a lot of effort.",
+        "meaning": "Bu çok zahmet gerektirir."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "famine",
+    "pronunciation": "famin",
+    "type": "İsim",
+    "meaning": "kıtlık",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Many people died during the famine.",
+        "meaning": "Kıtlık sırasında birçok insan öldü."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "simple method",
+    "pronunciation": "simpıl metod",
+    "type": "İsim",
+    "meaning": "basit yöntem",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "This is a simple method.",
+        "meaning": "Bu basit bir yöntem."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "dominant",
+    "pronunciation": "dominınt",
+    "type": "Sıfat",
+    "meaning": "hakim, baskın",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He has a dominant personality.",
+        "meaning": "Baskın bir kişiliği var."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "participant",
+    "pronunciation": "partisipınt",
+    "type": "İsim",
+    "meaning": "katılımcı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "All participants received a certificate.",
+        "meaning": "Tüm katılımcılar bir sertifika aldı."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "mud",
+    "pronunciation": "mad",
+    "type": "İsim",
+    "meaning": "çamur",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "My shoes are covered in mud.",
+        "meaning": "Ayakkabılarım çamurla kaplı."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "scenery",
+    "pronunciation": "sinari",
+    "type": "İsim",
+    "meaning": "manzara",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The scenery is beautiful.",
+        "meaning": "Manzara güzel."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "starving",
+    "pronunciation": "starvin",
+    "type": "Sıfat",
+    "meaning": "açlıktan ölme",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I'm starving!",
+        "meaning": "Açlıktan ölüyorum!"
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "warm up",
+    "pronunciation": "vorm ap",
+    "type": "İfade",
+    "meaning": "ısınmak",
+    "v2": {
+      "form": "warmed up",
+      "pronunciation": "vormd ap"
+    },
+    "v3": {
+      "form": "warmed up",
+      "pronunciation": "vormd ap"
+    },
+    "gerundInfinitive": "warming up",
+    "examples": [
+      {
+        "sentence": "Let's warm up before the game.",
+        "meaning": "Maçtan önce ısınalım."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "wheel",
+    "pronunciation": "vil",
+    "type": "İsim",
+    "meaning": "direksiyon",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Hold the wheel steady.",
+        "meaning": "Direksiyonu sabit tut."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "socks",
+    "pronunciation": "soks",
+    "type": "İsim",
+    "meaning": "çorap",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I need new socks.",
+        "meaning": "Yeni çoraplara ihtiyacım var."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "sort of",
+    "pronunciation": "sort ov",
+    "type": "İfade",
+    "meaning": "tür, çeşit",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It's sort of interesting.",
+        "meaning": "Biraz ilginç."
+      }
+    ],
+    "date": "08.01.2026"
   }
 ]

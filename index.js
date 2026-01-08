@@ -205,10 +205,20 @@ async function loadWords() {
       setupDateFilterListener();
       dateFilterInitialized = true;
     } else {
-      // Sadece seçili değeri güncelle
+      // Sadece seçili değeri güncelle (eğer dropdown'da varsa)
       const dateFilter = document.getElementById("dateFilter");
       if (dateFilter) {
-        dateFilter.value = selectedDate;
+        const savedDateExists = Array.from(dateFilter.options).some(
+          (opt) => opt.value === selectedDate
+        );
+        if (savedDateExists) {
+          dateFilter.value = selectedDate;
+        } else {
+          // Eğer kaydedilmiş tarih dropdown'da yoksa, varsayılan olarak "all" seç
+          dateFilter.value = "all";
+          selectedDate = "all";
+          saveState(); // Güncellenmiş değeri kaydet
+        }
       }
     }
 
@@ -338,8 +348,18 @@ function initializeDateFilter() {
   if (todayOpt) dateFilter.appendChild(todayOpt);
   dateOptions.forEach((opt) => dateFilter.appendChild(opt));
 
-  // Kaydedilmiş değeri seç
-  dateFilter.value = selectedDate;
+  // Kaydedilmiş değeri seç (eğer dropdown'da varsa)
+  const savedDateExists = Array.from(dateFilter.options).some(
+    (opt) => opt.value === selectedDate
+  );
+  if (savedDateExists) {
+    dateFilter.value = selectedDate;
+  } else {
+    // Eğer kaydedilmiş tarih dropdown'da yoksa, varsayılan olarak "all" seç
+    dateFilter.value = "all";
+    selectedDate = "all";
+    saveState(); // Güncellenmiş değeri kaydet
+  }
 }
 
 // Date filter event listener'ı ayrı bir fonksiyonda
@@ -559,7 +579,7 @@ function createEnTrModeHTML(word, typeClass) {
                     ? `<span class="type-badge type-${typeClass}">${word.type}</span>`
                     : ""
                 }
-                <div class="card-field">
+                <div class="card-field"></div>
                     <div class="word-main">
                         <span class="word-text">${word.word || "-"}</span>
                         ${
@@ -579,7 +599,7 @@ function createEnTrModeHTML(word, typeClass) {
         </div>
 
                 <div class="card-field hidden-field" data-reveal="tr">
-                    <div class="field-value hidden">Göster</div>
+                    <div class="field-value hidden">👆</div>
                     <div class="field-value" style="display: none;">${
                       word.meaning || "-"
                     }</div>
@@ -606,7 +626,7 @@ function createEnTrModeHTML(word, typeClass) {
                                 }
                 </div>
                             <div class="example-meaning hidden-field" data-reveal="tr">
-                                <span class="field-value hidden">Görmek için tıklayın</span>
+                                <span class="field-value hidden">👆</span>
                                 <span class="field-value" style="display: none;">${
                                   ex.meaning || "-"
                                 }</span>
@@ -629,7 +649,7 @@ function createTrEnModeHTML(word, typeClass) {
                 }
                 <div class="card-field hidden-field" data-reveal="en">
                     <div class="word-main">
-                        <span class="word-text hidden">Göster</span>
+                        <span class="word-text hidden">👆</span>
                         <span class="word-text" style="display: none;">${
                           word.word || "-"
                         }</span>
@@ -659,7 +679,7 @@ function createTrEnModeHTML(word, typeClass) {
       html += `
                         <div class="example-item">
                             <div class="example-sentence hidden-field" data-reveal="en">
-                                <span class="hidden" style="display: inline;">Görmek için tıklayın</span>
+                                <span class="hidden" style="display: inline;">👆</span>
                                 <span class="hidden-content" style="display: none;">${
                                   ex.sentence || "-"
                                 }</span>
@@ -702,21 +722,21 @@ function attachCardListeners() {
       longPressTimer = setTimeout(() => {
         revealHiddenFields(card);
       }, LONG_PRESS_DURATION);
-    });
+    }, { passive: true });
 
     card.addEventListener("touchend", () => {
       if (longPressTimer) {
         clearTimeout(longPressTimer);
         longPressTimer = null;
       }
-    });
+    }, { passive: true });
 
     card.addEventListener("touchcancel", () => {
       if (longPressTimer) {
         clearTimeout(longPressTimer);
         longPressTimer = null;
       }
-    });
+    }, { passive: true });
 
     // Mouse long press (desktop)
     card.addEventListener("mousedown", (e) => {
@@ -776,6 +796,16 @@ function revealHiddenFields(card) {
       field.style.display = "";
     }
   });
+}
+
+function resetCards() {
+  // Kartları yeniden render et - bu şekilde tüm kartlar orijinal gizli durumlarına döner
+  const scrollPosition = window.scrollY || window.pageYOffset;
+  renderCards();
+  // Scroll pozisyonunu koru (DOM güncellemesi sonrası)
+  setTimeout(() => {
+    window.scrollTo(0, scrollPosition);
+  }, 0);
 }
 
 // ==================== SPEECH API ====================
@@ -847,12 +877,44 @@ function updateStats() {
   statsDiv.textContent = statsText;
 }
 
+// ==================== RESET BUTTON ====================
+function initializeResetButton() {
+  const resetBtn = document.getElementById("resetCardsBtn");
+  if (resetBtn) {
+    resetBtn.addEventListener("click", () => {
+      resetCards();
+    });
+  }
+}
+
 // ==================== INITIALIZATION ====================
-function init() {
+async function init() {
   loadState(); // İlk yüklemede kaydedilmiş durumu yükle
+  
   initializeModeSelect();
   initializePagination();
-  loadWords();
+  initializeResetButton();
+  await loadWords();
+  
+  // Tarih filtresinin değerini tekrar kontrol et ve kaydet
+  // loadWords() içinde initializeDateFilter() çağrılıyor ama 
+  // bazen selectedDate değeri dropdown'da olmayabilir
+  const dateFilter = document.getElementById("dateFilter");
+  if (dateFilter) {
+    // Eğer dropdown'da selectedDate varsa ve değer farklıysa güncelle
+    const savedDateExists = Array.from(dateFilter.options).some(
+      (opt) => opt.value === selectedDate
+    );
+    if (savedDateExists && dateFilter.value !== selectedDate) {
+      dateFilter.value = selectedDate;
+      saveState();
+    } else if (!savedDateExists && selectedDate !== "all") {
+      // Eğer kaydedilmiş tarih dropdown'da yoksa, "all" seç ve kaydet
+      dateFilter.value = "all";
+      selectedDate = "all";
+      saveState();
+    }
+  }
 }
 
 // Sayfa yüklendiğinde başlat

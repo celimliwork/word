@@ -1,0 +1,41 @@
+behave = davranmak
+interfere = müdahale etmek, karışmak
+attract = çekmek (insanları çekmek - mecaz anlam)
+apply = uygulamak, başvurmak
+educate = eğitmek (teorik eğitim)
+train = yetiştirmek, eğitmek (pratik eğitim)
+meet = tanışmak
+carry = taşımak
+pour = dökmek
+improve = geliştirmek, iyileştirmek
+successor = varis
+people = halk
+folk = halk
+power = güç
+application = başvuru, uygulama
+ad = ilan, reklam
+event = etkinlik
+favor = iyilik
+insurance = sigorta
+addition = ek
+privilege = ayrıcalık, imtiyaz
+poor = fakir
+attractive = çekici
+strong = güçlü
+gross = brüt
+net = net
+be interested in = ilgili olmak
+before tax = vergi öncesi
+net salary = net maaş
+interested in=ilgilenmek
+to be raised=yetiştirilmek üzere
+Suffer: aci cekmek, maruz kalmak
+Religious: din
+Wise: akilli
+Take care: dikkat etmek
+Shoulder: omuz
+Linked: baglantili
+straight: dümdüz
+Labor: is gucu
+Break out: kaçmak
+consequence: sonuçlar

@@ -66,6 +66,12 @@ body {
     box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
 }
 
+.reset-btn-inline {
+    width: auto;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+}
+
 .reset-btn:active {
     transform: translateY(0);
 }
@@ -314,6 +320,11 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+.pagination-top {
+    border-top: none;
+    border-bottom: 1px solid #e9ecef;
 }
 
 .pagination-info {

@@ -565,10 +565,6 @@ function createFullModeHTML(word, typeClass) {
     html += "</div></div>";
   }
 
-  html += `<div class="card-field"><div class="field-label">Tarih</div><div class="field-value">${
-    word.date || "-"
-  }</div></div>`;
-
   return html;
 }
 
@@ -832,33 +828,58 @@ function updatePagination() {
     filteredWordsData.length
   );
 
-  document.getElementById(
-    "paginationInfo"
-  ).textContent = `Sayfa ${currentPage} / ${totalPages} (${startIndex}-${endIndex} / ${filteredWordsData.length})`;
+  const paginationText = `Sayfa ${currentPage} / ${totalPages} (${startIndex}-${endIndex} / ${filteredWordsData.length})`;
+  
+  // Yukarıdaki pagination
+  const paginationInfoTop = document.getElementById("paginationInfoTop");
+  if (paginationInfoTop) {
+    paginationInfoTop.textContent = paginationText;
+  }
+  
+  // Aşağıdaki pagination
+  document.getElementById("paginationInfo").textContent = paginationText;
 
+  // Yukarıdaki butonlar
+  const prevBtnTop = document.getElementById("prevBtnTop");
+  const nextBtnTop = document.getElementById("nextBtnTop");
+  if (prevBtnTop) prevBtnTop.disabled = currentPage === 1;
+  if (nextBtnTop) nextBtnTop.disabled = currentPage >= totalPages;
+
+  // Aşağıdaki butonlar
   document.getElementById("prevBtn").disabled = currentPage === 1;
   document.getElementById("nextBtn").disabled = currentPage >= totalPages;
 }
 
 function initializePagination() {
-  document.getElementById("prevBtn").addEventListener("click", () => {
-    if (currentPage > 1) {
+  // Sayfa değiştirme fonksiyonu
+  const goToPage = (direction) => {
+    const totalPages = Math.ceil(filteredWordsData.length / CARDS_PER_PAGE);
+    if (direction === "prev" && currentPage > 1) {
       currentPage--;
       renderCards();
       window.scrollTo({ top: 0, behavior: "smooth" });
-      saveState(); // Durumu kaydet
-    }
-  });
-
-  document.getElementById("nextBtn").addEventListener("click", () => {
-    const totalPages = Math.ceil(filteredWordsData.length / CARDS_PER_PAGE);
-    if (currentPage < totalPages) {
+      saveState();
+    } else if (direction === "next" && currentPage < totalPages) {
       currentPage++;
       renderCards();
       window.scrollTo({ top: 0, behavior: "smooth" });
-      saveState(); // Durumu kaydet
+      saveState();
     }
-  });
+  };
+
+  // Yukarıdaki butonlar
+  const prevBtnTop = document.getElementById("prevBtnTop");
+  const nextBtnTop = document.getElementById("nextBtnTop");
+  if (prevBtnTop) {
+    prevBtnTop.addEventListener("click", () => goToPage("prev"));
+  }
+  if (nextBtnTop) {
+    nextBtnTop.addEventListener("click", () => goToPage("next"));
+  }
+
+  // Aşağıdaki butonlar
+  document.getElementById("prevBtn").addEventListener("click", () => goToPage("prev"));
+  document.getElementById("nextBtn").addEventListener("click", () => goToPage("next"));
 }
 
 // ==================== STATS ====================
@@ -879,6 +900,15 @@ function updateStats() {
 
 // ==================== RESET BUTTON ====================
 function initializeResetButton() {
+  // Yukarıdaki buton
+  const resetBtnTop = document.getElementById("resetCardsBtnTop");
+  if (resetBtnTop) {
+    resetBtnTop.addEventListener("click", () => {
+      resetCards();
+    });
+  }
+  
+  // Aşağıdaki buton
   const resetBtn = document.getElementById("resetCardsBtn");
   if (resetBtn) {
     resetBtn.addEventListener("click", () => {

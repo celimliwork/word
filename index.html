@@ -31,11 +31,16 @@
                     <option value="today" >Bugün Eklenenler</option>
                     </select>
                 </div>
-            
-            <div class="control-group">
-                <button id="resetCardsBtn" class="reset-btn" title="Kartları Yeniden Gizle">🔄 Yenile</button>
             </div>
+
+        <div class="pagination pagination-top" id="paginationTop">
+            <div class="pagination-info" id="paginationInfoTop"></div>
+            <div class="pagination-buttons">
+                <button class="pagination-btn" id="prevBtnTop">Önceki</button>
+                <button class="pagination-btn reset-btn-inline" id="resetCardsBtnTop" title="Kartları Yeniden Gizle">🔄 Yenile</button>
+                <button class="pagination-btn" id="nextBtnTop">Sonraki</button>
             </div>
+        </div>
 
         <div class="cards-container" id="cardsContainer">
             <!-- Kartlar buraya eklenecek -->
@@ -45,6 +50,7 @@
             <div class="pagination-info" id="paginationInfo"></div>
             <div class="pagination-buttons">
                 <button class="pagination-btn" id="prevBtn">Önceki</button>
+                <button class="pagination-btn reset-btn-inline" id="resetCardsBtn" title="Kartları Yeniden Gizle">🔄 Yenile</button>
                 <button class="pagination-btn" id="nextBtn">Sonraki</button>
             </div>
         </div>

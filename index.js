@@ -575,7 +575,7 @@ function createEnTrModeHTML(word, typeClass) {
                     ? `<span class="type-badge type-${typeClass}">${word.type}</span>`
                     : ""
                 }
-                <div class="card-field"></div>
+                <div class="card-field">
                     <div class="word-main">
                         <span class="word-text">${word.word || "-"}</span>
                         ${
@@ -586,20 +586,20 @@ function createEnTrModeHTML(word, typeClass) {
                               )}')" title="Seslendir">🔊</button>`
                             : ""
                         }
-            </div>
+                    </div>
                     ${
                       word.pronunciation
                         ? `<div class="pronunciation">${word.pronunciation}</div>`
                         : ""
                     }
-        </div>
+                </div>
 
                 <div class="card-field hidden-field" data-reveal="tr">
                     <div class="field-value hidden">👆</div>
                     <div class="field-value" style="display: none;">${
                       word.meaning || "-"
                     }</div>
-        </div>
+                </div>
             `;
 
   // Örnek cümleler

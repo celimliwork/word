@@ -390,8 +390,7 @@ function initializeModeSelect() {
 
   modeSelect.addEventListener("change", async (e) => {
     currentMode = e.target.value;
-    currentPage = 1;
-    applyFilters(); // Filtreleri yeniden uygula (yeni mod için gerekli)
+    applyFilters(); // Filtreleri yeniden uygula (yeni mod için gerekli - bu fonksiyon sayfa numarasını kontrol eder)
     renderCards();
     saveState(); // Durumu kaydet
   });

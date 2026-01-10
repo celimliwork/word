@@ -409,35 +409,13 @@ function shuffleArray(array) {
 
 // ==================== FILTERING ====================
 function applyFilters() {
-  // Eğer "Sadece Türkçe Cümle" modu seçiliyse, examples'ı ayrı kartlara dönüştür
+  // Eğer "Sadece Türkçe Cümle" modu seçiliyse, kelimeleri tut (cümleleri renderCards'ta işleyeceğiz)
   if (currentMode === "tr-examples-only") {
-    filteredWordsData = [];
-    
     // wordsData zaten loadWords() içinde tarih filtresine göre yüklenmiş durumda
-    // Bu yüzden direkt wordsData'yı kullanabiliriz
-    
-    // Her kelime için examples'ı al ve ayrı kartlar oluştur
-    wordsData.forEach((word) => {
-      if (word.examples && Array.isArray(word.examples) && word.examples.length > 0) {
-        word.examples.forEach((example) => {
-          // sentence ve meaning'in hem string hem de boş olmadığını kontrol et
-          if (example && example.sentence && example.sentence.trim() !== "" && example.meaning && example.meaning.trim() !== "") {
-            filteredWordsData.push({
-              type: "example",
-              trSentence: example.meaning.trim(),
-              enSentence: example.sentence.trim(),
-              originalWord: word.word || "",
-            });
-          }
-        });
-      }
+    // Sadece examples'ı olan kelimeleri filtrele
+    filteredWordsData = wordsData.filter((word) => {
+      return word.examples && Array.isArray(word.examples) && word.examples.length > 0;
     });
-    
-    // Kartları karıştır (shuffle)
-    filteredWordsData = shuffleArray(filteredWordsData);
-    
-    // Debug: Toplam kaç example kartı oluşturuldu
-    console.log(`Toplam ${filteredWordsData.length} example kartı oluşturuldu (${wordsData.length} kelimeden)`);
   } else {
     // Normal mod için mevcut mantık
     // Dosya zaten tarihe göre yüklendiği için sadece kopyala
@@ -463,6 +441,7 @@ function applyFilters() {
   }
 
   // Sayfa numarasının geçerli olup olmadığını kontrol et
+  // Yeni mod için sayfalama kelime sayısına göre, normal mod için mevcut mantık
   const totalPages = Math.ceil(filteredWordsData.length / CARDS_PER_PAGE);
   const oldPage = currentPage;
   if (currentPage > totalPages && totalPages > 0) {
@@ -480,17 +459,57 @@ function applyFilters() {
 // ==================== CARD RENDERING ====================
 function renderCards() {
   const container = document.getElementById("cardsContainer");
-  const startIndex = (currentPage - 1) * CARDS_PER_PAGE;
-  const endIndex = startIndex + CARDS_PER_PAGE;
-  const pageData = filteredWordsData.slice(startIndex, endIndex);
+  
+  // Eğer "Sadece Türkçe Cümle" modu seçiliyse, kelime bazlı sayfalama yap
+  if (currentMode === "tr-examples-only") {
+    // Sayfa kelimelerini al (20 kelime per sayfa)
+    const startIndex = (currentPage - 1) * CARDS_PER_PAGE;
+    const endIndex = startIndex + CARDS_PER_PAGE;
+    const pageWords = filteredWordsData.slice(startIndex, endIndex);
 
-  if (pageData.length === 0) {
-    container.innerHTML =
-      '<div class="empty-state"><div class="empty-state-icon">📭</div><div class="empty-state-text">Bu filtreye uygun kelime bulunamadı.</div></div>';
-    return;
+    if (pageWords.length === 0) {
+      container.innerHTML =
+        '<div class="empty-state"><div class="empty-state-icon">📭</div><div class="empty-state-text">Bu filtreye uygun kelime bulunamadı.</div></div>';
+      return;
+    }
+
+    // Bu sayfadaki kelimelerin TÜM cümlelerini topla
+    const pageExamples = [];
+    pageWords.forEach((word) => {
+      if (word.examples && Array.isArray(word.examples) && word.examples.length > 0) {
+        word.examples.forEach((example) => {
+          // sentence ve meaning'in hem string hem de boş olmadığını kontrol et
+          if (example && example.sentence && example.sentence.trim() !== "" && example.meaning && example.meaning.trim() !== "") {
+            pageExamples.push({
+              type: "example",
+              trSentence: example.meaning.trim(),
+              enSentence: example.sentence.trim(),
+              originalWord: word.word || "",
+            });
+          }
+        });
+      }
+    });
+
+    // Cümleleri karıştır (shuffle)
+    const shuffledExamples = shuffleArray(pageExamples);
+
+    // Kartları oluştur
+    container.innerHTML = shuffledExamples.map((example) => createCardHTML(example)).join("");
+  } else {
+    // Normal mod için mevcut mantık
+    const startIndex = (currentPage - 1) * CARDS_PER_PAGE;
+    const endIndex = startIndex + CARDS_PER_PAGE;
+    const pageData = filteredWordsData.slice(startIndex, endIndex);
+
+    if (pageData.length === 0) {
+      container.innerHTML =
+        '<div class="empty-state"><div class="empty-state-icon">📭</div><div class="empty-state-text">Bu filtreye uygun kelime bulunamadı.</div></div>';
+      return;
+    }
+
+    container.innerHTML = pageData.map((word) => createCardHTML(word)).join("");
   }
-
-  container.innerHTML = pageData.map((word) => createCardHTML(word)).join("");
 
   // Event listener'ları ekle
   attachCardListeners();
@@ -876,15 +895,11 @@ function revealHiddenFields(card) {
 }
 
 function resetCards() {
-  // Eğer "Sadece Türkçe Cümle" moduysa, kartları yeniden karıştır
-  if (currentMode === "tr-examples-only") {
-    applyFilters(); // Bu shuffle yapacak
-  }
-  
   // Kartları yeniden render et - bu şekilde tüm kartlar orijinal gizli durumlarına döner
+  // Yeni mod için shuffle renderCards içinde yapılıyor, bu yüzden sadece renderCards çağırmak yeterli
   const scrollPosition = window.scrollY || window.pageYOffset;
   currentPage = 1; // İlk sayfaya dön
-  renderCards();
+  renderCards(); // Bu shuffle yapacak (yeni mod için)
   // Scroll pozisyonunu koru (DOM güncellemesi sonrası)
   setTimeout(() => {
     window.scrollTo(0, scrollPosition);
@@ -915,7 +930,34 @@ function updatePagination() {
     filteredWordsData.length
   );
 
-  const paginationText = `Sayfa ${currentPage} / ${totalPages} (${startIndex}-${endIndex} / ${filteredWordsData.length})`;
+  // Yeni mod için sayfalama text'i
+  let paginationText;
+  if (currentMode === "tr-examples-only") {
+    // Sayfadaki kelimelerin cümlelerini say
+    const pageWords = filteredWordsData.slice(startIndex - 1, endIndex);
+    let pageExampleCount = 0;
+    pageWords.forEach((word) => {
+      if (word.examples && Array.isArray(word.examples)) {
+        pageExampleCount += word.examples.filter((ex) => 
+          ex && ex.sentence && ex.sentence.trim() !== "" && ex.meaning && ex.meaning.trim() !== ""
+        ).length;
+      }
+    });
+    
+    // Toplam cümle sayısını hesapla
+    let totalExamples = 0;
+    filteredWordsData.forEach((word) => {
+      if (word.examples && Array.isArray(word.examples)) {
+        totalExamples += word.examples.filter((ex) => 
+          ex && ex.sentence && ex.sentence.trim() !== "" && ex.meaning && ex.meaning.trim() !== ""
+        ).length;
+      }
+    });
+    
+    paginationText = `Sayfa ${currentPage} / ${totalPages} (${startIndex}-${endIndex}. kelimeler, ${pageExampleCount} cümle / Toplam ${filteredWordsData.length} kelime, ${totalExamples} cümle)`;
+  } else {
+    paginationText = `Sayfa ${currentPage} / ${totalPages} (${startIndex}-${endIndex} / ${filteredWordsData.length})`;
+  }
   
   // Yukarıdaki pagination
   const paginationInfoTop = document.getElementById("paginationInfoTop");
@@ -975,12 +1017,20 @@ function updateStats() {
   
   // Yeni mod için farklı hesaplama
   if (currentMode === "tr-examples-only") {
-    const filteredCount = filteredWordsData.length;
-    let statsText = `Toplam ${filteredCount} cümle`;
+    // Toplam cümle sayısını hesapla
+    let totalExamples = 0;
+    filteredWordsData.forEach((word) => {
+      if (word.examples && Array.isArray(word.examples)) {
+        totalExamples += word.examples.filter((ex) => 
+          ex && ex.sentence && ex.sentence.trim() !== "" && ex.meaning && ex.meaning.trim() !== ""
+        ).length;
+      }
+    });
+    
+    const wordCount = filteredWordsData.length;
+    let statsText = `Toplam ${wordCount} kelime, ${totalExamples} cümle`;
     if (selectedDate !== "all") {
-      statsText += ` | Filtrelenmiş: ${filteredCount} cümle`;
-    } else {
-      statsText += ` | Gösterilen: ${filteredCount} cümle`;
+      statsText += ` | Filtrelenmiş: ${wordCount} kelime, ${totalExamples} cümle`;
     }
     statsDiv.textContent = statsText;
     return;

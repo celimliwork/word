@@ -388,35 +388,78 @@ function initializeModeSelect() {
   // Kaydedilmiş değeri seç
   modeSelect.value = currentMode;
 
-  modeSelect.addEventListener("change", (e) => {
+  modeSelect.addEventListener("change", async (e) => {
     currentMode = e.target.value;
     currentPage = 1;
+    applyFilters(); // Filtreleri yeniden uygula (yeni mod için gerekli)
     renderCards();
     saveState(); // Durumu kaydet
   });
 }
 
+// ==================== UTILITY FUNCTIONS ====================
+function shuffleArray(array) {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
 // ==================== FILTERING ====================
 function applyFilters() {
-  // Dosya zaten tarihe göre yüklendiği için sadece kopyala
-  // Eğer "all" seçiliyse tüm kelimeler, değilse sadece seçilen tarihteki kelimeler
-  filteredWordsData = [...wordsData];
+  // Eğer "Sadece Türkçe Cümle" modu seçiliyse, examples'ı ayrı kartlara dönüştür
+  if (currentMode === "tr-examples-only") {
+    filteredWordsData = [];
+    
+    // wordsData zaten loadWords() içinde tarih filtresine göre yüklenmiş durumda
+    // Bu yüzden direkt wordsData'yı kullanabiliriz
+    
+    // Her kelime için examples'ı al ve ayrı kartlar oluştur
+    wordsData.forEach((word) => {
+      if (word.examples && Array.isArray(word.examples) && word.examples.length > 0) {
+        word.examples.forEach((example) => {
+          // sentence ve meaning'in hem string hem de boş olmadığını kontrol et
+          if (example && example.sentence && example.sentence.trim() !== "" && example.meaning && example.meaning.trim() !== "") {
+            filteredWordsData.push({
+              type: "example",
+              trSentence: example.meaning.trim(),
+              enSentence: example.sentence.trim(),
+              originalWord: word.word || "",
+            });
+          }
+        });
+      }
+    });
+    
+    // Kartları karıştır (shuffle)
+    filteredWordsData = shuffleArray(filteredWordsData);
+    
+    // Debug: Toplam kaç example kartı oluşturuldu
+    console.log(`Toplam ${filteredWordsData.length} example kartı oluşturuldu (${wordsData.length} kelimeden)`);
+  } else {
+    // Normal mod için mevcut mantık
+    // Dosya zaten tarihe göre yüklendiği için sadece kopyala
+    // Eğer "all" seçiliyse tüm kelimeler, değilse sadece seçilen tarihteki kelimeler
+    filteredWordsData = [...wordsData];
 
-  // Ek filtreleme sadece "all" modunda gerekli değil çünkü dosya zaten tarihe göre yüklendi
-  // Ama yine de kontrol edelim (güvenlik için)
-  if (selectedDate === "today") {
-    const today = new Date();
-    const todayStr = `${String(today.getDate()).padStart(2, "0")}.${String(
-      today.getMonth() + 1
-    ).padStart(2, "0")}.${today.getFullYear()}`;
-    filteredWordsData = filteredWordsData.filter(
-      (word) => word.date === todayStr
-    );
-  } else if (selectedDate !== "all") {
-    // Seçilen tarihe göre filtrele (dosya zaten yüklendi ama yine de kontrol et)
-    filteredWordsData = filteredWordsData.filter(
-      (word) => word.date === selectedDate
-    );
+    // Ek filtreleme sadece "all" modunda gerekli değil çünkü dosya zaten tarihe göre yüklendi
+    // Ama yine de kontrol edelim (güvenlik için)
+    if (selectedDate === "today") {
+      const today = new Date();
+      const todayStr = `${String(today.getDate()).padStart(2, "0")}.${String(
+        today.getMonth() + 1
+      ).padStart(2, "0")}.${today.getFullYear()}`;
+      filteredWordsData = filteredWordsData.filter(
+        (word) => word.date === todayStr
+      );
+    } else if (selectedDate !== "all") {
+      // Seçilen tarihe göre filtrele (dosya zaten yüklendi ama yine de kontrol et)
+      filteredWordsData = filteredWordsData.filter(
+        (word) => word.date === selectedDate
+      );
+    }
   }
 
   // Sayfa numarasının geçerli olup olmadığını kontrol et
@@ -455,6 +498,16 @@ function renderCards() {
 }
 
 function createCardHTML(word) {
+  // Eğer example kartıysa (yeni mod için)
+  if (word.type === "example") {
+    const cardId = `card-example-${Math.random().toString(36).substr(2, 9)}`;
+    let cardHTML = `<div class="word-card" id="${cardId}" data-word="${word.originalWord || ""}">`;
+    cardHTML += createTrExamplesModeHTML(word, "");
+    cardHTML += "</div>";
+    return cardHTML;
+  }
+
+  // Normal kelime kartları için
   const cardId = `card-${word.word.replace(/\s+/g, "-")}`;
   const typeClass = word.type
     ? word.type.replace(/\s+/g, "").replace(/[^a-zA-Z0-9]/g, "")
@@ -702,6 +755,34 @@ function createTrEnModeHTML(word, typeClass) {
   return html;
 }
 
+function createTrExamplesModeHTML(exampleCard, typeClass) {
+  // exampleCard: { type: "example", trSentence: "...", enSentence: "...", originalWord: "..." }
+  let html = `
+                <div class="card-field">
+                    <div class="field-value">${exampleCard.trSentence || "-"}</div>
+                </div>
+
+                <div class="card-field hidden-field" data-reveal="en">
+                    <div class="field-value hidden">👆</div>
+                    <div class="field-value" style="display: none;">
+                        <div class="example-sentence" style="display: flex; align-items: center; gap: 8px; width: 100%;">
+                            <span style="flex: 1;">${exampleCard.enSentence || "-"}</span>
+                            ${
+                              exampleCard.enSentence
+                                ? `<button class="sound-btn" onclick="speakText('${(exampleCard.enSentence || "").replace(
+                                    /'/g,
+                                    "\\'"
+                                  )}')" title="Seslendir">🔊</button>`
+                                : ""
+                            }
+                        </div>
+                    </div>
+                </div>
+            `;
+
+  return html;
+}
+
 // ==================== CARD INTERACTIONS ====================
 function attachCardListeners() {
   const cards = document.querySelectorAll(".word-card");
@@ -795,8 +876,14 @@ function revealHiddenFields(card) {
 }
 
 function resetCards() {
+  // Eğer "Sadece Türkçe Cümle" moduysa, kartları yeniden karıştır
+  if (currentMode === "tr-examples-only") {
+    applyFilters(); // Bu shuffle yapacak
+  }
+  
   // Kartları yeniden render et - bu şekilde tüm kartlar orijinal gizli durumlarına döner
   const scrollPosition = window.scrollY || window.pageYOffset;
+  currentPage = 1; // İlk sayfaya dön
   renderCards();
   // Scroll pozisyonunu koru (DOM güncellemesi sonrası)
   setTimeout(() => {
@@ -885,6 +972,21 @@ function initializePagination() {
 // ==================== STATS ====================
 function updateStats() {
   const statsDiv = document.getElementById("stats");
+  
+  // Yeni mod için farklı hesaplama
+  if (currentMode === "tr-examples-only") {
+    const filteredCount = filteredWordsData.length;
+    let statsText = `Toplam ${filteredCount} cümle`;
+    if (selectedDate !== "all") {
+      statsText += ` | Filtrelenmiş: ${filteredCount} cümle`;
+    } else {
+      statsText += ` | Gösterilen: ${filteredCount} cümle`;
+    }
+    statsDiv.textContent = statsText;
+    return;
+  }
+  
+  // Normal modlar için
   const totalWords = wordsData.length;
   const filteredCount = filteredWordsData.length;
 

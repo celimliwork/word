@@ -894,15 +894,42 @@ function revealHiddenFields(card) {
 }
 
 function resetCards() {
-  // Kartları yeniden render et - bu şekilde tüm kartlar orijinal gizli durumlarına döner
-  // Yeni mod için shuffle renderCards içinde yapılıyor, bu yüzden sadece renderCards çağırmak yeterli
-  const scrollPosition = window.scrollY || window.pageYOffset;
-  currentPage = 1; // İlk sayfaya dön
-  renderCards(); // Bu shuffle yapacak (yeni mod için)
-  // Scroll pozisyonunu koru (DOM güncellemesi sonrası)
-  setTimeout(() => {
-    window.scrollTo(0, scrollPosition);
-  }, 0);
+  // Eğer "Sadece Türkçe Cümle" modundaysa, shuffle yap (mevcut sayfada kal)
+  if (currentMode === "tr-examples-only") {
+    const scrollPosition = window.scrollY || window.pageYOffset;
+    renderCards(); // Bu shuffle yapacak ve mevcut sayfada kalacak
+    // Scroll pozisyonunu koru (DOM güncellemesi sonrası)
+    setTimeout(() => {
+      window.scrollTo(0, scrollPosition);
+    }, 0);
+  } else {
+    // Normal modlarda sadece görünen kartları gizle (revealed olanları kapat)
+    const cards = document.querySelectorAll(".word-card.revealed");
+    cards.forEach((card) => {
+      card.classList.remove("revealed");
+      const hiddenFields = card.querySelectorAll(".hidden-field");
+      hiddenFields.forEach((field) => {
+        // Tüm child elementleri kontrol et
+        const allElements = field.querySelectorAll("*");
+        allElements.forEach((el) => {
+          // Gizli placeholder'ları (hidden class'ı olan) göster
+          if (el.classList.contains("hidden")) {
+            el.style.display = "";
+          }
+          // Açık içerikleri (hidden olmayan ve görünür olan field-value'ları) gizle
+          else if (el.classList.contains("field-value") && !el.classList.contains("hidden")) {
+            if (el.textContent.trim() !== "👆") {
+              el.style.display = "none";
+            }
+          }
+          // Sound butonlarını gizle
+          else if (el.classList.contains("sound-btn")) {
+            el.style.display = "none";
+          }
+        });
+      });
+    });
+  }
 }
 
 // ==================== SPEECH API ====================

@@ -904,28 +904,122 @@ function resetCards() {
     }, 0);
   } else {
     // Normal modlarda sadece görünen kartları gizle (revealed olanları kapat)
+    // revealHiddenFields'in tam tersini yap: başlangıç durumuna geri döndür
     const cards = document.querySelectorAll(".word-card.revealed");
     cards.forEach((card) => {
       card.classList.remove("revealed");
       const hiddenFields = card.querySelectorAll(".hidden-field");
       hiddenFields.forEach((field) => {
-        // Tüm child elementleri kontrol et
-        const allElements = field.querySelectorAll("*");
-        allElements.forEach((el) => {
-          // Gizli placeholder'ları (hidden class'ı olan) göster
-          if (el.classList.contains("hidden")) {
+        // 1. Tüm hidden class'ı olan elementleri göster (bunlar placeholder'lar - 👆)
+        // revealHiddenFields bunları gizliyor, biz gösteriyoruz
+        const hiddenElements = field.querySelectorAll(".hidden");
+        hiddenElements.forEach((el) => {
+          if (el.tagName === "SPAN") {
+            el.style.display = "inline";
+          } else {
             el.style.display = "";
           }
-          // Açık içerikleri (hidden olmayan ve görünür olan field-value'ları) gizle
-          else if (el.classList.contains("field-value") && !el.classList.contains("hidden")) {
-            if (el.textContent.trim() !== "👆") {
+        });
+        
+        // 2. revealHiddenFields'in gösterdiği tüm elementleri gizle
+        // revealHiddenFields: display: none olanları gösteriyor ve sound-btn'ları gösteriyor
+        // Biz: display: none olmayanları (reveal edilmiş) gizliyoruz
+        
+        // 2a. field-value'ları kontrol et
+        const fieldValues = field.querySelectorAll(".field-value");
+        fieldValues.forEach((el) => {
+          if (!el.classList.contains("hidden")) {
+            // 👆 değilse ve görünürse gizle (başlangıçta display: none olmalı)
+            if (el.style.display !== "none" && el.textContent.trim() !== "👆") {
               el.style.display = "none";
             }
           }
-          // Sound butonlarını gizle
-          else if (el.classList.contains("sound-btn")) {
+        });
+        
+        // 2b. word-text'leri kontrol et
+        const wordTexts = field.querySelectorAll(".word-text");
+        wordTexts.forEach((el) => {
+          if (!el.classList.contains("hidden")) {
+            // 👆 değilse ve görünürse gizle (başlangıçta display: none olmalı)
+            if (el.style.display !== "none" && el.textContent.trim() !== "👆") {
+              el.style.display = "none";
+            }
+          }
+        });
+        
+        // 2c. pronunciation elementlerini gizle
+        const pronunciations = field.querySelectorAll(".pronunciation");
+        pronunciations.forEach((el) => {
+          if (!el.classList.contains("hidden") && el.style.display !== "none") {
             el.style.display = "none";
           }
+        });
+        
+        // 2d. word-main içindeki elementleri kontrol et (tr-en modu için özel)
+        const wordMains = field.querySelectorAll(".word-main");
+        wordMains.forEach((wordMain) => {
+          // word-main içindeki tüm word-text'leri kontrol et
+          const wordTextsInMain = wordMain.querySelectorAll(".word-text");
+          wordTextsInMain.forEach((wt) => {
+            if (!wt.classList.contains("hidden")) {
+              // hidden olmayan word-text'ler başlangıçta display: none olmalı
+              if (wt.style.display !== "none") {
+                wt.style.display = "none";
+              }
+            }
+          });
+          // word-main içindeki sound-btn'ları gizle
+          const soundBtnsInMain = wordMain.querySelectorAll(".sound-btn");
+          soundBtnsInMain.forEach((btn) => {
+            if (btn.style.display !== "none") {
+              btn.style.display = "none";
+            }
+          });
+        });
+        
+        // 2e. sound-btn'ları gizle (tüm hidden-field içindeki)
+        const soundButtons = field.querySelectorAll(".sound-btn");
+        soundButtons.forEach((el) => {
+          if (el.style.display !== "none") {
+            el.style.display = "none";
+          }
+        });
+        
+        // 2g. hidden-content class'ı olan elementleri gizle
+        const hiddenContents = field.querySelectorAll(".hidden-content");
+        hiddenContents.forEach((el) => {
+          if (el.style.display !== "none") {
+            el.style.display = "none";
+          }
+        });
+        
+        // 2h. type-badge'leri gizle (eğer hidden-field içindeyse ve başlangıçta display: none ise)
+        const typeBadges = field.querySelectorAll(".type-badge");
+        typeBadges.forEach((el) => {
+          if (!el.classList.contains("hidden") && el.style.display !== "none") {
+            el.style.display = "none";
+          }
+        });
+        
+        // 2i. example-sentence içindeki hidden-content span'ları gizle (tr-en modu için)
+        const exampleSentences = field.querySelectorAll(".example-sentence");
+        exampleSentences.forEach((exSentence) => {
+          // hidden-content class'ı olan span'ları gizle
+          const hiddenContentSpans = exSentence.querySelectorAll("span.hidden-content");
+          hiddenContentSpans.forEach((span) => {
+            if (span.style.display !== "none") {
+              span.style.display = "none";
+            }
+          });
+          // hidden olmayan ama görünür olan span'ları kontrol et (İngilizce cümle kısmı)
+          const allSpans = exSentence.querySelectorAll("span");
+          allSpans.forEach((span) => {
+            if (!span.classList.contains("hidden") && !span.classList.contains("hidden-content")) {
+              if (span.style.display !== "none" && span.textContent.trim() !== "👆") {
+                span.style.display = "none";
+              }
+            }
+          });
         });
       });
     });

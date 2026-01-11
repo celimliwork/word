@@ -8,6 +8,8 @@ let selectedDate = "all";
 let longPressTimer = null;
 const LONG_PRESS_DURATION = 500;
 const STORAGE_KEY = "wordCardAppState";
+let isReadingAllExamples = false; // Tüm cümleleri okuma durumu
+let readAllTimeoutId = null; // Bekleme timeout ID'si
 
 // ==================== LOCALSTORAGE ====================
 function saveState() {
@@ -373,6 +375,10 @@ function setupDateFilterListener() {
   // Yeni listener ekle
   const finalDateFilter = document.getElementById("dateFilter");
   finalDateFilter.addEventListener("change", async (e) => {
+    // Tarih değiştiğinde okumayı durdur
+    if (isReadingAllExamples) {
+      stopReadingAllExamples();
+    }
     selectedDate = e.target.value;
     currentPage = 1;
     // Tarih değiştiğinde yeni dosyayı yükle
@@ -384,15 +390,39 @@ function setupDateFilterListener() {
 // ==================== MODE SELECTION ====================
 function initializeModeSelect() {
   const modeSelect = document.getElementById("modeSelect");
+  const readAllExamplesGroup = document.getElementById("readAllExamplesGroup");
+  const readAllExamplesBtn = document.getElementById("readAllExamplesBtn");
 
   // Kaydedilmiş değeri seç
   modeSelect.value = currentMode;
 
+  // Mod değiştiğinde butonu göster/gizle
+  function toggleReadAllButton() {
+    if (currentMode === "tr-examples-only") {
+      readAllExamplesGroup.style.display = "block";
+    } else {
+      readAllExamplesGroup.style.display = "none";
+    }
+  }
+
+  // İlk yüklemede butonu göster/gizle
+  toggleReadAllButton();
+
   modeSelect.addEventListener("change", async (e) => {
+    // Mod değiştiğinde okumayı durdur
+    if (isReadingAllExamples) {
+      stopReadingAllExamples();
+    }
     currentMode = e.target.value;
+    toggleReadAllButton();
     applyFilters(); // Filtreleri yeniden uygula (yeni mod için gerekli - bu fonksiyon sayfa numarasını kontrol eder)
     renderCards();
     saveState(); // Durumu kaydet
+  });
+
+  // Tüm cümleleri okuma butonu
+  readAllExamplesBtn.addEventListener("click", () => {
+    readAllEnglishExamples();
   });
 }
 
@@ -513,6 +543,16 @@ function renderCards() {
   // Event listener'ları ekle
   attachCardListeners();
   updatePagination();
+  
+  // Mod değiştiğinde butonu göster/gizle
+  const readAllExamplesGroup = document.getElementById("readAllExamplesGroup");
+  if (readAllExamplesGroup) {
+    if (currentMode === "tr-examples-only") {
+      readAllExamplesGroup.style.display = "block";
+    } else {
+      readAllExamplesGroup.style.display = "none";
+    }
+  }
 }
 
 function createCardHTML(word) {
@@ -1041,6 +1081,137 @@ function speakText(text) {
   }
 }
 
+// Tüm İngilizce cümleleri sırasıyla okuma fonksiyonu
+function readAllEnglishExamples() {
+  if (currentMode !== "tr-examples-only") {
+    return;
+  }
+
+  const readAllBtn = document.getElementById("readAllExamplesBtn");
+  const originalText = "🔊 Tüm İngilizce Cümleleri Oku";
+
+  // Eğer zaten okuma devam ediyorsa, durdur
+  if (isReadingAllExamples) {
+    stopReadingAllExamples();
+    return;
+  }
+
+  // Mevcut sayfadaki tüm kartları bul
+  const cards = document.querySelectorAll(".word-card");
+  if (cards.length === 0) {
+    return;
+  }
+
+  // Her karttan İngilizce cümleyi çıkar
+  const englishSentences = [];
+  cards.forEach((card) => {
+    const hiddenField = card.querySelector('.hidden-field[data-reveal="en"]');
+    if (hiddenField) {
+      // İngilizce cümle .field-value içindeki .example-sentence > span'de
+      const fieldValue = hiddenField.querySelector(".field-value:not(.hidden)");
+      if (fieldValue) {
+        const exampleSentenceDiv = fieldValue.querySelector(".example-sentence");
+        if (exampleSentenceDiv) {
+          const sentenceSpan = exampleSentenceDiv.querySelector("span");
+          if (sentenceSpan) {
+            const sentence = sentenceSpan.textContent.trim();
+            if (sentence && sentence !== "-" && sentence !== "👆") {
+              englishSentences.push(sentence);
+            }
+          }
+        }
+      }
+    }
+  });
+
+  if (englishSentences.length === 0) {
+    alert("Okunacak İngilizce cümle bulunamadı.");
+    return;
+  }
+
+  // Okuma durumunu başlat
+  isReadingAllExamples = true;
+  readAllBtn.textContent = "⏹️ Durdur";
+  readAllBtn.disabled = false;
+
+  // Cümleleri sırasıyla oku
+  let currentIndex = 0;
+  const DELAY_BETWEEN_SENTENCES = 1500; // 1.5 saniye bekleme
+
+  function speakNextSentence() {
+    // Eğer durdurulduysa devam etme
+    if (!isReadingAllExamples) {
+      return;
+    }
+
+    if (currentIndex >= englishSentences.length) {
+      // Tüm cümleler okundu, butonu tekrar aktif et
+      isReadingAllExamples = false;
+      readAllBtn.disabled = false;
+      readAllBtn.textContent = originalText;
+      return;
+    }
+
+    const sentence = englishSentences[currentIndex];
+    const utterance = new SpeechSynthesisUtterance(sentence);
+    utterance.lang = "en-US";
+    utterance.rate = 0.9;
+    utterance.pitch = 1;
+
+    // Cümle bittiğinde bir sonrakine geç
+    utterance.onend = () => {
+      if (!isReadingAllExamples) {
+        return;
+      }
+      currentIndex++;
+      // Kısa bir bekleme sonrası bir sonraki cümleyi oku
+      readAllTimeoutId = setTimeout(() => {
+        speakNextSentence();
+      }, DELAY_BETWEEN_SENTENCES);
+    };
+
+    // Hata durumunda da devam et
+    utterance.onerror = () => {
+      if (!isReadingAllExamples) {
+        return;
+      }
+      currentIndex++;
+      readAllTimeoutId = setTimeout(() => {
+        speakNextSentence();
+      }, DELAY_BETWEEN_SENTENCES);
+    };
+
+    window.speechSynthesis.speak(utterance);
+  }
+
+  // Önce mevcut konuşmaları durdur
+  window.speechSynthesis.cancel();
+  
+  // İlk cümleyi oku
+  speakNextSentence();
+}
+
+// Okumayı durdurma fonksiyonu
+function stopReadingAllExamples() {
+  isReadingAllExamples = false;
+  
+  // Bekleme timeout'unu iptal et
+  if (readAllTimeoutId) {
+    clearTimeout(readAllTimeoutId);
+    readAllTimeoutId = null;
+  }
+  
+  // Konuşmayı durdur
+  window.speechSynthesis.cancel();
+  
+  // Butonu güncelle
+  const readAllBtn = document.getElementById("readAllExamplesBtn");
+  if (readAllBtn) {
+    readAllBtn.textContent = "🔊 Tüm İngilizce Cümleleri Oku";
+    readAllBtn.disabled = false;
+  }
+}
+
 // ==================== PAGINATION ====================
 function updatePagination() {
   const totalPages = Math.ceil(filteredWordsData.length / CARDS_PER_PAGE);
@@ -1102,6 +1273,11 @@ function updatePagination() {
 function initializePagination() {
   // Sayfa değiştirme fonksiyonu
   const goToPage = (direction) => {
+    // Sayfa değiştiğinde okumayı durdur
+    if (isReadingAllExamples) {
+      stopReadingAllExamples();
+    }
+    
     const totalPages = Math.ceil(filteredWordsData.length / CARDS_PER_PAGE);
     if (direction === "prev" && currentPage > 1) {
       currentPage--;

@@ -1,2 +1,0 @@
-broad=geniş
-basis=temel

@@ -1376,5 +1376,525 @@
       }
     ],
     "date": "12.01.2026"
+  },
+  {
+    "word": "hang out",
+    "pronunciation": "heng aut",
+    "type": "Phrasal Verb",
+    "meaning": "oyalanmak, vakit öldürmek",
+    "v2": {
+      "form": "hung out",
+      "pronunciation": "hang aut"
+    },
+    "v3": {
+      "form": "hung out",
+      "pronunciation": "hang aut"
+    },
+    "gerundInfinitive": "hanging out / to hang out",
+    "examples": [
+      {
+        "sentence": "Let's hang out at the park this weekend.",
+        "meaning": "Bu hafta sonu parkta vakit geçirelim."
+      },
+      {
+        "sentence": "I like to hang out with my friends.",
+        "meaning": "Arkadaşlarımla vakit geçirmeyi severim."
+      }
+    ],
+    "date": "12.01.2026"
+  },
+  {
+    "word": "stress out",
+    "pronunciation": "stres aut",
+    "type": "Phrasal Verb",
+    "meaning": "strese girmek",
+    "v2": {
+      "form": "stressed out",
+      "pronunciation": "strest aut"
+    },
+    "v3": {
+      "form": "stressed out",
+      "pronunciation": "strest aut"
+    },
+    "gerundInfinitive": "stressing out / to stress out",
+    "examples": [
+      {
+        "sentence": "Don't stress out about the exam.",
+        "meaning": "Sınav hakkında strese girme."
+      },
+      {
+        "sentence": "I'm really stressed out about work.",
+        "meaning": "İş konusunda gerçekten strese girdim."
+      }
+    ],
+    "date": "12.01.2026"
+  },
+  {
+    "word": "takeout",
+    "pronunciation": "teykaut",
+    "type": "İsim",
+    "meaning": "paket servis",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Let's order takeout for dinner.",
+        "meaning": "Akşam yemeği için paket servis sipariş edelim."
+      },
+      {
+        "sentence": "I'll get some Chinese takeout.",
+        "meaning": "Biraz Çin yemeği paket servis alacağım."
+      }
+    ],
+    "date": "12.01.2026"
+  },
+  {
+    "word": "take a break",
+    "pronunciation": "teyk a breyk",
+    "type": "İfade",
+    "meaning": "ara vermek",
+    "v2": {
+      "form": "took a break",
+      "pronunciation": "tuk a breyk"
+    },
+    "v3": {
+      "form": "taken a break",
+      "pronunciation": "teykın a breyk"
+    },
+    "gerundInfinitive": "taking a break / to take a break",
+    "examples": [
+      {
+        "sentence": "Let's take a break from studying.",
+        "meaning": "Çalışmaya ara verelim."
+      },
+      {
+        "sentence": "I need to take a break.",
+        "meaning": "Ara vermem gerekiyor."
+      }
+    ],
+    "date": "12.01.2026"
+  },
+  {
+    "word": "kind of",
+    "pronunciation": "kaynd of",
+    "type": "İfade",
+    "meaning": "biraz",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I'm kind of tired today.",
+        "meaning": "Bugün biraz yorgunum."
+      },
+      {
+        "sentence": "It's kind of difficult.",
+        "meaning": "Biraz zor."
+      }
+    ],
+    "date": "12.01.2026"
+  },
+  {
+    "word": "I guess",
+    "pronunciation": "ay ges",
+    "type": "İfade",
+    "meaning": "sanırım",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I guess you're right.",
+        "meaning": "Sanırım haklısın."
+      },
+      {
+        "sentence": "I guess we should go now.",
+        "meaning": "Sanırım şimdi gitmeliyiz."
+      }
+    ],
+    "date": "12.01.2026"
+  },
+  {
+    "word": "distract",
+    "pronunciation": "distrekt",
+    "type": "Fiil",
+    "meaning": "dikkat dağıtmak",
+    "v2": {
+      "form": "distracted",
+      "pronunciation": "distrektıd"
+    },
+    "v3": {
+      "form": "distracted",
+      "pronunciation": "distrektıd"
+    },
+    "gerundInfinitive": "distracting / to distract",
+    "examples": [
+      {
+        "sentence": "Don't distract me while I'm working.",
+        "meaning": "Çalışırken dikkatimi dağıtma."
+      },
+      {
+        "sentence": "The noise distracted me from my studies.",
+        "meaning": "Gürültü çalışmamdan dikkatimi dağıttı."
+      }
+    ],
+    "date": "12.01.2026"
+  },
+  {
+    "word": "snooze",
+    "pronunciation": "snuz",
+    "type": "Fiil",
+    "meaning": "kestirmek",
+    "v2": {
+      "form": "snoozed",
+      "pronunciation": "snuzd"
+    },
+    "v3": {
+      "form": "snoozed",
+      "pronunciation": "snuzd"
+    },
+    "gerundInfinitive": "snoozing / to snooze",
+    "examples": [
+      {
+        "sentence": "I'll snooze for ten minutes.",
+        "meaning": "On dakika kestireceğim."
+      },
+      {
+        "sentence": "He snoozed on the couch.",
+        "meaning": "Kanepede kestirdi."
+      }
+    ],
+    "date": "12.01.2026"
+  },
+  {
+    "word": "stretch",
+    "pronunciation": "streç",
+    "type": "Fiil",
+    "meaning": "germek",
+    "v2": {
+      "form": "stretched",
+      "pronunciation": "streçt"
+    },
+    "v3": {
+      "form": "stretched",
+      "pronunciation": "streçt"
+    },
+    "gerundInfinitive": "stretching / to stretch",
+    "examples": [
+      {
+        "sentence": "I stretch every morning before exercise.",
+        "meaning": "Her sabah antrenmandan önce gerinirim."
+      },
+      {
+        "sentence": "Stretch your arms up high.",
+        "meaning": "Kollarını yukarı doğru ger."
+      }
+    ],
+    "date": "12.01.2026"
+  },
+  {
+    "word": "grain",
+    "pronunciation": "greyn",
+    "type": "İsim",
+    "meaning": "tahıl",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Wheat is a type of grain.",
+        "meaning": "Buğday bir tahıl türüdür."
+      },
+      {
+        "sentence": "We need to buy more grain.",
+        "meaning": "Daha fazla tahıl almamız gerekiyor."
+      }
+    ],
+    "date": "12.01.2026"
+  },
+  {
+    "word": "cereal",
+    "pronunciation": "siriyıl",
+    "type": "İsim",
+    "meaning": "mısır gevreği",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I eat cereal for breakfast every day.",
+        "meaning": "Her gün kahvaltıda mısır gevreği yerim."
+      },
+      {
+        "sentence": "Which cereal do you prefer?",
+        "meaning": "Hangi mısır gevreğini tercih edersin?"
+      }
+    ],
+    "date": "12.01.2026"
+  },
+  {
+    "word": "right away",
+    "pronunciation": "rayt avey",
+    "type": "İfade",
+    "meaning": "hemen",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I'll do it right away.",
+        "meaning": "Hemen yapacağım."
+      },
+      {
+        "sentence": "Come here right away!",
+        "meaning": "Hemen buraya gel!"
+      }
+    ],
+    "date": "12.01.2026"
+  },
+  {
+    "word": "go off",
+    "pronunciation": "go of",
+    "type": "Phrasal Verb",
+    "meaning": "çalmak (alarm)",
+    "v2": {
+      "form": "went off",
+      "pronunciation": "vent of"
+    },
+    "v3": {
+      "form": "gone off",
+      "pronunciation": "gan of"
+    },
+    "gerundInfinitive": "going off / to go off",
+    "examples": [
+      {
+        "sentence": "The alarm went off at 7 AM.",
+        "meaning": "Alarm sabah 7'de çaldı."
+      },
+      {
+        "sentence": "My alarm clock goes off every morning.",
+        "meaning": "Çalar saatim her sabah çalıyor."
+      }
+    ],
+    "date": "12.01.2026"
+  },
+  {
+    "word": "stuff",
+    "pronunciation": "staf",
+    "type": "İsim",
+    "meaning": "şey",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I have a lot of stuff to do today.",
+        "meaning": "Bugün yapacak çok şeyim var."
+      },
+      {
+        "sentence": "Where did you put all that stuff?",
+        "meaning": "Tüm o şeyleri nereye koydun?"
+      }
+    ],
+    "date": "12.01.2026"
+  },
+  {
+    "word": "I'm in a rush",
+    "pronunciation": "aym in a raş",
+    "type": "İfade",
+    "meaning": "acelem var",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I'm in a rush, so I can't talk now.",
+        "meaning": "Acelem var, şimdi konuşamam."
+      },
+      {
+        "sentence": "Sorry, I'm in a rush to catch the bus.",
+        "meaning": "Üzgünüm, otobüse yetişmek için acelem var."
+      }
+    ],
+    "date": "12.01.2026"
+  },
+  {
+    "word": "I mean",
+    "pronunciation": "ay min",
+    "type": "İfade",
+    "meaning": "yani",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I mean, it's not that difficult.",
+        "meaning": "Yani, o kadar zor değil."
+      },
+      {
+        "sentence": "I mean, what do you think?",
+        "meaning": "Yani, ne düşünüyorsun?"
+      }
+    ],
+    "date": "12.01.2026"
+  },
+  {
+    "word": "personally",
+    "pronunciation": "pörsınlı",
+    "type": "Zarf",
+    "meaning": "şahsen",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Personally, I think it's a good idea.",
+        "meaning": "Şahsen, bunun iyi bir fikir olduğunu düşünüyorum."
+      },
+      {
+        "sentence": "Personally, I don't agree with that.",
+        "meaning": "Şahsen, buna katılmıyorum."
+      }
+    ],
+    "date": "12.01.2026"
+  },
+  {
+    "word": "fancy",
+    "pronunciation": "fensi",
+    "type": "Sıfat",
+    "meaning": "süslü",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She wore a fancy dress to the party.",
+        "meaning": "Partiye süslü bir elbise giydi."
+      },
+      {
+        "sentence": "This is a fancy restaurant.",
+        "meaning": "Bu süslü bir restoran."
+      }
+    ],
+    "date": "12.01.2026"
+  },
+  {
+    "word": "same here",
+    "pronunciation": "seym hir",
+    "type": "İfade",
+    "meaning": "aynı şekilde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I'm tired. Same here!",
+        "meaning": "Yorgunum. Aynı şekilde!"
+      },
+      {
+        "sentence": "I love pizza. Same here!",
+        "meaning": "Pizzayı severim. Aynı şekilde!"
+      }
+    ],
+    "date": "12.01.2026"
+  },
+  {
+    "word": "what about you",
+    "pronunciation": "vat abaut yu",
+    "type": "İfade",
+    "meaning": "senden naber, ya sen",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I'm doing great. What about you?",
+        "meaning": "Harika gidiyorum. Senden naber?"
+      },
+      {
+        "sentence": "I'm going to the movies. What about you?",
+        "meaning": "Sinemaya gidiyorum. Ya sen?"
+      }
+    ],
+    "date": "12.01.2026"
   }
 ]

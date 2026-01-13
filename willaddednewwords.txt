@@ -19,3 +19,5 @@ Personally=Şahsen
 fancy=süslü
 same here=aynı şekilde
 what about you=senden naber
+optimistic=iyimser
+

@@ -395,38 +395,57 @@ function initializeModeSelect() {
   const modeSelect = document.getElementById("modeSelect");
   const readAllExamplesGroup = document.getElementById("readAllExamplesGroup");
   const readAllExamplesBtn = document.getElementById("readAllExamplesBtn");
+  const startLearningGroup = document.getElementById("startLearningGroup");
+  const startLearningBtn = document.getElementById("startLearningBtn");
 
   // Kaydedilmiş değeri seç
   modeSelect.value = currentMode;
 
-  // Mod değiştiğinde butonu göster/gizle
-  function toggleReadAllButton() {
+  // Mod değiştiğinde butonları göster/gizle
+  function toggleButtons() {
     if (currentMode === "tr-examples-only") {
-      readAllExamplesGroup.style.display = "block";
+      if (readAllExamplesGroup) readAllExamplesGroup.style.display = "block";
+      if (startLearningGroup) startLearningGroup.style.display = "none";
+    } else if (currentMode === "full") {
+      if (readAllExamplesGroup) readAllExamplesGroup.style.display = "none";
+      if (startLearningGroup) startLearningGroup.style.display = "block";
     } else {
-      readAllExamplesGroup.style.display = "none";
+      if (readAllExamplesGroup) readAllExamplesGroup.style.display = "none";
+      if (startLearningGroup) startLearningGroup.style.display = "none";
     }
   }
 
-  // İlk yüklemede butonu göster/gizle
-  toggleReadAllButton();
+  // İlk yüklemede butonları göster/gizle
+  toggleButtons();
 
   modeSelect.addEventListener("change", async (e) => {
     // Mod değiştiğinde okumayı durdur
     if (isReadingAllExamples) {
       stopReadingAllExamples();
     }
+    if (isLearningMode) {
+      stopLearningMode();
+    }
     currentMode = e.target.value;
-    toggleReadAllButton();
+    toggleButtons();
     applyFilters(); // Filtreleri yeniden uygula (yeni mod için gerekli - bu fonksiyon sayfa numarasını kontrol eder)
     renderCards();
     saveState(); // Durumu kaydet
   });
 
   // Tüm cümleleri okuma butonu
-  readAllExamplesBtn.addEventListener("click", () => {
-    readAllEnglishExamples();
-  });
+  if (readAllExamplesBtn) {
+    readAllExamplesBtn.addEventListener("click", () => {
+      readAllEnglishExamples();
+    });
+  }
+
+  // Öğrenme başlat butonu
+  if (startLearningBtn) {
+    startLearningBtn.addEventListener("click", () => {
+      startLearningMode();
+    });
+  }
 }
 
 // ==================== UTILITY FUNCTIONS ====================

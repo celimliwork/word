@@ -10,6 +10,9 @@ const LONG_PRESS_DURATION = 500;
 const STORAGE_KEY = "wordCardAppState";
 let isReadingAllExamples = false; // Tüm cümleleri okuma durumu
 let readAllTimeoutId = null; // Bekleme timeout ID'si
+let isLearningMode = false; // Öğrenme modu durumu
+let learningTimeoutId = null; // Öğrenme modu timeout ID'si
+let currentLearningIndex = 0; // Şu an okunan kelime indeksi
 
 // ==================== LOCALSTORAGE ====================
 function saveState() {
@@ -544,13 +547,21 @@ function renderCards() {
   attachCardListeners();
   updatePagination();
   
-  // Mod değiştiğinde butonu göster/gizle
+  // Mod değiştiğinde butonları göster/gizle
   const readAllExamplesGroup = document.getElementById("readAllExamplesGroup");
+  const startLearningGroup = document.getElementById("startLearningGroup");
   if (readAllExamplesGroup) {
     if (currentMode === "tr-examples-only") {
       readAllExamplesGroup.style.display = "block";
     } else {
       readAllExamplesGroup.style.display = "none";
+    }
+  }
+  if (startLearningGroup) {
+    if (currentMode === "full") {
+      startLearningGroup.style.display = "block";
+    } else {
+      startLearningGroup.style.display = "none";
     }
   }
 }
@@ -1067,17 +1078,123 @@ function resetCards() {
 }
 
 // ==================== SPEECH API ====================
-function speakText(text) {
-  if (!text || text === "-") return;
+function speakText(text, lang = "en-US", onEnd = null) {
+  if (!text || text === "-") {
+    if (onEnd) onEnd();
+    return;
+  }
 
   if ("speechSynthesis" in window) {
     const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = "en-US";
+    utterance.lang = lang;
     utterance.rate = 0.9;
     utterance.pitch = 1;
+    
+    if (onEnd) {
+      utterance.onend = onEnd;
+      utterance.onerror = () => {
+        if (onEnd) onEnd();
+      };
+    }
+    
     window.speechSynthesis.speak(utterance);
   } else {
     alert("Tarayıcınız seslendirme özelliğini desteklemiyor.");
+    if (onEnd) onEnd();
+  }
+}
+
+// Öğrenme modu: Tüm kelimeleri sırayla okur (İngilizce kelime + Türkçe anlam)
+function startLearningMode() {
+  if (currentMode !== "full") {
+    return;
+  }
+
+  const startLearningBtn = document.getElementById("startLearningBtn");
+  const originalText = "🎓 Öğrenme Başlat";
+
+  // Eğer zaten öğrenme modu devam ediyorsa, durdur
+  if (isLearningMode) {
+    stopLearningMode();
+    return;
+  }
+
+  // Filtrelenmiş kelimeleri al
+  if (filteredWordsData.length === 0) {
+    alert("Okunacak kelime bulunamadı.");
+    return;
+  }
+
+  isLearningMode = true;
+  currentLearningIndex = 0;
+  startLearningBtn.textContent = "⏹️ Durdur";
+
+  // İlk kelimeyi oku
+  readNextWord();
+}
+
+function readNextWord() {
+  if (!isLearningMode || currentLearningIndex >= filteredWordsData.length) {
+    stopLearningMode();
+    return;
+  }
+
+  const word = filteredWordsData[currentLearningIndex];
+  
+  if (!word || !word.word) {
+    currentLearningIndex++;
+    setTimeout(() => readNextWord(), 500);
+    return;
+  }
+
+  const englishWord = word.word.trim();
+  const turkishMeaning = word.meaning ? word.meaning.trim() : "";
+
+  // Önce İngilizce kelimeyi oku
+  speakText(englishWord, "en-US", () => {
+    // İngilizce kelime bittikten sonra kısa bir bekleme
+    setTimeout(() => {
+      if (!isLearningMode) return;
+      
+      // Sonra Türkçe anlamı oku
+      if (turkishMeaning && turkishMeaning !== "-") {
+        speakText(turkishMeaning, "tr-TR", () => {
+          // Türkçe anlam bittikten sonra bir sonraki kelimeye geç
+          setTimeout(() => {
+            if (!isLearningMode) return;
+            currentLearningIndex++;
+            readNextWord();
+          }, 800); // Kelimeler arası bekleme
+        });
+      } else {
+        // Anlam yoksa direkt bir sonraki kelimeye geç
+        setTimeout(() => {
+          if (!isLearningMode) return;
+          currentLearningIndex++;
+          readNextWord();
+        }, 800);
+      }
+    }, 500); // İngilizce ve Türkçe arası bekleme
+  });
+}
+
+function stopLearningMode() {
+  isLearningMode = false;
+  currentLearningIndex = 0;
+  
+  // Timeout'u temizle
+  if (learningTimeoutId) {
+    clearTimeout(learningTimeoutId);
+    learningTimeoutId = null;
+  }
+  
+  // Konuşmayı durdur
+  window.speechSynthesis.cancel();
+  
+  // Butonu güncelle
+  const startLearningBtn = document.getElementById("startLearningBtn");
+  if (startLearningBtn) {
+    startLearningBtn.textContent = "🎓 Öğrenme Başlat";
   }
 }
 
@@ -1277,6 +1394,9 @@ function initializePagination() {
     if (isReadingAllExamples) {
       stopReadingAllExamples();
     }
+    if (isLearningMode) {
+      stopLearningMode();
+    }
     
     const totalPages = Math.ceil(filteredWordsData.length / CARDS_PER_PAGE);
     if (direction === "prev" && currentPage > 1) {
@@ -1352,6 +1472,12 @@ function initializeResetButton() {
   const resetBtnTop = document.getElementById("resetCardsBtnTop");
   if (resetBtnTop) {
     resetBtnTop.addEventListener("click", () => {
+      if (isReadingAllExamples) {
+        stopReadingAllExamples();
+      }
+      if (isLearningMode) {
+        stopLearningMode();
+      }
       resetCards();
     });
   }
@@ -1359,10 +1485,16 @@ function initializeResetButton() {
   // Aşağıdaki buton
   const resetBtn = document.getElementById("resetCardsBtn");
   if (resetBtn) {
-    resetBtn.addEventListener("click", () => {
-      resetCards();
-    });
-  }
+  resetBtn.addEventListener("click", () => {
+    if (isReadingAllExamples) {
+      stopReadingAllExamples();
+    }
+    if (isLearningMode) {
+      stopLearningMode();
+    }
+    resetCards();
+  });
+}
 }
 
 // ==================== INITIALIZATION ====================

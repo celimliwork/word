@@ -1,0 +1,3696 @@
+[
+  {
+    "word": "optimistic",
+    "pronunciation": "optimistik",
+    "type": "Sıfat",
+    "meaning": "iyimser",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She is very optimistic about the future.",
+        "meaning": "Gelecek hakkında çok iyimser."
+      },
+      {
+        "sentence": "I'm optimistic that we will succeed.",
+        "meaning": "Başaracağımıza dair iyimserim."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "rather",
+    "pronunciation": "redır",
+    "type": "Zarf",
+    "meaning": "pek, oldukça",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It's rather cold today.",
+        "meaning": "Bugün oldukça soğuk."
+      },
+      {
+        "sentence": "I'd rather stay home.",
+        "meaning": "Evde kalmayı tercih ederim."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "quite",
+    "pronunciation": "kwayt",
+    "type": "Zarf",
+    "meaning": "pek, oldukça",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It's quite interesting.",
+        "meaning": "Oldukça ilginç."
+      },
+      {
+        "sentence": "I'm quite tired.",
+        "meaning": "Oldukça yorgunum."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "pretty",
+    "pronunciation": "priti",
+    "type": "Zarf",
+    "meaning": "pek, oldukça",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It's pretty good.",
+        "meaning": "Oldukça iyi."
+      },
+      {
+        "sentence": "I'm pretty sure about it.",
+        "meaning": "Bundan oldukça eminim."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "over there",
+    "pronunciation": "ouvır der",
+    "type": "İfade",
+    "meaning": "tam oradaki, oradaki",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The store is over there.",
+        "meaning": "Mağaza tam orada."
+      },
+      {
+        "sentence": "Look over there!",
+        "meaning": "Oraya bak!"
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "brick",
+    "pronunciation": "brik",
+    "type": "İsim",
+    "meaning": "tuğla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The house is made of brick.",
+        "meaning": "Ev tuğladan yapılmış."
+      },
+      {
+        "sentence": "He threw a brick through the window.",
+        "meaning": "Pencereye bir tuğla attı."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "chimney",
+    "pronunciation": "çimni",
+    "type": "İsim",
+    "meaning": "baca",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Smoke is coming from the chimney.",
+        "meaning": "Bacadan duman çıkıyor."
+      },
+      {
+        "sentence": "The chimney needs to be cleaned.",
+        "meaning": "Baca temizlenmeli."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "try on",
+    "pronunciation": "tray on",
+    "type": "Phrasal Verb",
+    "meaning": "elbise denemek",
+    "v2": {
+      "form": "tried on",
+      "pronunciation": "trayd on"
+    },
+    "v3": {
+      "form": "tried on",
+      "pronunciation": "trayd on"
+    },
+    "gerundInfinitive": "trying on / to try on",
+    "examples": [
+      {
+        "sentence": "I want to try on this dress.",
+        "meaning": "Bu elbiseyi denemek istiyorum."
+      },
+      {
+        "sentence": "Can I try on these shoes?",
+        "meaning": "Bu ayakkabıları deneyebilir miyim?"
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "fabulous",
+    "pronunciation": "febyulıs",
+    "type": "Sıfat",
+    "meaning": "harika",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "You look fabulous!",
+        "meaning": "Harika görünüyorsun!"
+      },
+      {
+        "sentence": "We had a fabulous time.",
+        "meaning": "Harika vakit geçirdik."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "ahead",
+    "pronunciation": "ahed",
+    "type": "Zarf",
+    "meaning": "önde, ilerde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Go straight ahead.",
+        "meaning": "Dümdüz ileri git."
+      },
+      {
+        "sentence": "We have a long road ahead.",
+        "meaning": "Önümüzde uzun bir yol var."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "awkwardly",
+    "pronunciation": "okvırdli",
+    "type": "Zarf",
+    "meaning": "zor bir şekilde, problem yaratırcasına",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He smiled awkwardly.",
+        "meaning": "Zor bir şekilde gülümsedi."
+      },
+      {
+        "sentence": "She handled the situation awkwardly.",
+        "meaning": "Durumu zor bir şekilde ele aldı."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "blindly",
+    "pronunciation": "blayndli",
+    "type": "Zarf",
+    "meaning": "körü körüne",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Don't follow blindly.",
+        "meaning": "Körü körüne takip etme."
+      },
+      {
+        "sentence": "He trusted her blindly.",
+        "meaning": "Ona körü körüne güvendi."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "boastfully",
+    "pronunciation": "boustfuli",
+    "type": "Zarf",
+    "meaning": "övünerek, böbürlenerek",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He spoke boastfully about his achievements.",
+        "meaning": "Başarıları hakkında övünerek konuştu."
+      },
+      {
+        "sentence": "She smiled boastfully.",
+        "meaning": "Övünerek gülümsedi."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "boldly",
+    "pronunciation": "bouldli",
+    "type": "Zarf",
+    "meaning": "cesurca",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She walked boldly into the room.",
+        "meaning": "Odaya cesurca girdi."
+      },
+      {
+        "sentence": "He spoke boldly about his ideas.",
+        "meaning": "Fikirleri hakkında cesurca konuştu."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "bravely",
+    "pronunciation": "breyvli",
+    "type": "Zarf",
+    "meaning": "cesurca",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The soldier fought bravely.",
+        "meaning": "Asker cesurca savaştı."
+      },
+      {
+        "sentence": "She faced the challenge bravely.",
+        "meaning": "Meydan okumayı cesurca karşıladı."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "brightly",
+    "pronunciation": "braytli",
+    "type": "Zarf",
+    "meaning": "aydınlık bir şekilde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The sun shone brightly.",
+        "meaning": "Güneş parlak bir şekilde parladı."
+      },
+      {
+        "sentence": "She smiled brightly.",
+        "meaning": "Parlak bir şekilde gülümsedi."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "cheerfully",
+    "pronunciation": "çirfuli",
+    "type": "Zarf",
+    "meaning": "neşeyle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She greeted us cheerfully.",
+        "meaning": "Bizi neşeyle karşıladı."
+      },
+      {
+        "sentence": "He whistled cheerfully.",
+        "meaning": "Neşeyle ıslık çaldı."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "clearly",
+    "pronunciation": "klirli",
+    "type": "Zarf",
+    "meaning": "açıkça",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Please speak clearly.",
+        "meaning": "Lütfen açıkça konuş."
+      },
+      {
+        "sentence": "I can see clearly now.",
+        "meaning": "Şimdi açıkça görebiliyorum."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "close",
+    "pronunciation": "klous",
+    "type": "Sıfat",
+    "meaning": "yakın",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The store is close to my house.",
+        "meaning": "Mağaza evime yakın."
+      },
+      {
+        "sentence": "We are very close friends.",
+        "meaning": "Çok yakın arkadaşız."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "coyly",
+    "pronunciation": "koyli",
+    "type": "Zarf",
+    "meaning": "nazlanır gibi",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She smiled coyly.",
+        "meaning": "Nazlanır gibi gülümsedi."
+      },
+      {
+        "sentence": "He looked at her coyly.",
+        "meaning": "Ona nazlanır gibi baktı."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "crazily",
+    "pronunciation": "kreyzili",
+    "type": "Zarf",
+    "meaning": "delice",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He drove crazily.",
+        "meaning": "Delice araba kullandı."
+      },
+      {
+        "sentence": "She laughed crazily.",
+        "meaning": "Delice güldü."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "defiantly",
+    "pronunciation": "difayıntli",
+    "type": "Zarf",
+    "meaning": "meydan okurcasına",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He looked at her defiantly.",
+        "meaning": "Ona meydan okurcasına baktı."
+      },
+      {
+        "sentence": "She stood defiantly.",
+        "meaning": "Meydan okurcasına durdu."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "deftly",
+    "pronunciation": "deftli",
+    "type": "Zarf",
+    "meaning": "ustalıkla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She handled the situation deftly.",
+        "meaning": "Durumu ustalıkla ele aldı."
+      },
+      {
+        "sentence": "He moved deftly through the crowd.",
+        "meaning": "Kalabalığın arasından ustalıkla geçti."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "deliberately",
+    "pronunciation": "dilibırıtli",
+    "type": "Zarf",
+    "meaning": "kasten",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He did it deliberately.",
+        "meaning": "Bunu kasten yaptı."
+      },
+      {
+        "sentence": "She ignored him deliberately.",
+        "meaning": "Onu kasten görmezden geldi."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "devotedly",
+    "pronunciation": "divoutidli",
+    "type": "Zarf",
+    "meaning": "özveriyle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She worked devotedly for the cause.",
+        "meaning": "Dava için özveriyle çalıştı."
+      },
+      {
+        "sentence": "He loved her devotedly.",
+        "meaning": "Onu özveriyle sevdi."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "directly",
+    "pronunciation": "direktli",
+    "type": "Zarf",
+    "meaning": "doğrudan doğruya",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Go directly to the office.",
+        "meaning": "Doğrudan ofise git."
+      },
+      {
+        "sentence": "I'll speak to him directly.",
+        "meaning": "Onunla doğrudan konuşacağım."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "doubtfully",
+    "pronunciation": "dautfuli",
+    "type": "Zarf",
+    "meaning": "şüpheyle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She looked at him doubtfully.",
+        "meaning": "Ona şüpheyle baktı."
+      },
+      {
+        "sentence": "He nodded doubtfully.",
+        "meaning": "Şüpheyle başını salladı."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "dramatically",
+    "pronunciation": "dıramatikli",
+    "type": "Zarf",
+    "meaning": "ani ve belirgin bir biçimde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The situation changed dramatically.",
+        "meaning": "Durum ani ve belirgin bir biçimde değişti."
+      },
+      {
+        "sentence": "Prices increased dramatically.",
+        "meaning": "Fiyatlar ani ve belirgin bir biçimde arttı."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "dutifully",
+    "pronunciation": "dutifuli",
+    "type": "Zarf",
+    "meaning": "itaatkar bir şekilde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He followed orders dutifully.",
+        "meaning": "Emirleri itaatkar bir şekilde takip etti."
+      },
+      {
+        "sentence": "She did her work dutifully.",
+        "meaning": "İşini itaatkar bir şekilde yaptı."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "eagerly",
+    "pronunciation": "igırli",
+    "type": "Zarf",
+    "meaning": "hevesle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She waited eagerly for the results.",
+        "meaning": "Sonuçları hevesle bekledi."
+      },
+      {
+        "sentence": "He accepted the offer eagerly.",
+        "meaning": "Teklifi hevesle kabul etti."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "early",
+    "pronunciation": "örli",
+    "type": "Zarf",
+    "meaning": "erkenden",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I wake up early every day.",
+        "meaning": "Her gün erkenden kalkarım."
+      },
+      {
+        "sentence": "Come early tomorrow.",
+        "meaning": "Yarın erkenden gel."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "either",
+    "pronunciation": "aydır",
+    "type": "Bağlaç",
+    "meaning": "ya",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Either you come or I go.",
+        "meaning": "Ya sen gel ya da ben giderim."
+      },
+      {
+        "sentence": "I don't like either of them.",
+        "meaning": "İkisini de sevmiyorum."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "elegantly",
+    "pronunciation": "eligıntli",
+    "type": "Zarf",
+    "meaning": "şık bir biçimde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She dressed elegantly.",
+        "meaning": "Şık bir biçimde giyindi."
+      },
+      {
+        "sentence": "He moved elegantly.",
+        "meaning": "Şık bir biçimde hareket etti."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "else",
+    "pronunciation": "els",
+    "type": "Zarf",
+    "meaning": "başka",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "What else do you want?",
+        "meaning": "Başka ne istiyorsun?"
+      },
+      {
+        "sentence": "Is there anything else?",
+        "meaning": "Başka bir şey var mı?"
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "enormously",
+    "pronunciation": "inormısli",
+    "type": "Zarf",
+    "meaning": "son derece, fevkalade",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The project was enormously successful.",
+        "meaning": "Proje son derece başarılıydı."
+      },
+      {
+        "sentence": "I enjoyed it enormously.",
+        "meaning": "Son derece keyif aldım."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "enough",
+    "pronunciation": "inaf",
+    "type": "Zarf",
+    "meaning": "yeterli",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I have enough money.",
+        "meaning": "Yeterli param var."
+      },
+      {
+        "sentence": "That's enough for today.",
+        "meaning": "Bugün için bu kadar yeterli."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "especially",
+    "pronunciation": "ispeşıli",
+    "type": "Zarf",
+    "meaning": "özellikle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I love music, especially jazz.",
+        "meaning": "Müziği severim, özellikle cazı."
+      },
+      {
+        "sentence": "Especially in summer, it's hot.",
+        "meaning": "Özellikle yazın sıcak olur."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "even",
+    "pronunciation": "ivın",
+    "type": "Zarf",
+    "meaning": "hatta",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Even I can do it.",
+        "meaning": "Hatta ben bile yapabilirim."
+      },
+      {
+        "sentence": "I don't even know his name.",
+        "meaning": "Hatta adını bile bilmiyorum."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "evenly",
+    "pronunciation": "ivınli",
+    "type": "Zarf",
+    "meaning": "eşit olarak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Divide it evenly.",
+        "meaning": "Eşit olarak böl."
+      },
+      {
+        "sentence": "Spread the butter evenly.",
+        "meaning": "Tereyağını eşit olarak yay."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "eventually",
+    "pronunciation": "ivençueli",
+    "type": "Zarf",
+    "meaning": "sonunda",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Eventually, he agreed.",
+        "meaning": "Sonunda kabul etti."
+      },
+      {
+        "sentence": "We'll get there eventually.",
+        "meaning": "Sonunda oraya varacağız."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "exactly",
+    "pronunciation": "igzektli",
+    "type": "Zarf",
+    "meaning": "tam",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "That's exactly what I meant.",
+        "meaning": "Tam olarak kastettiğim buydu."
+      },
+      {
+        "sentence": "What time exactly?",
+        "meaning": "Tam olarak saat kaçta?"
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "faithfully",
+    "pronunciation": "feytfuli",
+    "type": "Zarf",
+    "meaning": "içtenlikle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He served faithfully for many years.",
+        "meaning": "Yıllarca içtenlikle hizmet etti."
+      },
+      {
+        "sentence": "She promised faithfully.",
+        "meaning": "İçtenlikle söz verdi."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "foolishly",
+    "pronunciation": "fulişli",
+    "type": "Zarf",
+    "meaning": "aptalca",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He acted foolishly.",
+        "meaning": "Aptalca davrandı."
+      },
+      {
+        "sentence": "She spent money foolishly.",
+        "meaning": "Parayı aptalca harcadı."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "fortunately",
+    "pronunciation": "forçunıtli",
+    "type": "Zarf",
+    "meaning": "neyse ki, iyi ki, bereket versin",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Fortunately, no one was hurt.",
+        "meaning": "Neyse ki kimse yaralanmadı."
+      },
+      {
+        "sentence": "Fortunately, it stopped raining.",
+        "meaning": "İyi ki yağmur durdu."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "forward",
+    "pronunciation": "forvırd",
+    "type": "Zarf",
+    "meaning": "ileri",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Move forward!",
+        "meaning": "İleri git!"
+      },
+      {
+        "sentence": "I'm looking forward to seeing you.",
+        "meaning": "Seni görmeyi dört gözle bekliyorum."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "frequently",
+    "pronunciation": "frikvıntli",
+    "type": "Zarf",
+    "meaning": "sık sık",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I visit them frequently.",
+        "meaning": "Onları sık sık ziyaret ederim."
+      },
+      {
+        "sentence": "This happens frequently.",
+        "meaning": "Bu sık sık olur."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "gleefully",
+    "pronunciation": "glifuli",
+    "type": "Zarf",
+    "meaning": "neşeyle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She laughed gleefully.",
+        "meaning": "Neşeyle güldü."
+      },
+      {
+        "sentence": "The children played gleefully.",
+        "meaning": "Çocuklar neşeyle oynadı."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "gracefully",
+    "pronunciation": "greysfuli",
+    "type": "Zarf",
+    "meaning": "nazik, hoş bir şekilde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She moved gracefully.",
+        "meaning": "Nazik, hoş bir şekilde hareket etti."
+      },
+      {
+        "sentence": "He accepted the defeat gracefully.",
+        "meaning": "Yenilgiyi nazik bir şekilde kabul etti."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "happily",
+    "pronunciation": "hepili",
+    "type": "Zarf",
+    "meaning": "mutlulukla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "They lived happily ever after.",
+        "meaning": "Sonsuza kadar mutlulukla yaşadılar."
+      },
+      {
+        "sentence": "She smiled happily.",
+        "meaning": "Mutlulukla gülümsedi."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "hard",
+    "pronunciation": "hard",
+    "type": "Zarf",
+    "meaning": "sert",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Work hard!",
+        "meaning": "Sıkı çalış!"
+      },
+      {
+        "sentence": "It's hard to understand.",
+        "meaning": "Anlamak zor."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "hastily",
+    "pronunciation": "heystili",
+    "type": "Zarf",
+    "meaning": "alelacele",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He left hastily.",
+        "meaning": "Alelacele ayrıldı."
+      },
+      {
+        "sentence": "She wrote the letter hastily.",
+        "meaning": "Mektubu alelacele yazdı."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "here",
+    "pronunciation": "hir",
+    "type": "Zarf",
+    "meaning": "burada",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Come here!",
+        "meaning": "Buraya gel!"
+      },
+      {
+        "sentence": "I'm here.",
+        "meaning": "Buradayım."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "honestly",
+    "pronunciation": "onistli",
+    "type": "Zarf",
+    "meaning": "dürüstçe",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Honestly, I don't know.",
+        "meaning": "Dürüstçe söylemek gerekirse, bilmiyorum."
+      },
+      {
+        "sentence": "She spoke honestly.",
+        "meaning": "Dürüstçe konuştu."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "hopelessly",
+    "pronunciation": "houplesli",
+    "type": "Zarf",
+    "meaning": "umutsuzca",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He looked at her hopelessly.",
+        "meaning": "Ona umutsuzca baktı."
+      },
+      {
+        "sentence": "The situation is hopelessly complicated.",
+        "meaning": "Durum umutsuzca karmaşık."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "hourly",
+    "pronunciation": "aurli",
+    "type": "Zarf",
+    "meaning": "saatlik",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The train runs hourly.",
+        "meaning": "Tren saatlik çalışır."
+      },
+      {
+        "sentence": "I check my email hourly.",
+        "meaning": "E-postamı saatlik kontrol ederim."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "however",
+    "pronunciation": "hauvevır",
+    "type": "Bağlaç",
+    "meaning": "ancak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I tried hard. However, I failed.",
+        "meaning": "Çok çalıştım. Ancak başarısız oldum."
+      },
+      {
+        "sentence": "However you look at it, it's wrong.",
+        "meaning": "Nasıl bakarsan bak, yanlış."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "hungrily",
+    "pronunciation": "hangrili",
+    "type": "Zarf",
+    "meaning": "iştahla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He ate hungrily.",
+        "meaning": "İştahla yedi."
+      },
+      {
+        "sentence": "She looked at the food hungrily.",
+        "meaning": "Yemeğe iştahla baktı."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "indeed",
+    "pronunciation": "indid",
+    "type": "Zarf",
+    "meaning": "aslında",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Indeed, it is true.",
+        "meaning": "Aslında, bu doğru."
+      },
+      {
+        "sentence": "It was indeed a great day.",
+        "meaning": "Aslında harika bir gündü."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "innocently",
+    "pronunciation": "inosıntli",
+    "type": "Zarf",
+    "meaning": "saf saf",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She looked at him innocently.",
+        "meaning": "Ona saf saf baktı."
+      },
+      {
+        "sentence": "He asked innocently.",
+        "meaning": "Saf saf sordu."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "inquisitively",
+    "pronunciation": "inkvizitivli",
+    "type": "Zarf",
+    "meaning": "merakla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She looked at him inquisitively.",
+        "meaning": "Ona merakla baktı."
+      },
+      {
+        "sentence": "He asked inquisitively.",
+        "meaning": "Merakla sordu."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "instead",
+    "pronunciation": "insted",
+    "type": "Zarf",
+    "meaning": "yerine",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I'll have tea instead of coffee.",
+        "meaning": "Kahve yerine çay içeceğim."
+      },
+      {
+        "sentence": "Let's go to the park instead.",
+        "meaning": "Bunun yerine parka gidelim."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "irritably",
+    "pronunciation": "iritıbli",
+    "type": "Zarf",
+    "meaning": "sinirle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He answered irritably.",
+        "meaning": "Sinirle cevap verdi."
+      },
+      {
+        "sentence": "She spoke irritably.",
+        "meaning": "Sinirle konuştu."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "jealously",
+    "pronunciation": "celısli",
+    "type": "Zarf",
+    "meaning": "kıskançlıkla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She watched him jealously.",
+        "meaning": "Onu kıskançlıkla izledi."
+      },
+      {
+        "sentence": "He looked at her jealously.",
+        "meaning": "Ona kıskançlıkla baktı."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "just",
+    "pronunciation": "cast",
+    "type": "Zarf",
+    "meaning": "sadece",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I just want to help.",
+        "meaning": "Sadece yardım etmek istiyorum."
+      },
+      {
+        "sentence": "Just a moment, please.",
+        "meaning": "Sadece bir dakika, lütfen."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "justly",
+    "pronunciation": "castli",
+    "type": "Zarf",
+    "meaning": "haklı olarak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He was justly punished.",
+        "meaning": "Haklı olarak cezalandırıldı."
+      },
+      {
+        "sentence": "She was justly rewarded.",
+        "meaning": "Haklı olarak ödüllendirildi."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "kindly",
+    "pronunciation": "kayndli",
+    "type": "Zarf",
+    "meaning": "nazikçe, nezaketle, kibarca",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She spoke to him kindly.",
+        "meaning": "Ona nazikçe konuştu."
+      },
+      {
+        "sentence": "Kindly close the door.",
+        "meaning": "Lütfen kapıyı kapat."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "later",
+    "pronunciation": "leytır",
+    "type": "Zarf",
+    "meaning": "sonra",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "See you later!",
+        "meaning": "Sonra görüşürüz!"
+      },
+      {
+        "sentence": "I'll do it later.",
+        "meaning": "Bunu sonra yapacağım."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "lazily",
+    "pronunciation": "leyzili",
+    "type": "Zarf",
+    "meaning": "tembelce",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He lay lazily on the couch.",
+        "meaning": "Kanepede tembelce yattı."
+      },
+      {
+        "sentence": "She moved lazily.",
+        "meaning": "Tembelce hareket etti."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "least",
+    "pronunciation": "list",
+    "type": "Zarf",
+    "meaning": "en az",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "At least try.",
+        "meaning": "En azından dene."
+      },
+      {
+        "sentence": "I like this one the least.",
+        "meaning": "Bunu en az seviyorum."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "less",
+    "pronunciation": "les",
+    "type": "Zarf",
+    "meaning": "daha az",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Less sugar, please.",
+        "meaning": "Daha az şeker, lütfen."
+      },
+      {
+        "sentence": "I have less time now.",
+        "meaning": "Şimdi daha az zamanım var."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "little",
+    "pronunciation": "litıl",
+    "type": "Sıfat",
+    "meaning": "küçük",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "A little bird.",
+        "meaning": "Küçük bir kuş."
+      },
+      {
+        "sentence": "I have little money.",
+        "meaning": "Az param var."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "long",
+    "pronunciation": "long",
+    "type": "Sıfat",
+    "meaning": "uzun",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It's a long road.",
+        "meaning": "Uzun bir yol."
+      },
+      {
+        "sentence": "How long is it?",
+        "meaning": "Ne kadar uzun?"
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "loosely",
+    "pronunciation": "lusli",
+    "type": "Zarf",
+    "meaning": "gevşek bir biçimde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The rope was tied loosely.",
+        "meaning": "İp gevşek bir biçimde bağlanmıştı."
+      },
+      {
+        "sentence": "She held it loosely.",
+        "meaning": "Onu gevşek bir biçimde tuttu."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "madly",
+    "pronunciation": "medli",
+    "type": "Zarf",
+    "meaning": "delice",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He ran madly.",
+        "meaning": "Delice koştu."
+      },
+      {
+        "sentence": "She loved him madly.",
+        "meaning": "Onu delice sevdi."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "maybe",
+    "pronunciation": "meybi",
+    "type": "Zarf",
+    "meaning": "belki",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Maybe tomorrow.",
+        "meaning": "Belki yarın."
+      },
+      {
+        "sentence": "Maybe I'll come.",
+        "meaning": "Belki geleceğim."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "merrily",
+    "pronunciation": "merili",
+    "type": "Zarf",
+    "meaning": "keyifli bir şekilde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "They sang merrily.",
+        "meaning": "Keyifli bir şekilde şarkı söylediler."
+      },
+      {
+        "sentence": "She laughed merrily.",
+        "meaning": "Keyifli bir şekilde güldü."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "more",
+    "pronunciation": "mor",
+    "type": "Zarf",
+    "meaning": "daha fazla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I want more.",
+        "meaning": "Daha fazla istiyorum."
+      },
+      {
+        "sentence": "More coffee, please.",
+        "meaning": "Daha fazla kahve, lütfen."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "mortally",
+    "pronunciation": "mortıli",
+    "type": "Zarf",
+    "meaning": "ölümcül bir şekilde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He was mortally wounded.",
+        "meaning": "Ölümcül bir şekilde yaralandı."
+      },
+      {
+        "sentence": "The disease is mortally dangerous.",
+        "meaning": "Hastalık ölümcül derecede tehlikeli."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "most",
+    "pronunciation": "moust",
+    "type": "Zarf",
+    "meaning": "her şeyden çok, en çok, en fazla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I like this one the most.",
+        "meaning": "Bunu en çok seviyorum."
+      },
+      {
+        "sentence": "Most people agree.",
+        "meaning": "Çoğu insan katılıyor."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "much",
+    "pronunciation": "maç",
+    "type": "Zarf",
+    "meaning": "çok",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I don't have much time.",
+        "meaning": "Çok zamanım yok."
+      },
+      {
+        "sentence": "Thank you very much.",
+        "meaning": "Çok teşekkür ederim."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "mysteriously",
+    "pronunciation": "mistiriyısli",
+    "type": "Zarf",
+    "meaning": "gizemli bir şekilde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He disappeared mysteriously.",
+        "meaning": "Gizemli bir şekilde kayboldu."
+      },
+      {
+        "sentence": "She smiled mysteriously.",
+        "meaning": "Gizemli bir şekilde gülümsedi."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "nearly",
+    "pronunciation": "nirli",
+    "type": "Zarf",
+    "meaning": "neredeyse",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I nearly fell.",
+        "meaning": "Neredeyse düşüyordum."
+      },
+      {
+        "sentence": "It's nearly finished.",
+        "meaning": "Neredeyse bitti."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "nervously",
+    "pronunciation": "nörvısli",
+    "type": "Zarf",
+    "meaning": "sinirli olarak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She smiled nervously.",
+        "meaning": "Sinirli olarak gülümsedi."
+      },
+      {
+        "sentence": "He waited nervously.",
+        "meaning": "Sinirli olarak bekledi."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "never",
+    "pronunciation": "nevır",
+    "type": "Zarf",
+    "meaning": "asla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I never give up.",
+        "meaning": "Asla pes etmem."
+      },
+      {
+        "sentence": "Never say never.",
+        "meaning": "Asla asla deme."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "now",
+    "pronunciation": "nau",
+    "type": "Zarf",
+    "meaning": "şimdi",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Do it now!",
+        "meaning": "Şimdi yap!"
+      },
+      {
+        "sentence": "Right now, please.",
+        "meaning": "Hemen şimdi, lütfen."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "obediently",
+    "pronunciation": "obidiyıntli",
+    "type": "Zarf",
+    "meaning": "itaatkar bir şekilde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The dog followed obediently.",
+        "meaning": "Köpek itaatkar bir şekilde takip etti."
+      },
+      {
+        "sentence": "She obeyed obediently.",
+        "meaning": "İtaatkar bir şekilde itaat etti."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "obnoxiously",
+    "pronunciation": "obnokşısli",
+    "type": "Zarf",
+    "meaning": "tiksindirici bir biçimde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He behaved obnoxiously.",
+        "meaning": "Tiksindirici bir biçimde davrandı."
+      },
+      {
+        "sentence": "She spoke obnoxiously.",
+        "meaning": "Tiksindirici bir biçimde konuştu."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "occasionally",
+    "pronunciation": "okeyjınıli",
+    "type": "Zarf",
+    "meaning": "bazen",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I visit them occasionally.",
+        "meaning": "Onları bazen ziyaret ederim."
+      },
+      {
+        "sentence": "It happens occasionally.",
+        "meaning": "Bazen olur."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "often",
+    "pronunciation": "ofın",
+    "type": "Zarf",
+    "meaning": "sık sık",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I often go there.",
+        "meaning": "Oraya sık sık giderim."
+      },
+      {
+        "sentence": "How often do you exercise?",
+        "meaning": "Ne sıklıkla antrenman yapıyorsun?"
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "once",
+    "pronunciation": "vans",
+    "type": "Zarf",
+    "meaning": "bir kere",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I've been there once.",
+        "meaning": "Oraya bir kere gittim."
+      },
+      {
+        "sentence": "Once upon a time...",
+        "meaning": "Bir varmış bir yokmuş..."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "only",
+    "pronunciation": "ounli",
+    "type": "Zarf",
+    "meaning": "sadece",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Only you can do it.",
+        "meaning": "Sadece sen yapabilirsin."
+      },
+      {
+        "sentence": "I only want to help.",
+        "meaning": "Sadece yardım etmek istiyorum."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "particularly",
+    "pronunciation": "pırtikyulırli",
+    "type": "Zarf",
+    "meaning": "özellikle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I like this one particularly.",
+        "meaning": "Bunu özellikle seviyorum."
+      },
+      {
+        "sentence": "Particularly in summer.",
+        "meaning": "Özellikle yazın."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "perfectly",
+    "pronunciation": "pörfektli",
+    "type": "Zarf",
+    "meaning": "kusursuzca",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It fits perfectly.",
+        "meaning": "Kusursuzca uyuyor."
+      },
+      {
+        "sentence": "She speaks English perfectly.",
+        "meaning": "İngilizceyi kusursuzca konuşuyor."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "perhaps",
+    "pronunciation": "pırhaps",
+    "type": "Zarf",
+    "meaning": "belki",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Perhaps tomorrow.",
+        "meaning": "Belki yarın."
+      },
+      {
+        "sentence": "Perhaps you're right.",
+        "meaning": "Belki haklısın."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "politely",
+    "pronunciation": "polaytli",
+    "type": "Zarf",
+    "meaning": "kibarca",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She asked politely.",
+        "meaning": "Kibarca sordu."
+      },
+      {
+        "sentence": "He declined politely.",
+        "meaning": "Kibarca reddetti."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "poorly",
+    "pronunciation": "purli",
+    "type": "Zarf",
+    "meaning": "kötü bir şekilde, yetersizce",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The project was poorly planned.",
+        "meaning": "Proje kötü bir şekilde planlanmıştı."
+      },
+      {
+        "sentence": "She performed poorly.",
+        "meaning": "Yetersizce performans gösterdi."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "powerfully",
+    "pronunciation": "pauırfuli",
+    "type": "Zarf",
+    "meaning": "güçlü bir şekilde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He spoke powerfully.",
+        "meaning": "Güçlü bir şekilde konuştu."
+      },
+      {
+        "sentence": "The engine runs powerfully.",
+        "meaning": "Motor güçlü bir şekilde çalışıyor."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "pretty",
+    "pronunciation": "priti",
+    "type": "Zarf",
+    "meaning": "oldukça, epey, bir hayli",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It's pretty good.",
+        "meaning": "Oldukça iyi."
+      },
+      {
+        "sentence": "I'm pretty sure.",
+        "meaning": "Oldukça eminim."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "probably",
+    "pronunciation": "probıbli",
+    "type": "Zarf",
+    "meaning": "muhtemelen",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He'll probably come.",
+        "meaning": "Muhtemelen gelecek."
+      },
+      {
+        "sentence": "Probably tomorrow.",
+        "meaning": "Muhtemelen yarın."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "promptly",
+    "pronunciation": "promptli",
+    "type": "Zarf",
+    "meaning": "acilen",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Please reply promptly.",
+        "meaning": "Lütfen acilen cevap ver."
+      },
+      {
+        "sentence": "He arrived promptly.",
+        "meaning": "Acilen geldi."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "quickly",
+    "pronunciation": "kvikli",
+    "type": "Zarf",
+    "meaning": "hızla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Run quickly!",
+        "meaning": "Hızla koş!"
+      },
+      {
+        "sentence": "She finished quickly.",
+        "meaning": "Hızla bitirdi."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "quite",
+    "pronunciation": "kwayt",
+    "type": "Zarf",
+    "meaning": "oldukça",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It's quite interesting.",
+        "meaning": "Oldukça ilginç."
+      },
+      {
+        "sentence": "I'm quite tired.",
+        "meaning": "Oldukça yorgunum."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "rapidly",
+    "pronunciation": "repidli",
+    "type": "Zarf",
+    "meaning": "hızla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The situation changed rapidly.",
+        "meaning": "Durum hızla değişti."
+      },
+      {
+        "sentence": "She spoke rapidly.",
+        "meaning": "Hızla konuştu."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "rather",
+    "pronunciation": "redır",
+    "type": "Zarf",
+    "meaning": "biraz, az çok, oldukça",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It's rather cold.",
+        "meaning": "Oldukça soğuk."
+      },
+      {
+        "sentence": "I'd rather stay home.",
+        "meaning": "Evde kalmayı tercih ederim."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "regularly",
+    "pronunciation": "regyulırli",
+    "type": "Zarf",
+    "meaning": "düzenli olarak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I exercise regularly.",
+        "meaning": "Düzenli olarak antrenman yapıyorum."
+      },
+      {
+        "sentence": "She visits regularly.",
+        "meaning": "Düzenli olarak ziyaret ediyor."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "rudely",
+    "pronunciation": "rudli",
+    "type": "Zarf",
+    "meaning": "terbiyesizce, kaba bir şekilde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He spoke rudely.",
+        "meaning": "Terbiyesizce konuştu."
+      },
+      {
+        "sentence": "She behaved rudely.",
+        "meaning": "Kaba bir şekilde davrandı."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "safely",
+    "pronunciation": "seyfli",
+    "type": "Zarf",
+    "meaning": "güvenli bir şekilde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Drive safely!",
+        "meaning": "Güvenli bir şekilde sür!"
+      },
+      {
+        "sentence": "They arrived safely.",
+        "meaning": "Güvenli bir şekilde vardılar."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "seldom",
+    "pronunciation": "seldım",
+    "type": "Zarf",
+    "meaning": "nadiren",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I seldom go there.",
+        "meaning": "Oraya nadiren giderim."
+      },
+      {
+        "sentence": "He seldom speaks.",
+        "meaning": "Nadiren konuşur."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "selfishly",
+    "pronunciation": "selfişli",
+    "type": "Zarf",
+    "meaning": "bencilce",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He acted selfishly.",
+        "meaning": "Bencilce davrandı."
+      },
+      {
+        "sentence": "She thought only selfishly.",
+        "meaning": "Sadece bencilce düşündü."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "seriously",
+    "pronunciation": "siriyısli",
+    "type": "Zarf",
+    "meaning": "cidden",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Seriously?",
+        "meaning": "Cidden mi?"
+      },
+      {
+        "sentence": "I'm seriously tired.",
+        "meaning": "Cidden yorgunum."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "shakily",
+    "pronunciation": "şeykili",
+    "type": "Zarf",
+    "meaning": "titreyerek",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She held it shakily.",
+        "meaning": "Onu titreyerek tuttu."
+      },
+      {
+        "sentence": "He spoke shakily.",
+        "meaning": "Titreyerek konuştu."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "sharply",
+    "pronunciation": "şarpli",
+    "type": "Zarf",
+    "meaning": "keskince, ekşi tadı olan, modaya uygun olan",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The temperature dropped sharply.",
+        "meaning": "Sıcaklık keskince düştü."
+      },
+      {
+        "sentence": "She turned sharply.",
+        "meaning": "Keskince döndü."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "silently",
+    "pronunciation": "saylıntli",
+    "type": "Zarf",
+    "meaning": "sessizce",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She left silently.",
+        "meaning": "Sessizce ayrıldı."
+      },
+      {
+        "sentence": "They walked silently.",
+        "meaning": "Sessizce yürüdüler."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "simply",
+    "pronunciation": "simpli",
+    "type": "Zarf",
+    "meaning": "gerçekten, yalnızca, sırf, sadece, ancak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Simply amazing!",
+        "meaning": "Gerçekten harika!"
+      },
+      {
+        "sentence": "I simply don't understand.",
+        "meaning": "Sadece anlamıyorum."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "slowly",
+    "pronunciation": "slouli",
+    "type": "Zarf",
+    "meaning": "yavaş yavaş",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Walk slowly.",
+        "meaning": "Yavaş yavaş yürü."
+      },
+      {
+        "sentence": "Time passes slowly.",
+        "meaning": "Zaman yavaş yavaş geçiyor."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "so",
+    "pronunciation": "sou",
+    "type": "Zarf",
+    "meaning": "öyle, öyle ki, o kadar, bu kadar",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I'm so tired.",
+        "meaning": "O kadar yorgunum."
+      },
+      {
+        "sentence": "So what?",
+        "meaning": "Ne olmuş yani?"
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "solemnly",
+    "pronunciation": "solımli",
+    "type": "Zarf",
+    "meaning": "ciddiyetle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He spoke solemnly.",
+        "meaning": "Ciddiyetle konuştu."
+      },
+      {
+        "sentence": "They promised solemnly.",
+        "meaning": "Ciddiyetle söz verdiler."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "sometimes",
+    "pronunciation": "samtaymz",
+    "type": "Zarf",
+    "meaning": "bazen",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Sometimes I go there.",
+        "meaning": "Bazen oraya giderim."
+      },
+      {
+        "sentence": "It happens sometimes.",
+        "meaning": "Bazen olur."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "soon",
+    "pronunciation": "sun",
+    "type": "Zarf",
+    "meaning": "yakında",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "See you soon!",
+        "meaning": "Yakında görüşürüz!"
+      },
+      {
+        "sentence": "I'll be there soon.",
+        "meaning": "Yakında orada olacağım."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "speedily",
+    "pronunciation": "spidili",
+    "type": "Zarf",
+    "meaning": "hızla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He ran speedily.",
+        "meaning": "Hızla koştu."
+      },
+      {
+        "sentence": "The work was done speedily.",
+        "meaning": "İş hızla yapıldı."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "sternly",
+    "pronunciation": "störnli",
+    "type": "Zarf",
+    "meaning": "sert bir biçimde, katı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He looked at her sternly.",
+        "meaning": "Ona sert bir biçimde baktı."
+      },
+      {
+        "sentence": "She spoke sternly.",
+        "meaning": "Sert bir biçimde konuştu."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "still",
+    "pronunciation": "stil",
+    "type": "Zarf",
+    "meaning": "hâlâ, daha",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I'm still waiting.",
+        "meaning": "Hâlâ bekliyorum."
+      },
+      {
+        "sentence": "Still more to come.",
+        "meaning": "Daha gelecek var."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "suddenly",
+    "pronunciation": "sadınli",
+    "type": "Zarf",
+    "meaning": "aniden",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Suddenly, it started raining.",
+        "meaning": "Aniden yağmur yağmaya başladı."
+      },
+      {
+        "sentence": "He appeared suddenly.",
+        "meaning": "Aniden göründü."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "technically",
+    "pronunciation": "teknikli",
+    "type": "Zarf",
+    "meaning": "teknik olarak, esasında, resmi bakımdan",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Technically, you're right.",
+        "meaning": "Teknik olarak haklısın."
+      },
+      {
+        "sentence": "Technically speaking...",
+        "meaning": "Teknik olarak konuşursak..."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "tediously",
+    "pronunciation": "tidiısli",
+    "type": "Zarf",
+    "meaning": "sıkıcı bir şekilde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The work progressed tediously.",
+        "meaning": "İş sıkıcı bir şekilde ilerledi."
+      },
+      {
+        "sentence": "He explained it tediously.",
+        "meaning": "Bunu sıkıcı bir şekilde açıkladı."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "then",
+    "pronunciation": "den",
+    "type": "Zarf",
+    "meaning": "o zaman, o vakit",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Then what happened?",
+        "meaning": "O zaman ne oldu?"
+      },
+      {
+        "sentence": "I'll see you then.",
+        "meaning": "O zaman görüşürüz."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "thus",
+    "pronunciation": "das",
+    "type": "Zarf",
+    "meaning": "böylece, bunun için, bu yüzden",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Thus, we succeeded.",
+        "meaning": "Böylece başardık."
+      },
+      {
+        "sentence": "Thus, the problem was solved.",
+        "meaning": "Böylece sorun çözüldü."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "today",
+    "pronunciation": "tudey",
+    "type": "Zarf",
+    "meaning": "bugün",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "What are you doing today?",
+        "meaning": "Bugün ne yapıyorsun?"
+      },
+      {
+        "sentence": "Today is Monday.",
+        "meaning": "Bugün Pazartesi."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "together",
+    "pronunciation": "tugedır",
+    "type": "Zarf",
+    "meaning": "birlikte",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Let's work together.",
+        "meaning": "Birlikte çalışalım."
+      },
+      {
+        "sentence": "We went together.",
+        "meaning": "Birlikte gittik."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "tonight",
+    "pronunciation": "tunayt",
+    "type": "Zarf",
+    "meaning": "bu gece",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "What are you doing tonight?",
+        "meaning": "Bu gece ne yapıyorsun?"
+      },
+      {
+        "sentence": "I'll see you tonight.",
+        "meaning": "Bu gece görüşürüz."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "unexpectedly",
+    "pronunciation": "anikspektidli",
+    "type": "Zarf",
+    "meaning": "beklenmedik bir şekilde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He arrived unexpectedly.",
+        "meaning": "Beklenmedik bir şekilde geldi."
+      },
+      {
+        "sentence": "The news came unexpectedly.",
+        "meaning": "Haber beklenmedik bir şekilde geldi."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "usually",
+    "pronunciation": "yujueli",
+    "type": "Zarf",
+    "meaning": "genellikle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I usually go there.",
+        "meaning": "Genellikle oraya giderim."
+      },
+      {
+        "sentence": "Usually on weekends.",
+        "meaning": "Genellikle hafta sonları."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "very",
+    "pronunciation": "veri",
+    "type": "Zarf",
+    "meaning": "çok",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Very good!",
+        "meaning": "Çok iyi!"
+      },
+      {
+        "sentence": "I'm very tired.",
+        "meaning": "Çok yorgunum."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "victoriously",
+    "pronunciation": "viktoriyısli",
+    "type": "Zarf",
+    "meaning": "galip olarak, başarılı bir şekilde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He returned victoriously.",
+        "meaning": "Galip olarak döndü."
+      },
+      {
+        "sentence": "They celebrated victoriously.",
+        "meaning": "Başarılı bir şekilde kutladılar."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "vivaciously",
+    "pronunciation": "vivayşısli",
+    "type": "Zarf",
+    "meaning": "hayat dolu bir şekilde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She spoke vivaciously.",
+        "meaning": "Hayat dolu bir şekilde konuştu."
+      },
+      {
+        "sentence": "He moved vivaciously.",
+        "meaning": "Hayat dolu bir şekilde hareket etti."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "warmly",
+    "pronunciation": "vormli",
+    "type": "Zarf",
+    "meaning": "samimiyetle, sıcak bir şekilde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She greeted us warmly.",
+        "meaning": "Bizi samimiyetle karşıladı."
+      },
+      {
+        "sentence": "He welcomed me warmly.",
+        "meaning": "Beni sıcak bir şekilde karşıladı."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "wearily",
+    "pronunciation": "virili",
+    "type": "Zarf",
+    "meaning": "yorgun, bezgin bir şekilde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He sat down wearily.",
+        "meaning": "Yorgun bir şekilde oturdu."
+      },
+      {
+        "sentence": "She looked at him wearily.",
+        "meaning": "Ona bezgin bir şekilde baktı."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "weekly",
+    "pronunciation": "vikli",
+    "type": "Zarf",
+    "meaning": "haftalık",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I visit them weekly.",
+        "meaning": "Onları haftalık ziyaret ederim."
+      },
+      {
+        "sentence": "The magazine is published weekly.",
+        "meaning": "Dergi haftalık yayınlanıyor."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "when",
+    "pronunciation": "ven",
+    "type": "Zarf",
+    "meaning": "ne zaman",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "When will you come?",
+        "meaning": "Ne zaman geleceksin?"
+      },
+      {
+        "sentence": "I don't know when.",
+        "meaning": "Ne zaman olduğunu bilmiyorum."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "wildly",
+    "pronunciation": "wayldli",
+    "type": "Zarf",
+    "meaning": "çılgınca, vahşice, bir hayli, alabildiğine",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He ran wildly.",
+        "meaning": "Çılgınca koştu."
+      },
+      {
+        "sentence": "The crowd cheered wildly.",
+        "meaning": "Kalabalık çılgınca tezahürat yaptı."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "yearly",
+    "pronunciation": "yirli",
+    "type": "Zarf",
+    "meaning": "yıllık",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I visit them yearly.",
+        "meaning": "Onları yıllık ziyaret ederim."
+      },
+      {
+        "sentence": "The event happens yearly.",
+        "meaning": "Etkinlik yıllık oluyor."
+      }
+    ],
+    "date": "13.01.2026"
+  },
+  {
+    "word": "yet",
+    "pronunciation": "yet",
+    "type": "Zarf",
+    "meaning": "henüz, daha, şimdiden",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I haven't finished yet.",
+        "meaning": "Henüz bitirmedim."
+      },
+      {
+        "sentence": "Not yet.",
+        "meaning": "Henüz değil."
+      }
+    ],
+    "date": "13.01.2026"
+  }
+]
+
+

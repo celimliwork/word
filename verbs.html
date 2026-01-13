@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiil Halleri - Ezberleme Sayfası</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .verbs-container {
+            max-width: 390px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .verbs-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .verbs-header h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .verbs-controls {
+            padding: 15px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .toggle-all-btn, .read-all-btn {
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+        }
+
+        .toggle-all-btn:hover, .read-all-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        .toggle-all-btn:active, .read-all-btn:active {
+            transform: translateY(0);
+        }
+
+        .read-all-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: white;
+            text-decoration: underline;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .back-link:hover {
+            opacity: 1;
+        }
+
+        .verbs-table-wrapper {
+            padding: 15px;
+            max-height: calc(100vh - 280px);
+            overflow-y: auto;
+        }
+
+        .verbs-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            font-size: 0.85rem;
+        }
+
+        .verbs-table thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .verbs-table th {
+            padding: 10px 6px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.75rem;
+        }
+
+        .verbs-table th:first-child {
+            border-top-left-radius: 8px;
+        }
+
+        .verbs-table th:last-child {
+            border-top-right-radius: 8px;
+        }
+
+        .verbs-table tbody tr {
+            border-bottom: 1px solid #e9ecef;
+            transition: background-color 0.2s ease;
+        }
+
+        .verbs-table tbody tr:hover {
+            background-color: #f8f9ff;
+        }
+
+        .verbs-table tbody tr.revealed-row {
+            background-color: #f0f4ff;
+        }
+
+        .verbs-table tbody tr:last-child {
+            border-bottom: none;
+        }
+
+        .verbs-table td {
+            padding: 10px 6px;
+            vertical-align: middle;
+        }
+
+        .verb-v1-cell {
+            font-weight: 700;
+            color: #667eea;
+            font-size: 0.9rem;
+        }
+
+        .verb-v2-cell, .verb-v3-cell {
+            color: #495057;
+        }
+
+        .verb-meaning-cell {
+            color: #764ba2;
+            font-weight: 500;
+        }
+
+        .sound-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 5px 10px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(102, 126, 234, 0.2);
+        }
+
+        .sound-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 6px rgba(102, 126, 234, 0.3);
+        }
+
+        .sound-btn:active {
+            transform: translateY(0);
+        }
+
+        .sound-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .verb-count {
+            text-align: center;
+            padding: 10px;
+            color: #6c757d;
+            font-size: 0.9rem;
+            background: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="verbs-container">
+        <div class="verbs-header">
+            <h1>📖 Fiil Halleri</h1>
+            <p>İngilizce Düzensiz Fiiller</p>
+            <a href="index.html" class="back-link">← Ana Sayfaya Dön</a>
+        </div>
+
+        <div class="verbs-controls">
+            <button class="toggle-all-btn" id="toggleAllBtn">Hepsini Aç</button>
+            <button class="read-all-btn" id="readAllBtn">🔊 Tümünü Oku</button>
+        </div>
+
+        <div class="verb-count" id="verbCount"></div>
+
+        <div class="verbs-table-wrapper">
+            <table class="verbs-table">
+                <thead>
+                    <tr>
+                        <th>V1</th>
+                        <th>V2</th>
+                        <th>V3</th>
+                        <th>Anlam</th>
+                        <th style="text-align: center; width: 60px;">Ses</th>
+                    </tr>
+                </thead>
+                <tbody id="verbsTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const verbsData = [
+            { v1: "be", v2: "was, were", v3: "been", meaning: "olmak" },
+            { v1: "beat", v2: "beat", v3: "beaten", meaning: "vurmak" },
+            { v1: "become", v2: "became", v3: "become", meaning: "olmak" },
+            { v1: "begin", v2: "began", v3: "begun", meaning: "başlamak" },
+            { v1: "bite", v2: "bit", v3: "bitten", meaning: "ısırmak" },
+            { v1: "break", v2: "broke", v3: "broken", meaning: "kırmak" },
+            { v1: "bring", v2: "brought", v3: "brought", meaning: "getirmek" },
+            { v1: "broadcast", v2: "broadcast", v3: "broadcast", meaning: "yayımlamak" },
+            { v1: "build", v2: "built", v3: "built", meaning: "inşa etmek" },
+            { v1: "burn", v2: "burned/burnt", v3: "burned/burnt", meaning: "yakmak" },
+            { v1: "buy", v2: "bought", v3: "bought", meaning: "satın almak" },
+            { v1: "catch", v2: "caught", v3: "caught", meaning: "yakalamak" },
+            { v1: "choose", v2: "chose", v3: "chosen", meaning: "seçmek" },
+            { v1: "come", v2: "came", v3: "come", meaning: "gelmek" },
+            { v1: "cut", v2: "cut", v3: "cut", meaning: "kesmek" },
+            { v1: "deal", v2: "dealt", v3: "dealt", meaning: "anlaşmak" },
+            { v1: "do/does", v2: "did", v3: "done", meaning: "yapmak" },
+            { v1: "draw", v2: "drew", v3: "drawn", meaning: "çekmek" },
+            { v1: "drive", v2: "drove", v3: "driven", meaning: "sürmek" },
+            { v1: "drink", v2: "drank", v3: "drunk", meaning: "içmek" },
+            { v1: "eat", v2: "ate", v3: "eaten", meaning: "yemek yemek" },
+            { v1: "fall", v2: "fell", v3: "fallen", meaning: "düşmek" },
+            { v1: "feed", v2: "fed", v3: "fed", meaning: "beslemek" },
+            { v1: "feel", v2: "felt", v3: "felt", meaning: "hissetmek" },
+            { v1: "fight", v2: "fought", v3: "fought", meaning: "dövüşmek" },
+            { v1: "find", v2: "found", v3: "found", meaning: "bulmak" },
+            { v1: "fly", v2: "flew", v3: "flown", meaning: "uçmak" },
+            { v1: "forbid", v2: "forbade", v3: "forbidden", meaning: "yasaklamak" },
+            { v1: "forget", v2: "forgot", v3: "forgotten", meaning: "unutmak" },
+            { v1: "forgive", v2: "forgave", v3: "forgiven", meaning: "affetmek" },
+            { v1: "freeze", v2: "froze", v3: "frozen", meaning: "donmak" },
+            { v1: "get", v2: "got", v3: "gotten", meaning: "elde etmek" },
+            { v1: "give", v2: "gave", v3: "given", meaning: "vermek" },
+            { v1: "go", v2: "went", v3: "gone", meaning: "gitmek" },
+            { v1: "grow", v2: "grew", v3: "grown", meaning: "büyümek" },
+            { v1: "have/has", v2: "had", v3: "had", meaning: "sahip olmak" },
+            { v1: "hear", v2: "heard", v3: "heard", meaning: "duymak" },
+            { v1: "hide", v2: "hid", v3: "hidden", meaning: "saklamak" },
+            { v1: "hit", v2: "hit", v3: "hit", meaning: "vurmak" },
+            { v1: "hold", v2: "held", v3: "held", meaning: "tutmak" },
+            { v1: "hurt", v2: "hurt", v3: "hurt", meaning: "yaralanmak" },
+            { v1: "keep", v2: "kept", v3: "kept", meaning: "saklamak" },
+            { v1: "know", v2: "knew", v3: "known", meaning: "bilmek" },
+            { v1: "learn", v2: "learned/learnt", v3: "learned/learnt", meaning: "öğrenmek" },
+            { v1: "leave", v2: "left", v3: "left", meaning: "ayrılmak" },
+            { v1: "let", v2: "let", v3: "let", meaning: "izin vermek" },
+            { v1: "lie", v2: "lay", v3: "lain", meaning: "uzanmak" },
+            { v1: "lose", v2: "lost", v3: "lost", meaning: "kaybetmek" },
+            { v1: "make", v2: "made", v3: "made", meaning: "yapmak" },
+            { v1: "mean", v2: "meant", v3: "meant", meaning: "anlamına gelmek" },
+            { v1: "meet", v2: "met", v3: "met", meaning: "buluşmak" },
+            { v1: "pay", v2: "paid", v3: "paid", meaning: "ödemek" },
+            { v1: "put", v2: "put", v3: "put", meaning: "koymak" },
+            { v1: "read", v2: "read", v3: "read", meaning: "okumak" },
+            { v1: "ride", v2: "rode", v3: "ridden", meaning: "binmek" },
+            { v1: "ring", v2: "rang", v3: "rung", meaning: "çalmak" },
+            { v1: "rise", v2: "rose", v3: "risen", meaning: "yükselmek" },
+            { v1: "run", v2: "ran", v3: "run", meaning: "koşmak" },
+            { v1: "say", v2: "said", v3: "said", meaning: "söylemek" },
+            { v1: "see", v2: "saw", v3: "seen", meaning: "görmek" },
+            { v1: "sell", v2: "sold", v3: "sold", meaning: "satmak" },
+            { v1: "send", v2: "sent", v3: "sent", meaning: "göndermek" },
+            { v1: "shut", v2: "shut", v3: "shut", meaning: "kapamak" },
+            { v1: "sing", v2: "sang", v3: "sung", meaning: "şarkı söylemek" },
+            { v1: "sit", v2: "sat", v3: "sat", meaning: "oturmak" },
+            { v1: "sleep", v2: "slept", v3: "slept", meaning: "uyumak" },
+            { v1: "speak", v2: "spoke", v3: "spoken", meaning: "konuşmak" },
+            { v1: "spend", v2: "spent", v3: "spent", meaning: "harcamak" },
+            { v1: "stand", v2: "stood", v3: "stood", meaning: "ayakta durmak" },
+            { v1: "swim", v2: "swam", v3: "swum", meaning: "yüzmek" },
+            { v1: "take", v2: "took", v3: "taken", meaning: "almak" },
+            { v1: "teach", v2: "taught", v3: "taught", meaning: "öğretmek" },
+            { v1: "tell", v2: "told", v3: "told", meaning: "anlatmak" },
+            { v1: "think", v2: "thought", v3: "thought", meaning: "düşünmek" },
+            { v1: "throw", v2: "threw", v3: "thrown", meaning: "fırlatmak" },
+            { v1: "understand", v2: "understood", v3: "understood", meaning: "anlamak" },
+            { v1: "wake", v2: "woke", v3: "woken", meaning: "uyanmak" },
+            { v1: "wear", v2: "wore", v3: "worn", meaning: "giymek" },
+            { v1: "win", v2: "won", v3: "won", meaning: "kazanmak" },
+            { v1: "write", v2: "wrote", v3: "written", meaning: "yazmak" }
+        ];
+
+        let allRevealed = false;
+        let isReadingAll = false;
+        let currentReadingIndex = 0;
+        let readingQueue = [];
+        let currentUtterance = null;
+        let currentTimeout = null;
+        const revealedRows = new Set();
+
+        const verbsTableBody = document.getElementById("verbsTableBody");
+        const toggleAllBtn = document.getElementById("toggleAllBtn");
+        const readAllBtn = document.getElementById("readAllBtn");
+        const verbCount = document.getElementById("verbCount");
+
+        function speakText(text, onEnd) {
+            if (window.speechSynthesis.speaking) {
+                window.speechSynthesis.cancel();
+            }
+            
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = "en-US";
+            utterance.rate = 0.9;
+            utterance.pitch = 1;
+            
+            utterance.onend = () => {
+                if (onEnd && isReadingAll) {
+                    setTimeout(onEnd, 300);
+                } else if (onEnd) {
+                    onEnd();
+                }
+            };
+            
+            utterance.onerror = (event) => {
+                console.error("SpeechSynthesisUtterance error:", event.error);
+                if (onEnd) onEnd();
+            };
+            
+            window.speechSynthesis.speak(utterance);
+            return utterance;
+        }
+
+        function stopReading() {
+            isReadingAll = false;
+            
+            if (window.speechSynthesis.speaking) {
+                window.speechSynthesis.cancel();
+            }
+            if (currentTimeout) {
+                clearTimeout(currentTimeout);
+                currentTimeout = null;
+            }
+            
+            currentReadingIndex = 0;
+            readingQueue = [];
+            currentUtterance = null;
+            readAllBtn.textContent = "🔊 Tümünü Oku";
+        }
+
+        function readSingleVerb(verb) {
+            if (!isReadingAll) {
+                return Promise.resolve();
+            }
+            
+            const v1Text = verb.v1.split("/")[0].trim();
+            const v2Text = verb.v2.split(",")[0].trim();
+            const v3Text = verb.v3.split(",")[0].trim();
+            
+            let textToSpeak = `${v1Text}, ${v2Text}, ${v3Text}`;
+            
+            return new Promise((resolve) => {
+                if (!isReadingAll) {
+                    resolve();
+                    return;
+                }
+                
+                currentUtterance = speakText(textToSpeak, () => {
+                    if (isReadingAll) {
+                        resolve();
+                    } else {
+                        resolve();
+                    }
+                });
+            });
+        }
+
+        async function readAllVerbs() {
+            if (isReadingAll) {
+                stopReading();
+                return;
+            }
+
+            isReadingAll = true;
+            readAllBtn.textContent = "⏹️ Durdur";
+
+            for (let i = 0; i < verbsData.length; i++) {
+                if (!isReadingAll) break;
+                
+                currentReadingIndex = i;
+                await readSingleVerb(verbsData[i]);
+                
+                if (!isReadingAll) break;
+                
+                if (i < verbsData.length - 1) {
+                    await new Promise(resolve => {
+                        if (!isReadingAll) {
+                            resolve();
+                            return;
+                        }
+                        currentTimeout = setTimeout(() => {
+                            currentTimeout = null;
+                            resolve();
+                        }, 800);
+                    });
+                }
+            }
+
+            if (isReadingAll) {
+                stopReading();
+            }
+        }
+
+        window.readVerb = function(index) {
+            if (isReadingAll) {
+                stopReading();
+                return;
+            }
+            readSingleVerb(verbsData[index]);
+        };
+
+        function renderVerbs() {
+            verbsTableBody.innerHTML = "";
+            verbsData.forEach((verb, index) => {
+                const row = document.createElement("tr");
+                const isRevealed = allRevealed || revealedRows.has(index);
+                
+                const v1Display = verb.v1;
+                const v2Display = isRevealed ? verb.v2 : "👆";
+                const v3Display = isRevealed ? verb.v3 : "👆";
+                const meaningDisplay = isRevealed ? verb.meaning : "👆";
+
+                if (isRevealed) {
+                    row.classList.add("revealed-row");
+                }
+
+                row.innerHTML = `
+                    <td class="verb-v1-cell">${v1Display}</td>
+                    <td class="verb-v2-cell">${v2Display}</td>
+                    <td class="verb-v3-cell">${v3Display}</td>
+                    <td class="verb-meaning-cell">${meaningDisplay}</td>
+                    <td style="text-align: center;">
+                        <button class="sound-btn" onclick="readVerb(${index})" title="V1, V2, V3'ü Oku">🔊</button>
+                    </td>
+                `;
+
+                row.addEventListener("click", (e) => {
+                    if (e.target.tagName === "BUTTON") {
+                        return;
+                    }
+                    
+                    if (allRevealed) {
+                        return;
+                    }
+                    
+                    if (revealedRows.has(index)) {
+                        revealedRows.delete(index);
+                    } else {
+                        revealedRows.add(index);
+                    }
+                    renderVerbs();
+                });
+
+                verbsTableBody.appendChild(row);
+            });
+
+            verbCount.textContent = `Toplam ${verbsData.length} fiil`;
+        }
+
+        toggleAllBtn.addEventListener("click", () => {
+            allRevealed = !allRevealed;
+            if (!allRevealed) {
+                revealedRows.clear();
+            }
+            renderVerbs();
+            toggleAllBtn.textContent = allRevealed ? "Hepsini Kapat" : "Hepsini Aç";
+        });
+
+        readAllBtn.addEventListener("click", () => {
+            readAllVerbs();
+        });
+
+        // Sayfa yüklendiğinde render et
+        renderVerbs();
+    </script>
+</body>
+</html>

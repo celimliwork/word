@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hatırlamadıklarım - Pratik Sayfası</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .practice-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .practice-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .practice-header h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .practice-controls {
+            padding: 15px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .practice-controls-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .practice-word-count {
+            font-size: 0.9rem;
+            color: #6c757d;
+            font-weight: 500;
+        }
+
+        .practice-clear-btn {
+            padding: 8px 16px;
+            background: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .practice-clear-btn:hover {
+            background: #c82333;
+            transform: translateY(-2px);
+        }
+
+        .practice-cards-container {
+            padding: 15px;
+            min-height: 400px;
+            max-height: calc(100vh - 400px);
+            overflow-y: auto;
+        }
+
+        .practice-card {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            touch-action: pan-y;
+        }
+
+        .practice-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+        }
+
+        .practice-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .practice-card-inner {
+            position: relative;
+        }
+
+        .practice-card-content {
+            margin-bottom: 10px;
+        }
+
+        .practice-word-main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .practice-word-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #667eea;
+        }
+
+        .practice-sound-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 12px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .practice-sound-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .practice-pronunciation {
+            font-size: 0.9rem;
+            color: #6c757d;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        .practice-meaning {
+            font-size: 1.1rem;
+            color: #764ba2;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .practice-example {
+            margin-top: 15px;
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 3px solid #667eea;
+        }
+
+        .practice-example-en {
+            font-size: 0.95rem;
+            color: #333;
+            margin-bottom: 6px;
+        }
+
+        .practice-example-tr {
+            font-size: 0.85rem;
+            color: #6c757d;
+            font-style: italic;
+        }
+
+        .practice-card-hidden {
+            display: none;
+        }
+
+        .practice-card-placeholder {
+            text-align: center;
+            padding: 20px;
+            color: #6c757d;
+            font-size: 0.95rem;
+            font-style: italic;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: white;
+            text-decoration: underline;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .back-link:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="practice-container">
+        <div class="practice-header">
+            <h1>📝 Hatırlamadıklarım</h1>
+            <p>Pratik Yapma Sayfası</p>
+            <a href="index.html" class="back-link">← Ana Sayfaya Dön</a>
+        </div>
+
+        <div class="practice-controls">
+            <div class="practice-controls-top">
+                <span class="practice-word-count" id="wordCount">0 kelime</span>
+                <button class="practice-clear-btn" id="clearAllBtn">🗑️ Tümünü Temizle</button>
+            </div>
+
+            <div class="control-group">
+                <label for="modeSelect">Çalışma Modu</label>
+                <select id="modeSelect">
+                    <option value="en-tr">İngilizce → Türkçe</option>
+                    <option value="tr-en">Türkçe → İngilizce</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="practice-cards-container" id="practiceContainer">
+            <!-- Kartlar buraya eklenecek -->
+        </div>
+    </div>
+
+    <script src="practice.js"></script>
+</body>
+</html>

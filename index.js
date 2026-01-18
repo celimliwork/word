@@ -632,17 +632,15 @@ function createCardHTML(word) {
     cardHTML += createTrEnModeHTML(word, typeClass);
   }
 
+  // "+" butonu ekle (hatırlamadıklarım listesine ekle)
+  cardHTML += `<button class="add-to-practice-btn" onclick="addWordToPractice('${word.word.replace(/'/g, "\\'")}')" title="Hatırlamadıklarım Listesine Ekle">➕</button>`;
+
   cardHTML += "</div>";
   return cardHTML;
 }
 
 function createFullModeHTML(word, typeClass) {
   let html = `
-                ${
-                  word.type
-                    ? `<span class="type-badge type-${typeClass}">${word.type}</span>`
-                    : ""
-                }
                 <div class="card-field">
                     <div class="word-main">
                         <span class="word-text">${word.word || "-"}</span>
@@ -657,8 +655,8 @@ function createFullModeHTML(word, typeClass) {
                     </div>
                     ${
                       word.pronunciation
-                        ? `<div class="pronunciation">${word.pronunciation}</div>`
-                        : ""
+                        ? `<div class="pronunciation">${word.pronunciation}${word.type ? `<span class="type-badge type-${typeClass}">${word.type}</span>` : ""}</div>`
+                        : word.type ? `<div class="pronunciation"><span class="type-badge type-${typeClass}">${word.type}</span></div>` : ""
                     }
                 </div>
                 
@@ -731,11 +729,6 @@ function createFullModeHTML(word, typeClass) {
 
 function createEnTrModeHTML(word, typeClass) {
   let html = `
-                ${
-                  word.type
-                    ? `<span class="type-badge type-${typeClass}">${word.type}</span>`
-                    : ""
-                }
                 <div class="card-field">
                     <div class="word-main">
                         <span class="word-text">${word.word || "-"}</span>
@@ -750,8 +743,8 @@ function createEnTrModeHTML(word, typeClass) {
                     </div>
                     ${
                       word.pronunciation
-                        ? `<div class="pronunciation">${word.pronunciation}</div>`
-                        : ""
+                        ? `<div class="pronunciation">${word.pronunciation}${word.type ? `<span class="type-badge type-${typeClass}">${word.type}</span>` : ""}</div>`
+                        : word.type ? `<div class="pronunciation"><span class="type-badge type-${typeClass}">${word.type}</span></div>` : ""
                     }
                 </div>
 
@@ -819,9 +812,7 @@ function createTrEnModeHTML(word, typeClass) {
                             : ""
                         }
                     </div>
-                    <div class="pronunciation" style="display: none;">${
-                      word.pronunciation || ""
-                    }</div>
+                    <div class="pronunciation" style="display: none;">${word.pronunciation || ""}${word.type ? `<span class="type-badge type-${typeClass}">${word.type}</span>` : ""}</div>
         </div>
 
                 <div class="card-field">
@@ -1593,6 +1584,82 @@ function initializeSearch() {
       renderCards();
     }
   });
+}
+
+// ==================== ADD TO PRACTICE ====================
+async function addWordToPractice(wordText) {
+  // Kelimeyi wordsData'dan bul
+  const word = wordsData.find(w => w.word === wordText);
+  
+  if (!word) {
+    alert("Kelime bulunamadı!");
+    return;
+  }
+
+  try {
+    // IndexedDB'ye ekle
+    const DB_NAME = "WordsPracticeDB";
+    const DB_VERSION = 1;
+    const STORE_NAME = "practiceWords";
+
+    // DB'yi aç
+    const db = await new Promise((resolve, reject) => {
+      const request = indexedDB.open(DB_NAME, DB_VERSION);
+      request.onerror = () => reject(request.error);
+      request.onsuccess = () => resolve(request.result);
+      request.onupgradeneeded = (event) => {
+        const db = event.target.result;
+        if (!db.objectStoreNames.contains(STORE_NAME)) {
+          const objectStore = db.createObjectStore(STORE_NAME, { keyPath: "id", autoIncrement: true });
+          objectStore.createIndex("word", "word", { unique: false });
+        }
+      };
+    });
+
+    // Aynı kelime zaten var mı kontrol et
+    const transaction = db.transaction([STORE_NAME], "readwrite");
+    const store = transaction.objectStore(STORE_NAME);
+    const index = store.index("word");
+    const existingRequest = index.getAll(word.word);
+
+    await new Promise((resolve, reject) => {
+      existingRequest.onsuccess = () => {
+        const existing = existingRequest.result;
+        if (existing.length > 0) {
+          // alert("Bu kelime zaten listede!");
+          resolve();
+          return;
+        }
+
+        // İlk cümleyi al
+        const example = word.examples && word.examples.length > 0 
+          ? {
+              sentence: word.examples[0].sentence,
+              meaning: word.examples[0].meaning
+            }
+          : null;
+
+        const practiceWord = {
+          word: word.word,
+          pronunciation: word.pronunciation || "",
+          meaning: word.meaning || "",
+          example: example,
+          addedAt: new Date().toISOString()
+        };
+
+        const addRequest = store.add(practiceWord);
+        addRequest.onsuccess = () => {
+          // alert("✓ Kelime hatırlamadıklarım listesine eklendi!");
+          resolve();
+        };
+        addRequest.onerror = () => reject(addRequest.error);
+      };
+      existingRequest.onerror = () => reject(existingRequest.error);
+    });
+  } catch (error) {
+    console.error("Kelime eklenirken hata:", error);
+    alert("Kelime eklenirken bir hata oluştu!");
+  }
 }
 
 // ==================== INITIALIZATION ====================

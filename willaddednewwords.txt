@@ -1,0 +1,26 @@
+shout at=bağırmak
+drive=götürmek
+gas station=benzin istasyonu
+next=bir sonraki
+water=sulamak
+take into=içeri almak
+according to= e göre
+one more st=bir tane daha st
+approach=yaklaşmak
+appreciate=takdir etmek
+congratulate=tebrik etmek
+despite=e rağmen
+in spite of=e rağmen
+from now on=artık
+good at=birşeyde iyi olmak
+bad at= birşeyde kötüyüm
+greengrocer=manav
+online=yayında
+shall we=olur mu
+result-driven:sonuç odaklı
+Exceptionsl:olağanüstü
+extraordinary:olağanüstü
+Obligation zorunluluk
+Being:varlık
+Refers: ifade etmek, atıfta bulunmak
+Nation:millet

@@ -1,0 +1,574 @@
+[
+  {
+    "word": "shout at",
+    "pronunciation": "şaut et",
+    "type": "Phrasal Verb",
+    "meaning": "bağırmak",
+    "v2": {
+      "form": "shouted at",
+      "pronunciation": "şautıd et"
+    },
+    "v3": {
+      "form": "shouted at",
+      "pronunciation": "şautıd et"
+    },
+    "gerundInfinitive": "shouting at",
+    "examples": [
+      {
+        "sentence": "Don't shout at me!",
+        "meaning": "Bana bağırma!"
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "drive",
+    "pronunciation": "drayv",
+    "type": "Fiil",
+    "meaning": "götürmek",
+    "v2": {
+      "form": "drove",
+      "pronunciation": "drov"
+    },
+    "v3": {
+      "form": "driven",
+      "pronunciation": "drivın"
+    },
+    "gerundInfinitive": "driving",
+    "examples": [
+      {
+        "sentence": "I'll drive you to the airport.",
+        "meaning": "Seni havalimanına götüreceğim."
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "gas station",
+    "pronunciation": "ges steyşın",
+    "type": "İsim",
+    "meaning": "benzin istasyonu",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We need to stop at a gas station.",
+        "meaning": "Benzin istasyonunda durmamız gerekiyor."
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "next",
+    "pronunciation": "nekst",
+    "type": "Sıfat",
+    "meaning": "bir sonraki",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "See you next week.",
+        "meaning": "Gelecek hafta görüşürüz."
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "water",
+    "pronunciation": "votır",
+    "type": "Fiil",
+    "meaning": "sulamak",
+    "v2": {
+      "form": "watered",
+      "pronunciation": "votırd"
+    },
+    "v3": {
+      "form": "watered",
+      "pronunciation": "votırd"
+    },
+    "gerundInfinitive": "watering",
+    "examples": [
+      {
+        "sentence": "I water the plants every morning.",
+        "meaning": "Her sabah bitkileri sularım."
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "take into",
+    "pronunciation": "teyk intu",
+    "type": "Phrasal Verb",
+    "meaning": "içeri almak",
+    "v2": {
+      "form": "took into",
+      "pronunciation": "tuk intu"
+    },
+    "v3": {
+      "form": "taken into",
+      "pronunciation": "teykın intu"
+    },
+    "gerundInfinitive": "taking into",
+    "examples": [
+      {
+        "sentence": "Please take the groceries into the kitchen.",
+        "meaning": "Lütfen market alışverişini mutfağa içeri al."
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "according to",
+    "pronunciation": "akording tu",
+    "type": "Edat",
+    "meaning": "e göre",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "According to the weather forecast, it will rain tomorrow.",
+        "meaning": "Hava tahminine göre, yarın yağmur yağacak."
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "one more",
+    "pronunciation": "van mor",
+    "type": "İfade",
+    "meaning": "bir tane daha",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Can I have one more coffee, please?",
+        "meaning": "Bir tane daha kahve alabilir miyim, lütfen?"
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "approach",
+    "pronunciation": "aproc",
+    "type": "Fiil",
+    "meaning": "yaklaşmak",
+    "v2": {
+      "form": "approached",
+      "pronunciation": "aproc"
+    },
+    "v3": {
+      "form": "approached",
+      "pronunciation": "aproc"
+    },
+    "gerundInfinitive": "approaching",
+    "examples": [
+      {
+        "sentence": "A stranger approached me on the street.",
+        "meaning": "Sokakta bir yabancı bana yaklaştı."
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "appreciate",
+    "pronunciation": "aprişieyt",
+    "type": "Fiil",
+    "meaning": "takdir etmek",
+    "v2": {
+      "form": "appreciated",
+      "pronunciation": "aprişieytıd"
+    },
+    "v3": {
+      "form": "appreciated",
+      "pronunciation": "aprişieytıd"
+    },
+    "gerundInfinitive": "appreciating",
+    "examples": [
+      {
+        "sentence": "I appreciate your help.",
+        "meaning": "Yardımını takdir ediyorum."
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "congratulate",
+    "pronunciation": "kongreçuleyt",
+    "type": "Fiil",
+    "meaning": "tebrik etmek",
+    "v2": {
+      "form": "congratulated",
+      "pronunciation": "kongreçuleytıd"
+    },
+    "v3": {
+      "form": "congratulated",
+      "pronunciation": "kongreçuleytıd"
+    },
+    "gerundInfinitive": "congratulating",
+    "examples": [
+      {
+        "sentence": "I want to congratulate you on your success.",
+        "meaning": "Başarını tebrik etmek istiyorum."
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "despite",
+    "pronunciation": "dispayt",
+    "type": "Edat",
+    "meaning": "e rağmen",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Despite the rain, we went for a walk.",
+        "meaning": "Yağmura rağmen, yürüyüşe çıktık."
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "in spite of",
+    "pronunciation": "in spayt of",
+    "type": "İfade",
+    "meaning": "e rağmen",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "In spite of the difficulties, we succeeded.",
+        "meaning": "Zorluklara rağmen, başardık."
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "from now on",
+    "pronunciation": "from nau on",
+    "type": "İfade",
+    "meaning": "artık",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "From now on, I'll be more careful.",
+        "meaning": "Artık daha dikkatli olacağım."
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "good at",
+    "pronunciation": "gud et",
+    "type": "İfade",
+    "meaning": "birşeyde iyi olmak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She is very good at playing the piano.",
+        "meaning": "O, piyano çalmada çok iyi."
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "bad at",
+    "pronunciation": "bed et",
+    "type": "İfade",
+    "meaning": "birşeyde kötü olmak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I'm bad at mathematics.",
+        "meaning": "Matematikte kötüyüm."
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "greengrocer",
+    "pronunciation": "gringrosır",
+    "type": "İsim",
+    "meaning": "manav",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I buy vegetables from the greengrocer every week.",
+        "meaning": "Her hafta manavdan sebze alıyorum."
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "online",
+    "pronunciation": "onlayn",
+    "type": "Zarf",
+    "meaning": "yayında",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The course is available online.",
+        "meaning": "Kurs yayında mevcut."
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "shall we",
+    "pronunciation": "şel vi",
+    "type": "İfade",
+    "meaning": "olur mu",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Shall we go to the cinema tonight?",
+        "meaning": "Bu gece sinemaya gidelim mi?"
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "result-driven",
+    "pronunciation": "rizalt drivın",
+    "type": "Sıfat",
+    "meaning": "sonuç odaklı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We need a result-driven approach to solve this problem.",
+        "meaning": "Bu problemi çözmek için sonuç odaklı bir yaklaşım gerekiyor."
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "exceptional",
+    "pronunciation": "eksepsınıl",
+    "type": "Sıfat",
+    "meaning": "olağanüstü",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She has exceptional talent in music.",
+        "meaning": "Müzikte olağanüstü bir yeteneği var."
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "extraordinary",
+    "pronunciation": "ekstroridınari",
+    "type": "Sıfat",
+    "meaning": "olağanüstü",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It was an extraordinary experience.",
+        "meaning": "Olağanüstü bir deneyimdi."
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "obligation",
+    "pronunciation": "obligeyşın",
+    "type": "İsim",
+    "meaning": "zorunluluk",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It's my obligation to help you.",
+        "meaning": "Sana yardım etmek benim zorunluluğum."
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "being",
+    "pronunciation": "biing",
+    "type": "İsim",
+    "meaning": "varlık",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Human beings are capable of great things.",
+        "meaning": "İnsan varlıkları büyük şeyler yapabilir."
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "refer",
+    "pronunciation": "riför",
+    "type": "Fiil",
+    "meaning": "ifade etmek, atıfta bulunmak",
+    "v2": {
+      "form": "referred",
+      "pronunciation": "riförd"
+    },
+    "v3": {
+      "form": "referred",
+      "pronunciation": "riförd"
+    },
+    "gerundInfinitive": "referring",
+    "examples": [
+      {
+        "sentence": "I'm referring to what we discussed yesterday.",
+        "meaning": "Dün tartıştığımız şeye atıfta bulunuyorum."
+      }
+    ],
+    "date": "18.01.2026"
+  },
+  {
+    "word": "nation",
+    "pronunciation": "neyşın",
+    "type": "İsim",
+    "meaning": "millet",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The nation celebrated its independence day.",
+        "meaning": "Millet bağımsızlık gününü kutladı."
+      }
+    ],
+    "date": "18.01.2026"
+  }
+]

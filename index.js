@@ -2,9 +2,10 @@
 let wordsData = [];
 let filteredWordsData = [];
 let currentPage = 1;
-const CARDS_PER_PAGE = 20;
+let CARDS_PER_PAGE = 20;
 let currentMode = "full";
 let selectedDate = "all";
+let searchTerm = "";
 let longPressTimer = null;
 const LONG_PRESS_DURATION = 500;
 const STORAGE_KEY = "wordCardAppState";
@@ -21,6 +22,7 @@ function saveState() {
     currentMode: currentMode,
     selectedDate: selectedDate,
     currentPage: currentPage,
+    cardsPerPage: CARDS_PER_PAGE,
   };
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
@@ -37,6 +39,7 @@ function loadState() {
       if (state.currentMode) currentMode = state.currentMode;
       if (state.selectedDate) selectedDate = state.selectedDate;
       if (state.currentPage) currentPage = state.currentPage;
+      if (state.cardsPerPage) CARDS_PER_PAGE = state.cardsPerPage;
     }
   } catch (error) {
     console.error("localStorage yükleme hatası:", error);
@@ -461,18 +464,20 @@ function shuffleArray(array) {
 
 // ==================== FILTERING ====================
 function applyFilters() {
+  let tempFiltered = [];
+
   // Eğer "Sadece Türkçe Cümle" modu seçiliyse, kelimeleri tut (cümleleri renderCards'ta işleyeceğiz)
   if (currentMode === "tr-examples-only") {
     // wordsData zaten loadWords() içinde tarih filtresine göre yüklenmiş durumda
     // Sadece examples'ı olan kelimeleri filtrele
-    filteredWordsData = wordsData.filter((word) => {
+    tempFiltered = wordsData.filter((word) => {
       return word.examples && Array.isArray(word.examples) && word.examples.length > 0;
     });
   } else {
     // Normal mod için mevcut mantık
     // Dosya zaten tarihe göre yüklendiği için sadece kopyala
     // Eğer "all" seçiliyse tüm kelimeler, değilse sadece seçilen tarihteki kelimeler
-    filteredWordsData = [...wordsData];
+    tempFiltered = [...wordsData];
 
     // Ek filtreleme sadece "all" modunda gerekli değil çünkü dosya zaten tarihe göre yüklendi
     // Ama yine de kontrol edelim (güvenlik için)
@@ -481,15 +486,29 @@ function applyFilters() {
       const todayStr = `${String(today.getDate()).padStart(2, "0")}.${String(
         today.getMonth() + 1
       ).padStart(2, "0")}.${today.getFullYear()}`;
-      filteredWordsData = filteredWordsData.filter(
+      tempFiltered = tempFiltered.filter(
         (word) => word.date === todayStr
       );
     } else if (selectedDate !== "all") {
       // Seçilen tarihe göre filtrele (dosya zaten yüklendi ama yine de kontrol et)
-      filteredWordsData = filteredWordsData.filter(
+      tempFiltered = tempFiltered.filter(
         (word) => word.date === selectedDate
       );
     }
+  }
+
+  // Arama filtresini uygula
+  if (searchTerm && searchTerm.trim() !== "") {
+    const searchLower = searchTerm.toLowerCase().trim();
+    filteredWordsData = tempFiltered.filter((word) => {
+      // Kelime içinde ara
+      const wordMatch = word.word && word.word.toLowerCase().includes(searchLower);
+      // Anlam içinde ara
+      const meaningMatch = word.meaning && word.meaning.toLowerCase().includes(searchLower);
+      return wordMatch || meaningMatch;
+    });
+  } else {
+    filteredWordsData = tempFiltered;
   }
 
   // Sayfa numarasının geçerli olup olmadığını kontrol et
@@ -1521,11 +1540,68 @@ function initializeResetButton() {
 }
 }
 
+// ==================== CARDS PER PAGE ====================
+function initializeCardsPerPage() {
+  const cardsPerPageSelect = document.getElementById("cardsPerPageSelect");
+  if (!cardsPerPageSelect) return;
+
+  // Kaydedilmiş değeri seç
+  cardsPerPageSelect.value = CARDS_PER_PAGE;
+
+  cardsPerPageSelect.addEventListener("change", (e) => {
+    const newValue = parseInt(e.target.value);
+    if (newValue && newValue > 0) {
+      CARDS_PER_PAGE = newValue;
+      currentPage = 1; // Sayfa başına kart değişince ilk sayfaya dön
+      applyFilters();
+      renderCards();
+      saveState();
+    }
+  });
+}
+
+// ==================== SEARCH ====================
+function initializeSearch() {
+  const searchInput = document.getElementById("searchInput");
+  if (!searchInput) return;
+
+  let searchTimeout = null;
+
+  searchInput.addEventListener("input", (e) => {
+    // Debounce - kullanıcı yazmayı bıraktıktan 300ms sonra arama yap
+    if (searchTimeout) {
+      clearTimeout(searchTimeout);
+    }
+
+    searchTimeout = setTimeout(() => {
+      searchTerm = e.target.value.trim();
+      currentPage = 1; // Arama yapınca ilk sayfaya dön
+      applyFilters();
+      renderCards();
+    }, 300);
+  });
+
+  // Enter'a basınca hemen ara
+  searchInput.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+      if (searchTimeout) {
+        clearTimeout(searchTimeout);
+      }
+      searchTerm = e.target.value.trim();
+      currentPage = 1;
+      applyFilters();
+      renderCards();
+    }
+  });
+}
+
 // ==================== INITIALIZATION ====================
 async function init() {
   loadState(); // İlk yüklemede kaydedilmiş durumu yükle
   
   initializeModeSelect();
+  initializeCardsPerPage();
+  initializeSearch();
   initializePagination();
   initializeResetButton();
   await loadWords();
@@ -1548,6 +1624,12 @@ async function init() {
       selectedDate = "all";
       saveState();
     }
+  }
+
+  // Kart sayısı seçici değerini güncelle
+  const cardsPerPageSelect = document.getElementById("cardsPerPageSelect");
+  if (cardsPerPageSelect) {
+    cardsPerPageSelect.value = CARDS_PER_PAGE;
   }
 }
 

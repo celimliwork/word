@@ -13,6 +13,7 @@ let readAllTimeoutId = null; // Bekleme timeout ID'si
 let isLearningMode = false; // Öğrenme modu durumu
 let learningTimeoutId = null; // Öğrenme modu timeout ID'si
 let currentLearningIndex = 0; // Şu an okunan kelime indeksi
+let currentPageWords = []; // Mevcut sayfadaki kelimeler
 
 // ==================== LOCALSTORAGE ====================
 function saveState() {
@@ -395,38 +396,57 @@ function initializeModeSelect() {
   const modeSelect = document.getElementById("modeSelect");
   const readAllExamplesGroup = document.getElementById("readAllExamplesGroup");
   const readAllExamplesBtn = document.getElementById("readAllExamplesBtn");
+  const startLearningGroup = document.getElementById("startLearningGroup");
+  const startLearningBtn = document.getElementById("startLearningBtn");
 
   // Kaydedilmiş değeri seç
   modeSelect.value = currentMode;
 
-  // Mod değiştiğinde butonu göster/gizle
-  function toggleReadAllButton() {
+  // Mod değiştiğinde butonları göster/gizle
+  function toggleButtons() {
     if (currentMode === "tr-examples-only") {
-      readAllExamplesGroup.style.display = "block";
+      if (readAllExamplesGroup) readAllExamplesGroup.style.display = "block";
+      if (startLearningGroup) startLearningGroup.style.display = "none";
+    } else if (currentMode === "full") {
+      if (readAllExamplesGroup) readAllExamplesGroup.style.display = "none";
+      if (startLearningGroup) startLearningGroup.style.display = "block";
     } else {
-      readAllExamplesGroup.style.display = "none";
+      if (readAllExamplesGroup) readAllExamplesGroup.style.display = "none";
+      if (startLearningGroup) startLearningGroup.style.display = "none";
     }
   }
 
-  // İlk yüklemede butonu göster/gizle
-  toggleReadAllButton();
+  // İlk yüklemede butonları göster/gizle
+  toggleButtons();
 
   modeSelect.addEventListener("change", async (e) => {
     // Mod değiştiğinde okumayı durdur
     if (isReadingAllExamples) {
       stopReadingAllExamples();
     }
+    if (isLearningMode) {
+      stopLearningMode();
+    }
     currentMode = e.target.value;
-    toggleReadAllButton();
+    toggleButtons();
     applyFilters(); // Filtreleri yeniden uygula (yeni mod için gerekli - bu fonksiyon sayfa numarasını kontrol eder)
     renderCards();
     saveState(); // Durumu kaydet
   });
 
   // Tüm cümleleri okuma butonu
-  readAllExamplesBtn.addEventListener("click", () => {
-    readAllEnglishExamples();
-  });
+  if (readAllExamplesBtn) {
+    readAllExamplesBtn.addEventListener("click", () => {
+      readAllEnglishExamples();
+    });
+  }
+
+  // Öğrenme başlat butonu
+  if (startLearningBtn) {
+    startLearningBtn.addEventListener("click", () => {
+      startLearningMode();
+    });
+  }
 }
 
 // ==================== UTILITY FUNCTIONS ====================
@@ -1104,7 +1124,7 @@ function speakText(text, lang = "en-US", onEnd = null) {
   }
 }
 
-// Öğrenme modu: Tüm kelimeleri sırayla okur (İngilizce kelime + Türkçe anlam)
+// Öğrenme modu: Mevcut sayfadaki kelimeleri sırayla okur (İngilizce kelime + Türkçe anlam)
 function startLearningMode() {
   if (currentMode !== "full") {
     return;
@@ -1119,9 +1139,13 @@ function startLearningMode() {
     return;
   }
 
-  // Filtrelenmiş kelimeleri al
-  if (filteredWordsData.length === 0) {
-    alert("Okunacak kelime bulunamadı.");
+  // Mevcut sayfadaki kelimeleri al
+  const startIndex = (currentPage - 1) * CARDS_PER_PAGE;
+  const endIndex = startIndex + CARDS_PER_PAGE;
+  currentPageWords = filteredWordsData.slice(startIndex, endIndex);
+
+  if (currentPageWords.length === 0) {
+    alert("Bu sayfada okunacak kelime bulunamadı.");
     return;
   }
 
@@ -1134,12 +1158,12 @@ function startLearningMode() {
 }
 
 function readNextWord() {
-  if (!isLearningMode || currentLearningIndex >= filteredWordsData.length) {
+  if (!isLearningMode || currentLearningIndex >= currentPageWords.length) {
     stopLearningMode();
     return;
   }
 
-  const word = filteredWordsData[currentLearningIndex];
+  const word = currentPageWords[currentLearningIndex];
   
   if (!word || !word.word) {
     currentLearningIndex++;

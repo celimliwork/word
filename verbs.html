@@ -358,8 +358,8 @@
             readAllBtn.textContent = "🔊 Tümünü Oku";
         }
 
-        function readSingleVerb(verb) {
-            if (!isReadingAll) {
+        function readSingleVerb(verb, skipCheck = false) {
+            if (!skipCheck && !isReadingAll) {
                 return Promise.resolve();
             }
             
@@ -370,17 +370,13 @@
             let textToSpeak = `${v1Text}, ${v2Text}, ${v3Text}`;
             
             return new Promise((resolve) => {
-                if (!isReadingAll) {
+                if (!skipCheck && !isReadingAll) {
                     resolve();
                     return;
                 }
                 
                 currentUtterance = speakText(textToSpeak, () => {
-                    if (isReadingAll) {
-                        resolve();
-                    } else {
-                        resolve();
-                    }
+                    resolve();
                 });
             });
         }
@@ -426,7 +422,7 @@
                 stopReading();
                 return;
             }
-            readSingleVerb(verbsData[index]);
+            readSingleVerb(verbsData[index], true);
         };
 
         function renderVerbs() {

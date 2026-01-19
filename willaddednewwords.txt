@@ -1,71 +1,17 @@
-shout at=bağırmak
-drive=götürmek
-gas station=benzin istasyonu
-next=bir sonraki
-water=sulamak
-take into=içeri almak
-according to= e göre
-one more st=bir tane daha st
-approach=yaklaşmak
-appreciate=takdir etmek
-congratulate=tebrik etmek
-despite=e rağmen
-in spite of=e rağmen
-from now on=artık
-good at=birşeyde iyi olmak
-bad at= birşeyde kötüyüm
-greengrocer=manav
-online=yayında
-shall we=olur mu
-result-driven:sonuç odaklı
-Exceptionsl:olağanüstü
-extraordinary:olağanüstü
-Obligation zorunluluk
-Being:varlık
-Refers: ifade etmek, atıfta bulunmak
-Nation:millet
-cellar=kiler
-attic=çatı katı
-ceiling=tavan
-playground=oyun parkı
-college=üniversite
-entrance=giriş
-at the end of=sonunda
-at the bottom of=en altında
-crossroads=kavşakta
-front desk=resepsion
-take a sit=oturmak
-coast=kıyı
-phone=telefon etmek
-find it difficult=zorlanmak
-on the way=yolda
-surrounded by people=insanlarla çevrili
-go for a drive=araba kullanmak
-shaver=traş makinası
-mother in law = kayınvalide, hukukta anne
-properties = özellikler, mülkiyetler
-crime = suç
-priority = öncelik
-religion = din
-permission = izin
-device = alet, cihaz
-pressure = baskı
-time = defa
-pain = ağrı
-brand = marka
-listen to = dinlemek
-download = indirmek
-commit = işlemek
-cough = öksürmek
-press = basmak
-apply = uygulamak, başvurmak
-implement = uygulamak
-carry out = uygulamak
-perform = uygulamak
-proper = uygun, münasip
-necessary = gerekli
-tough = sert
-Forecast: tahmin
-Obligate: zorunlu kılmak
-Partners:ortaklar
-Take off: çıkarmak(kıyafet), başarmak, izinli olmak
+in spirng=ilk bahar
+in fall=son bahar
+do you think...=sizce...
+political=siyasi
+hometown=memleket
+get sleepy=uykusu gelmek
+hold=yapılmak (the meeting will be held)
+take place=gerçekleşmek olmak
+luckily=neyseki
+get married=evlenmek
+sailed=yelken açmak
+go skiing=kayak yapmak
+on the 4th of march=martın 4 ünde
+at lunchtime=öğle yemeğinde
+recruitment=işe alım 
+at the beginning of=başında
+progress=ilerleme

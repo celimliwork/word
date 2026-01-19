@@ -23,7 +23,11 @@ const prepRules = [
       "in the garden / in the yard / in the balcony",
       "in the city center",
       "in the dining room",
-      "in the class"
+      "in the class",
+      "in the national team / in the team",
+      "in a group / in a club",
+      "in the country / in Turkey / in England",
+      "in the city / in Istanbul"
     ]
   },
   {
@@ -66,6 +70,7 @@ const prepRules = [
       "at home",
       "at school (lokasyon olarak)",
       "at the cinema",
+      "at Microsoft / at Google / at [şirket adı]",
       "at night",
       "at temperature",
       "at the end of"
@@ -197,6 +202,21 @@ const prepQuestions = [
     sentence: "She is sitting ___ the chair.",
     answer: "on",
     explanation: "Sandalye bir yüzey gibi düşünülür → on the chair."
+  },
+  {
+    sentence: "He works ___ Microsoft.",
+    answer: "at",
+    explanation: "Şirketler ve kurumlar için → at Microsoft / at Google / at [şirket adı]."
+  },
+  {
+    sentence: "She plays ___ the national team.",
+    answer: "in",
+    explanation: "Ekip, takım, grup gibi içinde bulunduğun organizasyonlar için → in the team / in the national team / in a group."
+  },
+  {
+    sentence: "They live ___ Turkey.",
+    answer: "in",
+    explanation: "Ülkeler ve şehirler için → in the country / in Turkey / in England / in Istanbul."
   }
 ];
 

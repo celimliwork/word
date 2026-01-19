@@ -34,3 +34,38 @@ at the end of=sonunda
 at the bottom of=en altında
 crossroads=kavşakta
 front desk=resepsion
+take a sit=oturmak
+coast=kıyı
+phone=telefon etmek
+find it difficult=zorlanmak
+on the way=yolda
+surrounded by people=insanlarla çevrili
+go for a drive=araba kullanmak
+shaver=traş makinası
+mother in law = kayınvalide, hukukta anne
+properties = özellikler, mülkiyetler
+crime = suç
+priority = öncelik
+religion = din
+permission = izin
+device = alet, cihaz
+pressure = baskı
+time = defa
+pain = ağrı
+brand = marka
+listen to = dinlemek
+download = indirmek
+commit = işlemek
+cough = öksürmek
+press = basmak
+apply = uygulamak, başvurmak
+implement = uygulamak
+carry out = uygulamak
+perform = uygulamak
+proper = uygun, münasip
+necessary = gerekli
+tough = sert
+Forecast: tahmin
+Obligate: zorunlu kılmak
+Partners:ortaklar
+Take off: çıkarmak(kıyafet), başarmak, izinli olmak

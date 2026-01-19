@@ -24,3 +24,13 @@ Obligation zorunluluk
 Being:varlık
 Refers: ifade etmek, atıfta bulunmak
 Nation:millet
+cellar=kiler
+attic=çatı katı
+ceiling=tavan
+playground=oyun parkı
+college=üniversite
+entrance=giriş
+at the end of=sonunda
+at the bottom of=en altında
+crossroads=kavşakta
+front desk=resepsion

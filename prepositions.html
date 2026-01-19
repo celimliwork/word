@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>in / on / at - Konum Oyunu</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .prep-container {
+            max-width: 390px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .prep-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .prep-header h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .prep-header p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            margin-bottom: 8px;
+        }
+
+        .prep-header .back-link {
+            display: inline-block;
+            margin-top: 6px;
+            color: white;
+            text-decoration: underline;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .prep-header .back-link:hover {
+            opacity: 1;
+        }
+
+        .prep-tabs {
+            display: flex;
+            border-bottom: 1px solid #e9ecef;
+            background: #f8f9fa;
+        }
+
+        .prep-tab {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            color: #6c757d;
+        }
+
+        .prep-tab.active {
+            border-bottom-color: #667eea;
+            color: #667eea;
+            background: #ffffff;
+        }
+
+        .prep-content {
+            padding: 15px;
+        }
+
+        .prep-section {
+            display: none;
+        }
+
+        .prep-section.active {
+            display: block;
+        }
+
+        .prep-rule-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 12px 14px;
+            margin-bottom: 10px;
+            border-left: 3px solid #667eea;
+        }
+
+        .prep-rule-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        .prep-pill {
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .prep-pill.in {
+            background: #3b82f6;
+        }
+
+        .prep-pill.on {
+            background: #10b981;
+        }
+
+        .prep-pill.at {
+            background: #f97316;
+        }
+
+        .prep-rule-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .prep-rule-desc {
+            font-size: 0.85rem;
+            color: #495057;
+            margin-bottom: 6px;
+        }
+
+        .prep-examples-title {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #6c757d;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            margin-bottom: 3px;
+        }
+
+        .prep-examples {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+
+        .prep-example-chip {
+            padding: 4px 8px;
+            border-radius: 999px;
+            background: white;
+            border: 1px solid #e0e3ff;
+            font-size: 0.8rem;
+            color: #4b5563;
+        }
+
+        .prep-legend {
+            font-size: 0.8rem;
+            color: #6c757d;
+            margin-top: 8px;
+        }
+
+        /* Oyun alanı */
+        .prep-game-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 14px;
+            border: 1px solid #e9ecef;
+        }
+
+        .prep-game-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #6c757d;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            margin-bottom: 6px;
+        }
+
+        .prep-game-sentence {
+            font-size: 1rem;
+            color: #111827;
+            margin-bottom: 12px;
+        }
+
+        .prep-blank {
+            display: inline-block;
+            min-width: 36px;
+            border-bottom: 2px dashed #cbd5f5;
+            text-align: center;
+            font-weight: 700;
+            color: #667eea;
+        }
+
+        .prep-options {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .prep-option-btn {
+            flex: 1;
+            padding: 8px 0;
+            border-radius: 999px;
+            border: 1px solid #e0e3ff;
+            background: white;
+            color: #4b5563;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .prep-option-btn:hover {
+            background: #eef2ff;
+            border-color: #667eea;
+        }
+
+        .prep-option-btn.correct {
+            background: #dcfce7;
+            border-color: #22c55e;
+            color: #166534;
+        }
+
+        .prep-option-btn.wrong {
+            background: #fee2e2;
+            border-color: #ef4444;
+            color: #991b1b;
+        }
+
+        .prep-feedback {
+            font-size: 0.9rem;
+            margin-top: 4px;
+        }
+
+        .prep-feedback.correct {
+            color: #166534;
+        }
+
+        .prep-feedback.wrong {
+            color: #991b1b;
+        }
+
+        .prep-explanation {
+            margin-top: 6px;
+            font-size: 0.85rem;
+            color: #374151;
+            background: #eef2ff;
+            border-radius: 8px;
+            padding: 8px 10px;
+        }
+
+        .prep-next-btn {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(102, 126, 234, 0.3);
+        }
+
+        .prep-next-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 8px rgba(102, 126, 234, 0.4);
+        }
+
+        .prep-score {
+            margin-top: 8px;
+            font-size: 0.85rem;
+            color: #6b7280;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="prep-container">
+        <div class="prep-header">
+            <h1>📌 in / on / at Oyunu</h1>
+            <p>Yer & mekan için hangi durumlarda in, on, at kullanılır?</p>
+            <a href="index.html" class="back-link">← Ana Sayfaya Dön</a>
+        </div>
+
+        <div class="prep-tabs">
+            <div class="prep-tab active" data-target="theorySection">Teori & Özet</div>
+            <div class="prep-tab" data-target="gameSection">Oyun Modu</div>
+        </div>
+
+        <div class="prep-content">
+            <div id="theorySection" class="prep-section active">
+                <div id="prepRulesContainer"></div>
+                <div class="prep-legend">
+                    Bu özet, senin verdiğin notlar temel alınarak hazırlandı. Örneklere bakarak önce kendin tahmin etmeye çalış, sonra oyun modunda kendini test et.
+                </div>
+            </div>
+
+            <div id="gameSection" class="prep-section">
+                <div class="prep-game-card">
+                    <div class="prep-game-label">Boşluğa doğru edatı getir:</div>
+                    <div id="prepSentence" class="prep-game-sentence"></div>
+                    <div class="prep-options">
+                        <button class="prep-option-btn" data-value="in">in</button>
+                        <button class="prep-option-btn" data-value="on">on</button>
+                        <button class="prep-option-btn" data-value="at">at</button>
+                    </div>
+                    <div id="prepFeedback" class="prep-feedback"></div>
+                    <div id="prepExplanation" class="prep-explanation" style="display:none;"></div>
+                    <button id="prepNextBtn" class="prep-next-btn">Sonraki Soru</button>
+                    <div id="prepScore" class="prep-score"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="prepositions.js"></script>
+</body>
+</html>
+

@@ -15,3 +15,44 @@ at lunchtime=öğle yemeğinde
 recruitment=işe alım 
 at the beginning of=başında
 progress=ilerleme
+Opinion:görüş
+Communicate: haberleşemek
+Drunk: sarhoş
+Present/give: hediye vermek
+Necklace:kolye
+Opposite: karşı
+Work:işe yaramak
+Scientefic: bilimsel
+Deal with:uğraşmak
+Countryside:kırsal
+Whether:olup olmadığı
+appropriate:uygun
+Procedure: prosedür
+Expand:genişletmek
+nephew: yeğen
+cousin: kuzen (kazın gibi okunur)
+close: yakın
+internship: stajyerlik
+intern: staj / stajyer
+already: zaten, çoktan
+month: mans gibi okunur
+UAE: yu ey i diye okunur (United Arab Emirates)
+not: değil
+profession: meslek
+focus: fokıs diye okunur, odaklanmak
+surgery: ameliyat
+press: basmak
+push: itmek / ittirmek
+force: zorlamak
+obligate: zorunlu kılmak
+interest: faiz / ilgi
+interesting: ilginç
+pay attention (to): ilgilenmek, dikkat etmek
+tiring: yorucu
+tired: yorgun
+overtime work: fazla mesai
+brave: cesur
+encourage: cesaretlendirmek
+be stuck: sıkışmak
+talk: konuşmak (tak)
+walk:yürümek (vak)

@@ -792,11 +792,7 @@ function createEnTrModeHTML(word, typeClass) {
 
 function createTrEnModeHTML(word, typeClass) {
   let html = `
-                ${
-                  word.type
-                    ? `<span class="type-badge type-${typeClass} hidden-field" data-reveal="en" style="display: none;">${word.type}</span>`
-                    : ""
-                }
+              
                 <div class="card-field hidden-field" data-reveal="en">
                     <div class="word-main">
                         <span class="word-text hidden">👆</span>

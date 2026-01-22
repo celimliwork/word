@@ -1,0 +1,782 @@
+[
+  {
+    "word": "ceremony",
+    "pronunciation": "serımoni",
+    "type": "İsim",
+    "meaning": "tören",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The graduation ceremony was beautiful.",
+        "meaning": "Mezuniyet töreni güzeldi."
+      },
+      {
+        "sentence": "We attended the wedding ceremony.",
+        "meaning": "Düğün törenine katıldık."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "fail",
+    "pronunciation": "feyl",
+    "type": "Fiil",
+    "meaning": "kalmak, başarısız olmak",
+    "v2": {
+      "form": "failed",
+      "pronunciation": "feyld"
+    },
+    "v3": {
+      "form": "failed",
+      "pronunciation": "feyld"
+    },
+    "gerundInfinitive": "failing",
+    "examples": [
+      {
+        "sentence": "I failed the exam last semester.",
+        "meaning": "Geçen dönem sınavdan kaldım."
+      },
+      {
+        "sentence": "Don't fail to call me when you arrive.",
+        "meaning": "Vardığında beni aramayı unutma."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "put up",
+    "pronunciation": "put ap",
+    "type": "Phrasal Verb",
+    "meaning": "açmak",
+    "v2": {
+      "form": "put up",
+      "pronunciation": "put ap"
+    },
+    "v3": {
+      "form": "put up",
+      "pronunciation": "put ap"
+    },
+    "gerundInfinitive": "putting up",
+    "examples": [
+      {
+        "sentence": "Let's put up the tent here.",
+        "meaning": "Çadırı buraya kuralım."
+      },
+      {
+        "sentence": "They put up a sign on the wall.",
+        "meaning": "Duvara bir tabela astılar."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "through",
+    "pronunciation": "tru",
+    "type": "Edat",
+    "meaning": "boyunca, başından sonuna kadar",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We walked through the park.",
+        "meaning": "Parkın içinden yürüdük."
+      },
+      {
+        "sentence": "I read through the entire book.",
+        "meaning": "Kitabı başından sonuna kadar okudum."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "fluent",
+    "pronunciation": "fluınt",
+    "type": "Sıfat",
+    "meaning": "akıcı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She speaks fluent English.",
+        "meaning": "Akıcı İngilizce konuşuyor."
+      },
+      {
+        "sentence": "I want to become fluent in Spanish.",
+        "meaning": "İspanyolcada akıcı olmak istiyorum."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "enough",
+    "pronunciation": "inaf",
+    "type": "Sıfat",
+    "meaning": "yeterli, yeter",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I have enough money to buy it.",
+        "meaning": "Onu almak için yeterli param var."
+      },
+      {
+        "sentence": "That's enough for today.",
+        "meaning": "Bugün için bu kadar yeter."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "developed",
+    "pronunciation": "divelopt",
+    "type": "Sıfat",
+    "meaning": "gelişmiş",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Japan is a developed country.",
+        "meaning": "Japonya gelişmiş bir ülkedir."
+      },
+      {
+        "sentence": "The developed areas have better infrastructure.",
+        "meaning": "Gelişmiş bölgeler daha iyi altyapıya sahip."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "drunk",
+    "pronunciation": "drank",
+    "type": "Sıfat",
+    "meaning": "sarhoş, içmiş",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He was too drunk to drive.",
+        "meaning": "Araba kullanmak için çok sarhoştu."
+      },
+      {
+        "sentence": "Don't drink and drive when you're drunk.",
+        "meaning": "Sarhoşken içip araba kullanma."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "educated",
+    "pronunciation": "edyukeytıd",
+    "type": "Sıfat",
+    "meaning": "eğitimli",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She is a well-educated person.",
+        "meaning": "O iyi eğitimli bir insan."
+      },
+      {
+        "sentence": "Educated people make better decisions.",
+        "meaning": "Eğitimli insanlar daha iyi kararlar verir."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "set",
+    "pronunciation": "set",
+    "type": "Fiil",
+    "meaning": "kurmak, ayarlamak",
+    "v2": {
+      "form": "set",
+      "pronunciation": "set"
+    },
+    "v3": {
+      "form": "set",
+      "pronunciation": "set"
+    },
+    "gerundInfinitive": "setting",
+    "examples": [
+      {
+        "sentence": "I need to set the alarm for 7 AM.",
+        "meaning": "Alarmı sabah 7'ye kurmam gerekiyor."
+      },
+      {
+        "sentence": "Let's set up a meeting for next week.",
+        "meaning": "Gelecek hafta için bir toplantı ayarlayalım."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "win",
+    "pronunciation": "vin",
+    "type": "Fiil",
+    "meaning": "kazanmak (yarışma)",
+    "v2": {
+      "form": "won",
+      "pronunciation": "van"
+    },
+    "v3": {
+      "form": "won",
+      "pronunciation": "van"
+    },
+    "gerundInfinitive": "winning",
+    "examples": [
+      {
+        "sentence": "Our team won the championship.",
+        "meaning": "Takımımız şampiyonluğu kazandı."
+      },
+      {
+        "sentence": "I hope you win the competition.",
+        "meaning": "Umarım yarışmayı kazanırsın."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "gain",
+    "pronunciation": "geyn",
+    "type": "Fiil",
+    "meaning": "kazanmak",
+    "v2": {
+      "form": "gained",
+      "pronunciation": "geynd"
+    },
+    "v3": {
+      "form": "gained",
+      "pronunciation": "geynd"
+    },
+    "gerundInfinitive": "gaining",
+    "examples": [
+      {
+        "sentence": "I gained a lot of experience from this job.",
+        "meaning": "Bu işten çok deneyim kazandım."
+      },
+      {
+        "sentence": "She gained weight after the holiday.",
+        "meaning": "Tatilden sonra kilo aldı."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "like that",
+    "pronunciation": "layk det",
+    "type": "İfade",
+    "meaning": "böyle, bu şekilde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I don't like it when you talk like that.",
+        "meaning": "Böyle konuştuğunda hoşlanmıyorum."
+      },
+      {
+        "sentence": "Do it like that, not like this.",
+        "meaning": "Böyle yap, böyle değil."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "I do my best",
+    "pronunciation": "ay du may best",
+    "type": "İfade",
+    "meaning": "elimden geleni yapıyorum",
+    "v2": {
+      "form": "I did my best",
+      "pronunciation": "ay did may best"
+    },
+    "v3": {
+      "form": "I have done my best",
+      "pronunciation": "ay hev dan may best"
+    },
+    "gerundInfinitive": "doing my best",
+    "examples": [
+      {
+        "sentence": "I do my best to help everyone.",
+        "meaning": "Herkese yardım etmek için elimden geleni yapıyorum."
+      },
+      {
+        "sentence": "Don't worry, I'll do my best.",
+        "meaning": "Endişelenme, elimden geleni yapacağım."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "international",
+    "pronunciation": "inırnışınıl",
+    "type": "Sıfat",
+    "meaning": "uluslararası",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "This is an international conference.",
+        "meaning": "Bu uluslararası bir konferans."
+      },
+      {
+        "sentence": "She works for an international company.",
+        "meaning": "Uluslararası bir şirkette çalışıyor."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "accessory",
+    "pronunciation": "aksesori",
+    "type": "İsim",
+    "meaning": "aksesuar",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She bought a new accessory for her phone.",
+        "meaning": "Telefonu için yeni bir aksesuar aldı."
+      },
+      {
+        "sentence": "Jewelry and bags are fashion accessories.",
+        "meaning": "Mücevher ve çantalar moda aksesuarlarıdır."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "reward",
+    "pronunciation": "rivord",
+    "type": "Fiil",
+    "meaning": "ödüllendirmek",
+    "v2": {
+      "form": "rewarded",
+      "pronunciation": "rivordıd"
+    },
+    "v3": {
+      "form": "rewarded",
+      "pronunciation": "rivordıd"
+    },
+    "gerundInfinitive": "rewarding",
+    "examples": [
+      {
+        "sentence": "The company will reward good employees.",
+        "meaning": "Şirket iyi çalışanları ödüllendirecek."
+      },
+      {
+        "sentence": "I rewarded myself with a nice dinner.",
+        "meaning": "Kendimi güzel bir akşam yemeğiyle ödüllendirdim."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "nonverbal",
+    "pronunciation": "nonvırbıl",
+    "type": "Sıfat",
+    "meaning": "beden dili",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Nonverbal communication is very important.",
+        "meaning": "Sözsüz iletişim çok önemlidir."
+      },
+      {
+        "sentence": "Pay attention to nonverbal cues.",
+        "meaning": "Beden dili ipuçlarına dikkat et."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "substance",
+    "pronunciation": "sabstıns",
+    "type": "İsim",
+    "meaning": "madde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "This substance is dangerous.",
+        "meaning": "Bu madde tehlikelidir."
+      },
+      {
+        "sentence": "Water is a common substance.",
+        "meaning": "Su yaygın bir maddedir."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "alter",
+    "pronunciation": "oltır",
+    "type": "Fiil",
+    "meaning": "değiştirmek",
+    "v2": {
+      "form": "altered",
+      "pronunciation": "oltırd"
+    },
+    "v3": {
+      "form": "altered",
+      "pronunciation": "oltırd"
+    },
+    "gerundInfinitive": "altering",
+    "examples": [
+      {
+        "sentence": "We need to alter our plans.",
+        "meaning": "Planlarımızı değiştirmemiz gerekiyor."
+      },
+      {
+        "sentence": "The dress was altered to fit better.",
+        "meaning": "Elbise daha iyi oturması için değiştirildi."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "overall",
+    "pronunciation": "ovırol",
+    "type": "Zarf",
+    "meaning": "genel olarak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Overall, the project was successful.",
+        "meaning": "Genel olarak, proje başarılıydı."
+      },
+      {
+        "sentence": "Overall, I'm happy with the results.",
+        "meaning": "Genel olarak, sonuçlardan memnunum."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "marker",
+    "pronunciation": "markır",
+    "type": "İsim",
+    "meaning": "işaretleyici",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I need a marker to highlight this text.",
+        "meaning": "Bu metni vurgulamak için bir işaretleyiciye ihtiyacım var."
+      },
+      {
+        "sentence": "Use a marker to mark the important points.",
+        "meaning": "Önemli noktaları işaretlemek için bir işaretleyici kullan."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "conception",
+    "pronunciation": "konsepşın",
+    "type": "İsim",
+    "meaning": "kavram, fikir",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I have a different conception of success.",
+        "meaning": "Başarı hakkında farklı bir kavramım var."
+      },
+      {
+        "sentence": "The conception of this project was brilliant.",
+        "meaning": "Bu projenin fikri harikaydı."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "influence",
+    "pronunciation": "influıns",
+    "type": "Fiil",
+    "meaning": "etkilemek",
+    "v2": {
+      "form": "influenced",
+      "pronunciation": "influınst"
+    },
+    "v3": {
+      "form": "influenced",
+      "pronunciation": "influınst"
+    },
+    "gerundInfinitive": "influencing",
+    "examples": [
+      {
+        "sentence": "Parents influence their children's behavior.",
+        "meaning": "Ebeveynler çocuklarının davranışlarını etkiler."
+      },
+      {
+        "sentence": "The weather can influence our mood.",
+        "meaning": "Hava durumu ruh halimizi etkileyebilir."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "made up",
+    "pronunciation": "meyd ap",
+    "type": "Phrasal Verb",
+    "meaning": "oluşmak",
+    "v2": {
+      "form": "made up",
+      "pronunciation": "meyd ap"
+    },
+    "v3": {
+      "form": "made up",
+      "pronunciation": "meyd ap"
+    },
+    "gerundInfinitive": "making up",
+    "examples": [
+      {
+        "sentence": "The team is made up of five members.",
+        "meaning": "Takım beş üyeden oluşuyor."
+      },
+      {
+        "sentence": "Water is made up of hydrogen and oxygen.",
+        "meaning": "Su hidrojen ve oksijenden oluşur."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "contest",
+    "pronunciation": "kontest",
+    "type": "İsim",
+    "meaning": "yarışma",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She won the singing contest.",
+        "meaning": "Şarkı yarışmasını kazandı."
+      },
+      {
+        "sentence": "I'm participating in a writing contest.",
+        "meaning": "Bir yazı yarışmasına katılıyorum."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "excellent",
+    "pronunciation": "ekselınt",
+    "type": "Sıfat",
+    "meaning": "mükemmel",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "You did an excellent job!",
+        "meaning": "Mükemmel bir iş çıkardın!"
+      },
+      {
+        "sentence": "The food was excellent.",
+        "meaning": "Yemek mükemmeldi."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "due",
+    "pronunciation": "du",
+    "type": "Sıfat",
+    "meaning": "vadesi dolmak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The assignment is due next Monday.",
+        "meaning": "Ödev gelecek Pazartesi vadesi doluyor."
+      },
+      {
+        "sentence": "My rent is due at the end of the month.",
+        "meaning": "Kiram ayın sonunda vadesi doluyor."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "fair",
+    "pronunciation": "fer",
+    "type": "İsim",
+    "meaning": "fuar",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We visited the book fair last weekend.",
+        "meaning": "Geçen hafta sonu kitap fuarını ziyaret ettik."
+      },
+      {
+        "sentence": "The trade fair attracted many visitors.",
+        "meaning": "Ticaret fuarı birçok ziyaretçi çekti."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "predict",
+    "pronunciation": "pridikt",
+    "type": "Fiil",
+    "meaning": "tahmin etmek",
+    "v2": {
+      "form": "predicted",
+      "pronunciation": "pridiktıd"
+    },
+    "v3": {
+      "form": "predicted",
+      "pronunciation": "pridiktıd"
+    },
+    "gerundInfinitive": "predicting",
+    "examples": [
+      {
+        "sentence": "Scientists predict that it will rain tomorrow.",
+        "meaning": "Bilim insanları yarın yağmur yağacağını tahmin ediyor."
+      },
+      {
+        "sentence": "No one can predict the future.",
+        "meaning": "Kimse geleceği tahmin edemez."
+      }
+    ],
+    "date": "22.01.2026"
+  }
+]

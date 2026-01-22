@@ -132,7 +132,7 @@ body {
     position: absolute;
     top: 12px;
     right: 12px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #b4c0f7 0%, #d2dfde 100%);
     color: white;
     border: none;
     border-radius: 50%;
@@ -149,7 +149,7 @@ body {
 }
 
 .add-to-practice-btn:hover {
-    background: linear-gradient(135deg, #5568d3 0%, #6a4190 100%);
+    background: linear-gradient(135deg, #af8c18 0%, #ebe1b5 100%);
     transform: scale(1.1);
     box-shadow: 0 3px 8px rgba(102, 126, 234, 0.4);
 }

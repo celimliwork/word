@@ -1,30 +1,8 @@
-ceremony=tören
-fail=kalmak,başarısız olmak
-put up=açmak
-through = boyunca, başından sonuna kadar
-fluent = akıcı
-enough = yeterli, yeter
-developed = gelişmiş
-drunk = sarhoş, içmiş
-educated = eğitimli
-set = kurmak, ayarlamak
-win = kazanmak (yarışma)
-gain = kazanmak
-like that = böyle, bu şekilde
-I do my best = elimden geleni yapıyorum
-international =(uluslararası) inırnaaşınıl
-Accessory:aksesuar
-Reward:ödüllendirmek
-Nonverbal:beden dili
-Substance:maddde
-Alter:değiştirmek
-Overal: genel olarak
-Marker:işaretleyici
-Conception:kavram,fikir
-İnfluence:etkilemek
-Made up :oluşmak
-Contest:yarışma
-Excellent:mükemmel
-Due:vadesi dolmak
-Fair: fuar
-Predict: tahmin etmek
+Stand-up:günlük toplantı
+pair programing=iki geliştiricinin birlikte kod yazması
+Blocking issue=ilerlemeyi durduran kritik sorun 
+code review=kod incelemesi 
+queried=sorgulandı
+Staging=test ortamı
+Test suite=test paketi
+Schema=şema

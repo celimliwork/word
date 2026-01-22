@@ -778,5 +778,213 @@
       }
     ],
     "date": "22.01.2026"
+  },
+  {
+    "word": "stand-up",
+    "pronunciation": "stend ap",
+    "type": "İsim",
+    "meaning": "günlük toplantı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We have a stand-up meeting every morning.",
+        "meaning": "Her sabah günlük toplantımız var."
+      },
+      {
+        "sentence": "The stand-up lasted only 15 minutes.",
+        "meaning": "Günlük toplantı sadece 15 dakika sürdü."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "pair programming",
+    "pronunciation": "per programing",
+    "type": "İsim",
+    "meaning": "iki geliştiricinin birlikte kod yazması",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We practice pair programming to improve code quality.",
+        "meaning": "Kod kalitesini artırmak için çift programlama yapıyoruz."
+      },
+      {
+        "sentence": "Pair programming helps catch bugs early.",
+        "meaning": "Çift programlama hataların erken yakalanmasına yardımcı olur."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "blocking issue",
+    "pronunciation": "bloking işu",
+    "type": "İsim",
+    "meaning": "ilerlemeyi durduran kritik sorun",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We have a blocking issue that prevents deployment.",
+        "meaning": "Dağıtımı engelleyen kritik bir sorunumuz var."
+      },
+      {
+        "sentence": "This blocking issue needs immediate attention.",
+        "meaning": "Bu kritik sorun acil dikkat gerektiriyor."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "code review",
+    "pronunciation": "kod rivyu",
+    "type": "İsim",
+    "meaning": "kod incelemesi",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Please submit your code for review.",
+        "meaning": "Lütfen kodunu inceleme için gönder."
+      },
+      {
+        "sentence": "The code review found several issues.",
+        "meaning": "Kod incelemesi birkaç sorun buldu."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "query",
+    "pronunciation": "kviri",
+    "type": "Fiil",
+    "meaning": "sorgulamak",
+    "v2": {
+      "form": "queried",
+      "pronunciation": "kvirid"
+    },
+    "v3": {
+      "form": "queried",
+      "pronunciation": "kvirid"
+    },
+    "gerundInfinitive": "querying",
+    "examples": [
+      {
+        "sentence": "The data was queried from the database.",
+        "meaning": "Veriler veritabanından sorgulandı."
+      },
+      {
+        "sentence": "I need to query the user information.",
+        "meaning": "Kullanıcı bilgilerini sorgulamam gerekiyor."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "staging",
+    "pronunciation": "steycing",
+    "type": "İsim",
+    "meaning": "test ortamı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We deploy to staging before production.",
+        "meaning": "Üretime geçmeden önce test ortamına dağıtıyoruz."
+      },
+      {
+        "sentence": "The staging environment is ready for testing.",
+        "meaning": "Test ortamı test için hazır."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "test suite",
+    "pronunciation": "test süit",
+    "type": "İsim",
+    "meaning": "test paketi",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "All tests in the test suite passed.",
+        "meaning": "Test paketindeki tüm testler geçti."
+      },
+      {
+        "sentence": "We need to update the test suite.",
+        "meaning": "Test paketini güncellememiz gerekiyor."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "schema",
+    "pronunciation": "skima",
+    "type": "İsim",
+    "meaning": "şema",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The database schema needs to be updated.",
+        "meaning": "Veritabanı şemasının güncellenmesi gerekiyor."
+      },
+      {
+        "sentence": "We designed a new schema for the project.",
+        "meaning": "Proje için yeni bir şema tasarladık."
+      }
+    ],
+    "date": "22.01.2026"
   }
 ]

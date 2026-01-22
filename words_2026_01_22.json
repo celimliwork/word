@@ -986,5 +986,83 @@
       }
     ],
     "date": "22.01.2026"
+  },
+  {
+    "word": "keep waiting",
+    "pronunciation": "kip veyting",
+    "type": "İfade",
+    "meaning": "bekletilmek",
+    "v2": {
+      "form": "kept waiting",
+      "pronunciation": "kept veyting"
+    },
+    "v3": {
+      "form": "kept waiting",
+      "pronunciation": "kept veyting"
+    },
+    "gerundInfinitive": "keeping waiting",
+    "examples": [
+      {
+        "sentence": "I don't want to keep you waiting.",
+        "meaning": "Seni bekletmek istemiyorum."
+      },
+      {
+        "sentence": "We were kept waiting for an hour.",
+        "meaning": "Bir saat bekletildik."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "take a payment",
+    "pronunciation": "teyk ı peymınt",
+    "type": "İfade",
+    "meaning": "ödemeyi almak",
+    "v2": {
+      "form": "took a payment",
+      "pronunciation": "tuk ı peymınt"
+    },
+    "v3": {
+      "form": "taken a payment",
+      "pronunciation": "teykın ı peymınt"
+    },
+    "gerundInfinitive": "taking a payment",
+    "examples": [
+      {
+        "sentence": "The cashier will take your payment now.",
+        "meaning": "Kasiyer şimdi ödemenizi alacak."
+      },
+      {
+        "sentence": "I need to take a payment from the customer.",
+        "meaning": "Müşteriden ödeme almam gerekiyor."
+      }
+    ],
+    "date": "22.01.2026"
+  },
+  {
+    "word": "process",
+    "pronunciation": "proses",
+    "type": "Fiil",
+    "meaning": "işlenmek, işleme almak",
+    "v2": {
+      "form": "processed",
+      "pronunciation": "prosest"
+    },
+    "v3": {
+      "form": "processed",
+      "pronunciation": "prosest"
+    },
+    "gerundInfinitive": "processing",
+    "examples": [
+      {
+        "sentence": "Your order will be processed soon.",
+        "meaning": "Siparişiniz yakında işleme alınacak."
+      },
+      {
+        "sentence": "The application is being processed.",
+        "meaning": "Başvuru işleniyor."
+      }
+    ],
+    "date": "22.01.2026"
   }
 ]

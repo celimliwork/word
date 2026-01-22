@@ -1,8 +1,0 @@
-Stand-up:günlük toplantı
-pair programing=iki geliştiricinin birlikte kod yazması
-Blocking issue=ilerlemeyi durduran kritik sorun 
-code review=kod incelemesi 
-queried=sorgulandı
-Staging=test ortamı
-Test suite=test paketi
-Schema=şema

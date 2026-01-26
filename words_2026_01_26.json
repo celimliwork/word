@@ -1,0 +1,2686 @@
+[
+  {
+    "word": "Bug",
+    "pronunciation": "bag",
+    "type": "İsim",
+    "meaning": "Hata",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "There's a bug in the login page",
+        "meaning": "Giriş sayfasında bir hata var."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Fix",
+    "pronunciation": "fiks",
+    "type": "Fiil",
+    "meaning": "Düzeltmek",
+    "v2": {
+      "form": "fixed",
+      "pronunciation": "fikst"
+    },
+    "v3": {
+      "form": "fixed",
+      "pronunciation": "fikst"
+    },
+    "gerundInfinitive": "fixing",
+    "examples": [
+      {
+        "sentence": "I need to fix this issue",
+        "meaning": "Bu sorunu düzeltmem gerekiyor."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Feature",
+    "pronunciation": "fiçır",
+    "type": "İsim",
+    "meaning": "Özellik",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We're implementing a new feature",
+        "meaning": "Yeni bir özellik uyguluyoruz."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Build",
+    "pronunciation": "bild",
+    "type": "Fiil",
+    "meaning": "İnşa etmek / Derleme",
+    "v2": {
+      "form": "built",
+      "pronunciation": "bilt"
+    },
+    "v3": {
+      "form": "built",
+      "pronunciation": "bilt"
+    },
+    "gerundInfinitive": "building",
+    "examples": [
+      {
+        "sentence": "The build is failing",
+        "meaning": "Derleme başarısız oluyor."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Deploy",
+    "pronunciation": "diploy",
+    "type": "Fiil",
+    "meaning": "Yayınlamak",
+    "v2": {
+      "form": "deployed",
+      "pronunciation": "diployd"
+    },
+    "v3": {
+      "form": "deployed",
+      "pronunciation": "diployd"
+    },
+    "gerundInfinitive": "deploying",
+    "examples": [
+      {
+        "sentence": "We deployed to production",
+        "meaning": "Üretim ortamına yayınladık."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Merge",
+    "pronunciation": "mörc",
+    "type": "Fiil",
+    "meaning": "Birleştirmek",
+    "v2": {
+      "form": "merged",
+      "pronunciation": "mörcd"
+    },
+    "v3": {
+      "form": "merged",
+      "pronunciation": "mörcd"
+    },
+    "gerundInfinitive": "merging",
+    "examples": [
+      {
+        "sentence": "Can you merge this branch?",
+        "meaning": "Bu dalı birleştirebilir misin?"
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Pull Request (PR)",
+    "pronunciation": "pul rıkvest",
+    "type": "İfade",
+    "meaning": "İstek çekmek",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I've opened a PR for review",
+        "meaning": "İnceleme için bir PR açtım."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Commit",
+    "pronunciation": "komit",
+    "type": "Fiil",
+    "meaning": "İşleme almak",
+    "v2": {
+      "form": "committed",
+      "pronunciation": "komitıd"
+    },
+    "v3": {
+      "form": "committed",
+      "pronunciation": "komitıd"
+    },
+    "gerundInfinitive": "committing",
+    "examples": [
+      {
+        "sentence": "Please commit your changes",
+        "meaning": "Lütfen değişikliklerini işleme al."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Repository (Repo)",
+    "pronunciation": "ripazitari",
+    "type": "İfade",
+    "meaning": "Depo",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Clone the repository",
+        "meaning": "Depoyu klonla."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Branch",
+    "pronunciation": "brenç",
+    "type": "İsim",
+    "meaning": "Dal",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Create a new branch",
+        "meaning": "Yeni bir dal oluştur."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Codebase",
+    "pronunciation": "kodbeys",
+    "type": "İsim",
+    "meaning": "Kod tabanı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The codebase is getting complex",
+        "meaning": "Kod tabanı karmaşıklaşıyor."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Stack",
+    "pronunciation": "stek",
+    "type": "İsim",
+    "meaning": "Yığın / Teknoloji yığını",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We're using the MERN stack",
+        "meaning": "MERN teknoloji yığınını kullanıyoruz."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Framework",
+    "pronunciation": "freyvörk",
+    "type": "İsim",
+    "meaning": "Çerçeve",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "React is a popular framework",
+        "meaning": "React popüler bir çerçevedir."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Library",
+    "pronunciation": "laybreri",
+    "type": "İsim",
+    "meaning": "Kütüphane",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I'm using an external library",
+        "meaning": "Harici bir kütüphane kullanıyorum."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Dependencies",
+    "pronunciation": "dipendınsiz",
+    "type": "İsim",
+    "meaning": "Bağımlılıklar",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Update your dependencies",
+        "meaning": "Bağımlılıklarını güncelle."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Middleware",
+    "pronunciation": "midılver",
+    "type": "İsim",
+    "meaning": "Ara yazılım",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Add authentication middleware",
+        "meaning": "Kimlik doğrulama ara yazılımı ekle."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "API",
+    "pronunciation": "ey pi ay",
+    "type": "İsim",
+    "meaning": "Arayüz",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The API endpoint is broken",
+        "meaning": "API uç noktası bozuk."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Database",
+    "pronunciation": "deytıbeys",
+    "type": "İsim",
+    "meaning": "Veritabanı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Query the database",
+        "meaning": "Veritabanını sorgula."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Cache",
+    "pronunciation": "keş",
+    "type": "İsim",
+    "meaning": "Önbellek",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Clear the cache",
+        "meaning": "Önbelleği temizle."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Migration",
+    "pronunciation": "maygreşın",
+    "type": "İsim",
+    "meaning": "Geçiş",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Database migration completed",
+        "meaning": "Veritabanı geçişi tamamlandı."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Push",
+    "pronunciation": "puş",
+    "type": "Fiil",
+    "meaning": "İtmek",
+    "v2": {
+      "form": "pushed",
+      "pronunciation": "puşt"
+    },
+    "v3": {
+      "form": "pushed",
+      "pronunciation": "puşt"
+    },
+    "gerundInfinitive": "pushing",
+    "examples": [
+      {
+        "sentence": "Push your changes to GitHub",
+        "meaning": "Değişikliklerini GitHub'a gönder."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Pull",
+    "pronunciation": "pul",
+    "type": "Fiil",
+    "meaning": "Çekmek",
+    "v2": {
+      "form": "pulled",
+      "pronunciation": "puld"
+    },
+    "v3": {
+      "form": "pulled",
+      "pronunciation": "puld"
+    },
+    "gerundInfinitive": "pulling",
+    "examples": [
+      {
+        "sentence": "Pull the latest changes",
+        "meaning": "En son değişiklikleri çek."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Clone",
+    "pronunciation": "klon",
+    "type": "Fiil",
+    "meaning": "Klonlamak",
+    "v2": {
+      "form": "cloned",
+      "pronunciation": "klond"
+    },
+    "v3": {
+      "form": "cloned",
+      "pronunciation": "klond"
+    },
+    "gerundInfinitive": "cloning",
+    "examples": [
+      {
+        "sentence": "Clone the repository",
+        "meaning": "Depoyu klonla."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Fork",
+    "pronunciation": "fork",
+    "type": "Fiil",
+    "meaning": "Çatallamak",
+    "v2": {
+      "form": "forked",
+      "pronunciation": "forkt"
+    },
+    "v3": {
+      "form": "forked",
+      "pronunciation": "forkt"
+    },
+    "gerundInfinitive": "forking",
+    "examples": [
+      {
+        "sentence": "Fork this project",
+        "meaning": "Bu projeyi çatalla."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Rebase",
+    "pronunciation": "ribeys",
+    "type": "Fiil",
+    "meaning": "Yeniden temellendirmek",
+    "v2": {
+      "form": "rebased",
+      "pronunciation": "ribeyst"
+    },
+    "v3": {
+      "form": "rebased",
+      "pronunciation": "ribeyst"
+    },
+    "gerundInfinitive": "rebasing",
+    "examples": [
+      {
+        "sentence": "Rebase on main branch",
+        "meaning": "Ana dal üzerinde yeniden temellendir."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Stash",
+    "pronunciation": "steş",
+    "type": "Fiil",
+    "meaning": "Saklamak",
+    "v2": {
+      "form": "stashed",
+      "pronunciation": "steşt"
+    },
+    "v3": {
+      "form": "stashed",
+      "pronunciation": "steşt"
+    },
+    "gerundInfinitive": "stashing",
+    "examples": [
+      {
+        "sentence": "Stash your uncommitted changes",
+        "meaning": "İşlenmemiş değişikliklerini sakla."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Revert",
+    "pronunciation": "rivırt",
+    "type": "Fiil",
+    "meaning": "Geri almak",
+    "v2": {
+      "form": "reverted",
+      "pronunciation": "rivırtıd"
+    },
+    "v3": {
+      "form": "reverted",
+      "pronunciation": "rivırtıd"
+    },
+    "gerundInfinitive": "reverting",
+    "examples": [
+      {
+        "sentence": "Revert the last commit",
+        "meaning": "Son commit'i geri al."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Cherry-pick",
+    "pronunciation": "çeri pik",
+    "type": "Fiil",
+    "meaning": "El ile seçip almak",
+    "v2": {
+      "form": "cherry-picked",
+      "pronunciation": "çeri pikt"
+    },
+    "v3": {
+      "form": "cherry-picked",
+      "pronunciation": "çeri pikt"
+    },
+    "gerundInfinitive": "cherry-picking",
+    "examples": [
+      {
+        "sentence": "Cherry-pick that commit",
+        "meaning": "O commit'i seçip al."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Conflict",
+    "pronunciation": "konflikt",
+    "type": "İsim",
+    "meaning": "Çatışma",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "There's a merge conflict",
+        "meaning": "Bir birleştirme çatışması var."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Stage",
+    "pronunciation": "steyc",
+    "type": "Fiil",
+    "meaning": "Sahneye koymak",
+    "v2": {
+      "form": "staged",
+      "pronunciation": "steycd"
+    },
+    "v3": {
+      "form": "staged",
+      "pronunciation": "steycd"
+    },
+    "gerundInfinitive": "staging",
+    "examples": [
+      {
+        "sentence": "Stage your files",
+        "meaning": "Dosyalarını sahneye koy."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Unstage",
+    "pronunciation": "ansteyc",
+    "type": "Fiil",
+    "meaning": "Sahneye koymamak",
+    "v2": {
+      "form": "unstaged",
+      "pronunciation": "ansteycd"
+    },
+    "v3": {
+      "form": "unstaged",
+      "pronunciation": "ansteycd"
+    },
+    "gerundInfinitive": "unstaging",
+    "examples": [
+      {
+        "sentence": "Unstage this file",
+        "meaning": "Bu dosyayı sahneden kaldır."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Set up",
+    "pronunciation": "set ap",
+    "type": "Phrasal Verb",
+    "meaning": "Ayarlamak",
+    "v2": {
+      "form": "set up",
+      "pronunciation": "set ap"
+    },
+    "v3": {
+      "form": "set up",
+      "pronunciation": "set ap"
+    },
+    "gerundInfinitive": "setting up",
+    "examples": [
+      {
+        "sentence": "Set up the development environment",
+        "meaning": "Geliştirme ortamını ayarla."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Get up and running",
+    "pronunciation": "get ap end raning",
+    "type": "İfade",
+    "meaning": "Çalışır duruma getirmek",
+    "v2": {
+      "form": "got up and running",
+      "pronunciation": "got ap end raning"
+    },
+    "v3": {
+      "form": "got up and running",
+      "pronunciation": "got ap end raning"
+    },
+    "gerundInfinitive": "getting up and running",
+    "examples": [
+      {
+        "sentence": "Let's get the project up and running",
+        "meaning": "Projeyi çalışır duruma getirelim."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Spin up",
+    "pronunciation": "spin ap",
+    "type": "Phrasal Verb",
+    "meaning": "Başlatmak (sunucu/container)",
+    "v2": {
+      "form": "spun up",
+      "pronunciation": "span ap"
+    },
+    "v3": {
+      "form": "spun up",
+      "pronunciation": "span ap"
+    },
+    "gerundInfinitive": "spinning up",
+    "examples": [
+      {
+        "sentence": "Spin up a new database instance",
+        "meaning": "Yeni bir veritabanı örneği başlat."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Boot up",
+    "pronunciation": "but ap",
+    "type": "Phrasal Verb",
+    "meaning": "Açılmak",
+    "v2": {
+      "form": "booted up",
+      "pronunciation": "butıd ap"
+    },
+    "v3": {
+      "form": "booted up",
+      "pronunciation": "butıd ap"
+    },
+    "gerundInfinitive": "booting up",
+    "examples": [
+      {
+        "sentence": "Boot up the application",
+        "meaning": "Uygulamayı başlat."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Tear down",
+    "pronunciation": "ter daun",
+    "type": "Phrasal Verb",
+    "meaning": "Sökmek / Kaldırmak",
+    "v2": {
+      "form": "tore down",
+      "pronunciation": "tor daun"
+    },
+    "v3": {
+      "form": "torn down",
+      "pronunciation": "torn daun"
+    },
+    "gerundInfinitive": "tearing down",
+    "examples": [
+      {
+        "sentence": "Tear down the old infrastructure",
+        "meaning": "Eski altyapıyı sök."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Take down",
+    "pronunciation": "teyk daun",
+    "type": "Phrasal Verb",
+    "meaning": "İndirmek (özellikle sunucu)",
+    "v2": {
+      "form": "took down",
+      "pronunciation": "tuk daun"
+    },
+    "v3": {
+      "form": "taken down",
+      "pronunciation": "teykın daun"
+    },
+    "gerundInfinitive": "taking down",
+    "examples": [
+      {
+        "sentence": "We're taking down the server for maintenance",
+        "meaning": "Bakım için sunucuyu indiriyoruz."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Roll back",
+    "pronunciation": "rol bek",
+    "type": "Phrasal Verb",
+    "meaning": "Geri almak",
+    "v2": {
+      "form": "rolled back",
+      "pronunciation": "rold bek"
+    },
+    "v3": {
+      "form": "rolled back",
+      "pronunciation": "rold bek"
+    },
+    "gerundInfinitive": "rolling back",
+    "examples": [
+      {
+        "sentence": "Roll back the deployment",
+        "meaning": "Dağıtımı geri al."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Work out",
+    "pronunciation": "vörk aut",
+    "type": "Phrasal Verb",
+    "meaning": "Çözmek",
+    "v2": {
+      "form": "worked out",
+      "pronunciation": "vörkt aut"
+    },
+    "v3": {
+      "form": "worked out",
+      "pronunciation": "vörkt aut"
+    },
+    "gerundInfinitive": "working out",
+    "examples": [
+      {
+        "sentence": "Let me work out this issue",
+        "meaning": "Bu sorunu çözmeme izin ver."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Figure out",
+    "pronunciation": "figır aut",
+    "type": "Phrasal Verb",
+    "meaning": "Anlamak / Çözmek",
+    "v2": {
+      "form": "figured out",
+      "pronunciation": "figırd aut"
+    },
+    "v3": {
+      "form": "figured out",
+      "pronunciation": "figırd aut"
+    },
+    "gerundInfinitive": "figuring out",
+    "examples": [
+      {
+        "sentence": "I need to figure out why it's not working",
+        "meaning": "Neden çalışmadığını anlamam gerekiyor."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Trace through",
+    "pronunciation": "treys tru",
+    "type": "Phrasal Verb",
+    "meaning": "İzlemek",
+    "v2": {
+      "form": "traced through",
+      "pronunciation": "treyst tru"
+    },
+    "v3": {
+      "form": "traced through",
+      "pronunciation": "treyst tru"
+    },
+    "gerundInfinitive": "tracing through",
+    "examples": [
+      {
+        "sentence": "Trace through the code",
+        "meaning": "Kodu izle."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Dig into",
+    "pronunciation": "dig intu",
+    "type": "Phrasal Verb",
+    "meaning": "Derinlemesine incelemek",
+    "v2": {
+      "form": "dug into",
+      "pronunciation": "dag intu"
+    },
+    "v3": {
+      "form": "dug into",
+      "pronunciation": "dag intu"
+    },
+    "gerundInfinitive": "digging into",
+    "examples": [
+      {
+        "sentence": "Let me dig into the database logs",
+        "meaning": "Veritabanı loglarını derinlemesine incelememe izin ver."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Get stuck",
+    "pronunciation": "get stak",
+    "type": "Phrasal Verb",
+    "meaning": "Takılmak",
+    "v2": {
+      "form": "got stuck",
+      "pronunciation": "got stak"
+    },
+    "v3": {
+      "form": "got stuck",
+      "pronunciation": "got stak"
+    },
+    "gerundInfinitive": "getting stuck",
+    "examples": [
+      {
+        "sentence": "I got stuck on the authentication logic",
+        "meaning": "Kimlik doğrulama mantığında takıldım."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Roll out",
+    "pronunciation": "rol aut",
+    "type": "Phrasal Verb",
+    "meaning": "Çıkarmak / Piyasaya sürmek",
+    "v2": {
+      "form": "rolled out",
+      "pronunciation": "rold aut"
+    },
+    "v3": {
+      "form": "rolled out",
+      "pronunciation": "rold aut"
+    },
+    "gerundInfinitive": "rolling out",
+    "examples": [
+      {
+        "sentence": "Roll out the new feature to all users",
+        "meaning": "Yeni özelliği tüm kullanıcılara çıkar."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Go live",
+    "pronunciation": "go layv",
+    "type": "Phrasal Verb",
+    "meaning": "Canlı yayına geçmek",
+    "v2": {
+      "form": "went live",
+      "pronunciation": "vent layv"
+    },
+    "v3": {
+      "form": "gone live",
+      "pronunciation": "gon layv"
+    },
+    "gerundInfinitive": "going live",
+    "examples": [
+      {
+        "sentence": "When are we going live?",
+        "meaning": "Ne zaman canlı yayına geçiyoruz?"
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Push out",
+    "pronunciation": "puş aut",
+    "type": "Phrasal Verb",
+    "meaning": "İtmek / Yayınlamak",
+    "v2": {
+      "form": "pushed out",
+      "pronunciation": "puşt aut"
+    },
+    "v3": {
+      "form": "pushed out",
+      "pronunciation": "puşt aut"
+    },
+    "gerundInfinitive": "pushing out",
+    "examples": [
+      {
+        "sentence": "We're pushing out a hotfix",
+        "meaning": "Bir acil düzeltme yayınlıyoruz."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Ship",
+    "pronunciation": "şip",
+    "type": "Fiil",
+    "meaning": "Sevk etmek",
+    "v2": {
+      "form": "shipped",
+      "pronunciation": "şipt"
+    },
+    "v3": {
+      "form": "shipped",
+      "pronunciation": "şipt"
+    },
+    "gerundInfinitive": "shipping",
+    "examples": [
+      {
+        "sentence": "Ship this feature to production",
+        "meaning": "Bu özelliği üretime sevk et."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Test out",
+    "pronunciation": "test aut",
+    "type": "Phrasal Verb",
+    "meaning": "Test etmek",
+    "v2": {
+      "form": "tested out",
+      "pronunciation": "testıd aut"
+    },
+    "v3": {
+      "form": "tested out",
+      "pronunciation": "testıd aut"
+    },
+    "gerundInfinitive": "testing out",
+    "examples": [
+      {
+        "sentence": "Test out the new feature",
+        "meaning": "Yeni özelliği test et."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Check out",
+    "pronunciation": "çek aut",
+    "type": "Phrasal Verb",
+    "meaning": "Bakmak / İncelemek",
+    "v2": {
+      "form": "checked out",
+      "pronunciation": "çekt aut"
+    },
+    "v3": {
+      "form": "checked out",
+      "pronunciation": "çekt aut"
+    },
+    "gerundInfinitive": "checking out",
+    "examples": [
+      {
+        "sentence": "Check out my PR",
+        "meaning": "PR'ıma bak."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Look into",
+    "pronunciation": "luk intu",
+    "type": "Phrasal Verb",
+    "meaning": "İncelemek",
+    "v2": {
+      "form": "looked into",
+      "pronunciation": "lukt intu"
+    },
+    "v3": {
+      "form": "looked into",
+      "pronunciation": "lukt intu"
+    },
+    "gerundInfinitive": "looking into",
+    "examples": [
+      {
+        "sentence": "Can you look into this error?",
+        "meaning": "Bu hatayı inceleyebilir misin?"
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Go through",
+    "pronunciation": "go tru",
+    "type": "Phrasal Verb",
+    "meaning": "Gözden geçirmek",
+    "v2": {
+      "form": "went through",
+      "pronunciation": "vent tru"
+    },
+    "v3": {
+      "form": "gone through",
+      "pronunciation": "gon tru"
+    },
+    "gerundInfinitive": "going through",
+    "examples": [
+      {
+        "sentence": "Go through the code review",
+        "meaning": "Kod incelemesini gözden geçir."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Run through",
+    "pronunciation": "ran tru",
+    "type": "Phrasal Verb",
+    "meaning": "Çalıştırıp geçmek",
+    "v2": {
+      "form": "ran through",
+      "pronunciation": "ren tru"
+    },
+    "v3": {
+      "form": "run through",
+      "pronunciation": "ran tru"
+    },
+    "gerundInfinitive": "running through",
+    "examples": [
+      {
+        "sentence": "Let me run through the tests",
+        "meaning": "Testleri çalıştırıp geçmeme izin ver."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Speed up",
+    "pronunciation": "spid ap",
+    "type": "Phrasal Verb",
+    "meaning": "Hızlandırmak",
+    "v2": {
+      "form": "sped up",
+      "pronunciation": "sped ap"
+    },
+    "v3": {
+      "form": "sped up",
+      "pronunciation": "sped ap"
+    },
+    "gerundInfinitive": "speeding up",
+    "examples": [
+      {
+        "sentence": "We need to speed up the loading time",
+        "meaning": "Yükleme süresini hızlandırmamız gerekiyor."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Slow down",
+    "pronunciation": "slo daun",
+    "type": "Phrasal Verb",
+    "meaning": "Yavaşlatmak",
+    "v2": {
+      "form": "slowed down",
+      "pronunciation": "slod daun"
+    },
+    "v3": {
+      "form": "slowed down",
+      "pronunciation": "slod daun"
+    },
+    "gerundInfinitive": "slowing down",
+    "examples": [
+      {
+        "sentence": "The app is slowing down under load",
+        "meaning": "Uygulama yük altında yavaşlıyor."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Optimize",
+    "pronunciation": "optimayz",
+    "type": "Fiil",
+    "meaning": "Optimize etmek",
+    "v2": {
+      "form": "optimized",
+      "pronunciation": "optimayzd"
+    },
+    "v3": {
+      "form": "optimized",
+      "pronunciation": "optimayzd"
+    },
+    "gerundInfinitive": "optimizing",
+    "examples": [
+      {
+        "sentence": "Optimize the database queries",
+        "meaning": "Veritabanı sorgularını optimize et."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Refactor",
+    "pronunciation": "rifektır",
+    "type": "Fiil",
+    "meaning": "Yeniden düzenlemek",
+    "v2": {
+      "form": "refactored",
+      "pronunciation": "rifektırd"
+    },
+    "v3": {
+      "form": "refactored",
+      "pronunciation": "rifektırd"
+    },
+    "gerundInfinitive": "refactoring",
+    "examples": [
+      {
+        "sentence": "Let's refactor this component",
+        "meaning": "Bu bileşeni yeniden düzenleyelim."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Hook up",
+    "pronunciation": "huk ap",
+    "type": "Phrasal Verb",
+    "meaning": "Bağlamak",
+    "v2": {
+      "form": "hooked up",
+      "pronunciation": "hukt ap"
+    },
+    "v3": {
+      "form": "hooked up",
+      "pronunciation": "hukt ap"
+    },
+    "gerundInfinitive": "hooking up",
+    "examples": [
+      {
+        "sentence": "Hook up the payment gateway",
+        "meaning": "Ödeme ağ geçidini bağla."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Sync up",
+    "pronunciation": "sink ap",
+    "type": "Phrasal Verb",
+    "meaning": "Senkronize etmek",
+    "v2": {
+      "form": "synced up",
+      "pronunciation": "sinkt ap"
+    },
+    "v3": {
+      "form": "synced up",
+      "pronunciation": "sinkt ap"
+    },
+    "gerundInfinitive": "syncing up",
+    "examples": [
+      {
+        "sentence": "Let's sync up on this feature",
+        "meaning": "Bu özellik hakkında senkronize olalım."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Link up",
+    "pronunciation": "link ap",
+    "type": "Phrasal Verb",
+    "meaning": "Bağlantı kurmak",
+    "v2": {
+      "form": "linked up",
+      "pronunciation": "linkt ap"
+    },
+    "v3": {
+      "form": "linked up",
+      "pronunciation": "linkt ap"
+    },
+    "gerundInfinitive": "linking up",
+    "examples": [
+      {
+        "sentence": "Link up the frontend with the API",
+        "meaning": "Frontend'i API ile bağla."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Plug in",
+    "pronunciation": "plag in",
+    "type": "Phrasal Verb",
+    "meaning": "Eklemek / Taktmak",
+    "v2": {
+      "form": "plugged in",
+      "pronunciation": "plagd in"
+    },
+    "v3": {
+      "form": "plugged in",
+      "pronunciation": "plagd in"
+    },
+    "gerundInfinitive": "plugging in",
+    "examples": [
+      {
+        "sentence": "Plug in the new module",
+        "meaning": "Yeni modülü tak."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Break",
+    "pronunciation": "breyk",
+    "type": "Fiil",
+    "meaning": "Kırmak / Bozmak",
+    "v2": {
+      "form": "broke",
+      "pronunciation": "brok"
+    },
+    "v3": {
+      "form": "broken",
+      "pronunciation": "brokın"
+    },
+    "gerundInfinitive": "breaking",
+    "examples": [
+      {
+        "sentence": "Don't break the build!",
+        "meaning": "Derlemeyi bozma!"
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Handle",
+    "pronunciation": "hendıl",
+    "type": "Fiil",
+    "meaning": "Yönetmek",
+    "v2": {
+      "form": "handled",
+      "pronunciation": "hendıld"
+    },
+    "v3": {
+      "form": "handled",
+      "pronunciation": "hendıld"
+    },
+    "gerundInfinitive": "handling",
+    "examples": [
+      {
+        "sentence": "Handle the error gracefully",
+        "meaning": "Hatayı zarif bir şekilde yönet."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Deal with",
+    "pronunciation": "dil vit",
+    "type": "Phrasal Verb",
+    "meaning": "Başa çıkmak",
+    "v2": {
+      "form": "dealt with",
+      "pronunciation": "delt vit"
+    },
+    "v3": {
+      "form": "dealt with",
+      "pronunciation": "delt vit"
+    },
+    "gerundInfinitive": "dealing with",
+    "examples": [
+      {
+        "sentence": "Deal with the edge cases",
+        "meaning": "Sınır durumlarıyla başa çık."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Sort out",
+    "pronunciation": "sort aut",
+    "type": "Phrasal Verb",
+    "meaning": "Çözmek",
+    "v2": {
+      "form": "sorted out",
+      "pronunciation": "sortıd aut"
+    },
+    "v3": {
+      "form": "sorted out",
+      "pronunciation": "sortıd aut"
+    },
+    "gerundInfinitive": "sorting out",
+    "examples": [
+      {
+        "sentence": "Let's sort out this issue",
+        "meaning": "Bu sorunu çözelim."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Work through",
+    "pronunciation": "vörk tru",
+    "type": "Phrasal Verb",
+    "meaning": "İşlemek / Çözmek",
+    "v2": {
+      "form": "worked through",
+      "pronunciation": "vörkt tru"
+    },
+    "v3": {
+      "form": "worked through",
+      "pronunciation": "vörkt tru"
+    },
+    "gerundInfinitive": "working through",
+    "examples": [
+      {
+        "sentence": "Work through the logic step by step",
+        "meaning": "Mantığı adım adım işle."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Clean up",
+    "pronunciation": "klin ap",
+    "type": "Phrasal Verb",
+    "meaning": "Temizlemek",
+    "v2": {
+      "form": "cleaned up",
+      "pronunciation": "klind ap"
+    },
+    "v3": {
+      "form": "cleaned up",
+      "pronunciation": "klind ap"
+    },
+    "gerundInfinitive": "cleaning up",
+    "examples": [
+      {
+        "sentence": "Clean up the code",
+        "meaning": "Kodu temizle."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Tidy up",
+    "pronunciation": "taydi ap",
+    "type": "Phrasal Verb",
+    "meaning": "Düzeltmek",
+    "v2": {
+      "form": "tidied up",
+      "pronunciation": "taydid ap"
+    },
+    "v3": {
+      "form": "tidied up",
+      "pronunciation": "taydid ap"
+    },
+    "gerundInfinitive": "tidying up",
+    "examples": [
+      {
+        "sentence": "Tidy up the imports",
+        "meaning": "İmportları düzelt."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Rewrite",
+    "pronunciation": "rirayt",
+    "type": "Fiil",
+    "meaning": "Yeniden yazmak",
+    "v2": {
+      "form": "rewrote",
+      "pronunciation": "rirot"
+    },
+    "v3": {
+      "form": "rewritten",
+      "pronunciation": "riritın"
+    },
+    "gerundInfinitive": "rewriting",
+    "examples": [
+      {
+        "sentence": "We should rewrite this function",
+        "meaning": "Bu fonksiyonu yeniden yazmalıyız."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Polish",
+    "pronunciation": "poliş",
+    "type": "Fiil",
+    "meaning": "Parlatmak / Ton vermek",
+    "v2": {
+      "form": "polished",
+      "pronunciation": "polişt"
+    },
+    "v3": {
+      "form": "polished",
+      "pronunciation": "polişt"
+    },
+    "gerundInfinitive": "polishing",
+    "examples": [
+      {
+        "sentence": "Polish the UI",
+        "meaning": "Kullanıcı arayüzünü parlat."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Update",
+    "pronunciation": "apdeyt",
+    "type": "Fiil",
+    "meaning": "Güncellemek",
+    "v2": {
+      "form": "updated",
+      "pronunciation": "apdeytıd"
+    },
+    "v3": {
+      "form": "updated",
+      "pronunciation": "apdeytıd"
+    },
+    "gerundInfinitive": "updating",
+    "examples": [
+      {
+        "sentence": "Update the packages",
+        "meaning": "Paketleri güncelle."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Upgrade",
+    "pronunciation": "apgreyd",
+    "type": "Fiil",
+    "meaning": "Yükseltmek",
+    "v2": {
+      "form": "upgraded",
+      "pronunciation": "apgreydıd"
+    },
+    "v3": {
+      "form": "upgraded",
+      "pronunciation": "apgreydıd"
+    },
+    "gerundInfinitive": "upgrading",
+    "examples": [
+      {
+        "sentence": "Upgrade to the latest version",
+        "meaning": "En son sürüme yükselt."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Keep up with",
+    "pronunciation": "kip ap vit",
+    "type": "Phrasal Verb",
+    "meaning": "Takip etmek",
+    "v2": {
+      "form": "kept up with",
+      "pronunciation": "kept ap vit"
+    },
+    "v3": {
+      "form": "kept up with",
+      "pronunciation": "kept ap vit"
+    },
+    "gerundInfinitive": "keeping up with",
+    "examples": [
+      {
+        "sentence": "Keep up with the dependencies",
+        "meaning": "Bağımlılıkları takip et."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Bump",
+    "pronunciation": "bamp",
+    "type": "Fiil",
+    "meaning": "Artırmak (versiyon)",
+    "v2": {
+      "form": "bumped",
+      "pronunciation": "bampt"
+    },
+    "v3": {
+      "form": "bumped",
+      "pronunciation": "bampt"
+    },
+    "gerundInfinitive": "bumping",
+    "examples": [
+      {
+        "sentence": "Bump the version number",
+        "meaning": "Versiyon numarasını artır."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Authentication",
+    "pronunciation": "otentikeyşın",
+    "type": "İsim",
+    "meaning": "Kimlik doğrulama",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Implement authentication",
+        "meaning": "Kimlik doğrulama uygula."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Authorization",
+    "pronunciation": "otorizeyşın",
+    "type": "İsim",
+    "meaning": "Yetkilendirme",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Check user authorization",
+        "meaning": "Kullanıcı yetkilendirmesini kontrol et."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Validation",
+    "pronunciation": "validasyon",
+    "type": "İsim",
+    "meaning": "Doğrulama",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Validate the input",
+        "meaning": "Girdiyi doğrula."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Serialization",
+    "pronunciation": "sirılayzeyşın",
+    "type": "İsim",
+    "meaning": "Seri hale getirme",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Serialize the data",
+        "meaning": "Veriyi seri hale getir."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Deserialization",
+    "pronunciation": "disirılayzeyşın",
+    "type": "İsim",
+    "meaning": "Seri hale çıkarma",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Deserialize the JSON",
+        "meaning": "JSON'ı seri hale çıkar."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Encryption",
+    "pronunciation": "inkripşın",
+    "type": "İsim",
+    "meaning": "Şifreleme",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Encrypt sensitive data",
+        "meaning": "Hassas verileri şifrele."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Decryption",
+    "pronunciation": "dikripşın",
+    "type": "İsim",
+    "meaning": "Şifre çözme",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Decrypt the password",
+        "meaning": "Şifreyi çöz."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Hashing",
+    "pronunciation": "heşing",
+    "type": "İsim",
+    "meaning": "Özetleme",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Hash the password",
+        "meaning": "Şifreyi özetle."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Latency",
+    "pronunciation": "leytınsi",
+    "type": "İsim",
+    "meaning": "Gecikme",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "High latency is an issue",
+        "meaning": "Yüksek gecikme bir sorundur."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Throughput",
+    "pronunciation": "truput",
+    "type": "İsim",
+    "meaning": "Verim / İşlem gücü",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Improve throughput",
+        "meaning": "Verimi artır."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Scalability",
+    "pronunciation": "skeylabiliti",
+    "type": "İsim",
+    "meaning": "Ölçeklenebilirlik",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Consider scalability",
+        "meaning": "Ölçeklenebilirliği düşün."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Load balancing",
+    "pronunciation": "lod balansing",
+    "type": "İsim",
+    "meaning": "Yük dengeleme",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Implement load balancing",
+        "meaning": "Yük dengelemeyi uygula."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Rate limiting",
+    "pronunciation": "reyt limiting",
+    "type": "İsim",
+    "meaning": "Oran sınırlandırması",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Add rate limiting to the API",
+        "meaning": "API'ye oran sınırlandırması ekle."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Caching strategy",
+    "pronunciation": "keşing stretici",
+    "type": "İfade",
+    "meaning": "Önbellek stratejisi",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Discuss caching strategy",
+        "meaning": "Önbellek stratejisini tartış."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Unit test",
+    "pronunciation": "yunıt test",
+    "type": "İsim",
+    "meaning": "Birim test",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Write unit tests",
+        "meaning": "Birim testleri yaz."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Integration test",
+    "pronunciation": "integreşın test",
+    "type": "İsim",
+    "meaning": "Entegrasyon testi",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Run integration tests",
+        "meaning": "Entegrasyon testlerini çalıştır."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "E2E test",
+    "pronunciation": "i tu i test",
+    "type": "İsim",
+    "meaning": "Uçtan uca test",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "E2E tests are failing",
+        "meaning": "Uçtan uca testler başarısız oluyor."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Mock",
+    "pronunciation": "mok",
+    "type": "Fiil",
+    "meaning": "Sahte / Taklit",
+    "v2": {
+      "form": "mocked",
+      "pronunciation": "mokt"
+    },
+    "v3": {
+      "form": "mocked",
+      "pronunciation": "mokt"
+    },
+    "gerundInfinitive": "mocking",
+    "examples": [
+      {
+        "sentence": "Mock the API calls",
+        "meaning": "API çağrılarını taklit et."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Stub",
+    "pronunciation": "stab",
+    "type": "Fiil",
+    "meaning": "Yer tutucu",
+    "v2": {
+      "form": "stubbed",
+      "pronunciation": "stabt"
+    },
+    "v3": {
+      "form": "stubbed",
+      "pronunciation": "stabt"
+    },
+    "gerundInfinitive": "stubbing",
+    "examples": [
+      {
+        "sentence": "Stub the database",
+        "meaning": "Veritabanını yer tutucu ile değiştir."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Breakpoint",
+    "pronunciation": "breykpoynt",
+    "type": "İsim",
+    "meaning": "Kesme noktası",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Set a breakpoint",
+        "meaning": "Bir kesme noktası ayarla."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Debug mode",
+    "pronunciation": "dibag mod",
+    "type": "İsim",
+    "meaning": "Hata ayıklama modu",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Run in debug mode",
+        "meaning": "Hata ayıklama modunda çalıştır."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Console log",
+    "pronunciation": "konsol log",
+    "type": "İsim",
+    "meaning": "Konsol çıktısı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Add console logs",
+        "meaning": "Konsol logları ekle."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Stack trace",
+    "pronunciation": "stek treys",
+    "type": "İsim",
+    "meaning": "Yığın izi",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Check the stack trace",
+        "meaning": "Yığın izini kontrol et."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Error handling",
+    "pronunciation": "erır hendling",
+    "type": "İsim",
+    "meaning": "Hata işleme",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Improve error handling",
+        "meaning": "Hata işlemeyi iyileştir."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Exception",
+    "pronunciation": "iksepşın",
+    "type": "İsim",
+    "meaning": "İstisna",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Catch the exception",
+        "meaning": "İstisnayı yakala."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Assertion",
+    "pronunciation": "ısırşın",
+    "type": "İsim",
+    "meaning": "İddia / Onay",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Use assertions in tests",
+        "meaning": "Testlerde onaylamalar kullan."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Bottleneck",
+    "pronunciation": "botılnik",
+    "type": "İsim",
+    "meaning": "Dar boğaz",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Identify the bottleneck",
+        "meaning": "Dar boğazı belirle."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Optimization",
+    "pronunciation": "optimizeyşın",
+    "type": "İsim",
+    "meaning": "Optimizasyon",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Performance optimization",
+        "meaning": "Performans optimizasyonu"
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Profiling",
+    "pronunciation": "profiling",
+    "type": "İsim",
+    "meaning": "Profilleme",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Run profiling tools",
+        "meaning": "Profilleme araçlarını çalıştır."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Minify",
+    "pronunciation": "minifay",
+    "type": "Fiil",
+    "meaning": "Küçültmek",
+    "v2": {
+      "form": "minified",
+      "pronunciation": "minifayd"
+    },
+    "v3": {
+      "form": "minified",
+      "pronunciation": "minifayd"
+    },
+    "gerundInfinitive": "minifying",
+    "examples": [
+      {
+        "sentence": "Minify the CSS and JS",
+        "meaning": "CSS ve JS dosyalarını küçült."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Compress",
+    "pronunciation": "kompres",
+    "type": "Fiil",
+    "meaning": "Sıkıştırmak",
+    "v2": {
+      "form": "compressed",
+      "pronunciation": "komprest"
+    },
+    "v3": {
+      "form": "compressed",
+      "pronunciation": "komprest"
+    },
+    "gerundInfinitive": "compressing",
+    "examples": [
+      {
+        "sentence": "Compress the images",
+        "meaning": "Görselleri sıkıştır."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Lazy loading",
+    "pronunciation": "leyzi loding",
+    "type": "İsim",
+    "meaning": "Tembel yükleme",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Implement lazy loading",
+        "meaning": "Tembel yüklemeyi uygula."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Pagination",
+    "pronunciation": "pecineyşın",
+    "type": "İsim",
+    "meaning": "Sayfalandırma",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Add pagination",
+        "meaning": "Sayfalandırma ekle."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Debounce",
+    "pronunciation": "dibauns",
+    "type": "Fiil",
+    "meaning": "Tıklamayı geciktirmek",
+    "v2": {
+      "form": "debounced",
+      "pronunciation": "dibaunst"
+    },
+    "v3": {
+      "form": "debounced",
+      "pronunciation": "dibaunst"
+    },
+    "gerundInfinitive": "debouncing",
+    "examples": [
+      {
+        "sentence": "Debounce the input",
+        "meaning": "Girdiyi geciktir."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Throttle",
+    "pronunciation": "trotıl",
+    "type": "Fiil",
+    "meaning": "Kısıtlamak",
+    "v2": {
+      "form": "throttled",
+      "pronunciation": "trotıld"
+    },
+    "v3": {
+      "form": "throttled",
+      "pronunciation": "trotıld"
+    },
+    "gerundInfinitive": "throttling",
+    "examples": [
+      {
+        "sentence": "Throttle the scroll event",
+        "meaning": "Kaydırma olayını kısıtla."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Memory leak",
+    "pronunciation": "memori lik",
+    "type": "İfade",
+    "meaning": "Bellek sızıntısı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Fix the memory leak",
+        "meaning": "Bellek sızıntısını düzelt."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Resource",
+    "pronunciation": "risors",
+    "type": "İsim",
+    "meaning": "Kaynak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Monitor resource usage",
+        "meaning": "Kaynak kullanımını izle."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Feedback",
+    "pronunciation": "fidbek",
+    "type": "İsim",
+    "meaning": "Geri bildirim",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Give me feedback",
+        "meaning": "Bana geri bildirim ver."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Review",
+    "pronunciation": "rivyu",
+    "type": "Fiil",
+    "meaning": "İnceleme",
+    "v2": {
+      "form": "reviewed",
+      "pronunciation": "rivyud"
+    },
+    "v3": {
+      "form": "reviewed",
+      "pronunciation": "rivyud"
+    },
+    "gerundInfinitive": "reviewing",
+    "examples": [
+      {
+        "sentence": "Code review needed",
+        "meaning": "Kod incelemesi gerekli."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Discuss",
+    "pronunciation": "diskas",
+    "type": "Fiil",
+    "meaning": "Tartışmak",
+    "v2": {
+      "form": "discussed",
+      "pronunciation": "diskast"
+    },
+    "v3": {
+      "form": "discussed",
+      "pronunciation": "diskast"
+    },
+    "gerundInfinitive": "discussing",
+    "examples": [
+      {
+        "sentence": "Let's discuss this",
+        "meaning": "Bunu tartışalım."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Clarify",
+    "pronunciation": "klırifay",
+    "type": "Fiil",
+    "meaning": "Açıklığa kavuşturmak",
+    "v2": {
+      "form": "clarified",
+      "pronunciation": "klırifayd"
+    },
+    "v3": {
+      "form": "clarified",
+      "pronunciation": "klırifayd"
+    },
+    "gerundInfinitive": "clarifying",
+    "examples": [
+      {
+        "sentence": "Can you clarify this?",
+        "meaning": "Bunu açıklığa kavuşturabilir misin?"
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Align",
+    "pronunciation": "ılayn",
+    "type": "Fiil",
+    "meaning": "Hizalamak",
+    "v2": {
+      "form": "aligned",
+      "pronunciation": "ılaynd"
+    },
+    "v3": {
+      "form": "aligned",
+      "pronunciation": "ılaynd"
+    },
+    "gerundInfinitive": "aligning",
+    "examples": [
+      {
+        "sentence": "We need to align on this",
+        "meaning": "Bu konuda hizalanmamız gerekiyor."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Handoff",
+    "pronunciation": "hendof",
+    "type": "Fiil",
+    "meaning": "Devir almak/vermek",
+    "v2": {
+      "form": "handed off",
+      "pronunciation": "hendıd of"
+    },
+    "v3": {
+      "form": "handed off",
+      "pronunciation": "hendıd of"
+    },
+    "gerundInfinitive": "handing off",
+    "examples": [
+      {
+        "sentence": "Handoff to the QA team",
+        "meaning": "QA ekibine devret."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Escalate",
+    "pronunciation": "eskıleyt",
+    "type": "Fiil",
+    "meaning": "Yükseltmek",
+    "v2": {
+      "form": "escalated",
+      "pronunciation": "eskıleytıd"
+    },
+    "v3": {
+      "form": "escalated",
+      "pronunciation": "eskıleytıd"
+    },
+    "gerundInfinitive": "escalating",
+    "examples": [
+      {
+        "sentence": "Escalate this issue",
+        "meaning": "Bu sorunu yükselt."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Documentation",
+    "pronunciation": "dokumenteyşın",
+    "type": "İsim",
+    "meaning": "Belgeleme",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Update the documentation",
+        "meaning": "Belgeleri güncelle."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Changelog",
+    "pronunciation": "çeync log",
+    "type": "İsim",
+    "meaning": "Değişiklik kaydı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Update the changelog",
+        "meaning": "Değişiklik kaydını güncelle."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "Roadmap",
+    "pronunciation": "rodmep",
+    "type": "İsim",
+    "meaning": "Yol haritası",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Check the project roadmap",
+        "meaning": "Proje yol haritasını kontrol et."
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "troubleshooting",
+    "pronunciation": "trabılşuting",
+    "type": "İsim",
+    "meaning": "Sorun giderme",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Troubleshooting guide",
+        "meaning": "Sorun giderme rehberi"
+      }
+    ],
+    "date": "26.01.2026"
+  },
+  {
+    "word": "sluggish",
+    "pronunciation": "slagış",
+    "type": "Sıfat",
+    "meaning": "Yavaş",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The app feels sluggish",
+        "meaning": "Uygulama yavaş hissediliyor."
+      }
+    ],
+    "date": "26.01.2026"
+  }
+]

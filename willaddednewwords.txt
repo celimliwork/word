@@ -1,151 +1,21 @@
-| **Bug** | Hata | There's a bug in the login page |
-| **Fix** | Düzeltmek | I need to fix this issue |
-| **Feature** | Özellik | We're implementing a new feature |
-| **Build** | İnşa etmek / Derleme | The build is failing |
-| **Deploy** | Yayınlamak | We deployed to production |
-| **Merge** | Birleştirmek | Can you merge this branch? |
-| **Pull Request (PR)** | İstek çekmek | I've opened a PR for review |
-| **Commit** | İşleme almak | Please commit your changes |
-| **Repository (Repo)** | Depo | Clone the repository |
-| **Branch** | Dal | Create a new branch |
-| **Codebase** | Kod tabanı | The codebase is getting complex |
-| **Stack** | Yığın / Teknoloji yığını | We're using the MERN stack |
-| **Framework** | Çerçeve | React is a popular framework |
-| **Library** | Kütüphane | I'm using an external library |
-| **Dependencies** | Bağımlılıklar | Update your dependencies |
-| **Middleware** | Ara yazılım | Add authentication middleware |
-| **API** | Arayüz | The API endpoint is broken |
-| **Database** | Veritabanı | Query the database |
-| **Cache** | Önbellek | Clear the cache |
-| **Migration** | Geçiş | Database migration completed |
-| **Push** | İtmek | Push your changes to GitHub |
-| **Pull** | Çekmek | Pull the latest changes |
-| **Clone** | Klonlamak | Clone the repository |
-| **Fork** | Çatallamak | Fork this project |
-| **Rebase** | Yeniden temellendirmek | Rebase on main branch |
-| **Stash** | Saklamak | Stash your uncommitted changes |
-| **Revert** | Geri almak | Revert the last commit |
-| **Cherry-pick** | El ile seçip almak | Cherry-pick that commit |
-| **Conflict** | Çatışma | There's a merge conflict |
-| **Stage** | Sahneye koymak | Stage your files |
-| **Unstage** | Sahneye koymamak | Unstage this file |
-| **Set up** | Ayarlamak | Set up the development environment |
-| **Get up and running** | Çalışır duruma getirmek | Let's get the project up and running |
-| **Spin up** | Başlatmak (sunucu/container) | Spin up a new database instance |
-| **Boot up** | Açılmak | Boot up the application |
-| **Tear down** | Sökmek / Kaldırmak | Tear down the old infrastructure |
-| **Take down** | İndirmek (özellikle sunucu) | We're taking down the server for maintenance |
-| **Roll back** | Geri almak | Roll back the deployment |
-| **Work out** | Çözmek | Let me work out this issue |
-| **Figure out** | Anlamak / Çözmek | I need to figure out why it's not working |
-| **Trace through** | İzlemek | Trace through the code |
-| **Dig into** | Derinlemesine incelemek | Let me dig into the database logs |
-| **Get stuck** | Takılmak | I got stuck on the authentication logic |
-| **Roll out** | Çıkarmak / Piyasaya sürmek | Roll out the new feature to all users |
-| **Go live** | Canlı yayına geçmek | When are we going live? |
-| **Push out** | İtmek / Yayınlamak | We're pushing out a hotfix |
-| **Ship** | Sevk etmek | Ship this feature to production |
-| **Test out** | Test etmek | Test out the new feature |
-| **Check out** | Bakmak / İncelemek | Check out my PR |
-| **Look into** | İncelemek | Can you look into this error? |
-| **Go through** | Gözden geçirmek | Go through the code review |
-| **Run through** | Çalıştırıp geçmek | Let me run through the tests |
-
-
-| **Speed up** | Hızlandırmak | We need to speed up the loading time |
-| **Slow down** | Yavaşlatmak | The app is slowing down under load |
-| **Optimize** | Optimize etmek | Optimize the database queries |
-| **Refactor** | Yeniden düzenlemek | Let's refactor this component |
-
-
-| **Hook up** | Bağlamak | Hook up the payment gateway |
-| **Sync up** | Senkronize etmek | Let's sync up on this feature |
-| **Link up** | Bağlantı kurmak | Link up the frontend with the API |
-| **Plug in** | Eklemek / Taktmak | Plug in the new module |
-
-
-| **Break** | Kırmak / Bozmak | Don't break the build! |
-| **Handle** | Yönetmek | Handle the error gracefully |
-| **Deal with** | Başa çıkmak | Deal with the edge cases |
-| **Sort out** | Çözmek | Let's sort out this issue |
-| **Work through** | İşlemek / Çözmek | Work through the logic step by step |
-
-
-| **Clean up** | Temizlemek | Clean up the code |
-| **Tidy up** | Düzeltmek | Tidy up the imports |
-| **Rewrite** | Yeniden yazmak | We should rewrite this function |
-| **Polish** | Parlatmak / Ton vermek | Polish the UI |
-
-
-| **Update** | Güncellemek | Update the packages |
-| **Upgrade** | Yükseltmek | Upgrade to the latest version |
-| **Keep up with** | Takip etmek | Keep up with the dependencies |
-| **Bump** | Artırmak (versiyon) | Bump the version number |
-
-| **Authentication** | Kimlik doğrulama | Implement authentication |
-| **Authorization** | Yetkilendirme | Check user authorization |
-| **Validation** | Doğrulama | Validate the input |
-| **Serialization** | Seri hale getirme | Serialize the data |
-| **Deserialization** | Seri hale çıkarma | Deserialize the JSON |
-| **Encryption** | Şifreleme | Encrypt sensitive data |
-| **Decryption** | Şifre çözme | Decrypt the password |
-| **Hashing** | Özetleme | Hash the password |
-| **Latency** | Gecikme | High latency is an issue |
-| **Throughput** | Verim / İşlem gücü | Improve throughput |
-| **Scalability** | Ölçeklenebilirlik | Consider scalability |
-| **Load balancing** | Yük dengeleme | Implement load balancing |
-| **Rate limiting** | Oran sınırlandırması | Add rate limiting to the API |
-| **Caching strategy** | Önbellek stratejisi | Discuss caching strategy |
-
-| **Unit test** | Birim test | Write unit tests |
-| **Integration test** | Entegrasyon testi | Run integration tests |
-| **E2E test** | Uçtan uca test | E2E tests are failing |
-| **Mock** | Sahte / Taklit | Mock the API calls |
-| **Stub** | Yer tutucu | Stub the database |
-| **Breakpoint** | Kesme noktası | Set a breakpoint |
-| **Debug mode** | Hata ayıklama modu | Run in debug mode |
-| **Console log** | Konsol çıktısı | Add console logs |
-| **Stack trace** | Yığın izi | Check the stack trace |
-| **Error handling** | Hata işleme | Improve error handling |
-| **Exception** | İstisna | Catch the exception |
-| **Assertion** | İddia / Onay | Use assertions in tests |
-
-| **Bottleneck** | Dar boğaz | Identify the bottleneck |
-| **Optimization** | Optimizasyon | Performance optimization |
-| **Profiling** | Profilleme | Run profiling tools |
-| **Minify** | Küçültmek | Minify the CSS and JS |
-| **Compress** | Sıkıştırmak | Compress the images |
-| **Lazy loading** | Tembel yükleme | Implement lazy loading |
-| **Pagination** | Sayfalandırma | Add pagination |
-| **Debounce** | Tıklamayı geciktirmek | Debounce the input |
-| **Throttle** | Kısıtlamak | Throttle the scroll event |
-| **Memory leak** | Bellek sızıntısı | Fix the memory leak |
-| **Resource** | Kaynak | Monitor resource usage |
-| **Feedback** | Geri bildirim | Give me feedback |
-| **Review** | İnceleme | Code review needed |
-| **Discuss** | Tartışmak | Let's discuss this |
-| **Clarify** | Açıklığa kavuşturmak | Can you clarify this? |
-| **Align** | Hizalamak | We need to align on this |
-| **Handoff** | Devir almak/vermek | Handoff to the QA team |
-| **Escalate** | Yükseltmek | Escalate this issue |
-| **Documentation** | Belgeleme | Update the documentation |
-| **Changelog** | Değişiklik kaydı | Update the changelog |
-| **Roadmap** | Yol haritası | Check the project roadmap |
-troubleshooting=sorun giderme
-| I'm on it | Bunun üzerine gidiyorum |
-| Keep me in the loop | Beni bilgili tut |
-| Just to confirm | Sadece teyit etmek için |
-| Going forward | İleriye doğru |
-| That said | Bununla birlikte |
-| In the meantime | Bu arada |
-| My bad | Benim hatalı |
-| Let me circle back | Buna geri döneceğim |
-| Heads up | Uyarı / Dikkat et |
-| No worries | Sorun değil |
-| ASAP | En kısa zamanda |
-| FYI | Bilgin için |
-| TBD | Henüz belirlenmedi |
-| WIP | Devam etmekte |
-
-sluggish=yavaş
-
+it's up to you=size kalmış
+run=çalıştırmak
+boot=başlatmak
+launch=başlatmak
+execute=yürütmek
+stop executing=durdurmak
+abort=iptal etmek
+completion=tamamlanma,bitirme
+populate=veri ile doldurmak,yaşamak
+persist=devam etmek
+once and for all=Temelli, bir daha tekrarlanmamak üzere.
+credentials=kimlik bilgileri
+postpone=ertelemek
+smoothly=sorunsuz bir şekilde
+typing away=yazmaya devam etmek
+so far=şu ana kadar
+feel free=çekinmek
+maintain=sürdürmek,korumak
+take over=devralmak
+elevated=yükseltilmiş,üst düzey
+involve=içermek

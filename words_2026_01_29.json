@@ -1,0 +1,464 @@
+[
+    {
+      "word": "it's up to you",
+      "pronunciation": "its ap tu yu",
+      "type": "İfade",
+      "meaning": "size kalmış",
+      "v2": {
+        "form": null,
+        "pronunciation": null
+      },
+      "v3": {
+        "form": null,
+        "pronunciation": null
+      },
+      "gerundInfinitive": null,
+      "examples": [
+        {
+          "sentence": "You can choose either option, it's up to you.",
+          "meaning": "İki seçenekten birini seçebilirsin, size kalmış."
+        }
+      ],
+      "date": "29.01.2026"
+    },
+    {
+      "word": "run",
+      "pronunciation": "ran",
+      "type": "Fiil",
+      "meaning": "çalıştırmak",
+      "v2": {
+        "form": "ran",
+        "pronunciation": "ran"
+      },
+      "v3": {
+        "form": "run",
+        "pronunciation": "ran"
+      },
+      "gerundInfinitive": "running",
+      "examples": [
+        {
+          "sentence": "I need to run this program on my computer.",
+          "meaning": "Bu programı bilgisayarımda çalıştırmam gerekiyor."
+        }
+      ],
+      "date": "29.01.2026"
+    },
+    {
+      "word": "boot",
+      "pronunciation": "but",
+      "type": "Fiil",
+      "meaning": "başlatmak",
+      "v2": {
+        "form": "booted",
+        "pronunciation": "butıd"
+      },
+      "v3": {
+        "form": "booted",
+        "pronunciation": "butıd"
+      },
+      "gerundInfinitive": "booting",
+      "examples": [
+        {
+          "sentence": "Please wait while the system boots up.",
+          "meaning": "Sistem başlatılırken lütfen bekleyin."
+        }
+      ],
+      "date": "29.01.2026"
+    },
+    {
+      "word": "launch",
+      "pronunciation": "lonç",
+      "type": "Fiil",
+      "meaning": "başlatmak",
+      "v2": {
+        "form": "launched",
+        "pronunciation": "lonçt"
+      },
+      "v3": {
+        "form": "launched",
+        "pronunciation": "lonçt"
+      },
+      "gerundInfinitive": "launching",
+      "examples": [
+        {
+          "sentence": "We will launch the new application next week.",
+          "meaning": "Yeni uygulamayı gelecek hafta başlatacağız."
+        }
+      ],
+      "date": "29.01.2026"
+    },
+    {
+      "word": "execute",
+      "pronunciation": "eksıkyut",
+      "type": "Fiil",
+      "meaning": "yürütmek",
+      "v2": {
+        "form": "executed",
+        "pronunciation": "eksıkyutıd"
+      },
+      "v3": {
+        "form": "executed",
+        "pronunciation": "eksıkyutıd"
+      },
+      "gerundInfinitive": "executing",
+      "examples": [
+        {
+          "sentence": "The computer will execute the commands automatically.",
+          "meaning": "Bilgisayar komutları otomatik olarak yürütecek."
+        }
+      ],
+      "date": "29.01.2026"
+    },
+    {
+      "word": "stop executing",
+      "pronunciation": "stap eksıkyuting",
+      "type": "İfade",
+      "meaning": "durdurmak",
+      "v2": {
+        "form": null,
+        "pronunciation": null
+      },
+      "v3": {
+        "form": null,
+        "pronunciation": null
+      },
+      "gerundInfinitive": null,
+      "examples": [
+        {
+          "sentence": "You need to stop executing this process immediately.",
+          "meaning": "Bu işlemi hemen durdurman gerekiyor."
+        }
+      ],
+      "date": "29.01.2026"
+    },
+    {
+      "word": "abort",
+      "pronunciation": "ıbort",
+      "type": "Fiil",
+      "meaning": "iptal etmek",
+      "v2": {
+        "form": "aborted",
+        "pronunciation": "ıbortıd"
+      },
+      "v3": {
+        "form": "aborted",
+        "pronunciation": "ıbortıd"
+      },
+      "gerundInfinitive": "aborting",
+      "examples": [
+        {
+          "sentence": "We had to abort the mission due to bad weather.",
+          "meaning": "Kötü hava koşulları nedeniyle görevi iptal etmek zorunda kaldık."
+        }
+      ],
+      "date": "29.01.2026"
+    },
+    {
+      "word": "completion",
+      "pronunciation": "kımpliışın",
+      "type": "İsim",
+      "meaning": "tamamlanma, bitirme",
+      "v2": {
+        "form": null,
+        "pronunciation": null
+      },
+      "v3": {
+        "form": null,
+        "pronunciation": null
+      },
+      "gerundInfinitive": null,
+      "examples": [
+        {
+          "sentence": "The project is nearing completion.",
+          "meaning": "Proje tamamlanmaya yaklaşıyor."
+        }
+      ],
+      "date": "29.01.2026"
+    },
+    {
+      "word": "populate",
+      "pronunciation": "papyuleyt",
+      "type": "Fiil",
+      "meaning": "veri ile doldurmak, yaşamak",
+      "v2": {
+        "form": "populated",
+        "pronunciation": "papyuleytıd"
+      },
+      "v3": {
+        "form": "populated",
+        "pronunciation": "papyuleytıd"
+      },
+      "gerundInfinitive": "populating",
+      "examples": [
+        {
+          "sentence": "The system will automatically populate the fields with data.",
+          "meaning": "Sistem alanları otomatik olarak veri ile dolduracak."
+        }
+      ],
+      "date": "29.01.2026"
+    },
+    {
+      "word": "persist",
+      "pronunciation": "pırsist",
+      "type": "Fiil",
+      "meaning": "devam etmek",
+      "v2": {
+        "form": "persisted",
+        "pronunciation": "pırsistıd"
+      },
+      "v3": {
+        "form": "persisted",
+        "pronunciation": "pırsistıd"
+      },
+      "gerundInfinitive": "persisting",
+      "examples": [
+        {
+          "sentence": "If the problem persists, please contact support.",
+          "meaning": "Sorun devam ederse, lütfen destekle iletişime geçin."
+        }
+      ],
+      "date": "29.01.2026"
+    },
+    {
+      "word": "once and for all",
+      "pronunciation": "wans end for ol",
+      "type": "İfade",
+      "meaning": "temelli, bir daha tekrarlanmamak üzere",
+      "v2": {
+        "form": null,
+        "pronunciation": null
+      },
+      "v3": {
+        "form": null,
+        "pronunciation": null
+      },
+      "gerundInfinitive": null,
+      "examples": [
+        {
+          "sentence": "Let's solve this problem once and for all.",
+          "meaning": "Bu sorunu temelli olarak çözelim."
+        }
+      ],
+      "date": "29.01.2026"
+    },
+    {
+      "word": "credentials",
+      "pronunciation": "krıdenşılz",
+      "type": "İsim",
+      "meaning": "kimlik bilgileri",
+      "v2": {
+        "form": null,
+        "pronunciation": null
+      },
+      "v3": {
+        "form": null,
+        "pronunciation": null
+      },
+      "gerundInfinitive": null,
+      "examples": [
+        {
+          "sentence": "Please enter your login credentials.",
+          "meaning": "Lütfen giriş kimlik bilgilerinizi girin."
+        }
+      ],
+      "date": "29.01.2026"
+    },
+    {
+      "word": "postpone",
+      "pronunciation": "poustpoun",
+      "type": "Fiil",
+      "meaning": "ertelemek",
+      "v2": {
+        "form": "postponed",
+        "pronunciation": "poustpound"
+      },
+      "v3": {
+        "form": "postponed",
+        "pronunciation": "poustpound"
+      },
+      "gerundInfinitive": "postponing",
+      "examples": [
+        {
+          "sentence": "We had to postpone the meeting until next week.",
+          "meaning": "Toplantıyı gelecek haftaya ertelemek zorunda kaldık."
+        }
+      ],
+      "date": "29.01.2026"
+    },
+    {
+      "word": "smoothly",
+      "pronunciation": "smudhli",
+      "type": "Zarf",
+      "meaning": "sorunsuz bir şekilde",
+      "v2": {
+        "form": null,
+        "pronunciation": null
+      },
+      "v3": {
+        "form": null,
+        "pronunciation": null
+      },
+      "gerundInfinitive": null,
+      "examples": [
+        {
+          "sentence": "Everything is running smoothly now.",
+          "meaning": "Şimdi her şey sorunsuz bir şekilde çalışıyor."
+        }
+      ],
+      "date": "29.01.2026"
+    },
+    {
+      "word": "typing away",
+      "pronunciation": "tayping ıwey",
+      "type": "İfade",
+      "meaning": "yazmaya devam etmek",
+      "v2": {
+        "form": null,
+        "pronunciation": null
+      },
+      "v3": {
+        "form": null,
+        "pronunciation": null
+      },
+      "gerundInfinitive": null,
+      "examples": [
+        {
+          "sentence": "She was typing away on her laptop all morning.",
+          "meaning": "Bütün sabah dizüstü bilgisayarında yazmaya devam etti."
+        }
+      ],
+      "date": "29.01.2026"
+    },
+    {
+      "word": "so far",
+      "pronunciation": "sou far",
+      "type": "İfade",
+      "meaning": "şu ana kadar",
+      "v2": {
+        "form": null,
+        "pronunciation": null
+      },
+      "v3": {
+        "form": null,
+        "pronunciation": null
+      },
+      "gerundInfinitive": null,
+      "examples": [
+        {
+          "sentence": "So far, everything is going according to plan.",
+          "meaning": "Şu ana kadar her şey plana göre gidiyor."
+        }
+      ],
+      "date": "29.01.2026"
+    },
+    {
+      "word": "feel free",
+      "pronunciation": "fil fri",
+      "type": "İfade",
+      "meaning": "çekinmemek",
+      "v2": {
+        "form": null,
+        "pronunciation": null
+      },
+      "v3": {
+        "form": null,
+        "pronunciation": null
+      },
+      "gerundInfinitive": null,
+      "examples": [
+        {
+          "sentence": "Feel free to ask any questions.",
+          "meaning": "Herhangi bir soru sormaktan çekinmeyin."
+        }
+      ],
+      "date": "29.01.2026"
+    },
+    {
+      "word": "maintain",
+      "pronunciation": "meyinteyn",
+      "type": "Fiil",
+      "meaning": "sürdürmek, korumak",
+      "v2": {
+        "form": "maintained",
+        "pronunciation": "meynteynd"
+      },
+      "v3": {
+        "form": "maintained",
+        "pronunciation": "meynteynd"
+      },
+      "gerundInfinitive": "maintaining",
+      "examples": [
+        {
+          "sentence": "It's important to maintain the database regularly.",
+          "meaning": "Veritabanını düzenli olarak korumak önemlidir."
+        }
+      ],
+      "date": "29.01.2026"
+    },
+    {
+      "word": "take over",
+      "pronunciation": "teyk ouvır",
+      "type": "Phrasal Verb",
+      "meaning": "devralmak",
+      "v2": {
+        "form": "took over",
+        "pronunciation": "tuk ouvır"
+      },
+      "v3": {
+        "form": "taken over",
+        "pronunciation": "teykın ouvır"
+      },
+      "gerundInfinitive": "taking over",
+      "examples": [
+        {
+          "sentence": "The new manager will take over next month.",
+          "meaning": "Yeni müdür gelecek ay devralacak."
+        }
+      ],
+      "date": "29.01.2026"
+    },
+    {
+      "word": "elevated",
+      "pronunciation": "eleveytıd",
+      "type": "Sıfat",
+      "meaning": "yükseltilmiş, üst düzey",
+      "v2": {
+        "form": null,
+        "pronunciation": null
+      },
+      "v3": {
+        "form": null,
+        "pronunciation": null
+      },
+      "gerundInfinitive": null,
+      "examples": [
+        {
+          "sentence": "You need elevated permissions to access this file.",
+          "meaning": "Bu dosyaya erişmek için üst düzey izinlere ihtiyacınız var."
+        }
+      ],
+      "date": "29.01.2026"
+    },
+    {
+      "word": "involve",
+      "pronunciation": "ınvalv",
+      "type": "Fiil",
+      "meaning": "içermek",
+      "v2": {
+        "form": "involved",
+        "pronunciation": "invalvd"
+      },
+      "v3": {
+        "form": "involved",
+        "pronunciation": "invalvd"
+      },
+      "gerundInfinitive": "involving",
+      "examples": [
+        {
+          "sentence": "This task involves several complex steps.",
+          "meaning": "Bu görev birkaç karmaşık adım içeriyor."
+        }
+      ],
+      "date": "29.01.2026"
+    }
+  ]

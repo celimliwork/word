@@ -1,0 +1,442 @@
+[
+    {
+      "word": "cue",
+      "pronunciation": "kyu",
+      "type": "İsim",
+      "meaning": "ipucu",
+      "v2": {
+        "form": null,
+        "pronunciation": null
+      },
+      "v3": {
+        "form": null,
+        "pronunciation": null
+      },
+      "gerundInfinitive": null,
+      "examples": [
+        {
+          "sentence": "The error message gives you a cue about the problem.",
+          "meaning": "Hata mesajı size sorun hakkında bir ipucu veriyor."
+        }
+      ],
+      "date": "01.02.2026"
+    },
+    {
+      "word": "stricter",
+      "pronunciation": "striktır",
+      "type": "Sıfat",
+      "meaning": "daha sert",
+      "v2": {
+        "form": null,
+        "pronunciation": null
+      },
+      "v3": {
+        "form": null,
+        "pronunciation": null
+      },
+      "gerundInfinitive": null,
+      "examples": [
+        {
+          "sentence": "We need stricter security policies.",
+          "meaning": "Daha sert güvenlik politikalarına ihtiyacımız var."
+        }
+      ],
+      "date": "01.02.2026"
+    },
+    {
+      "word": "stably",
+      "pronunciation": "steybli",
+      "type": "Zarf",
+      "meaning": "stabil bir şekilde",
+      "v2": {
+        "form": null,
+        "pronunciation": null
+      },
+      "v3": {
+        "form": null,
+        "pronunciation": null
+      },
+      "gerundInfinitive": null,
+      "examples": [
+        {
+          "sentence": "The application is running stably now.",
+          "meaning": "Uygulama şimdi stabil bir şekilde çalışıyor."
+        }
+      ],
+      "date": "01.02.2026"
+    },
+    {
+      "word": "appropriate",
+      "pronunciation": "ıproupriıt",
+      "type": "Sıfat",
+      "meaning": "uygun",
+      "v2": {
+        "form": null,
+        "pronunciation": null
+      },
+      "v3": {
+        "form": null,
+        "pronunciation": null
+      },
+      "gerundInfinitive": null,
+      "examples": [
+        {
+          "sentence": "Choose the appropriate method for your use case.",
+          "meaning": "Kullanım durumunuz için uygun yöntemi seçin."
+        }
+      ],
+      "date": "01.02.2026"
+    },
+    {
+      "word": "make suggestion",
+      "pronunciation": "meyk sıgçesçın",
+      "type": "İfade",
+      "meaning": "önerilerde bulunmak",
+      "v2": {
+        "form": null,
+        "pronunciation": null
+      },
+      "v3": {
+        "form": null,
+        "pronunciation": null
+      },
+      "gerundInfinitive": null,
+      "examples": [
+        {
+          "sentence": "Feel free to make suggestions for improvement.",
+          "meaning": "İyileştirme için önerilerde bulunmaktan çekinmeyin."
+        }
+      ],
+      "date": "01.02.2026"
+    },
+    {
+      "word": "regret",
+      "pronunciation": "rigret",
+      "type": "İsim/Fiil",
+      "meaning": "pişmanlık",
+      "v2": {
+        "form": "regretted",
+        "pronunciation": "rigretıd"
+      },
+      "v3": {
+        "form": "regretted",
+        "pronunciation": "rigretıd"
+      },
+      "gerundInfinitive": "regretting",
+      "examples": [
+        {
+          "sentence": "I regret not backing up the data.",
+          "meaning": "Verileri yedeklemediğim için pişmanlık duyuyorum."
+        }
+      ],
+      "date": "01.02.2026"
+    },
+    {
+      "word": "hesitation",
+      "pronunciation": "heziteyşın",
+      "type": "İsim",
+      "meaning": "tereddüt",
+      "v2": {
+        "form": null,
+        "pronunciation": null
+      },
+      "v3": {
+        "form": null,
+        "pronunciation": null
+      },
+      "gerundInfinitive": null,
+      "examples": [
+        {
+          "sentence": "Don't have any hesitation to ask for help.",
+          "meaning": "Yardım istemekte herhangi bir tereddüt etmeyin."
+        }
+      ],
+      "date": "01.02.2026"
+    },
+    {
+      "word": "promote",
+      "pronunciation": "prımout",
+      "type": "Fiil",
+      "meaning": "terfi etmek",
+      "v2": {
+        "form": "promoted",
+        "pronunciation": "prımoutıd"
+      },
+      "v3": {
+        "form": "promoted",
+        "pronunciation": "prımoutıd"
+      },
+      "gerundInfinitive": "promoting",
+      "examples": [
+        {
+          "sentence": "She was promoted to senior developer.",
+          "meaning": "Kıdemli geliştirici olarak terfi etti."
+        }
+      ],
+      "date": "01.02.2026"
+    },
+    {
+      "word": "proceed",
+      "pronunciation": "prısid",
+      "type": "Fiil",
+      "meaning": "ilerlemek",
+      "v2": {
+        "form": "proceeded",
+        "pronunciation": "prısidıd"
+      },
+      "v3": {
+        "form": "proceeded",
+        "pronunciation": "prısidıd"
+      },
+      "gerundInfinitive": "proceeding",
+      "examples": [
+        {
+          "sentence": "We can proceed with the deployment.",
+          "meaning": "Dağıtımla ilerleyebiliriz."
+        }
+      ],
+      "date": "01.02.2026"
+    },
+    {
+      "word": "strengthened",
+      "pronunciation": "strengθınd",
+      "type": "Fiil",
+      "meaning": "güçlendirilmiş",
+      "v2": {
+        "form": "strengthened",
+        "pronunciation": "strengθınd"
+      },
+      "v3": {
+        "form": "strengthened",
+        "pronunciation": "strengθınd"
+      },
+      "gerundInfinitive": "strengthening",
+      "examples": [
+        {
+          "sentence": "We strengthened the security measures.",
+          "meaning": "Güvenlik önlemlerini güçlendirdik."
+        }
+      ],
+      "date": "01.02.2026"
+    },
+    {
+      "word": "log sanitization",
+      "pronunciation": "log sanitızeyşın",
+      "type": "İfade",
+      "meaning": "log ayıklama",
+      "v2": {
+        "form": null,
+        "pronunciation": null
+      },
+      "v3": {
+        "form": null,
+        "pronunciation": null
+      },
+      "gerundInfinitive": null,
+      "examples": [
+        {
+          "sentence": "Log sanitization is crucial for protecting sensitive data.",
+          "meaning": "Log ayıklama hassas verileri korumak için çok önemlidir."
+        }
+      ],
+      "date": "01.02.2026"
+    },
+    {
+      "word": "incentive",
+      "pronunciation": "insentiv",
+      "type": "İsim",
+      "meaning": "teşvik",
+      "v2": {
+        "form": null,
+        "pronunciation": null
+      },
+      "v3": {
+        "form": null,
+        "pronunciation": null
+      },
+      "gerundInfinitive": null,
+      "examples": [
+        {
+          "sentence": "The company offers incentives for high performance.",
+          "meaning": "Şirket yüksek performans için teşvikler sunuyor."
+        }
+      ],
+      "date": "01.02.2026"
+    },
+    {
+      "word": "outdated",
+      "pronunciation": "autdeytıd",
+      "type": "Sıfat",
+      "meaning": "modası geçmiş",
+      "v2": {
+        "form": null,
+        "pronunciation": null
+      },
+      "v3": {
+        "form": null,
+        "pronunciation": null
+      },
+      "gerundInfinitive": null,
+      "examples": [
+        {
+          "sentence": "This software version is outdated.",
+          "meaning": "Bu yazılım sürümünün modası geçmiş."
+        }
+      ],
+      "date": "01.02.2026"
+    },
+    {
+      "word": "restructured",
+      "pronunciation": "ristrakcçırd",
+      "type": "Fiil",
+      "meaning": "yeniden düzenlemek",
+      "v2": {
+        "form": "restructured",
+        "pronunciation": "ristrakcçırd"
+      },
+      "v3": {
+        "form": "restructured",
+        "pronunciation": "ristrakcçırd"
+      },
+      "gerundInfinitive": "restructuring",
+      "examples": [
+        {
+          "sentence": "We restructured the database for better performance.",
+          "meaning": "Daha iyi performans için veritabanını yeniden düzenledik."
+        }
+      ],
+      "date": "01.02.2026"
+    },
+    {
+      "word": "procurement",
+      "pronunciation": "prıkyurmınt",
+      "type": "İsim",
+      "meaning": "satın alma",
+      "v2": {
+        "form": null,
+        "pronunciation": null
+      },
+      "v3": {
+        "form": null,
+        "pronunciation": null
+      },
+      "gerundInfinitive": null,
+      "examples": [
+        {
+          "sentence": "The procurement process takes several weeks.",
+          "meaning": "Satın alma süreci birkaç hafta sürüyor."
+        }
+      ],
+      "date": "01.02.2026"
+    },
+    {
+      "word": "enterprise",
+      "pronunciation": "entırprayz",
+      "type": "Sıfat/İsim",
+      "meaning": "kurumsal",
+      "v2": {
+        "form": null,
+        "pronunciation": null
+      },
+      "v3": {
+        "form": null,
+        "pronunciation": null
+      },
+      "gerundInfinitive": null,
+      "examples": [
+        {
+          "sentence": "This is an enterprise-level solution.",
+          "meaning": "Bu kurumsal düzeyde bir çözüm."
+        }
+      ],
+      "date": "01.02.2026"
+    },
+    {
+      "word": "disclose",
+      "pronunciation": "disklouz",
+      "type": "Fiil",
+      "meaning": "ifşa etmek",
+      "v2": {
+        "form": "disclosed",
+        "pronunciation": "disklouzd"
+      },
+      "v3": {
+        "form": "disclosed",
+        "pronunciation": "disklouzd"
+      },
+      "gerundInfinitive": "disclosing",
+      "examples": [
+        {
+          "sentence": "We cannot disclose confidential information.",
+          "meaning": "Gizli bilgileri ifşa edemeyiz."
+        }
+      ],
+      "date": "01.02.2026"
+    },
+    {
+      "word": "disaster",
+      "pronunciation": "dızästır",
+      "type": "İsim",
+      "meaning": "felaket",
+      "v2": {
+        "form": null,
+        "pronunciation": null
+      },
+      "v3": {
+        "form": null,
+        "pronunciation": null
+      },
+      "gerundInfinitive": null,
+      "examples": [
+        {
+          "sentence": "We need a disaster recovery plan.",
+          "meaning": "Bir felaket kurtarma planına ihtiyacımız var."
+        }
+      ],
+      "date": "01.02.2026"
+    },
+    {
+      "word": "confidential",
+      "pronunciation": "kanfıdenşıl",
+      "type": "Sıfat",
+      "meaning": "gizli",
+      "v2": {
+        "form": null,
+        "pronunciation": null
+      },
+      "v3": {
+        "form": null,
+        "pronunciation": null
+      },
+      "gerundInfinitive": null,
+      "examples": [
+        {
+          "sentence": "This document is strictly confidential.",
+          "meaning": "Bu belge kesinlikle gizlidir."
+        }
+      ],
+      "date": "01.02.2026"
+    },
+    {
+      "word": "emit",
+      "pronunciation": "imit",
+      "type": "Fiil",
+      "meaning": "yaymak",
+      "v2": {
+        "form": "emitted",
+        "pronunciation": "imitıd"
+      },
+      "v3": {
+        "form": "emitted",
+        "pronunciation": "imitıd"
+      },
+      "gerundInfinitive": "emitting",
+      "examples": [
+        {
+          "sentence": "The sensor emits a signal when triggered.",
+          "meaning": "Sensör tetiklendiğinde bir sinyal yayar."
+        }
+      ],
+      "date": "01.02.2026"
+    }
+  ]

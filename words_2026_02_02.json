@@ -1,0 +1,860 @@
+[
+  {
+    "word": "odd",
+    "pronunciation": "ad",
+    "type": "Sıfat",
+    "meaning": "garip",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "That's an odd behavior for the application.",
+        "meaning": "Bu, uygulama için garip bir davranış."
+      }
+    ],
+    "date": "02.02.2026"
+  },
+  {
+    "word": "workaround",
+    "pronunciation": "wörkıraund",
+    "type": "İsim",
+    "meaning": "geçici çözüm",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We found a workaround for this bug.",
+        "meaning": "Bu hata için geçici bir çözüm bulduk."
+      }
+    ],
+    "date": "02.02.2026"
+  },
+  {
+    "word": "to get around it",
+    "pronunciation": "tu get ıraund it",
+    "type": "İfade",
+    "meaning": "bunu aşmak için",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "There's a limitation, but we can get around it.",
+        "meaning": "Bir sınırlama var, ama bunu aşabiliriz."
+      }
+    ],
+    "date": "02.02.2026"
+  },
+  {
+    "word": "swap",
+    "pronunciation": "swap",
+    "type": "Fiil",
+    "meaning": "takas etmek, değiştirmek",
+    "v2": {
+      "form": "swapped",
+      "pronunciation": "swapt"
+    },
+    "v3": {
+      "form": "swapped",
+      "pronunciation": "swapt"
+    },
+    "gerundInfinitive": "swapping",
+    "examples": [
+      {
+        "sentence": "We need to swap these two variables.",
+        "meaning": "Bu iki değişkeni takas etmemiz gerekiyor."
+      }
+    ],
+    "date": "02.02.2026"
+  },
+  {
+    "word": "shiver up your spine",
+    "pronunciation": "şivır ap yor spayn",
+    "type": "İfade",
+    "meaning": "tüylerini diken diken etmek",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "That horror movie sent a shiver up my spine.",
+        "meaning": "O korku filmi tüylerimi diken diken etti."
+      }
+    ],
+    "date": "02.02.2026"
+  },
+  {
+    "word": "attach",
+    "pronunciation": "ıtaç",
+    "type": "Fiil",
+    "meaning": "eklemek",
+    "v2": {
+      "form": "attached",
+      "pronunciation": "ıtaçt"
+    },
+    "v3": {
+      "form": "attached",
+      "pronunciation": "ıtaçt"
+    },
+    "gerundInfinitive": "attaching",
+    "examples": [
+      {
+        "sentence": "Please attach the document to your email.",
+        "meaning": "Lütfen belgeyi e-postanıza ekleyin."
+      }
+    ],
+    "date": "02.02.2026"
+  },
+  {
+    "word": "adjacent",
+    "pronunciation": "ıceysınt",
+    "type": "Sıfat",
+    "meaning": "bitişik",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The two servers are in adjacent rooms.",
+        "meaning": "İki sunucu bitişik odalarda."
+      }
+    ],
+    "date": "02.02.2026"
+  },
+  {
+    "word": "word of caution",
+    "pronunciation": "wörd ov koşın",
+    "type": "İfade",
+    "meaning": "uyarı niteliğinde bir kelime",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "A word of caution: always backup your data.",
+        "meaning": "Bir uyarı: verilerinizi her zaman yedekleyin."
+      }
+    ],
+    "date": "02.02.2026"
+  },
+  {
+    "word": "indicate",
+    "pronunciation": "indikeyt",
+    "type": "Fiil",
+    "meaning": "göstermek",
+    "v2": {
+      "form": "indicated",
+      "pronunciation": "indikeytıd"
+    },
+    "v3": {
+      "form": "indicated",
+      "pronunciation": "indikeytıd"
+    },
+    "gerundInfinitive": "indicating",
+    "examples": [
+      {
+        "sentence": "The red light indicates an error.",
+        "meaning": "Kırmızı ışık bir hata olduğunu gösteriyor."
+      }
+    ],
+    "date": "02.02.2026"
+  },
+  {
+    "word": "interact",
+    "pronunciation": "intıräkt",
+    "type": "Fiil",
+    "meaning": "etkileşime girmek",
+    "v2": {
+      "form": "interacted",
+      "pronunciation": "intıräktıd"
+    },
+    "v3": {
+      "form": "interacted",
+      "pronunciation": "intıräktıd"
+    },
+    "gerundInfinitive": "interacting",
+    "examples": [
+      {
+        "sentence": "Users can interact with the interface easily.",
+        "meaning": "Kullanıcılar arayüzle kolayca etkileşime girebilir."
+      }
+    ],
+    "date": "02.02.2026"
+  },
+  {
+    "word": "grant",
+    "pronunciation": "grant",
+    "type": "Fiil/İsim",
+    "meaning": "hibe, hibe etmek, onaylamak",
+    "v2": {
+      "form": "granted",
+      "pronunciation": "grantıd"
+    },
+    "v3": {
+      "form": "granted",
+      "pronunciation": "grantıd"
+    },
+    "gerundInfinitive": "granting",
+    "examples": [
+      {
+        "sentence": "The system will grant you access after verification.",
+        "meaning": "Sistem doğrulama sonrası size erişim onaylayacak."
+      }
+    ],
+    "date": "02.02.2026"
+  },
+  {
+    "word": "consist of",
+    "pronunciation": "kınsist ov",
+    "type": "Phrasal Verb",
+    "meaning": "meydana gelmek, oluşmak",
+    "v2": {
+      "form": "consisted of",
+      "pronunciation": "kınsistıd ov"
+    },
+    "v3": {
+      "form": "consisted of",
+      "pronunciation": "kınsistıd ov"
+    },
+    "gerundInfinitive": "consisting of",
+    "examples": [
+      {
+        "sentence": "The database consists of multiple tables.",
+        "meaning": "Veritabanı birden fazla tablodan oluşuyor."
+      }
+    ],
+    "date": "02.02.2026"
+  },
+  {
+    "word": "workforce",
+    "pronunciation": "wörkfors",
+    "type": "İsim",
+    "meaning": "iş gücü",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Our company has a skilled workforce.",
+        "meaning": "Şirketimizin yetenekli bir iş gücü var."
+      }
+    ],
+    "date": "02.02.2026"
+  },
+  {
+    "word": "spin up",
+    "pronunciation": "spin ap",
+    "type": "Phrasal Verb",
+    "meaning": "oluşturmak, kurmak, devreye almak",
+    "v2": {
+      "form": "spun up",
+      "pronunciation": "span ap"
+    },
+    "v3": {
+      "form": "spun up",
+      "pronunciation": "span ap"
+    },
+    "gerundInfinitive": "spinning up",
+    "examples": [
+      {
+        "sentence": "We need to spin up a new server instance.",
+        "meaning": "Yeni bir sunucu örneği oluşturmamız gerekiyor."
+      }
+    ],
+    "date": "02.02.2026"
+  },
+  {
+    "word": "cover",
+    "pronunciation": "kavır",
+    "type": "Fiil",
+    "meaning": "ele almak",
+    "v2": {
+      "form": "covered",
+      "pronunciation": "kavırd"
+    },
+    "v3": {
+      "form": "covered",
+      "pronunciation": "kavırd"
+    },
+    "gerundInfinitive": "covering",
+    "examples": [
+      {
+        "sentence": "This tutorial will cover the basics of programming.",
+        "meaning": "Bu eğitim programlamanın temellerini ele alacak."
+      }
+    ],
+    "date": "02.02.2026"
+  },
+  {
+    "word": "compute",
+    "pronunciation": "kımpyut",
+    "type": "Fiil",
+    "meaning": "hesaplamak",
+    "v2": {
+      "form": "computed",
+      "pronunciation": "kımpyutıd"
+    },
+    "v3": {
+      "form": "computed",
+      "pronunciation": "kımpyutıd"
+    },
+    "gerundInfinitive": "computing",
+    "examples": [
+      {
+        "sentence": "The program will compute the total automatically.",
+        "meaning": "Program toplamı otomatik olarak hesaplayacak."
+      }
+    ],
+    "date": "02.02.2026"
+  },
+  {
+    "word": "find out",
+    "pronunciation": "faynd aut",
+    "type": "Phrasal Verb",
+    "meaning": "anlamak, bulup çıkarmak",
+    "v2": {
+      "form": "found out",
+      "pronunciation": "faund aut"
+    },
+    "v3": {
+      "form": "found out",
+      "pronunciation": "faund aut"
+    },
+    "gerundInfinitive": "finding out",
+    "examples": [
+      {
+        "sentence": "We need to find out what caused the error.",
+        "meaning": "Hataya neyin sebep olduğunu bulmamız gerekiyor."
+      }
+    ],
+    "date": "02.02.2026"
+  },
+  {
+    "word": "identical",
+    "pronunciation": "aydentikıl",
+    "type": "Sıfat",
+    "meaning": "birebir aynı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The two files are identical.",
+        "meaning": "İki dosya birebir aynı."
+      }
+    ],
+    "date": "02.02.2026"
+  },
+  {
+    "word": "invaluable",
+    "pronunciation": "invalyuıbıl",
+    "type": "Sıfat",
+    "meaning": "paha biçilmez",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Your experience is invaluable to our team.",
+        "meaning": "Deneyiminiz ekibimiz için paha biçilmez."
+      }
+    ],
+    "date": "02.02.2026"
+  },
+  {
+    "word": "troubleshoot",
+    "pronunciation": "trabılşut",
+    "type": "Fiil",
+    "meaning": "sorun giderme",
+    "v2": {
+      "form": "troubleshot",
+      "pronunciation": "trabılşat"
+    },
+    "v3": {
+      "form": "troubleshot",
+      "pronunciation": "trabılşat"
+    },
+    "gerundInfinitive": "troubleshooting",
+    "examples": [
+      {
+        "sentence": "I spent hours troubleshooting the network issue.",
+        "meaning": "Ağ sorununu gidermek için saatler harcadım."
+      }
+    ],
+    "date": "02.02.2026"
+  },
+  {
+    "word": "purposefully",
+    "pronunciation": "pörpısfıli",
+    "type": "Zarf",
+    "meaning": "kasıtlı olarak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He purposefully disabled the feature.",
+        "meaning": "Özelliği kasıtlı olarak devre dışı bıraktı."
+      }
+    ],
+    "date": "02.02.2026"
+  },
+  {
+    "word": "handy",
+    "pronunciation": "handi",
+    "type": "Sıfat",
+    "meaning": "kullanışlı, yararlı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "This tool is really handy for debugging.",
+        "meaning": "Bu araç hata ayıklama için gerçekten kullanışlı."
+      }
+    ],
+    "date": "02.02.2026"
+  },
+  {
+    "word": "personally",
+    "pronunciation": "pörsınıli",
+    "type": "Zarf",
+    "meaning": "şahsen",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Personally, I prefer using Linux.",
+        "meaning": "Şahsen Linux kullanmayı tercih ediyorum."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "backwards",
+    "pronunciation": "bakwırdz",
+    "type": "Zarf",
+    "meaning": "geriye doğru",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The version is not backwards compatible.",
+        "meaning": "Sürüm geriye doğru uyumlu değil."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "forward",
+    "pronunciation": "forwırd",
+    "type": "Zarf",
+    "meaning": "ileriye doğru",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Let's move forward with the implementation.",
+        "meaning": "Uygulamayla ileriye doğru ilerleyelim."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "kick off",
+    "pronunciation": "kik of",
+    "type": "Phrasal Verb",
+    "meaning": "başlamak",
+    "v2": {
+      "form": "kicked off",
+      "pronunciation": "kikt of"
+    },
+    "v3": {
+      "form": "kicked off",
+      "pronunciation": "kikt of"
+    },
+    "gerundInfinitive": "kicking off",
+    "examples": [
+      {
+        "sentence": "We'll kick off the project next Monday.",
+        "meaning": "Projeyi gelecek Pazartesi başlatacağız."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "slightly",
+    "pronunciation": "slaytli",
+    "type": "Zarf",
+    "meaning": "hafifçe, biraz",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The performance is slightly better now.",
+        "meaning": "Performans şimdi biraz daha iyi."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "ternary",
+    "pronunciation": "törneri",
+    "type": "Sıfat",
+    "meaning": "üçlü",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We can use a ternary operator for this condition.",
+        "meaning": "Bu koşul için üçlü operatör kullanabiliriz."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "spoil",
+    "pronunciation": "spoyl",
+    "type": "Fiil/Sıfat",
+    "meaning": "bozmak, bozuk, şımarık",
+    "v2": {
+      "form": "spoiled/spoilt",
+      "pronunciation": "spoyld/spoylt"
+    },
+    "v3": {
+      "form": "spoiled/spoilt",
+      "pronunciation": "spoyld/spoylt"
+    },
+    "gerundInfinitive": "spoiling",
+    "examples": [
+      {
+        "sentence": "Don't spoil the surprise by telling everyone.",
+        "meaning": "Herkese söyleyerek sürprizi bozma."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "straightforward",
+    "pronunciation": "streytforwırd",
+    "type": "Sıfat",
+    "meaning": "basit",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The installation process is straightforward.",
+        "meaning": "Kurulum süreci basittir."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "fairly",
+    "pronunciation": "ferli",
+    "type": "Zarf",
+    "meaning": "oldukça",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The code is fairly simple to understand.",
+        "meaning": "Kod anlamak için oldukça basit."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "inbound",
+    "pronunciation": "inbaund",
+    "type": "Sıfat",
+    "meaning": "gelen",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We need to configure the inbound traffic rules.",
+        "meaning": "Gelen trafik kurallarını yapılandırmamız gerekiyor."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "outbound",
+    "pronunciation": "autbaund",
+    "type": "Sıfat",
+    "meaning": "giden",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Check the outbound connection settings.",
+        "meaning": "Giden bağlantı ayarlarını kontrol edin."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "ingress",
+    "pronunciation": "ingres",
+    "type": "İsim",
+    "meaning": "giren",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The ingress controller manages incoming traffic.",
+        "meaning": "Giren trafik denetleyicisi gelen trafiği yönetir."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "egress",
+    "pronunciation": "igres",
+    "type": "İsim",
+    "meaning": "çıkan",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Egress traffic is filtered by the firewall.",
+        "meaning": "Çıkan trafik güvenlik duvarı tarafından filtreleniyor."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "demystify",
+    "pronunciation": "dimistifay",
+    "type": "Fiil",
+    "meaning": "gizemi çözmek",
+    "v2": {
+      "form": "demystified",
+      "pronunciation": "dimistifayd"
+    },
+    "v3": {
+      "form": "demystified",
+      "pronunciation": "dimistifayd"
+    },
+    "gerundInfinitive": "demystifying",
+    "examples": [
+      {
+        "sentence": "This guide will demystify cloud computing.",
+        "meaning": "Bu rehber bulut bilişimin gizemini çözecek."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "particularly",
+    "pronunciation": "pırtıkyulırli",
+    "type": "Zarf",
+    "meaning": "özellikle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "This feature is particularly useful for developers.",
+        "meaning": "Bu özellik özellikle geliştiriciler için yararlı."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "neat",
+    "pronunciation": "nit",
+    "type": "Sıfat",
+    "meaning": "düzenli",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "That's a neat solution to the problem.",
+        "meaning": "Bu, soruna düzenli bir çözüm."
+      }
+    ],
+    "date": "08.01.2026"
+  },
+  {
+    "word": "provisioner",
+    "pronunciation": "prıvijınır",
+    "type": "İsim",
+    "meaning": "tedarikçi",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The provisioner automatically sets up the server.",
+        "meaning": "Tedarikçi sunucuyu otomatik olarak kurar."
+      }
+    ],
+    "date": "08.01.2026"
+  }
+]

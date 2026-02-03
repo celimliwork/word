@@ -1,0 +1,1476 @@
+[
+  {
+    "word": "guests",
+    "pronunciation": "ges",
+    "type": "İsim",
+    "meaning": "misafirler",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We have guests coming for dinner tonight.",
+        "meaning": "Bu akşam yemeğe misafirler geliyor."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "gifts",
+    "pronunciation": "gifs",
+    "type": "İsim",
+    "meaning": "hediyeler",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "They brought gifts for everyone.",
+        "meaning": "Herkes için hediyeler getirdiler."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "distribute",
+    "pronunciation": "disçribyut",
+    "type": "Fiil",
+    "meaning": "dağıtmak",
+    "v2": {
+      "form": "distributed",
+      "pronunciation": "disçribyutıd"
+    },
+    "v3": {
+      "form": "distributed",
+      "pronunciation": "disçribyutıd"
+    },
+    "gerundInfinitive": "distributing",
+    "examples": [
+      {
+        "sentence": "We need to distribute the tasks among team members.",
+        "meaning": "Görevleri takım üyeleri arasında dağıtmamız gerekiyor."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "speak with",
+    "pronunciation": "spik wıdh",
+    "type": "Phrasal Verb",
+    "meaning": "konuşmak",
+    "v2": {
+      "form": "spoke with",
+      "pronunciation": "spouk wıdh"
+    },
+    "v3": {
+      "form": "spoken with",
+      "pronunciation": "spoukın wıdh"
+    },
+    "gerundInfinitive": "speaking with",
+    "examples": [
+      {
+        "sentence": "I need to speak with my manager about this.",
+        "meaning": "Bu konuda müdürümle konuşmam gerekiyor."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "talk to",
+    "pronunciation": "tok tu",
+    "type": "Phrasal Verb",
+    "meaning": "konuşmak",
+    "v2": {
+      "form": "talked to",
+      "pronunciation": "tokt tu"
+    },
+    "v3": {
+      "form": "talked to",
+      "pronunciation": "tokt tu"
+    },
+    "gerundInfinitive": "talking to",
+    "examples": [
+      {
+        "sentence": "Can I talk to you for a minute?",
+        "meaning": "Seninle bir dakika konuşabilir miyim?"
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "accelerate",
+    "pronunciation": "äkselıreyt",
+    "type": "Fiil",
+    "meaning": "hızlanmak, hızlandırmak",
+    "v2": {
+      "form": "accelerated",
+      "pronunciation": "äkselıreytıd"
+    },
+    "v3": {
+      "form": "accelerated",
+      "pronunciation": "äkselıreytıd"
+    },
+    "gerundInfinitive": "accelerating",
+    "examples": [
+      {
+        "sentence": "We need to accelerate the development process.",
+        "meaning": "Geliştirme sürecini hızlandırmamız gerekiyor."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "happen",
+    "pronunciation": "häpın",
+    "type": "Fiil",
+    "meaning": "gerçekleşmek, meydana gelmek",
+    "v2": {
+      "form": "happened",
+      "pronunciation": "häpınd"
+    },
+    "v3": {
+      "form": "happened",
+      "pronunciation": "häpınd"
+    },
+    "gerundInfinitive": "happening",
+    "examples": [
+      {
+        "sentence": "What happened to the server last night?",
+        "meaning": "Dün gece sunucuya ne oldu?"
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "wants",
+    "pronunciation": "vants",
+    "type": "Fiil",
+    "meaning": "istemek",
+    "v2": {
+      "form": "wanted",
+      "pronunciation": "vantıd"
+    },
+    "v3": {
+      "form": "wanted",
+      "pronunciation": "vantıd"
+    },
+    "gerundInfinitive": "wanting",
+    "examples": [
+      {
+        "sentence": "She wants to learn programming.",
+        "meaning": "Programlama öğrenmek istiyor."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "simplify",
+    "pronunciation": "simplifay",
+    "type": "Fiil",
+    "meaning": "basitleştirmek",
+    "v2": {
+      "form": "simplified",
+      "pronunciation": "simplifayd"
+    },
+    "v3": {
+      "form": "simplified",
+      "pronunciation": "simplifayd"
+    },
+    "gerundInfinitive": "simplifying",
+    "examples": [
+      {
+        "sentence": "Let's simplify this workflow.",
+        "meaning": "Bu iş akışını basitleştirelim."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "transform",
+    "pronunciation": "tränsform",
+    "type": "Fiil",
+    "meaning": "dönüştürmek, dönüşmek",
+    "v2": {
+      "form": "transformed",
+      "pronunciation": "tränsformd"
+    },
+    "v3": {
+      "form": "transformed",
+      "pronunciation": "tränsformd"
+    },
+    "gerundInfinitive": "transforming",
+    "examples": [
+      {
+        "sentence": "Cloud technology can transform your business.",
+        "meaning": "Bulut teknolojisi işinizi dönüştürebilir."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "interfere",
+    "pronunciation": "intırfiır",
+    "type": "Fiil",
+    "meaning": "müdahale etmek, karışmak",
+    "v2": {
+      "form": "interfered",
+      "pronunciation": "intırfiırd"
+    },
+    "v3": {
+      "form": "interfered",
+      "pronunciation": "intırfiırd"
+    },
+    "gerundInfinitive": "interfering",
+    "examples": [
+      {
+        "sentence": "Don't interfere with the automated process.",
+        "meaning": "Otomatik sürece müdahale etme."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "convince",
+    "pronunciation": "kınvins",
+    "type": "Fiil",
+    "meaning": "ikna etmek",
+    "v2": {
+      "form": "convinced",
+      "pronunciation": "kınvinst"
+    },
+    "v3": {
+      "form": "convinced",
+      "pronunciation": "kınvinst"
+    },
+    "gerundInfinitive": "convincing",
+    "examples": [
+      {
+        "sentence": "I need to convince my boss to approve the budget.",
+        "meaning": "Patronumu bütçeyi onaylaması için ikna etmem gerekiyor."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "realize",
+    "pronunciation": "riılayz",
+    "type": "Fiil",
+    "meaning": "fark etmek",
+    "v2": {
+      "form": "realized",
+      "pronunciation": "riılayzd"
+    },
+    "v3": {
+      "form": "realized",
+      "pronunciation": "riılayzd"
+    },
+    "gerundInfinitive": "realizing",
+    "examples": [
+      {
+        "sentence": "I didn't realize the deadline was today.",
+        "meaning": "Son tarihin bugün olduğunu fark etmedim."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "disturb",
+    "pronunciation": "distörb",
+    "type": "Fiil",
+    "meaning": "rahatsız etmek",
+    "v2": {
+      "form": "disturbed",
+      "pronunciation": "distörbd"
+    },
+    "v3": {
+      "form": "disturbed",
+      "pronunciation": "distörbd"
+    },
+    "gerundInfinitive": "disturbing",
+    "examples": [
+      {
+        "sentence": "Please don't disturb me while I'm working.",
+        "meaning": "Lütfen çalışırken beni rahatsız etme."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "be disturbed",
+    "pronunciation": "bi distörbd",
+    "type": "İfade",
+    "meaning": "rahatsız olmak (edilmek)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I was disturbed by the noise.",
+        "meaning": "Gürültüden rahatsız oldum."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "devil",
+    "pronunciation": "devıl",
+    "type": "İsim",
+    "meaning": "şeytan",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The devil is in the details.",
+        "meaning": "Şeytan ayrıntıda gizlidir."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "produce",
+    "pronunciation": "prıdyus",
+    "type": "Fiil",
+    "meaning": "üretmek",
+    "v2": {
+      "form": "produced",
+      "pronunciation": "prıdyust"
+    },
+    "v3": {
+      "form": "produced",
+      "pronunciation": "prıdyust"
+    },
+    "gerundInfinitive": "producing",
+    "examples": [
+      {
+        "sentence": "This factory produces electronic components.",
+        "meaning": "Bu fabrika elektronik parçalar üretiyor."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "scam",
+    "pronunciation": "skäm",
+    "type": "Fiil/İsim",
+    "meaning": "dolandırmak",
+    "v2": {
+      "form": "scammed",
+      "pronunciation": "skämd"
+    },
+    "v3": {
+      "form": "scammed",
+      "pronunciation": "skämd"
+    },
+    "gerundInfinitive": "scamming",
+    "examples": [
+      {
+        "sentence": "Be careful not to get scammed online.",
+        "meaning": "İnternette dolandırılmamaya dikkat et."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "offer",
+    "pronunciation": "ofır",
+    "type": "Fiil/İsim",
+    "meaning": "teklif sunmak, sunum sunmak",
+    "v2": {
+      "form": "offered",
+      "pronunciation": "ofırd"
+    },
+    "v3": {
+      "form": "offered",
+      "pronunciation": "ofırd"
+    },
+    "gerundInfinitive": "offering",
+    "examples": [
+      {
+        "sentence": "They offered us a great deal.",
+        "meaning": "Bize harika bir teklif sundular."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "propose",
+    "pronunciation": "prıpouz",
+    "type": "Fiil",
+    "meaning": "teklif etmek",
+    "v2": {
+      "form": "proposed",
+      "pronunciation": "prıpouzd"
+    },
+    "v3": {
+      "form": "proposed",
+      "pronunciation": "prıpouzd"
+    },
+    "gerundInfinitive": "proposing",
+    "examples": [
+      {
+        "sentence": "I propose we start the meeting at 10 AM.",
+        "meaning": "Toplantıyı sabah 10'da başlatmayı teklif ediyorum."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "headman",
+    "pronunciation": "hedmän",
+    "type": "İsim",
+    "meaning": "muhtar",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The headman of the village organized the meeting.",
+        "meaning": "Köyün muhtarı toplantıyı düzenledi."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "proposal",
+    "pronunciation": "prıpouzıl",
+    "type": "İsim",
+    "meaning": "teklif",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We submitted a proposal for the new project.",
+        "meaning": "Yeni proje için bir teklif sunduk."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "evaluation",
+    "pronunciation": "ivalyueyşın",
+    "type": "İsim",
+    "meaning": "değerlendirme",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The performance evaluation will be next week.",
+        "meaning": "Performans değerlendirmesi gelecek hafta olacak."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "evaluate",
+    "pronunciation": "ivalyueyt",
+    "type": "Fiil",
+    "meaning": "değerlendirmek",
+    "v2": {
+      "form": "evaluated",
+      "pronunciation": "ivalyueytıd"
+    },
+    "v3": {
+      "form": "evaluated",
+      "pronunciation": "ivalyueytıd"
+    },
+    "gerundInfinitive": "evaluating",
+    "examples": [
+      {
+        "sentence": "We need to evaluate all possible solutions.",
+        "meaning": "Tüm olası çözümleri değerlendirmemiz gerekiyor."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "sound",
+    "pronunciation": "saund",
+    "type": "Fiil",
+    "meaning": "kulağa ... gibi gelmek",
+    "v2": {
+      "form": "sounded",
+      "pronunciation": "saundıd"
+    },
+    "v3": {
+      "form": "sounded",
+      "pronunciation": "saundıd"
+    },
+    "gerundInfinitive": "sounding",
+    "examples": [
+      {
+        "sentence": "That sounds like a good idea.",
+        "meaning": "Kulağa iyi bir fikir gibi geliyor."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "announce",
+    "pronunciation": "ınauns",
+    "type": "Fiil",
+    "meaning": "duyurmak",
+    "v2": {
+      "form": "announced",
+      "pronunciation": "ınaunst"
+    },
+    "v3": {
+      "form": "announced",
+      "pronunciation": "ınaunst"
+    },
+    "gerundInfinitive": "announcing",
+    "examples": [
+      {
+        "sentence": "They will announce the results tomorrow.",
+        "meaning": "Sonuçları yarın duyuracaklar."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "keep",
+    "pronunciation": "kip",
+    "type": "Fiil",
+    "meaning": "bir şeyi yapmayı devam ettirmek",
+    "v2": {
+      "form": "kept",
+      "pronunciation": "kept"
+    },
+    "v3": {
+      "form": "kept",
+      "pronunciation": "kept"
+    },
+    "gerundInfinitive": "keeping",
+    "examples": [
+      {
+        "sentence": "Keep working on the project until it's finished.",
+        "meaning": "Proje bitene kadar üzerinde çalışmaya devam et."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "doubt",
+    "pronunciation": "daut",
+    "type": "Fiil/İsim",
+    "meaning": "şüphelenmek",
+    "v2": {
+      "form": "doubted",
+      "pronunciation": "dautıd"
+    },
+    "v3": {
+      "form": "doubted",
+      "pronunciation": "dautıd"
+    },
+    "gerundInfinitive": "doubting",
+    "examples": [
+      {
+        "sentence": "I doubt this approach will work.",
+        "meaning": "Bu yaklaşımın işe yarayacağından şüpheliyim."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "determine",
+    "pronunciation": "dıtörmın",
+    "type": "Fiil",
+    "meaning": "belirlemek, saptamak",
+    "v2": {
+      "form": "determined",
+      "pronunciation": "dıtörmınd"
+    },
+    "v3": {
+      "form": "determined",
+      "pronunciation": "dıtörmınd"
+    },
+    "gerundInfinitive": "determining",
+    "examples": [
+      {
+        "sentence": "We need to determine the root cause of the issue.",
+        "meaning": "Sorunun kök nedenini belirlememiz gerekiyor."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "inform",
+    "pronunciation": "inform",
+    "type": "Fiil",
+    "meaning": "haber vermek, bilgi vermek",
+    "v2": {
+      "form": "informed",
+      "pronunciation": "informd"
+    },
+    "v3": {
+      "form": "informed",
+      "pronunciation": "informd"
+    },
+    "gerundInfinitive": "informing",
+    "examples": [
+      {
+        "sentence": "Please inform me when the task is completed.",
+        "meaning": "Görev tamamlandığında lütfen bana haber verin."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "marketing",
+    "pronunciation": "markıting",
+    "type": "İsim",
+    "meaning": "pazarlama",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Our marketing strategy needs improvement.",
+        "meaning": "Pazarlama stratejimizin iyileştirilmesi gerekiyor."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "seller",
+    "pronunciation": "selır",
+    "type": "İsim",
+    "meaning": "satıcı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The seller offered a discount.",
+        "meaning": "Satıcı bir indirim teklif etti."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "consultant",
+    "pronunciation": "kınsaltınt",
+    "type": "İsim",
+    "meaning": "danışman",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We hired a consultant to help with the project.",
+        "meaning": "Projeye yardımcı olması için bir danışman tuttuk."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "consultancy",
+    "pronunciation": "kınsaltınsi",
+    "type": "İsim",
+    "meaning": "danışmanlık",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The consultancy firm provided excellent advice.",
+        "meaning": "Danışmanlık firması mükemmel tavsiyeler verdi."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "ignorant",
+    "pronunciation": "ignırınt",
+    "type": "Sıfat",
+    "meaning": "cahil",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Don't be ignorant about cybersecurity.",
+        "meaning": "Siber güvenlik konusunda cahil olma."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "ignorance",
+    "pronunciation": "ignırıns",
+    "type": "İsim",
+    "meaning": "cehalet",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Ignorance is not an excuse for poor security.",
+        "meaning": "Cehalet, zayıf güvenlik için bir mazeret değildir."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "arrogant",
+    "pronunciation": "ärıgınt",
+    "type": "Sıfat",
+    "meaning": "kibirli",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "His arrogant attitude annoyed the team.",
+        "meaning": "Onun kibirli tavrı takımı rahatsız etti."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "arrogance",
+    "pronunciation": "ärıgıns",
+    "type": "İsim",
+    "meaning": "kibir",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Arrogance can lead to mistakes.",
+        "meaning": "Kibir hatalara yol açabilir."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "confident",
+    "pronunciation": "kanfıdınt",
+    "type": "Sıfat",
+    "meaning": "özgüvenli",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She is confident in her abilities.",
+        "meaning": "Yeteneklerine karşı özgüvenli."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "confidence",
+    "pronunciation": "kanfıdıns",
+    "type": "İsim",
+    "meaning": "özgüven",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Building confidence takes time and practice.",
+        "meaning": "Özgüven oluşturmak zaman ve pratik gerektirir."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "president",
+    "pronunciation": "prezıdınt",
+    "type": "İsim",
+    "meaning": "başkan",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The president of the company announced new policies.",
+        "meaning": "Şirketin başkanı yeni politikaları duyurdu."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "presidency",
+    "pronunciation": "prezıdınsi",
+    "type": "İsim",
+    "meaning": "başkanlık",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He was elected to the presidency last year.",
+        "meaning": "Geçen yıl başkanlığa seçildi."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "gain",
+    "pronunciation": "geyn",
+    "type": "Fiil/İsim",
+    "meaning": "kazanmak",
+    "v2": {
+      "form": "gained",
+      "pronunciation": "geynd"
+    },
+    "v3": {
+      "form": "gained",
+      "pronunciation": "geynd"
+    },
+    "gerundInfinitive": "gaining",
+    "examples": [
+      {
+        "sentence": "You can gain experience by working on real projects.",
+        "meaning": "Gerçek projeler üzerinde çalışarak deneyim kazanabilirsiniz."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "win",
+    "pronunciation": "win",
+    "type": "Fiil",
+    "meaning": "rekabeti kazanmak",
+    "v2": {
+      "form": "won",
+      "pronunciation": "wan"
+    },
+    "v3": {
+      "form": "won",
+      "pronunciation": "wan"
+    },
+    "gerundInfinitive": "winning",
+    "examples": [
+      {
+        "sentence": "Our team won the competition.",
+        "meaning": "Takımımız rekabeti kazandı."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "spread",
+    "pronunciation": "spred",
+    "type": "Fiil",
+    "meaning": "yaymak, yayılmak, ekmeğe sürmek",
+    "v2": {
+      "form": "spread",
+      "pronunciation": "spred"
+    },
+    "v3": {
+      "form": "spread",
+      "pronunciation": "spred"
+    },
+    "gerundInfinitive": "spreading",
+    "examples": [
+      {
+        "sentence": "The virus spread quickly across the network.",
+        "meaning": "Virüs ağ üzerinde hızla yayıldı."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "take away",
+    "pronunciation": "teyk ıwey",
+    "type": "Phrasal Verb",
+    "meaning": "götürmek",
+    "v2": {
+      "form": "took away",
+      "pronunciation": "tuk ıwey"
+    },
+    "v3": {
+      "form": "taken away",
+      "pronunciation": "teykın ıwey"
+    },
+    "gerundInfinitive": "taking away",
+    "examples": [
+      {
+        "sentence": "Please take away these old files.",
+        "meaning": "Lütfen bu eski dosyaları götürün."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "kidnap",
+    "pronunciation": "kidnäp",
+    "type": "Fiil",
+    "meaning": "kaçırmak (birini)",
+    "v2": {
+      "form": "kidnapped",
+      "pronunciation": "kidnäpt"
+    },
+    "v3": {
+      "form": "kidnapped",
+      "pronunciation": "kidnäpt"
+    },
+    "gerundInfinitive": "kidnapping",
+    "examples": [
+      {
+        "sentence": "The criminals attempted to kidnap the executive.",
+        "meaning": "Suçlular yöneticiyi kaçırmaya çalıştı."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "escape",
+    "pronunciation": "iskeyp",
+    "type": "Fiil",
+    "meaning": "kaçmak",
+    "v2": {
+      "form": "escaped",
+      "pronunciation": "iskeypt"
+    },
+    "v3": {
+      "form": "escaped",
+      "pronunciation": "iskeypt"
+    },
+    "gerundInfinitive": "escaping",
+    "examples": [
+      {
+        "sentence": "The data managed to escape corruption.",
+        "meaning": "Veri bozulmadan kaçmayı başardı."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "run away",
+    "pronunciation": "ran ıwey",
+    "type": "Phrasal Verb",
+    "meaning": "kaçmak",
+    "v2": {
+      "form": "ran away",
+      "pronunciation": "ran ıwey"
+    },
+    "v3": {
+      "form": "run away",
+      "pronunciation": "ran ıwey"
+    },
+    "gerundInfinitive": "running away",
+    "examples": [
+      {
+        "sentence": "Don't run away from difficult problems.",
+        "meaning": "Zor problemlerden kaçma."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "take",
+    "pronunciation": "teyk",
+    "type": "Fiil",
+    "meaning": "almak, götürmek",
+    "v2": {
+      "form": "took",
+      "pronunciation": "tuk"
+    },
+    "v3": {
+      "form": "taken",
+      "pronunciation": "teykın"
+    },
+    "gerundInfinitive": "taking",
+    "examples": [
+      {
+        "sentence": "Take a backup before making changes.",
+        "meaning": "Değişiklik yapmadan önce bir yedek alın."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "prevent",
+    "pronunciation": "privent",
+    "type": "Fiil",
+    "meaning": "engellemek",
+    "v2": {
+      "form": "prevented",
+      "pronunciation": "priventıd"
+    },
+    "v3": {
+      "form": "prevented",
+      "pronunciation": "priventıd"
+    },
+    "gerundInfinitive": "preventing",
+    "examples": [
+      {
+        "sentence": "This firewall prevents unauthorized access.",
+        "meaning": "Bu güvenlik duvarı yetkisiz erişimi engelliyor."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "block",
+    "pronunciation": "blak",
+    "type": "Fiil",
+    "meaning": "engellemek",
+    "v2": {
+      "form": "blocked",
+      "pronunciation": "blakt"
+    },
+    "v3": {
+      "form": "blocked",
+      "pronunciation": "blakt"
+    },
+    "gerundInfinitive": "blocking",
+    "examples": [
+      {
+        "sentence": "The system blocked the malicious request.",
+        "meaning": "Sistem kötü niyetli isteği engelledi."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "sharing",
+    "pronunciation": "şering",
+    "type": "İsim",
+    "meaning": "paylaşım",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "File sharing is disabled for security reasons.",
+        "meaning": "Dosya paylaşımı güvenlik nedenleriyle devre dışı bırakıldı."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "admin",
+    "pronunciation": "ädmin",
+    "type": "İsim",
+    "meaning": "yetkili",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Only the admin can access this feature.",
+        "meaning": "Bu özelliğe sadece yetkili erişebilir."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "oil",
+    "pronunciation": "oyl",
+    "type": "İsim",
+    "meaning": "petrol",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Oil prices have increased significantly.",
+        "meaning": "Petrol fiyatları önemli ölçüde arttı."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "disease",
+    "pronunciation": "diziz",
+    "type": "İsim",
+    "meaning": "hastalık",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Early detection can help prevent the disease.",
+        "meaning": "Erken teşhis hastalığı önlemeye yardımcı olabilir."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "reaction",
+    "pronunciation": "riäkşın",
+    "type": "İsim",
+    "meaning": "tepki",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "What was their reaction to the proposal?",
+        "meaning": "Teklife tepkileri ne oldu?"
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "acne",
+    "pronunciation": "äkni",
+    "type": "İsim",
+    "meaning": "sivilce",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Stress can cause acne outbreaks.",
+        "meaning": "Stres sivilce patlamalarına neden olabilir."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "react",
+    "pronunciation": "riäkt",
+    "type": "Fiil",
+    "meaning": "tepki göstermek, vermek",
+    "v2": {
+      "form": "reacted",
+      "pronunciation": "riäktıd"
+    },
+    "v3": {
+      "form": "reacted",
+      "pronunciation": "riäktıd"
+    },
+    "gerundInfinitive": "reacting",
+    "examples": [
+      {
+        "sentence": "The system reacted immediately to the threat.",
+        "meaning": "Sistem tehdide hemen tepki gösterdi."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "traffic jam",
+    "pronunciation": "träfik cäm",
+    "type": "İsim",
+    "meaning": "trafik sıkışıklığı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "There's a traffic jam on the highway.",
+        "meaning": "Otoyolda trafik sıkışıklığı var."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "jam",
+    "pronunciation": "cäm",
+    "type": "Fiil/İsim",
+    "meaning": "sıkışıklık, sıkışmak, sıkıştırmak, reçel",
+    "v2": {
+      "form": "jammed",
+      "pronunciation": "cämd"
+    },
+    "v3": {
+      "form": "jammed",
+      "pronunciation": "cämd"
+    },
+    "gerundInfinitive": "jamming",
+    "examples": [
+      {
+        "sentence": "The printer is jammed again.",
+        "meaning": "Yazıcı yine sıkıştı."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "inflate",
+    "pronunciation": "infleyt",
+    "type": "Fiil",
+    "meaning": "şişirmek",
+    "v2": {
+      "form": "inflated",
+      "pronunciation": "infleytıd"
+    },
+    "v3": {
+      "form": "inflated",
+      "pronunciation": "infleytıd"
+    },
+    "gerundInfinitive": "inflating",
+    "examples": [
+      {
+        "sentence": "Don't inflate the numbers in your report.",
+        "meaning": "Raporunuzdaki sayıları şişirmeyin."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "gargle",
+    "pronunciation": "gargıl",
+    "type": "Fiil",
+    "meaning": "gargara yapmak",
+    "v2": {
+      "form": "gargled",
+      "pronunciation": "gargıld"
+    },
+    "v3": {
+      "form": "gargled",
+      "pronunciation": "gargıld"
+    },
+    "gerundInfinitive": "gargling",
+    "examples": [
+      {
+        "sentence": "Gargle with salt water for a sore throat.",
+        "meaning": "Boğaz ağrısı için tuzlu suyla gargara yapın."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "sell",
+    "pronunciation": "sel",
+    "type": "Fiil",
+    "meaning": "satmak",
+    "v2": {
+      "form": "sold",
+      "pronunciation": "sould"
+    },
+    "v3": {
+      "form": "sold",
+      "pronunciation": "sould"
+    },
+    "gerundInfinitive": "selling",
+    "examples": [
+      {
+        "sentence": "They sell cloud storage services.",
+        "meaning": "Bulut depolama hizmetleri satıyorlar."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "connect",
+    "pronunciation": "kınekt",
+    "type": "Fiil",
+    "meaning": "bağlanmak",
+    "v2": {
+      "form": "connected",
+      "pronunciation": "kınektıd"
+    },
+    "v3": {
+      "form": "connected",
+      "pronunciation": "kınektıd"
+    },
+    "gerundInfinitive": "connecting",
+    "examples": [
+      {
+        "sentence": "Please connect to the VPN before accessing the server.",
+        "meaning": "Sunucuya erişmeden önce lütfen VPN'e bağlanın."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "tie",
+    "pronunciation": "tay",
+    "type": "Fiil",
+    "meaning": "bağlamak",
+    "v2": {
+      "form": "tied",
+      "pronunciation": "tayd"
+    },
+    "v3": {
+      "form": "tied",
+      "pronunciation": "tayd"
+    },
+    "gerundInfinitive": "tying",
+    "examples": [
+      {
+        "sentence": "We need to tie these modules together.",
+        "meaning": "Bu modülleri birbirine bağlamamız gerekiyor."
+      }
+    ],
+    "date": "03.02.2026"
+  },
+  {
+    "word": "spend",
+    "pronunciation": "spend",
+    "type": "Fiil",
+    "meaning": "harcamak",
+    "v2": {
+      "form": "spent",
+      "pronunciation": "spent"
+    },
+    "v3": {
+      "form": "spent",
+      "pronunciation": "spent"
+    },
+    "gerundInfinitive": "spending",
+    "examples": [
+      {
+        "sentence": "We spent three hours debugging the code.",
+        "meaning": "Kodu hata ayıklamak için üç saat harcadık."
+      }
+    ],
+    "date": "03.02.2026"
+  }
+]

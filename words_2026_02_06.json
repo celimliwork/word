@@ -1,0 +1,596 @@
+[
+  {
+    "word": "networking",
+    "pronunciation": "netwörking",
+    "type": "İsim",
+    "meaning": "ağ oluşturma, bağlantı kurma",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Every industry has some way to facilitate networking within that industry.",
+        "meaning": "Her endüstrinin o endüstri içinde bağlantı kurmayı kolaylaştırma yolu vardır."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "colleague",
+    "pronunciation": "kalig",
+    "type": "İsim",
+    "meaning": "iş arkadaşı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "His colleagues became suspicious when he did not appear at work, since he was always punctual.",
+        "meaning": "İş arkadaşları işe gelmediğinde şüphelendi, çünkü o her zaman dakikti."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "experience",
+    "pronunciation": "ikspiıriıns",
+    "type": "İsim",
+    "meaning": "deneyim, tecrübe",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Do you have any previous experience of this type of work?",
+        "meaning": "Bu tür bir iş için önceden herhangi bir deneyiminiz var mı?"
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "habit",
+    "pronunciation": "häbit",
+    "type": "İsim",
+    "meaning": "alışkanlık",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I'm trying to break the habit of staying up too late.",
+        "meaning": "Çok geç kalma alışkanlığını kırmaya çalışıyorum."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "constantly",
+    "pronunciation": "kanstıntli",
+    "type": "Zarf",
+    "meaning": "sürekli olarak, devamlı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We are constantly looking for ways to improve our products.",
+        "meaning": "Ürünlerimizi geliştirmek için sürekli olarak yollar arıyoruz."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "necessarily",
+    "pronunciation": "nesıseriıli",
+    "type": "Zarf",
+    "meaning": "zorunlu olarak, elbette",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Servants necessarily had close contact with their employers.",
+        "meaning": "Hizmetçiler zorunlu olarak işverenleri ile yakın temas kurarlar."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "instead of",
+    "pronunciation": "insted ov",
+    "type": "Edat",
+    "meaning": "yerine",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Now I can walk to work instead of going by car.",
+        "meaning": "Şimdi işe araba ile gitmek yerine yürüyebilirim."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "exchange",
+    "pronunciation": "iksçeync",
+    "type": "İsim/Fiil",
+    "meaning": "değişim, takas",
+    "v2": {
+      "form": "exchanged",
+      "pronunciation": "iksçeyncd"
+    },
+    "v3": {
+      "form": "exchanged",
+      "pronunciation": "iksçeyncd"
+    },
+    "gerundInfinitive": "exchanging",
+    "examples": [
+      {
+        "sentence": "There were exchanges of goods between the two regions.",
+        "meaning": "İki bölge arasında mal değişimleri vardı."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "relation",
+    "pronunciation": "rileyşın",
+    "type": "İsim",
+    "meaning": "ilişki",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "There are close relations among firms and their suppliers.",
+        "meaning": "Firmalar ve onların tedarikçileri arasında yakın ilişkiler vardır."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "conversation",
+    "pronunciation": "kanvırseyşın",
+    "type": "İsim",
+    "meaning": "konuşma, sohbet",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I overheard a conversation between two colleagues.",
+        "meaning": "İki iş arkadaşı arasında bir konuşmaya kulak misafiri oldum."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "recent",
+    "pronunciation": "risınt",
+    "type": "Sıfat",
+    "meaning": "son, yakın zamanda olan",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "There have been many changes in recent years.",
+        "meaning": "Son yıllarda birçok değişiklik oldu."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "client",
+    "pronunciation": "klayınt",
+    "type": "İsim",
+    "meaning": "müşteri",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The company needs to focus on its biggest clients.",
+        "meaning": "Şirketin en büyük müşterilerine odaklanması gerekiyor."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "provide",
+    "pronunciation": "prıvayd",
+    "type": "Fiil",
+    "meaning": "sağlamak, temin etmek",
+    "v2": {
+      "form": "provided",
+      "pronunciation": "prıvaydıd"
+    },
+    "v3": {
+      "form": "provided",
+      "pronunciation": "prıvaydıd"
+    },
+    "gerundInfinitive": "providing",
+    "examples": [
+      {
+        "sentence": "The organization provides food and shelter for refugees.",
+        "meaning": "Organizasyon mülteciler için yiyecek ve barınak sağlamaktadır."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "interest",
+    "pronunciation": "intrıst",
+    "type": "İsim/Fiil",
+    "meaning": "ilgi",
+    "v2": {
+      "form": "interested",
+      "pronunciation": "intrıstıd"
+    },
+    "v3": {
+      "form": "interested",
+      "pronunciation": "intrıstıd"
+    },
+    "gerundInfinitive": "interesting",
+    "examples": [
+      {
+        "sentence": "The case has attracted the interest of the public and media.",
+        "meaning": "Olay halkın ve medyanın ilgisini çekti."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "industry",
+    "pronunciation": "indıstri",
+    "type": "İsim",
+    "meaning": "endüstri, sanayi",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The banks lend money to commerce and industry.",
+        "meaning": "Bankalar ticaret ve endüstriye borç para verirler."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+   {
+    "word": "pricey",
+    "pronunciation": "praysi",
+    "type": "Sıfat",
+    "meaning": "pahalı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The restaurant is a bit pricey, but the food is excellent.",
+        "meaning": "Restoran biraz pahalı, ama yemekler mükemmel."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "wild",
+    "pronunciation": "vayld",
+    "type": "Sıfat",
+    "meaning": "vahşi",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "They saw wild animals in the forest.",
+        "meaning": "Ormanda vahşi hayvanlar gördüler."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "wilderness",
+    "pronunciation": "vildırnıs",
+    "type": "İsim",
+    "meaning": "vahşi doğa",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "They spent a week camping in the wilderness.",
+        "meaning": "Vahşi doğada kamp yaparak bir hafta geçirdiler."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "backpack",
+    "pronunciation": "bäkpäk",
+    "type": "İsim/Fiil",
+    "meaning": "sırt çantası",
+    "v2": {
+      "form": "backpacked",
+      "pronunciation": "bäkpäkt"
+    },
+    "v3": {
+      "form": "backpacked",
+      "pronunciation": "bäkpäkt"
+    },
+    "gerundInfinitive": "backpacking",
+    "examples": [
+      {
+        "sentence": "We backpacked through Europe last summer.",
+        "meaning": "Geçen yaz Avrupa'da sırt çantasıyla seyahat ettik."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "thumbnail",
+    "pronunciation": "thamneyl",
+    "type": "İsim",
+    "meaning": "küçük resim",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Click on the thumbnail to view the full image.",
+        "meaning": "Tam resmi görüntülemek için küçük resme tıklayın."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "facilitate",
+    "pronunciation": "fısilitеyt",
+    "type": "Fiil",
+    "meaning": "kolaylaştırmak, hafifletmek",
+    "v2": {
+      "form": "facilitated",
+      "pronunciation": "fısilitеytıd"
+    },
+    "v3": {
+      "form": "facilitated",
+      "pronunciation": "fısilitеytıd"
+    },
+    "gerundInfinitive": "facilitating",
+    "examples": [
+      {
+        "sentence": "This tool facilitates the development process.",
+        "meaning": "Bu araç geliştirme sürecini kolaylaştırıyor."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "networking",
+    "pronunciation": "netwörking",
+    "type": "İsim",
+    "meaning": "ağ oluşturma, bağlantı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Networking is important for career development.",
+        "meaning": "Ağ oluşturma kariyer gelişimi için önemlidir."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "rely on",
+    "pronunciation": "rilay an",
+    "type": "Phrasal Verb",
+    "meaning": "güvenmek",
+    "v2": {
+      "form": "relied on",
+      "pronunciation": "rilayd an"
+    },
+    "v3": {
+      "form": "relied on",
+      "pronunciation": "rilayd an"
+    },
+    "gerundInfinitive": "relying on",
+    "examples": [
+      {
+        "sentence": "You can rely on me to complete the task.",
+        "meaning": "Görevi tamamlamak için bana güvenebilirsin."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "scaffold",
+    "pronunciation": "skäfould",
+    "type": "İsim",
+    "meaning": "iskele",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Workers are building a scaffold around the building.",
+        "meaning": "İşçiler binanın etrafında bir iskele kuruyor."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "colleague",
+    "pronunciation": "kalig",
+    "type": "İsim",
+    "meaning": "çalışma arkadaşı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "My colleague helped me with the project.",
+        "meaning": "Çalışma arkadaşım projede bana yardım etti."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "punctual",
+    "pronunciation": "pankçuıl",
+    "type": "Sıfat",
+    "meaning": "dakik",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She is always punctual for meetings.",
+        "meaning": "Toplantılara her zaman dakiktir."
+      }
+    ],
+    "date": "06.02.2026"
+  },
+  {
+    "word": "since",
+    "pronunciation": "sins",
+    "type": "Edat/Bağlaç",
+    "meaning": "çünkü",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I didn't go to work since I was feeling sick.",
+        "meaning": "Hasta hissettiğim için işe gitmedim."
+      }
+    ],
+    "date": "06.02.2026"
+  }
+]

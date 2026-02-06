@@ -1,76 +1,12 @@
-guests = misafirler (telaffuz: ges)
-gifts = hediyeler (telaffuz: gifs)
-distribute = dağıtmak (telaffuz: disçribyut)
-speak with = konuşmak
-talk to = konuşmak
-accelerate = hızlanmak, hızlandırmak
-happen = gerçekleşmek, meydana gelmek
-wants =istemek vans
-simplify = basitleştirmek
-transform = dönüştürmek, dönüşmek
-interfere = müdahale etmek, karışmak (telaffuz: inırfiır)
-convince = ikna etmek
-realize = fark etmek
-disturb = rahatsız etmek
-be disturbed = rahatsız olmak (edilmek)
-devil = şeytan
-produce = üretmek
-scam = dolandırmak
-offer = teklif sunmak, sunum sunmak
-propose = teklif etmek
-headman = muhtar
-proposal = teklif
-evaluation = değerlendirme
-evaluate = değerlendirmek (telaffuz: ivalyueyt)
-sound = kulağa ... gibi gelmek
-announce = duyurmak (telaffuz: enauns)
-keep = birşeyi yapmayı devam ettirmek
-doubt = şüphelenmek
-determine = belirlemek, saptamak (telaffuz: dıtörmın)
-inform = haber vermek, bilgi vermek
-marketing = pazarlama
-seller = satıcı
-consultant = danışman (telaffuz: kınsaltınt)
-consultancy = danışmanlık
-ignorant = cahil
-ignorance = cehalet
-arrogant = kibirli
-arrogance = kibir
-confident = özgüvenli
-confidence = özgüven
-president = başkan
-presidency = başkanlık
-gain = kazanmak
-win = rekabeti kazanmak
-spread = yaymak, yayılmak, ekmeğe sürmek
-take away = götürmek
-kidnap = kaçırmak (birini)
-escape = kaçmak
-run away = kaçmak
-take (took, taken) = almak, götürmek
-prevent = engellemek
-block = engellemek
-sharing = paylaşım
-admin = yetkili
-oil = petrol
-disease = hastalık
-reaction = tepki
-acne = sivilce
-react = tepki göstermek, vermek
-traffic jam = trafik sıkışıklığı
-jam = sıkışıklık, sıkışmak, sıkıştırmak, reçel
-produce = üretmek (telaffuz: prıdyus)
-inflate = şişirmek
-gargle = gargara yapmak (telaffuz: gargıl)
-sell = satmak
-connect = bağlanmak
-tie = bağlamak
-spend = harcamak
-
-
-
-
-
-
-
-
+pricey=pahalı
+vilder=vahşi
+vilderness=vahşi doğa
+backpacked=sırt çantası
+thumbnail=küçük resim
+facilitate=kolaylaştırmak,hafifletmek
+networking=bağlantı
+rely on= güvenmek
+scaffold=iskele
+colleague=çalışma arkadaşı
+punctual=dakik
+since=çünkü

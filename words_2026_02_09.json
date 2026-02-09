@@ -1,0 +1,662 @@
+[
+  {
+    "word": "log on",
+    "pronunciation": "log an",
+    "type": "Phrasal Verb",
+    "meaning": "sisteme giriş yapmak",
+    "v2": {
+      "form": "logged on",
+      "pronunciation": "logd an"
+    },
+    "v3": {
+      "form": "logged on",
+      "pronunciation": "logd an"
+    },
+    "gerundInfinitive": "logging on",
+    "examples": [
+      {
+        "sentence": "Please log on to the system to access your files.",
+        "meaning": "Dosyalarınıza erişmek için lütfen sisteme giriş yapın."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "chill out",
+    "pronunciation": "çil aut",
+    "type": "Phrasal Verb",
+    "meaning": "rahatlamak, takılmak",
+    "v2": {
+      "form": "chilled out",
+      "pronunciation": "çild aut"
+    },
+    "v3": {
+      "form": "chilled out",
+      "pronunciation": "çild aut"
+    },
+    "gerundInfinitive": "chilling out",
+    "examples": [
+      {
+        "sentence": "Let's chill out this weekend and watch some movies.",
+        "meaning": "Bu hafta sonu rahat takılalım ve film izleyelim."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "run into",
+    "pronunciation": "ran intu",
+    "type": "Phrasal Verb",
+    "meaning": "karşılaşmak (bir sorunla)",
+    "v2": {
+      "form": "ran into",
+      "pronunciation": "ran intu"
+    },
+    "v3": {
+      "form": "run into",
+      "pronunciation": "ran intu"
+    },
+    "gerundInfinitive": "running into",
+    "examples": [
+      {
+        "sentence": "We ran into some technical issues during deployment.",
+        "meaning": "Dağıtım sırasında bazı teknik sorunlarla karşılaştık."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "catch up on",
+    "pronunciation": "käç ap an",
+    "type": "Phrasal Verb",
+    "meaning": "tamamlamak",
+    "v2": {
+      "form": "caught up on",
+      "pronunciation": "kot ap an"
+    },
+    "v3": {
+      "form": "caught up on",
+      "pronunciation": "kot ap an"
+    },
+    "gerundInfinitive": "catching up on",
+    "examples": [
+      {
+        "sentence": "I need to catch up on some work this weekend.",
+        "meaning": "Bu hafta sonu bazı işleri tamamlamam gerekiyor."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "sort out",
+    "pronunciation": "sort aut",
+    "type": "Phrasal Verb",
+    "meaning": "çözmek, halletmek",
+    "v2": {
+      "form": "sorted out",
+      "pronunciation": "sortıd aut"
+    },
+    "v3": {
+      "form": "sorted out",
+      "pronunciation": "sortıd aut"
+    },
+    "gerundInfinitive": "sorting out",
+    "examples": [
+      {
+        "sentence": "We need to sort out this bug before the release.",
+        "meaning": "Yayından önce bu hatayı halletmemiz gerekiyor."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "go over",
+    "pronunciation": "gou ouvır",
+    "type": "Phrasal Verb",
+    "meaning": "gözden geçirmek",
+    "v2": {
+      "form": "went over",
+      "pronunciation": "went ouvır"
+    },
+    "v3": {
+      "form": "gone over",
+      "pronunciation": "gan ouvır"
+    },
+    "gerundInfinitive": "going over",
+    "examples": [
+      {
+        "sentence": "Let's go over the code one more time.",
+        "meaning": "Kodu bir kez daha gözden geçirelim."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "carry on",
+    "pronunciation": "käri an",
+    "type": "Phrasal Verb",
+    "meaning": "devam etmek",
+    "v2": {
+      "form": "carried on",
+      "pronunciation": "kärid an"
+    },
+    "v3": {
+      "form": "carried on",
+      "pronunciation": "kärid an"
+    },
+    "gerundInfinitive": "carrying on",
+    "examples": [
+      {
+        "sentence": "Please carry on with your work.",
+        "meaning": "Lütfen işinize devam edin."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "knock out",
+    "pronunciation": "nak aut",
+    "type": "Phrasal Verb",
+    "meaning": "hızlıca halletmek, aradan çıkarmak",
+    "v2": {
+      "form": "knocked out",
+      "pronunciation": "nakt aut"
+    },
+    "v3": {
+      "form": "knocked out",
+      "pronunciation": "nakt aut"
+    },
+    "gerundInfinitive": "knocking out",
+    "examples": [
+      {
+        "sentence": "I can knock out this task in an hour.",
+        "meaning": "Bu görevi bir saatte hızlıca halledebilirim."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "wrap up",
+    "pronunciation": "räp ap",
+    "type": "Phrasal Verb",
+    "meaning": "bitirmek, sonuçlandırmak",
+    "v2": {
+      "form": "wrapped up",
+      "pronunciation": "räpt ap"
+    },
+    "v3": {
+      "form": "wrapped up",
+      "pronunciation": "räpt ap"
+    },
+    "gerundInfinitive": "wrapping up",
+    "examples": [
+      {
+        "sentence": "Let's wrap up this meeting and continue tomorrow.",
+        "meaning": "Bu toplantıyı bitirelim ve yarın devam edelim."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "burn out",
+    "pronunciation": "börn aut",
+    "type": "Phrasal Verb",
+    "meaning": "tükenmek",
+    "v2": {
+      "form": "burned out / burnt out",
+      "pronunciation": "börnd aut / börnt aut"
+    },
+    "v3": {
+      "form": "burned out / burnt out",
+      "pronunciation": "börnd aut / börnt aut"
+    },
+    "gerundInfinitive": "burning out",
+    "examples": [
+      {
+        "sentence": "If you work too hard, you'll burn out.",
+        "meaning": "Çok fazla çalışırsan tükenirsin."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "sync up",
+    "pronunciation": "sink ap",
+    "type": "Phrasal Verb",
+    "meaning": "senkronize olmak, biriyle bilgi paylaşmak",
+    "v2": {
+      "form": "synced up",
+      "pronunciation": "sinkt ap"
+    },
+    "v3": {
+      "form": "synced up",
+      "pronunciation": "sinkt ap"
+    },
+    "gerundInfinitive": "syncing up",
+    "examples": [
+      {
+        "sentence": "Let's sync up tomorrow to discuss the project status.",
+        "meaning": "Proje durumunu konuşmak için yarın bilgi paylaşalım."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "crop up",
+    "pronunciation": "krap ap",
+    "type": "Phrasal Verb",
+    "meaning": "ortaya çıkmak",
+    "v2": {
+      "form": "cropped up",
+      "pronunciation": "krapt ap"
+    },
+    "v3": {
+      "form": "cropped up",
+      "pronunciation": "krapt ap"
+    },
+    "gerundInfinitive": "cropping up",
+    "examples": [
+      {
+        "sentence": "Some unexpected issues cropped up during testing.",
+        "meaning": "Test sırasında bazı beklenmedik sorunlar ortaya çıktı."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "hike",
+    "pronunciation": "hayk",
+    "type": "İsim/Fiil",
+    "meaning": "yürüyüş",
+    "v2": {
+      "form": "hiked",
+      "pronunciation": "haykt"
+    },
+    "v3": {
+      "form": "hiked",
+      "pronunciation": "haykt"
+    },
+    "gerundInfinitive": "hiking",
+    "examples": [
+      {
+        "sentence": "We went for a hike in the mountains.",
+        "meaning": "Dağlarda yürüyüşe çıktık."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "sift through",
+    "pronunciation": "sift thru",
+    "type": "Phrasal Verb",
+    "meaning": "ayıklamak",
+    "v2": {
+      "form": "sifted through",
+      "pronunciation": "siftıd thru"
+    },
+    "v3": {
+      "form": "sifted through",
+      "pronunciation": "siftıd thru"
+    },
+    "gerundInfinitive": "sifting through",
+    "examples": [
+      {
+        "sentence": "I need to sift through all these logs to find the error.",
+        "meaning": "Hatayı bulmak için tüm bu logları ayıklamam gerekiyor."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "flesh out",
+    "pronunciation": "fleş aut",
+    "type": "Phrasal Verb",
+    "meaning": "detaylandırmak",
+    "v2": {
+      "form": "fleshed out",
+      "pronunciation": "fleşt aut"
+    },
+    "v3": {
+      "form": "fleshed out",
+      "pronunciation": "fleşt aut"
+    },
+    "gerundInfinitive": "fleshing out",
+    "examples": [
+      {
+        "sentence": "We need to flesh out this proposal with more details.",
+        "meaning": "Bu teklifi daha fazla detayla geliştirmemiz gerekiyor."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "wind up",
+    "pronunciation": "vaynd ap",
+    "type": "Phrasal Verb",
+    "meaning": "sonuçlanmak, yaparken bulmak",
+    "v2": {
+      "form": "wound up",
+      "pronunciation": "vaund ap"
+    },
+    "v3": {
+      "form": "wound up",
+      "pronunciation": "vaund ap"
+    },
+    "gerundInfinitive": "winding up",
+    "examples": [
+      {
+        "sentence": "We wound up spending more time on debugging than expected.",
+        "meaning": "Beklenenden daha fazla zamanı hata ayıklama yaparken bulduk."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "reach out",
+    "pronunciation": "riç aut",
+    "type": "Phrasal Verb",
+    "meaning": "iletişime geçmek",
+    "v2": {
+      "form": "reached out",
+      "pronunciation": "riçt aut"
+    },
+    "v3": {
+      "form": "reached out",
+      "pronunciation": "riçt aut"
+    },
+    "gerundInfinitive": "reaching out",
+    "examples": [
+      {
+        "sentence": "Feel free to reach out if you have any questions.",
+        "meaning": "Herhangi bir sorunuz varsa iletişime geçmekten çekinmeyin."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "regarding",
+    "pronunciation": "rigarding",
+    "type": "Edat",
+    "meaning": "-e gelince",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I have a question regarding the new policy.",
+        "meaning": "Yeni politikaya gelince bir sorum var."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "regard",
+    "pronunciation": "rigard",
+    "type": "Fiil/İsim",
+    "meaning": "saymak, hesaba katmak",
+    "v2": {
+      "form": "regarded",
+      "pronunciation": "rigardıd"
+    },
+    "v3": {
+      "form": "regarded",
+      "pronunciation": "rigardıd"
+    },
+    "gerundInfinitive": "regarding",
+    "examples": [
+      {
+        "sentence": "He is highly regarded in the tech community.",
+        "meaning": "Teknoloji topluluğunda yüksek değerde sayılıyor."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "lamb",
+    "pronunciation": "läm",
+    "type": "İsim",
+    "meaning": "kuzu",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We had lamb for dinner last night.",
+        "meaning": "Dün akşam yemeğinde kuzu yedik."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "look for",
+    "pronunciation": "luk for",
+    "type": "Phrasal Verb",
+    "meaning": "aramak",
+    "v2": {
+      "form": "looked for",
+      "pronunciation": "lukt for"
+    },
+    "v3": {
+      "form": "looked for",
+      "pronunciation": "lukt for"
+    },
+    "gerundInfinitive": "looking for",
+    "examples": [
+      {
+        "sentence": "I'm looking for a better solution to this problem.",
+        "meaning": "Bu sorun için daha iyi bir çözüm arıyorum."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "real estate",
+    "pronunciation": "riıl isteyt",
+    "type": "İsim",
+    "meaning": "emlak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She works in real estate as a broker.",
+        "meaning": "Emlakta broker olarak çalışıyor."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "rub",
+    "pronunciation": "rab",
+    "type": "Fiil",
+    "meaning": "sürtmek, ovmak",
+    "v2": {
+      "form": "rubbed",
+      "pronunciation": "rabd"
+    },
+    "v3": {
+      "form": "rubbed",
+      "pronunciation": "rabd"
+    },
+    "gerundInfinitive": "rubbing",
+    "examples": [
+      {
+        "sentence": "Rub the surface gently with a soft cloth.",
+        "meaning": "Yüzeyi yumuşak bir bezle hafifçe ov."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "scared",
+    "pronunciation": "skerd",
+    "type": "Sıfat",
+    "meaning": "korkmuş",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I was scared when the system crashed.",
+        "meaning": "Sistem çöktüğünde korkmuştum."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "landlord",
+    "pronunciation": "ländlord",
+    "type": "İsim",
+    "meaning": "ev sahibi",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The landlord agreed to fix the heating.",
+        "meaning": "Ev sahibi ısıtmayı tamir etmeyi kabul etti."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "regulate",
+    "pronunciation": "regyuleyt",
+    "type": "Fiil",
+    "meaning": "düzenlemek",
+    "v2": {
+      "form": "regulated",
+      "pronunciation": "regyuleytıd"
+    },
+    "v3": {
+      "form": "regulated",
+      "pronunciation": "regyuleytıd"
+    },
+    "gerundInfinitive": "regulating",
+    "examples": [
+      {
+        "sentence": "The government regulates the tech industry.",
+        "meaning": "Hükümet teknoloji endüstrisini düzenliyor."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "divide",
+    "pronunciation": "divayd",
+    "type": "Fiil",
+    "meaning": "bölmek",
+    "v2": {
+      "form": "divided",
+      "pronunciation": "divaydıd"
+    },
+    "v3": {
+      "form": "divided",
+      "pronunciation": "divaydıd"
+    },
+    "gerundInfinitive": "dividing",
+    "examples": [
+      {
+        "sentence": "We need to divide the workload among team members.",
+        "meaning": "İş yükünü takım üyeleri arasında bölmemiz gerekiyor."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "even",
+    "pronunciation": "ivın",
+    "type": "Zarf",
+    "meaning": "bile",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Even experienced developers make mistakes.",
+        "meaning": "Deneyimli geliştiriciler bile hata yapar."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "association",
+    "pronunciation": "ısousieşın",
+    "type": "İsim",
+    "meaning": "dernek",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He is a member of the software developers association.",
+        "meaning": "Yazılım geliştiriciler derneğinin üyesidir."
+      }
+    ],
+    "date": "09.02.2026"
+  },
+  {
+    "word": "residency",
+    "pronunciation": "rezidınsi",
+    "type": "İsim",
+    "meaning": "oturum",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She applied for permanent residency.",
+        "meaning": "Daimi oturum için başvurdu."
+      }
+    ],
+    "date": "09.02.2026"
+  }
+]

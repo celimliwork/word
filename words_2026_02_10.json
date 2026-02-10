@@ -1,0 +1,1102 @@
+[
+  {
+    "word": "stay away",
+    "pronunciation": "stey ıwey",
+    "type": "Phrasal Verb",
+    "meaning": "uzak durmak, yaklaşmamak",
+    "v2": {
+      "form": "stayed away",
+      "pronunciation": "steyd ıwey"
+    },
+    "v3": {
+      "form": "stayed away",
+      "pronunciation": "steyd ıwey"
+    },
+    "gerundInfinitive": "staying away",
+    "examples": [
+      {
+        "sentence": "Stay away from untested code in production.",
+        "meaning": "Üretimde test edilmemiş koddan uzak durun."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "come across",
+    "pronunciation": "kam ıkras",
+    "type": "Phrasal Verb",
+    "meaning": "karşılaşmak, rastlamak",
+    "v2": {
+      "form": "came across",
+      "pronunciation": "keym ıkras"
+    },
+    "v3": {
+      "form": "come across",
+      "pronunciation": "kam ıkras"
+    },
+    "gerundInfinitive": "coming across",
+    "examples": [
+      {
+        "sentence": "I came across an interesting article about cloud security.",
+        "meaning": "Bulut güvenliği hakkında ilginç bir makaleye rastladım."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "sort out",
+    "pronunciation": "sort aut",
+    "type": "Phrasal Verb",
+    "meaning": "bir sorunu çözmek",
+    "v2": {
+      "form": "sorted out",
+      "pronunciation": "sortıd aut"
+    },
+    "v3": {
+      "form": "sorted out",
+      "pronunciation": "sortıd aut"
+    },
+    "gerundInfinitive": "sorting out",
+    "examples": [
+      {
+        "sentence": "We need to sort out these configuration issues.",
+        "meaning": "Bu yapılandırma sorunlarını çözmemiz gerekiyor."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "build up",
+    "pronunciation": "bild ap",
+    "type": "Phrasal Verb",
+    "meaning": "inşa etmek, kurmak",
+    "v2": {
+      "form": "built up",
+      "pronunciation": "bilt ap"
+    },
+    "v3": {
+      "form": "built up",
+      "pronunciation": "bilt ap"
+    },
+    "gerundInfinitive": "building up",
+    "examples": [
+      {
+        "sentence": "We need to build up our infrastructure gradually.",
+        "meaning": "Altyapımızı kademeli olarak kurmamız gerekiyor."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "go off",
+    "pronunciation": "gou of",
+    "type": "Phrasal Verb",
+    "meaning": "sorunsuz ilerlemek, gerçekleşmek",
+    "v2": {
+      "form": "went off",
+      "pronunciation": "went of"
+    },
+    "v3": {
+      "form": "gone off",
+      "pronunciation": "gan of"
+    },
+    "gerundInfinitive": "going off",
+    "examples": [
+      {
+        "sentence": "The deployment went off without any problems.",
+        "meaning": "Dağıtım sorunsuz gerçekleşti."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "dull",
+    "pronunciation": "dal",
+    "type": "Fiil/Sıfat",
+    "meaning": "köreltmek",
+    "v2": {
+      "form": "dulled",
+      "pronunciation": "dald"
+    },
+    "v3": {
+      "form": "dulled",
+      "pronunciation": "dald"
+    },
+    "gerundInfinitive": "dulling",
+    "examples": [
+      {
+        "sentence": "Repetitive tasks can dull your creativity.",
+        "meaning": "Tekrarlayan görevler yaratıcılığınızı köreltebilir."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "attempt",
+    "pronunciation": "ıtempt",
+    "type": "Fiil/İsim",
+    "meaning": "girişimde bulunmak, denemek",
+    "v2": {
+      "form": "attempted",
+      "pronunciation": "ıtemptıd"
+    },
+    "v3": {
+      "form": "attempted",
+      "pronunciation": "ıtemptıd"
+    },
+    "gerundInfinitive": "attempting",
+    "examples": [
+      {
+        "sentence": "The system attempted to reconnect automatically.",
+        "meaning": "Sistem otomatik olarak yeniden bağlanmayı denedi."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "brief",
+    "pronunciation": "brif",
+    "type": "Sıfat",
+    "meaning": "kısa",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Please give me a brief summary of the report.",
+        "meaning": "Lütfen bana raporun kısa bir özetini verin."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "stick",
+    "pronunciation": "stik",
+    "type": "Fiil",
+    "meaning": "sadık kalmak",
+    "v2": {
+      "form": "stuck",
+      "pronunciation": "stak"
+    },
+    "v3": {
+      "form": "stuck",
+      "pronunciation": "stak"
+    },
+    "gerundInfinitive": "sticking",
+    "examples": [
+      {
+        "sentence": "We should stick to the original plan.",
+        "meaning": "Orijinal plana sadık kalmalıyız."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "be faithful",
+    "pronunciation": "bi feyθfıl",
+    "type": "İfade",
+    "meaning": "sadık kalmak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Be faithful to your coding standards.",
+        "meaning": "Kodlama standartlarınıza sadık kalın."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "hitch",
+    "pronunciation": "hiç",
+    "type": "İsim",
+    "meaning": "aksaklık",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The project went off without a hitch.",
+        "meaning": "Proje herhangi bir aksaklık olmadan gerçekleşti."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "blow off steam",
+    "pronunciation": "blou of stim",
+    "type": "İfade",
+    "meaning": "stres atmak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I went for a walk to blow off steam after the meeting.",
+        "meaning": "Toplantıdan sonra stres atmak için yürüyüşe çıktım."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "deliver",
+    "pronunciation": "diliv​ır",
+    "type": "Fiil",
+    "meaning": "teslim etmek",
+    "v2": {
+      "form": "delivered",
+      "pronunciation": "diliv​ırd"
+    },
+    "v3": {
+      "form": "delivered",
+      "pronunciation": "diliv​ırd"
+    },
+    "gerundInfinitive": "delivering",
+    "examples": [
+      {
+        "sentence": "We need to deliver the project by Friday.",
+        "meaning": "Projeyi Cuma gününe kadar teslim etmemiz gerekiyor."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "get used to",
+    "pronunciation": "get yuzd tu",
+    "type": "İfade",
+    "meaning": "alışmak",
+    "v2": {
+      "form": "got used to",
+      "pronunciation": "gat yuzd tu"
+    },
+    "v3": {
+      "form": "gotten used to",
+      "pronunciation": "gatın yuzd tu"
+    },
+    "gerundInfinitive": "getting used to",
+    "examples": [
+      {
+        "sentence": "It takes time to get used to the new system.",
+        "meaning": "Yeni sisteme alışmak zaman alıyor."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "answer",
+    "pronunciation": "änsır",
+    "type": "Fiil/İsim",
+    "meaning": "yanıtlamak",
+    "v2": {
+      "form": "answered",
+      "pronunciation": "änsırd"
+    },
+    "v3": {
+      "form": "answered",
+      "pronunciation": "änsırd"
+    },
+    "gerundInfinitive": "answering",
+    "examples": [
+      {
+        "sentence": "Please answer the question in the email.",
+        "meaning": "Lütfen e-postadaki soruyu yanıtlayın."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "cause",
+    "pronunciation": "koz",
+    "type": "Fiil/İsim",
+    "meaning": "sebep",
+    "v2": {
+      "form": "caused",
+      "pronunciation": "kozd"
+    },
+    "v3": {
+      "form": "caused",
+      "pronunciation": "kozd"
+    },
+    "gerundInfinitive": "causing",
+    "examples": [
+      {
+        "sentence": "What caused the server to crash?",
+        "meaning": "Sunucunun çökmesine ne sebep oldu?"
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "reason",
+    "pronunciation": "rizın",
+    "type": "İsim",
+    "meaning": "sebep",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "There's no reason to worry about the deployment.",
+        "meaning": "Dağıtım hakkında endişelenmeye sebep yok."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "agreement",
+    "pronunciation": "ıgriment",
+    "type": "İsim",
+    "meaning": "anlaşma",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We signed a service level agreement with the client.",
+        "meaning": "Müşteriyle bir hizmet seviyesi anlaşması imzaladık."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "pay attention",
+    "pronunciation": "pey ıtenşın",
+    "type": "İfade",
+    "meaning": "dikkat etmek, ilgi vermek",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Pay attention to the error messages in the logs.",
+        "meaning": "Logdaki hata mesajlarına dikkat edin."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "force",
+    "pronunciation": "fors",
+    "type": "Fiil/İsim",
+    "meaning": "zorlamak",
+    "v2": {
+      "form": "forced",
+      "pronunciation": "forst"
+    },
+    "v3": {
+      "form": "forced",
+      "pronunciation": "forst"
+    },
+    "gerundInfinitive": "forcing",
+    "examples": [
+      {
+        "sentence": "Don't force the system to restart unexpectedly.",
+        "meaning": "Sistemi beklenmedik şekilde yeniden başlatmaya zorlamayın."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "spy",
+    "pronunciation": "spay",
+    "type": "İsim/Fiil",
+    "meaning": "casus",
+    "v2": {
+      "form": "spied",
+      "pronunciation": "spayd"
+    },
+    "v3": {
+      "form": "spied",
+      "pronunciation": "spayd"
+    },
+    "gerundInfinitive": "spying",
+    "examples": [
+      {
+        "sentence": "The malware was designed to spy on user activity.",
+        "meaning": "Kötü amaçlı yazılım kullanıcı aktivitesini gözetlemek için tasarlanmıştı."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "bribery",
+    "pronunciation": "braybıri",
+    "type": "İsim",
+    "meaning": "rüşvet",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The company has strict policies against bribery.",
+        "meaning": "Şirketin rüşvete karşı sıkı politikaları var."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "condition",
+    "pronunciation": "kındişın",
+    "type": "İsim",
+    "meaning": "şart, koşul",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The contract has several conditions that must be met.",
+        "meaning": "Sözleşmenin karşılanması gereken birkaç koşulu var."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "compliance",
+    "pronunciation": "kımplayıns",
+    "type": "İsim",
+    "meaning": "uyum",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We must ensure compliance with data protection regulations.",
+        "meaning": "Veri koruma düzenlemelerine uyumu sağlamalıyız."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "ongoing",
+    "pronunciation": "angouing",
+    "type": "Sıfat",
+    "meaning": "devam eden",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "This is an ongoing project that will take several months.",
+        "meaning": "Bu birkaç ay sürecek devam eden bir proje."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "relatively",
+    "pronunciation": "relıtivli",
+    "type": "Zarf",
+    "meaning": "oldukça, nispeten",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The fix was relatively simple to implement.",
+        "meaning": "Düzeltme uygulaması nispeten basitti."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "repetitive",
+    "pronunciation": "ripetıtiv",
+    "type": "Sıfat",
+    "meaning": "tekrarlayan",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Automating repetitive tasks can save time.",
+        "meaning": "Tekrarlayan görevleri otomatikleştirmek zaman kazandırabilir."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "recovery",
+    "pronunciation": "rikav​ıri",
+    "type": "İsim",
+    "meaning": "iyileşme",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We have a disaster recovery plan in place.",
+        "meaning": "Yerinde bir felaket kurtarma planımız var."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "fortnight",
+    "pronunciation": "fortnayt",
+    "type": "İsim",
+    "meaning": "15 gün, iki hafta",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The project will be completed in a fortnight.",
+        "meaning": "Proje iki hafta içinde tamamlanacak."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "executive",
+    "pronunciation": "igzekyutiv",
+    "type": "İsim/Sıfat",
+    "meaning": "yönetici",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The executive team approved the budget.",
+        "meaning": "Yönetici ekibi bütçeyi onayladı."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "disable",
+    "pronunciation": "diseybıl",
+    "type": "Fiil",
+    "meaning": "devre dışı bırakmak",
+    "v2": {
+      "form": "disabled",
+      "pronunciation": "diseybıld"
+    },
+    "v3": {
+      "form": "disabled",
+      "pronunciation": "diseybıld"
+    },
+    "gerundInfinitive": "disabling",
+    "examples": [
+      {
+        "sentence": "You can disable this feature in the settings.",
+        "meaning": "Bu özelliği ayarlarda devre dışı bırakabilirsiniz."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "malicious",
+    "pronunciation": "mılişıs",
+    "type": "Sıfat",
+    "meaning": "kötü niyetli",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The firewall blocked malicious traffic.",
+        "meaning": "Güvenlik duvarı kötü niyetli trafiği engelledi."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "lead to",
+    "pronunciation": "lid tu",
+    "type": "Phrasal Verb",
+    "meaning": "yol açmak",
+    "v2": {
+      "form": "led to",
+      "pronunciation": "led tu"
+    },
+    "v3": {
+      "form": "led to",
+      "pronunciation": "led tu"
+    },
+    "gerundInfinitive": "leading to",
+    "examples": [
+      {
+        "sentence": "Poor coding practices can lead to security vulnerabilities.",
+        "meaning": "Kötü kodlama uygulamaları güvenlik açıklarına yol açabilir."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "corruption",
+    "pronunciation": "kırapşın",
+    "type": "İsim",
+    "meaning": "yolsuzluk, bozulma, rüşvet",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Data corruption can cause serious problems.",
+        "meaning": "Veri bozulması ciddi sorunlara neden olabilir."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "aspect",
+    "pronunciation": "äspekt",
+    "type": "İsim",
+    "meaning": "bakış açısı, yön",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Security is an important aspect of software development.",
+        "meaning": "Güvenlik yazılım geliştirmenin önemli bir yönüdür."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "cuisine",
+    "pronunciation": "kwizin",
+    "type": "İsim",
+    "meaning": "mutfak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I love Italian cuisine.",
+        "meaning": "İtalyan mutfağını seviyorum."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "adopt",
+    "pronunciation": "ıdapt",
+    "type": "Fiil",
+    "meaning": "evlat edinmek, benimsemek",
+    "v2": {
+      "form": "adopted",
+      "pronunciation": "ıdaptıd"
+    },
+    "v3": {
+      "form": "adopted",
+      "pronunciation": "ıdaptıd"
+    },
+    "gerundInfinitive": "adopting",
+    "examples": [
+      {
+        "sentence": "Many companies are adopting cloud technologies.",
+        "meaning": "Birçok şirket bulut teknolojilerini benimsemektedir."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "starve",
+    "pronunciation": "starv",
+    "type": "Fiil",
+    "meaning": "aç kalmak",
+    "v2": {
+      "form": "starved",
+      "pronunciation": "starvd"
+    },
+    "v3": {
+      "form": "starved",
+      "pronunciation": "starvd"
+    },
+    "gerundInfinitive": "starving",
+    "examples": [
+      {
+        "sentence": "The server is starving for resources.",
+        "meaning": "Sunucu kaynaklara aç kalmış durumda."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "be hungry",
+    "pronunciation": "bi hangri",
+    "type": "İfade",
+    "meaning": "acıkmak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I'm hungry, let's take a lunch break.",
+        "meaning": "Acıktım, öğle yemeği molası verelim."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "servant",
+    "pronunciation": "sörvınt",
+    "type": "İsim",
+    "meaning": "hizmetçi",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "In the past, wealthy families had many servants.",
+        "meaning": "Geçmişte, zengin ailelerin birçok hizmetçisi vardı."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "further",
+    "pronunciation": "fördhır",
+    "type": "Zarf/Sıfat",
+    "meaning": "daha fazla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We need further investigation to find the root cause.",
+        "meaning": "Kök nedeni bulmak için daha fazla araştırmaya ihtiyacımız var."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "as far as",
+    "pronunciation": "äz far äz",
+    "type": "İfade",
+    "meaning": "kadarıyla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "As far as I know, the server is running fine.",
+        "meaning": "Bildiğim kadarıyla, sunucu sorunsuz çalışıyor."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "postgraduate",
+    "pronunciation": "poustgrädyuıt",
+    "type": "İsim/Sıfat",
+    "meaning": "yüksek lisans",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She's doing postgraduate studies in computer science.",
+        "meaning": "Bilgisayar bilimlerinde yüksek lisans yapıyor."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "stingy",
+    "pronunciation": "stinci",
+    "type": "Sıfat",
+    "meaning": "cimri",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Don't be stingy with server resources.",
+        "meaning": "Sunucu kaynakları konusunda cimri olma."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "abusive",
+    "pronunciation": "ıbyusiv",
+    "type": "Sıfat",
+    "meaning": "ağzı bozuk, kötüye kullanan",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We don't tolerate abusive language in the workplace.",
+        "meaning": "İş yerinde ağzı bozuk dile tolerans göstermeyiz."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "chase",
+    "pronunciation": "çeys",
+    "type": "Fiil",
+    "meaning": "kovalamak",
+    "v2": {
+      "form": "chased",
+      "pronunciation": "çeyst"
+    },
+    "v3": {
+      "form": "chased",
+      "pronunciation": "çeyst"
+    },
+    "gerundInfinitive": "chasing",
+    "examples": [
+      {
+        "sentence": "We're chasing down a bug in the production code.",
+        "meaning": "Üretim kodunda bir hatayı kovalıyoruz."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "envelope",
+    "pronunciation": "envıloup",
+    "type": "İsim",
+    "meaning": "zarf, mektup zarfı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Please put the document in an envelope.",
+        "meaning": "Lütfen belgeyi bir zarfa koyun."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "anticipate",
+    "pronunciation": "äntisıpeyt",
+    "type": "Fiil",
+    "meaning": "beklemek, öngörmek",
+    "v2": {
+      "form": "anticipated",
+      "pronunciation": "äntisıpeytıd"
+    },
+    "v3": {
+      "form": "anticipated",
+      "pronunciation": "äntisıpeytıd"
+    },
+    "gerundInfinitive": "anticipating",
+    "examples": [
+      {
+        "sentence": "We anticipate high traffic during the launch.",
+        "meaning": "Lansman sırasında yüksek trafik bekliyoruz."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "frustrate",
+    "pronunciation": "frastreyt",
+    "type": "Fiil",
+    "meaning": "kızdırmak, hayal kırıklığına uğratmak",
+    "v2": {
+      "form": "frustrated",
+      "pronunciation": "frastreytıd"
+    },
+    "v3": {
+      "form": "frustrated",
+      "pronunciation": "frastreytıd"
+    },
+    "gerundInfinitive": "frustrating",
+    "examples": [
+      {
+        "sentence": "These constant bugs are really frustrating me.",
+        "meaning": "Bu sürekli hatalar gerçekten beni kızdırıyor."
+      }
+    ],
+    "date": "10.02.2026"
+  },
+  {
+    "word": "heaven",
+    "pronunciation": "hevın",
+    "type": "İsim",
+    "meaning": "cennet",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "This new IDE is heaven for developers.",
+        "meaning": "Bu yeni IDE geliştiriciler için cennet gibi."
+      }
+    ],
+    "date": "10.02.2026"
+  }
+]

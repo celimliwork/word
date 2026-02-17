@@ -1516,5 +1516,357 @@
       }
     ],
     "date": "17.02.2026"
+  },
+  {
+    "word": "appeal to",
+    "pronunciation": "ıpıl tu",
+    "type": "Fiil",
+    "meaning": "cazip gelmek",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "This design really appeals to younger users.",
+        "meaning": "Bu tasarım genç kullanıcılara gerçekten cazip geliyor."
+      }
+    ],
+    "date": "17.02.2026"
+  },
+  {
+    "word": "fill",
+    "pronunciation": "fil",
+    "type": "Fiil",
+    "meaning": "doldurmak",
+    "v2": {
+      "form": "filled",
+      "pronunciation": "fıldıd"
+    },
+    "v3": {
+      "form": "filled",
+      "pronunciation": "fıldıd"
+    },
+    "gerundInfinitive": "filling",
+    "examples": [
+      {
+        "sentence": "Please fill out this form.",
+        "meaning": "Lütfen bu formu doldurun."
+      }
+    ],
+    "date": "17.02.2026"
+  },
+  {
+    "word": "feel",
+    "pronunciation": "fiːl",
+    "type": "Fiil",
+    "meaning": "hissetmek / hissettirmek",
+    "v2": {
+      "form": "felt",
+      "pronunciation": "felt"
+    },
+    "v3": {
+      "form": "felt",
+      "pronunciation": "felt"
+    },
+    "gerundInfinitive": "feeling",
+    "examples": [
+      {
+        "sentence": "She felt nervous before the presentation.",
+        "meaning": "Sunumdan önce gergin hissetti."
+      }
+    ],
+    "date": "17.02.2026"
+  },
+  {
+    "word": "hold",
+    "pronunciation": "hold",
+    "type": "Fiil",
+    "meaning": "tutmak",
+    "v2": {
+      "form": "held",
+      "pronunciation": "held"
+    },
+    "v3": {
+      "form": "held",
+      "pronunciation": "held"
+    },
+    "gerundInfinitive": "holding",
+    "examples": [
+      {
+        "sentence": "Hold my bag for a moment, please.",
+        "meaning": "Lütfen çantamı bir an tutar mısın?"
+      }
+    ],
+    "date": "17.02.2026"
+  },
+  {
+    "word": "keep",
+    "pronunciation": "kiːp",
+    "type": "Fiil",
+    "meaning": "tutmak, korumak",
+    "v2": {
+      "form": "kept",
+      "pronunciation": "kept"
+    },
+    "v3": {
+      "form": "kept",
+      "pronunciation": "kept"
+    },
+    "gerundInfinitive": "keeping",
+    "examples": [
+      {
+        "sentence": "Keep this receipt in case you need it.",
+        "meaning": "Gerekirse diye bu fişi sakla."
+      }
+    ],
+    "date": "17.02.2026"
+  },
+  {
+    "word": "caretaker",
+    "pronunciation": "karetkeyır",
+    "type": "İsim",
+    "meaning": "bakıcı, görevli (caregiver)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The caretaker cleans the building every day.",
+        "meaning": "Bina görevlisi binayı her gün temizliyor."
+      }
+    ],
+    "date": "17.02.2026"
+  },
+  {
+    "word": "mobile",
+    "pronunciation": "mobayıl",
+    "type": "Sıfat/İsim",
+    "meaning": "mobil, taşınabilir",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She always carries a mobile phone.",
+        "meaning": "Her zaman bir cep telefonu taşır."
+      }
+    ],
+    "date": "17.02.2026"
+  },
+  {
+    "word": "provide",
+    "pronunciation": "prıvayd",
+    "type": "Fiil",
+    "meaning": "sağlamak",
+    "v2": {
+      "form": "provided",
+      "pronunciation": "prıvaydıd"
+    },
+    "v3": {
+      "form": "provided",
+      "pronunciation": "prıvaydıd"
+    },
+    "gerundInfinitive": "providing",
+    "examples": [
+      {
+        "sentence": "The company will provide training for new hires.",
+        "meaning": "Şirket yeni işe alınanlara eğitim sağlayacak."
+      }
+    ],
+    "date": "17.02.2026"
+  },
+  {
+    "word": "cell",
+    "pronunciation": "sel",
+    "type": "İsim",
+    "meaning": "hücre",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "A red blood cell carries oxygen throughout the body.",
+        "meaning": "Kırmızı kan hücresi vücutta oksijen taşır."
+      }
+    ],
+    "date": "17.02.2026"
+  },
+  {
+    "word": "confused",
+    "pronunciation": "kınfyusd",
+    "type": "Sıfat",
+    "meaning": "kafası karışmış",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He looked confused after reading the instructions.",
+        "meaning": "Talimatları okuduktan sonra kafası karışmış gibiydi."
+      }
+    ],
+    "date": "17.02.2026"
+  },
+  {
+    "word": "imitate",
+    "pronunciation": "imiteyt",
+    "type": "Fiil",
+    "meaning": "taklit etmek, örnek almak",
+    "v2": {
+      "form": "imitated",
+      "pronunciation": "imiteytd"
+    },
+    "v3": {
+      "form": "imitated",
+      "pronunciation": "imiteytd"
+    },
+    "gerundInfinitive": "imitating",
+    "examples": [
+      {
+        "sentence": "Children often imitate their parents' behavior.",
+        "meaning": "Çocuklar genellikle ebeveynlerinin davranışlarını taklit eder."
+      }
+    ],
+    "date": "17.02.2026"
+  },
+  {
+    "word": "get smaller",
+    "pronunciation": "get smolır",
+    "type": "İfade",
+    "meaning": "küçültmek",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Reduce the image so it will get smaller on the page.",
+        "meaning": "Resmi küçültün, böylece sayfada daha küçük görünecek."
+      }
+    ],
+    "date": "17.02.2026"
+  },
+  {
+    "word": "get bigger",
+    "pronunciation": "get bigır",
+    "type": "İfade",
+    "meaning": "büyütmek",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Click the icon to make the window get bigger.",
+        "meaning": "Pencereyi büyütmek için simgeye tıklayın."
+      }
+    ],
+    "date": "17.02.2026"
+  },
+  {
+    "word": "opportunity",
+    "pronunciation": "apırçunidi",
+    "type": "İsim",
+    "meaning": "fırsat",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "This internship is a great opportunity to learn.",
+        "meaning": "Bu staj öğrenmek için harika bir fırsat."
+      }
+    ],
+    "date": "17.02.2026"
+  },
+  {
+    "word": "naughty",
+    "pronunciation": "noti",
+    "type": "Sıfat",
+    "meaning": "yaramaz, şımarık",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The naughty child wouldn't listen to his parents.",
+        "meaning": "Yaramaz çocuk ebeveynlerini dinlemedi."
+      }
+    ],
+    "date": "17.02.2026"
+  },
+  {
+    "word": "punctual",
+    "pronunciation": "pankçuıl",
+    "type": "Sıfat",
+    "meaning": "dakik",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She is always punctual for meetings.",
+        "meaning": "Toplantılara her zaman dakik gelir."
+      }
+    ],
+    "date": "17.02.2026"
   }
 ]

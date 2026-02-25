@@ -1,0 +1,33 @@
+interrupt=yarıda kesmek
+cause=sebep olmak
+aspect=yön açı taraf
+force=zorlamak
+crowl=emeklemek sürünmek
+huge=kocaman (hiyuc)
+cute=şirin (kiyut)
+Estimate: tahmin etmek
+Guess: tahmin etmek
+Cite: alıntı, anmak, bahsetmek,referans göstermek
+gather=toplamak toplanmak
+marriage=evlilik
+foreign=yabancı şey
+foreigner=yabancı kişi
+funeral=cenaze fyunırıl
+ceremony=tören
+exception=istisna
+thin=ince
+skinny=ince insan
+punch=yumruk
+interfere=müdahale etmek inırfiır okunur
+sensitive=hassas
+catch=yetişmek
+mildew= küf
+dust=toz
+encounter=karşılaşmak
+fast=oruç tutmak
+fasting=oruç
+because of=yüzünden
+speech=konuşma yapmak
+demand=talep etmek
+ad=reklam
+crowl=emeklemek sürünmek

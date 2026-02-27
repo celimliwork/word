@@ -1,0 +1,860 @@
+[
+  {
+    "word": "drop out",
+    "pronunciation": "drap aut",
+    "type": "Phrasal Verb",
+    "meaning": "okuldan ayrılmak",
+    "v2": {
+      "form": "dropped out",
+      "pronunciation": "drapt aut"
+    },
+    "v3": {
+      "form": "dropped out",
+      "pronunciation": "drapt aut"
+    },
+    "gerundInfinitive": "dropping out",
+    "examples": [
+      {
+        "sentence": "He decided to drop out of college.",
+        "meaning": "Üniversiteden ayrılmaya karar verdi."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "fully awake",
+    "pronunciation": "fuli ıveyk",
+    "type": "İfade",
+    "meaning": "kendine gelmek, ayılmak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I'm fully awake now after drinking coffee.",
+        "meaning": "Kahve içtikten sonra şimdi tamamen ayıldım."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "intangible",
+    "pronunciation": "intancıbıl",
+    "type": "Sıfat",
+    "meaning": "soyut",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Happiness is an intangible feeling.",
+        "meaning": "Mutluluk soyut bir duygudur."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "let me know",
+    "pronunciation": "let mi nov",
+    "type": "İfade",
+    "meaning": "haber vermek",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Let me know when you arrive.",
+        "meaning": "Vardığında bana haber ver."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "barely made it",
+    "pronunciation": "berli meyd it",
+    "type": "İfade",
+    "meaning": "zar zor başarmak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I barely made it to the meeting on time.",
+        "meaning": "Toplantıya zar zor zamanında yetiştim."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "lately",
+    "pronunciation": "leytli",
+    "type": "Zarf",
+    "meaning": "son zamanlarda",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I haven't seen him lately.",
+        "meaning": "Onu son zamanlarda görmedim."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "get away",
+    "pronunciation": "get ıvey",
+    "type": "Phrasal Verb",
+    "meaning": "kaçamak yapmak, uzaklaşmak (şehirden)",
+    "v2": {
+      "form": "got away",
+      "pronunciation": "gat ıvey"
+    },
+    "v3": {
+      "form": "got away",
+      "pronunciation": "gat ıvey"
+    },
+    "gerundInfinitive": "getting away",
+    "examples": [
+      {
+        "sentence": "We need to get away from the city this weekend.",
+        "meaning": "Bu hafta sonu şehirden uzaklaşmamız gerekiyor."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "turn down",
+    "pronunciation": "törn daun",
+    "type": "Phrasal Verb",
+    "meaning": "sesi kısmak (cihaz)",
+    "v2": {
+      "form": "turned down",
+      "pronunciation": "törnd daun"
+    },
+    "v3": {
+      "form": "turned down",
+      "pronunciation": "törnd daun"
+    },
+    "gerundInfinitive": "turning down",
+    "examples": [
+      {
+        "sentence": "Please turn down the volume.",
+        "meaning": "Lütfen sesi kıs."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "slow down",
+    "pronunciation": "slov daun",
+    "type": "Phrasal Verb",
+    "meaning": "sesini alçaltmak (insan)",
+    "v2": {
+      "form": "slowed down",
+      "pronunciation": "slovd daun"
+    },
+    "v3": {
+      "form": "slowed down",
+      "pronunciation": "slovd daun"
+    },
+    "gerundInfinitive": "slowing down",
+    "examples": [
+      {
+        "sentence": "Can you slow down? I can't understand you.",
+        "meaning": "Sesini alçaltabilir misin? Seni anlayamıyorum."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "concentrate",
+    "pronunciation": "kansıntreyt",
+    "type": "Fiil",
+    "meaning": "odaklanmak",
+    "v2": {
+      "form": "concentrated",
+      "pronunciation": "kansıntreytıd"
+    },
+    "v3": {
+      "form": "concentrated",
+      "pronunciation": "kansıntreytıd"
+    },
+    "gerundInfinitive": "concentrating",
+    "examples": [
+      {
+        "sentence": "I need to concentrate on my work.",
+        "meaning": "İşime odaklanmam gerekiyor."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "focus",
+    "pronunciation": "fokıs",
+    "type": "Fiil/İsim",
+    "meaning": "odaklanmak / odak",
+    "v2": {
+      "form": "focused",
+      "pronunciation": "fokıst"
+    },
+    "v3": {
+      "form": "focused",
+      "pronunciation": "fokıst"
+    },
+    "gerundInfinitive": "focusing",
+    "examples": [
+      {
+        "sentence": "You need to focus on your studies.",
+        "meaning": "Derslerine odaklanman gerekiyor."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "put on",
+    "pronunciation": "put an",
+    "type": "Phrasal Verb",
+    "meaning": "giymek",
+    "v2": {
+      "form": "put on",
+      "pronunciation": "put an"
+    },
+    "v3": {
+      "form": "put on",
+      "pronunciation": "put an"
+    },
+    "gerundInfinitive": "putting on",
+    "examples": [
+      {
+        "sentence": "Put on your coat before going outside.",
+        "meaning": "Dışarı çıkmadan önce ceketini giy."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "go off",
+    "pronunciation": "go of",
+    "type": "Phrasal Verb",
+    "meaning": "alarm çalması",
+    "v2": {
+      "form": "went off",
+      "pronunciation": "went of"
+    },
+    "v3": {
+      "form": "gone off",
+      "pronunciation": "gan of"
+    },
+    "gerundInfinitive": "going off",
+    "examples": [
+      {
+        "sentence": "The alarm went off at 7 AM.",
+        "meaning": "Alarm saat 7'de çaldı."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "be late",
+    "pronunciation": "bi leyt",
+    "type": "İfade",
+    "meaning": "geç kalmak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Don't be late for the meeting.",
+        "meaning": "Toplantıya geç kalma."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "on time",
+    "pronunciation": "an taym",
+    "type": "İfade",
+    "meaning": "zamanında",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The train arrived on time.",
+        "meaning": "Tren zamanında geldi."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "suddenly",
+    "pronunciation": "sadınli",
+    "type": "Zarf",
+    "meaning": "aniden",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Suddenly, the lights went out.",
+        "meaning": "Aniden ışıklar söndü."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "because of",
+    "pronunciation": "bikoz ov",
+    "type": "Edat",
+    "meaning": "-den dolayı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The game was canceled because of the rain.",
+        "meaning": "Oyun yağmurdan dolayı iptal edildi."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "be mad at",
+    "pronunciation": "bi med et",
+    "type": "İfade",
+    "meaning": "kızmak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She is mad at me for being late.",
+        "meaning": "Geç kaldığım için bana kızgın."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "be angry with",
+    "pronunciation": "bi engri wıd",
+    "type": "İfade",
+    "meaning": "kızmak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He is angry with his friend.",
+        "meaning": "Arkadaşına kızgın."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "persuade",
+    "pronunciation": "pörsveyd",
+    "type": "Fiil",
+    "meaning": "ikna etmek",
+    "v2": {
+      "form": "persuaded",
+      "pronunciation": "pörsveydıd"
+    },
+    "v3": {
+      "form": "persuaded",
+      "pronunciation": "pörsveydıd"
+    },
+    "gerundInfinitive": "persuading",
+    "examples": [
+      {
+        "sentence": "I tried to persuade him to come with us.",
+        "meaning": "Onu bizimle gelmeye ikna etmeye çalıştım."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "convince",
+    "pronunciation": "kınvins",
+    "type": "Fiil",
+    "meaning": "ikna etmek",
+    "v2": {
+      "form": "convinced",
+      "pronunciation": "kınvinst"
+    },
+    "v3": {
+      "form": "convinced",
+      "pronunciation": "kınvinst"
+    },
+    "gerundInfinitive": "convincing",
+    "examples": [
+      {
+        "sentence": "She convinced me to try the new restaurant.",
+        "meaning": "Beni yeni restoranı denemeye ikna etti."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "break down",
+    "pronunciation": "breyk daun",
+    "type": "Phrasal Verb",
+    "meaning": "bozulmak",
+    "v2": {
+      "form": "broke down",
+      "pronunciation": "brok daun"
+    },
+    "v3": {
+      "form": "broken down",
+      "pronunciation": "brokın daun"
+    },
+    "gerundInfinitive": "breaking down",
+    "examples": [
+      {
+        "sentence": "My car broke down on the highway.",
+        "meaning": "Arabam otoyolda bozuldu."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "pick up",
+    "pronunciation": "pik ap",
+    "type": "Phrasal Verb",
+    "meaning": "cevap vermek (telefon)",
+    "v2": {
+      "form": "picked up",
+      "pronunciation": "pikt ap"
+    },
+    "v3": {
+      "form": "picked up",
+      "pronunciation": "pikt ap"
+    },
+    "gerundInfinitive": "picking up",
+    "examples": [
+      {
+        "sentence": "Why didn't you pick up the phone?",
+        "meaning": "Neden telefonu açmadın?"
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "slip away",
+    "pronunciation": "slip ıvey",
+    "type": "Phrasal Verb",
+    "meaning": "kayıp gitmek (fırsat)",
+    "v2": {
+      "form": "slipped away",
+      "pronunciation": "slipt ıvey"
+    },
+    "v3": {
+      "form": "slipped away",
+      "pronunciation": "slipt ıvey"
+    },
+    "gerundInfinitive": "slipping away",
+    "examples": [
+      {
+        "sentence": "The opportunity slipped away from us.",
+        "meaning": "Fırsat elimizden kayıp gitti."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "do one's best",
+    "pronunciation": "du wans best",
+    "type": "İfade",
+    "meaning": "en iyisini yapmak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I'll do my best to help you.",
+        "meaning": "Sana yardım etmek için elimden geleni yapacağım."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "overstate",
+    "pronunciation": "ovırsteyt",
+    "type": "Fiil",
+    "meaning": "abartmak",
+    "v2": {
+      "form": "overstated",
+      "pronunciation": "ovırsteytıd"
+    },
+    "v3": {
+      "form": "overstated",
+      "pronunciation": "ovırsteytıd"
+    },
+    "gerundInfinitive": "overstating",
+    "examples": [
+      {
+        "sentence": "Don't overstate the problem.",
+        "meaning": "Sorunu abartma."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "trapped",
+    "pronunciation": "trept",
+    "type": "Sıfat",
+    "meaning": "kapana kısılmış",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I feel trapped in this situation.",
+        "meaning": "Bu durumda kapana kısılmış hissediyorum."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "trap",
+    "pronunciation": "trep",
+    "type": "İsim/Fiil",
+    "meaning": "tuzak / tuzağa düşürmek",
+    "v2": {
+      "form": "trapped",
+      "pronunciation": "trept"
+    },
+    "v3": {
+      "form": "trapped",
+      "pronunciation": "trept"
+    },
+    "gerundInfinitive": "trapping",
+    "examples": [
+      {
+        "sentence": "The mouse was caught in a trap.",
+        "meaning": "Fare tuzağa yakalandı."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "consider",
+    "pronunciation": "kınsidır",
+    "type": "Fiil",
+    "meaning": "dikkate almak",
+    "v2": {
+      "form": "considered",
+      "pronunciation": "kınsidırd"
+    },
+    "v3": {
+      "form": "considered",
+      "pronunciation": "kınsidırd"
+    },
+    "gerundInfinitive": "considering",
+    "examples": [
+      {
+        "sentence": "We need to consider all options.",
+        "meaning": "Tüm seçenekleri dikkate almamız gerekiyor."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "audience",
+    "pronunciation": "odiyıns",
+    "type": "İsim",
+    "meaning": "izleyici",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The audience applauded after the performance.",
+        "meaning": "İzleyiciler gösteriden sonra alkışladı."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "approach",
+    "pronunciation": "eproç",
+    "type": "Fiil/İsim",
+    "meaning": "yaklaşmak / yaklaşım",
+    "v2": {
+      "form": "approached",
+      "pronunciation": "eproçt"
+    },
+    "v3": {
+      "form": "approached",
+      "pronunciation": "eproçt"
+    },
+    "gerundInfinitive": "approaching",
+    "examples": [
+      {
+        "sentence": "We need to approach this problem differently.",
+        "meaning": "Bu soruna farklı bir yaklaşım sergilememiz gerekiyor."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "consume",
+    "pronunciation": "kınsyum",
+    "type": "Fiil",
+    "meaning": "tüketmek",
+    "v2": {
+      "form": "consumed",
+      "pronunciation": "kınsyumd"
+    },
+    "v3": {
+      "form": "consumed",
+      "pronunciation": "kınsyumd"
+    },
+    "gerundInfinitive": "consuming",
+    "examples": [
+      {
+        "sentence": "We consume too much energy every day.",
+        "meaning": "Her gün çok fazla enerji tüketiyoruz."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "day by day",
+    "pronunciation": "dey bay dey",
+    "type": "İfade",
+    "meaning": "günden güne",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The situation is getting better day by day.",
+        "meaning": "Durum günden güne iyileşiyor."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "successive",
+    "pronunciation": "sıksesiv",
+    "type": "Sıfat",
+    "meaning": "ard arda",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "They won three successive games.",
+        "meaning": "Ard arda üç oyun kazandılar."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "bias",
+    "pronunciation": "bayıs",
+    "type": "İsim",
+    "meaning": "önyargı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We should avoid bias in our decisions.",
+        "meaning": "Kararlarımızda önyargıdan kaçınmalıyız."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "trash can",
+    "pronunciation": "treş ken",
+    "type": "İsim",
+    "meaning": "çöp tenekesi",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Throw the paper in the trash can.",
+        "meaning": "Kağıdı çöp tenekesine at."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "can",
+    "pronunciation": "ken",
+    "type": "İsim",
+    "meaning": "kutu, teneke",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I bought a can of soda.",
+        "meaning": "Bir kutu gazoz aldım."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "world war 1",
+    "pronunciation": "wörld wor wön",
+    "type": "İsim",
+    "meaning": "1. dünya savaşı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "World War 1 started in 1914.",
+        "meaning": "1. Dünya Savaşı 1914'te başladı."
+      }
+    ],
+    "date": "27.02.2026"
+  },
+  {
+    "word": "community",
+    "pronunciation": "kımyunidi",
+    "type": "İsim",
+    "meaning": "topluluk",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Our community is very supportive.",
+        "meaning": "Topluluğumuz çok destekleyici."
+      }
+    ],
+    "date": "27.02.2026"
+  }
+]

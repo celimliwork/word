@@ -1,0 +1,1784 @@
+[
+  {
+    "word": "for the time being",
+    "pronunciation": "for dı taym biin",
+    "type": "İfade",
+    "meaning": "şimdilik, şu an için",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "For the time being, we will stay here.",
+        "meaning": "Şimdilik burada kalacağız."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "revolve",
+    "pronunciation": "rivolv",
+    "type": "Fiil",
+    "meaning": "dönmek, dönmek üzere olmak",
+    "v2": {
+      "form": "revolved",
+      "pronunciation": "rivolvd"
+    },
+    "v3": {
+      "form": "revolved",
+      "pronunciation": "rivolvd"
+    },
+    "gerundInfinitive": "revolving",
+    "examples": [
+      {
+        "sentence": "The planets revolve around the sun.",
+        "meaning": "Gezegenler güneşin etrafında döner."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "disruptive",
+    "pronunciation": "disruptiv",
+    "type": "Sıfat",
+    "meaning": "yıkıcı, bozucu",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "His disruptive behavior worried the teacher.",
+        "meaning": "Yıkıcı davranışları öğretmeni endişelendirdi."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "liver",
+    "pronunciation": "livır",
+    "type": "İsim",
+    "meaning": "karaciğer",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The liver filters blood.",
+        "meaning": "Karaciğer kanı süzer."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "not at all",
+    "pronunciation": "nat at ol",
+    "type": "İfade",
+    "meaning": "hiç, hiç de",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Thank you. — Not at all.",
+        "meaning": "Teşekkürler. — Hiç önemli değil."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "not ever",
+    "pronunciation": "nat evr",
+    "type": "İfade",
+    "meaning": "hiçbir zaman",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I will not ever give up.",
+        "meaning": "Hiçbir zaman pes etmeyeceğim."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "scarcely",
+    "pronunciation": "skersli",
+    "type": "Zarf",
+    "meaning": "zar zor; nadiren",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I could scarcely hear him.",
+        "meaning": "Onu zar zor duyabiliyordum."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "occasionally",
+    "pronunciation": "okeıjnıli",
+    "type": "Zarf",
+    "meaning": "ara sıra",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We meet occasionally for coffee.",
+        "meaning": "Ara sıra kahve için buluşuruz."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "at times",
+    "pronunciation": "at taymz",
+    "type": "İfade",
+    "meaning": "bazen",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "At times I feel lonely.",
+        "meaning": "Bazen kendimi yalnız hissediyorum."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "now and then",
+    "pronunciation": "nau end den",
+    "type": "İfade",
+    "meaning": "ara sıra",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Now and then she calls me.",
+        "meaning": "Ara sıra beni arar."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "date back to",
+    "pronunciation": "deyt bak tu",
+    "type": "Fiil",
+    "meaning": "...e dayanmak, ...e kadar uzanmak",
+    "v2": {
+      "form": "dated back to",
+      "pronunciation": "deytid bak tu"
+    },
+    "v3": {
+      "form": "dated back to",
+      "pronunciation": "deytid bak tu"
+    },
+    "gerundInfinitive": "dating back to",
+    "examples": [
+      {
+        "sentence": "This tradition dates back to the 18th century.",
+        "meaning": "Bu gelenek 18. yüzyıla dayanır."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "go back to",
+    "pronunciation": "gou bak tu",
+    "type": "Fiil",
+    "meaning": "...e dayanmak; geri dönmek",
+    "v2": {
+      "form": "went back to",
+      "pronunciation": "went bak tu"
+    },
+    "v3": {
+      "form": "gone back to",
+      "pronunciation": "gon bak tu"
+    },
+    "gerundInfinitive": "going back to",
+    "examples": [
+      {
+        "sentence": "The story goes back to ancient times.",
+        "meaning": "Hikâye eski zamanlara dayanır."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "date from",
+    "pronunciation": "deyt from",
+    "type": "Fiil",
+    "meaning": "...den kalmak, ...e tarihlenmek",
+    "v2": {
+      "form": "dated from",
+      "pronunciation": "deytid from"
+    },
+    "v3": {
+      "form": "dated from",
+      "pronunciation": "deytid from"
+    },
+    "gerundInfinitive": "dating from",
+    "examples": [
+      {
+        "sentence": "The building dates from the 1990s.",
+        "meaning": "Bina 1990'lardan kalma."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "inhabitants",
+    "pronunciation": "inhabitınts",
+    "type": "İsim",
+    "meaning": "sakinler, ikamet edenler",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The city has over a million inhabitants.",
+        "meaning": "Şehrin bir milyondan fazla sakini var."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "generosity",
+    "pronunciation": "cenırositi",
+    "type": "İsim",
+    "meaning": "cömertlik",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I was touched by their generosity.",
+        "meaning": "Cömertlikleri beni duygulandırdı."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "friendliness",
+    "pronunciation": "frendlinıs",
+    "type": "İsim",
+    "meaning": "dostluk, sıcakkanlılık",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I appreciated the friendliness of the locals.",
+        "meaning": "Yerel halkın dostluğunu takdir ettim."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "struck",
+    "pronunciation": "strak",
+    "type": "Fiil",
+    "meaning": "vurmak; etkilemek (strike'ın geçmiş hali)",
+    "v2": {
+      "form": "struck",
+      "pronunciation": "strak"
+    },
+    "v3": {
+      "form": "struck",
+      "pronunciation": "strak"
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I was struck by her kindness.",
+        "meaning": "Nezaketi beni çok etkiledi."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "warmth",
+    "pronunciation": "wormθ",
+    "type": "İsim",
+    "meaning": "sıcaklık",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I felt the warmth of the fire.",
+        "meaning": "Ateşin sıcaklığını hissettim."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "hospitality",
+    "pronunciation": "haspitality",
+    "type": "İsim",
+    "meaning": "misafirperverlik",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "They showed us great hospitality.",
+        "meaning": "Bize büyük misafirperverlik gösterdiler."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "presently",
+    "pronunciation": "prezıntli",
+    "type": "Zarf",
+    "meaning": "şu anda, yakında",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She is presently working abroad.",
+        "meaning": "Şu anda yurtdışında çalışıyor."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "up to now",
+    "pronunciation": "ap tu nau",
+    "type": "İfade",
+    "meaning": "şu ana kadar",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Up to now, everything has gone well.",
+        "meaning": "Şu ana kadar her şey yolunda gitti."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "up until now",
+    "pronunciation": "ap until nau",
+    "type": "İfade",
+    "meaning": "şimdiye kadar",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Up until now, we had no problems.",
+        "meaning": "Şimdiye kadar sorunumuz olmadı."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "from now on",
+    "pronunciation": "from nau on",
+    "type": "İfade",
+    "meaning": "bundan sonra",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "From now on, be more careful.",
+        "meaning": "Bundan sonra daha dikkatli ol."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "from now onward",
+    "pronunciation": "from nau onvord",
+    "type": "İfade",
+    "meaning": "bundan sonra",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "From now onward, I will save money.",
+        "meaning": "Bundan sonra para biriktireceğim."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "from now onwards",
+    "pronunciation": "from nau onvords",
+    "type": "İfade",
+    "meaning": "bundan sonra",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "From now onwards, meetings start at nine.",
+        "meaning": "Bundan sonra toplantılar dokuzda başlar."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "invariably",
+    "pronunciation": "inveriıbli",
+    "type": "Zarf",
+    "meaning": "her zaman, değişmez şekilde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She is invariably late.",
+        "meaning": "O her zaman geç kalır."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "constantly",
+    "pronunciation": "kantlıntli",
+    "type": "Zarf",
+    "meaning": "sürekli",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The phone rings constantly.",
+        "meaning": "Telefon sürekli çalıyor."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "ceaselessly",
+    "pronunciation": "siıslısli",
+    "type": "Zarf",
+    "meaning": "durmaksızın, sürekli",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He worked ceaselessly.",
+        "meaning": "Durmaksızın çalıştı."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "continually",
+    "pronunciation": "kontinjuıli",
+    "type": "Zarf",
+    "meaning": "sürekli, aralıksız",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The situation is continually changing.",
+        "meaning": "Durum sürekli değişiyor."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "gradually",
+    "pronunciation": "gracuıli",
+    "type": "Zarf",
+    "meaning": "git gide, kademeli olarak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Gradually, he improved.",
+        "meaning": "Git gide iyileşti."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "more and more",
+    "pronunciation": "mor end mor",
+    "type": "İfade",
+    "meaning": "gittikçe daha çok",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It gets more and more difficult.",
+        "meaning": "Gittikçe daha zorlaşıyor."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "day by day",
+    "pronunciation": "dey bay dey",
+    "type": "İfade",
+    "meaning": "günden güne",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Her health improved day by day.",
+        "meaning": "Sağlığı günden güne düzeldi."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "unbearable",
+    "pronunciation": "anberıbl",
+    "type": "Sıfat",
+    "meaning": "dayanılmaz",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The noise was unbearable.",
+        "meaning": "Gürültü dayanılmazdı."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "deteriorate",
+    "pronunciation": "ditiriıreyt",
+    "type": "Fiil",
+    "meaning": "bozulmak, kötüye gitmek",
+    "v2": {
+      "form": "deteriorated",
+      "pronunciation": "ditiriıreytid"
+    },
+    "v3": {
+      "form": "deteriorated",
+      "pronunciation": "ditiriıreytid"
+    },
+    "gerundInfinitive": "deteriorating",
+    "examples": [
+      {
+        "sentence": "The situation began to deteriorate.",
+        "meaning": "Durum kötüye gitmeye başladı."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "formerly",
+    "pronunciation": "formırli",
+    "type": "Zarf",
+    "meaning": "eskiden, önceden",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He was formerly a teacher.",
+        "meaning": "Eskiden öğretmendi."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "ancient",
+    "pronunciation": "eynşınt",
+    "type": "Sıfat",
+    "meaning": "antik, çok eski",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We visited ancient ruins.",
+        "meaning": "Antik kalıntıları ziyaret ettik."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "at the time",
+    "pronunciation": "at dı taym",
+    "type": "İfade",
+    "meaning": "o zamanlarda, o sırada",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "At the time, I did not understand.",
+        "meaning": "O zamanlarda anlamamıştım."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "at that time",
+    "pronunciation": "at det taym",
+    "type": "İfade",
+    "meaning": "o zamanlarda",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "At that time, we lived in Ankara.",
+        "meaning": "O zamanlarda Ankara'da yaşıyorduk."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "originate",
+    "pronunciation": "ırıcineyt",
+    "type": "Fiil",
+    "meaning": "kaynaklanmak, menşei olmak",
+    "v2": {
+      "form": "originated",
+      "pronunciation": "ırıcineytid"
+    },
+    "v3": {
+      "form": "originated",
+      "pronunciation": "ırıcineytid"
+    },
+    "gerundInfinitive": "originating",
+    "examples": [
+      {
+        "sentence": "The tradition originates in Asia.",
+        "meaning": "Gelenek Asya'da kaynaklanır."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "outbreak",
+    "pronunciation": "autbreyk",
+    "type": "İsim",
+    "meaning": "salgın, patlak verme",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "There was an outbreak of flu.",
+        "meaning": "Grip salgını oldu."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "for the first time",
+    "pronunciation": "for dı förs taym",
+    "type": "İfade",
+    "meaning": "ilk kez",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I met her for the first time yesterday.",
+        "meaning": "Onu dün ilk kez gördüm."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "excitement",
+    "pronunciation": "iksaytment",
+    "type": "İsim",
+    "meaning": "heyecan",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The children shouted with excitement.",
+        "meaning": "Çocuklar heyecanla bağırdı."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "if only",
+    "pronunciation": "if onli",
+    "type": "İfade",
+    "meaning": "keşke",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "If only I had known!",
+        "meaning": "Keşke bilseydim!"
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "as if",
+    "pronunciation": "az if",
+    "type": "İfade",
+    "meaning": "sanki, mış gibi",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He talks as if he knows everything.",
+        "meaning": "Sanki her şeyi biliyormuş gibi konuşuyor."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "as though",
+    "pronunciation": "az dou",
+    "type": "İfade",
+    "meaning": "sanki, mış gibi",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She looked as though she was tired.",
+        "meaning": "Yorgunmuş gibi görünüyordu."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "would rather",
+    "pronunciation": "wud rader",
+    "type": "İfade",
+    "meaning": "tercih etmek (would rather ... than)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I would rather stay home.",
+        "meaning": "Evde kalmayı tercih ederim."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "would you mind",
+    "pronunciation": "wud yu maynd",
+    "type": "İfade",
+    "meaning": "rica eder misiniz; sakıncası var mı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Would you mind closing the window?",
+        "meaning": "Pencereyi kapatır mısınız rica etsem?"
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "just as",
+    "pronunciation": "cast az",
+    "type": "İfade",
+    "meaning": "tam ... iken; tıpkı ... gibi",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Just as I arrived, it started to rain.",
+        "meaning": "Tam vardığımda yağmur yağmaya başladı."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "as",
+    "pronunciation": "az",
+    "type": "İfade",
+    "meaning": "iken, sırasında (zaman); olarak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "As I was leaving, the phone rang.",
+        "meaning": "Çıkarken telefon çaldı."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "rehearse",
+    "pronunciation": "rihörs",
+    "type": "Fiil",
+    "meaning": "prova yapmak",
+    "v2": {
+      "form": "rehearsed",
+      "pronunciation": "rihörst"
+    },
+    "v3": {
+      "form": "rehearsed",
+      "pronunciation": "rihörst"
+    },
+    "gerundInfinitive": "rehearsing",
+    "examples": [
+      {
+        "sentence": "We need to rehearse the scene.",
+        "meaning": "Sahneyi prova etmeliyiz."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "countryman",
+    "pronunciation": "kantrimın",
+    "type": "İsim",
+    "meaning": "hemşeri, vatandaş (aynı ülkeden)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He was greeted as a fellow countryman.",
+        "meaning": "Hemşeri olarak karşılandı."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "parade",
+    "pronunciation": "preyd",
+    "type": "İsim",
+    "meaning": "geçit töreni; geçit",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We watched the parade.",
+        "meaning": "Geçit törenini izledik."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "parliament",
+    "pronunciation": "parlıment",
+    "type": "İsim",
+    "meaning": "parlamento",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The law was passed by parliament.",
+        "meaning": "Yasa parlamentodan geçti."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "sobering",
+    "pronunciation": "soubırin",
+    "type": "Sıfat",
+    "meaning": "sarsıcı, ciddiyet veren",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It was a sobering experience.",
+        "meaning": "Sarsıcı bir deneyimdi."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "since",
+    "pronunciation": "sins",
+    "type": "Edat",
+    "meaning": "o zamandan beri; çünkü; -den beri",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I have lived here since 2010.",
+        "meaning": "2010'dan beri burada yaşıyorum."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "notion",
+    "pronunciation": "nouşın",
+    "type": "İsim",
+    "meaning": "kavram, fikir",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I have no notion of what you mean.",
+        "meaning": "Ne demek istediğine dair bir fikrim yok."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "descend",
+    "pronunciation": "disend",
+    "type": "Fiil",
+    "meaning": "inmek; azalmak",
+    "v2": {
+      "form": "descended",
+      "pronunciation": "disendid"
+    },
+    "v3": {
+      "form": "descended",
+      "pronunciation": "disendid"
+    },
+    "gerundInfinitive": "descending",
+    "examples": [
+      {
+        "sentence": "The plane began to descend.",
+        "meaning": "Uçak alçalmaya başladı."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "once",
+    "pronunciation": "vans",
+    "type": "Zarf",
+    "meaning": "bir zamanlar; bir kez",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Once, there was a king.",
+        "meaning": "Bir zamanlar bir kral vardı."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "civilization",
+    "pronunciation": "sivilizeyşın",
+    "type": "İsim",
+    "meaning": "medeniyet, uygarlık",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Ancient civilization left many monuments.",
+        "meaning": "Antik medeniyet birçok anıt bıraktı."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "remarkable",
+    "pronunciation": "rimarkıbl",
+    "type": "Sıfat",
+    "meaning": "dikkate değer, olağanüstü",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She made remarkable progress.",
+        "meaning": "Dikkate değer ilerleme kaydetti."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "so far, thus far, up to now, up till now, to date, hitherto",
+    "pronunciation": "sou far...",
+    "type": "İfade",
+    "meaning": "şimdiye kadar (eş anlamlı bağlaçlar ve ifadeler)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "So far, we have finished half the work.",
+        "meaning": "Şimdiye kadar işin yarısını bitirdik."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "dog",
+    "pronunciation": "dog",
+    "type": "Fiil",
+    "meaning": "takip etmek, peşinden gitmek",
+    "v2": {
+      "form": "dogged",
+      "pronunciation": "dogd"
+    },
+    "v3": {
+      "form": "dogged",
+      "pronunciation": "dogd"
+    },
+    "gerundInfinitive": "dogging",
+    "examples": [
+      {
+        "sentence": "Problems dogged him for years.",
+        "meaning": "Sorunlar yıllarca peşini bırakmadı."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "involve",
+    "pronunciation": "involv",
+    "type": "Fiil",
+    "meaning": "kapsamak, içermek; dahil etmek",
+    "v2": {
+      "form": "involved",
+      "pronunciation": "involvd"
+    },
+    "v3": {
+      "form": "involved",
+      "pronunciation": "involvd"
+    },
+    "gerundInfinitive": "involving",
+    "examples": [
+      {
+        "sentence": "The job involves travel.",
+        "meaning": "İş seyahat gerektiriyor."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "curb",
+    "pronunciation": "körb",
+    "type": "Fiil",
+    "meaning": "dizginlemek, kontrol altına almak",
+    "v2": {
+      "form": "curbed",
+      "pronunciation": "körbd"
+    },
+    "v3": {
+      "form": "curbed",
+      "pronunciation": "körbd"
+    },
+    "gerundInfinitive": "curbing",
+    "examples": [
+      {
+        "sentence": "We must curb spending.",
+        "meaning": "Harcamayı dizginlemeliyiz."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "foresee",
+    "pronunciation": "forsi",
+    "type": "Fiil",
+    "meaning": "öngörmek",
+    "v2": {
+      "form": "foresaw",
+      "pronunciation": "forsou"
+    },
+    "v3": {
+      "form": "foreseen",
+      "pronunciation": "forsin"
+    },
+    "gerundInfinitive": "foreseeing",
+    "examples": [
+      {
+        "sentence": "Nobody could foresee the crisis.",
+        "meaning": "Kimse krizi öngöremezdi."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "as usual",
+    "pronunciation": "az yujuıl",
+    "type": "İfade",
+    "meaning": "her zamanki gibi",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "As usual, he was late.",
+        "meaning": "Her zamanki gibi geç kaldı."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "be about to, be on the verge of, be on the edge of, be on the point of, be on the brink of, be on the threshold of",
+    "pronunciation": "bi about tu...",
+    "type": "İfade",
+    "meaning": "üzerinde olmak, eşiğinde olmak (yakında ... olacak)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She was on the verge of tears.",
+        "meaning": "Gözyaşlarının eşiğindeydi."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "consult",
+    "pronunciation": "kınsalt",
+    "type": "Fiil",
+    "meaning": "danışmak, başvurmak",
+    "v2": {
+      "form": "consulted",
+      "pronunciation": "kınsaltid"
+    },
+    "v3": {
+      "form": "consulted",
+      "pronunciation": "kınsaltid"
+    },
+    "gerundInfinitive": "consulting",
+    "examples": [
+      {
+        "sentence": "You should consult a doctor.",
+        "meaning": "Bir doktora danışmalısın."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "deforestation",
+    "pronunciation": "diforısteysın",
+    "type": "İsim",
+    "meaning": "ormansızlaştırma",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Deforestation threatens wildlife.",
+        "meaning": "Ormansızlaştırma yaban hayatını tehdit ediyor."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "contribute",
+    "pronunciation": "kıntribyut",
+    "type": "Fiil",
+    "meaning": "katkıda bulunmak; sebep olmak",
+    "v2": {
+      "form": "contributed",
+      "pronunciation": "kıntribyutid"
+    },
+    "v3": {
+      "form": "contributed",
+      "pronunciation": "kıntribyutid"
+    },
+    "gerundInfinitive": "contributing",
+    "examples": [
+      {
+        "sentence": "Stress may contribute to illness.",
+        "meaning": "Stres hastalığa sebep olabilir."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "suspect",
+    "pronunciation": "sıspekt",
+    "type": "Fiil",
+    "meaning": "şüphelenmek",
+    "v2": {
+      "form": "suspected",
+      "pronunciation": "sıspektid"
+    },
+    "v3": {
+      "form": "suspected",
+      "pronunciation": "sıspektid"
+    },
+    "gerundInfinitive": "suspecting",
+    "examples": [
+      {
+        "sentence": "I suspect he is lying.",
+        "meaning": "Yalan söylediğinden şüpheleniyorum."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "point out",
+    "pronunciation": "poynt aut",
+    "type": "Phrasal Verb",
+    "meaning": "işaret etmek, belirtmek",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She pointed out my mistake.",
+        "meaning": "Hatamı işaret etti."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "domestication",
+    "pronunciation": "domeztikeyşın",
+    "type": "İsim",
+    "meaning": "evcilleştirme",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The domestication of dogs took thousands of years.",
+        "meaning": "Köpeklerin evcilleştirilmesi binlerce yıl sürdü."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "acquire",
+    "pronunciation": "akvayır",
+    "type": "Fiil",
+    "meaning": "edinmek, elde etmek",
+    "v2": {
+      "form": "acquired",
+      "pronunciation": "akvayırd"
+    },
+    "v3": {
+      "form": "acquired",
+      "pronunciation": "akvayırd"
+    },
+    "gerundInfinitive": "acquiring",
+    "examples": [
+      {
+        "sentence": "He acquired new skills.",
+        "meaning": "Yeni beceriler edindi."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "accelerate",
+    "pronunciation": "akselıreyt",
+    "type": "Fiil",
+    "meaning": "hızlandırmak, hızlanmak",
+    "v2": {
+      "form": "accelerated",
+      "pronunciation": "akselıreytid"
+    },
+    "v3": {
+      "form": "accelerated",
+      "pronunciation": "akselıreytid"
+    },
+    "gerundInfinitive": "accelerating",
+    "examples": [
+      {
+        "sentence": "The car accelerated.",
+        "meaning": "Araba hızlandı."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "as (as ... as)",
+    "pronunciation": "az",
+    "type": "İfade",
+    "meaning": "kadar (karşılaştırma: as ... as)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She is as tall as her brother.",
+        "meaning": "Kardeşi kadar uzun."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "ancestor",
+    "pronunciation": "ansestır",
+    "type": "İsim",
+    "meaning": "ata, soy",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "My ancestors came from this village.",
+        "meaning": "Atalarım bu köydendi."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "counterparts",
+    "pronunciation": "kauntırparts",
+    "type": "İsim",
+    "meaning": "muadil, meslektaş; karşıt kurumdaki kişi",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I met my French counterpart in Paris.",
+        "meaning": "Paris'te Fransız meslektaşımla tanıştım."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "contest",
+    "pronunciation": "kantest",
+    "type": "İsim",
+    "meaning": "yarışma, müsabaka",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She won the singing contest.",
+        "meaning": "Şarkı yarışmasını kazandı."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "present",
+    "pronunciation": "prizent",
+    "type": "Fiil",
+    "meaning": "sunmak, takdim etmek",
+    "v2": {
+      "form": "presented",
+      "pronunciation": "prizentid"
+    },
+    "v3": {
+      "form": "presented",
+      "pronunciation": "prizentid"
+    },
+    "gerundInfinitive": "presenting",
+    "examples": [
+      {
+        "sentence": "He presented the award.",
+        "meaning": "Ödülü sundu."
+      }
+    ],
+    "date": "14.04.2026"
+  },
+  {
+    "word": "inception",
+    "pronunciation": "insepshn",
+    "type": "İsim",
+    "meaning": "başlangıç, teşekkül",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The project has grown since its inception.",
+        "meaning": "Proje başlangıcından beri büyüdü."
+      }
+    ],
+    "date": "14.04.2026"
+  }
+]

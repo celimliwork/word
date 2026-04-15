@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modal Oyun — YDS/YÖKDİL</title>
+  <meta name="description" content="YDS/YÖKDİL için İngilizce modalları oyun gibi öğren: çoktan seçmeli modal quiz." />
+  <style>
+    :root{
+      --bg0:#07070a;
+      --bg1:#0b0b12;
+      --card:rgba(255,255,255,.06);
+      --card2:rgba(255,255,255,.08);
+      --txt:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.68);
+      --line:rgba(255,255,255,.10);
+      --brand1:#8b5cf6;
+      --brand2:#22d3ee;
+      --good:#34d399;
+      --bad:#fb7185;
+      --shadow: 0 18px 60px rgba(0,0,0,.45);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      color:var(--txt);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      background:
+        radial-gradient(1200px 600px at 18% 0%, rgba(139,92,246,.22), transparent 55%),
+        radial-gradient(900px 500px at 85% 12%, rgba(34,211,238,.18), transparent 55%),
+        linear-gradient(180deg, var(--bg0), var(--bg1));
+    }
+    a{color:inherit}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:14px 16px;
+      border:1px solid var(--line);
+      background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
+      border-radius:16px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+    }
+    .logo{
+      width:36px;height:36px;border-radius:12px;
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.22), rgba(255,255,255,0) 55%),
+                  linear-gradient(135deg, var(--brand1), var(--brand2));
+      box-shadow: 0 10px 30px rgba(139,92,246,.22);
+      border:1px solid rgba(255,255,255,.18);
+      flex:0 0 auto;
+    }
+    .brand h1{
+      font-size:0.98rem;
+      line-height:1.1;
+      margin:0;
+      letter-spacing:.3px;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .brand p{margin:0;color:var(--muted);font-size:.82rem}
+    .actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.06);
+      text-decoration:none;
+      font-size:.9rem;
+      color:var(--txt);
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+      user-select:none;
+      cursor:pointer;
+    }
+    .btn:hover{
+      transform: translateY(-1px);
+      background: rgba(255,255,255,.09);
+      border-color: rgba(255,255,255,.16);
+    }
+    .btn.primary{
+      border-color: rgba(34,211,238,.28);
+      background: linear-gradient(135deg, rgba(139,92,246,.35), rgba(34,211,238,.22));
+    }
+    .hero{
+      margin-top:22px;
+      padding:26px 18px;
+      border-radius:18px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      box-shadow: var(--shadow);
+      position:relative;
+      overflow:hidden;
+    }
+    .hero:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background: radial-gradient(600px 220px at 12% 10%, rgba(139,92,246,.25), transparent 60%),
+                  radial-gradient(520px 220px at 88% 20%, rgba(34,211,238,.18), transparent 60%);
+      pointer-events:none;
+    }
+    .hero > *{position:relative}
+    .kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.06);
+      color:var(--muted);
+      font-size:.82rem;
+      letter-spacing:.2px;
+    }
+    .title{
+      margin:12px 0 8px;
+      font-size: clamp(1.4rem, 2.3vw, 2.1rem);
+      letter-spacing:-.3px;
+      line-height:1.12;
+    }
+    .subtitle{
+      margin:0 0 14px;
+      color:var(--muted);
+      max-width: 65ch;
+      line-height:1.55;
+      font-size: .98rem;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap:12px;
+      margin-top:16px;
+    }
+    .card{
+      grid-column: span 12;
+      padding:14px 14px 12px;
+      border-radius:16px;
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.04));
+      box-shadow: 0 14px 40px rgba(0,0,0,.35);
+    }
+    .card .row{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:34px;height:34px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      flex:0 0 auto;
+    }
+    .card h3{margin:0 0 6px;font-size:1rem;letter-spacing:.1px}
+    .card p{margin:0;color:var(--muted);font-size:.92rem;line-height:1.5}
+    .card .cta{
+      margin-top:10px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      font-size:.85rem;
+      color:var(--txt);
+      text-decoration:none;
+    }
+    .pill:hover{background:rgba(255,255,255,.08)}
+    .footer{
+      margin:18px 2px 0;
+      color: rgba(255,255,255,.55);
+      font-size:.82rem;
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .footer a{color:rgba(255,255,255,.75);text-decoration:none;border-bottom:1px dashed rgba(255,255,255,.22)}
+    .footer a:hover{border-bottom-color: rgba(255,255,255,.45)}
+
+    .panel{
+      margin-top:16px;
+      padding:14px;
+      border-radius:16px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      box-shadow: var(--shadow);
+    }
+    .panel-head{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .panel-head h2{
+      margin:0;
+      font-size:1.05rem;
+      letter-spacing:.1px;
+    }
+    .statsbar{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+      color:var(--muted);
+      font-size:.9rem;
+    }
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      white-space:nowrap;
+    }
+    .split{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:12px;
+      margin-top:12px;
+    }
+    .controls{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .control-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+    }
+    .select{
+      flex:1 1 240px;
+      min-width:220px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      color:var(--txt);
+      padding:10px 12px;
+      font-size:.92rem;
+      outline:none;
+    }
+    .checks{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+    .check{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      user-select:none;
+    }
+    .check input{accent-color: var(--brand2)}
+    .quiz{
+      padding:14px;
+      border-radius:16px;
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.04));
+    }
+    .q-kicker{color:var(--muted);font-size:.86rem;margin:0 0 8px}
+    .question{
+      margin:0 0 10px;
+      font-size: clamp(1.05rem, 1.6vw, 1.35rem);
+      line-height:1.25;
+      letter-spacing:-.2px;
+    }
+    .options{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+      margin-top:10px;
+    }
+    .opt{
+      width:100%;
+      text-align:left;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      color:var(--txt);
+      cursor:pointer;
+      transition: transform .10s ease, background .12s ease, border-color .12s ease;
+      font-size:.98rem;
+    }
+    .opt:hover{transform: translateY(-1px); background: rgba(255,255,255,.08)}
+    .opt[disabled]{cursor:not-allowed; opacity:.85}
+    .opt.good{
+      border-color: rgba(52,211,153,.45);
+      background: rgba(52,211,153,.12);
+    }
+    .opt.bad{
+      border-color: rgba(251,113,133,.55);
+      background: rgba(251,113,133,.12);
+    }
+    .hint{
+      margin-top:12px;
+      padding:12px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      color: var(--muted);
+      line-height:1.5;
+      display:none;
+    }
+    .hint strong{color: var(--txt)}
+    .hint code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size:.92em;
+      padding:2px 6px;
+      border-radius:8px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.18);
+      color: rgba(255,255,255,.86);
+      white-space:nowrap;
+    }
+
+    @media (min-width: 720px){
+      .hero{padding:30px 24px}
+      .card{padding:16px}
+      .card.col6{grid-column: span 6}
+      .card.col4{grid-column: span 4}
+      .split{grid-template-columns: 360px 1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <div class="brand" aria-label="Modal Oyun">
+        <div class="logo" aria-hidden="true"></div>
+        <div style="min-width:0;">
+          <h1>Modal Oyun</h1>
+          <p>YDS / YÖKDİL • Çoktan seçmeli</p>
+        </div>
+      </div>
+      <nav class="actions" aria-label="Sayfa bağlantıları">
+        <a class="btn" href="index.html">← Ana sayfa</a>
+        <button class="btn primary" id="newQBtn" type="button">Yeni soru</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Tanıtım">
+        <div class="kicker">🎯 Hedef: anlam → doğru modal kalıbı</div>
+        <h2 class="title">Modalları oyun gibi ezberle (YDS/YÖKDİL)</h2>
+        <p class="subtitle">
+          Türkçe anlam veriliyor, sen doğru kalıbı seçiyorsun (örn. “gerek kalmadı” → <code>didn't need to V1</code>).
+          “Perfect modals” (<code>might have V3</code>, <code>must have V3</code> vb.) dahil geniş bir havuz var.
+        </p>
+        <div class="actions">
+          <button class="btn primary" id="startBtn" type="button">▶ Başlat</button>
+          <button class="btn" id="resetBtn" type="button">Sıfırla</button>
+        </div>
+      </section>
+
+      <section class="panel" aria-label="Oyun">
+        <div class="panel-head">
+          <div>
+            <h2>Quiz</h2>
+            <div class="statsbar" style="margin-top:8px;">
+              <span class="chip">✅ Doğru: <strong id="ok">0</strong></span>
+              <span class="chip">❌ Yanlış: <strong id="bad">0</strong></span>
+              <span class="chip">🔥 Seri: <strong id="streak">0</strong></span>
+              <span class="chip">🎯 Başarı: <strong id="acc">0%</strong></span>
+            </div>
+          </div>
+          <div class="statsbar">
+            <span class="chip">Havuz: <strong id="poolSize">0</strong></span>
+            <span class="chip">En iyi seri: <strong id="bestStreak">0</strong></span>
+          </div>
+        </div>
+
+        <div class="split">
+          <aside class="controls" aria-label="Ayarlar">
+            <div class="control-row">
+              <select id="direction" class="select" aria-label="Soru yönü">
+                <option value="tr2en" selected>TR → EN (anlamdan kalıba)</option>
+                <option value="en2tr">EN → TR (kalıptan anlama)</option>
+              </select>
+            </div>
+
+            <div class="checks" aria-label="Konu filtreleri">
+              <label class="check"><input type="checkbox" id="t_present" checked /> Temel (can/must/should…)</label>
+              <label class="check"><input type="checkbox" id="t_past" checked /> Geçmiş (had to / was able to…)</label>
+              <label class="check"><input type="checkbox" id="t_perfect" checked /> Perfect (modal + have V3)</label>
+              <label class="check"><input type="checkbox" id="t_deduction" checked /> Çıkarım (must be / can't be…)</label>
+            </div>
+
+            <div class="control-row">
+              <label class="check" style="flex:1;">
+                <input type="checkbox" id="showHint" checked />
+                Cevap sonrası ipucu göster
+              </label>
+            </div>
+
+            <div class="control-row">
+              <select id="reviewMode" class="select" aria-label="Tekrar modu">
+                <option value="off">Tekrar: Kapalı</option>
+                <option value="every10" selected>Tekrar: Yanlışları her 10 soruda sor</option>
+                <option value="untilCorrect">Tekrar: Bilene kadar aynı soruyu sor</option>
+              </select>
+            </div>
+
+            <div class="control-row">
+              <button class="btn" id="togglePoolBtn" type="button">Havuzu gör</button>
+              <button class="btn" id="nextBtn" type="button" disabled>Sonraki</button>
+            </div>
+
+            <div class="hint" id="poolHint" style="display:none;">
+              <strong>Havuz notu:</strong> Filtrelere göre soru havuzu değişir. YDS/YÖKDİL için en kritik kısım genelde
+              <code>modal + have V3</code> kalıplarıdır.
+            </div>
+          </aside>
+
+          <section class="quiz" aria-label="Soru">
+            <p class="q-kicker" id="qMeta">Hazır</p>
+            <h3 class="question" id="qText">“Başlat”a basınca sorular gelecek.</h3>
+
+            <div class="options" id="opts" aria-label="Şıklar"></div>
+
+            <div class="hint" id="hintBox" aria-live="polite"></div>
+          </section>
+        </div>
+      </section>
+
+      <div class="footer" role="contentinfo">
+        <div>© <span id="y"></span> Modal Oyun</div>
+        <div><a href="index.html">Ana sayfa</a> · <a href="#" id="kbLink">Kısa notlar</a></div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+
+    const DB = [
+      // Perfect modals (modal + have V3)
+      { id:"p1",  tag:["perfect"], tr:"muhtemelen yapmış olabilir (zayıf olasılık)", en:"might have V3", note:"Geçmişe dair ihtimal" },
+      { id:"p2",  tag:["perfect"], tr:"yapmış olabilir (olasılık)", en:"may have V3", note:"Geçmişe dair ihtimal" },
+      { id:"p3",  tag:["perfect"], tr:"yapmış olabilir (olasılık/alternatif)", en:"could have V3", note:"Geçmişe dair ihtimal veya gerçekleşmemiş imkan" },
+      { id:"p4",  tag:["perfect"], tr:"kesin yapmış olmalı (çıkarım)", en:"must have V3", note:"Geçmişe dair güçlü çıkarım" },
+      { id:"p5",  tag:["perfect"], tr:"kesin yapmamış olamaz (imkânsız)", en:"can't have V3", note:"Geçmişe dair imkânsızlık" },
+      { id:"p6",  tag:["perfect"], tr:"yapmamış olabilir / yapması mümkün değil (zayıf)", en:"couldn't have V3", note:"Geçmişte imkânsızlık (özellikle çıkarım)" },
+      { id:"p7",  tag:["perfect"], tr:"yapmalıydı ama yapmadı (pişmanlık/eleştiri)", en:"should have V3", note:"Geçmişte olması gereken ama olmayan" },
+      { id:"p8",  tag:["perfect"], tr:"yapmamalıydı ama yaptı (eleştiri)", en:"shouldn't have V3", note:"Geçmişte olmaması gereken" },
+      { id:"p9",  tag:["perfect"], tr:"yapsaydı iyi olurdu ama yapmadı (daha resmi)", en:"ought to have V3", note:"Should have ile yakın" },
+      { id:"p10", tag:["perfect"], tr:"yapmış olurdu (ama olmadı / karşı-olgusal)", en:"would have V3", note:"If/koşul yapılarında çok gelir" },
+      { id:"p11", tag:["perfect"], tr:"gerek kalmadı / gerek yoktu (yapmadı)", en:"didn't need to V1", note:"Yapılmadı; zorunluluk yoktu" },
+      { id:"p12", tag:["perfect"], tr:"yapmaya gerek yokmuş ama yapmış (boşa)", en:"needn't have V3", note:"Yapıldı; aslında gerek yoktu" },
+      { id:"p13", tag:["perfect"], tr:"yapmış olmalı / büyük ihtimalle yapmıştır", en:"may well have V3", note:"Geçmişe dair güçlü olasılık" },
+      { id:"p14", tag:["perfect"], tr:"yapmış olamaz (daha resmi)", en:"cannot have V3", note:"Can't have ile yakın" },
+      { id:"p15", tag:["perfect"], tr:"yapmış olmalılar (mantıken)", en:"must have been + N/Adj", note:"Geçmişteki durum çıkarımı" },
+      { id:"p16", tag:["perfect"], tr:"kesin çalışıyor olmalıydı (geçmişte süreç)", en:"must have been V-ing", note:"Geçmişe dair süreç çıkarımı" },
+      { id:"p17", tag:["perfect"], tr:"çalışıyor olamazdı (geçmişte süreç)", en:"can't have been V-ing", note:"Geçmişe dair süreç imkânsızlığı" },
+      { id:"p18", tag:["perfect"], tr:"çalışıyor olabilirlerdi (geçmişte süreç)", en:"might have been V-ing", note:"Geçmişe dair süreç ihtimali" },
+      { id:"p19", tag:["perfect"], tr:"çalışıyor olabilirlerdi (geçmişte süreç)", en:"may have been V-ing", note:"Geçmişe dair süreç ihtimali" },
+      { id:"p20", tag:["perfect"], tr:"çalışıyor olabilirdi (geçmişte süreç)", en:"could have been V-ing", note:"Geçmişe dair süreç ihtimali" },
+      { id:"p21", tag:["perfect"], tr:"bunu yapması gerekirdi (ama yapmadı)", en:"was/were supposed to have V3", note:"Geçmişte beklenen ama gerçekleşmeyen" },
+      { id:"p22", tag:["perfect"], tr:"aslında yapmasına izin verilmişti (geçmiş izin)", en:"was/were allowed to have V3", note:"Kullanımı daha nadir; izin vurgusu" },
+
+      // Present / general modals
+      { id:"b1", tag:["present"], tr:"yapabilir (yetenek/izin)", en:"can V1", note:"Yetenek/izin" },
+      { id:"b2", tag:["present"], tr:"yapamaz (imkânsız/izin yok)", en:"can't V1", note:"İmkânsızlık/izin yok" },
+      { id:"b3", tag:["present"], tr:"yapabilir (nazik/olasılık)", en:"could V1", note:"Nazik istek/olasılık" },
+      { id:"b4", tag:["present"], tr:"yapmayabilir (olasılık)", en:"might V1", note:"İhtimal" },
+      { id:"b5", tag:["present"], tr:"yapabilir (olasılık/izin)", en:"may V1", note:"İzin veya ihtimal" },
+      { id:"b6", tag:["present"], tr:"yapmalı (tavsiye/çıkarım)", en:"should V1", note:"Tavsiye/olasılık" },
+      { id:"b7", tag:["present"], tr:"yapmalı (daha resmi)", en:"ought to V1", note:"Should benzeri" },
+      { id:"b8", tag:["present"], tr:"yapmak zorunda (dış zorunluluk)", en:"have to V1", note:"Zorunluluk" },
+      { id:"b9", tag:["present"], tr:"yapmak zorunda (güçlü zorunluluk)", en:"must V1", note:"Güçlü zorunluluk" },
+      { id:"b10", tag:["present"], tr:"yapmak zorunda değil (zorunluluk yok)", en:"don't have to V1", note:"Gerek yok" },
+      { id:"b11", tag:["present"], tr:"yapmana gerek yok (yasak değil)", en:"needn't V1", note:"Needn't = zorunluluk yok" },
+      { id:"b12", tag:["present"], tr:"yapacak (gelecek/niyet)", en:"will V1", note:"Gelecek/istek" },
+      { id:"b13", tag:["present"], tr:"yapabilirim mi? (izin)", en:"Can I V1?", note:"Soru kalıbı (genel)" },
+      { id:"b14", tag:["present"], tr:"yapabilir miyim? (daha resmi izin)", en:"May I V1?", note:"Resmi izin" },
+      { id:"b15", tag:["present"], tr:"yapmak üzeredir / eli kulağında", en:"be about to V1", note:"Yakın gelecek" },
+      { id:"b16", tag:["present"], tr:"yapması bekleniyor", en:"be expected to V1", note:"Beklenti" },
+      { id:"b17", tag:["present"], tr:"yapması gerekiyor (kural/şart)", en:"be required to V1", note:"Zorunluluk (resmi)" },
+      { id:"b18", tag:["present"], tr:"yapmak zorunda (yükümlülük)", en:"be obliged to V1", note:"Zorunluluk (yükümlülük)" },
+      { id:"b19", tag:["present"], tr:"yapması lazım (yazılı kural)", en:"be to V1", note:"Be to = plan/kural (YDS)" },
+      { id:"b20", tag:["present"], tr:"yapması gerekiyor (plan/niyet)", en:"be going to V1", note:"Niyet/plan" },
+      { id:"b21", tag:["present"], tr:"yapması gerekiyor (güçlü öneri)", en:"had better V1", note:"Uyarı/öneri" },
+      { id:"b22", tag:["present"], tr:"yapmasa iyi olur (olumsuz had better)", en:"had better not V1", note:"Uyarı" },
+      { id:"b23", tag:["present"], tr:"yapmayı tercih ederim", en:"would rather V1", note:"Tercih" },
+      { id:"b24", tag:["present"], tr:"yapmamayı tercih ederim", en:"would rather not V1", note:"Tercih" },
+      { id:"b25", tag:["present"], tr:"yapmayı tercih ederim (daha resmi)", en:"would prefer to V1", note:"Tercih" },
+      { id:"b26", tag:["present"], tr:"yapmaya izinli", en:"be allowed to V1", note:"İzin" },
+      { id:"b27", tag:["present"], tr:"yapmasına izin verilmez", en:"not be allowed to V1", note:"İzin yok" },
+      { id:"b28", tag:["present"], tr:"yapması gerekiyor (genel zorunluluk)", en:"have got to V1", note:"Konuşma dili" },
+      { id:"b29", tag:["present"], tr:"yapması olası / muhtemel", en:"be likely to V1", note:"Olasılık (YDS)" },
+      { id:"b30", tag:["present"], tr:"yapması olası değil", en:"be unlikely to V1", note:"Düşük olasılık" },
+      { id:"b31", tag:["present"], tr:"kesin yapacak (kaçınılmaz)", en:"be bound to V1", note:"Yüksek kesinlik" },
+      { id:"b32", tag:["present"], tr:"yapması gerekiyordu/öyle sanılıyor (kural)", en:"be supposed to V1", note:"Kural/beklenti (YDS)" },
+      { id:"b33", tag:["present"], tr:"yapabilir (genel imkan)", en:"be able to V1", note:"Can yerine (özellikle farklı zamanlar)" },
+      { id:"b34", tag:["present"], tr:"yapmayı başardı", en:"manage to V1", note:"Başarı vurgusu" },
+      { id:"b35", tag:["present"], tr:"yapmakta özgür / yapması serbest", en:"be free to V1", note:"İzin" },
+      { id:"b36", tag:["present"], tr:"yapmalı mı? (öneri)", en:"Should I V1?", note:"Soru kalıbı" },
+      { id:"b37", tag:["present"], tr:"yapabilir misin? (rica)", en:"Could you V1?", note:"Nazik rica" },
+      { id:"b38", tag:["present"], tr:"yapar mısın? (rica)", en:"Would you V1?", note:"Nazik rica" },
+      { id:"b39", tag:["present"], tr:"yapmak zorunda mıyım?", en:"Do I have to V1?", note:"Zorunluluk sorusu" },
+      { id:"b40", tag:["present"], tr:"yapmak zorunda mıyım? (need)", en:"Need I V1?", note:"Resmi/az görülür" },
+      { id:"b41", tag:["present"], tr:"yapabilir (teorik olasılık)", en:"can V1 (theoretical)", note:"Can = bazen olasılık" },
+      { id:"b42", tag:["present"], tr:"yapabilir (güçlü olasılık)", en:"should V1 (probability)", note:"Should = olasılık anlamı" },
+      { id:"b43", tag:["present"], tr:"yapabilir (beklenen/olası sonuç)", en:"ought to V1 (probability)", note:"Ought to = olasılık" },
+
+      // Past / specific
+      { id:"pa1", tag:["past"], tr:"yapmak zorunda kaldı (geçmiş zorunluluk)", en:"had to V1", note:"Must'un geçmişi çoğunlukla had to" },
+      { id:"pa2", tag:["past"], tr:"yapmak zorunda değildi (geçmişte gerek yok)", en:"didn't have to V1", note:"Gerek yoktu" },
+      { id:"pa3", tag:["past"], tr:"yapabildi (başarı/çaba sonucu)", en:"was/were able to V1", note:"Özellikle tek seferlik başarı" },
+      { id:"pa4", tag:["past"], tr:"yapamadı (başaramadı)", en:"couldn't V1", note:"Yetenek/başaramama" },
+      { id:"pa5", tag:["past"], tr:"yapabiliyordu (genel yetenek)", en:"could V1 (past ability)", note:"Genel geçmiş yetenek" },
+      { id:"pa6", tag:["past"], tr:"yapmasına izin verildi (tek seferlik)", en:"was/were allowed to V1", note:"İzin (geçmiş)" },
+      { id:"pa7", tag:["past"], tr:"yapması gerekiyordu (beklenti/kural)", en:"was/were supposed to V1", note:"Beklenti/kural (geçmiş)" },
+      { id:"pa8", tag:["past"], tr:"yapacaktı (ama olmadı)", en:"was/were going to V1", note:"Niyet vardı; gerçekleşmeyebilir" },
+      { id:"pa9", tag:["past"], tr:"yapacaktı (gelecek geçmişten)", en:"would V1 (future in the past)", note:"Dolaylı anlatım" },
+      { id:"pa10", tag:["past"], tr:"eskiden yapardı (alışkanlık)", en:"used to V1", note:"Geçmiş alışkanlık" },
+      { id:"pa11", tag:["past"], tr:"eskiden yapardı (alışkanlık, bağlama bağlı)", en:"would V1 (past habit)", note:"Tekrarlı geçmiş eylem" },
+      { id:"pa12", tag:["past"], tr:"yapması olasıydı", en:"was/were likely to V1", note:"Geçmişte olasılık" },
+      { id:"pa13", tag:["past"], tr:"yapması olası değildi", en:"was/were unlikely to V1", note:"Geçmişte düşük olasılık" },
+      { id:"pa14", tag:["past"], tr:"yapması bekleniyordu", en:"was/were expected to V1", note:"Beklenti (geçmiş)" },
+      { id:"pa15", tag:["past"], tr:"yapması gerekiyordu (resmi)", en:"was/were required to V1", note:"Zorunluluk (resmi)" },
+
+      // Deduction / inference (be / V-ing)
+      { id:"d1", tag:["deduction"], tr:"kesin ... olmalı (şimdi çıkarım)", en:"must be + N/Adj", note:"Şimdiye dair güçlü çıkarım" },
+      { id:"d2", tag:["deduction"], tr:"kesin ... olamaz (şimdi imkânsız)", en:"can't be + N/Adj", note:"Şimdiye dair imkânsızlık" },
+      { id:"d3", tag:["deduction"], tr:"... olabilir (şimdi olasılık)", en:"might be + N/Adj", note:"Şimdiye dair ihtimal" },
+      { id:"d4", tag:["deduction"], tr:"... olabilir (şimdi olasılık)", en:"may be + N/Adj", note:"Şimdiye dair ihtimal" },
+      { id:"d5", tag:["deduction"], tr:"kesin çalışıyor olmalı (şimdi)", en:"must be V-ing", note:"Şimdi devam eden eylem çıkarımı" },
+      { id:"d6", tag:["deduction"], tr:"çalışıyor olamaz (şimdi)", en:"can't be V-ing", note:"Şimdi devam eden eylem imkânsızlığı" },
+      { id:"d7", tag:["deduction"], tr:"çalışıyor olabilir (şimdi)", en:"might be V-ing", note:"Şimdi devam eden eylem ihtimali" },
+      { id:"d8", tag:["deduction"], tr:"... olmalı (genel mantıksal sonuç)", en:"should be + N/Adj", note:"Daha zayıf çıkarım" },
+      { id:"d9", tag:["deduction"], tr:"... olmalı (daha resmi çıkarım)", en:"ought to be + N/Adj", note:"Should be ile yakın" },
+      { id:"d10", tag:["deduction"], tr:"... olamaz (daha resmi)", en:"cannot be + N/Adj", note:"Can't be ile yakın" },
+      { id:"d11", tag:["deduction"], tr:"muhtemelen ...", en:"may well be + N/Adj", note:"Güçlü olasılık" },
+      { id:"d12", tag:["deduction"], tr:"... olabilir (şimdi olasılık)", en:"could be + N/Adj", note:"Olasılık (bağlama bağlı)" },
+      { id:"d13", tag:["deduction"], tr:"çalışıyor olabilir (şimdi)", en:"may be V-ing", note:"Şimdi süreç ihtimali" },
+      { id:"d14", tag:["deduction"], tr:"çalışıyor olabilir (şimdi)", en:"could be V-ing", note:"Şimdi süreç ihtimali" },
+      { id:"d15", tag:["deduction"], tr:"yapmak üzere olmalı (şimdi)", en:"must be about to V1", note:"Yakın gelecek çıkarımı" },
+      { id:"d16", tag:["deduction"], tr:"yapmak üzere olabilir (şimdi)", en:"might be about to V1", note:"Yakın gelecek ihtimali" },
+    ];
+
+    const els = {
+      ok: document.getElementById("ok"),
+      bad: document.getElementById("bad"),
+      streak: document.getElementById("streak"),
+      acc: document.getElementById("acc"),
+      bestStreak: document.getElementById("bestStreak"),
+      poolSize: document.getElementById("poolSize"),
+      qMeta: document.getElementById("qMeta"),
+      qText: document.getElementById("qText"),
+      opts: document.getElementById("opts"),
+      hintBox: document.getElementById("hintBox"),
+      direction: document.getElementById("direction"),
+      startBtn: document.getElementById("startBtn"),
+      newQBtn: document.getElementById("newQBtn"),
+      nextBtn: document.getElementById("nextBtn"),
+      resetBtn: document.getElementById("resetBtn"),
+      showHint: document.getElementById("showHint"),
+      t_present: document.getElementById("t_present"),
+      t_past: document.getElementById("t_past"),
+      t_perfect: document.getElementById("t_perfect"),
+      t_deduction: document.getElementById("t_deduction"),
+      togglePoolBtn: document.getElementById("togglePoolBtn"),
+      poolHint: document.getElementById("poolHint"),
+      kbLink: document.getElementById("kbLink"),
+      reviewMode: document.getElementById("reviewMode"),
+    };
+
+    const LS_KEY = "modal-quiz-v1";
+    const state = {
+      running: false,
+      current: null,
+      locked: false,
+      ok: 0,
+      bad: 0,
+      streak: 0,
+      bestStreak: 0,
+      lastId: null,
+      shown: 0,
+      reviewQueue: [],
+      retryId: null,
+    };
+
+    function loadState(){
+      try{
+        const raw = localStorage.getItem(LS_KEY);
+        if(!raw) return;
+        const s = JSON.parse(raw);
+        if(typeof s.ok === "number") state.ok = s.ok;
+        if(typeof s.bad === "number") state.bad = s.bad;
+        if(typeof s.streak === "number") state.streak = s.streak;
+        if(typeof s.bestStreak === "number") state.bestStreak = s.bestStreak;
+      }catch{}
+    }
+    function saveState(){
+      localStorage.setItem(LS_KEY, JSON.stringify({
+        ok: state.ok,
+        bad: state.bad,
+        streak: state.streak,
+        bestStreak: state.bestStreak,
+        reviewQueue: state.reviewQueue,
+        shown: state.shown,
+      }));
+    }
+
+    function loadReview(){
+      try{
+        const raw = localStorage.getItem(LS_KEY);
+        if(!raw) return;
+        const s = JSON.parse(raw);
+        if(Array.isArray(s.reviewQueue)) state.reviewQueue = s.reviewQueue.filter(x => x && typeof x.id === "string");
+        if(typeof s.shown === "number") state.shown = s.shown;
+      }catch{}
+    }
+
+    function queueWrong(id, dueIn = 10){
+      const due = state.shown + dueIn;
+      const existing = state.reviewQueue.find(x => x.id === id);
+      if(existing){
+        existing.due = Math.min(existing.due, due);
+        existing.w += 1;
+      }else{
+        state.reviewQueue.push({ id, due, w: 1 });
+      }
+      state.reviewQueue.sort((a,b) => (a.due - b.due) || (b.w - a.w));
+    }
+
+    function dequeueIfMastered(id){
+      state.reviewQueue = state.reviewQueue.filter(x => x.id !== id);
+    }
+
+    function pickDueReview(pool){
+      const idsInPool = new Set(pool.map(x => x.id));
+      const due = state.reviewQueue.find(x => x.due <= state.shown && idsInPool.has(x.id));
+      if(!due) return null;
+      return pool.find(x => x.id === due.id) || null;
+    }
+
+    function getById(id){
+      return DB.find(x => x.id === id) || null;
+    }
+
+    function pickTags(){
+      const tags = [];
+      if(els.t_present.checked) tags.push("present");
+      if(els.t_past.checked) tags.push("past");
+      if(els.t_perfect.checked) tags.push("perfect");
+      if(els.t_deduction.checked) tags.push("deduction");
+      return tags;
+    }
+
+    function buildPool(){
+      const tags = new Set(pickTags());
+      const pool = DB.filter(q => q.tag.some(t => tags.has(t)));
+      els.poolSize.textContent = String(pool.length);
+      return pool;
+    }
+
+    function shuffle(arr){
+      for(let i = arr.length - 1; i > 0; i--){
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
+    function sampleDifferent(pool, avoidIds){
+      const candidates = pool.filter(x => !avoidIds.has(x.id));
+      return (candidates.length ? candidates : pool)[Math.floor(Math.random() * (candidates.length ? candidates.length : pool.length))];
+    }
+
+    function makeQuestion(){
+      const pool = buildPool();
+      if(pool.length < 4){
+        els.qMeta.textContent = "Uyarı";
+        els.qText.textContent = "En az 4 soru için filtreleri genişlet.";
+        els.opts.innerHTML = "";
+        els.hintBox.style.display = "none";
+        els.nextBtn.disabled = true;
+        return;
+      }
+
+      state.shown += 1;
+
+      const avoid = new Set();
+      if(state.lastId) avoid.add(state.lastId);
+      const mode = els.reviewMode.value;
+
+      let correct = null;
+      if(mode === "untilCorrect" && state.retryId){
+        correct = getById(state.retryId);
+      }
+      if(!correct && mode === "every10" && state.shown % 10 === 0){
+        correct = pickDueReview(pool);
+      }
+      if(!correct){
+        const due = pickDueReview(pool);
+        if(due && mode !== "off") correct = due;
+      }
+      if(!correct){
+        correct = sampleDifferent(pool, avoid);
+      }
+
+      state.current = correct;
+      state.lastId = correct.id;
+
+      const wrong = [];
+      const used = new Set([correct.id]);
+      while(wrong.length < 3){
+        const w = pool[Math.floor(Math.random() * pool.length)];
+        if(used.has(w.id)) continue;
+        used.add(w.id);
+        wrong.push(w);
+      }
+
+      const direction = els.direction.value;
+      const prompt = direction === "tr2en" ? correct.tr : correct.en;
+      const answers = shuffle([correct, ...wrong]).map(x => ({
+        id: x.id,
+        label: direction === "tr2en" ? x.en : x.tr,
+        isCorrect: x.id === correct.id,
+      }));
+
+      state.locked = false;
+      els.nextBtn.disabled = true;
+      els.hintBox.style.display = "none";
+      els.hintBox.innerHTML = "";
+
+      const isReview = state.reviewQueue.some(x => x.id === correct.id && x.due <= state.shown);
+      const badge = (els.reviewMode.value !== "off" && (isReview || state.retryId === correct.id)) ? " • Tekrar" : "";
+      els.qMeta.textContent = `Konu: ${correct.tag[0]} • 4 şık${badge}`;
+      els.qText.textContent = prompt;
+
+      els.opts.innerHTML = "";
+      for(const a of answers){
+        const b = document.createElement("button");
+        b.className = "opt";
+        b.type = "button";
+        b.textContent = a.label;
+        b.dataset.correct = a.isCorrect ? "1" : "0";
+        b.addEventListener("click", () => choose(b, correct, direction));
+        els.opts.appendChild(b);
+      }
+    }
+
+    function updateStats(){
+      const total = state.ok + state.bad;
+      const acc = total ? Math.round((state.ok / total) * 100) : 0;
+      els.ok.textContent = String(state.ok);
+      els.bad.textContent = String(state.bad);
+      els.streak.textContent = String(state.streak);
+      els.bestStreak.textContent = String(state.bestStreak);
+      els.acc.textContent = `${acc}%`;
+    }
+
+    function lockOptions(){
+      [...els.opts.querySelectorAll("button.opt")].forEach(b => b.disabled = true);
+    }
+
+    function choose(btn, correct, direction){
+      if(!state.running || state.locked) return;
+      state.locked = true;
+
+      const isCorrect = btn.dataset.correct === "1";
+      lockOptions();
+
+      const all = [...els.opts.querySelectorAll("button.opt")];
+      for(const b of all){
+        const yes = b.dataset.correct === "1";
+        if(yes) b.classList.add("good");
+      }
+      if(!isCorrect) btn.classList.add("bad");
+
+      if(isCorrect){
+        state.ok += 1;
+        state.streak += 1;
+        state.bestStreak = Math.max(state.bestStreak, state.streak);
+        state.retryId = null;
+        dequeueIfMastered(correct.id);
+      }else{
+        state.bad += 1;
+        state.streak = 0;
+        if(els.reviewMode.value === "untilCorrect"){
+          state.retryId = correct.id;
+        }else if(els.reviewMode.value !== "off"){
+          queueWrong(correct.id, 10);
+        }
+      }
+      updateStats();
+      saveState();
+
+      els.nextBtn.disabled = false;
+      if(els.showHint.checked){
+        const tr = correct.tr;
+        const en = correct.en;
+        els.hintBox.innerHTML = `
+          <strong>Doğru:</strong> <code>${en}</code><br/>
+          <strong>Anlam:</strong> ${tr}<br/>
+          <strong>Not:</strong> ${correct.note || "—"}
+        `;
+        els.hintBox.style.display = "block";
+      }
+    }
+
+    function start(){
+      state.running = true;
+      makeQuestion();
+    }
+
+    function reset(){
+      state.ok = 0;
+      state.bad = 0;
+      state.streak = 0;
+      state.current = null;
+      state.locked = false;
+      state.shown = 0;
+      state.reviewQueue = [];
+      state.retryId = null;
+      updateStats();
+      saveState();
+      els.qMeta.textContent = "Hazır";
+      els.qText.textContent = "“Başlat”a basınca sorular gelecek.";
+      els.opts.innerHTML = "";
+      els.hintBox.style.display = "none";
+      els.nextBtn.disabled = true;
+    }
+
+    function bind(){
+      els.startBtn.addEventListener("click", start);
+      els.newQBtn.addEventListener("click", start);
+      els.nextBtn.addEventListener("click", () => state.running ? makeQuestion() : start());
+      els.resetBtn.addEventListener("click", reset);
+
+      const rebuilders = [els.direction, els.t_present, els.t_past, els.t_perfect, els.t_deduction, els.reviewMode];
+      rebuilders.forEach(x => x.addEventListener("change", () => {
+        buildPool();
+        if(state.running) makeQuestion();
+      }));
+
+      els.togglePoolBtn.addEventListener("click", () => {
+        const visible = els.poolHint.style.display !== "none";
+        els.poolHint.style.display = visible ? "none" : "block";
+      });
+
+      els.kbLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        els.hintBox.innerHTML = `
+          <strong>Mini kural:</strong><br/>
+          - <code>didn't need to V1</code>: gerek kalmadı (yapmadı)<br/>
+          - <code>needn't have V3</code>: gerek yokmuş ama yaptı (boşa)<br/>
+          - <code>must have V3</code>: geçmişe dair güçlü çıkarım<br/>
+          - <code>can't have V3</code>: geçmişte imkânsızlık çıkarımı
+        `;
+        els.hintBox.style.display = "block";
+      });
+    }
+
+    loadState();
+    loadReview();
+    updateStats();
+    buildPool();
+    bind();
+  </script>
+</body>
+</html>
+

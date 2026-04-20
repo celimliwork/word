@@ -684,6 +684,32 @@
     gap: 6px;
   }
 
+  .resume-panel {
+    display: none;
+    max-width: 420px;
+    margin: 20px auto 0;
+    padding: 18px 20px;
+    background: var(--white);
+    border: 2px solid var(--red-light);
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 28px rgba(26,26,46,0.08);
+  }
+
+  .resume-panel p {
+    margin: 0 0 14px;
+    font-size: 14px;
+    color: var(--charcoal);
+    line-height: 1.45;
+  }
+
+  .resume-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
   .ref-word {
     background: var(--warm);
     border: 1px solid var(--light-grey);
@@ -776,12 +802,20 @@
     <div class="home-hero">
       <div class="home-badge">Modadil × Öğrenme Oyunu</div>
       <h1 class="home-title">Gerunds &<br><span class="highlight">Infinitives</span></h1>
-      <p class="home-subtitle">Tüm konulardan soru havuzu — kategori seçimi yok. Kurallara göz at veya doğrudan oyuna gir.</p>
+      <p class="home-subtitle">Tüm konulardan soru havuzu — kategori seçimi yok. İlerlemen bu tarayıcıda saklanır; sayfayı yenilesen veya menüye dönüp sonra devam etsen de kaldığın soruya dönersin.</p>
     </div>
 
     <div class="home-cta" style="display:flex; flex-direction:column; align-items:center; gap:14px; margin-top:28px;">
       <button class="btn btn-primary btn-lg" onclick="startGame()">Oyunu Başlat 🚀</button>
       <button class="btn btn-secondary" type="button" onclick="openRefPanel()">📖 Kurallar &amp; özet</button>
+    </div>
+
+    <div class="resume-panel" id="resumePanel" aria-live="polite">
+      <p id="resumeText"></p>
+      <div class="resume-actions">
+        <button class="btn btn-primary" type="button" onclick="resumeGame()">▶ Kaldığın yerden devam et</button>
+        <button class="btn btn-ghost btn-sm" type="button" onclick="discardSavedGame()">Kaydı sil, sıfırdan başla</button>
+      </div>
     </div>
 
     <div class="section-divider"><span>Kurallar &amp; referans</span></div>
@@ -1879,6 +1913,281 @@ const QUESTIONS = [
    ans:2,
    why:'Resent + Ving.',
    rule:'Resent + Ving: içine sinmemek, kızmak'},
+
+  // ─── Örnekler & istisnalar (sık sınav tuzakları) ───────────────────
+  {cat:'idiomatic', type:'İstisna / Tuzak',
+   q:'I ___ play tennis every Sunday, but now I prefer swimming. (Eskiden her Pazar tenis oynardım)',
+   opts:['am used to', 'used to', 'get used to', 'use to'],
+   ans:1,
+   why:'Used to + V₀ = geçmişte düzenli yapılan (artık yok). "Am used to" + Ving = alışkın; "get used to" + Ving = alışma süreci.',
+   rule:'Used to + V₀ (geçmiş alışkanlık) ≠ be/get used to + Ving'},
+
+  {cat:'grammar_summary', type:'İstisna / Tuzak',
+   q:'I hate ___ you this, but we need to cancel. (Bunu söylemekten nefret ediyorum – kibar/üzücü haber)',
+   opts:['telling', 'to tell', 'tell', 'having told'],
+   ans:1,
+   why:'"Hate to V₀" bazen kibarlık / üzücü haber bağlamında kullanılır (I hate to say this...). Genel nefret için çoğunlukla hate + Ving.',
+   rule:'İstisna: hate/love + To V₀ (özellikle kibarlık, spesifik an)\nGenel: hate + Ving (I hate waiting.)'},
+
+  {cat:'grammar_summary', type:'İstisna / Tuzak',
+   q:'I like ___ early; it helps me focus. (Erken kalkmayı severim – alışkanlık/rutin)',
+   opts:['getting up', 'to get up', 'get up', 'got up'],
+   ans:1,
+   why:'Like + Ving ve like + To V₀ çoğu zaman yakın anlam; rutin/genel zevk için her ikisi de mümkün, sınavda çoğunlukla Ving tercih edilir.',
+   rule:'Örnek: She likes going out. / I like to read the paper with breakfast. (ikisi de mümkün; bağlam önemli)'},
+
+  {cat:'verbs_inf', type:'İstisna / Tuzak',
+   q:'It started ___. (Birdenbire yağmur yağmaya başladı)',
+   opts:['rain', 'to rain', 'raining', 'rained'],
+   ans:1,
+   why:'Begin/start + To V₀ veya + Ving çoğu zaman mümkün; doğa olaylarında "started to rain / started raining" ikisi de doğrudur; bu soruda mastar formu seçildi.',
+   rule:'İstisna: begin/start/continue + Ving veya + To V₀ (çoğu zaman ikisi de mümkün)\nÖrnek: It began to snow. / It began snowing.'},
+
+  {cat:'verbs_inf', type:'Boşluk Doldurma',
+   q:'Could you help me ___ this box? (Bu kutuyu taşımama yardım eder misin?)',
+   opts:['carry', 'to carry', 'carrying', 'carried'],
+   ans:0,
+   why:'Help + (to) V₀: "to" çoğu zaman atlanabilir; mastar (V₀) doğrudur.',
+   rule:'İstisna: help + (to) V₀ → to isteğe bağlı\nÖrnek: help me carry / help me to carry'},
+
+  {cat:'verbs_inf', type:'İstisna / Tuzak',
+   q:'The manager made the interns ___ overtime. (Stajyerleri mesai yaptırdı)',
+   opts:['work', 'to work', 'working', 'worked'],
+   ans:0,
+   why:'Causative yapı: make + object + bare infinitive (to yok).',
+   rule:'İstisna: make/let/have + object + V₀ (mastar)\nÖrnek: She let him go. / They had us wait.'},
+
+  {cat:'verbs_ger', type:'İstisna / Tuzak',
+   q:'Which sentence is WRONG?',
+   opts:['She enjoys reading.', 'He avoids being late.', 'She enjoys to read novels every day.', 'They finished eating.'],
+   ans:2,
+   why:'Enjoy fiili mastar almaz; enjoy + Ving zorunlu.',
+   rule:'Tuzak: enjoy, mind, finish, avoid → genelde sadece + Ving'},
+
+  {cat:'verbs_ger', type:'Boşluk Doldurma',
+   q:'She proposed ___ the meeting until Friday. (Toplantıyı Cuma\'ya ertelemeyi önerdi)',
+   opts:['postpone', 'to postpone', 'postponing', 'postponed'],
+   ans:2,
+   why:'Öneri anlamında propose + Ving yaygındır (propose doing sth).',
+   rule:'Propose + Ving: önermek\nNot: "propose to someone" evlenme teklifi farklı anlamdır.'},
+
+  {cat:'verb_prep_ger', type:'Boşluk Doldurma',
+   q:'She is committed ___ the project on time. (Projeyi zamanında bitirmeye kararlı)',
+   opts:['finish', 'to finish', 'finishing', 'finished'],
+   ans:2,
+   why:'Committed to + Ving ("to" edat).',
+   rule:'commit to + Ving / devote to + Ving / object to + Ving (to = preposition)'},
+
+  {cat:'verb_prep_ger', type:'Boşluk Doldurma',
+   q:'We adapted quickly ___ in a new city. (Yeni şehirde yaşamaya hızla uyum sağladık)',
+   opts:['live', 'to live', 'living', 'lived'],
+   ans:2,
+   why:'Adapt to + Ving.',
+   rule:'adapt to + Ving / adjust to + Ving'},
+
+  {cat:'ving_formulas', type:'İstisna / Tuzak',
+   q:'She had nothing to do except ___. (Yapacak hiçbir şey yoktu; sadece bekledi)',
+   opts:['wait', 'to wait', 'waiting', 'waited'],
+   ans:0,
+   why:'Except/but + bare infinitive: "nothing to do but wait" kalıbında mastar (to yok).',
+   rule:'İstisna: do nothing but + V₀ / except + V₀ (bazı yapılarda mastar)\nÖrnek: He had no choice but to leave. (burada to gelir — kalıba dikkat!)'},
+
+  {cat:'ving_formulas', type:'Kural Testi',
+   q:'"He had no choice but ___" boşluğa en yaygın tamamlama hangisidir?',
+   opts:['leave', 'leaving', 'to leave', 'left'],
+   ans:2,
+   why:'"Have no choice but to + V₀" kalıbında mastar "to" ile gelir (bir önceki except sorusundan farklı sabit kalıp).',
+   rule:'have no choice but to + V₀ (sabit)\ndo nothing but + V₀ (çoğunlukla to yok)'},
+
+  {cat:'tov_formulas', type:'Boşluk Doldurma',
+   q:'She was the first student ___ the answer. (Cevabı veren ilk öğrenciydi)',
+   opts:['giving', 'give', 'to give', 'given'],
+   ans:2,
+   why:'Sıfat + isim + To V₀ (ordinal/superlative sonrası sık kalıp).',
+   rule:'Örnek: the first to arrive, the last to know, the only one to see'},
+
+  {cat:'tov_formulas', type:'Boşluk Doldurma',
+   q:'I don\'t know whether ___ or stay. (Gitmek mi kalmak mı bilemiyorum)',
+   opts:['go', 'to go', 'going', 'gone'],
+   ans:1,
+   why:'Whether + To V₀ (embedded question + infinitive).',
+   rule:'whether / if + to V₀: seçenek bildiren mastar yapısı\nÖrnek: I don\'t know whether to laugh or cry.'},
+
+  {cat:'dual_meaning', type:'Boşluk Doldurma',
+   q:'I forgot ___ the door before I left. (Çıkmadan önce kilitlemeyi unuttum – yapılacak)',
+   opts:['locking', 'to lock', 'lock', 'locked'],
+   ans:1,
+   why:'Forget + To V₀ = yapılması gereken görevi unutmak.',
+   rule:'Forget + Ving = geçmiş olayı unutmak\nForget + To V₀ = yapılacak şeyi unutmak'},
+
+  {cat:'dual_meaning', type:'Boşluk Doldurma',
+   q:'I\'ll never forget ___ the Alps for the first time. (Alpler\'i ilk kez görmeyi asla unutmayacağım)',
+   opts:['to see', 'seeing', 'see', 'seen'],
+   ans:1,
+   why:'Unutulmaz geçmiş deneyim → forget + Ving (asla unutmamak bağlamında).',
+   rule:'Örnek: I\'ll never forget meeting you. (Ving = yaşanan anı)'},
+
+  {cat:'ving_formulas', type:'Boşluk Doldurma',
+   q:'The house wants ___. (Ev boyanmaya muhtac / boyanmalı – need ile aynı mantık)',
+   opts:['paint', 'to paint', 'painting', 'painted'],
+   ans:2,
+   why:'Want + Ving (İngiliz İngilizcesi) = need to be done (pasif gereklilik).',
+   rule:'İstisna (BrE): want/need + Ving = pasif anlam (The house wants painting = needs to be painted)'},
+
+  {cat:'verbs_inf', type:'Boşluk Doldurma',
+   q:'She taught me how ___ this knot. (Bu düğümü nasıl atacağımı öğretti)',
+   opts:['tie', 'to tie', 'tying', 'tied'],
+   ans:1,
+   why:'Question word + To V₀: "how to tie".',
+   rule:'how/what/when... + to V₀ nesne gibi kullanılabilir\nÖrnek: I learned where to buy tickets.'},
+
+  {cat:'verbs_ger', type:'Boşluk Doldurma',
+   q:'She avoided ___ alone with him. (Onunla yalnız kalmaktan kaçındı)',
+   opts:['be', 'to be', 'being', 'been'],
+   ans:2,
+   why:'Avoid + Ving; pasif anlam için "being left" gerekir ama burada "being alone" yapısı.',
+   rule:'Avoid + being + V₃ / avoid + Ving (pasif gerund sık gelir)'},
+
+  {cat:'idiomatic', type:'Boşluk Doldurma',
+   q:'There\'s no point in ___ over spilled milk. (Dökülen süre ağlamanın anlamı yok)',
+   opts:['cry', 'to cry', 'crying', 'cried'],
+   ans:2,
+   why:'No point in + Ving.',
+   rule:'There\'s no point in + Ving = -menin anlamı yok\nBenzer: What\'s the use of + Ving?'},
+
+  {cat:'idiomatic', type:'Boşluk Doldurma',
+   q:'What\'s the point of ___ if nobody listens? (Kimse dinlemiyorsa konuşmanın ne anlamı var?)',
+   opts:['talk', 'to talk', 'talking', 'talked'],
+   ans:2,
+   why:'Point of + Ving ("of" edat → Ving).',
+   rule:'the point of + Ving'},
+
+  {cat:'tov_formulas', type:'Boşluk Doldurma',
+   q:'She was surprised ___ the news. (Habere şaşırdı)',
+   opts:['hear', 'to hear', 'hearing', 'heard'],
+   ans:1,
+   why:'Surprised + To V₀ (duygusal sıfatlardan sonra mastar sık gelir: glad/sorry/sad to...).',
+   rule:'Adj + To V₀: surprised, glad, sorry, happy, sad, eager (çoğunlukla to)\nNot: "surprised at + Ving" de mümkün; bağlam değişir.'},
+
+  {cat:'tov_formulas', type:'Boşluk Doldurma',
+   q:'I\'m sorry ___ interrupted you. (Sözünü kestiğim için özür dilerim)',
+   opts:['interrupt', 'to interrupt', 'interrupting', 'to have interrupted'],
+   ans:3,
+   why:'Geçmişte bitmiş eylem için özür: sorry to have + V₃ (perfect infinitive).',
+   rule:'İstisna: sorry to have V₃ / glad to have V₃ (geçmişe yönelik pişmanlık veya sevinç)'},
+
+  {cat:'grammar_summary', type:'Kural Testi',
+   q:'"Look forward to" ifadesindeki "to" nedir?',
+   opts:['Mastar işareti (infinitive marker)', 'Edat (preposition)', 'Bağlaç', 'Zarf'],
+   ans:1,
+   why:'Burada "to" mastar değil; edat olduğu için arkasından Ving gelir.',
+   rule:'Tuzak: look forward to + Ving / object to + Ving / be used to + Ving (to = preposition)'},
+
+  {cat:'verbs_inf', type:'Boşluk Doldurma',
+   q:'They agreed ___ pay higher taxes. (Daha yüksek vergi ödemeyi kabul ettiler)',
+   opts:['pay', 'to pay', 'paying', 'paid'],
+   ans:1,
+   why:'Agree + To V₀ = kabul etmek (tek başına agree).',
+   rule:'Agree + To V₀ ≠ agree on + Ving (anlaşmak, karar vermek)\nÖrnek: They agreed to leave. / They agreed on leaving early.'},
+
+  {cat:'verbs_ger', type:'Boşluk Doldurma',
+   q:'She admitted ___ the mistake. (Hatayı kabul etti – admit zaten vardı, fiil çeşitliliği)',
+   opts:['make', 'to make', 'making', 'having made'],
+   ans:3,
+   why:'Geçmişte önce tamamlanmış eylemi itiraf: admit + having + V₃ (perfect gerund, ileri düzey).',
+   rule:'İstisna (ileri): admit/deny + having V₃ (önce olmuş eylem)\nBasit: admit + Ving'},
+
+  {cat:'nouns_inf', type:'Boşluk Doldurma',
+   q:'There is no need ___ panic. (Panik yapmaya gerek yok)',
+   opts:['panic', 'to panic', 'panicking', 'of panicking'],
+   ans:1,
+   why:'Need (isim) + To V₀: "no need to panic".',
+   rule:'(There is) no need to + V₀\nÖrnek: no reason to worry'},
+
+  {cat:'ving_formulas', type:'Boşluk Doldurma',
+   q:'On ___ the news, she called her parents. (Haberi duyar duymaz ailesini aradı)',
+   opts:['hear', 'to hear', 'hearing', 'heard'],
+   ans:2,
+   why:'On + Ving = -ır -maz (hemen sonra), edat sonrası Ving.',
+   rule:'On/Upon + Ving = as soon as (formal)\nÖrnek: On arriving home, I noticed the lights were on.'},
+
+  // ─── prefer ... to ... / would rather / in order to & so as to ─────
+  {cat:'grammar_summary', type:'Boşluk Doldurma',
+   q:'I prefer tea ___ coffee. (Çayı kahveye tercih ederim)',
+   opts:['than', 'to', 'over', 'against'],
+   ans:1,
+   why:'Prefer + A + to + B: ikinci öğeden önce "to" (edat) gelir; A ve B genelde aynı tür (isim veya Ving).',
+   rule:'prefer + (isim/Ving) + to + (isim/Ving)\nÖrnek: prefer walking to driving / prefer novels to poetry'},
+
+  {cat:'grammar_summary', type:'Boşluk Doldurma',
+   q:'She prefers jogging ___ swimming in cold weather. (Soğukta yüzmeye koşuyu tercih eder)',
+   opts:['than', 'to', 'over', 'from'],
+   ans:1,
+   why:'Paralel yapı: Ving + to + Ving.',
+   rule:'prefer + Ving + to + Ving (paralel)\nNot: "prefer to V₀" ayrı kalıp: I\'d prefer to stay home.'},
+
+  {cat:'verbs_inf', type:'Boşluk Doldurma',
+   q:'I\'d prefer ___ at home tonight; I\'m exhausted. (Bu gece evde kalmayı tercih ederim)',
+   opts:['stay', 'to stay', 'staying', 'stayed'],
+   ans:1,
+   why:'Would prefer + To V₀ (mastar) sık kalıp.',
+   rule:'prefer + To V₀ / would prefer + To V₀\nÖrnek: I\'d prefer to leave early.'},
+
+  {cat:'grammar_summary', type:'Boşluk Doldurma',
+   q:'Would you rather ___ in or go to a restaurant? (Evde mi yersin yoksa restorana mı gidersin?)',
+   opts:['eat', 'to eat', 'eating', 'ate'],
+   ans:0,
+   why:'Would rather + mastar (to yok): "rather" sonrası doğrudan fiil kökü.',
+   rule:'Would rather + V₀ (mastar, to yok)\nÖrnek: I\'d rather walk than drive.'},
+
+  {cat:'grammar_summary', type:'Boşluk Doldurma',
+   q:'I\'d rather not ___ about it anymore. (Bu konuda artık konuşmak istemem)',
+   opts:['talk', 'to talk', 'talking', 'talked'],
+   ans:0,
+   why:'Would rather not + V₀.',
+   rule:'would rather not + V₀\nÖrnek: I\'d rather not get involved.'},
+
+  {cat:'grammar_summary', type:'Kural Testi',
+   q:'"I\'d rather you ___ quieter." (Keşke biraz daha sessiz olsan – başka özne) Boşluğa en uygun seçenek hangisidir?',
+   opts:['are', 'be', 'were', 'to be'],
+   ans:2,
+   why:'Başka kişi için tercih: "I\'d rather you + past tense" (üstü kapalı koşul / tavsiye anlatımı).',
+   rule:'İstisna: I\'d rather you didn\'t / I\'d rather she stayed (past form, mastar değil)'},
+
+  {cat:'tov_formulas', type:'Boşluk Doldurma',
+   q:'We left early ___ catch the first train. (İlk trene yetişmek için erken çıktık)',
+   opts:['in order to', 'in order that', 'so that to', 'for catching'],
+   ans:0,
+   why:'Amaç bildirirken in order to + V₀ (resmi/yazılı).',
+   rule:'in order to + V₀ = -mek için (amaç)\nÖrnek: He studied in order to pass the exam.'},
+
+  {cat:'tov_formulas', type:'Boşluk Doldurma',
+   q:'She copied the notes clearly ___ avoid mistakes. (Hata yapmamak için notları netçe kopyaladı)',
+   opts:['so as to', 'so that', 'such as to', 'so to'],
+   ans:0,
+   why:'So as to + V₀ = in order to ile yakın; sınavda "so as to" amaç için sık geçer.',
+   rule:'so as to + V₀ = -mek için (amaç, biraz daha formal)\nÖrnek: He left quietly so as not to disturb anyone.'},
+
+  {cat:'tov_formulas', type:'Boşluk Doldurma',
+   q:'He tiptoed out of the room ___ wake the baby. (Bebeği uyandırmamak için parmak ucuyla çıktı)',
+   opts:['so as not to', 'so as to not', 'not so as to', 'in order not'],
+   ans:0,
+   why:'Olumsuz amaç: "so as not to + V₀" (not, to\'dan önce gelir).',
+   rule:'so as not to + V₀ / in order not to + V₀\nTuzak: so as to not ... (yanlış sıra)'},
+
+  {cat:'grammar_summary', type:'Boşluk Doldurma',
+   q:'She decided to take the bus rather than ___. (Araba kullanmak yerine otobüse binmeye karar verdi)',
+   opts:['drive', 'driving', 'to drive', 'drove'],
+   ans:0,
+   why:'Rather than öncesi mastar/to V₀ ile paralel: "to take ... rather than drive" (ikinci fiilde to tekrarlanmaz).',
+   rule:'rather than + V₀ (paralel mastar)\nBenzer: to walk rather than run / nothing to do but wait'},
+
+  {cat:'grammar_summary', type:'Boşluk Doldurma',
+   q:'They prefer not ___ on weekends. (Hafta sonları çalışmamayı tercih ederler)',
+   opts:['work', 'to work', 'working', 'worked'],
+   ans:1,
+   why:'Prefer not to + V₀.',
+   rule:'prefer not to + V₀\nÖrnek: I prefer not to comment.'},
 ];
 
 // ===================================================================
@@ -1946,6 +2255,7 @@ const REFERENCE = [
       ['something/anybody... + To V₀', 'belirsiz zamir + mastar'],
       ['Superlative + To V₀', 'en üstünlük / sıfat cümlesi kısaltması'],
       ['Infinitive of Purpose', 'amaç (-mek için)'],
+      ['in order to / so as to', 'resmi amaç mastarı; so as not to + V₀'],
       ['Pasif + To V₀ / to have V₃', 'zaman farkı varsa to have V₃'],
       ['Passive Infinitive', 'To be V₃'],
     ]
@@ -1962,6 +2272,11 @@ const REFERENCE = [
       ['Sahiplik + Ving', 'I don\'t mind your coming late.'],
       ['spend/waste + obj + Ving', 'waste time arguing'],
       ['It\'s no use / no good + Ving', 'faydası/yararı yok'],
+      ['prefer A to B', 'prefer tea to coffee / prefer walking to driving'],
+      ['would rather + V₀', 'I\'d rather stay (to yok)'],
+      ['would rather not + V₀', 'I\'d rather not go'],
+      ['rather than + V₀', 'to walk rather than run (paralel mastar)'],
+      ['in order to / so as to + V₀', 'amaç; olumsuz: in order not to / so as not to'],
     ]
   },
   {
@@ -1989,6 +2304,29 @@ const REFERENCE = [
   {
     title: '🔵 Fiiller + Ving (liste)',
     words: ('acknowledge, admit, advise, allow, anticipate, appreciate, attempt, avoid, can\'t help, celebrate, complete, confess, consider, defend, delay, deny, detest, discuss, dislike, dispute, dread, endure, enjoy, escape, explain, facilitate, fancy, feel like, finish, forgive, give up, imagine, include, justify, keep, mention, mind, miss, necessitate, omit, permit, picture, postpone, practice, prevent, prohibit, propose, quit, recall, recollect, recommend, report, resent, resist, resume, risk, suggest, support, tolerate, understand').split(', ')
+  },
+  {
+    title: '⚠️ İstisnalar & sık tuzaklar',
+    rows: [
+      ['Used to + V₀ vs be/get used to + Ving', 'Geçmiş alışkanlık ≠ alışkınlık / alışma süreci'],
+      ['help + (to) V₀', 'to çoğu zaman atlanabilir: help me (to) carry'],
+      ['make / let / have + obj + V₀', 'causative: to yok (made him apologize)'],
+      ['begin / start / continue', '+ Ving veya + To V₀ çoğu zaman ikisi de mümkün'],
+      ['hate / like + To V₀', 'kibarlık veya spesifik an (I hate to say this...)'],
+      ['want / need + Ving (özellikle BrE)', 'pasif gereklilik: The house wants painting'],
+      ['look forward to / object to / commit to', 'to = edat → arkası Ving'],
+      ['agree + To V₀ vs agree on + Ving', 'kabul ≠ üzerinde anlaşma'],
+      ['have no choice but to + V₀', 'sabit kalıp (to şart)'],
+      ['do nothing but + V₀', 'çoğunlukla mastar (to yok): nothing to do but wait'],
+      ['sorry / glad + to have + V₃', 'perfect infinitive – geçmişe yönelik'],
+      ['whether / wh- + to V₀', 'I don\'t know whether to go'],
+      ['admit / deny + having + V₃', 'önce olmuş eylem (perfect gerund)'],
+      ['on / upon + Ving', 'On hearing the news... (= as soon as)'],
+      ['prefer A to B', 'isim/Ving paralelliği; prefer not to + V₀'],
+      ['would rather + V₀', 'to yok; başka özne: I\'d rather you + past'],
+      ['in order to / so as to', 'amaç; olumsuz: so as not to / in order not to'],
+      ['rather than + V₀', 'to take the bus rather than drive'],
+    ]
   }
 ];
 
@@ -2005,6 +2343,7 @@ let state = {
   streak: 0,
   totalScore: 0,
   answered: false,
+  persistChosenIndex: null,
 };
 
 // ===================================================================
@@ -2013,6 +2352,7 @@ let state = {
 function init() {
   state.selectedCats = new Set(CATEGORIES.map(c => c.id));
   buildReference();
+  tryRestoreOnLoad();
   updateHeader();
 }
 
@@ -2051,26 +2391,189 @@ function openRefPanel() {
 }
 
 // ===================================================================
+// PERSIST (sayfa yenileme / yanlışlıkla çıkma)
+// ===================================================================
+const GAME_SAVE_KEY = 'gerunds-infinitives-game-v1';
+const QKEY_SEP = '\x1f';
+
+function getQuestionKey(q) {
+  return q.cat + QKEY_SEP + q.q;
+}
+
+function findQuestionByKey(key) {
+  const i = key.indexOf(QKEY_SEP);
+  if (i === -1) return null;
+  const cat = key.slice(0, i);
+  const qText = key.slice(i + QKEY_SEP.length);
+  return QUESTIONS.find(x => x.cat === cat && x.q === qText) || null;
+}
+
+function saveGameProgress(activeScreen) {
+  try {
+    if (!state.questions.length) {
+      if (activeScreen !== 'quiz') localStorage.removeItem(GAME_SAVE_KEY);
+      return;
+    }
+    const payload = {
+      v: 1,
+      activeScreen,
+      keys: state.questions.map(getQuestionKey),
+      currentIndex: state.currentIndex,
+      correct: state.correct,
+      wrong: state.wrong,
+      skipped: state.skipped,
+      streak: state.streak,
+      totalScore: state.totalScore,
+      answered: !!state.answered,
+      chosenIndex: typeof state.persistChosenIndex === 'number' ? state.persistChosenIndex : null
+    };
+    localStorage.setItem(GAME_SAVE_KEY, JSON.stringify(payload));
+  } catch (e) {}
+}
+
+function clearGameSave() {
+  try { localStorage.removeItem(GAME_SAVE_KEY); } catch (e) {}
+}
+
+function rebuildStateFromPayload(p) {
+  if (!p || p.v !== 1 || !Array.isArray(p.keys) || !p.keys.length) return false;
+  const questions = [];
+  for (const k of p.keys) {
+    const q = findQuestionByKey(k);
+    if (!q) return false;
+    questions.push(q);
+  }
+  state.questions = questions;
+  state.currentIndex = Math.max(0, Math.min(p.currentIndex | 0, questions.length - 1));
+  state.correct = typeof p.correct === 'number' ? p.correct : 0;
+  state.wrong = typeof p.wrong === 'number' ? p.wrong : 0;
+  state.skipped = typeof p.skipped === 'number' ? p.skipped : 0;
+  state.streak = typeof p.streak === 'number' ? p.streak : 0;
+  state.totalScore = typeof p.totalScore === 'number' ? p.totalScore : 0;
+  state.answered = !!p.answered;
+  state.persistChosenIndex = typeof p.chosenIndex === 'number' ? p.chosenIndex : null;
+  return true;
+}
+
+function updateHomeResumePanel() {
+  const panel = document.getElementById('resumePanel');
+  const text = document.getElementById('resumeText');
+  if (!panel || !text) return;
+  let raw;
+  try { raw = localStorage.getItem(GAME_SAVE_KEY); } catch (e) { raw = null; }
+  if (!raw) { panel.style.display = 'none'; return; }
+  let p;
+  try { p = JSON.parse(raw); } catch (e) { panel.style.display = 'none'; return; }
+  if (!p.keys || !p.keys.length || p.activeScreen !== 'home' || p.currentIndex >= p.keys.length) {
+    panel.style.display = 'none';
+    return;
+  }
+  panel.style.display = 'block';
+  text.textContent = `Yarım kaldı: Soru ${p.currentIndex + 1}/${p.keys.length} · Doğru ${p.correct ?? 0} · Yanlış ${p.wrong ?? 0} · Atlanan ${p.skipped ?? 0}`;
+}
+
+function resumeGame() {
+  let raw;
+  try { raw = localStorage.getItem(GAME_SAVE_KEY); } catch (e) { raw = null; }
+  if (!raw) { showToast('Kayıtlı oyun bulunamadı.'); updateHomeResumePanel(); return; }
+  let p;
+  try { p = JSON.parse(raw); } catch (e) { showToast('Kayıt okunamadı.'); return; }
+  if (!rebuildStateFromPayload(p)) {
+    clearGameSave();
+    showToast('Sorular güncellendiği için eski kayıt silindi. Yeni oyun başlatabilirsin.');
+    updateHomeResumePanel();
+    return;
+  }
+  showScreen('quizScreen');
+  updateHeader();
+  renderQuestion();
+}
+
+function discardSavedGame() {
+  clearGameSave();
+  state.questions = [];
+  state.currentIndex = 0;
+  state.correct = 0;
+  state.wrong = 0;
+  state.skipped = 0;
+  state.streak = 0;
+  state.totalScore = 0;
+  state.answered = false;
+  state.persistChosenIndex = null;
+  updateHeader();
+  updateHomeResumePanel();
+  showToast('Kayıt silindi.');
+}
+
+function restoreAnsweredUI() {
+  const chosen = state.persistChosenIndex;
+  if (chosen == null || !state.questions.length) return;
+  const q = state.questions[state.currentIndex];
+  if (!q || chosen < 0 || chosen > 3) return;
+  state.answered = true;
+  const buttons = document.querySelectorAll('.option-btn');
+  const isCorrect = chosen === q.ans;
+  buttons.forEach((btn, i) => {
+    btn.disabled = true;
+    if (i === q.ans) btn.classList.add('correct');
+    else if (i === chosen && !isCorrect) btn.classList.add('wrong');
+  });
+  showExplanation(isCorrect, q);
+  const nextBtn = document.getElementById('nextBtn');
+  if (nextBtn) nextBtn.style.display = 'inline-flex';
+}
+
+function tryRestoreOnLoad() {
+  let raw;
+  try { raw = localStorage.getItem(GAME_SAVE_KEY); } catch (e) { raw = null; }
+  if (!raw) { updateHomeResumePanel(); return; }
+  let p;
+  try { p = JSON.parse(raw); } catch (e) { clearGameSave(); updateHomeResumePanel(); return; }
+  if (!rebuildStateFromPayload(p)) {
+    clearGameSave();
+    showToast('Eski kayıt uyumsuz; yeni oyunla devam edebilirsin.');
+    updateHomeResumePanel();
+    return;
+  }
+  updateHeader();
+  if (p.activeScreen === 'quiz') {
+    showScreen('quizScreen');
+    renderQuestion();
+  } else if (p.activeScreen === 'result') {
+    showScreen('resultScreen');
+    showResults();
+  } else {
+    showScreen('homeScreen');
+    updateHomeResumePanel();
+  }
+}
+
+// ===================================================================
 // GAME FLOW
 // ===================================================================
 function startGame() {
+  clearGameSave();
   state.selectedCats = new Set(CATEGORIES.map(c => c.id));
   const pool = QUESTIONS.filter(q => state.selectedCats.has(q.cat));
   if (pool.length === 0) { showToast('Seçili kategorilerde soru bulunamadı!'); return; }
 
-  // Shuffle
+  state.streak = 0;
+  state.totalScore = 0;
   state.questions = [...pool].sort(() => Math.random() - 0.5);
   state.currentIndex = 0;
   state.correct = 0;
   state.wrong = 0;
   state.skipped = 0;
   state.answered = false;
+  state.persistChosenIndex = null;
 
   showScreen('quizScreen');
   renderQuestion();
+  saveGameProgress('quiz');
 }
 
 function renderQuestion() {
+  if (!state.questions.length) return;
   const q = state.questions[state.currentIndex];
   const total = state.questions.length;
 
@@ -2098,18 +2601,26 @@ function renderQuestion() {
     grid.appendChild(btn);
   });
 
-  state.answered = false;
+  const restoreChosen = state.answered && typeof state.persistChosenIndex === 'number';
+  if (!restoreChosen) {
+    state.answered = false;
+    state.persistChosenIndex = null;
+  }
 
   // Re-animate
   const card = document.getElementById('questionCard');
   card.style.animation = 'none';
   card.offsetHeight;
   card.style.animation = '';
+
+  if (restoreChosen) restoreAnsweredUI();
+  saveGameProgress('quiz');
 }
 
 function selectAnswer(chosen) {
   if (state.answered) return;
   state.answered = true;
+  state.persistChosenIndex = chosen;
 
   const q = state.questions[state.currentIndex];
   const buttons = document.querySelectorAll('.option-btn');
@@ -2134,6 +2645,7 @@ function selectAnswer(chosen) {
 
   updateHeader();
   document.getElementById('nextBtn').style.display = 'inline-flex';
+  saveGameProgress('quiz');
 }
 
 function showExplanation(correct, q) {
@@ -2158,6 +2670,8 @@ function showExplanation(correct, q) {
 }
 
 function nextQuestion() {
+  state.persistChosenIndex = null;
+  state.answered = false;
   state.currentIndex++;
   if (state.currentIndex >= state.questions.length) {
     showResults();
@@ -2171,6 +2685,8 @@ function skipQuestion() {
     state.skipped++;
     state.streak = 0;
   }
+  state.persistChosenIndex = null;
+  state.answered = false;
   state.currentIndex++;
   if (state.currentIndex >= state.questions.length) {
     showResults();
@@ -2208,10 +2724,31 @@ function showResults() {
   }, 100);
 
   document.getElementById('progressFill').style.width = '100%';
+  saveGameProgress('result');
 }
 
 function restartGame() { startGame(); }
-function goHome() { showScreen('homeScreen'); document.getElementById('progressFill').style.width = '0%'; }
+function goHome() {
+  const active = document.querySelector('.screen.active')?.id;
+  if (active === 'quizScreen') {
+    saveGameProgress('home');
+  } else if (active === 'resultScreen') {
+    clearGameSave();
+    state.questions = [];
+    state.currentIndex = 0;
+    state.correct = 0;
+    state.wrong = 0;
+    state.skipped = 0;
+    state.streak = 0;
+    state.totalScore = 0;
+    state.answered = false;
+    state.persistChosenIndex = null;
+  }
+  showScreen('homeScreen');
+  document.getElementById('progressFill').style.width = '0%';
+  updateHeader();
+  updateHomeResumePanel();
+}
 
 function showScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));

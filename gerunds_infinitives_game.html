@@ -1,0 +1,2238 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gerunds & Infinitives – Öğrenme Oyunu</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;800&family=DM+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --red: #C0392B;
+    --red-dark: #922B21;
+    --red-light: #E74C3C;
+    --cream: #FDF6EC;
+    --warm: #F5E6D3;
+    --charcoal: #1A1A2E;
+    --grey: #6B7280;
+    --light-grey: #E8DDD0;
+    --green: #27AE60;
+    --green-light: #2ECC71;
+    --amber: #F39C12;
+    --blue: #2980B9;
+    --white: #FFFFFF;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--charcoal);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* BACKGROUND TEXTURE */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: 
+      radial-gradient(circle at 20% 20%, rgba(192,57,43,0.06) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(192,57,43,0.04) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* HEADER */
+  .header {
+    background: var(--charcoal);
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid var(--red);
+  }
+
+  .header-brand {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: var(--white);
+    letter-spacing: -0.5px;
+  }
+
+  .header-brand span { color: var(--red-light); }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+    flex-wrap: wrap;
+  }
+
+  .header-home {
+    flex-shrink: 0;
+    color: rgba(255,255,255,0.88);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.28);
+    white-space: nowrap;
+  }
+
+  .header-home:hover {
+    color: var(--white);
+    border-bottom-color: var(--red-light);
+  }
+
+  .header-stats {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .stat-pill {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 13px;
+    color: var(--white);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .stat-pill .icon { font-size: 15px; }
+
+  /* PROGRESS BAR */
+  .progress-bar-container {
+    background: var(--charcoal);
+    padding: 0 24px 12px;
+    position: sticky;
+    top: 57px;
+    z-index: 99;
+  }
+
+  .progress-bar {
+    height: 4px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--red), var(--red-light));
+    border-radius: 2px;
+    transition: width 0.5s cubic-bezier(.4,0,.2,1);
+  }
+
+  /* MAIN CONTAINER */
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* SCREENS */
+  .screen { display: none; }
+  .screen.active { display: block; }
+
+  /* HOME SCREEN */
+  .home-hero {
+    text-align: center;
+    padding: 40px 0 20px;
+  }
+
+  .home-badge {
+    display: inline-block;
+    background: var(--red);
+    color: white;
+    font-family: 'Syne', sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+
+  .home-title {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(32px, 7vw, 56px);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin-bottom: 16px;
+  }
+
+  .home-title .highlight { color: var(--red); }
+
+  .home-subtitle {
+    font-size: 16px;
+    color: var(--grey);
+    line-height: 1.6;
+    max-width: 500px;
+    margin: 0 auto 40px;
+  }
+
+  /* CATEGORY GRID */
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+
+  .category-card {
+    background: var(--white);
+    border: 2px solid var(--light-grey);
+    border-radius: 16px;
+    padding: 20px 18px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .category-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--red);
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .category-card:hover::before { opacity: 0.04; }
+  .category-card:hover { border-color: var(--red); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(192,57,43,0.12); }
+
+  .category-card.selected {
+    border-color: var(--red);
+    background: linear-gradient(135deg, #fff5f5 0%, #fff 100%);
+  }
+
+  .category-card.selected .cat-check { opacity: 1; }
+
+  .cat-check {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 22px;
+    height: 22px;
+    background: var(--red);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .cat-icon { font-size: 26px; margin-bottom: 10px; display: block; }
+
+  .cat-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--charcoal);
+    margin-bottom: 4px;
+  }
+
+  .cat-count {
+    font-size: 12px;
+    color: var(--grey);
+  }
+
+  /* BUTTONS */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+    text-decoration: none;
+  }
+
+  .btn-primary {
+    background: var(--red);
+    color: white;
+    box-shadow: 0 4px 16px rgba(192,57,43,0.3);
+  }
+
+  .btn-primary:hover { background: var(--red-dark); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(192,57,43,0.4); }
+  .btn-primary:active { transform: translateY(0); }
+
+  .btn-secondary {
+    background: var(--warm);
+    color: var(--charcoal);
+    border: 2px solid var(--light-grey);
+  }
+
+  .btn-secondary:hover { border-color: var(--charcoal); }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--grey);
+    border: 2px solid var(--light-grey);
+  }
+
+  .btn-ghost:hover { border-color: var(--grey); color: var(--charcoal); }
+
+  .btn-lg { padding: 18px 36px; font-size: 17px; }
+  .btn-sm { padding: 9px 18px; font-size: 13px; }
+
+  /* QUIZ SCREEN */
+  .quiz-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  .quiz-category-badge {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--red);
+    background: rgba(192,57,43,0.08);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-family: 'Syne', sans-serif;
+  }
+
+  .quiz-counter {
+    font-size: 13px;
+    color: var(--grey);
+    font-weight: 600;
+  }
+
+  /* QUESTION CARD */
+  .question-card {
+    background: var(--white);
+    border-radius: 24px;
+    padding: 36px 32px;
+    box-shadow: 0 2px 40px rgba(0,0,0,0.06);
+    border: 1px solid var(--light-grey);
+    margin-bottom: 20px;
+    animation: slideIn 0.3s ease;
+  }
+
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .question-type-tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--grey);
+    margin-bottom: 16px;
+    font-family: 'Syne', sans-serif;
+  }
+
+  .question-text {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(17px, 3vw, 22px);
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--charcoal);
+    margin-bottom: 28px;
+  }
+
+  .question-text .blank {
+    display: inline-block;
+    min-width: 80px;
+    border-bottom: 3px solid var(--red);
+    color: var(--red);
+    padding: 0 4px;
+    text-align: center;
+  }
+
+  /* OPTIONS */
+  .options-grid {
+    display: grid;
+    gap: 10px;
+  }
+
+  .option-btn {
+    background: var(--cream);
+    border: 2px solid var(--light-grey);
+    border-radius: 14px;
+    padding: 16px 20px;
+    text-align: left;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--charcoal);
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .option-letter {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: var(--light-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    flex-shrink: 0;
+    transition: all 0.15s;
+  }
+
+  .option-btn:hover:not(:disabled) {
+    border-color: var(--charcoal);
+    background: var(--warm);
+    transform: translateX(3px);
+  }
+
+  .option-btn:hover:not(:disabled) .option-letter {
+    background: var(--charcoal);
+    color: white;
+  }
+
+  .option-btn.correct {
+    border-color: var(--green);
+    background: rgba(39,174,96,0.08);
+    color: var(--charcoal);
+  }
+
+  .option-btn.correct .option-letter {
+    background: var(--green);
+    color: white;
+  }
+
+  .option-btn.wrong {
+    border-color: var(--red);
+    background: rgba(192,57,43,0.06);
+    color: var(--grey);
+    text-decoration: line-through;
+  }
+
+  .option-btn.wrong .option-letter {
+    background: var(--red);
+    color: white;
+  }
+
+  .option-btn:disabled { cursor: default; }
+
+  /* EXPLANATION BOX */
+  .explanation-box {
+    border-radius: 16px;
+    padding: 20px 22px;
+    margin-top: 16px;
+    animation: fadeIn 0.4s ease;
+    display: none;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .explanation-box.correct-exp {
+    background: rgba(39,174,96,0.08);
+    border: 1.5px solid rgba(39,174,96,0.3);
+  }
+
+  .explanation-box.wrong-exp {
+    background: rgba(192,57,43,0.06);
+    border: 1.5px solid rgba(192,57,43,0.2);
+  }
+
+  .exp-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .exp-emoji { font-size: 20px; }
+
+  .exp-result {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  .exp-result.correct-text { color: var(--green); }
+  .exp-result.wrong-text { color: var(--red); }
+
+  .exp-answer {
+    font-size: 14px;
+    color: var(--charcoal);
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .exp-why {
+    font-size: 14px;
+    color: var(--charcoal);
+    line-height: 1.6;
+  }
+
+  .exp-rule {
+    margin-top: 10px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: var(--grey);
+    border-left: 3px solid var(--red);
+    line-height: 1.6;
+  }
+
+  /* ACTION BUTTONS */
+  .quiz-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  /* RESULT SCREEN */
+  .result-screen {
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .result-emoji {
+    font-size: 72px;
+    margin-bottom: 16px;
+    display: block;
+    animation: bounce 0.6s ease;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+  }
+
+  .result-score-ring {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 24px;
+    position: relative;
+  }
+
+  .result-score-ring svg { transform: rotate(-90deg); }
+
+  .result-score-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .result-score-number {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    color: var(--charcoal);
+    line-height: 1;
+  }
+
+  .result-score-label {
+    font-size: 12px;
+    color: var(--grey);
+    font-weight: 600;
+    margin-top: 3px;
+  }
+
+  .result-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--charcoal);
+    margin-bottom: 8px;
+  }
+
+  .result-subtitle {
+    font-size: 15px;
+    color: var(--grey);
+    margin-bottom: 32px;
+    line-height: 1.5;
+  }
+
+  .result-breakdown {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    max-width: 400px;
+    margin: 0 auto 32px;
+  }
+
+  .result-stat {
+    background: var(--white);
+    border: 1.5px solid var(--light-grey);
+    border-radius: 14px;
+    padding: 16px 10px;
+  }
+
+  .result-stat-num {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    display: block;
+  }
+
+  .result-stat-num.green { color: var(--green); }
+  .result-stat-num.red { color: var(--red); }
+  .result-stat-num.amber { color: var(--amber); }
+
+  .result-stat-label {
+    font-size: 12px;
+    color: var(--grey);
+    font-weight: 600;
+    margin-top: 2px;
+    display: block;
+  }
+
+  /* REFERENCE PANEL */
+  .ref-toggle {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .ref-panel {
+    background: var(--white);
+    border: 1.5px solid var(--light-grey);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: none;
+  }
+
+  .ref-panel.open { display: block; }
+
+  .ref-section {
+    border-bottom: 1px solid var(--light-grey);
+    padding: 18px 22px;
+  }
+
+  .ref-section:last-child { border-bottom: none; }
+
+  .ref-section-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--red);
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+
+  .ref-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+
+  .ref-table tr { border-bottom: 1px solid var(--light-grey); }
+  .ref-table tr:last-child { border-bottom: none; }
+  .ref-table td { padding: 8px 12px; vertical-align: top; }
+  .ref-table td:first-child { font-weight: 600; color: var(--charcoal); }
+  .ref-table td:last-child { color: var(--grey); }
+
+  .ref-tag {
+    display: inline-block;
+    background: rgba(192,57,43,0.1);
+    color: var(--red);
+    border-radius: 4px;
+    padding: 1px 7px;
+    font-size: 11px;
+    font-weight: 700;
+    font-family: 'Syne', sans-serif;
+    margin-right: 4px;
+  }
+
+  .ref-word-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .ref-word {
+    background: var(--warm);
+    border: 1px solid var(--light-grey);
+    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: 13px;
+    color: var(--charcoal);
+  }
+
+  /* DIVIDER */
+  .section-divider {
+    text-align: center;
+    margin: 32px 0;
+    position: relative;
+  }
+
+  .section-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--light-grey);
+  }
+
+  .section-divider span {
+    position: relative;
+    background: var(--cream);
+    padding: 0 16px;
+    font-size: 12px;
+    color: var(--grey);
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Syne', sans-serif;
+  }
+
+  /* TOAST */
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(80px);
+    background: var(--charcoal);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    white-space: nowrap;
+  }
+
+  .toast.show { transform: translateX(-50%) translateY(0); }
+
+  /* MOBILE */
+  @media (max-width: 520px) {
+    .header { padding: 12px 16px; }
+    .container { padding: 24px 14px; }
+    .question-card { padding: 24px 18px; }
+    .result-breakdown { grid-template-columns: repeat(3, 1fr); }
+    .category-grid { grid-template-columns: repeat(2, 1fr); }
+    .header-stats { gap: 8px; }
+    .stat-pill { padding: 4px 10px; font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-left">
+    <a href="index.html" class="header-home">← Ana sayfa</a>
+    <div class="header-brand">Gerunds & <span>Infinitives</span></div>
+  </div>
+  <div class="header-stats">
+    <div class="stat-pill"><span class="icon">🔥</span> <span id="streakCount">0</span></div>
+    <div class="stat-pill"><span class="icon">⭐</span> <span id="totalScore">0</span></div>
+  </div>
+</header>
+
+<div class="progress-bar-container">
+  <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+</div>
+
+<!-- HOME SCREEN -->
+<div class="screen active" id="homeScreen">
+  <div class="container">
+    <div class="home-hero">
+      <div class="home-badge">Modadil × Öğrenme Oyunu</div>
+      <h1 class="home-title">Gerunds &<br><span class="highlight">Infinitives</span></h1>
+      <p class="home-subtitle">Tüm konulardan soru havuzu — kategori seçimi yok. Kurallara göz at veya doğrudan oyuna gir.</p>
+    </div>
+
+    <div class="home-cta" style="display:flex; flex-direction:column; align-items:center; gap:14px; margin-top:28px;">
+      <button class="btn btn-primary btn-lg" onclick="startGame()">Oyunu Başlat 🚀</button>
+      <button class="btn btn-secondary" type="button" onclick="openRefPanel()">📖 Kurallar &amp; özet</button>
+    </div>
+
+    <div class="section-divider"><span>Kurallar &amp; referans</span></div>
+    <div class="ref-toggle">
+      <button class="btn btn-ghost btn-sm" type="button" onclick="toggleRef()">Göster / Gizle</button>
+    </div>
+    <div class="ref-panel" id="refPanel">
+      <div id="refContent"></div>
+    </div>
+  </div>
+</div>
+
+<!-- QUIZ SCREEN -->
+<div class="screen" id="quizScreen">
+  <div class="container">
+    <div class="quiz-meta">
+      <span class="quiz-category-badge" id="categoryBadge">–</span>
+      <span class="quiz-counter" id="questionCounter">Soru 1/20</span>
+    </div>
+
+    <div class="question-card" id="questionCard">
+      <div class="question-type-tag" id="questionType">–</div>
+      <div class="question-text" id="questionText">–</div>
+      <div class="options-grid" id="optionsGrid"></div>
+      <div class="explanation-box" id="explanationBox"></div>
+    </div>
+
+    <div class="quiz-actions">
+      <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()" style="display:none">Sonraki Soru →</button>
+      <button class="btn btn-ghost btn-sm" onclick="skipQuestion()">Geç ⏭</button>
+      <button class="btn btn-ghost btn-sm" onclick="goHome()">↩ Menü</button>
+    </div>
+  </div>
+</div>
+
+<!-- RESULT SCREEN -->
+<div class="screen" id="resultScreen">
+  <div class="container">
+    <div class="result-screen">
+      <span class="result-emoji" id="resultEmoji">🎉</span>
+      <div class="result-score-ring">
+        <svg width="140" height="140" viewBox="0 0 140 140">
+          <circle cx="70" cy="70" r="58" fill="none" stroke="#E8DDD0" stroke-width="10"/>
+          <circle cx="70" cy="70" r="58" fill="none" stroke="#C0392B" stroke-width="10"
+            stroke-dasharray="364.4" stroke-dashoffset="364.4" id="resultCircle"
+            stroke-linecap="round" style="transition: stroke-dashoffset 1.2s ease;"/>
+        </svg>
+        <div class="result-score-text">
+          <span class="result-score-number" id="resultPct">0%</span>
+          <span class="result-score-label">Doğruluk</span>
+        </div>
+      </div>
+      <h2 class="result-title" id="resultTitle">Tebrikler!</h2>
+      <p class="result-subtitle" id="resultSubtitle">–</p>
+      <div class="result-breakdown">
+        <div class="result-stat">
+          <span class="result-stat-num green" id="correctCount">0</span>
+          <span class="result-stat-label">Doğru</span>
+        </div>
+        <div class="result-stat">
+          <span class="result-stat-num red" id="wrongCount">0</span>
+          <span class="result-stat-label">Yanlış</span>
+        </div>
+        <div class="result-stat">
+          <span class="result-stat-num amber" id="skipCount">0</span>
+          <span class="result-stat-label">Atlanan</span>
+        </div>
+      </div>
+      <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+        <button class="btn btn-primary" onclick="restartGame()">Tekrar Oyna 🔄</button>
+        <button class="btn btn-secondary" onclick="goHome()">Ana Menü 🏠</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ===================================================================
+// DATA - All questions from the book
+// ===================================================================
+
+const CATEGORIES = [
+  { id: 'dual_meaning', label: 'İkili Anlam Fiilleri', icon: '🔀', desc: 'Mean, Try, Stop, Forget...' },
+  { id: 'ving_formulas', label: 'V-ing Formülleri', icon: '📌', desc: 'Preposition, go, spend...' },
+  { id: 'idiomatic', label: 'Deyimsel İfadeler', icon: '💬', desc: 'Be used to, can\'t help...' },
+  { id: 'tov_formulas', label: 'To V₀ Formülleri', icon: '🎯', desc: 'Subject, object, adjective...' },
+  { id: 'verbs_inf', label: 'To V₀ Alan Fiiller', icon: '✅', desc: 'Agree, decide, hope...' },
+  { id: 'verbs_ger', label: 'V-ing Alan Fiiller', icon: '🔵', desc: 'Enjoy, avoid, admit...' },
+  { id: 'verb_prep_ger', label: 'Fiil + Edat + V-ing', icon: '🔗', desc: 'Agree on, insist on...' },
+  { id: 'adj_prep_ger', label: 'Sıfat + Edat + V-ing', icon: '🎨', desc: 'Afraid of, good at...' },
+  { id: 'nouns_inf', label: 'İsim + To V₀', icon: '📝', desc: 'Ability, decision, plan...' },
+  { id: 'grammar_summary', label: 'Konu Özeti (Ving / To V₀)', icon: '📖', desc: 'Özne, nesne, zaman sırası' },
+];
+
+const QUESTIONS = [
+  // ─── DUAL MEANING VERBS ───────────────────────────────────────────
+  {cat:'dual_meaning', type:'Çeviri / Anlamlandırma',
+   q:'She STOPPED smoking. → Bu cümlenin doğru Türkçe karşılığı nedir?',
+   opts:['Sigara içmek için durdu.', 'Sigara içmeyi bıraktı.', 'Sigara içmeyi denedi.', 'Sigara içmeye devam etti.'],
+   ans:1,
+   why:'Stop + V-ing = yapılan eylemi bırakmak (give up). Burada "smoking" bir gerund (Ving) olduğu için eylem tamamen bırakılmış demektir.',
+   rule:'STOP + Ving = yapılan eylemi bırakmak\nSTOP + To V₀ = bir şey yapmak için durmak (başka bir eyleme ara vermek)'},
+
+  {cat:'dual_meaning', type:'Boşluk Doldurma',
+   q:'He stopped ___ on his way home. (Bir çay içmek için durdu)',
+   opts:['drinking tea', 'to drink tea', 'drink tea', 'having drunk tea'],
+   ans:1,
+   why:'"Bir çay içmek için durdu" → amaç var, yürüyüşüne ara verdi. Bu yüzden Stop + To V₀ kullanılır.',
+   rule:'Stop + To V₀ = başka bir şey yapmak için durmak (başka eyleme ara verme)'},
+
+  {cat:'dual_meaning', type:'Boşluk Doldurma',
+   q:'I remember ___ the door. (O kapıyı kilitlediğimi hatırlıyorum – geçmişte oldu)',
+   opts:['to lock', 'locking', 'lock', 'locked'],
+   ans:1,
+   why:'"Geçmişte olan bir olayı hatırlamak" → Remember + Ving. Kilitleme eylemi bellekte saklanan geçmiş bir andır.',
+   rule:'Remember + Ving = geçmişte yaşanan bir olayı hatırlamak\nRemember + To V₀ = yapılması gereken bir şeyi hatırlamak (yükümlülük)'},
+
+  {cat:'dual_meaning', type:'Boşluk Doldurma',
+   q:'Remember ___ the report before 5 PM! (Raporu göndermeyi unutma!)',
+   opts:['sending', 'to send', 'send', 'have sent'],
+   ans:1,
+   why:'Görev/yükümlülük var – raporu göndermesi gerekiyor. Bu yüzden Remember + To V₀ kullanılır.',
+   rule:'Remember + To V₀ = yapılması gereken bir şeyi hatırlamak (sorumluluk, görev)'},
+
+  {cat:'dual_meaning', type:'Çeviri / Anlamlandırma',
+   q:'"I forgot meeting her." cümlesi ne anlama gelir?',
+   opts:['Onunla tanışacağımı unuttum.', 'Onunla tanıştığımı unuttum.', 'Onunla tanışmayı reddettim.', 'Onunla tanışmayı planladım.'],
+   ans:1,
+   why:'Forget + Ving = geçmişte yaşanan bir olayı unutmak. "Meeting her" gerund olduğu için "tanıştığımı unuttum" anlamına gelir.',
+   rule:'Forget + Ving = geçmişte olan bir olayı unutmak\nForget + To V₀ = yapılacak bir şeyi unutmak (yükümlülük)'},
+
+  {cat:'dual_meaning', type:'Boşluk Doldurma',
+   q:'She regrets ___ so rudely to him. (O şekilde davrandığı için pişmanlık duyuyor)',
+   opts:['to behave', 'behaving', 'behave', 'have behaved'],
+   ans:1,
+   why:'Geçmişte yapılan bir şeyden pişmanlık → Regret + Ving. Davranış zaten gerçekleşmiş.',
+   rule:'Regret + Ving = geçmişte yaptığın bir şeyden pişmanlık duymak\nRegret + To V₀ = üzücü bir şeyi söylemek için kullanılır (present/bad news)'},
+
+  {cat:'dual_meaning', type:'Çeviri / Anlamlandırma',
+   q:'"We regret to inform you that your application was rejected." Bu cümlede regret nasıl kullanılmış?',
+   opts:['Geçmişte olan bir şeyden pişmanlık', 'Kötü haber verirken üzülmek (present)', 'Gelecek için niyet', 'Alışkanlık anlatma'],
+   ans:1,
+   why:'Regret + To V₀ → bugün/şimdi üzücü bir haber vermek. "Reddettiğimizi bildirmek zorunda olduğumuzdan üzgünüz" anlamında kullanılır.',
+   rule:'Regret + To V₀ = kötü bir haberi vermek zorunda olmanın verdiği üzüntüyü ifade eder (resmi bildirimlerde sık kullanılır)'},
+
+  {cat:'dual_meaning', type:'Çeviri / Anlamlandırma',
+   q:'"Mean + Ving" ile "Mean + To V₀" arasındaki fark nedir?',
+   opts:['İkisi de aynı anlama gelir.', 'Ving = anlamına gelmek / To V₀ = kastetmek, niyet etmek', 'Ving = niyet etmek / To V₀ = anlamına gelmek', 'Her ikisi de kastetmek anlamındadır'],
+   ans:1,
+   why:'"Mean + Ving" genellikle bir durumun getirdiği sonucu anlatır (This means working overtime). "Mean + To V₀" ise niyet/kasıt belirtir (I mean to finish it today).',
+   rule:'Mean + Ving = anlamına gelmek, gerektirmek\nMean + To V₀ = kastetmek, demek istemek, niyet etmek'},
+
+  {cat:'dual_meaning', type:'Boşluk Doldurma',
+   q:'He went on ___ after everyone left. (Herkes gidince farklı bir şeye geçti)',
+   opts:['working', 'to work', 'work', 'worked'],
+   ans:1,
+   why:'"Değişiklik yaparak farklı bir şeye devam etmek" → Go on + To V₀. Cümlede yeni bir aktiviteye geçiş var.',
+   rule:'Go on + Ving = aynı şeye değişiklik yapmadan devam etmek\nGo on + To V₀ = değişiklik yaparak yeni bir şeye geçmek'},
+
+  {cat:'dual_meaning', type:'Boşluk Doldurma',
+   q:'She was nervous but went on ___ for another ten minutes. (Yine de aynı konuşmaya on dakika daha devam etti)',
+   opts:['to speak', 'speaking', 'speak', 'spoken'],
+   ans:1,
+   why:'Aynı eyleme / aynı konuya ara vermeden devam → Go on + Ving.',
+   rule:'Go on + Ving = değişiklik yapmadan aynı şeye devam etmek\nGo on + To V₀ = yeni bir eyleme / konuya geçmek'},
+
+  {cat:'dual_meaning', type:'Boşluk Doldurma',
+   q:'She tried ___ the window but it was stuck. (Pencereyi açmaya çalıştı ama sıkışmıştı)',
+   opts:['opening', 'to open', 'open', 'opened'],
+   ans:1,
+   why:'"Çabalamak, uğraşmak" → Try + To V₀. Pencere açmak için çaba sarf etti ancak başarısız oldu.',
+   rule:'Try + To V₀ = çalışmak, çabalamak, uğraşmak (ve genellikle başarısız olmak)\nTry + Ving = bir şeyi denemek (dene bakalım – sonuç belirsiz)'},
+
+  {cat:'dual_meaning', type:'Boşluk Doldurma',
+   q:'If you can\'t sleep, try ___ warm milk. (Uyuyamazsan sıcak süt içmeyi dene)',
+   opts:['to drink', 'drinking', 'drink', 'drunk'],
+   ans:1,
+   why:'"Bir çözüm olarak denemek" → Try + Ving. "Dene bakalım, işe yarıyor mu" anlamı taşır.',
+   rule:'Try + Ving = bir şeyi çözüm olarak denemek (işe yarar mı diye)'},
+
+  {cat:'dual_meaning', type:'Boşluk Doldurma',
+   q:'She came ___ understand the problem slowly. (Problemi yavaş yavaş anlamaya başladı)',
+   opts:['running', 'to', 'running to', 'having'],
+   ans:1,
+   why:'"Come + To V₀" bir süreç sonunda bir duruma ulaşmayı ifade eder. "Come to understand" = anlamaya başlamak/gelmek.',
+   rule:'Come + To V₀ = -e başlamak, zamanla bir şeye gelmek\nCome + Ving = nasıl geldiğini anlatmak (came running = koşarak geldi)'},
+
+  {cat:'dual_meaning', type:'Boşluk Doldurma',
+   q:'The car needs ___. (Araba tamire ihtiyaç duyuyor – pasif anlam)',
+   opts:['to repair', 'repairing', 'repaired', 'b veya d'],
+   ans:1,
+   why:'"Need + Ving" pasif anlam taşır ve "Need + to be V₃" ile aynı anlama gelir. "The car needs repairing" = "The car needs to be repaired".',
+   rule:'Need + Ving / to be V₃ = pasif anlam (nesne işlem görmeye ihtiyaç duyar)\nNeed + To V₀ = aktif anlam (özne bir şey yapmak zorunda)'},
+
+  // ─── V-ING FORMULAS ───────────────────────────────────────────────
+  {cat:'ving_formulas', type:'Kural Testi',
+   q:'"After ___" yapısında boşluğa ne gelir? (edattan sonra)',
+   opts:['To V₀', 'V-ing (Gerund)', 'V₀ (base form)', 'V₃ (past participle)'],
+   ans:1,
+   why:'Edatlardan (after, before, without, by, of, about, in, on...) sonra her zaman V-ing gelir. Bu kuralın istisnası yoktur.',
+   rule:'Preposition + Ving: Tüm edatlardan sonra gerund (Ving) kullanılır.\nÖrnek: after eating, before going, without saying, by working'},
+
+  {cat:'ving_formulas', type:'Boşluk Doldurma',
+   q:'He left without ___ a word. (Tek kelime söylemeden ayrıldı)',
+   opts:['say', 'to say', 'saying', 'said'],
+   ans:2,
+   why:'"Without" bir edattır. Edatlardan sonra Ving gelir → "without saying".',
+   rule:'Preposition + Ving: "without" bir edat olduğu için arkasından gerund (Ving) alır.'},
+
+  {cat:'ving_formulas', type:'Boşluk Doldurma',
+   q:'They go ___ every Saturday. (Her Cumartesi yüzmeye gidiyorlar)',
+   opts:['to swim', 'swimming', 'swim', 'swam'],
+   ans:1,
+   why:'"Go + Ving" bir aktiviteyi/faaliyeti anlatır. Spor ve boş zaman aktiviteleri için kullanılır: go swimming, go hiking, go shopping...',
+   rule:'Go + Ving: "go" fiili aktivite bildiriyorsa arkasından Ving gelir.\nÖrnek: go fishing, go running, go dancing, go camping'},
+
+  {cat:'ving_formulas', type:'Boşluk Doldurma',
+   q:'She spends hours ___ social media. (Sosyal medya gezinerek saatler geçiriyor)',
+   opts:['to browse', 'browse', 'browsing', 'browsed'],
+   ans:2,
+   why:'"Spend + zaman + Ving" kalıbı: zaman harcamayı anlatır. "spend hours doing sth" çok yaygın bir yapıdır.',
+   rule:'Spend + time/money + Ving: zaman veya para harcamayı anlatırken kullanılır.\nÖrnek: spend time reading, waste money buying...'},
+
+  {cat:'ving_formulas', type:'Boşluk Doldurma',
+   q:'He had trouble ___ the question. (Soruyu anlamakta güçlük çekti)',
+   opts:['understand', 'to understand', 'understanding', 'understood'],
+   ans:2,
+   why:'"Have trouble/difficulty/problem + Ving" kalıbı. Bu isimlerden sonra Ving gelir.',
+   rule:'trouble, difficulty, problem (in) + Ving: Bu isimlerden sonra gerund kullanılır.\nÖrnek: have difficulty speaking, have trouble finding...'},
+
+  {cat:'ving_formulas', type:'Boşluk Doldurma',
+   q:'She was busy ___ dinner when he called. (O aradığında yemek yapıyordu)',
+   opts:['make', 'to make', 'making', 'made'],
+   ans:2,
+   why:'"Be busy with + Ving" kalıbı. "busy" sıfatından sonra Ving gelir.',
+   rule:'busy (with) + Ving: busy sıfatından sonra gerund kullanılır.\nÖrnek: busy working, busy studying, busy preparing...'},
+
+  {cat:'ving_formulas', type:'Kural Testi',
+   q:'"He was caught ___ from the store." (Mağazadan çalarken yakalandı)',
+   opts:['steal', 'to steal', 'stealing', 'stolen'],
+   ans:2,
+   why:'"Is caught / is seen / is found" pasif yapılarından sonra Ving gelir.',
+   rule:'is seen / is caught / is found + Ving: Bu pasif yapıların hepsinden sonra Ving kullanılır.'},
+
+  {cat:'ving_formulas', type:'Kural Testi',
+   q:'"Being V₃" yapısı ne anlama gelir?',
+   opts:['Aktif anlam', 'Pasif gerund (fiilimsi)', 'Gelecek zaman', 'Geçmiş zaman'],
+   ans:1,
+   why:'"Being V₃" Passive Gerund olarak adlandırılır. Cümlede edilgen (pasif) anlam varken tüm Ving formülleri için "being V₃" kullanılır.',
+   rule:'Passive Gerund: "Being V₃" → edilgen anlam taşıyan gerund yapısı.\nÖrnek: She hates being ignored. (Görmezden gelinmekten nefret eder)'},
+
+  {cat:'ving_formulas', type:'Boşluk Doldurma',
+   q:'He saw her ___ in the crowd. (Kalabalıkta yürüdüğünü gördü – olayın bir kısmına tanık oldu)',
+   opts:['walk / walking', 'to walk', 'walked', 'walks'],
+   ans:0,
+   why:'"See/hear + smb + Ving/V₀": olayın bir kısmına tanık olunuyorsa Ving, tamamını görüyorsa V₀ kullanılır. Her iki seçenek de doğru olduğundan opts[0] her ikisini içermektedir.',
+   rule:'See/hear + smb + Ving (olayın bir parçasını gördüysen)\nSee/hear + smb + V₀ (olayın tamamını gördüysen)'},
+
+  // ─── IDIOMATIC EXPRESSIONS ────────────────────────────────────────
+  {cat:'idiomatic', type:'Çeviri',
+   q:'"Be used to + Ving" ne anlama gelir?',
+   opts:['Bir şeyi yapmaya alışmak (süreç)', '-e alışkın olmak (sonuç/durum)', 'Geçmişte yapılan alışkanlık', 'Bir şeyi yapmak zorunda olmak'],
+   ans:1,
+   why:'"Be used to + Ving" = -e alışkın olmak (şu anda alışkın olduğunu anlatır). "Get used to + Ving" ise alışma sürecini anlatır.',
+   rule:'Be used to + Ving = -e alışkın olmak (I am used to waking up early)\nGet used to + Ving = -e alışmak (süreç)\nUsed to + V₀ = geçmişte düzenli yapılan ama artık yapılmayan şey'},
+
+  {cat:'idiomatic', type:'Boşluk Doldurma',
+   q:'I can\'t help ___ when I watch that film. (O filmi izlerken ağlamamak elimden gelmiyor)',
+   opts:['cry', 'to cry', 'crying', 'cried'],
+   ans:2,
+   why:'"Can\'t help + Ving" = kendini alamamak, -meden edememek. Bu deyimsel ifadeden sonra Ving gelir.',
+   rule:"Can't help + Ving = kendini alamamak, -meden edememek\nÖrnek: I can't help laughing. (Gülmeden edemiyorum)"},
+
+  {cat:'idiomatic', type:'Boşluk Doldurma',
+   q:'She is looking forward to ___ you again. (Seni tekrar görmekten çok heyecanlı)',
+   opts:['see', 'seeing', 'to see', 'seen'],
+   ans:1,
+   why:'"Look forward to + Ving": buradaki "to" bir edat, mastar belirteci değil! Bu yüzden arkasından Ving gelir.',
+   rule:"Look forward to + Ving: 'to' burada edat (preposition), infinitive işareti değil!\nÖrnek: looking forward to meeting, look forward to hearing..."},
+
+  {cat:'idiomatic', type:'Boşluk Doldurma',
+   q:'It\'s worth ___ this documentary. (Bu belgeseli izlemeye değer)',
+   opts:['to watch', 'watch', 'watching', 'watched'],
+   ans:2,
+   why:'"It\'s worth + Ving" deyimsel bir ifadedir ve her zaman Ving alır.',
+   rule:'It\'s worth + Ving = -meye değer\nIt\'s no use + Ving = -menin faydası yok\nIt\'s no good + Ving = -nın yararı yok'},
+
+  {cat:'idiomatic', type:'Çeviri',
+   q:'"I feel like eating pizza tonight." Bu cümlenin anlamı nedir?',
+   opts:['Pizza yemek gibi hissediyorum (garip)', 'Bu gece pizza yemek istiyorum / canım pizza çekiyor', 'Pizza yemem gerekiyor', 'Pizza yemek üzereyim'],
+   ans:1,
+   why:'"Feel like + Ving" = canı çekmek, istemek. Türkçede "canım X çekiyor" ya da "-mek istiyorum" ile karşılanır.',
+   rule:'Feel like + Ving = canı çekmek, istemek\nÖrnek: I feel like going for a walk. (Yürüyüşe çıkmak istiyorum)'},
+
+  {cat:'idiomatic', type:'Boşluk Doldurma',
+   q:'She objected to ___ alone. (Yalnız bırakılmaya itiraz etti)',
+   opts:['leave', 'to leave', 'leaving', 'be left'],
+   ans:2,
+   why:'"Object to + Ving" deyimsel ifadesi. "to" burada edattır, arkasından Ving gelir.',
+   rule:'Object to + Ving = -e itiraz etmek\nBe opposed to + Ving = -e karşı olmak'},
+
+  {cat:'idiomatic', type:'Kural Testi',
+   q:'"There is no point in ___" ifadesinden sonra ne gelir?',
+   opts:['To V₀', 'V₀ (base form)', 'V-ing', 'V₃'],
+   ans:2,
+   why:'"There is no point in + Ving" = -nın anlamı/yararı yok. "In" bir edat olduğu için arkasından Ving gelir.',
+   rule:'There is no point in + Ving = -nın anlamı/yararı yok\nIn the habit of + Ving = -e alışkın olmak'},
+
+  {cat:'idiomatic', type:'Boşluk Doldurma',
+   q:'She can\'t bear ___ waited. (Bekletilmekten hiç hoşlanmıyor)',
+   opts:['being', 'to be', 'being waited / to be waited', 'wait'],
+   ans:0,
+   why:'"Can\'t bear + Ving" = tahammül edememek. Pasif anlam için "being waited" (pasif gerund) kullanılır.',
+   rule:"Can't bear + Ving = tahammül edememek\nCan't stand + Ving = tahammül edememek (daha güçlü)\nPassive gerund: being V₃"},
+
+  // ─── TO V₀ FORMULAS ──────────────────────────────────────────────
+  {cat:'tov_formulas', type:'Kural Testi',
+   q:'"Too ___ to V₀" yapısı ne anlama gelir?',
+   opts:['Yeterince ... yapmak', '... yapamayacak kadar (çok)', 'Gereksiz yere', 'Amaç belirtmek'],
+   ans:1,
+   why:'"Too + adj/adv + to V₀" = "-emeyecek kadar" anlamı taşır ve olumsuz sonuç içerir. Örnek: too tired to run = koşamayacak kadar yorgun.',
+   rule:'Too + adj/adv + To V₀ = -emeyecek kadar...\nÖrnek: too cold to swim (yüzülemeyecek kadar soğuk)\nadj/adv + Enough + To V₀ = -ecek kadar (olumlu)'},
+
+  {cat:'tov_formulas', type:'Boşluk Doldurma',
+   q:'She is old enough ___ drive. (Araba kullanmaya yeteri kadar yaşlı/büyük)',
+   opts:['to', 'for', 'of', 'that'],
+   ans:0,
+   why:'"Adj/adv + Enough + To V₀" yapısı. "enough" yeterlilik belirtir ve arkasından To V₀ gelir.',
+   rule:'adj/adv + Enough + To V₀ = -ecek kadar (yeterli)\nEnough + noun + To V₀ = yeterli [isim] ... için\nÖrnek: strong enough to lift (kaldıracak kadar güçlü)'},
+
+  {cat:'tov_formulas', type:'Boşluk Doldurma',
+   q:'She went to the store ___ some milk. (Süt almak için markete gitti – amaç)',
+   opts:['buying', 'for buying', 'to buy', 'buy'],
+   ans:2,
+   why:'"Infinitive of Purpose" = amaç belirtmek için To V₀ kullanılır. Türkçede "-mek/-mak için" anlamı verir.',
+   rule:'Infinitive of Purpose: amaç ifade etmek için To V₀\nÖrnek: She studies hard to pass. (Geçmek için çok çalışır)\nIn order to V₀ da aynı anlama gelir.'},
+
+  {cat:'tov_formulas', type:'Kural Testi',
+   q:'"Question Word + To V₀" yapısında hangi soru kelimeleri kullanılır?',
+   opts:['Sadece "how"', 'wh- kelimeleri (what, where, when, how, which...)', 'Sadece "what"', 'Yalnızca "why"'],
+   ans:1,
+   why:'"Question Word + To V₀": wh- kelimeleri (what, where, when, how, which, who) + to V₀ yapısı kullanılır. "why" bu yapıda kullanılmaz.',
+   rule:'Question Word + To V₀: wh- (what, where, how, which...) + To V₀\nÖrnek: I don\'t know what to do. / She showed me how to cook.\nNot: "why" bu yapıda kullanılmaz.'},
+
+  {cat:'tov_formulas', type:'Boşluk Doldurma',
+   q:'This is the best film I have ever seen ___ cry. (Ağlayacağım kadar iyi)',
+   opts:['for making me', 'to make me', 'making me', 'make me'],
+   ans:1,
+   why:'"Superlative + To V₀": en üstünlük ifadelerinden sonra To V₀ gelir (adjective clause kısaltması olarak).',
+   rule:'Superlative + To V₀: en üstünlük sıfatlarından sonra To V₀ kullanılır.\nÖrnek: the first to arrive, the best to try, the last to leave'},
+
+  {cat:'tov_formulas', type:'Boşluk Doldurma',
+   q:'It is important ___ on time. (Zamanında gelmek önemlidir)',
+   opts:['arriving', 'arrive', 'to arrive', 'arrived'],
+   ans:2,
+   why:'Sıfatlardan sonra (important, necessary, difficult, easy, possible...) To V₀ kullanılır: "It is + adj + To V₀".',
+   rule:'"To V₀" after certain Adjectives: adj + To V₀\nÖrnek: It is easy to learn. / It is difficult to understand.\nSık kullanılan sıfatlar: important, necessary, easy, hard, possible, impossible'},
+
+  {cat:'tov_formulas', type:'Boşluk Doldurma',
+   q:'I have a lot of work ___. (Yapacak çok işim var)',
+   opts:['doing', 'do', 'to do', 'done'],
+   ans:2,
+   why:'"Something / anything / nothing + To V₀" ve "Noun + To V₀": soyut ve fiilden türeyen isimlerden sonra To V₀ kullanılır.',
+   rule:'Noun + To V₀: fiilden türeyen soyut isimlerden sonra To V₀\nSomething/anything/nothing + To V₀\nÖrnek: something to eat, a chance to win, a plan to travel'},
+
+  {cat:'tov_formulas', type:'Kural Testi',
+   q:'"Passive Infinitive" yapısı nasıl oluşturulur?',
+   opts:['"Being V₃"', '"To be V₃"', '"To have V₃"', '"Having been V₃"'],
+   ans:1,
+   why:'Passive Infinitive = "To be V₃". Cümlede tüm To V₀ formüllerinde edilgen anlam varsa "to be V₃" kullanılır.',
+   rule:'Passive Infinitive: To be V₃ = edilgen mastar\nÖrnek: She wants to be promoted. (Terfi ettirilmek istiyor)\nTo have V₃ = eş zamanlı olmayan zaman farkı olan durum'},
+
+  // ─── VERBS FOLLOWED BY INFINITIVES ───────────────────────────────
+  {cat:'verbs_inf', type:'Boşluk Doldurma',
+   q:'They decided ___ a new car. (Yeni bir araba almaya karar verdiler)',
+   opts:['buying', 'buy', 'to buy', 'bought'],
+   ans:2,
+   why:'"Decide" To V₀ alan fiillerdendir. Geleceğe yönelik anlam taşıyan fiiller genellikle To V₀ alır.',
+   rule:'Decide + To V₀: karar vermek\nGeleceğe yönelik anlam taşıyan fiiller To V₀ alır:\nagree, plan, hope, wish, intend, promise, refuse, want...'},
+
+  {cat:'verbs_inf', type:'Kural Testi',
+   q:'Aşağıdakilerden hangisi To V₀ alan fiillerden DEĞİLDİR?',
+   opts:['hope', 'promise', 'enjoy', 'agree'],
+   ans:2,
+   why:'"Enjoy" Ving alan fiillerdendir. Geleceğe değil, geçmişe veya genel anlama yönelik fiillerdir. Enjoy + Ving = keyif almak.',
+   rule:'Enjoy + Ving: keyif almak (Ving alır)\nTo V₀ alan fiiller: hope, promise, agree, plan, decide, refuse, want, wish...'},
+
+  {cat:'verbs_inf', type:'Boşluk Doldurma',
+   q:'She refused ___ the contract. (Sözleşmeyi imzalamayı reddetti)',
+   opts:['signing', 'sign', 'to sign', 'signed'],
+   ans:2,
+   why:'"Refuse" To V₀ alan fiillerdendir. Refuse + To V₀ = reddetmek.',
+   rule:'Refuse + To V₀: reddetmek\nDiğer To V₀ alan fiiller: hesitate, fail, attempt, intend, struggle, volunteer...'},
+
+  {cat:'verbs_inf', type:'Boşluk Doldurma',
+   q:'He seems ___ about the news. (Haberden mutlu görünüyor)',
+   opts:['happy', 'to be happy', 'being happy', 'happily'],
+   ans:1,
+   why:'"Seem + To V₀" yapısı: seem/appear fiilleri To V₀ ile birlikte kullanılır.',
+   rule:'Seem / Appear + To V₀: görünmek, anlaşılmak\nÖrnek: She seems to know the answer. / He appears to be tired.'},
+
+  {cat:'verbs_inf', type:'Boşluk Doldurma',
+   q:'She pretended ___ asleep when he came in. (O girdiğinde uyuyormuş gibi yaptı)',
+   opts:['sleeping', 'sleep', 'to be sleeping', 'slept'],
+   ans:2,
+   why:'"Pretend + To V₀": görünmek, gibi yapmak. Süregelen bir durum olduğu için "to be sleeping" kullanılır.',
+   rule:'Pretend + To V₀: gibi yapmak, -yormuş gibi davranmak\nÖrnek: He pretended to be busy.'},
+
+  {cat:'verbs_inf', type:'Boşluk Doldurma',
+   q:'I can\'t afford ___ a new laptop right now. (Şu an yeni bir laptop almaya gücüm yetmez)',
+   opts:['buying', 'buy', 'to buy', 'bought'],
+   ans:2,
+   why:'"Afford" To V₀ alan fiillerdendir. Afford + To V₀ = gücü yetmek, yapabilecek imkânı olmak.',
+   rule:'Afford + To V₀: gücü yetmek (genellikle olumsuz kullanılır)\nÖrnek: I can\'t afford to eat out every day.'},
+
+  // ─── VERBS FOLLOWED BY GERUNDS ────────────────────────────────────
+  {cat:'verbs_ger', type:'Boşluk Doldurma',
+   q:'She avoids ___ eye contact. (Göz temasından kaçınır)',
+   opts:['make', 'to make', 'making', 'made'],
+   ans:2,
+   why:'"Avoid" Ving alan fiillerdendir. Genel anlam taşıyan, geçmişe veya rutine atıfta bulunan fiiller Ving alır.',
+   rule:'Avoid + Ving: kaçınmak\nDiğer Ving alan fiiller: admit, deny, enjoy, miss, mind, quit, risk, suggest...'},
+
+  {cat:'verbs_ger', type:'Boşluk Doldurma',
+   q:'He denied ___ the money. (Parayı çaldığını inkâr etti)',
+   opts:['stealing', 'to steal', 'steal', 'stolen'],
+   ans:0,
+   why:'"Deny" Ving alan fiillerdendir. Geçmişte olan bir olayı inkâr etmek → Deny + Ving.',
+   rule:'Deny + Ving: inkâr etmek (geçmişte olan olay)\nBenzer: admit + Ving (itiraf etmek), confess + Ving'},
+
+  {cat:'verbs_ger', type:'Boşluk Doldurma',
+   q:'Would you mind ___ the window? (Pencereyi kapar mısın? – nazik istek)',
+   opts:['close', 'to close', 'closing', 'closed'],
+   ans:2,
+   why:'"Mind" Ving alan fiillerdendir. "Would you mind + Ving?" kalıbı nazik istek için kullanılır.',
+   rule:'Mind + Ving: önemsemek, aldırmak\n"Would you mind + Ving?" = nazik istek formülü\nÖrnek: I don\'t mind waiting. (Beklemek umurumda değil)'},
+
+  {cat:'verbs_ger', type:'Boşluk Doldurma',
+   q:'I miss ___ with my old friends. (Eski arkadaşlarımla konuşmayı özlüyorum)',
+   opts:['talk', 'to talk', 'talking', 'talked'],
+   ans:2,
+   why:'"Miss" Ving alan fiillerdendir. Genel anlam veya geçmiş alışkanlığı özlemek → Miss + Ving.',
+   rule:'Miss + Ving: özlemek\nÖrnek: I miss living in Istanbul. (İstanbul\'da yaşamayı özlüyorum)'},
+
+  {cat:'verbs_ger', type:'Boşluk Doldurma',
+   q:'They suggested ___ a different approach. (Farklı bir yaklaşım önerdi)',
+   opts:['try', 'to try', 'trying', 'tried'],
+   ans:2,
+   why:'"Suggest" Ving alan fiillerdendir.',
+   rule:'Suggest + Ving: önermek\nÖrnek: She suggested going by train. (Trenle gitmeyi önerdi)\nNot: "Suggest + To V₀" yanlıştır!'},
+
+  {cat:'verbs_ger', type:'Boşluk Doldurma',
+   q:'Please consider ___ our offer carefully. (Teklifimizi dikkatlice değerlendirin)',
+   opts:['accept', 'to accept', 'accepting', 'accepted'],
+   ans:2,
+   why:'"Consider" Ving alan özel fiillerden biridir (kitapta "consider" gibi birkaç istisna fiil olarak geçer).',
+   rule:'Consider + Ving: değerlendirmek, göz önünde bulundurmak\nNot: Bu, "To V₀ alan fiiller" genelleşmesine dahil olmayan özel bir fiildir.'},
+
+  {cat:'verbs_ger', type:'Kural Testi',
+   q:'Aşağıdakilerden hangisi Ving alan fiillerden DEĞİLDİR?',
+   opts:['postpone', 'acknowledge', 'decide', 'resist'],
+   ans:2,
+   why:'"Decide" To V₀ alan fiillerdendir (geleceğe yönelik anlam). Postpone, acknowledge, resist ise Ving alır.',
+   rule:'Decide + To V₀ (geleceğe yönelik)\nPostpone + Ving (ertelemek)\nAcknowledge + Ving (kabul etmek)\nResist + Ving (direnmek)'},
+
+  // ─── VERB + PREPOSITION + GERUND ─────────────────────────────────
+  {cat:'verb_prep_ger', type:'Boşluk Doldurma',
+   q:'She insisted on ___ the bill. (Faturayı ödemekte ısrar etti)',
+   opts:['pay', 'to pay', 'paying', 'paid'],
+   ans:2,
+   why:'"Insist on + Ving": "on" bir edat olduğu için arkasından Ving gelir.',
+   rule:'Insist on + Ving: ısrar etmek\nEdattan sonra her zaman Ving gelir.\nBenzer: persist in, succeed in, believe in...'},
+
+  {cat:'verb_prep_ger', type:'Boşluk Doldurma',
+   q:'He succeeded in ___ the exam. (Sınavı geçmeyi başardı)',
+   opts:['pass', 'to pass', 'passing', 'passed'],
+   ans:2,
+   why:'"Succeed in + Ving": başarmak. "in" bir edat, arkasından Ving gelir.',
+   rule:'Succeed in + Ving: başarmak\nFail + To V₀: başaramamak (zıt anlam için To V₀ ile kullanılır)'},
+
+  {cat:'verb_prep_ger', type:'Boşluk Doldurma',
+   q:'She apologized for ___ late. (Geç kaldığı için özür diledi)',
+   opts:['arrive', 'to arrive', 'arriving', 'arrived'],
+   ans:2,
+   why:'"Apologize for + Ving": "for" bir edat, arkasından Ving gelir.',
+   rule:'Apologize for + Ving: özür dilemek\nBlame sb for + Ving: -den ötürü suçlamak\nCare for + Ving: -den hoşlanmak'},
+
+  {cat:'verb_prep_ger', type:'Boşluk Doldurma',
+   q:'They agreed on ___ after dinner. (Akşam yemeğinden sonra buluşmaya karar verdiler)',
+   opts:['meet', 'to meet', 'meeting', 'met'],
+   ans:2,
+   why:'"Agree on + Ving": anlaşmak, hemfikir olmak. "on" bir edat.',
+   rule:'Agree on + Ving: üzerinde anlaşmak\nAgree + To V₀ (farklı anlam): kabul etmek, razı olmak'},
+
+  {cat:'verb_prep_ger', type:'Boşluk Doldurma',
+   q:'He dreams of ___ a famous musician. (Ünlü bir müzisyen olmayı hayal ediyor)',
+   opts:['become', 'to become', 'becoming', 'became'],
+   ans:2,
+   why:'"Dream of/about + Ving": hayal etmek. "of/about" edatı → Ving.',
+   rule:'Dream of + Ving / Dream about + Ving: hayal etmek\nThink about + Ving: -i düşünmek\nWorry about + Ving: -den endişe duymak'},
+
+  {cat:'verb_prep_ger', type:'Boşluk Doldurma',
+   q:'She gave up ___ after years of trying. (Yıllarca denemesinin ardından sigara içmeyi bıraktı)',
+   opts:['smoke', 'to smoke', 'smoking', 'smoked'],
+   ans:2,
+   why:'"Give up + Ving": bırakmak, vazgeçmek. "up" bir edat parçacığı (particle) olarak Ving alır.',
+   rule:'Give up + Ving: bırakmak, vazgeçmek\nPut off + Ving: ertelemek\nLook forward to + Ving: dört gözle beklemek'},
+
+  {cat:'verb_prep_ger', type:'Boşluk Doldurma',
+   q:'He abstained from ___ during Ramadan. (Ramazan boyunca yemek yemekten kaçındı)',
+   opts:['eat', 'to eat', 'eating', 'eaten'],
+   ans:2,
+   why:'"Abstain from + Ving": -den kaçınmak. "from" bir edat.',
+   rule:'Abstain from + Ving: kaçınmak, uzak durmak\nRefrain from + Ving: -den vazgeçmek, kaçınmak'},
+
+  // ─── ADJECTIVE + PREPOSITION + GERUND ────────────────────────────
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'She is afraid of ___ in the dark. (Karanlıkta yürümekten korkuyor)',
+   opts:['walk', 'to walk', 'walking', 'walked'],
+   ans:2,
+   why:'"Afraid of + Ving": "of" bir edat, arkasından Ving gelir. Sıfat + edat + Ving yapısı.',
+   rule:'Afraid of + Ving: -den korkmak\nSıfat + Edat + Ving yapısında edat Ving alır.\nAshamed of, aware of, capable of, fond of, proud of...'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'He is good at ___ languages. (Dil öğrenmekte iyidir)',
+   opts:['learn', 'to learn', 'learning', 'learned'],
+   ans:2,
+   why:'"Good at + Ving": "at" bir edat, arkasından Ving gelir.',
+   rule:'Good at + Ving: -de iyi olmak\nBad at / terrible at + Ving: -de kötü olmak\nExpert in + Ving: -de uzman olmak'},
+
+  {cat:'adj_prep_ger', type:'Kural Testi',
+   q:'Hangi yapı doğrudur?',
+   opts:['She is interested to learn French.', 'She is interested in to learn French.', 'She is interested in learning French.', 'She is interested for learning French.'],
+   ans:2,
+   why:'"Interested in + Ving": "in" bir edat, arkasından Ving gelir.',
+   rule:'Interested in + Ving: -e ilgi duymak\nEnthusiastic about + Ving: -e hevesli olmak\nPassionate about + Ving: -e tutkuyla bağlı olmak'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'She is tired of ___ the same questions. (Aynı soruları yanıtlamaktan yoruldu)',
+   opts:['answer', 'to answer', 'answering', 'answered'],
+   ans:2,
+   why:'"Tired of + Ving": "of" bir edat, arkasından Ving gelir.',
+   rule:'Tired of + Ving: -den yorulmak, bıkmak\nTired from + Ving: -den dolayı yorgun olmak (fiziksel yorgunluk)'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'He is responsible for ___ the team. (Takımı yönetmekten sorumludur)',
+   opts:['manage', 'to manage', 'managing', 'managed'],
+   ans:2,
+   why:'"Responsible for + Ving": "for" bir edat.',
+   rule:'Responsible for + Ving: -den sorumlu olmak\nCapable of + Ving: -e muktedir olmak\nGuilty of + Ving: -den suçlu olmak'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'They are keen on ___ new sports. (Yeni sporlar denemekten çok hevesliler)',
+   opts:['try', 'to try', 'trying', 'tried'],
+   ans:2,
+   why:'"Keen on + Ving": "on" bir edat.',
+   rule:'Keen on + Ving: -e hevesli, istekli olmak\nCrazy about + Ving: -e deli gibi düşkün olmak\nFond of + Ving: -den hoşlanmak'},
+
+  {cat:'adj_prep_ger', type:'Kural Testi',
+   q:'Aşağıdaki sıfat-edat kombinasyonlarından hangisi YANLIŞTIR?',
+   opts:['worried about', 'proud of', 'conscious of', 'addicted to learn'],
+   ans:3,
+   why:'"Addicted to" doğrudur ancak arkasından Ving gelir: "addicted to learning". Burada "to learn" (mastar) yanlıştır çünkü "to" burada edat.',
+   rule:'Addicted to + Ving: -e bağımlı olmak ("to" edat!)\nAccustomed to + Ving: -e alışkın olmak\nLook forward to + Ving: dört gözle beklemek\nBu üç yapıda "to" edat olduğu için Ving gelir, To V₀ değil!'},
+
+  // ─── NOUNS FOLLOWED BY INFINITIVES ───────────────────────────────
+  {cat:'nouns_inf', type:'Kural Testi',
+   q:'"Ability + ___" yapısında boşluğa ne gelir?',
+   opts:['V-ing', 'To V₀', 'V₀', 'of + V-ing'],
+   ans:1,
+   why:'"Ability" To V₀ alan isimlerdendir. Fiilden türeyen soyut isimler genellikle To V₀ alır.',
+   rule:'Ability + To V₀: yetenek\nNoun + To V₀ alan isimler: ability, aim, ambition, attempt, capacity, decision, desire, determination, duty, effort, goal, hope, insistence, mission, need, offer, plan, potential, promise, refusal, request, scheme, skill, strategy, wish, willingness'},
+
+  {cat:'nouns_inf', type:'Boşluk Doldurma',
+   q:'Her dream is ___ a doctor. (Hayali doktor olmak)',
+   opts:['becoming', 'become', 'to become', 'became'],
+   ans:2,
+   why:'"Dream" soyut isimlerden biridir ve "to V₀" alır. "Her dream is to become..." = "Hayali ... olmak".',
+   rule:'Abstract nouns + To V₀: dream, hope, wish, goal, plan...\nÖrnek: His goal is to win the championship.'},
+
+  {cat:'nouns_inf', type:'Boşluk Doldurma',
+   q:'They made an effort ___ the deadline. (Son tarihe yetişmek için çaba gösterdiler)',
+   opts:['meeting', 'meet', 'to meet', 'met'],
+   ans:2,
+   why:'"Effort + To V₀": çaba göstermek. "make an effort to do sth" yaygın bir kalıptır.',
+   rule:'Effort + To V₀: -mek için çaba göstermek\nAttempt + To V₀: deneme, girişim\nDetermination + To V₀: azim, kararlılık'},
+
+  // ─── GRAMMAR SUMMARY (subject/object / time order) ───────────────
+  {cat:'grammar_summary', type:'Kural Testi',
+   q:'"___ regularly helps your heart." Boşluğa en doğru seçenek hangisidir? (cümlenin öznesi)',
+   opts:['To exercise', 'Exercising', 'Exercise', 'Exercises'],
+   ans:1,
+   why:'Özne konumunda eylem bildiriyorsan genelde gerund (Ving) veya mastar (To V₀) kullanılır; burada yaygın ve doğal olan "Exercising" (Ving özne).',
+   rule:'Subject position: Ving veya To V₀ özne olabilir; kitapta örnek: Swimming is fun. / To err is human.'},
+
+  {cat:'grammar_summary', type:'Boşluk Doldurma',
+   q:'She likes ___ out for dinner. (Akşam yemeğine çıkmayı sever)',
+   opts:['go', 'to go', 'going', 'gone'],
+   ans:2,
+   why:'Like + Ving: genel zevk / alışkanlık bildirir (kitap örneğiyle uyumlu).',
+   rule:'Örnek (Ving nesne): She likes going out for dinner.\nEnjoy, hate, deny, admit... gibi fiillerden sonra Ving nesne olabilir.'},
+
+  {cat:'grammar_summary', type:'Boşluk Doldurma',
+   q:'She plans ___ abroad next year. (Gelecek yıl yurtdışına gitmeyi planlıyor)',
+   opts:['going', 'to go', 'go', 'gone'],
+   ans:1,
+   why:'Plan + To V₀: ana fiilden sonra gelecek eylem → mastar (To V₀).',
+   rule:'Örnek (To V₀ nesne): She plans to go abroad.\nMantık: nesnedeki olay ana fiilden sonra gerçekleşecekse çoğunlukla To V₀ (intend/plan/hope/decide...).'},
+
+  {cat:'grammar_summary', type:'Boşluk Doldurma',
+   q:'He denied ___ the money. (Parayı çaldığını inkâr etti – kitap örneği)',
+   opts:['steal', 'to steal', 'stealing', 'stolen'],
+   ans:2,
+   why:'Deny + Ving: geçmişte olan olayı inkâr.',
+   rule:'Örnek: He denied stealing the money.\nGeçmişte gerçekleşmiş olay nesne olarak veriliyorsa Ving sık kullanılır (deny, admit...).'},
+
+  {cat:'grammar_summary', type:'Boşluk Doldurma',
+   q:'She decided ___ us. (Bize katılmaya karar verdi)',
+   opts:['joining', 'join', 'to join', 'joined'],
+   ans:2,
+   why:'Decide + To V₀: karar sonrası eylem gelecekte gerçekleşecek.',
+   rule:'Örnek: She decided to join us.\nWant/hope/expect/intend + To V₀ benzer mantıkla sık gelir.'},
+
+  {cat:'grammar_summary', type:'Kural Testi',
+   q:'"Nesnedeki olay ana fiilden daha önce olmuşsa Ving, daha sonra olacaksa To V₀" kuralına göre hangisi doğrudur?',
+   opts:['I remember to lock the door. (kapıyı kilitlediğimi hatırlıyorum)', 'I remember locking the door. (kapıyı kilitlediğimi hatırlıyorum)', 'I enjoy to swim.', 'She admitted to steal.'],
+   ans:1,
+   why:'Geçmişte yaşanan olayı hatırlamak → remember + Ving. Diğer seçenekler yapı olarak yanlış veya anlamca uyumsuz.',
+   rule:'Zaman sırası + anlam: remember/forget/regret gibi fiillerde Ving vs To V₀ anlamı değiştirir; "intend ----" gibi gelecek niyetinde To V₀ kullanılır.'},
+
+  // ─── V-ING FORMULAS (extras from kitap sayfa 5) ───────────────────
+  {cat:'ving_formulas', type:'Boşluk Doldurma',
+   q:'Don\'t waste your money ___ things you don\'t need. (İhtiyacın olmayan şeylere paranı harcama)',
+   opts:['buy', 'to buy', 'buying', 'bought'],
+   ans:2,
+   why:'Waste + object + Ving: "waste money buying..." kalıbı.',
+   rule:'Spend / waste + object + Ving: zaman/para + nesne + Ving\nÖrnek: waste time arguing, spend money ordering online'},
+
+  {cat:'ving_formulas', type:'Boşluk Doldurma',
+   q:'The teacher caught him ___ during the exam. (Sınavda kopya çekerken yakaladı)',
+   opts:['cheat', 'to cheat', 'cheating', 'cheated'],
+   ans:2,
+   why:'Catch + object + Ving: eylem yapılırken yakalanma.',
+   rule:'Catch / find + object + Ving: olayın o anda yapıldığını vurgular.\nÖrnek: I found her reading my notes.'},
+
+  {cat:'ving_formulas', type:'Boşluk Doldurma',
+   q:'We found the keys ___ under the sofa. (Anahtarların kanepenin altında yuvarlandığını bulduk)',
+   opts:['lie', 'to lie', 'lying', 'lain'],
+   ans:2,
+   why:'Find + object + Ving: nesnenin o anda yaptığını/fark edilen durumu anlatır.',
+   rule:'Find + object + Ving = ... yaparken/yapıyorken bulmak'},
+
+  {cat:'ving_formulas', type:'Boşluk Doldurma',
+   q:'I don\'t mind ___ late if the work is important. (İş önemliyse geç gelmesine aldırmam)',
+   opts:['you come', 'your coming', 'you to come', 'that you come'],
+   ans:1,
+   why:'Sahiplik bildiren yapı (possessive) + gerund: "your coming" doğrudur.',
+   rule:'4. Sahiplik (my/your/his/their...) + Ving: nesne gibi kullanılır.\nÖrnek: I appreciate your helping us.'},
+
+  {cat:'ving_formulas', type:'Boşluk Doldurma',
+   q:'It\'s no good ___ to him; he never listens. (Ona bağırmak işe yaramaz)',
+   opts:['shout', 'to shout', 'shouting', 'shouted'],
+   ans:2,
+   why:'It\'s no good + Ving = yararı yok / işe yaramaz.',
+   rule:'It\'s no use / It\'s no good + Ving: -menin faydası/yararı yok'},
+
+  // ─── TO V₀ FORMULAS (adj for/of + NP + to V₀; passive inf timing) ─
+  {cat:'tov_formulas', type:'Boşluk Doldurma',
+   q:'We don\'t have enough money ___ a new car. (Yeni araba almaya yetecek paramız yok)',
+   opts:['buy', 'to buy', 'buying', 'bought'],
+   ans:1,
+   why:'Enough + noun + To V₀: yeterli [isim] ... için mastar.',
+   rule:'Enough + noun + To V₀\nÖrnek: enough time to finish, enough courage to speak'},
+
+  {cat:'tov_formulas', type:'Boşluk Doldurma',
+   q:'It is difficult for beginners ___ this exercise. (Başlangıç seviyesindekiler için bu egzersizi yapmak zor)',
+   opts:['do', 'doing', 'to do', 'done'],
+   ans:2,
+   why:'(Adjective) + for + noun phrase + To V₀.',
+   rule:'(Adjective) + for + noun phrase / object pronoun + To V₀\nÖrnek: It is hard for me to say no.'},
+
+  {cat:'tov_formulas', type:'Boşluk Doldurma',
+   q:'It was kind of you ___ us move. (Taşınmamıza yardım etmen çok nazikti)',
+   opts:['help', 'helping', 'to help', 'helped'],
+   ans:2,
+   why:'It is + adj + of + noun phrase + To V₀ (kişilik/niyet sıfatları: kind, nice, foolish...).',
+   rule:'(Adjective) + of + noun phrase / object pronoun + To V₀\nÖrnek: It was foolish of him to argue.'},
+
+  {cat:'tov_formulas', type:'Boşluk Doldurma',
+   q:'She seems ___ injured in the accident. (Kazada yaralanmış görünüyor – eylem kazadan önce)',
+   opts:['to be', 'to have been', 'being', 'having been'],
+   ans:1,
+   why:'Zaman farkı varsa (önce yaralanma, sonra "seem") passive perfect infinitive: to have been V₃.',
+   rule:'Pasif + To V₀ / to have V₃: zaman farkı varsa "to have V₃"\nÖrnek: He seems to have been promoted last year.'},
+
+  // ─── ADJECTIVE + PREPOSITION + GERUND (geniş liste) ─────────────
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'She is absorbed in ___ her thesis. (Tezine dalmış durumda)',
+   opts:['write', 'to write', 'writing', 'written'],
+   ans:2,
+   why:'Absorbed in + Ving.',
+   rule:'absorbed in + Ving: -e dalmış, yoğunlaşmış'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'I\'m not certain about ___ there on time. (Zamanında orada olup olmama konusunda emin değilim)',
+   opts:['be', 'to be', 'being', 'been'],
+   ans:2,
+   why:'Certain about + Ving.',
+   rule:'certain about + Ving / certain of + Ving: emin olmak'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'They are enthusiastic about ___ the project. (Projeyi başlatmaya çok hevesliler)',
+   opts:['launch', 'to launch', 'launching', 'launched'],
+   ans:2,
+   why:'Enthusiastic about + Ving.',
+   rule:'enthusiastic about + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'He grew impatient with ___ for hours. (Saatlerce beklemekten sabrı tükendi)',
+   opts:['wait', 'to wait', 'waiting', 'waited'],
+   ans:2,
+   why:'Impatient with + Ving.',
+   rule:'impatient with + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'He was accused of ___ confidential data. (Gizli veriyi sızdırmakla suçlandı)',
+   opts:['leak', 'to leak', 'leaking', 'leaked'],
+   ans:2,
+   why:'Accused of + Ving.',
+   rule:'accused of + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'Trust is essential to ___ a strong team. (Güçlü bir takım kurmak için güven esastır)',
+   opts:['build', 'to build', 'building', 'built'],
+   ans:2,
+   why:'Essential to + Ving (burada "to" edat; mastar değil).',
+   rule:'essential to + Ving / indispensable to + Ving: -e hayati / vazgeçilmez'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'Good teamwork is indispensable to ___ our goals. (Hedeflere ulaşmada iyi takım çalışması vazgeçilmezdir)',
+   opts:['reach', 'to reach', 'reaching', 'reached'],
+   ans:2,
+   why:'Indispensable to + Ving.',
+   rule:'indispensable to + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'I\'m still not accustomed to ___ so early. (Bu kadar erken kalkmaya hâlâ alışamadım)',
+   opts:['get up', 'to get up', 'getting up', 'got up'],
+   ans:2,
+   why:'Accustomed to + Ving ("to" edat).',
+   rule:'accustomed to + Ving (to = preposition)'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'She is clever at ___ problems. (Problem çözmede becerikli)',
+   opts:['solve', 'to solve', 'solving', 'solved'],
+   ans:2,
+   why:'Clever at + Ving.',
+   rule:'clever at + Ving / expert in + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'He is expert in ___ market trends. (Pazar trendlerini analiz etmede uzman)',
+   opts:['analyze', 'to analyze', 'analyzing', 'analyzed'],
+   ans:2,
+   why:'Expert in + Ving.',
+   rule:'expert in + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'The manager is intolerant of ___ late. (Geç kalmaya tahammülü yok)',
+   opts:['arrive', 'to arrive', 'arriving', 'arrived'],
+   ans:2,
+   why:'Intolerant of + Ving.',
+   rule:'intolerant of + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'Parents were concerned about ___ too much screen time. (Çok fazla ekran süresinden endişeliler)',
+   opts:['have', 'to have', 'having', 'had'],
+   ans:2,
+   why:'Concerned about + Ving.',
+   rule:'concerned about + Ving (concerned with + Ving: ilgili/ilgilenilen konu anlamında da kullanılır)'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'Are you familiar with ___ this software? (Bu yazılımı kullanmaya aşina mısın?)',
+   opts:['use', 'to use', 'using', 'used'],
+   ans:2,
+   why:'Familiar with + Ving.',
+   rule:'familiar with + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'Your comment is irrelevant to ___ the issue. (Konuyu çözümlemekle ilgisiz)',
+   opts:['address', 'to address', 'addressing', 'addressed'],
+   ans:2,
+   why:'Irrelevant to + Ving.',
+   rule:'irrelevant to + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'She is jealous of ___ more attention than her. (Ondan daha çok ilgi görülmesine kıskanç)',
+   opts:['get', 'to get', 'getting', 'got'],
+   ans:2,
+   why:'Jealous of + Ving.',
+   rule:'jealous of + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'The whole city was alarmed to ___ the news. (Haberi duyunca şehir ayağa kalktı)',
+   opts:['hearing', 'to hear', 'hear', 'heard'],
+   ans:1,
+   why:'"Alarmed to hear" kalıbında "to" mastar işaretidir → To V₀ (hear).',
+   rule:'alarmed to + V₀: -e şok olmak / tedirgin olmak\nNot: "alarmed at + Ving" de sınavda çıkabilir; bağlama dikkat.'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'She is confident of ___ the exam. (Sınavı geçeceğinden emin)',
+   opts:['pass', 'to pass', 'passing', 'passed'],
+   ans:2,
+   why:'Confident of + Ving (çoğunlukla).',
+   rule:'confident of + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'The delay proved fatal to ___ the contract. (Sözleşmeyi imzalamakta gecikme ölümcül oldu)',
+   opts:['sign', 'to sign', 'signing', 'signed'],
+   ans:2,
+   why:'Fatal to + Ving (to edat olarak).',
+   rule:'fatal to + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'The terms are favorable to ___ a deal. (Anlaşma yapmaya elverişli)',
+   opts:['make', 'to make', 'making', 'made'],
+   ans:2,
+   why:'Favorable to + Ving.',
+   rule:'favorable to + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'A mask is necessary for ___ infection. (Enfeksiyonu önlemek için maske gerekli)',
+   opts:['prevent', 'to prevent', 'preventing', 'prevented'],
+   ans:2,
+   why:'Necessary for + Ving.',
+   rule:'necessary for + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'She was annoyed at ___ interrupted. (Sözünün kesilmesine sinirlendi)',
+   opts:['be', 'to be', 'being', 'been'],
+   ans:2,
+   why:'Annoyed at + Ving; pasif anlam için "being interrupted".',
+   rule:'annoyed at + Ving / angry at + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'He is content with ___ second place. (İkincilikle yetiniyor)',
+   opts:['take', 'to take', 'taking', 'taken'],
+   ans:2,
+   why:'Content with + Ving.',
+   rule:'content with + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'She is fond of ___ classical music. (Klasik müzik dinlemeyi sever)',
+   opts:['listen', 'to listen', 'listening', 'listened'],
+   ans:2,
+   why:'Fond of + Ving.',
+   rule:'fond of + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'He was negligent in ___ safety checks. (Güvenlik kontrollerini yapmada ihmalkâr)',
+   opts:['perform', 'to perform', 'performing', 'performed'],
+   ans:2,
+   why:'Negligent in + Ving.',
+   rule:'negligent in + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'The hotel is convenient to ___ from the station. (İstasyondan ulaşılması için otel uygun)',
+   opts:['reach', 'to reach', 'reaching', 'reached'],
+   ans:2,
+   why:'Convenient to + Ving (çoğunlukla "convenient for sb to V₀" da vardır; kitap "convenient to" ile Ving listeler).',
+   rule:'convenient to + Ving / convenient for + noun + To V₀ (sınavda ikisi de çıkabilir)'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'His remarks were offensive to ___ staff. (Personele saldırgan geldi)',
+   opts:['target', 'to target', 'targeting', 'targeted'],
+   ans:2,
+   why:'Offensive to + Ving.',
+   rule:'offensive to + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'This software is appropriate for ___ large datasets. (Büyük veri setlerini işlemek için uygun)',
+   opts:['process', 'to process', 'processing', 'processed'],
+   ans:2,
+   why:'Appropriate for + Ving.',
+   rule:'appropriate for + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'He is crazy about ___ vintage cars. (Klasik arabalara deli gibi düşkün)',
+   opts:['collect', 'to collect', 'collecting', 'collected'],
+   ans:2,
+   why:'Crazy about + Ving.',
+   rule:'crazy about + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'Smoking is bad for ___ your lungs. (Akciğerlerine zararlı)',
+   opts:['damage', 'to damage', 'damaging', 'damaged'],
+   ans:2,
+   why:'Bad for + Ving.',
+   rule:'good for + Ving / bad for + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'She was ashamed of ___ a scene. (Ortalık yapmasından utandı)',
+   opts:['make', 'to make', 'making', 'made'],
+   ans:2,
+   why:'Ashamed of + Ving.',
+   rule:'ashamed of + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'The project is dependent on ___ funding. (Fon bulunmasına bağlı)',
+   opts:['secure', 'to secure', 'securing', 'secured'],
+   ans:2,
+   why:'Dependent on + Ving.',
+   rule:'dependent on + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'Try to be patient with ___ mistakes. (Hata yapmam konusunda sabırlı ol)',
+   opts:['I make', 'my making', 'me to make', 'me make'],
+   ans:1,
+   why:'Patient with + Ving; sahiplik + gerund doğal.',
+   rule:'patient with + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'He was aware of ___ watched. (İzlendiğinin farkındaydı)',
+   opts:['be', 'to be', 'being', 'been'],
+   ans:2,
+   why:'Aware of + Ving; pasif için "being watched".',
+   rule:'aware of + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'The team is optimistic about ___ the playoffs. (Play-off\'lara çıkmak konusunda iyimser)',
+   opts:['reach', 'to reach', 'reaching', 'reached'],
+   ans:2,
+   why:'Optimistic about + Ving.',
+   rule:'optimistic about + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'He pleaded guilty of ___ bribes. (Rüşvet almakla suçlu olduğunu kabul etti)',
+   opts:['take', 'to take', 'taking', 'taken'],
+   ans:2,
+   why:'Guilty of + Ving.',
+   rule:'guilty of + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'Investors are pessimistic about ___ profits this quarter. (Bu çeyrekte kâr etmek konusunda kötümser)',
+   opts:['make', 'to make', 'making', 'made'],
+   ans:2,
+   why:'Pessimistic about + Ving.',
+   rule:'pessimistic about + Ving / optimistic about + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'She is capable of ___ under pressure. (Baskı altında çalışabilir)',
+   opts:['work', 'to work', 'working', 'worked'],
+   ans:2,
+   why:'Capable of + Ving.',
+   rule:'capable of + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'He is eligible for ___ the scholarship. (Bursa başvurmaya uygun)',
+   opts:['apply', 'to apply', 'applying', 'applied'],
+   ans:2,
+   why:'Eligible for + Ving.',
+   rule:'eligible for + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'She was happy about ___ promoted. (Terfi etmekten mutlu)',
+   opts:['be', 'to be', 'being', 'been'],
+   ans:2,
+   why:'Happy about + Ving; pasif anlam → being promoted.',
+   rule:'happy about + Ving / pleased at + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'He was pleased at ___ such a warm welcome. (Bu kadar sıcak karşılanmaktan memnun)',
+   opts:['receive', 'to receive', 'receiving', 'received'],
+   ans:2,
+   why:'Pleased at + Ving.',
+   rule:'pleased at + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'We should be cautious of ___ false information. (Yanlış bilgi vermekten kaçınmalıyız)',
+   opts:['spread', 'to spread', 'spreading', 'spread'],
+   ans:2,
+   why:'Cautious of + Ving.',
+   rule:'cautious of + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'He remained engaged with ___ community work. (Toplumsal işle uğraşmaya devam etti)',
+   opts:['do', 'to do', 'doing', 'done'],
+   ans:2,
+   why:'Engaged with + Ving.',
+   rule:'engaged with + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'They were ignorant of ___ the law. (Yasayı bilmemekteydiler)',
+   opts:['break', 'to break', 'breaking', 'broke'],
+   ans:2,
+   why:'Ignorant of + Ving.',
+   rule:'ignorant of + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'We are prepared for ___ the worst. (En kötüsüne hazırız)',
+   opts:['face', 'to face', 'facing', 'faced'],
+   ans:2,
+   why:'Prepared for + Ving.',
+   rule:'prepared for + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'She was amazed at ___ the northern lights. (Kuzey ışıklarını görmesine hayret etti)',
+   opts:['see', 'to see', 'seeing', 'seen'],
+   ans:2,
+   why:'Amazed at + Ving.',
+   rule:'amazed at + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'He is conscious of ___ risks. (Riskleri bilincinde tutuyor)',
+   opts:['take', 'to take', 'taking', 'taken'],
+   ans:2,
+   why:'Conscious of + Ving.',
+   rule:'conscious of + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'The CEO is concerned with ___ costs down. (Maliyetleri düşürmekle ilgileniyor)',
+   opts:['keep', 'to keep', 'keeping', 'kept'],
+   ans:2,
+   why:'Concerned with + Ving (konu/ilgi alanı).',
+   rule:'concerned with + Ving (about = endişe; with = konuyla ilgilenme)'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'The city is famous for ___ its nightlife. (Gece hayatıyla ünlü)',
+   opts:['have', 'to have', 'having', 'had'],
+   ans:2,
+   why:'Famous for + Ving.',
+   rule:'famous for + Ving'},
+
+  {cat:'adj_prep_ger', type:'Boşluk Doldurma',
+   q:'After the scandal she felt free from ___ judged. (Skandal sonrası yargılanmaktan kurtulmuş hissetti)',
+   opts:['be', 'to be', 'being', 'been'],
+   ans:2,
+   why:'Free from + Ving.',
+   rule:'free from + Ving'},
+
+  // ─── VERB / NOUN lists (ekstra tanıma) ────────────────────────────
+  {cat:'verbs_inf', type:'Boşluk Doldurma',
+   q:'She aims ___ first place. (Birinciliği hedefliyor)',
+   opts:['win', 'to win', 'winning', 'won'],
+   ans:1,
+   why:'Aim + To V₀ (listede).',
+   rule:'Aim + To V₀: hedeflemek'},
+
+  {cat:'verbs_inf', type:'Boşluk Doldurma',
+   q:'He longed ___ home. (Eve dönmeyi özledi)',
+   opts:['return', 'to return', 'returning', 'returned'],
+   ans:1,
+   why:'Long + To V₀.',
+   rule:'Long + To V₀: özlemek / çok istemek'},
+
+  {cat:'verbs_inf', type:'Boşluk Doldurma',
+   q:'They volunteered ___ at the event. (Etkinlikte görev almaya gönüllü oldular)',
+   opts:['help', 'to help', 'helping', 'helped'],
+   ans:1,
+   why:'Volunteer + To V₀.',
+   rule:'Volunteer + To V₀: gönüllü olmak'},
+
+  {cat:'nouns_inf', type:'Boşluk Doldurma',
+   q:'There is no motivation ___ harder. (Daha çok çalışmak için motivasyon yok)',
+   opts:['work', 'to work', 'working', 'worked'],
+   ans:1,
+   why:'Motivation + To V₀ (soyut isim listesi).',
+   rule:'Motivation + To V₀: -mek için motivasyon'},
+
+  {cat:'nouns_inf', type:'Boşluk Doldurma',
+   q:'Their insistence ___ immediately worried us. (Hemen ayrılmaları konusundaki ısrarları bizi endişelendirdi)',
+   opts:['leave', 'to leave', 'leaving', 'left'],
+   ans:1,
+   why:'Insistence + To V₀.',
+   rule:'Insistence + To V₀: -mekte ısrar'},
+
+  {cat:'verbs_ger', type:'Boşluk Doldurma',
+   q:'She acknowledged ___ the error. (Hatayı kabul etti)',
+   opts:['make', 'to make', 'making', 'made'],
+   ans:2,
+   why:'Acknowledge + Ving (liste).',
+   rule:'Acknowledge + Ving: kabul etmek, itiraf etmek'},
+
+  {cat:'verbs_ger', type:'Boşluk Doldurma',
+   q:'They anticipate ___ delays. (Gecikmeleri öngörüyorlar)',
+   opts:['face', 'to face', 'facing', 'faced'],
+   ans:2,
+   why:'Anticipate + Ving.',
+   rule:'Anticipate + Ving: öngörmek'},
+
+  {cat:'verbs_ger', type:'Boşluk Doldurma',
+   q:'I resent ___ overtime every week. (Her hafta mesai yapmaktan şikâyetçiyim)',
+   opts:['work', 'to work', 'working', 'worked'],
+   ans:2,
+   why:'Resent + Ving.',
+   rule:'Resent + Ving: içine sinmemek, kızmak'},
+];
+
+// ===================================================================
+// REFERENCE DATA
+// ===================================================================
+const REFERENCE = [
+  {
+    title: '🔀 İkili Anlam Fiilleri (Ving vs To V₀)',
+    rows: [
+      ['MEAN + Ving', 'anlamına gelmek'],
+      ['MEAN + To V₀', 'kastetmek, niyet etmek'],
+      ['TRY + Ving', 'denemek (bakalım nasıl olacak)'],
+      ['TRY + To V₀', 'çalışmak, çabalamak'],
+      ['STOP + Ving', 'yapılan eylemi bırakmak'],
+      ['STOP + To V₀', 'bir şey yapmak için durmak'],
+      ['FORGET + Ving', 'geçmiş bir olayı unutmak'],
+      ['FORGET + To V₀', 'yapılacak şeyi unutmak'],
+      ['REMEMBER + Ving', 'geçmiş bir olayı hatırlamak'],
+      ['REMEMBER + To V₀', 'yapılacak şeyi hatırlamak'],
+      ['REGRET + Ving', 'geçmiş bir şeyden pişmanlık'],
+      ['REGRET + To V₀', 'üzücü haber vermek'],
+      ['GO ON + Ving', 'aynı şeye devam etmek'],
+      ['GO ON + To V₀', 'yeni bir şeye geçmek'],
+      ['COME + Ving', 'nasıl geldiğini anlatır'],
+      ['COME + To V₀', '-e başlamak'],
+      ['NEED + Ving', 'pasif anlam'],
+      ['NEED + To V₀', 'aktif anlam'],
+    ]
+  },
+  {
+    title: '📌 Ving (Gerund) Formülleri',
+    words: ['Preposition + Ving', 'go + Ving', 'spend/waste + object + Ving', 'trouble/difficulty/problem (in) + Ving', 'busy (with) + Ving', 'possessive + Ving (your coming)', 'is seen/caught/found + Ving', 'catch/find + object + Ving', 'see/hear + smb + Ving / V₀', 'Passive Gerund: Being V₃']
+  },
+  {
+    title: '💬 Deyimsel İfadeler + Ving',
+    rows: [
+      ['Be used to', '-e alışkın olmak'],
+      ['Get used to', '-e alışmak'],
+      ['Can\'t help', 'kendini alamamak'],
+      ['Look forward to', 'dört gözle beklemek'],
+      ['Feel like', '-mek istemek'],
+      ['Object to', '-e itiraz etmek'],
+      ['Be opposed to', '-e karşı olmak'],
+      ['It\'s worth', '-meye değer'],
+      ['It\'s no use', '-menin faydası yok'],
+      ['There is no point in', '-nın anlamı yok'],
+      ['Can\'t bear/stand', 'tahammül edememek'],
+      ['In the habit of', '-e alışkın'],
+    ]
+  },
+  {
+    title: '🎯 To V₀ Formülleri',
+    rows: [
+      ['Subject', 'özne konumunda'],
+      ['Object', 'nesne konumunda'],
+      ['Verb + To V₀', 'geleceğe gönderme yapılıyorsa'],
+      ['Adj + To V₀', 'sıfatlardan sonra'],
+      ['Adj + for + NP + To V₀', 'It is hard for me to say...'],
+      ['Adj + of + NP + To V₀', 'It was kind of you to help...'],
+      ['Too + adj + To V₀', '-emeyecek kadar'],
+      ['Adj + Enough + To V₀', '-ecek kadar'],
+      ['Enough + noun + To V₀', 'yeterli [isim] + mastar'],
+      ['Noun + To V₀', 'fiilden türeyen soyut isimler'],
+      ['QW + To V₀', 'soru kelimelerinden sonra (why hariç)'],
+      ['something/anybody... + To V₀', 'belirsiz zamir + mastar'],
+      ['Superlative + To V₀', 'en üstünlük / sıfat cümlesi kısaltması'],
+      ['Infinitive of Purpose', 'amaç (-mek için)'],
+      ['Pasif + To V₀ / to have V₃', 'zaman farkı varsa to have V₃'],
+      ['Passive Infinitive', 'To be V₃'],
+    ]
+  },
+  {
+    title: '📖 Konu özeti (Ving / To V₀)',
+    rows: [
+      ['Özne', 'Swimming is healthy. / To err is human.'],
+      ['Nesne (Ving)', 'She likes going out. / He denied stealing.'],
+      ['Nesne (To V₀)', 'She plans to go. / I want to visit you.'],
+      ['Zaman sırası', 'Ana fiilden önce olmuş olay → Ving; sonra → To V₀ (intend/plan/hope...)'],
+      ['Preposition + Ving', 'after, without, by, of, about, in, on...'],
+      ['go + Ving', 'go swimming, go shopping...'],
+      ['Sahiplik + Ving', 'I don\'t mind your coming late.'],
+      ['spend/waste + obj + Ving', 'waste time arguing'],
+      ['It\'s no use / no good + Ving', 'faydası/yararı yok'],
+    ]
+  },
+  {
+    title: '🎨 Sıfat + Edat + Ving (liste)',
+    words: [
+      'absorbed in', 'certain about', 'enthusiastic about', 'impatient with', 'accused of', 'certain of',
+      'essential to', 'indispensable to', 'accustomed to', 'clever at', 'expert in', 'intolerant of', 'addicted to',
+      'concerned about', 'familiar with', 'irrelevant to', 'afraid of', 'concerned with', 'famous for', 'jealous of',
+      'alarmed to (+V₀) / alarmed at (+Ving)', 'confident of', 'fatal to', 'keen on', 'amazed at', 'conscious of',
+      'favorable to', 'necessary for', 'angry at', 'content with', 'fond of', 'negligent in', 'annoyed at',
+      'convenient to / convenient for...', 'free from', 'offensive to', 'appropriate for', 'crazy about',
+      'good at', 'optimistic about', 'ashamed of', 'dependent on', 'good for', 'patient with', 'aware of',
+      'guilty of', 'pessimistic about', 'capable of', 'eligible for', 'happy about', 'pleased at', 'cautious of',
+      'engaged with', 'ignorant of', 'prepared for', 'eager to / eager for + noun (bağlama göre)'
+    ]
+  },
+  {
+    title: '✅ Fiiller + To V₀ (liste)',
+    words: ('afford, agree, aim, appear, arrange, ask, attempt, beg, begin, care, choose, claim, consent, continue, dare, decide, demand, deserve, expect, fail, happen, hesitate, hope, hurry, intend, leap, leave, long, neglect, offer, plan, prefer, prepare, pretend, proceed, promise, propose, prove, refuse, seem, shoot, strive, struggle, swear, tend, threaten, volunteer, wait, want, wish').split(', ')
+  },
+  {
+    title: '📝 İsimler + To V₀ (liste)',
+    words: ('ability, aim, ambition, attempt, capacity, concern, decision, demand, desire, determination, duty, eagerness, effort, enthusiasm, failure, goal, hope, insistence, mission, motivation, need, offer, plan, possibility, potential, power, promise, proposition, refusal, request, right, scheme, skill, strategy, willingness, wish').split(', ')
+  },
+  {
+    title: '🔵 Fiiller + Ving (liste)',
+    words: ('acknowledge, admit, advise, allow, anticipate, appreciate, attempt, avoid, can\'t help, celebrate, complete, confess, consider, defend, delay, deny, detest, discuss, dislike, dispute, dread, endure, enjoy, escape, explain, facilitate, fancy, feel like, finish, forgive, give up, imagine, include, justify, keep, mention, mind, miss, necessitate, omit, permit, picture, postpone, practice, prevent, prohibit, propose, quit, recall, recollect, recommend, report, resent, resist, resume, risk, suggest, support, tolerate, understand').split(', ')
+  }
+];
+
+// ===================================================================
+// GAME STATE
+// ===================================================================
+let state = {
+  selectedCats: new Set(CATEGORIES.map(c => c.id)),
+  questions: [],
+  currentIndex: 0,
+  correct: 0,
+  wrong: 0,
+  skipped: 0,
+  streak: 0,
+  totalScore: 0,
+  answered: false,
+};
+
+// ===================================================================
+// INIT
+// ===================================================================
+function init() {
+  state.selectedCats = new Set(CATEGORIES.map(c => c.id));
+  buildReference();
+  updateHeader();
+}
+
+function buildReference() {
+  const container = document.getElementById('refContent');
+  container.innerHTML = '';
+  REFERENCE.forEach(section => {
+    const div = document.createElement('div');
+    div.className = 'ref-section';
+    let html = `<div class="ref-section-title">${section.title}</div>`;
+    if (section.rows) {
+      html += '<table class="ref-table">';
+      section.rows.forEach(([k, v]) => {
+        html += `<tr><td><span class="ref-tag">●</span>${k}</td><td>${v}</td></tr>`;
+      });
+      html += '</table>';
+    } else if (section.words) {
+      html += '<div class="ref-word-cloud">';
+      section.words.forEach(w => { html += `<span class="ref-word">${w}</span>`; });
+      html += '</div>';
+    }
+    div.innerHTML = html;
+    container.appendChild(div);
+  });
+}
+
+function toggleRef() {
+  const panel = document.getElementById('refPanel');
+  panel.classList.toggle('open');
+}
+
+function openRefPanel() {
+  const panel = document.getElementById('refPanel');
+  panel.classList.add('open');
+  panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+// ===================================================================
+// GAME FLOW
+// ===================================================================
+function startGame() {
+  state.selectedCats = new Set(CATEGORIES.map(c => c.id));
+  const pool = QUESTIONS.filter(q => state.selectedCats.has(q.cat));
+  if (pool.length === 0) { showToast('Seçili kategorilerde soru bulunamadı!'); return; }
+
+  // Shuffle
+  state.questions = [...pool].sort(() => Math.random() - 0.5);
+  state.currentIndex = 0;
+  state.correct = 0;
+  state.wrong = 0;
+  state.skipped = 0;
+  state.answered = false;
+
+  showScreen('quizScreen');
+  renderQuestion();
+}
+
+function renderQuestion() {
+  const q = state.questions[state.currentIndex];
+  const total = state.questions.length;
+
+  document.getElementById('categoryBadge').textContent = CATEGORIES.find(c => c.id === q.cat)?.label || q.cat;
+  document.getElementById('questionCounter').textContent = `Soru ${state.currentIndex + 1}/${total}`;
+  document.getElementById('questionType').textContent = q.type;
+  document.getElementById('questionText').textContent = q.q;
+  document.getElementById('nextBtn').style.display = 'none';
+  document.getElementById('explanationBox').style.display = 'none';
+  document.getElementById('explanationBox').className = 'explanation-box';
+
+  // Update progress
+  const pct = (state.currentIndex / total) * 100;
+  document.getElementById('progressFill').style.width = pct + '%';
+
+  // Options
+  const grid = document.getElementById('optionsGrid');
+  grid.innerHTML = '';
+  const letters = ['A', 'B', 'C', 'D'];
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'option-btn';
+    btn.innerHTML = `<span class="option-letter">${letters[i]}</span><span>${opt}</span>`;
+    btn.onclick = () => selectAnswer(i);
+    grid.appendChild(btn);
+  });
+
+  state.answered = false;
+
+  // Re-animate
+  const card = document.getElementById('questionCard');
+  card.style.animation = 'none';
+  card.offsetHeight;
+  card.style.animation = '';
+}
+
+function selectAnswer(chosen) {
+  if (state.answered) return;
+  state.answered = true;
+
+  const q = state.questions[state.currentIndex];
+  const buttons = document.querySelectorAll('.option-btn');
+  const isCorrect = chosen === q.ans;
+
+  buttons.forEach((btn, i) => {
+    btn.disabled = true;
+    if (i === q.ans) btn.classList.add('correct');
+    else if (i === chosen && !isCorrect) btn.classList.add('wrong');
+  });
+
+  if (isCorrect) {
+    state.correct++;
+    state.streak++;
+    state.totalScore += 10 + (state.streak > 2 ? 5 : 0);
+    showExplanation(true, q);
+  } else {
+    state.wrong++;
+    state.streak = 0;
+    showExplanation(false, q);
+  }
+
+  updateHeader();
+  document.getElementById('nextBtn').style.display = 'inline-flex';
+}
+
+function showExplanation(correct, q) {
+  const box = document.getElementById('explanationBox');
+  box.style.display = 'block';
+  box.className = 'explanation-box ' + (correct ? 'correct-exp' : 'wrong-exp');
+
+  const emoji = correct ? '🎯' : '📚';
+  const resultText = correct ? 'Doğru!' : 'Yanlış';
+  const resultClass = correct ? 'correct-text' : 'wrong-text';
+  const answerLine = correct ? '' : `<div class="exp-answer">✅ Doğru cevap: <strong>${q.opts[q.ans]}</strong></div>`;
+
+  box.innerHTML = `
+    <div class="exp-header">
+      <span class="exp-emoji">${emoji}</span>
+      <span class="exp-result ${resultClass}">${resultText}</span>
+    </div>
+    ${answerLine}
+    <div class="exp-why">💡 ${q.why}</div>
+    <div class="exp-rule">📖 <strong>Kural:</strong> ${q.rule.replace(/\n/g, '<br>')}</div>
+  `;
+}
+
+function nextQuestion() {
+  state.currentIndex++;
+  if (state.currentIndex >= state.questions.length) {
+    showResults();
+  } else {
+    renderQuestion();
+  }
+}
+
+function skipQuestion() {
+  if (!state.answered) {
+    state.skipped++;
+    state.streak = 0;
+  }
+  state.currentIndex++;
+  if (state.currentIndex >= state.questions.length) {
+    showResults();
+  } else {
+    renderQuestion();
+  }
+}
+
+function showResults() {
+  showScreen('resultScreen');
+  const total = state.questions.length;
+  const pct = Math.round((state.correct / total) * 100);
+
+  document.getElementById('resultPct').textContent = pct + '%';
+  document.getElementById('correctCount').textContent = state.correct;
+  document.getElementById('wrongCount').textContent = state.wrong;
+  document.getElementById('skipCount').textContent = state.skipped;
+
+  // Messages
+  let emoji, title, subtitle;
+  if (pct >= 90) { emoji = '🏆'; title = 'Mükemmel!'; subtitle = 'Gerunds & Infinitives konusuna hâkimsin. Harika iş!'; }
+  else if (pct >= 75) { emoji = '🎯'; title = 'Çok İyi!'; subtitle = 'Konuyu büyük ölçüde kavramışsın. Küçük hatalar normal!'; }
+  else if (pct >= 55) { emoji = '📚'; title = 'Güzel İlerleme!'; subtitle = 'Temel kavramları anladın. Pratik yaparsan çok daha iyi olacak.'; }
+  else { emoji = '💪'; title = 'Devam Et!'; subtitle = 'Her hata bir öğrenme fırsatı. Tekrar oyna ve kuralları pekiştir!'; }
+
+  document.getElementById('resultEmoji').textContent = emoji;
+  document.getElementById('resultTitle').textContent = title;
+  document.getElementById('resultSubtitle').textContent = subtitle;
+
+  // Animate ring
+  setTimeout(() => {
+    const circumference = 364.4;
+    const offset = circumference - (pct / 100) * circumference;
+    document.getElementById('resultCircle').style.strokeDashoffset = offset;
+  }, 100);
+
+  document.getElementById('progressFill').style.width = '100%';
+}
+
+function restartGame() { startGame(); }
+function goHome() { showScreen('homeScreen'); document.getElementById('progressFill').style.width = '0%'; }
+
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+function updateHeader() {
+  document.getElementById('streakCount').textContent = state.streak;
+  document.getElementById('totalScore').textContent = state.totalScore;
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2800);
+}
+
+// Start
+init();
+</script>
+</body>
+</html>

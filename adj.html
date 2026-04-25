@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjectives & Adverbs - Konu Özeti ve Test</title>
+    <style>
+        :root {
+            --primary: #c0392b;
+            --secondary: #2c3e50;
+            --bg: #f9f9f9;
+            --correct: #27ae60;
+            --wrong: #c0392b;
+            --text: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            gap: 10px;
+        }
+        .tab-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 2px solid var(--secondary);
+            background-color: transparent;
+            color: var(--secondary);
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .tab-btn.active {
+            background-color: var(--secondary);
+            color: white;
+        }
+        .tab-content {
+            display: none;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .tab-content.active {
+            display: block;
+        }
+        
+        /* Özet Kısmı Stilleri */
+        h2 { color: var(--secondary); border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        h3 { color: var(--primary); margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .highlight { font-weight: bold; color: var(--primary); }
+        .note-box { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; border-radius: 4px; }
+
+        /* Oyun/Test Kısmı Stilleri */
+        #quiz-container { display: flex; flex-direction: column; gap: 20px; }
+        .question-text { font-size: 18px; font-weight: bold; margin-bottom: 15px; }
+        .options { display: flex; flex-direction: column; gap: 10px; }
+        .option-btn {
+            padding: 15px; text-align: left; font-size: 16px; border: 1px solid #ddd;
+            border-radius: 5px; background: white; cursor: pointer; transition: 0.2s;
+        }
+        .option-btn:hover:not(:disabled) { background: #f1f1f1; }
+        .option-btn:disabled { cursor: not-allowed; }
+        .option-btn.correct { background-color: var(--correct); color: white; border-color: var(--correct); }
+        .option-btn.wrong { background-color: var(--wrong); color: white; border-color: var(--wrong); }
+        
+        #feedback-box {
+            display: none; padding: 15px; border-radius: 5px; margin-top: 20px; font-weight: bold;
+        }
+        #feedback-box.show { display: block; }
+        .feedback-correct { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .feedback-wrong { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        
+        #next-btn {
+            display: none; padding: 12px 25px; background-color: var(--secondary); color: white;
+            border: none; border-radius: 5px; font-size: 16px; cursor: pointer; align-self: flex-end; margin-top: 15px;
+        }
+        #next-btn:hover { background-color: #1a252f; }
+        
+        #score-screen { display: none; text-align: center; }
+        #score-screen h2 { font-size: 24px; margin-bottom: 20px; }
+        .review-btn { background-color: var(--primary); color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Adjectives & Adverbs (Sıfatlar ve Zarflar)</h1>
+    </header>
+
+    <div class="tabs">
+        <button class="tab-btn active" onclick="switchTab('summary')">Konu Özeti</button>
+        <button class="tab-btn" onclick="switchTab('quiz')">Alıştırma Oyunu</button>
+    </div>
+
+    <div id="summary" class="tab-content active">
+        <h2>1. Sıfat Alan Fiiller (State Verbs)</h2>
+        <p>İsmi sıfat niteler, fiilleri ise zarflar niteler. Ancak aşağıdaki tabloda gördüğünüz <strong>durum fiilleri zarflarla değil, sıfatlarla</strong> nitelenir (İstisna fiillerdir):</p>
+        <div class="note-box">
+            <strong>Be, Become, Prove, Get, Remain, Seem, Look, Feel, Taste, Smell, Sound, Stay, Appear</strong><br>
+            <em>Örn: She looks <del>beautifully</del> / beautiful.</em>
+        </div>
+
+        <h2>2. Zarfların İşlevleri</h2>
+        <ul>
+            <li><strong>Fiilleri nitelerler:</strong> She speaks <em>slowly</em>.</li>
+            <li><strong>Cümleyi nitelerler:</strong> <em>Unfortunately</em>, we have lost the match.</li>
+            <li><strong>Sıfatları derecelendirirler:</strong> The exam was <em>extremely</em> easy.</li>
+            <li><strong>Başka zarfları nitelerler:</strong> She drives <em>extremely</em> carefully.</li>
+        </ul>
+
+        <h2>3. Comparative (Karşılaştırma) ve Superlative (En Üstünlük)</h2>
+        <table>
+            <tr>
+                <th>Yapı</th>
+                <th>Kural</th>
+                <th>Pekiştireçler (Öncesine Gelenler)</th>
+            </tr>
+            <tr>
+                <td><strong>Comparative</strong></td>
+                <td>-er THAN (Kısa) / More ... THAN (Uzun)</td>
+                <td><strong>much, far, a lot, rather, a little, a bit, no, even</strong><br><small>(Dikkat: very, so, as, quite, fairly, too <u>gelemez!</u>)</small></td>
+            </tr>
+            <tr>
+                <td><strong>Superlative</strong></td>
+                <td>The -est (Kısa) / The most (Uzun)</td>
+                <td><strong>by far, quite, much, even</strong><br><small>Ayrıca "of (all), among, in..." edatları ipucudur.</small></td>
+            </tr>
+        </table>
+
+        <h2>4. Önemli Kalıplar ve Farklar</h2>
+        <ul>
+            <li><strong>The more ..., the more ... :</strong> Ne kadar ... o kadar ... <em>(The hotter the weather is, the better I feel.)</em></li>
+            <li><strong>As / So ... as :</strong> ... kadar. (So...as genellikle negatif cümlelerde kullanılır). Araya sıfat/zarf veya "many/much + isim" girebilir.</li>
+            <li><strong>Too ... To V0 :</strong> ...-emeyecek kadar çok. (Cümleye olumsuzluk katar). Araya sıfat/zarf girer.</li>
+            <li><strong>Enough :</strong> Yeteri kadar. Sıfat ve zarflardan SONRA, isimlerden ÖNCE gelir. <em>(Rich enough / Enough money) + to V0.</em></li>
+            <li><strong>Like vs As :</strong> 
+                <ul>
+                    <li><span class="highlight">Like + Noun:</span> Gibi (Benzetme amacı vardır, gerçeklik yoktur).</li>
+                    <li><span class="highlight">As + Noun:</span> Olarak (Gerçeklik/Meslek vb. anlamı vardır. <em>He works as a teacher.</em>)</li>
+                </ul>
+            </li>
+            <li><strong>As + Cümle (SVO):</strong> 1. -dığı için/çünkü (since/because) 2. -iken (when/while) 3. -dikçe/dıkça (As you grow older).</li>
+        </ul>
+
+        <h2>5. SO ... THAT / SUCH ... THAT (... o kadar ... ki)</h2>
+        <div class="note-box">
+            <strong>SO + (sıfat / zarf) + THAT:</strong> Araya sadece sıfat veya zarf girer.<br>
+            <strong>SUCH + (a/an) + sıfat + isim + THAT:</strong> Araya mutlaka isim/sıfat tamlaması girmelidir.
+        </div>
+    </div>
+
+    <div id="quiz" class="tab-content">
+        <div id="quiz-container">
+            <div id="status-bar" style="display: flex; justify-content: space-between; margin-bottom: 10px; font-weight: bold; color: var(--secondary);">
+                <span id="question-counter">Soru: 1/10</span>
+                <span id="score-counter">Puan: 0</span>
+            </div>
+            
+            <div class="question-text" id="question-text">Soru buraya gelecek</div>
+            <div class="options" id="options-container">
+                </div>
+            
+            <div id="feedback-box">Geri bildirim buraya gelecek</div>
+            <button id="next-btn" onclick="nextQuestion()">Sıradaki Soru ➔</button>
+        </div>
+
+        <div id="score-screen">
+            <h2>Test Tamamlandı!</h2>
+            <p id="final-score-text" style="font-size: 18px; margin-bottom: 20px;"></p>
+            <div id="mistake-actions">
+                <p style="color: var(--wrong); font-weight: bold;">Hatalı çözdüğün sorular sistemde (localStorage) kayıtlı.</p>
+                <button class="review-btn" onclick="startMistakeReview()">Hatalarımı Tekrar Çöz</button>
+                <button class="review-btn" style="background-color: var(--secondary); margin-left: 10px;" onclick="resetQuiz(true)">Tüm Testi Baştan Çöz</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Sorular (Notlardan Birebir Çıkarılmıştır)
+    const allQuestions = [
+        {
+            id: 1,
+            q: "Aşağıdaki fiillerden hangisi zarf yerine SIFAT alır?",
+            options: ["Speak", "Drive", "Seem", "Walk"],
+            ans: 2,
+            explanation: "Be, become, prove, get, remain, seem, look, feel, taste, smell, sound, stay, appear fiilleri durum bildirdiği için zarf değil SIFAT alır."
+        },
+        {
+            id: 2,
+            q: "He is _____ a hardworking student _____ everybody respects him.",
+            options: ["so / that", "such / that", "as / as", "too / to"],
+            ans: 1,
+            explanation: "'such + (a/an) adj + noun + that + cümle' kuralı geçerlidir. Araya sıfat tamlaması (a hardworking student) girdiği için Such...that kullanılır."
+        },
+        {
+            id: 3,
+            q: "Comparative (daha... / -er / more) yapılarını pekiştirmek için boşluğa hangisi GELEMEZ?\n'The exam was _____ easier than I thought.'",
+            options: ["much", "a lot", "very", "far"],
+            ans: 2,
+            explanation: "Comparative yapıları pekiştirmek için much, far, a lot, rather, a little gibi kelimeler gelir ancak 'very', 'so', 'too' gibi yapılar GELEMEZ."
+        },
+        {
+            id: 4,
+            q: "The coffee is _____ hot for me to drink.",
+            options: ["so", "such", "enough", "too"],
+            ans: 3,
+            explanation: "'Too + adj/adv + to V0' yapısı cümleye '...emeyecek kadar çok' anlamı (olumsuzluk) katar. 'İçemeyeceğim kadar sıcak' anlamındadır."
+        },
+        {
+            id: 5,
+            q: "Ahmet works _____ a doctor at the local hospital.",
+            options: ["like", "as", "such", "so"],
+            ans: 1,
+            explanation: "Meslekler veya gerçeklik bildiren durumlarda 'as + isim' (olarak) kullanılır. 'Like' ise gerçekliği olmayan benzetmeler (gibi) içindir."
+        },
+        {
+            id: 6,
+            q: "She has _____ much money _____ she can buy whatever she wants.",
+            options: ["such / that", "too / to", "so / that", "as / as"],
+            ans: 2,
+            explanation: "Sıfat ve zarfların yanı sıra 'many, much, little, few + isim' yapılarının başına SUCH değil, SO gelir. (So much money that...)"
+        },
+        {
+            id: 7,
+            q: "_____ you see in the picture, the inflation is rising.",
+            options: ["As", "Like", "Such", "So"],
+            ans: 0,
+            explanation: "'As + SV(O)' yapısı '-dığı gibi' anlamına gelir. 'Resimde gördüğünüz gibi' anlamı as ile sağlanır."
+        },
+        {
+            id: 8,
+            q: "The _____ the weather is, the _____ I feel.",
+            options: ["hot / good", "hotter / better", "more hot / best", "hottest / best"],
+            ans: 1,
+            explanation: "'The more ..., the more ...' kuralı gereği iki tarafta da Comparative (karşılaştırma) yapısı olmalıdır. (The hotter..., the better...)"
+        },
+        {
+            id: 9,
+            q: "He is not tall _____ to play basketball professionally.",
+            options: ["too", "so", "enough", "such"],
+            ans: 2,
+            explanation: "'Enough' yeteri kadar demektir ve sıfat/zarflardan SONRA gelir. (Adj/Adv + enough + to V0) -> tall enough."
+        },
+        {
+            id: 10,
+            q: "Superlative (The most / The -est) yapılarını pekiştirmek için hangisi kullanılır?",
+            options: ["by far", "a little", "rather", "no"],
+            ans: 0,
+            explanation: "Superlative (En üstünlük) yapıları 'by far, quite, much, even' ile vurgulanır. Diğer seçenekler Comparative içindir."
+        }
+    ];
+
+    let currentQuestions = [];
+    let currentQIndex = 0;
+    let score = 0;
+    let reviewMode = false;
+    let mistakes = JSON.parse(localStorage.getItem('englishMistakes')) || [];
+
+    // Sekme Değiştirme
+    function switchTab(tabId) {
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+        
+        event.target.classList.add('active');
+        document.getElementById(tabId).classList.add('active');
+
+        if(tabId === 'quiz' && currentQuestions.length === 0) {
+            resetQuiz(false);
+        }
+    }
+
+    // Testi Başlat
+    function resetQuiz(forceFullReset = false) {
+        document.getElementById('score-screen').style.display = 'none';
+        document.getElementById('quiz-container').style.display = 'flex';
+        
+        if (forceFullReset) {
+            mistakes = [];
+            localStorage.setItem('englishMistakes', JSON.stringify(mistakes));
+        }
+
+        currentQuestions = [...allQuestions];
+        currentQIndex = 0;
+        score = 0;
+        reviewMode = false;
+        loadQuestion();
+    }
+
+    // Hata Modunu Başlat
+    function startMistakeReview() {
+        if(mistakes.length === 0) return;
+        
+        document.getElementById('score-screen').style.display = 'none';
+        document.getElementById('quiz-container').style.display = 'flex';
+        
+        // Hatalı soruları ID'lerinden bulup yeni bir dizi yapalım
+        currentQuestions = mistakes.map(mId => allQuestions.find(q => q.id === mId));
+        currentQIndex = 0;
+        score = 0;
+        reviewMode = true;
+        
+        // Tekrar çözülen hataları sıfırlayalım ki doğru yaparsa listeden çıksın
+        mistakes = []; 
+        localStorage.setItem('englishMistakes', JSON.stringify(mistakes));
+        
+        loadQuestion();
+    }
+
+    // Soru Yükle
+    function loadQuestion() {
+        document.getElementById('next-btn').style.display = 'none';
+        document.getElementById('feedback-box').className = '';
+        document.getElementById('feedback-box').style.display = 'none';
+        
+        const qData = currentQuestions[currentQIndex];
+        
+        document.getElementById('question-counter').innerText = 
+            (reviewMode ? "Hata Tekrarı Soru: " : "Soru: ") + (currentQIndex + 1) + "/" + currentQuestions.length;
+        document.getElementById('score-counter').innerText = "Puan: " + score;
+        
+        document.getElementById('question-text').innerText = qData.q;
+        
+        const optsContainer = document.getElementById('options-container');
+        optsContainer.innerHTML = '';
+        
+        qData.options.forEach((opt, index) => {
+            const btn = document.createElement('button');
+            btn.className = 'option-btn';
+            btn.innerText = opt;
+            btn.onclick = () => selectOption(index);
+            optsContainer.appendChild(btn);
+        });
+    }
+
+    // Seçenek İşaretleme
+    function selectOption(selectedIndex) {
+        const qData = currentQuestions[currentQIndex];
+        const optsContainer = document.getElementById('options-container');
+        const buttons = optsContainer.querySelectorAll('button');
+        
+        buttons.forEach(btn => btn.disabled = true);
+        
+        const isCorrect = (selectedIndex === qData.ans);
+        
+        if(isCorrect) {
+            buttons[selectedIndex].classList.add('correct');
+            score += 10;
+            document.getElementById('score-counter').innerText = "Puan: " + score;
+            showFeedback(true, "Doğru! " + qData.explanation);
+        } else {
+            buttons[selectedIndex].classList.add('wrong');
+            buttons[qData.ans].classList.add('correct');
+            
+            // Yanlış yapılanı kaydet
+            if(!mistakes.includes(qData.id)) {
+                mistakes.push(qData.id);
+                localStorage.setItem('englishMistakes', JSON.stringify(mistakes));
+            }
+            
+            showFeedback(false, "Yanlış! " + qData.explanation);
+        }
+        
+        document.getElementById('next-btn').style.display = 'block';
+    }
+
+    // Geri Bildirim Gösterme
+    function showFeedback(isCorrect, message) {
+        const fb = document.getElementById('feedback-box');
+        fb.innerText = message;
+        fb.className = isCorrect ? 'feedback-correct show' : 'feedback-wrong show';
+    }
+
+    // Sonraki Soru
+    function nextQuestion() {
+        currentQIndex++;
+        if(currentQIndex < currentQuestions.length) {
+            loadQuestion();
+        } else {
+            finishQuiz();
+        }
+    }
+
+    // Test Bitir
+    function finishQuiz() {
+        document.getElementById('quiz-container').style.display = 'none';
+        document.getElementById('score-screen').style.display = 'block';
+        
+        document.getElementById('final-score-text').innerHTML = 
+            `Oyun bitti! Toplam Puanın: <strong>${score}</strong> / ${currentQuestions.length * 10}`;
+            
+        const mistakeActions = document.getElementById('mistake-actions');
+        if(mistakes.length > 0) {
+            mistakeActions.style.display = 'block';
+            mistakeActions.querySelector('p').innerText = `LocalStorage'da kayıtlı ${mistakes.length} hatalı sorun bulunuyor.`;
+        } else {
+            mistakeActions.style.display = 'block';
+            mistakeActions.querySelector('p').innerText = "Harika! Kayıtlı hiç hatalı sorun yok.";
+            mistakeActions.querySelector('.review-btn').style.display = 'none'; // Hata tekrar butonunu gizle
+        }
+    }
+
+    // Sayfa yüklendiğinde localStorage kontrolü yap
+    window.onload = () => {
+        if(mistakes.length > 0) {
+             console.log("Kayıtlı hatalar bulundu: ", mistakes);
+        }
+    };
+</script>
+
+</body>
+</html>

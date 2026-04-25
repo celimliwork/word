@@ -207,77 +207,192 @@
 <script>
     // Sorular (Notlardan Birebir Çıkarılmıştır)
     const allQuestions = [
-        {
-            id: 1,
-            q: "Aşağıdaki fiillerden hangisi zarf yerine SIFAT alır?",
-            options: ["Speak", "Drive", "Seem", "Walk"],
-            ans: 2,
-            explanation: "Be, become, prove, get, remain, seem, look, feel, taste, smell, sound, stay, appear fiilleri durum bildirdiği için zarf değil SIFAT alır."
-        },
-        {
-            id: 2,
-            q: "He is _____ a hardworking student _____ everybody respects him.",
-            options: ["so / that", "such / that", "as / as", "too / to"],
-            ans: 1,
-            explanation: "'such + (a/an) adj + noun + that + cümle' kuralı geçerlidir. Araya sıfat tamlaması (a hardworking student) girdiği için Such...that kullanılır."
-        },
-        {
-            id: 3,
-            q: "Comparative (daha... / -er / more) yapılarını pekiştirmek için boşluğa hangisi GELEMEZ?\n'The exam was _____ easier than I thought.'",
-            options: ["much", "a lot", "very", "far"],
-            ans: 2,
-            explanation: "Comparative yapıları pekiştirmek için much, far, a lot, rather, a little gibi kelimeler gelir ancak 'very', 'so', 'too' gibi yapılar GELEMEZ."
-        },
-        {
-            id: 4,
-            q: "The coffee is _____ hot for me to drink.",
-            options: ["so", "such", "enough", "too"],
-            ans: 3,
-            explanation: "'Too + adj/adv + to V0' yapısı cümleye '...emeyecek kadar çok' anlamı (olumsuzluk) katar. 'İçemeyeceğim kadar sıcak' anlamındadır."
-        },
-        {
-            id: 5,
-            q: "Ahmet works _____ a doctor at the local hospital.",
-            options: ["like", "as", "such", "so"],
-            ans: 1,
-            explanation: "Meslekler veya gerçeklik bildiren durumlarda 'as + isim' (olarak) kullanılır. 'Like' ise gerçekliği olmayan benzetmeler (gibi) içindir."
-        },
-        {
-            id: 6,
-            q: "She has _____ much money _____ she can buy whatever she wants.",
-            options: ["such / that", "too / to", "so / that", "as / as"],
-            ans: 2,
-            explanation: "Sıfat ve zarfların yanı sıra 'many, much, little, few + isim' yapılarının başına SUCH değil, SO gelir. (So much money that...)"
-        },
-        {
-            id: 7,
-            q: "_____ you see in the picture, the inflation is rising.",
-            options: ["As", "Like", "Such", "So"],
-            ans: 0,
-            explanation: "'As + SV(O)' yapısı '-dığı gibi' anlamına gelir. 'Resimde gördüğünüz gibi' anlamı as ile sağlanır."
-        },
-        {
-            id: 8,
-            q: "The _____ the weather is, the _____ I feel.",
-            options: ["hot / good", "hotter / better", "more hot / best", "hottest / best"],
-            ans: 1,
-            explanation: "'The more ..., the more ...' kuralı gereği iki tarafta da Comparative (karşılaştırma) yapısı olmalıdır. (The hotter..., the better...)"
-        },
-        {
-            id: 9,
-            q: "He is not tall _____ to play basketball professionally.",
-            options: ["too", "so", "enough", "such"],
-            ans: 2,
-            explanation: "'Enough' yeteri kadar demektir ve sıfat/zarflardan SONRA gelir. (Adj/Adv + enough + to V0) -> tall enough."
-        },
-        {
-            id: 10,
-            q: "Superlative (The most / The -est) yapılarını pekiştirmek için hangisi kullanılır?",
-            options: ["by far", "a little", "rather", "no"],
-            ans: 0,
-            explanation: "Superlative (En üstünlük) yapıları 'by far, quite, much, even' ile vurgulanır. Diğer seçenekler Comparative içindir."
-        }
-    ];
+    // 1. DURUM FİİLLERİ (STATE VERBS)
+    {
+        id: 1,
+        q: "Aşağıdaki fiillerden hangisi zarf yerine SIFAT alır?",
+        options: ["Speak", "Drive", "Seem", "Walk"],
+        ans: 2,
+        explanation: "Be, become, prove, get, remain, seem, look, feel, taste, smell, sound, stay, appear fiilleri durum bildirdiği için zarf değil SIFAT alır."
+    },
+    {
+        id: 2,
+        q: "The soup on the stove smells _____. Let's eat it!",
+        options: ["deliciously", "delicious", "more deliciously", "very deliciously"],
+        ans: 1,
+        explanation: "'Smell' duyusal bir durum fiilidir (state verb). Zarf (deliciously) değil, sıfat (delicious) ile nitelenir."
+    },
+
+    // 2. ZARFLARIN İŞLEVLERİ
+    {
+        id: 3,
+        q: "_____, we have lost the match despite all our efforts.",
+        options: ["Unfortunate", "More unfortunate", "Unfortunately", "The most unfortunate"],
+        ans: 2,
+        explanation: "Zarflar tüm bir cümleyi niteleyebilir. Cümle başında virgülle ayrılarak 'Maalesef...' anlamı veren bir zarfa (Unfortunately) ihtiyaç vardır."
+    },
+
+    // 3. COMPARATIVE (KARŞILAŞTIRMA) PEKİŞTİREÇLERİ VE YASAKLILAR
+    {
+        id: 4,
+        q: "Comparative (daha... / -er / more) yapılarını pekiştirmek için boşluğa hangisi GELEMEZ?\n'The exam was _____ easier than I thought.'",
+        options: ["much", "a lot", "very", "far"],
+        ans: 2,
+        explanation: "Comparative yapıları pekiştirmek için 'much, far, a lot, rather, a little, a bit, no, even' gelebilir ancak 'very, so, as, quite, too' GELEMEZ."
+    },
+    {
+        id: 5,
+        q: "This new software is _____ more complicated than the previous version.",
+        options: ["even", "very", "too", "so"],
+        ans: 0,
+        explanation: "'More complicated' bir comparative (karşılaştırma) yapısıdır. Öncesine pekiştireç olarak 'very, too, so' gelemez, ancak 'even' gelebilir."
+    },
+
+    // 4. SUPERLATIVE (EN ÜSTÜNLÜK)
+    {
+        id: 6,
+        q: "He is _____ the most talented player in the team. Nobody else comes close.",
+        options: ["rather", "by far", "a little", "many"],
+        ans: 1,
+        explanation: "Superlative (En üstünlük) yapıları 'by far, quite, much, even' kelimeleri ile pekiştirilebilir. 'By far the most...' (açık ara en...) kalıbı çok yaygındır."
+    },
+
+    // 5. THE FORMER / THE LATTER
+    {
+        id: 7,
+        q: "I was offered a job in London and Paris. I chose _____, because I have always wanted to live in France.",
+        options: ["the former", "the latter", "the least", "the most"],
+        ans: 1,
+        explanation: "İki şey sayıldığında birincisi için 'the former' (önceki), ikincisi için 'the latter' (sonraki) kullanılır. Paris ikinci sırada olduğu için 'the latter' seçilir."
+    },
+
+    // 6. THE MORE ..., THE MORE ...
+    {
+        id: 8,
+        q: "The _____ the weather is, the _____ I feel.",
+        options: ["hot / good", "hotter / better", "more hot / best", "hottest / best"],
+        ans: 1,
+        explanation: "'The more ..., the more ...' (Ne kadar... o kadar...) kuralı gereği iki tarafta da Comparative (karşılaştırma) yapısı olmalıdır. (The hotter..., the better...)"
+    },
+
+    // 7. AS...AS / SO...AS / KATI (MULTIPLIERS)
+    {
+        id: 9,
+        q: "I am not _____ good at math _____ my sister is.",
+        options: ["so / that", "such / that", "so / as", "too / to"],
+        ans: 2,
+        explanation: "Negatif (not) cümlelerde '...kadar' anlamı vermek için 'so ... as' veya 'as ... as' kullanılır. (Kız kardeşim kadar iyi değilim)."
+    },
+    {
+        id: 10,
+        q: "Their new house is three times _____ big _____ ours.",
+        options: ["so / that", "as / as", "such / that", "the same / as"],
+        ans: 1,
+        explanation: "'Half, twice, three times' gibi kat bildiren kelimelerden sonra 'as ... as' yapısı kullanılır."
+    },
+
+    // 8. THE SAME ... AS
+    {
+        id: 11,
+        q: "She is wearing _____ dress _____ you wore yesterday.",
+        options: ["similar / to", "as / as", "the same / as", "such / that"],
+        ans: 2,
+        explanation: "Birebir aynı olan şeyleri karşılaştırırken 'The same + isim + as' kalıbı kullanılır."
+    },
+
+    // 9. SO ... THAT vs SUCH ... THAT
+    {
+        id: 12,
+        q: "He is _____ a hardworking student _____ everybody respects him.",
+        options: ["so / that", "such / that", "as / as", "too / to"],
+        ans: 1,
+        explanation: "Araya sadece sıfat girseydi 'so' kullanılırdı (so hardworking that). Ancak araya bir SIFAT TAMLAMASI (a hardworking student) girdiği için 'such ... that' kullanılır."
+    },
+    {
+        id: 13,
+        q: "She spoke _____ quickly _____ I couldn't understand anything.",
+        options: ["so / that", "such / that", "too / to", "as / as"],
+        ans: 0,
+        explanation: "Araya sadece bir sıfat veya zarf (quickly) gelmişse ve sonrasında bir SVO (cümle) varsa 'So + adj/adv + that' yapısı kullanılır."
+    },
+    {
+        id: 14,
+        q: "There were _____ many people at the concert _____ I couldn't find my friends.",
+        options: ["such / that", "so / that", "as / as", "too / to"],
+        ans: 1,
+        explanation: "İsim gelmesine rağmen önünde 'many, much, little, few' miktar belirleyicileri varsa SUCH DEĞİL, SO kullanılır! (So many people that...)"
+    },
+    {
+        id: 15,
+        q: "He has _____ a lot of problems _____ he doesn't know where to start.",
+        options: ["so / that", "such / that", "too / to", "the same / as"],
+        ans: 1,
+        explanation: "'A lot of, a little, a few + isim' kelimelerinin başında SO DEĞİL, SUCH kullanılır. (Such a lot of problems that...)"
+    },
+    {
+        id: 16,
+        q: "I haven't seen _____ creative a man in producing solutions _____ he is.",
+        options: ["such / that", "as / as", "so / as", "too / to"],
+        ans: 2,
+        explanation: "Tablodaki özel kural: 'So + adj + a/an + noun' dizilimi '...kadar' anlamında 'as' ile tamamlanabilir. (So creative a man as he is...)"
+    },
+
+    // 10. TOO ... TO / ENOUGH
+    {
+        id: 17,
+        q: "The coffee is _____ hot for me to drink.",
+        options: ["so", "such", "enough", "too"],
+        ans: 3,
+        explanation: "'Too + adj/adv + to V0' yapısı cümleye '...emeyecek kadar çok' anlamı (olumsuzluk) katar. 'İçemeyeceğim kadar sıcak' anlamındadır."
+    },
+    {
+        id: 18,
+        q: "He is not tall _____ to play basketball professionally.",
+        options: ["too", "so", "enough", "such"],
+        ans: 2,
+        explanation: "'Enough' yeteri kadar demektir ve sıfat/zarflardan SONRA, isimlerden ÖNCE gelir. Burada sıfattan sonra gelmiş: 'tall enough'."
+    },
+
+    // 11. LIKE vs AS (Benzetme vs Gerçeklik)
+    {
+        id: 19,
+        q: "Ahmet works _____ a doctor at the local hospital.",
+        options: ["like", "as", "such", "so"],
+        ans: 1,
+        explanation: "Meslekler veya gerçeklik bildiren durumlarda 'as + isim' (olarak) kullanılır. 'Like' ise gerçekliği olmayan benzetmeler (gibi) içindir."
+    },
+    {
+        id: 20,
+        q: "Stop acting _____ a child! You are 30 years old.",
+        options: ["as", "like", "such as", "so"],
+        ans: 1,
+        explanation: "Burada gerçek bir çocuk olma durumu yok, bir benzetme (gibi davranma) var. Bu yüzden 'Like + noun' kullanılır."
+    },
+
+    // 12. AS'in DİĞER KULLANIMLARI ve SUCH AS
+    {
+        id: 21,
+        q: "_____ you see in the picture, the inflation is rising.",
+        options: ["As", "Like", "Such", "So"],
+        ans: 0,
+        explanation: "'As + SV(O)' veya 'As in the picture' yapısı '-dığı gibi' anlamına gelir. 'Resimde gördüğünüz gibi' anlamı as ile sağlanır."
+    },
+    {
+        id: 22,
+        q: "Countries _____ Turkey and Greece share similar cultural elements.",
+        options: ["as", "like", "such as", "so as"],
+        ans: 2,
+        explanation: "'Such as' (gibi/örneğin) kendinden önce gelen bir genellemeyi örneklendirmek için kullanılır. (Türkiye ve Yunanistan gibi ülkeler...)"
+    },
+    {
+        id: 23,
+        q: "_____ I was walking down the street, I found a wallet.",
+        options: ["Such", "Like", "As", "So"],
+        ans: 2,
+        explanation: "'As + Cümle (SVO)' bağlaç olarak 'iken (while/when)' veya 'için (because/since)' veya '-dıkça' anlamına gelebilir. Burada 'yürürken' anlamındadır."
+    }
+];
+
 
     let currentQuestions = [];
     let currentQIndex = 0;

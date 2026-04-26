@@ -393,6 +393,24 @@
     }
 ];
 
+    function escapeHtml(s) {
+        // replaceAll bazı tarayıcılarda sorun çıkarabiliyor; regex ile daha uyumlu.
+        return String(s)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
+    }
+
+    function tryFillBlank(questionText, optionText) {
+        // Sadece boşluklu sorularda (_____) hızlı bir "yanlış/doğru cümle" göstermek için.
+        if (!questionText || typeof questionText !== "string") return null;
+        if (!questionText.includes("_____")) return null;
+        const filled = questionText.replace("_____", optionText);
+        return filled;
+    }
+
 
     let currentQuestions = [];
     let currentQIndex = 0;
@@ -485,12 +503,26 @@
         buttons.forEach(btn => btn.disabled = true);
         
         const isCorrect = (selectedIndex === qData.ans);
+        const chosenOpt = qData.options[selectedIndex];
+        const correctOpt = qData.options[qData.ans];
+        const chosenSentence = tryFillBlank(qData.q, chosenOpt);
+        const correctSentence = tryFillBlank(qData.q, correctOpt);
         
         if(isCorrect) {
             buttons[selectedIndex].classList.add('correct');
             score += 10;
             document.getElementById('score-counter').innerText = "Puan: " + score;
-            showFeedback(true, "Doğru! " + qData.explanation);
+            const extra = correctSentence
+                ? `<div style="margin-top:10px;"><span style="opacity:.9;">✅ Doğru cümle:</span><br><span style="font-weight:700;">${escapeHtml(correctSentence)}</span></div>`
+                : "";
+            showFeedback(true, `
+                <div><b>Doğru.</b></div>
+                <div style="margin-top:8px;">
+                    <span style="opacity:.85; font-weight:800;">Neden?</span><br>
+                    <span style="font-weight:650;">${escapeHtml(qData.explanation)}</span>
+                </div>
+                ${extra}
+            `);
         } else {
             buttons[selectedIndex].classList.add('wrong');
             buttons[qData.ans].classList.add('correct');
@@ -500,8 +532,23 @@
                 mistakes.push(qData.id);
                 localStorage.setItem('englishMistakes', JSON.stringify(mistakes));
             }
-            
-            showFeedback(false, "Yanlış! " + qData.explanation);
+
+            const extra = (chosenSentence && correctSentence)
+                ? `<div style="margin-top:10px;">
+                        <span style="opacity:.9;">❌ Senin seçimin:</span><br><span style="font-weight:700;">${escapeHtml(chosenSentence)}</span>
+                        <div style="height:8px"></div>
+                        <span style="opacity:.9;">✅ Doğru hali:</span><br><span style="font-weight:700;">${escapeHtml(correctSentence)}</span>
+                   </div>`
+                : `<div style="margin-top:10px;"><span style="opacity:.9;">Doğru cevap:</span> <b>${escapeHtml(correctOpt)}</b></div>`;
+
+            showFeedback(false, `
+                <div><b>Yanlış.</b></div>
+                <div style="margin-top:8px;">
+                    <span style="opacity:.85; font-weight:800;">Neden?</span><br>
+                    <span style="font-weight:650;">${escapeHtml(qData.explanation)}</span>
+                </div>
+                ${extra}
+            `);
         }
         
         document.getElementById('next-btn').style.display = 'block';
@@ -510,7 +557,7 @@
     // Geri Bildirim Gösterme
     function showFeedback(isCorrect, message) {
         const fb = document.getElementById('feedback-box');
-        fb.innerText = message;
+        fb.innerHTML = message;
         fb.className = isCorrect ? 'feedback-correct show' : 'feedback-wrong show';
     }
 

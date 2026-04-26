@@ -3,194 +3,836 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adjective Clauses Master - 50 Soru</title>
+    <title>Adjective Clauses Master — Konu Bazlı Pratik</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
-        #game-container { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 90%; max-width: 700px; text-align: center; }
-        .header { color: #2c3e50; margin-bottom: 20px; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
-        .question { font-size: 1.2rem; margin-bottom: 20px; font-weight: 600; line-height: 1.6; }
-        .options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-        button { padding: 12px; font-size: 1rem; cursor: pointer; border: 2px solid #3498db; background: white; border-radius: 8px; transition: 0.3s; }
-        button:hover { background: #3498db; color: white; }
-        #feedback { margin-top: 20px; padding: 15px; border-radius: 8px; display: none; text-align: left; font-size: 0.95rem; }
-        .correct { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
-        .wrong { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
-        #next-btn { margin-top: 20px; background: #2ecc71; color: white; border: none; padding: 15px 30px; display: none; width: 100%; }
-        .progress { margin-bottom: 15px; font-size: 0.9rem; color: #666; }
+        :root{
+            --bg: #0b1220;
+            --panel: rgba(255,255,255,.06);
+            --panel2: rgba(255,255,255,.09);
+            --text: rgba(255,255,255,.92);
+            --muted: rgba(255,255,255,.65);
+            --line: rgba(255,255,255,.10);
+            --brand: #6ae4ff;
+            --good: #34d399;
+            --bad: #fb7185;
+            --warn: #fbbf24;
+            --shadow: 0 18px 45px rgba(0,0,0,.35);
+        }
+        body{
+            font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+            background:
+                radial-gradient(1200px 600px at 15% 0%, rgba(106,228,255,.18), transparent 55%),
+                radial-gradient(900px 500px at 85% 10%, rgba(52,211,153,.14), transparent 50%),
+                radial-gradient(900px 600px at 45% 100%, rgba(251,113,133,.10), transparent 55%),
+                var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 24px 14px;
+        }
+        #game-container{
+            width: min(900px, 96vw);
+            border: 1px solid var(--line);
+            background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.04));
+            box-shadow: var(--shadow);
+            border-radius: 18px;
+            overflow: hidden;
+        }
+        .topbar{
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            gap: 12px;
+            padding: 18px 18px 14px;
+            border-bottom: 1px solid var(--line);
+            background: rgba(0,0,0,.20);
+        }
+        .brand{
+            display:flex;
+            align-items:center;
+            gap: 10px;
+            min-width: 0;
+        }
+        .logo{
+            width: 36px;
+            height: 36px;
+            border-radius: 12px;
+            background: radial-gradient(circle at 30% 30%, rgba(106,228,255,.9), rgba(106,228,255,.20) 55%, transparent 70%),
+                        radial-gradient(circle at 70% 70%, rgba(52,211,153,.7), transparent 60%),
+                        rgba(255,255,255,.10);
+            border: 1px solid rgba(255,255,255,.16);
+        }
+        .brand h1{
+            margin: 0;
+            font-size: 1.05rem;
+            letter-spacing: .2px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .brand p{
+            margin: 0;
+            color: var(--muted);
+            font-size: .86rem;
+        }
+        .actions{
+            display:flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content:flex-end;
+        }
+        .btn{
+            appearance: none;
+            border: 1px solid rgba(255,255,255,.16);
+            background: rgba(255,255,255,.08);
+            color: var(--text);
+            border-radius: 12px;
+            padding: 10px 12px;
+            cursor: pointer;
+            font-weight: 650;
+            letter-spacing: .15px;
+            transition: transform .08s ease, background .15s ease, border-color .15s ease;
+        }
+        .btn:hover{ background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.22); }
+        .btn:active{ transform: translateY(1px); }
+        .btn.primary{
+            border-color: rgba(106,228,255,.35);
+            background: rgba(106,228,255,.14);
+        }
+        .btn.good{
+            border-color: rgba(52,211,153,.35);
+            background: rgba(52,211,153,.14);
+        }
+        .btn.ghost{
+            background: transparent;
+        }
+        .content{
+            padding: 18px;
+        }
+        .grid{
+            display:grid;
+            grid-template-columns: 1.05fr .95fr;
+            gap: 14px;
+        }
+        @media (max-width: 860px){
+            .grid{ grid-template-columns: 1fr; }
+        }
+        .card{
+            border: 1px solid var(--line);
+            background: rgba(255,255,255,.05);
+            border-radius: 16px;
+            padding: 14px;
+        }
+        .card h2{
+            margin: 0 0 10px;
+            font-size: .98rem;
+            letter-spacing: .2px;
+        }
+        .hint{
+            color: var(--muted);
+            font-size: .9rem;
+            line-height: 1.45;
+        }
+        .chips{
+            display:flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        .chip{
+            display:inline-flex;
+            align-items:center;
+            gap: 8px;
+            padding: 9px 10px;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,.14);
+            background: rgba(255,255,255,.06);
+            cursor:pointer;
+            user-select:none;
+            font-size: .9rem;
+            color: var(--text);
+            transition: background .15s ease, border-color .15s ease;
+        }
+        .chip:hover{ background: rgba(255,255,255,.10); border-color: rgba(255,255,255,.20); }
+        .chip input{ display:none; }
+        .chip[data-on="1"]{
+            background: rgba(106,228,255,.14);
+            border-color: rgba(106,228,255,.35);
+        }
+        .row{
+            display:flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items:center;
+            margin-top: 10px;
+        }
+        select{
+            border: 1px solid rgba(255,255,255,.16);
+            background: rgba(255,255,255,.06);
+            color: var(--text);
+            border-radius: 12px;
+            padding: 10px 12px;
+            outline: none;
+            min-width: 190px;
+        }
+        .pill{
+            display:inline-flex;
+            align-items:center;
+            gap: 8px;
+            padding: 8px 10px;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,.14);
+            color: var(--muted);
+            background: rgba(255,255,255,.04);
+            font-size: .88rem;
+        }
+        .progressbar{
+            height: 10px;
+            border-radius: 999px;
+            background: rgba(255,255,255,.08);
+            overflow:hidden;
+            border: 1px solid rgba(255,255,255,.12);
+        }
+        .progressbar > div{
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, rgba(106,228,255,.85), rgba(52,211,153,.75));
+            border-radius: 999px;
+            transition: width .25s ease;
+        }
+        .question{
+            font-size: 1.12rem;
+            font-weight: 750;
+            letter-spacing: .15px;
+            line-height: 1.55;
+            margin: 8px 0 12px;
+        }
+        .subline{
+            color: var(--muted);
+            font-size: .92rem;
+            line-height: 1.5;
+        }
+        .options{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 12px;
+        }
+        @media (max-width: 520px){
+            .options{ grid-template-columns: 1fr; }
+        }
+        .opt{
+            padding: 12px 12px;
+            border-radius: 14px;
+            border: 1px solid rgba(255,255,255,.14);
+            background: rgba(255,255,255,.06);
+            cursor:pointer;
+            text-align:left;
+            color: var(--text);
+            font-weight: 700;
+            transition: background .15s ease, border-color .15s ease, transform .08s ease;
+        }
+        .opt:hover{ background: rgba(255,255,255,.10); border-color: rgba(255,255,255,.20); }
+        .opt:active{ transform: translateY(1px); }
+        .opt[disabled]{ opacity: .60; cursor:not-allowed; }
+        #feedback{
+            margin-top: 12px;
+            padding: 12px 12px;
+            border-radius: 14px;
+            border: 1px solid rgba(255,255,255,.14);
+            background: rgba(0,0,0,.20);
+            display:none;
+            text-align:left;
+            font-size: .95rem;
+            line-height: 1.55;
+        }
+        #feedback.good{ border-color: rgba(52,211,153,.32); background: rgba(52,211,153,.10); }
+        #feedback.bad{ border-color: rgba(251,113,133,.32); background: rgba(251,113,133,.10); }
+        .kicker{
+            display:flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items:center;
+            margin-top: 10px;
+        }
+        .tag{
+            display:inline-flex;
+            align-items:center;
+            gap: 8px;
+            padding: 7px 10px;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,.14);
+            background: rgba(255,255,255,.05);
+            color: var(--muted);
+            font-size: .88rem;
+        }
+        .tag strong{ color: var(--text); }
         .stat-box { display: none; }
-        .highlight { font-weight: bold; color: #e74c3c; }
+        .analysis{
+            margin-top: 10px;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        @media (max-width: 720px){
+            .analysis{ grid-template-columns: 1fr; }
+        }
+        .mini{
+            border: 1px solid rgba(255,255,255,.14);
+            background: rgba(255,255,255,.05);
+            border-radius: 14px;
+            padding: 12px;
+        }
+        .mini .t{ font-weight: 800; margin-bottom: 6px; }
+        .mini .v{ color: var(--muted); font-size: .92rem; line-height: 1.45; }
+        a.back{
+            color: var(--muted);
+            text-decoration: none;
+            border-bottom: 1px dashed rgba(255,255,255,.28);
+        }
     </style>
 </head>
 <body>
 
 <div id="game-container">
-    <div class="header">
-        <h2>Adjective Clauses Master</h2>
-        <div class="progress">Soru: <span id="current-q">1</span>/50</div>
+    <div class="topbar">
+        <div class="brand">
+            <div class="logo" aria-hidden="true"></div>
+            <div style="min-width:0">
+                <h1>Adjective Clauses Master</h1>
+                <p>Tür seç • pratik yap • zayıf türleri kapat</p>
+            </div>
+        </div>
+        <div class="actions">
+            <a class="btn ghost back" href="index.html">← Ana sayfa</a>
+            <button class="btn" id="btn-reset" type="button">Sıfırla</button>
+            <button class="btn primary" id="btn-start" type="button">Başla</button>
+        </div>
     </div>
 
-    <div id="quiz-section">
-        <div class="question" id="question-text">Soru yükleniyor...</div>
-        <div class="options" id="options-container"></div>
-        <div id="feedback"></div>
-        <button id="next-btn" onclick="nextQuestion()">Sıradaki Soru →</button>
-    </div>
+    <div class="content">
+        <div id="setup-section" class="grid">
+            <div class="card">
+                <h2>Hangi türleri çalışalım?</h2>
+                <div class="hint">
+                    Bu sayfa “tek sefer 50 soru” değil: Adjective clause’ların tüm çeşitlerini parça parça öğreten bir pratik seti.
+                    İstersen karışık çalış, istersen tek bir türü bitir.
+                </div>
+                <div class="chips" id="tag-chips"></div>
+                <div class="row">
+                    <span class="pill">Soru sayısı</span>
+                    <select id="question-count">
+                        <option value="15">15</option>
+                        <option value="25">25</option>
+                        <option value="40" selected>40</option>
+                        <option value="60">60</option>
+                    </select>
+                    <span class="pill">Mod</span>
+                    <select id="mode">
+                        <option value="mixed" selected>Karışık (seçilen türler)</option>
+                        <option value="focus">Zayıf Tür Odaklı (otomatik)</option>
+                    </select>
+                </div>
+                <div style="margin-top: 12px;">
+                    <div class="hint" style="margin-bottom: 8px;">İpucu: “Zayıf Tür Odaklı” mod, en çok yanlış yaptığın türlerden daha çok soru getirir.</div>
+                    <div class="progressbar" aria-hidden="true"><div id="setup-meter"></div></div>
+                </div>
+            </div>
 
-    <div id="result-section" class="stat-box">
-        <h3>Sınav Tamamlandı!</h3>
-        <p id="final-score"></p>
-        <div id="mistake-analysis"></div>
-        <button onclick="restartMistakes()" id="retry-btn" style="display:none; background:#e67e22; color:white;">Sadece Yanlışları Tekrar Çöz</button>
-        <button onclick="location.reload()" style="margin-top:10px;">Baştan Başla</button>
+            <div class="card">
+                <h2>Mini kılavuz (çok kısa)</h2>
+                <div class="hint">
+                    - <b>Defining</b>: bilgi zorunlu, <b>virgül yok</b>. Sıklıkla <b>that</b> mümkün.<br>
+                    - <b>Non‑defining</b>: ek bilgi, <b>virgül var</b>. Genelde <b>that yok</b>.<br>
+                    - <b>Omission</b>: Nesne görevi varsa (I met __), relative pronoun çoğu zaman düşer.<br>
+                    - <b>Prepositions</b>: “talk <i>to</i>” gibi edatlı fiiller: <b>to whom</b> / <b>who…to</b>.<br>
+                    - <b>Reductions</b>: who is working → working, which was built → built, first/only → to V.
+                </div>
+                <div class="kicker">
+                    <span class="tag"><strong>Hedef</strong> “bilmediğim kalmasın”</span>
+                    <span class="tag"><strong>İpucu</strong> Yanlışlarda açıklamayı oku</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="quiz-section" style="display:none;">
+            <div class="grid">
+                <div class="card">
+                    <div class="kicker">
+                        <span class="tag">Soru <strong id="current-q">1</strong>/<span id="total-q">40</span></span>
+                        <span class="tag">Tür: <strong id="q-tag">—</strong></span>
+                        <span class="tag">Seviye: <strong id="q-level">—</strong></span>
+                    </div>
+                    <div class="progressbar" style="margin-top: 10px;"><div id="quiz-meter"></div></div>
+
+                    <div class="question" id="question-text">Soru yükleniyor...</div>
+                    <div class="subline" id="question-tip"></div>
+                    <div class="options" id="options-container"></div>
+                    <div id="feedback"></div>
+                    <div class="row" style="margin-top: 12px; justify-content: space-between;">
+                        <button class="btn" id="btn-skip" type="button">Atla</button>
+                        <button class="btn good" id="next-btn" type="button" style="display:none;">Sıradaki →</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Canlı istatistik</h2>
+                    <div class="hint">Bu bölüm, hangi türlerde zorlandığını anında gösterir.</div>
+                    <div class="analysis">
+                        <div class="mini">
+                            <div class="t">Doğru</div>
+                            <div class="v"><span id="stat-correct">0</span></div>
+                        </div>
+                        <div class="mini">
+                            <div class="t">Yanlış</div>
+                            <div class="v"><span id="stat-wrong">0</span></div>
+                        </div>
+                        <div class="mini" style="grid-column: 1 / -1;">
+                            <div class="t">En zayıf tür (şu an)</div>
+                            <div class="v" id="stat-weak">—</div>
+                        </div>
+                    </div>
+                    <div class="hint" style="margin-top: 10px;">
+                        Not: “Atla” yaptığında soru yanlış sayılmaz; havuzun sonuna atılır.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="result-section" class="stat-box">
+            <div class="card">
+                <h2>Bitti. Şimdi gerçekten öğrenme kısmı.</h2>
+                <p class="hint" id="final-score"></p>
+                <div id="mistake-analysis" class="hint"></div>
+                <div class="row" style="margin-top: 12px;">
+                    <button class="btn primary" id="retry-weak-btn" type="button">Zayıf Türleri Tekrar Çöz</button>
+                    <button class="btn" id="retry-mistakes-btn" type="button">Sadece Yanlış Sorular</button>
+                    <button class="btn" id="restart-btn" type="button">Baştan Başla</button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
 <script>
-const allQuestions = [
-    // 1-10: Subject/Object (Who, Which, That, Whom)
-    { q: "The woman --- lives next door is a doctor.", a: ["who", "which"], c: 0, r: "Subject position: İnsanlar için 'who' veya 'that' kullanılır. Boşluktan sonra fiil (lives) gelmiş." },
-    { q: "The book --- I bought yesterday is very interesting.", a: ["who", "which"], c: 1, r: "Object position: İnsan dışı varlıklar için 'which' veya 'that' kullanılır." },
-    { q: "The man --- you met at the party is my uncle.", a: ["whom", "whose"], c: 0, r: "Object position: Bir insanı niteliyoruz ve boşluktan sonra S+V (you met) geliyor. 'Whom' uygundur." },
-    { q: "Everything --- he said was a lie.", a: ["which", "that"], c: 1, r: "Kural: 'Everything, something, all, the only' gibi ifadelerden sonra 'that' kullanımı önceliklidir." },
-    { q: "The students --- are playing football are in my class.", a: ["who", "whom"], c: 0, r: "Subject position: Fiilden (are) önce 'who' kullanılır, 'whom' kullanılamaz." },
-    { q: "This is the car --- my father wants to buy.", a: ["that", "who"], c: 0, r: "Nesne konumu: Cansız varlıklar için 'that' veya 'which' kullanılır." },
-    { q: "The people --- we invited to the wedding couldn't come.", a: ["whose", "that"], c: 1, r: "Nesne konumu: İnsanlar için 'that', 'who' veya 'whom' kullanılabilir." },
-    { q: "The laptop --- is on the table is mine.", a: ["who", "which"], c: 1, r: "Özne konumu: Cansız varlıklar için 'which' kullanılır." },
-    { q: "The girl --- everyone is talking about is very talented.", a: ["whom", "which"], c: 0, r: "İnsan nitelemesi olduğu için 'whom' seçilmelidir." },
-    { q: "I have a friend --- speaks five languages.", a: ["who", "whose"], c: 0, r: "Özne konumu: Boşluktan sonra direkt fiil geldiği için 'who' gerekir." },
-
-    // 11-20: Possessive (Whose)
-    { q: "The girl --- brother is a pilot is my friend.", a: ["whose", "who"], c: 0, r: "Possessive: İsim + isim (girl's brother) ilişkisi olduğu için 'whose' kullanılır." },
-    { q: "A widow is a woman --- husband is dead.", a: ["who", "whose"], c: 1, r: "Aitlik durumu: Boşluktan sonra gelen 'husband' kadına aittir." },
-    { q: "The house --- roof was damaged has been repaired.", a: ["which", "whose"], c: 1, r: "Cansızlarda da aitlik için 'whose' kullanılabilir (Evin çatısı)." },
-    { q: "I know a man --- name is Sherlock.", a: ["whose", "who"], c: 0, r: "İsim + isim (man's name) bağı 'whose' ile kurulur." },
-    { q: "The company --- products are sold worldwide is growing.", a: ["which", "whose"], c: 1, r: "Şirketin ürünleri -> Whose products." },
-    { q: "The tree --- leaves turn red in autumn is a maple.", a: ["whose", "that"], c: 0, r: "Aitlik: Ağacın yaprakları." },
-    { q: "Yesterday I met someone --- father knows you.", a: ["who", "whose"], c: 1, r: "Birinin babası -> Whose father." },
-    { q: "The car --- engine failed was towed away.", a: ["which", "whose"], c: 1, r: "Arabanın motoru -> Whose engine." },
-    { q: "The artist --- work you admire is here.", a: ["whose", "whom"], c: 0, r: "Sanatçının işi -> Whose work." },
-    { q: "A person --- life is full of stress should relax.", a: ["whose", "who"], c: 0, r: "Kişinin hayatı -> Whose life." },
-
-    // 21-30: Place, Time, Reason (Where, When, Why)
-    { q: "The hotel --- we stayed was very clean.", a: ["where", "which"], c: 0, r: "Place: Mekan niteleniyor ve içeride bir eylem tam cümle (SVO) olarak verilmiş." },
-    { q: "I will never forget the day --- I met you.", a: ["when", "which"], c: 0, r: "Time: Zaman ifadesinden sonra tam cümle gelirse 'when' kullanılır." },
-    { q: "The reason --- he was late is unknown.", a: ["why", "where"], c: 0, r: "Reason: 'The reason' ifadesi 'why' ile nitelenir." },
-    { q: "The city --- I was born is very beautiful.", a: ["where", "which"], c: 0, r: "Mekan + Tam cümle = Where." },
-    { q: "2020 was the year --- the pandemic started.", a: ["when", "which"], c: 0, r: "Zaman + Tam cümle = When." },
-    { q: "The house --- he bought is very expensive.", a: ["where", "which"], c: 1, r: "Dikkat! Boşluktan sonra nesne eksik (He bought it). Bu yüzden 'where' değil 'which' kullanılır." },
-    { q: "Summer is the season --- people go on holiday.", a: ["when", "which"], c: 0, r: "Zaman nitelemesi + tam cümle." },
-    { q: "This is the library --- I study every day.", a: ["which", "where"], c: 1, r: "Mekan nitelemesi + tam cümle." },
-    { q: "The office --- she works is in the city center.", a: ["where", "which"], c: 0, r: "Mekan nitelemesi (where = in which)." },
-    { q: "I don't understand the reason --- she is angry.", a: ["why", "that"], c: 0, r: "Reason -> Why." },
-
-    // 31-40: Prepositions (In which, From whom, etc.)
-    { q: "The man --- I was talking to is my teacher.", a: ["whom", "whose"], c: 0, r: "Preposition sonda ise 'whom' veya 'who/that' kullanılabilir." },
-    { q: "The chair --- I am sitting on is broken.", a: ["which", "where"], c: 0, r: "Nesne nitelemesi + Edat sonda." },
-    { q: "The person --- I received this letter is my penpal.", a: ["from whom", "who"], c: 0, r: "Edat + whom: Letter from someone." },
-    { q: "The drawer --- I keep my keys is locked.", a: ["in which", "which"], c: 0, r: "In which = Where anlamında kullanılmıştır." },
-    { q: "The project --- we are working is very complex.", a: ["on which", "where"], c: 0, r: "Work 'on' something: On which." },
-    { q: "The woman --- I borrowed the car is my neighbor.", a: ["from whom", "whose"], c: 0, r: "Borrow from someone." },
-    { q: "The music --- we were listening was beautiful.", a: ["to which", "that"], c: 0, r: "Listen 'to' music." },
-    { q: "The tools --- he fixed the car are in the garage.", a: ["with which", "which"], c: 0, r: "Fix 'with' tools." },
-    { q: "The topic --- we discussed was interesting.", a: ["about which", "which"], c: 1, r: "Dikkat! 'Discuss' fiili edat almaz. Direkt 'which' kullanılır." },
-    { q: "The film --- we are talking is famous.", a: ["about which", "where"], c: 0, r: "Talk 'about' something." },
-
-    // 41-50: Reductions (Ving, V3, To V0)
-    { q: "The man --- at the door is my uncle.", a: ["standing", "stood"], c: 0, r: "Active Reduction: 'Who is standing' yerine 'standing' kullanılır." },
-    { q: "The books --- by Orhan Pamuk are famous.", a: ["writing", "written"], c: 1, r: "Passive Reduction: 'Which were written' yerine 'written' (V3) kullanılır." },
-    { q: "He was the first man --- the moon.", a: ["to walk", "walking"], c: 0, r: "The first/last/only ifadelerinden sonra 'To V0' kullanılır." },
-    { q: "The students --- the exam were very happy.", a: ["passing", "passed"], c: 0, r: "Active: Sınavı geçen öğrenciler (Who passed -> passing)." },
-    { q: "The bridge --- last year is already broken.", a: ["built", "building"], c: 0, r: "Passive: İnşa edilen köprü (Which was built -> built)." },
-    { q: "I have a lot of work --- today.", a: ["to do", "doing"], c: 0, r: "Purpose/Task: Yapılacak iş (to do)." },
-    { q: "The girl --- the piano is my sister.", a: ["playing", "played"], c: 0, r: "Active: Who is playing -> playing." },
-    { q: "The car --- in the accident was a total loss.", a: ["damaged", "damaging"], c: 0, r: "Passive: Hasar gören araba (Which was damaged)." },
-    { q: "Anyone --- to join the club should sign here.", a: ["wanting", "wanted"], c: 0, r: "Active: İsteyen herhangi biri (Who wants)." },
-    { q: "The only person --- the truth was Mary.", a: ["to know", "knowing"], c: 0, r: "The only/The best gibi yapılardan sonra 'To V0' gelir." }
+// --------- Soru bankası (tür etiketli, benzersiz örnekler) ----------
+// q: cümle, a: seçenekler, c: doğru index, r: açıklama (TR), tag: tür, level: seviye, tip: mini ipucu
+const TAGS = [
+    { id: "defining", label: "Defining (virgülsüz)" },
+    { id: "nondef", label: "Non‑defining (virgüllü)" },
+    { id: "who_whom", label: "Who / Whom" },
+    { id: "which_that", label: "Which / That" },
+    { id: "whose", label: "Whose (aitlik)" },
+    { id: "where_when_why", label: "Where / When / Why" },
+    { id: "prepositions", label: "Preposition + relative" },
+    { id: "omission", label: "Omission (düşürme)" },
+    { id: "quantifiers", label: "All/Most/Some of which/whom" },
+    { id: "reductions", label: "Reduced clauses" }
 ];
 
-let currentQuestions = [...allQuestions];
-let currentIdx = 0;
-let score = 0;
-let mistakes = [];
-let isReviewMode = false;
+const BANK = [
+    // --- DEFINING / WHO/WHICH/THAT (özne/nesne) ---
+    { tag:"defining", level:"Kolay", tip:"Özne boşluğu: fiil hemen gelir.", q:"The nurse --- works the night shift lives upstairs.", a:["who","which","where","whose"], c:0, r:"Boşluktan sonra fiil (works) geldiği için özne konumu. İnsan → 'who' (veya 'that') uygundur." },
+    { tag:"defining", level:"Kolay", tip:"Nesne boşluğu: S+V gelir.", q:"The movie --- we watched on the train was surprisingly good.", a:["which","who","when","whose"], c:0, r:"Boşluktan sonra 'we watched' (tam cümle) geldiği için nesne konumu. Cansız → 'which/that'." },
+    { tag:"which_that", level:"Kolay", tip:"everything/all/only sonrası", q:"Everything --- she promised sounded easy at first.", a:["which","that"], c:1, r:"'Everything' gibi kelimelerden sonra defining yapıda 'that' daha doğal/tercihli." },
+    { tag:"defining", level:"Orta", tip:"Nesne omission mümkün.", q:"The backpack --- I left in the café is still there.", a:["which","where","who","why"], c:0, r:"Cansız varlık ve 'I left' tam cümle → 'which/that' (ve hatta çoğu zaman düşebilir: The backpack I left...)." },
+    { tag:"omission", level:"Orta", tip:"Omission", q:"The person --- I spoke to yesterday is the manager.", a:["who","(no pronoun)","which","where"], c:1, r:"Bu cümlede relative pronoun nesne konumunda (I spoke to __). Defining yapıda 'who/whom/that' kullanılabilir ama çoğu zaman düşer." },
+    { tag:"who_whom", level:"Orta", tip:"Whom (resmi)", q:"The guest --- you praised the most just arrived.", a:["whom","whose","which","when"], c:0, r:"İnsan + nesne konumu: 'you praised __'. Resmi seçenek: 'whom'. (Günlükte 'who/that' da duyarsın.)" },
+    { tag:"which_that", level:"Orta", tip:"that vs which", q:"This is the only app --- works offline on my old phone.", a:["which","that"], c:1, r:"'the only' sonrası defining yapıda 'that' çok yaygın/tercihli." },
 
-function loadQuestion() {
-    const q = currentQuestions[currentIdx];
-    document.getElementById("current-q").innerText = currentIdx + 1;
-    document.getElementById("question-text").innerText = q.q;
-    const optionsContainer = document.getElementById("options-container");
-    optionsContainer.innerHTML = "";
-    
-    q.a.forEach((opt, index) => {
-        const btn = document.createElement("button");
-        btn.innerText = opt;
-        btn.onclick = () => checkAnswer(index);
-        optionsContainer.appendChild(btn);
+    // --- NON-DEFINING (virgül + that olmaz) ---
+    { tag:"nondef", level:"Orta", tip:"Virgül + ek bilgi", q:"My sister, --- lives in İzmir, is visiting tomorrow.", a:["who","that","which","(no pronoun)"], c:0, r:"Non‑defining yapıda virgül var; insan için 'who' kullanılır. 'That' non‑defining’de kullanılmaz." },
+    { tag:"nondef", level:"Orta", tip:"that olmaz", q:"The Eiffel Tower, --- was built in 1889, attracts millions of visitors.", a:["which","that","where","what"], c:0, r:"Non‑defining: cansız → 'which'. 'That' burada olmaz." },
+    { tag:"nondef", level:"Zor", tip:"Önce tüm isim + virgül", q:"Our guide, --- we met at sunrise, spoke three languages.", a:["who","whom","that","(no pronoun)"], c:0, r:"Non‑defining + nesne konumu olsa bile günlük kullanımda 'who' yaygın. 'That' yasak; pronoun düşürme de non‑defining’de yapılmaz." },
+
+    // --- WHOSE (insan + şey / şey + şey) ---
+    { tag:"whose", level:"Kolay", tip:"Aitlik", q:"I met a designer --- ideas are refreshingly simple.", a:["who","whose","which","where"], c:1, r:"'designer's ideas' aitlik ilişkisi → 'whose'." },
+    { tag:"whose", level:"Orta", tip:"Cansızda whose", q:"The museum --- roof collapsed last winter has reopened.", a:["which","whose","where","that"], c:1, r:"Cansızlarda da aitlik için 'whose' kullanılabilir: the museum's roof → the museum whose roof..." },
+    { tag:"whose", level:"Zor", tip:"whose + clause", q:"She’s the researcher --- work on memory I cited in my thesis.", a:["whose","whom","which","where"], c:0, r:"Aitlik: 'the researcher's work' → 'whose work'." },
+
+    // --- WHERE / WHEN / WHY (place/time/reason) ---
+    { tag:"where_when_why", level:"Kolay", tip:"Place + tam cümle", q:"This is the station --- I usually change trains.", a:["where","which","who","whose"], c:0, r:"Mekan + tam cümle: where (= in/at which). 'Which' ancak nesne eksikse gerekir." },
+    { tag:"where_when_why", level:"Orta", tip:"Which mi where mi?", q:"This is the station --- I rebuilt after the storm.", a:["where","which"], c:1, r:"Burada 'I rebuilt __' nesne eksik (station). Bu yüzden 'which/that' gerekir, 'where' değil." },
+    { tag:"where_when_why", level:"Kolay", tip:"Time + tam cümle", q:"I still remember the moment --- I realized I was wrong.", a:["when","which","where","why"], c:0, r:"Zaman + tam cümle → 'when' (= at which)." },
+    { tag:"where_when_why", level:"Orta", tip:"Reason", q:"That’s the reason --- he refused the offer.", a:["why","which","where","when"], c:0, r:"Reason → why (= for which)." },
+    { tag:"where_when_why", level:"Zor", tip:"Reason + which", q:"That’s the reason --- I called you.", a:["why","which","when"], c:0, r:"Defining yapıda reason için 'why' en doğal. ('for which' de olur ama seçeneklerde yok.)" },
+
+    // --- PREPOSITIONS (fronting / stranded) ---
+    { tag:"prepositions", level:"Orta", tip:"to whom / who ... to", q:"The professor to --- I sent the email replied quickly.", a:["whom","whose","which","what"], c:0, r:"Edat öne geldiyse insan için 'to whom' kullanılır." },
+    { tag:"prepositions", level:"Orta", tip:"with which", q:"The tool with --- he fixed the watch is extremely small.", a:["which","where","who","why"], c:0, r:"Cansız + edat önde: 'with which'." },
+    { tag:"prepositions", level:"Zor", tip:"Verb + preposition ayrımı", q:"The issue --- we discussed in the meeting is still unresolved.", a:["about which","which"], c:1, r:"'Discuss' fiili doğrudan nesne alır; 'about' gerekmez. Doğrusu: the issue which we discussed..." },
+    { tag:"prepositions", level:"Zor", tip:"Stranding", q:"The colleague --- I was sitting next to asked a great question.", a:["whom","whose","which","when"], c:0, r:"İnsan + nesne konumu: I was sitting next to __. Resmi: 'whom'. (Günlükte 'who/that' da olur.)" },
+
+    // --- QUANTIFIERS: all/most/some of which/whom ---
+    { tag:"quantifiers", level:"Zor", tip:"all of which", q:"She bought three books, all of --- were signed by the author.", a:["which","that","whom","what"], c:0, r:"Non‑defining + miktar: 'all of which' kullanılır. 'That' olmaz; insan değil." },
+    { tag:"quantifiers", level:"Zor", tip:"most of whom", q:"I work with ten engineers, most of --- prefer quiet mornings.", a:["which","whom","that","where"], c:1, r:"İnsan + non‑defining + çoğunluk: 'most of whom'." },
+    { tag:"quantifiers", level:"Zor", tip:"some of which", q:"He showed me several sketches, some of --- were unfinished.", a:["which","that","why","who"], c:0, r:"Cansız/nesne + non‑defining: 'some of which'." },
+
+    // --- REDUCTIONS (reduced relative clauses) ---
+    { tag:"reductions", level:"Orta", tip:"Active reduction", q:"The man --- near the door is my uncle.", a:["standing","stood","to stand","being stood"], c:0, r:"Aktif anlam: 'who is standing' → 'standing'." },
+    { tag:"reductions", level:"Orta", tip:"Passive reduction", q:"The documents --- yesterday are on your desk.", a:["printed","printing","to print","prints"], c:0, r:"Pasif anlam: 'which were printed' → 'printed' (V3)." },
+    { tag:"reductions", level:"Zor", tip:"first/only + to V", q:"She was the only person --- the answer immediately.", a:["to know","knowing","known","to knowing"], c:0, r:"the only/the first/the last gibi yapılardan sonra 'to V' çok tipiktir." },
+    { tag:"reductions", level:"Zor", tip:"purpose/task", q:"I have two emails --- before lunch.", a:["to answer","answering","answered","to answering"], c:0, r:"Görev/amaç: yapılacak iş → 'to answer'." },
+
+    // --- OMISSION (özellikle object position) ---
+    { tag:"omission", level:"Kolay", tip:"Object omission", q:"The song --- you recommended is stuck in my head.", a:["which","(no pronoun)","who","where"], c:1, r:"Nesne konumu: 'you recommended __'. Defining’de pronoun çoğu zaman düşer." },
+    { tag:"omission", level:"Orta", tip:"Object omission", q:"The neighbor --- I invited didn’t show up.", a:["whom","(no pronoun)","whose","where"], c:1, r:"İnsan + nesne konumu: 'I invited __'. Günlükte düşürme çok yaygın." },
+    { tag:"omission", level:"Zor", tip:"Non-defining’de düşmez", q:"My laptop, --- I bought last year, is already slow.", a:["(no pronoun)","which","that","where"], c:1, r:"Non‑defining’de pronoun düşürme yapılmaz. Cansız → 'which'." },
+
+    // --- Extra: which/that, defining vs nondef contrasts ---
+    { tag:"nondef", level:"Zor", tip:"that yasak", q:"My car, --- I bought used, has never broken down.", a:["that","which","(no pronoun)","where"], c:1, r:"Non‑defining: 'which'. 'That' olmaz, ayrıca non‑defining’de düşürme de olmaz." },
+    { tag:"defining", level:"Zor", tip:"that mümkün", q:"The car --- I bought used has never broken down.", a:["that","which","both A and B","where"], c:2, r:"Defining: 'that' veya 'which' ikisi de olur (ve hatta pronoun düşebilir)." },
+
+    // --- More: where vs which subtlety ---
+    { tag:"where_when_why", level:"Zor", tip:"where=preposition+which", q:"This is the drawer --- I keep the spare keys.", a:["where","which","when","what"], c:0, r:"Yer (in which). Nesne eksik değil; eylem yeri anlatıyor → 'where'." },
+    { tag:"prepositions", level:"Zor", tip:"in which", q:"This is the drawer in --- I keep the spare keys.", a:["which","whom","that","what"], c:0, r:"Edat önde: 'in which'." }
+];
+
+// --------- Motor: filtreleme, zayıf tür odak, analiz ----------
+const els = {
+    setup: document.getElementById("setup-section"),
+    quiz: document.getElementById("quiz-section"),
+    result: document.getElementById("result-section"),
+    chips: document.getElementById("tag-chips"),
+    btnStart: document.getElementById("btn-start"),
+    btnReset: document.getElementById("btn-reset"),
+    countSel: document.getElementById("question-count"),
+    modeSel: document.getElementById("mode"),
+    setupMeter: document.getElementById("setup-meter"),
+    quizMeter: document.getElementById("quiz-meter"),
+    qText: document.getElementById("question-text"),
+    qTip: document.getElementById("question-tip"),
+    opts: document.getElementById("options-container"),
+    feedback: document.getElementById("feedback"),
+    next: document.getElementById("next-btn"),
+    skip: document.getElementById("btn-skip"),
+    cur: document.getElementById("current-q"),
+    total: document.getElementById("total-q"),
+    qTag: document.getElementById("q-tag"),
+    qLevel: document.getElementById("q-level"),
+    statCorrect: document.getElementById("stat-correct"),
+    statWrong: document.getElementById("stat-wrong"),
+    statWeak: document.getElementById("stat-weak"),
+    finalScore: document.getElementById("final-score"),
+    analysis: document.getElementById("mistake-analysis"),
+    retryWeak: document.getElementById("retry-weak-btn"),
+    retryMistakes: document.getElementById("retry-mistakes-btn"),
+    restart: document.getElementById("restart-btn"),
+};
+
+const STORAGE_KEY = "adjclause_stats_v1";
+function loadStats(){
+    try{
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if(!raw) return {};
+        const data = JSON.parse(raw);
+        return (data && typeof data === "object") ? data : {};
+    }catch{ return {}; }
+}
+function saveStats(stats){
+    try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(stats)); }catch{}
+}
+
+let selectedTags = new Set(TAGS.map(t=>t.id)); // default: hepsi açık
+let session = {
+    pool: [],
+    idx: 0,
+    correct: 0,
+    wrong: 0,
+    mistakes: [],
+    skipped: [],
+    reviewMode: "normal", // normal | mistakes | weak
+    weakTags: [],
+};
+let tagStats = loadStats(); // { [tagId]: { correct, wrong } }
+
+function ensureTagStats(tag){
+    if(!tagStats[tag]) tagStats[tag] = { correct: 0, wrong: 0 };
+}
+function weakTagNow(){
+    // zayıflık = wrong/(correct+wrong+1)
+    let worst = null;
+    let worstScore = -1;
+    for(const t of TAGS){
+        ensureTagStats(t.id);
+        const s = tagStats[t.id];
+        const score = s.wrong / (s.correct + s.wrong + 1);
+        if(score > worstScore){
+            worstScore = score;
+            worst = t.id;
+        }
+    }
+    return worst;
+}
+
+function renderChips(){
+    els.chips.innerHTML = "";
+    TAGS.forEach(t=>{
+        const chip = document.createElement("label");
+        chip.className = "chip";
+        chip.dataset.on = selectedTags.has(t.id) ? "1" : "0";
+        chip.innerHTML = `<input type="checkbox" ${selectedTags.has(t.id) ? "checked" : ""}/><span>${t.label}</span>`;
+        chip.addEventListener("click", (e)=>{
+            e.preventDefault();
+            if(selectedTags.has(t.id)) selectedTags.delete(t.id);
+            else selectedTags.add(t.id);
+            // en az 1 tag açık kalsın
+            if(selectedTags.size === 0) selectedTags.add(t.id);
+            chip.dataset.on = selectedTags.has(t.id) ? "1" : "0";
+            chip.querySelector("input").checked = selectedTags.has(t.id);
+            updateSetupMeter();
+        });
+        els.chips.appendChild(chip);
     });
-    
-    document.getElementById("feedback").style.display = "none";
-    document.getElementById("next-btn").style.display = "none";
+    updateSetupMeter();
 }
 
-function checkAnswer(selectedIdx) {
-    const q = currentQuestions[currentIdx];
-    const feedback = document.getElementById("feedback");
-    const btns = document.querySelectorAll("#options-container button");
-    
-    feedback.style.display = "block";
-    if(selectedIdx === q.c) {
-        feedback.innerText = "Doğru! ✔️ " + q.r;
-        feedback.className = "correct";
-        if(!isReviewMode) score++;
-    } else {
-        feedback.innerHTML = `<span class="highlight">Yanlış! ❌</span> Doğru cevap: <b>${q.a[q.c]}</b><br>${q.r}`;
-        feedback.className = "wrong";
-        if(!isReviewMode) mistakes.push(q);
+function updateSetupMeter(){
+    const ratio = selectedTags.size / TAGS.length;
+    els.setupMeter.style.width = `${Math.round(ratio*100)}%`;
+}
+
+function shuffle(arr){
+    const a = [...arr];
+    for(let i=a.length-1;i>0;i--){
+        const j = Math.floor(Math.random()*(i+1));
+        [a[i], a[j]] = [a[j], a[i]];
     }
-    
-    btns.forEach(btn => btn.disabled = true);
-    document.getElementById("next-btn").style.display = "block";
+    return a;
 }
 
-function nextQuestion() {
-    currentIdx++;
-    if(currentIdx < currentQuestions.length) {
-        loadQuestion();
-    } else {
-        showResults();
+function buildPool({ mode, count, tags, preferWeak=false }){
+    const filtered = BANK.filter(q=> tags.has(q.tag));
+    if(filtered.length === 0) return [];
+
+    if(mode === "focus" || preferWeak){
+        // zayıf türleri bul ve daha çok ağırlık ver
+        const weights = new Map();
+        for(const t of TAGS){
+            ensureTagStats(t.id);
+            const s = tagStats[t.id];
+            const weakness = s.wrong / (s.correct + s.wrong + 1);
+            weights.set(t.id, 0.3 + weakness * 2.2); // 0.3 .. ~2.5
+        }
+        const byTag = new Map();
+        filtered.forEach(q=>{
+            if(!byTag.has(q.tag)) byTag.set(q.tag, []);
+            byTag.get(q.tag).push(q);
+        });
+        // ağırlıklı örnekleme: her seferinde bir tag seç, o tagden bir soru al
+        const chosen = [];
+        const seen = new Set();
+        const tagsArr = [...byTag.keys()];
+        while(chosen.length < count && seen.size < filtered.length){
+            // tag seç
+            const totalW = tagsArr.reduce((sum,t)=> sum + (weights.get(t) || 1), 0);
+            let r = Math.random() * totalW;
+            let pickedTag = tagsArr[0];
+            for(const t of tagsArr){
+                r -= (weights.get(t) || 1);
+                if(r <= 0){ pickedTag = t; break; }
+            }
+            const list = shuffle(byTag.get(pickedTag));
+            const q = list.find(x=> !seen.has(x.q));
+            if(!q) continue;
+            seen.add(q.q);
+            chosen.push(q);
+        }
+        return shuffle(chosen);
     }
+
+    // mixed: seçilenlerden rastgele unique
+    const mixed = shuffle(filtered);
+    return mixed.slice(0, Math.min(count, mixed.length));
 }
 
-function showResults() {
-    document.getElementById("quiz-section").style.display = "none";
-    const resultSection = document.getElementById("result-section");
-    resultSection.style.display = "block";
-    
-    const percent = Math.round((score / allQuestions.length) * 100);
-    document.getElementById("final-score").innerText = `Skorun: ${score} / ${allQuestions.length} (%${percent})`;
-    
-    const analysis = document.getElementById("mistake-analysis");
-    if(mistakes.length > 0) {
-        analysis.innerHTML = `<p>${mistakes.length} soruda hata yaptın. Bu konuları tekrar etmelisin.</p>`;
-        document.getElementById("retry-btn").style.display = "inline-block";
-    } else {
-        analysis.innerHTML = "<p>Mükemmel! Hiç hata yapmadın.</p>";
-    }
-}
-
-function restartMistakes() {
-    currentQuestions = [...mistakes];
-    mistakes = [];
-    currentIdx = 0;
-    score = 0;
-    isReviewMode = true;
-    document.getElementById("result-section").style.display = "none";
-    document.getElementById("quiz-section").style.display = "block";
-    document.querySelector(".progress").innerHTML = "<b>Hataları Tekrar Çözüyorsun</b>";
+function startSession({ pool, reviewMode="normal", weakTags=[] }){
+    session = {
+        pool,
+        idx: 0,
+        correct: 0,
+        wrong: 0,
+        mistakes: [],
+        skipped: [],
+        reviewMode,
+        weakTags
+    };
+    els.total.textContent = String(pool.length);
+    els.setup.style.display = "none";
+    els.result.style.display = "none";
+    els.quiz.style.display = "block";
+    els.next.style.display = "none";
+    els.feedback.style.display = "none";
+    updateLiveStats();
     loadQuestion();
 }
 
-loadQuestion();
+function loadQuestion(){
+    const q = session.pool[session.idx];
+    if(!q){ return showResults(); }
+    els.cur.textContent = String(session.idx + 1);
+    els.qText.textContent = q.q;
+    els.qTip.textContent = q.tip || "";
+    els.qTag.textContent = (TAGS.find(t=>t.id===q.tag)?.label) || q.tag;
+    els.qLevel.textContent = q.level || "—";
+    els.opts.innerHTML = "";
+    els.feedback.style.display = "none";
+    els.feedback.className = "";
+    els.next.style.display = "none";
+
+    q.a.forEach((opt, i)=>{
+        const b = document.createElement("button");
+        b.className = "opt";
+        b.type = "button";
+        b.textContent = opt;
+        b.addEventListener("click", ()=> checkAnswer(i));
+        els.opts.appendChild(b);
+    });
+
+    const pct = Math.round(((session.idx) / session.pool.length) * 100);
+    els.quizMeter.style.width = `${pct}%`;
+}
+
+function lockOptions(){
+    [...els.opts.querySelectorAll("button")].forEach(b=> b.disabled = true);
+}
+
+function checkAnswer(selectedIdx){
+    const q = session.pool[session.idx];
+    lockOptions();
+    els.feedback.style.display = "block";
+    if(selectedIdx === q.c){
+        els.feedback.className = "good";
+        els.feedback.innerHTML = `<b>Doğru.</b> ${escapeHtml(q.r)}`;
+        session.correct += 1;
+        ensureTagStats(q.tag);
+        tagStats[q.tag].correct += 1;
+    }else{
+        els.feedback.className = "bad";
+        const correct = q.a[q.c];
+        els.feedback.innerHTML = `<b>Yanlış.</b> Doğru cevap: <b>${escapeHtml(correct)}</b><br><br>${escapeHtml(q.r)}`;
+        session.wrong += 1;
+        session.mistakes.push(q);
+        ensureTagStats(q.tag);
+        tagStats[q.tag].wrong += 1;
+    }
+    saveStats(tagStats);
+    updateLiveStats();
+    els.next.style.display = "inline-flex";
+}
+
+function escapeHtml(s){
+    return String(s)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll("\"", "&quot;")
+        .replaceAll("'", "&#039;");
+}
+
+function nextQuestion(){
+    session.idx += 1;
+    if(session.idx < session.pool.length) loadQuestion();
+    else showResults();
+}
+
+function skipQuestion(){
+    // soru havuzun sonuna taşınır (sonsuz döngü olmasın diye max 1 kez)
+    const q = session.pool[session.idx];
+    lockOptions();
+    session.skipped.push(q);
+    session.pool.splice(session.idx, 1);
+    session.pool.push(q);
+    // skip feedback
+    els.feedback.style.display = "block";
+    els.feedback.className = "";
+    els.feedback.innerHTML = `<b>Atlandı.</b> Bu soru havuzun sonuna taşındı.`;
+    els.next.style.display = "inline-flex";
+}
+
+function updateLiveStats(){
+    els.statCorrect.textContent = String(session.correct);
+    els.statWrong.textContent = String(session.wrong);
+    const weak = weakTagNow();
+    const weakLabel = TAGS.find(t=>t.id===weak)?.label || weak || "—";
+    els.statWeak.textContent = weak ? weakLabel : "—";
+}
+
+function showResults(){
+    els.quiz.style.display = "none";
+    els.result.style.display = "block";
+
+    const total = session.pool.length;
+    const correct = session.correct;
+    const percent = total ? Math.round((correct/total)*100) : 0;
+    els.finalScore.textContent = `Skor: ${correct} / ${total}  ( %${percent} ) — Yanlış: ${session.wrong}, Atlanan: ${session.skipped.length}`;
+
+    const weak = weakTagNow();
+    const weakLabel = TAGS.find(t=>t.id===weak)?.label || weak;
+    const lines = [];
+    if(session.mistakes.length){
+        const byTag = new Map();
+        session.mistakes.forEach(q=>{
+            byTag.set(q.tag, (byTag.get(q.tag) || 0) + 1);
+        });
+        const sorted = [...byTag.entries()].sort((a,b)=> b[1]-a[1]);
+        const top = sorted.slice(0,4).map(([tag,count])=>{
+            const label = TAGS.find(t=>t.id===tag)?.label || tag;
+            return `- ${label}: ${count} yanlış`;
+        }).join("<br>");
+        lines.push(`<b>Zayıf alanların:</b><br>${top}`);
+    }else{
+        lines.push(`<b>Harika.</b> Bu seti hatasız bitirdin. İstersen “Zayıf Türleri Tekrar Çöz” ile sistemi zorlayalım.`);
+    }
+    lines.push(`<br><br><b>Şu an genel olarak en zayıf türün:</b> ${escapeHtml(weakLabel || "—")}`);
+    els.analysis.innerHTML = lines.join("");
+}
+
+function startFromSetup(){
+    const mode = els.modeSel.value;
+    const count = parseInt(els.countSel.value, 10) || 40;
+    const tags = new Set([...selectedTags]);
+    const pool = buildPool({ mode, count, tags });
+    startSession({ pool, reviewMode: "normal" });
+}
+
+function retryMistakes(){
+    const pool = shuffle(session.mistakes);
+    startSession({ pool, reviewMode:"mistakes" });
+}
+
+function retryWeak(){
+    const weak = weakTagNow();
+    const tags = new Set([weak]);
+    const count = parseInt(els.countSel.value, 10) || 40;
+    const pool = buildPool({ mode:"focus", count, tags, preferWeak:true });
+    startSession({ pool, reviewMode:"weak", weakTags:[weak] });
+}
+
+function resetAll(){
+    selectedTags = new Set(TAGS.map(t=>t.id));
+    renderChips();
+    els.modeSel.value = "mixed";
+    els.countSel.value = "40";
+    els.setup.style.display = "grid";
+    els.quiz.style.display = "none";
+    els.result.style.display = "none";
+}
+
+// --- Events ---
+els.btnStart.addEventListener("click", startFromSetup);
+els.btnReset.addEventListener("click", resetAll);
+els.next.addEventListener("click", nextQuestion);
+els.skip.addEventListener("click", skipQuestion);
+els.retryMistakes.addEventListener("click", retryMistakes);
+els.retryWeak.addEventListener("click", retryWeak);
+els.restart.addEventListener("click", ()=> location.reload());
+
+renderChips();
+updateLiveStats();
 </script>
 
 </body>

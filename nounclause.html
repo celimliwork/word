@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noun Clauses — Çalışma & Test</title>
+  <link rel="stylesheet" href="main.css" />
+  <style>
+    .nc-container{
+      max-width: 520px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.30);
+      overflow: hidden;
+    }
+    .nc-header{
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .nc-header h1{
+      font-size: 1.45rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .nc-header p{
+      font-size: .95rem;
+      opacity: .92;
+      margin-bottom: 6px;
+    }
+    .nc-header .back-link{
+      display:inline-block;
+      margin-top: 6px;
+      color:#fff;
+      text-decoration: underline;
+      font-size: .9rem;
+      opacity: .9;
+    }
+    .nc-header .back-link:hover{ opacity: 1; }
+
+    .nc-tabs{
+      display:flex;
+      border-bottom: 1px solid #e9ecef;
+      background:#f8f9fa;
+    }
+    .nc-tab{
+      flex: 1;
+      padding: 10px;
+      text-align:center;
+      font-size: .9rem;
+      font-weight: 700;
+      cursor:pointer;
+      border-bottom: 2px solid transparent;
+      color:#6c757d;
+      user-select: none;
+    }
+    .nc-tab.active{
+      border-bottom-color:#667eea;
+      color:#667eea;
+      background:#fff;
+    }
+    .nc-content{ padding: 15px; }
+    .nc-section{ display:none; }
+    .nc-section.active{ display:block; }
+
+    .nc-card{
+      background:#f8f9fa;
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin-bottom: 10px;
+      border-left: 3px solid #667eea;
+    }
+    .nc-card h2{
+      font-size: .95rem;
+      margin: 0 0 6px;
+      color:#111827;
+    }
+    .nc-card .desc{
+      font-size: .88rem;
+      color:#374151;
+      line-height: 1.45;
+    }
+    .nc-kbd{
+      display:inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background:#fff;
+      border: 1px solid #e0e3ff;
+      color:#4b5563;
+      font-weight: 700;
+      font-size: .78rem;
+      margin: 2px 3px 0 0;
+    }
+    .nc-mini{
+      margin-top: 6px;
+      background:#fff;
+      border: 1px solid #e9ecef;
+      border-radius: 10px;
+      padding: 10px;
+      color:#374151;
+      font-size: .85rem;
+      line-height: 1.45;
+    }
+
+    /* Quiz */
+    .quiz-wrap{
+      background:#f8f9fa;
+      border-radius: 12px;
+      padding: 14px;
+      border: 1px solid #e9ecef;
+    }
+    .quiz-top{
+      display:flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .pill{
+      padding: 6px 10px;
+      border-radius: 999px;
+      background:#fff;
+      border: 1px solid #e0e3ff;
+      color:#4b5563;
+      font-size: .8rem;
+      font-weight: 700;
+    }
+    .pill strong{ color:#111827; }
+    .bar{
+      width: 100%;
+      height: 10px;
+      background:#eef2ff;
+      border-radius: 999px;
+      overflow:hidden;
+      border: 1px solid #e0e3ff;
+    }
+    .bar > div{
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #667eea, #764ba2);
+      transition: width .25s ease;
+    }
+    .quiz-q{
+      font-size: 1.05rem;
+      font-weight: 800;
+      color:#111827;
+      line-height: 1.55;
+      margin: 10px 0 8px;
+    }
+    .quiz-sub{
+      font-size: .86rem;
+      color:#6b7280;
+      line-height: 1.45;
+      margin-bottom: 10px;
+    }
+    .quiz-options{
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    @media (max-width: 520px){
+      .quiz-options{ grid-template-columns: 1fr; }
+    }
+    .quiz-opt{
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid #e0e3ff;
+      background:#fff;
+      color:#374151;
+      font-size: .92rem;
+      font-weight: 750;
+      cursor:pointer;
+      transition: all .18s ease;
+      text-align:left;
+      touch-action: manipulation;
+    }
+    .quiz-opt:hover{
+      background:#eef2ff;
+      border-color:#667eea;
+      transform: translateY(-1px);
+    }
+    .quiz-opt:active{ transform: translateY(0); }
+    .quiz-opt[disabled]{ opacity: .65; cursor: not-allowed; transform:none; }
+    .quiz-opt.correct{
+      background:#dcfce7;
+      border-color:#22c55e;
+      color:#166534;
+    }
+    .quiz-opt.wrong{
+      background:#fee2e2;
+      border-color:#ef4444;
+      color:#991b1b;
+    }
+    .quiz-feedback{
+      margin-top: 10px;
+      font-size: .9rem;
+      line-height: 1.5;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid #e9ecef;
+      background:#fff;
+      display:none;
+      color:#111827;
+    }
+    .quiz-feedback.good{
+      border-color:#86efac;
+      background:#f0fdf4;
+    }
+    .quiz-feedback.bad{
+      border-color:#fda4af;
+      background:#fff1f2;
+    }
+    .quiz-actions{
+      display:flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .btn-wide{
+      flex: 1;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color:#fff;
+      font-size: .95rem;
+      font-weight: 750;
+      cursor:pointer;
+      box-shadow: 0 2px 6px rgba(102,126,234,.30);
+    }
+    .btn-wide:hover{
+      transform: translateY(-1px);
+      box-shadow: 0 3px 8px rgba(102,126,234,.40);
+    }
+    .btn-soft{
+      flex: 1;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #e0e3ff;
+      background:#fff;
+      color:#4b5563;
+      font-size: .95rem;
+      font-weight: 750;
+      cursor:pointer;
+    }
+    .btn-soft:hover{ background:#eef2ff; border-color:#667eea; }
+    .score{
+      margin-top: 10px;
+      font-size: .85rem;
+      color:#6b7280;
+      text-align:center;
+      line-height: 1.5;
+    }
+    .result{
+      margin-top: 10px;
+      background:#fff;
+      border: 1px solid #e9ecef;
+      border-radius: 12px;
+      padding: 12px;
+      display:none;
+    }
+    .result h3{
+      margin: 0 0 6px;
+      font-size: 1rem;
+      color:#111827;
+    }
+    .result p{
+      margin: 0;
+      font-size: .9rem;
+      color:#374151;
+      line-height: 1.5;
+    }
+    .note{
+      margin-top: 10px;
+      font-size: .82rem;
+      color:#6b7280;
+      line-height: 1.5;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="nc-container">
+    <div class="nc-header">
+      <h1>🧠 Noun Clauses</h1>
+      <p>Notlarını baz alarak: özet + test + yanlışları tekrar</p>
+      <a href="index.html" class="back-link">← Ana Sayfaya Dön</a>
+    </div>
+
+    <div class="nc-tabs">
+      <div class="nc-tab active" data-target="theorySection">Teori & Özet</div>
+      <div class="nc-tab" data-target="quizSection">Test Modu</div>
+    </div>
+
+    <div class="nc-content">
+      <div id="theorySection" class="nc-section active">
+        <div class="nc-card">
+          <h2>Noun Clause nedir?</h2>
+          <div class="desc">
+            Noun clause, cümlede <b>isim gibi</b> görev yapar (özne/nesne/tümleç).
+            En kritik kural: noun clause içinde <b>devrik soru düzeni yok</b>; <b>düz cümle düzeni</b> kullanılır.
+            <div class="nc-mini">
+              <span class="nc-kbd">Yanlış</span> I don’t know <b>where does he live</b>.<br>
+              <span class="nc-kbd">Doğru</span> I don’t know <b>where he lives</b>.
+            </div>
+          </div>
+        </div>
+
+        <div class="nc-card">
+          <h2>Kararlı bağlaçlar (that / the fact that)</h2>
+          <div class="desc">
+            Cümlede “ne?” sorusuna cevap veren, içeriği net olan (kararlı) noun clause’lar.
+            <div class="nc-mini">
+              She said <b>that</b> she was tired.<br>
+              I’m sure about <b>the fact that</b> the elections were fair.
+            </div>
+            <div class="nc-mini">
+              <b>Kural:</b> Preposition (in/at/about...) sonrası <b>that</b> gelmez → genelde <b>the fact that</b> kullanılır.
+            </div>
+          </div>
+        </div>
+
+        <div class="nc-card">
+          <h2>Kararsız bağlaçlar (wh‑ / whether / if)</h2>
+          <div class="desc">
+            Cümlede “ne/kim/nerede/ne zaman/nasıl/hangi…?” gibi belirsizliği taşıyan yapı.
+            <div class="nc-mini">
+              I don’t know <b>what</b> he will do.<br>
+              It isn’t certain <b>when</b> they will finish the task.<br>
+              She is thinking about <b>how</b> she will pass the exam.
+            </div>
+          </div>
+        </div>
+
+        <div class="nc-card">
+          <h2>Whether / If (kritik ayrımlar)</h2>
+          <div class="desc">
+            <div class="nc-mini">
+              - <b>Özne konumunda</b>: <b>whether</b><br>
+              - <b>Edat (preposition) sonrası</b>: <b>whether</b> (if gelmez)<br>
+              - <b>“or not” öncesi</b>: <b>whether</b><br>
+              - <b>Fiilden sonra</b>: <b>whether / if</b> (çoğu zaman ikisi de olur)
+            </div>
+          </div>
+        </div>
+
+        <div class="nc-card">
+          <h2>Zaman uyumu (tense) ve istisnalar</h2>
+          <div class="desc">
+            <div class="nc-mini">
+              - Ana fiil <b>present</b> ise: noun clause çoğunlukla <b>present</b>.<br>
+              - Ana fiil <b>past</b> ise: noun clause çoğunlukla <b>past</b> (backshift).<br><br>
+              <b>İstisnalar:</b><br>
+              1) “It is claimed/said...” gibi kalıplarda uyum olmayabilir.<br>
+              2) Olayın gerçek zamanı belliyse uyum olmayabilir: “He claims that the war started in 1970.”<br>
+              3) Genel gerçekler: “The professor explained that coffee grows in Brazil.”<br>
+              4) Noun clause “if / whether” ile başlıyorsa, kendi kuralı ayrı işler.<br>
+              5) should/might/must gibi modallar genelde aynı kalır.
+            </div>
+          </div>
+        </div>
+
+        <div class="note">
+          İpucu: “Test Modu”nda bir şık seçince açıklamayı okuyup <b>Sonraki</b> ile ilerle. Bittiğinde yanlışların otomatik tekrar turu başlayacak.
+        </div>
+      </div>
+
+      <div id="quizSection" class="nc-section">
+        <div class="quiz-wrap">
+          <div class="quiz-top">
+            <div class="pill">Tur: <strong id="roundLabel">1 (Ana)</strong></div>
+            <div class="pill">Soru: <strong id="qIndex">1</strong>/<span id="qTotal">0</span></div>
+            <div class="pill">Doğru: <strong id="correctCount">0</strong> • Yanlış: <strong id="wrongCount">0</strong></div>
+          </div>
+          <div class="bar" aria-hidden="true"><div id="progressBar"></div></div>
+
+          <div class="quiz-q" id="questionText">Hazır mısın?</div>
+          <div class="quiz-sub" id="questionTip">Başlamak için “Başla”ya bas.</div>
+
+          <div class="quiz-options" id="options"></div>
+          <div class="quiz-feedback" id="feedback"></div>
+
+          <div class="quiz-actions">
+            <button class="btn-soft" id="btnReset" type="button">Sıfırla</button>
+            <button class="btn-wide" id="btnNext" type="button" disabled>Başla</button>
+          </div>
+
+          <div class="score" id="scoreLine"></div>
+          <div class="result" id="resultBox">
+            <h3 id="resultTitle">Bitti</h3>
+            <p id="resultText"></p>
+          </div>
+        </div>
+        <div class="note">
+          Kısayol: <b>1-9</b> ile şık seçebilirsin, <b>Enter</b> sonraki soru.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ---- Soru bankası: notlardaki kurallara göre (noun clause + yardımcı ayrımlar) ----
+    // Her soru: id, q, a[], c (doğru index), why (TR açıklama), tip (kısa ipucu)
+    const BANK = [
+      {
+        id: "nc_word_order_1",
+        q: "Doğru cümleyi seç: I don’t know ___ .",
+        a: ["where does he live", "where he lives", "where is he living", "where he live"],
+        c: 1,
+        tip: "Noun clause içinde soru devriği yok.",
+        why: "Noun clause içinde <b>düz cümle düzeni</b> kullanılır: <b>where he lives</b>. (Soru devriği: where does he live → yanlış.)"
+      },
+      {
+        id: "nc_word_order_2",
+        q: "Doğru cümleyi seç: She can’t remember ___ .",
+        a: ["what did she say", "what she said", "what she sayed", "what was she saying"],
+        c: 1,
+        tip: "What + S + V",
+        why: "Noun clause: <b>what she said</b> (S+V). 'sayed' yanlış yazım; devrik yapı da yanlış."
+      },
+      {
+        id: "nc_qword_object",
+        q: "Doğru bağlacı seç: She doesn’t know ___ he will do.",
+        a: ["what", "that", "where", "which"],
+        c: 0,
+        tip: "Kararsız (ne?)",
+        why: "Burada belirsiz 'ne yapacağını' soruyoruz → <b>what</b>."
+      },
+      {
+        id: "nc_where",
+        q: "Doğru bağlacı seç: They asked ___ we were going.",
+        a: ["where", "that", "whether", "who"],
+        c: 0,
+        tip: "Yer bildirir",
+        why: "Soru 'nereye' anlamı taşıyor → <b>where</b>."
+      },
+      {
+        id: "nc_when",
+        q: "Doğru bağlacı seç: It isn’t clear ___ they will arrive.",
+        a: ["why", "when", "how", "what"],
+        c: 1,
+        tip: "Zaman",
+        why: "Belirsizlik zamanla ilgili → <b>when</b>."
+      },
+      {
+        id: "nc_how_adj",
+        q: "Doğru bağlacı seç: I didn’t know ___ difficult it was.",
+        a: ["how", "what", "which", "that"],
+        c: 0,
+        tip: "how + adj/adv",
+        why: "Özne önünde sıfat/zarf varsa çoğu zaman <b>how</b> (ne kadar) kullanılır: how difficult."
+      },
+      {
+        id: "nc_whose_noun",
+        q: "Doğru bağlacı seç: I didn’t know ___ book it was.",
+        a: ["who", "what", "whose", "which"],
+        c: 2,
+        tip: "whose + noun",
+        why: "İsimden önce aitlik (book) → <b>whose</b>."
+      },
+      {
+        id: "nc_what_subject_missing",
+        q: "Doğru cümleyi seç: I don’t know who ___ the bag.",
+        a: ["stole", "did steal", "steals", "was steal"],
+        c: 0,
+        tip: "Özne boşsa devrik yok",
+        why: "Boşluk özne konumuysa (who ___ the bag) yardımcı fiil devriği kullanılmaz; <b>who stole</b> doğru."
+      },
+      {
+        id: "nc_whom_object_missing",
+        q: "Doğru cümleyi seç: I don’t know whom she ___ .",
+        a: ["loves", "does love", "is love", "love"],
+        c: 0,
+        tip: "whom + S + V",
+        why: "Noun clause düzeni: <b>whom she loves</b>. 'does' ile devrik yapı burada kullanılmaz."
+      },
+      {
+        id: "nc_that_basic",
+        q: "Doğru bağlacı seç: He said ___ he was busy.",
+        a: ["what", "that", "whether", "when"],
+        c: 1,
+        tip: "Kararlı",
+        why: "İçerik net bir bilgi → <b>that</b>."
+      },
+      {
+        id: "nc_prep_no_that",
+        q: "Boşluğu doğru doldur: She is sure about ___ he is right.",
+        a: ["that", "the fact that", "what", "whether"],
+        c: 1,
+        tip: "Preposition sonrası",
+        why: "Edat (about) sonrası <b>that</b> gelmez. Bu tür yapılarda <b>the fact that</b> kullanılır."
+      },
+      {
+        id: "nc_prep_if_no",
+        q: "Boşluğu doğru doldur: They talked about ___ they should postpone it.",
+        a: ["if", "whether", "that", "what"],
+        c: 1,
+        tip: "Preposition + whether",
+        why: "Edat sonrası <b>if</b> gelmez; <b>whether</b> gerekir."
+      },
+      {
+        id: "nc_or_not",
+        q: "Boşluğu doğru doldur: I can’t decide ___ or not to go.",
+        a: ["if", "whether", "that", "what"],
+        c: 1,
+        tip: "or not",
+        why: "<b>or not</b> öncesinde <b>whether</b> kullanılır."
+      },
+      {
+        id: "nc_subject_position",
+        q: "Özne konumunda hangisi doğru? ___ we should leave early is unclear.",
+        a: ["If", "Whether", "That", "What"],
+        c: 1,
+        tip: "Subject → whether",
+        why: "Özne konumunda tercih: <b>whether</b>. (Notlarına göre.)"
+      },
+      {
+        id: "nc_after_verb",
+        q: "Fiilden sonra ikisi de olabilir: I don’t know ___ he will come.",
+        a: ["whether / if", "that / which", "what / whose", "when / where"],
+        c: 0,
+        tip: "Verb sonrası",
+        why: "Fiilden sonra (know, wonder, ask...) genelde <b>whether</b> veya <b>if</b> ikisi de kullanılabilir."
+      },
+      {
+        id: "nc_tense_present_present",
+        q: "Doğru seç: He says that he ___ (be) tired.",
+        a: ["is", "was", "had been", "will be"],
+        c: 0,
+        tip: "Ana fiil present",
+        why: "Ana fiil present (says) → noun clause çoğunlukla present: <b>is</b>."
+      },
+      {
+        id: "nc_tense_past_backshift",
+        q: "Doğru seç: He said that he ___ (be) tired.",
+        a: ["is", "was", "has been", "will be"],
+        c: 1,
+        tip: "Backshift",
+        why: "Ana fiil past (said) → çoğunlukla past: <b>was</b>."
+      },
+      {
+        id: "nc_exception_general_truth",
+        q: "Genel gerçek (exception): The professor explained that coffee ___ in Brazil.",
+        a: ["grew", "grows", "has grown", "was growing"],
+        c: 1,
+        tip: "Genel gerçek",
+        why: "Genel gerçeklerde backshift yapılmayabilir → <b>grows</b>."
+      },
+      {
+        id: "nc_exception_time_known",
+        q: "Gerçek zaman belliyse (exception): He claims that the war ___ in 1970.",
+        a: ["started", "starts", "was starting", "had started"],
+        c: 0,
+        tip: "Tarih net",
+        why: "Olayın gerçek zamanı net (1970) → backshift şart değil; <b>started</b> doğal."
+      },
+      {
+        id: "nc_modal_same",
+        q: "Modal genelde aynı kalır: He said that I ___ do my homework.",
+        a: ["should", "would", "did", "am"],
+        c: 0,
+        tip: "Modal",
+        why: "Notlarına göre past olsa da <b>should/might/must</b> noun clause içinde çoğu zaman aynı kalır."
+      },
+      {
+        id: "nc_if_clause_vs_nounclause",
+        q: "Noun clause olanı seç:",
+        a: ["If you come, we will start.", "I wonder if you will come.", "If it rains, stay home.", "If I were you, I’d rest."],
+        c: 1,
+        tip: "Noun clause = cümlede isim gibi",
+        why: "<b>I wonder if you will come</b> cümlede nesne konumunda noun clause. Diğerleri şart cümlesi (if clause)."
+      },
+      {
+        id: "nc_question_tag_rule",
+        q: "Not kuralı: Ana cümle 'I think / I believe' ileyse question tag genelde nereye göre yapılır?",
+        a: ["Ana cümleye göre", "Noun clause’a göre", "Her zaman olumlu yapılır", "Her zaman olumsuz yapılır"],
+        c: 1,
+        tip: "Question tags",
+        why: "Notunda: Noun clause yapılarında ana cümle 'I think' ileyse question tag genelde <b>noun clause</b>’a göre yapılır."
+      },
+      {
+        id: "nc_neither_nor",
+        q: "Doğru ifadeyi seç: 'ne ... ne de' anlamı için ve devrik yapı gerektirir:",
+        a: ["also", "too", "neither / nor", "as well"],
+        c: 2,
+        tip: "Auxiliaries notu",
+        why: "Notuna göre <b>neither/nor</b> olumsuz ekleme yapar ve ardından devrik yapı ister (yardımcı fiil + özne)."
+      },
+      {
+        id: "nc_also_position",
+        q: "Not kuralı: 'also' genelde nerede kullanılmaz?",
+        a: ["Cümle başında", "Cümle sonunda", "Yardımcı fiilden sonra", "Ana fiilden önce"],
+        c: 1,
+        tip: "Auxiliaries notu",
+        why: "Notuna göre <b>also</b> cümle sonunda kullanılmaz. (too / as well daha çok sonda.)"
+      },
+      {
+        id: "nc_so_inversion",
+        q: "Doğru cümleyi seç: 'Ben de' (olumlu ekleme) ve devrik yapı:",
+        a: ["So I do.", "So do I.", "So am do I.", "So I am do."],
+        c: 1,
+        tip: "So + aux + subject",
+        why: "Olumlu eklemede: <b>So + yardımcı fiil + özne</b> → <b>So do I.</b>"
+      },
+      {
+        id: "nc_word_order_3",
+        q: "Doğru cümleyi seç: Please tell me ___ .",
+        a: ["what time is it", "what time it is", "what time is", "what time does it"],
+        c: 1,
+        tip: "Düz düzen",
+        why: "Noun clause: <b>what time it is</b> (devrik yok)."
+      },
+      {
+        id: "nc_that_omission",
+        q: "Hangisi doğrudur? (that düşebilir)",
+        a: ["She said she was tired.", "She said about that she was tired.", "She said that about she was tired.", "She said the fact tired."],
+        c: 0,
+        tip: "that omission",
+        why: "Birçok fiilden sonra <b>that</b> düşebilir: <b>She said (that) she was tired.</b> Edat sonrası 'that' olmaz."
+      },
+      {
+        id: "nc_whether_short",
+        q: "Kısaltmalarda (not): Hangisi daha uygundur?",
+        a: ["if", "whether", "that", "what"],
+        c: 1,
+        tip: "whether tercih",
+        why: "Notuna göre kısaltmalarda <b>whether</b> tercih edilir."
+      },
+      {
+        id: "nc_how_clause",
+        q: "Doğru bağlacı seç: She is thinking about ___ she will pass the exam.",
+        a: ["how", "what", "that", "where"],
+        c: 0,
+        tip: "how + clause",
+        why: "Belirsizlik 'nasıl' ile ilgili → <b>how</b>."
+      },
+
+      // ---------------- YDS/YÖKDİL TARZI: reported questions / sentence completion / error spotting ----------------
+      {
+        id: "yds_reported_q1",
+        q: "Doğru cümleyi seç (reported question): He asked me ___ .",
+        a: ["where was I going", "where I was going", "where am I going", "where did I go"],
+        c: 1,
+        tip: "Reported question → düz düzen + tense backshift",
+        why: "Reported question’larda devrik yok: <b>where I was going</b>. (asked → çoğu zaman backshift: am → was.)"
+      },
+      {
+        id: "yds_reported_q2",
+        q: "Boşluğu doğru doldur: I wonder ___ to accept the offer.",
+        a: ["whether", "if", "that", "what"],
+        c: 0,
+        tip: "whether + to V",
+        why: "<b>whether</b> 'to V' ile doğal kullanılır: <b>whether to accept</b>. (if + to V standart değildir.)"
+      },
+      {
+        id: "yds_prep_wh_clause",
+        q: "Boşluğu doğru doldur: We are interested in ___ the results were obtained.",
+        a: ["how", "what", "that", "which"],
+        c: 0,
+        tip: "preposition + wh-clause",
+        why: "Edat (in) sonrası belirsiz süreç sorusu → <b>how</b>. (Edat sonrası 'that' tek başına gelmez.)"
+      },
+      {
+        id: "yds_fact_that_1",
+        q: "Boşluğu doğru doldur: Despite ___ he was warned, he took the risk.",
+        a: ["that", "the fact that", "what", "whether"],
+        c: 1,
+        tip: "despite + the fact that",
+        why: "<b>Despite</b> edat olduğundan ardından <b>that-clause</b> doğrudan gelmez; <b>the fact that</b> kullanılır."
+      },
+      {
+        id: "yds_object_clause_no_inversion",
+        q: "Doğru cümleyi seç: Can you tell me ___ ?",
+        a: ["where the nearest ATM is", "where is the nearest ATM", "where does the nearest ATM", "where nearest ATM is"],
+        c: 0,
+        tip: "embedded question → S + V",
+        why: "Embedded question: <b>where the nearest ATM is</b>. (Inversion yok.)"
+      },
+      {
+        id: "yds_error_spotting_1",
+        q: "Hata hangisinde? (noun clause word order)",
+        a: [
+          "I’m not sure what he meant.",
+          "I can’t remember where I put it.",
+          "She asked me where was I born.",
+          "They know why the plan failed."
+        ],
+        c: 2,
+        tip: "Hatalı olanı bul",
+        why: "Embedded question’da inversion olmaz. Doğrusu: <b>where I was born</b>."
+      },
+      {
+        id: "yds_qword_choice_1",
+        q: "Boşluğu doğru doldur: The question is ___ we can trust this data.",
+        a: ["whether", "what", "that", "where"],
+        c: 0,
+        tip: "whether = olup olmadığı",
+        why: "‘Soru/ mesele’ + iki seçenekli belirsizlik → <b>whether</b>."
+      },
+      {
+        id: "yds_no_that_after_prep",
+        q: "Boşluğu doğru doldur: He insisted on ___ he was right.",
+        a: ["that", "the fact that", "what", "whether"],
+        c: 1,
+        tip: "on + the fact that",
+        why: "Edat sonrası 'that' gelmez → <b>on the fact that</b>."
+      },
+      {
+        id: "yds_whether_or_not_advanced",
+        q: "Doğru cümleyi seç:",
+        a: [
+          "Whether or not he comes, we will start.",
+          "If or not he comes, we will start.",
+          "Whether he comes or not, we will start.",
+          "B) ve C) doğru"
+        ],
+        c: 3,
+        tip: "whether ... or not",
+        why: "<b>Whether or not</b> ve <b>whether ... or not</b> ikisi de doğru yapılardır. 'If or not' yanlış."
+      },
+      {
+        id: "yds_whatever_1",
+        q: "Boşluğu doğru doldur: I’ll support you ___ you decide.",
+        a: ["whatever", "whichever", "whether", "that"],
+        c: 0,
+        tip: "whatever = her ne",
+        why: "‘Ne karar verirsen ver’ → <b>whatever you decide</b>."
+      },
+      {
+        id: "yds_whoever_1",
+        q: "Boşluğu doğru doldur: ___ called you was obviously mistaken.",
+        a: ["Who", "Whoever", "Whom", "Which"],
+        c: 1,
+        tip: "whoever = her kim",
+        why: "Genelleme: 'Her kim aradıysa' → <b>Whoever</b>."
+      },
+      {
+        id: "yds_how_many_noun_clause",
+        q: "Boşluğu doğru doldur: They know ___ tickets were sold.",
+        a: ["how many", "how much", "what", "which"],
+        c: 0,
+        tip: "countable → how many",
+        why: "Tickets sayılabilir → <b>how many</b>."
+      },
+      {
+        id: "yds_how_much_noun_clause",
+        q: "Boşluğu doğru doldur: I can’t estimate ___ it will cost.",
+        a: ["how much", "how many", "what", "which"],
+        c: 0,
+        tip: "uncountable/amount → how much",
+        why: "Maliyet miktar → <b>how much</b>."
+      },
+      {
+        id: "yds_that_clause_subject",
+        q: "Özne olarak doğru olanı seç:",
+        a: [
+          "That she left early surprised everyone.",
+          "That did she leave early surprised everyone.",
+          "That she left early did surprised everyone.",
+          "That she left early surprise everyone."
+        ],
+        c: 0,
+        tip: "That-clause subject",
+        why: "That-clause özne olabilir ve yine düz düzen kullanır: <b>That she left early surprised everyone.</b>"
+      },
+      {
+        id: "yds_backshift_past_perfect",
+        q: "Reported speech/backshift: She said that she ___ the report before the deadline.",
+        a: ["finished", "had finished", "has finished", "finishes"],
+        c: 1,
+        tip: "past → past perfect",
+        why: "Geçmişteki bir eylem başka bir geçmiş zamandan önceyse backshift ile <b>had finished</b> doğal."
+      },
+      {
+        id: "yds_exception_still_true",
+        q: "İstisna (hala doğru gerçek): He said that the Earth ___ around the Sun.",
+        a: ["revolves", "revolved", "had revolved", "is revolving"],
+        c: 0,
+        tip: "genel gerçek",
+        why: "Bilimsel/genel gerçeklerde backshift yapılmaz → <b>revolves</b>."
+      },
+      {
+        id: "yds_noun_clause_after_adj",
+        q: "Boşluğu doğru doldur: It is obvious ___ she has misunderstood the instructions.",
+        a: ["that", "what", "whether", "where"],
+        c: 0,
+        tip: "adj + that-clause",
+        why: "It is obvious/clear/likely gibi yapılardan sonra <b>that-clause</b> gelir."
+      },
+      {
+        id: "yds_whether_vs_if_formal",
+        q: "Daha resmi/doğru tercih hangisi? (YDS/YÖKDİL)",
+        a: ["I’m not sure if he will agree.", "I’m not sure whether he will agree.", "İkisi de imkansız", "Sadece A doğru"],
+        c: 1,
+        tip: "formal preference",
+        why: "Çoğu bağlamda ikisi de mümkün olsa da sınav dilinde <b>whether</b> daha resmi/tercihli kabul edilir."
+      },
+      {
+        id: "yds_wh_clause_as_object",
+        q: "Doğru cümleyi seç:",
+        a: [
+          "I can’t understand what is he saying.",
+          "I can’t understand what he is saying.",
+          "I can’t understand that is he saying.",
+          "I can’t understand what does he say."
+        ],
+        c: 1,
+        tip: "embedded question",
+        why: "Noun clause düzeni: <b>what he is saying</b>."
+      },
+      {
+        id: "yds_choice_between_which_what",
+        q: "Boşluğu doğru doldur: I didn’t know ___ of these two options you preferred.",
+        a: ["which", "what", "that", "where"],
+        c: 0,
+        tip: "limited choice → which",
+        why: "İki seçenek gibi sınırlı kümede seçim sorusu → <b>which</b>."
+      },
+      {
+        id: "yds_compound_wh_clause",
+        q: "Boşluğu doğru doldur: Please explain ___ we should proceed.",
+        a: ["how", "what", "that", "whether"],
+        c: 0,
+        tip: "how = nasıl",
+        why: "Süreç/ yöntem sorusu: <b>how we should proceed</b>."
+      },
+      {
+        id: "yds_sentence_completion_1",
+        q: "Cümleyi en iyi tamamlayan: The committee will discuss ___ .",
+        a: [
+          "whether the budget should be revised",
+          "whether should the budget be revised",
+          "that should the budget be revised",
+          "what should be revised the budget"
+        ],
+        c: 0,
+        tip: "whether + S + modal",
+        why: "Embedded question: <b>whether the budget should be revised</b> (düz düzen)."
+      },
+      {
+        id: "yds_sentence_completion_2",
+        q: "Cümleyi en iyi tamamlayan: No one knows ___ .",
+        a: [
+          "why did the device fail",
+          "why the device failed",
+          "why has the device failed",
+          "why does the device failed"
+        ],
+        c: 1,
+        tip: "why + S + V",
+        why: "Embedded question’da inversion yok: <b>why the device failed</b>."
+      },
+      {
+        id: "yds_whatever_vs_whichever",
+        q: "Boşluğu doğru doldur: Take ___ book you like; they’re all free.",
+        a: ["whatever", "whichever", "whether", "that"],
+        c: 1,
+        tip: "whichever = sınırlı seçenek",
+        why: "‘Hangi kitabı istersen (seçenekler belli bir grup kitap)’ → <b>whichever</b>."
+      },
+
+      // ---------------- Ek “ÇELDİRİCİ” seti: what vs that / the reason / depends on / no matter / double-structure tuzakları ----------------
+      {
+        id: "trap_what_vs_that_1",
+        q: "Boşluğu doğru doldur: I can’t believe ___ he said to her.",
+        a: ["that", "what", "which", "whether"],
+        c: 1,
+        tip: "what = 'şey(ler)' (içerik/nesne)",
+        why: "Burada 'ne söylediği' = noun clause içinde <b>what</b> gerekir. 'That' sadece bağlaçtır, içerik nesnesini vermez."
+      },
+      {
+        id: "trap_what_vs_that_2",
+        q: "Boşluğu doğru doldur: I can’t believe ___ he said was true.",
+        a: ["what", "that", "which", "whether"],
+        c: 0,
+        tip: "what-clause özne olabilir",
+        why: "‘Söylediği şey’ anlamı: <b>What he said was true.</b> Burada 'what' = 'the thing that'."
+      },
+      {
+        id: "trap_that_clause_needed_1",
+        q: "Boşluğu doğru doldur: The fact ___ she apologized surprised everyone.",
+        a: ["that", "what", "whether", "which"],
+        c: 0,
+        tip: "the fact + that",
+        why: "<b>The fact that</b> kalıptır. 'The fact what' olmaz."
+      },
+      {
+        id: "trap_the_reason_is_that",
+        q: "Boşluğu doğru doldur: The reason he left early is ___ he felt sick.",
+        a: ["because", "that", "what", "whether"],
+        c: 1,
+        tip: "The reason is that",
+        why: "Sınav tuzağı: 'The reason is <b>that</b> ...' doğrudur. 'The reason is because' genelde yanlış kabul edilir."
+      },
+      {
+        id: "trap_depends_on_whether",
+        q: "Boşluğu doğru doldur: It depends on ___ the device passes the final test.",
+        a: ["if", "whether", "that", "what"],
+        c: 1,
+        tip: "depends on + whether",
+        why: "Edat (on) sonrası <b>if</b> kullanılmaz; <b>whether</b> gerekir."
+      },
+      {
+        id: "trap_whether_fronting",
+        q: "Doğru cümleyi seç:",
+        a: [
+          "Whether he will resign remains uncertain.",
+          "If he will resign remains uncertain.",
+          "Whether will he resign remains uncertain.",
+          "That will he resign remains uncertain."
+        ],
+        c: 0,
+        tip: "subject position + no inversion",
+        why: "Özne konumu: <b>Whether he will resign ...</b>. Inversion yok; 'if' özne konumunda tercih edilmez."
+      },
+      {
+        id: "trap_no_matter_what",
+        q: "Boşluğu doğru doldur: No matter ___ happens, don’t panic.",
+        a: ["what", "that", "which", "whether"],
+        c: 0,
+        tip: "no matter what/where/when/how",
+        why: "Kalıp: <b>No matter what happens</b>. 'that/which/whether' olmaz."
+      },
+      {
+        id: "trap_preposition_no_that_2",
+        q: "Boşluğu doğru doldur: She insisted ___ he was lying.",
+        a: ["on that", "on the fact that", "that", "whether"],
+        c: 1,
+        tip: "insist on + the fact that",
+        why: "‘insist on’ edatlı yapıdır; sınavda güvenli seçenek <b>on the fact that</b>. 'on that' genelde hedeflenmiş çeldiricidir."
+      },
+      {
+        id: "trap_embedded_q_modal",
+        q: "Doğru cümleyi seç: I’m not sure ___ we should do next.",
+        a: ["what should we do", "what we should do", "that we should do what", "whether should we do"],
+        c: 1,
+        tip: "wh + S + modal",
+        why: "Embedded question düzeni: <b>what we should do</b> (devrik yok)."
+      },
+      {
+        id: "trap_do_support_in_embedded",
+        q: "Hata hangisinde? (do-support tuzağı)",
+        a: [
+          "I don’t know why she left.",
+          "I don’t know why did she leave.",
+          "I wonder what he wants.",
+          "Tell me where they live."
+        ],
+        c: 1,
+        tip: "embedded’de 'did' yok",
+        why: "Embedded question’da 'did/does' ile devrik soru düzeni kullanılmaz. Doğru: <b>why she left</b>."
+      },
+      {
+        id: "trap_whether_vs_that_meaning",
+        q: "Boşluğu doğru doldur: The issue is ___ he is telling the truth.",
+        a: ["that", "whether", "what", "which"],
+        c: 1,
+        tip: "issue/question → whether",
+        why: "‘Mesele şu: doğruyu söylüyor mu?’ iki seçenekli belirsizlik → <b>whether</b>."
+      },
+      {
+        id: "trap_what_as_complement",
+        q: "Boşluğu doğru doldur: What worries me is ___ he never listens.",
+        a: ["that", "what", "whether", "where"],
+        c: 0,
+        tip: "What ... is that ...",
+        why: "Sınav kalıbı: <b>What worries me is that ...</b> (that-clause açıklayıcı)."
+      },
+      {
+        id: "trap_that_omission_limits",
+        q: "Hangisi daha doğru/standart? (that omission tuzağı)",
+        a: [
+          "She said that she was tired.",
+          "She said she was tired.",
+          "A) ve B) ikisi de doğru",
+          "İkisi de yanlış"
+        ],
+        c: 2,
+        tip: "that düşebilir",
+        why: "Birçok fiilden sonra <b>that</b> düşebilir. İkisi de doğru: <b>She said (that) ...</b>"
+      },
+      {
+        id: "trap_mistake_fact_that_vs_that",
+        q: "Hata hangisinde? (preposition + that tuzağı)",
+        a: [
+          "He is proud of the fact that he succeeded.",
+          "He is proud that he succeeded.",
+          "He is proud of that he succeeded.",
+          "He is proud of what he achieved."
+        ],
+        c: 2,
+        tip: "of + that olmaz",
+        why: "Edat + 'that' doğrudan gelmez: <b>proud of that he succeeded</b> yanlış. Doğrusu 'proud that...' veya 'proud of the fact that...'."
+      }
+    ];
+
+    // ---- Basit motor: Tur 1 bitince yanlışları Tur 2’de tekrar sor ----
+    const els = {
+      tabs: document.querySelectorAll(".nc-tab"),
+      sections: document.querySelectorAll(".nc-section"),
+      roundLabel: document.getElementById("roundLabel"),
+      qIndex: document.getElementById("qIndex"),
+      qTotal: document.getElementById("qTotal"),
+      correctCount: document.getElementById("correctCount"),
+      wrongCount: document.getElementById("wrongCount"),
+      progress: document.getElementById("progressBar"),
+      qText: document.getElementById("questionText"),
+      qTip: document.getElementById("questionTip"),
+      options: document.getElementById("options"),
+      feedback: document.getElementById("feedback"),
+      btnNext: document.getElementById("btnNext"),
+      btnReset: document.getElementById("btnReset"),
+      scoreLine: document.getElementById("scoreLine"),
+      resultBox: document.getElementById("resultBox"),
+      resultTitle: document.getElementById("resultTitle"),
+      resultText: document.getElementById("resultText"),
+    };
+
+    function setTab(targetId){
+      els.tabs.forEach(t => t.classList.toggle("active", t.dataset.target === targetId));
+      els.sections.forEach(s => s.classList.toggle("active", s.id === targetId));
+    }
+    els.tabs.forEach(t => t.addEventListener("click", () => setTab(t.dataset.target)));
+
+    const state = {
+      round: 0,              // 0: başlamadı, 1: ana, 2: tekrar
+      pool: [],
+      idx: 0,
+      correct: 0,
+      wrong: 0,
+      wrongIds: new Set(),
+      wrongAgainIds: new Set(),
+      locked: false,
+      started: false,
+      lastSelected: null,
+      customStart: null,     // { round, pool } - opsiyonel (örn. tekrar tekrar)
+    };
+
+    function shuffle(arr){
+      const a = [...arr];
+      for(let i=a.length-1;i>0;i--){
+        const j = Math.floor(Math.random()*(i+1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+
+    function resetAll(){
+      state.round = 0;
+      state.pool = [];
+      state.idx = 0;
+      state.correct = 0;
+      state.wrong = 0;
+      state.wrongIds = new Set();
+      state.wrongAgainIds = new Set();
+      state.locked = false;
+      state.started = false;
+      state.lastSelected = null;
+      state.customStart = null;
+
+      els.roundLabel.textContent = "1 (Ana)";
+      els.qIndex.textContent = "1";
+      els.qTotal.textContent = "0";
+      els.correctCount.textContent = "0";
+      els.wrongCount.textContent = "0";
+      els.progress.style.width = "0%";
+      els.qText.textContent = "Hazır mısın?";
+      els.qTip.textContent = "Başlamak için “Başla”ya bas.";
+      els.options.innerHTML = "";
+      els.feedback.style.display = "none";
+      els.feedback.className = "quiz-feedback";
+      els.btnNext.textContent = "Başla";
+      els.btnNext.disabled = false;
+      els.scoreLine.textContent = "";
+      els.resultBox.style.display = "none";
+    }
+
+    function startRound(round, pool){
+      state.round = round;
+      state.pool = shuffle(pool);
+      state.idx = 0;
+      state.locked = false;
+      state.lastSelected = null;
+      state.wrongAgainIds = new Set();
+
+      els.roundLabel.textContent = round === 1 ? "1 (Ana)" : "2 (Yanlışları Tekrar)";
+      els.qTotal.textContent = String(state.pool.length);
+      els.resultBox.style.display = "none";
+      loadQuestion();
+    }
+
+    function loadQuestion(){
+      const q = state.pool[state.idx];
+      if(!q){
+        endRound();
+        return;
+      }
+
+      els.qIndex.textContent = String(state.idx + 1);
+      const pct = Math.round((state.idx / Math.max(1, state.pool.length)) * 100);
+      els.progress.style.width = pct + "%";
+
+      els.qText.textContent = q.q;
+      els.qTip.textContent = q.tip || "";
+      els.options.innerHTML = "";
+      els.feedback.style.display = "none";
+      els.feedback.className = "quiz-feedback";
+      els.btnNext.textContent = "Sonraki";
+      els.btnNext.disabled = true;
+
+      q.a.forEach((txt, i) => {
+        const b = document.createElement("button");
+        b.className = "quiz-opt";
+        b.type = "button";
+        b.textContent = txt;
+        b.addEventListener("click", () => pick(i));
+        els.options.appendChild(b);
+      });
+
+      updateScoreLine();
+    }
+
+    function lockOptions(){
+      [...els.options.querySelectorAll("button")].forEach(b => b.disabled = true);
+    }
+
+    function pick(i){
+      if(state.locked) return;
+      state.locked = true;
+      state.lastSelected = i;
+      const q = state.pool[state.idx];
+      const correctIdx = q.c;
+      const opts = [...els.options.querySelectorAll("button")];
+
+      opts.forEach((b, idx) => {
+        if(idx === correctIdx) b.classList.add("correct");
+        if(idx === i && i !== correctIdx) b.classList.add("wrong");
+      });
+
+      lockOptions();
+      const isCorrect = i === correctIdx;
+      if(isCorrect){
+        state.correct += 1;
+        if(state.round === 2) state.wrongAgainIds.delete(q.id);
+        els.feedback.classList.add("good");
+        els.feedback.innerHTML = "<b>Doğru.</b> " + q.why;
+      }else{
+        state.wrong += 1;
+        state.wrongIds.add(q.id);
+        if(state.round === 2) state.wrongAgainIds.add(q.id);
+        els.feedback.classList.add("bad");
+        els.feedback.innerHTML = "<b>Yanlış.</b> Doğru cevap: <b>" + escapeHtml(q.a[correctIdx]) + "</b><br><br>" + q.why;
+      }
+      els.feedback.style.display = "block";
+      els.btnNext.disabled = false;
+      els.correctCount.textContent = String(state.correct);
+      els.wrongCount.textContent = String(state.wrong);
+      updateScoreLine();
+    }
+
+    function escapeHtml(s){
+      return String(s)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll("\"", "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function updateScoreLine(){
+      const msg = state.started
+        ? `İlerleme: ${state.idx}/${state.pool.length} • Toplam doğru: ${state.correct} • Toplam yanlış: ${state.wrong}`
+        : "";
+      els.scoreLine.textContent = msg;
+    }
+
+    function next(){
+      if(!state.started){
+        state.started = true;
+        if(state.customStart){
+          const { round, pool } = state.customStart;
+          state.customStart = null;
+          startRound(round, pool);
+        }else{
+          startRound(1, BANK);
+        }
+        return;
+      }
+      if(els.btnNext.disabled) return;
+      state.idx += 1;
+      state.locked = false;
+      state.lastSelected = null;
+      loadQuestion();
+    }
+
+    function endRound(){
+      // Ana tur bitti → yanlışlar varsa otomatik tekrar turu
+      if(state.round === 1 && state.wrongIds.size){
+        const wrongPool = BANK.filter(q => state.wrongIds.has(q.id));
+        els.resultBox.style.display = "block";
+        els.resultTitle.textContent = "Ana tur bitti";
+        els.resultText.innerHTML = `Yanlış sayın: <b>${state.wrongIds.size}</b>. Şimdi bu soruları <b>tekrar turunda</b> çözdüreceğim.`;
+        setTimeout(() => startRound(2, wrongPool), 650);
+        return;
+      }
+
+      els.progress.style.width = "100%";
+      els.resultBox.style.display = "block";
+
+      const totalQuestions = BANK.length;
+      const percent = totalQuestions ? Math.round((state.correct / (state.correct + state.wrong)) * 100) : 0;
+      const wrongUnique = state.wrongIds.size;
+
+      if(state.round === 2){
+        els.resultTitle.textContent = "Bitti (Pekiştirme tamam)";
+        if(state.wrongAgainIds.size){
+          const pool = BANK.filter(q => state.wrongAgainIds.has(q.id));
+          state.customStart = { round: 2, pool };
+          els.resultText.innerHTML =
+            `Pekiştirme turunda bile kaçan soru sayısı: <b>${state.wrongAgainIds.size}</b>.<br>` +
+            `Şimdi istersen bu soruları <b>bir tur daha</b> tekrar sorayım (hedef: 0 yanlış).`;
+          els.btnNext.textContent = "Hataları Bir Tur Daha";
+        }else{
+          els.resultText.innerHTML =
+            `Süper. Pekiştirme turunda <b>0 yanlış</b> yaptın.<br>` +
+            `Toplam doğru: <b>${state.correct}</b>, toplam yanlış: <b>${state.wrong}</b>.<br>` +
+            `Ana turda yanlış işaretlediğin soru sayısı: <b>${wrongUnique}</b>.`;
+          els.btnNext.textContent = "Baştan Başla";
+        }
+      }else{
+        els.resultTitle.textContent = "Bitti";
+        els.resultText.innerHTML =
+          `Toplam doğru: <b>${state.correct}</b>, toplam yanlış: <b>${state.wrong}</b> (yaklaşık başarı: <b>%${percent}</b>).`;
+        els.btnNext.textContent = "Baştan Başla";
+      }
+
+      // buton durumu
+      els.btnNext.disabled = false;
+      state.started = false;
+      state.round = 0;
+    }
+
+    // ---- Kısayollar ----
+    document.addEventListener("keydown", (e) => {
+      const activeQuiz = document.getElementById("quizSection").classList.contains("active");
+      if(!activeQuiz) return;
+      if(e.key === "Enter"){
+        e.preventDefault();
+        next();
+        return;
+      }
+      if(!state.started) return;
+      const num = parseInt(e.key, 10);
+      if(Number.isFinite(num) && num >= 1 && num <= 9){
+        const idx = num - 1;
+        const btn = els.options.querySelectorAll("button")[idx];
+        if(btn && !btn.disabled) btn.click();
+      }
+    });
+
+    els.btnNext.addEventListener("click", next);
+    els.btnReset.addEventListener("click", resetAll);
+
+    // İlk yükleme
+    resetAll();
+  </script>
+</body>
+</html>
+

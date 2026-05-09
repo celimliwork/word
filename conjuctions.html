@@ -365,7 +365,14 @@
         <button type="button" class="tab" id="tabSentence" data-on="false" data-mode="sentence">Cümle</button>
       </div>
       <div id="prompt"></div>
-      <div id="ezberNotu" class="ezber-box" hidden></div>
+    
+     
+      <div id="choices"></div>
+      <div class="btn-row">
+        <button type="button" class="action secondary" id="btnDontKnow">Bilmiyorum (kaydet)</button>
+        <button type="button" class="action secondary" id="btnPeek" type="button">Doğru cevabı göster</button>
+      </div>
+      <button type="button" class="action" id="btnNext">Sonraki soru →</button>
       <div id="usagePanel" class="usage-panel" hidden>
         <div id="usageEnWrap" class="usage-sub">
           <div class="usage-label">İngilizce</div>
@@ -376,12 +383,8 @@
           <p id="usageTrBody" class="usage-body usage-body-tr"></p>
         </div>
       </div>
-      <div id="choices"></div>
-      <div class="btn-row">
-        <button type="button" class="action secondary" id="btnDontKnow">Bilmiyorum (kaydet)</button>
-        <button type="button" class="action secondary" id="btnPeek" type="button">Doğru cevabı göster</button>
-      </div>
-      <button type="button" class="action" id="btnNext">Sonraki soru →</button>
+      <div id="ezberNotu" class="ezber-box" hidden></div>
+    
       <div id="feedback"></div>
       <details id="unknownPanel">
         <summary>Kayıtlı bilemediklerim (<span id="storedCountInline">0</span>)</summary>

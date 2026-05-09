@@ -358,7 +358,7 @@
         <div>Doğru<strong id="statOk">0</strong></div>
         <div>Yanlış<strong id="statBad">0</strong></div>
         <div>Bilmedim (kayıtlı)<strong id="statStored">0</strong></div>
-        <div>Tekrar sırası<strong id="statSet">0/5</strong></div>
+        <div>Tur<strong id="statSet">Ana</strong></div>
       </div>
       <div class="tabs" role="tablist">
         <button type="button" class="tab" id="tabMeaning" data-on="true" data-mode="meaning">Anlam</button>
@@ -395,16 +395,16 @@
   </div>
 
   <script>
-    const REVIEW_EVERY = 5;
     const CHOICE_COUNT = 4;
     const LS_UNKNOWN = "conjuctions_unknown_v1";
 
     let deck = [];
     let typeGuide = {};
     let mode = "meaning";
+    /** Deste içi sıra: önce tüm kartlar (deck sırası), sonra yalnızca ana turda yanlış / bilmiyorum dediklerin bir kez */
     let queue = [];
-    let mistakeBank = [];
-    let answeredSinceReview = 0;
+    let sessionMissedOrder = [];
+    let inRetryPhase = false;
     let totalAnswered = 0;
     let current = null;
     let opts = [];
@@ -657,10 +657,20 @@
       loadDeckFromJson();
     });
 
+    function deckIndexOrder() {
+      return deck.map((_, i) => i);
+    }
+
+    function noteMissThisSession() {
+      if (inRetryPhase || !current) return;
+      const sid = String(current.id || current.term);
+      if (!sessionMissedOrder.includes(sid)) sessionMissedOrder.push(sid);
+    }
+
     function resetSession() {
-      queue = shuffle(deck.map((_, i) => i));
-      mistakeBank = [];
-      answeredSinceReview = 0;
+      queue = deckIndexOrder();
+      sessionMissedOrder = [];
+      inRetryPhase = false;
       totalAnswered = 0;
       correctOk = wrongBad = 0;
       stats();
@@ -670,7 +680,7 @@
       tab.addEventListener("click", () => {
         mode = tab.dataset.mode || "meaning";
         document.querySelectorAll(".tab").forEach((t) => (t.dataset.on = String(t.dataset.mode === mode)));
-        answeredSinceReview = 0;
+        resetSession();
         nextQuestion();
       })
     );
@@ -687,8 +697,7 @@
       if (locked || !current) return;
       locked = true;
       wrongBad++;
-      const mk = current.id || current.term;
-      if (!mistakeBank.includes(mk)) mistakeBank.push(mk);
+      noteMissThisSession();
       recordUnknown(current, "bilmiyorum");
       elChoices.querySelectorAll("button.opt").forEach((b, k) => {
         b.disabled = true;
@@ -719,7 +728,7 @@
       document.getElementById("statBad").textContent = wrongBad;
       const st = document.getElementById("statStored");
       if (st) st.textContent = String(countStoredUnknown());
-      document.getElementById("statSet").textContent = answeredSinceReview + "/" + REVIEW_EVERY;
+      document.getElementById("statSet").textContent = inRetryPhase ? "Tekrar" : "Ana";
       if (elStoredInline) elStoredInline.textContent = String(countStoredUnknown());
     }
 
@@ -762,15 +771,6 @@
       }
     }
 
-    function maybeInjectReviewSlot() {
-      if (answeredSinceReview < REVIEW_EVERY || !mistakeBank.length) return;
-      answeredSinceReview = 0;
-      const idxs = shuffle(
-        mistakeBank.map((id) => deck.findIndex((x) => x.id === id)).filter((i) => i >= 0)
-      );
-      if (idxs[0] != null) queue.unshift(idxs[0]);
-    }
-
     function nextQuestion() {
       elNext.disabled = true;
       if (elDontKnow) elDontKnow.disabled = false;
@@ -779,13 +779,22 @@
       elFeedback.className = "";
       if (!deck.length) return;
 
-      maybeInjectReviewSlot();
-
-      let ix = queue.shift();
-      if (ix === undefined || ix < 0) {
-        queue = shuffle(deck.map((_, i) => i));
-        ix = queue.shift();
+      if (!queue.length) {
+        if (!inRetryPhase && sessionMissedOrder.length) {
+          queue = sessionMissedOrder
+            .map((id) => deck.findIndex((x) => String(x.id || x.term) === String(id)))
+            .filter((ix) => ix >= 0);
+          sessionMissedOrder = [];
+          inRetryPhase = true;
+        } else {
+          queue = deckIndexOrder();
+          inRetryPhase = false;
+          sessionMissedOrder = [];
+        }
       }
+
+      const ix = queue.shift();
+      if (ix === undefined || ix < 0) return;
       current = Object.assign({}, deck[ix]);
       if (mode === "sentence" && !(current.contextEn && String(current.contextEn).trim())) {
         current.contextEn =
@@ -848,8 +857,7 @@
         elFeedback.textContent = "Yanlış (kayıtlara eklendi).";
         elFeedback.className = "bad";
         wrongBad++;
-        const mk = current.id || current.term;
-        if (!mistakeBank.includes(mk)) mistakeBank.push(mk);
+        noteMissThisSession();
         recordUnknown(current, "yanlis");
       }
       elNext.disabled = false;
@@ -860,7 +868,6 @@
 
     elNext.addEventListener("click", () => {
       if (!locked) return;
-      answeredSinceReview++;
       totalAnswered++;
       stats();
       nextQuestion();

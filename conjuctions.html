@@ -332,10 +332,29 @@
       margin-top: 0;
     }
 
-    .usage-body-tr {
+    .hint-tr-box {
+      margin: 10px 0 14px;
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(251, 191, 36, 0.45);
+      background: rgba(251, 191, 36, 0.08);
+      font-size: 0.88rem;
+      line-height: 1.55;
+    }
+
+    .hint-tr-box .hint-tr-tag {
+      margin: 0 0 8px;
+      color: #fbbf24;
+      font-weight: 600;
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .hint-tr-box .hint-tr-body {
+      margin: 0;
+      color: #fde68a;
       font-style: normal;
-      color: #c5cad6;
-      font-size: 0.92rem;
     }
   </style>
 </head>
@@ -368,11 +387,11 @@
     
      
       <div id="choices"></div>
-      <div class="btn-row">
+      <!-- <div class="btn-row">
         <button type="button" class="action secondary" id="btnDontKnow">Bilmiyorum (kaydet)</button>
         <p id="dontKnowHint" class="sub" style="margin-top:6px;font-size:0.82rem;color:var(--muted);display:none;">Şık seçtikten sonra da aynı soruyu bilemediklerinize ekleyebilirsiniz.</p>
         <button type="button" class="action secondary" id="btnPeek" type="button">Doğru cevabı göster</button>
-      </div>
+      </div> -->
       <button type="button" class="action" id="btnNext">Sonraki soru →</button>
       <div id="usagePanel" class="usage-panel" hidden>
         <div id="usageEnWrap" class="usage-sub">
@@ -385,8 +404,11 @@
         </div>
       </div>
       <div id="ezberNotu" class="ezber-box" hidden></div>
-    
       <div id="feedback"></div>
+      <div id="hintTrPanel" class="hint-tr-box" hidden>
+        <div class="hint-tr-tag">Ezber ipucu (TR)</div>
+        <p id="hintTrBody" class="hint-tr-body"></p>
+      </div>
       <details id="unknownPanel">
         <summary>Kayıtlı bilemediklerim (<span id="storedCountInline">0</span>)</summary>
         <div id="unknownList"></div>
@@ -435,6 +457,8 @@
     const elUsageBody = document.getElementById("usageBody");
     const elUsageTrWrap = document.getElementById("usageTrWrap");
     const elUsageTrBody = document.getElementById("usageTrBody");
+    const elHintTrPanel = document.getElementById("hintTrPanel");
+    const elHintTrBody = document.getElementById("hintTrBody");
 
     function shuffle(a) {
       const x = a.slice();
@@ -477,6 +501,19 @@
     function hideExplanationPanels() {
       if (elEzber) elEzber.hidden = true;
       if (elUsagePanel) elUsagePanel.hidden = true;
+      if (elHintTrPanel) elHintTrPanel.hidden = true;
+    }
+
+    function fillHintTrPanel(item) {
+      if (!elHintTrPanel || !elHintTrBody) return;
+      const h = item && item.hintTr ? String(item.hintTr).trim() : "";
+      if (!h) {
+        elHintTrBody.textContent = "";
+        elHintTrPanel.hidden = true;
+        return;
+      }
+      elHintTrBody.textContent = h;
+      elHintTrPanel.hidden = false;
     }
 
     function showExplanationPanels() {
@@ -493,6 +530,8 @@
       }
       if (elUsageEnWrap) elUsageEnWrap.hidden = en.empty;
       if (elUsageTrWrap) elUsageTrWrap.hidden = tr.empty;
+
+      fillHintTrPanel(current);
     }
 
     /** Tam örnek cümle: yapı vurgulu */
@@ -637,6 +676,7 @@
           if (!d.id) d.id = String(i + 1);
           if (!d.contextEn) d.contextEn = "";
           if (!d.contextTr) d.contextTr = "";
+          if (d.hintTr == null) d.hintTr = "";
         });
         if (!deck.length) throw new Error("items boş veya geçersiz");
         elLoadStat.textContent =

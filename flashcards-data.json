@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "title": "Bağlaç • cümle zarfı • edat (metin.txt)",
+  "settings": { "review_after": 5, "choices": 4 },
+  "items": [
+    {"id": "c001", "term": "EXCEPT (FOR)", "meaningTr": "-DEN HARİÇ / -DEN BAŞKA", "grammar": "EDAT", "contextEn": "No one applied EXCEPT (FOR) a single intern from finance."},
+    {"id": "c002", "term": "APART FROM", "meaningTr": "-DEN HARİÇ / -DEN BAŞKA", "grammar": "EDAT", "contextEn": "Apart from a broken hinge, the suitcase survived the trip."},
+    {"id": "c003", "term": "SAVING", "meaningTr": "-DEN HARİÇ / -DEN BAŞKA", "grammar": "EDAT", "contextEn": "All tickets sold, SAVING two seats held for staff."},
+    {"id": "c004", "term": "BY", "meaningTr": "-NIN ARACILIĞIYLA / -NIN YARDIMIYLA", "grammar": "EDAT", "contextEn": "We learned the news BY talking to locals at the marina."},
+    {"id": "c005", "term": "VIA", "meaningTr": "-NIN ARACILIĞIYLA / -NIN YARDIMIYLA", "grammar": "EDAT", "contextEn": "Files arrived VIA a secure courier instead of cloud upload."},
+    {"id": "c006", "term": "THROUGH", "meaningTr": "-NIN ARACILIĞIYLA / -NIN YARDIMIYLA", "grammar": "EDAT", "contextEn": "Funds came THROUGH a cooperative that pooled neighbourhood savings."},
+    {"id": "c007", "term": "BY MEANS OF", "meaningTr": "-NIN ARACILIĞIYLA / -NIN YARDIMIYLA", "grammar": "EDAT", "contextEn": "Smoke was routed BY MEANS OF narrow ducts carved in stone."},
+    {"id": "c008", "term": "WITH THE HELP OF", "meaningTr": "-NIN ARACILIĞIYLA / -NIN YARDIMIYLA", "grammar": "EDAT", "contextEn": "The archive reopened WITH THE HELP OF volunteer cataloguers."},
+    {"id": "c009", "term": "IRRESPECTIVE OF", "meaningTr": "-E BAKILMAKSIZIN", "grammar": "EDAT", "contextEn": "Everyone gets checked in, IRRESPECTIVE OF rank or nationality."},
+    {"id": "c010", "term": "REGARDLESS OF", "meaningTr": "-E BAKILMAKSIZIN", "grammar": "EDAT", "contextEn": "The pilot chose to delay, REGARDLESS OF tight slot times."},
+    {"id": "c011", "term": "RATHER THAN", "meaningTr": "-DEN ZİYADE", "grammar": "EDAT", "contextEn": "She chose captions RATHER THAN dubbing every interview."},
+    {"id": "c012", "term": "INSTEAD", "meaningTr": "YERİNE / - DAHA ZİYADE", "grammar": "CÜMLE ZARFI", "contextEn": "We could cancel; INSTEAD , we lengthened rehearsals."},
+    {"id": "c013", "term": "INSTEAD OF", "meaningTr": "-NIN YERİNE", "grammar": "EDAT", "contextEn": "Use reusable cups INSTEAD OF foam at the festival gate."},
+
+    {"id": "c020", "term": "IN PARTICULAR", "meaningTr": "ÖZELLİKLE", "grammar": "CÜMLE ZARFI", "contextEn": "Several risks arose, IN PARTICULAR delayed permits near the wetland."},
+    {"id": "c021", "term": "PARTICULARLY", "meaningTr": "ÖZELLİKLE", "grammar": "CÜMLE ZARFI", "contextEn": "Trains slowed, PARTICULARLY during the morning ice storm."},
+    {"id": "c022", "term": "ESPECIALLY", "meaningTr": "ÖZELLİKLE", "grammar": "CÜMLE ZARFI", "contextEn": "Crowds cheered, ESPECIALLY when the understudy took the lead."},
+    {"id": "c023", "term": "NOTABLY", "meaningTr": "ÖZELLİKLE", "grammar": "CÜMLE ZARFI", "contextEn": "Several firms backed out; NOTABLY , the largest logistics partner withdrew."},
+    {"id": "c024", "term": "SPECIFICALLY", "meaningTr": "ÖZELLİKLE", "grammar": "CÜMLE ZARFI", "contextEn": "We need clarity, SPECIFICALLY on overtime caps for freelancers."},
+
+    {"id": "c030", "term": "THAT IS", "meaningTr": "DİĞER BİR DEYİŞLE", "grammar": "AÇIKLAMA ZARFI", "contextEn": "Costs doubled; THAT IS , we underestimated hardware swaps."},
+    {"id": "c031", "term": "NAMELY", "meaningTr": "DİĞER BİR DEYİŞLE", "grammar": "AÇIKLAMA ZARFI", "contextEn": "Two wards stayed open, namely east and harbour intake."},
+    {"id": "c032", "term": "IN OTHER WORDS", "meaningTr": "DİĞER BİR DEYİŞLE", "grammar": "AÇIKLAMA ZARFI", "contextEn": "Funds never cleared; IN OTHER WORDS , the subsidy never existed."},
+
+    {"id": "c040", "term": "LIKEWISE", "meaningTr": "AYNI ŞEKİLDE, BUNUN GİBİ", "grammar": "CÜMLE ZARFI", "contextEn": "Toronto froze rents; LIKEWISE , Montreal capped renewals quietly."},
+    {"id": "c041", "term": "SIMILARLY", "meaningTr": "AYNI ŞEKİLDE, BUNUN GİBİ", "grammar": "CÜMLE ZARFI", "contextEn": "Junior staff unionized; SIMILARLY , freelancers drafted a pact."},
+
+    {"id": "c050", "term": "IN FACT", "meaningTr": "HATTA, ASLINDA", "grammar": "CÜMLE ZARFI", "contextEn": "Critics feared apathy; IN FACT voters queued before sunrise."},
+    {"id": "c051", "term": "INDEED", "meaningTr": "HATTA, ASLINDA", "grammar": "CÜMLE ZARFI", "contextEn": "Costs looked steep; INDEED auditors later called them understated."},
+    {"id": "c052", "term": "ACTUALLY", "meaningTr": "HATTA, ASLINDA", "grammar": "CÜMLE ZARFI", "contextEn": "The venue seemed empty; ACTUALLY backstage was packed tight."},
+
+    {"id": "c060", "term": "ON THE CONTRARY", "meaningTr": "AKSİNE / BİLAKİS", "grammar": "CÜMLE ZARFI", "contextEn": "He was not careless; ON THE CONTRARY , every chart was annotated."},
+
+    {"id": "c070", "term": "AS FOR", "meaningTr": "-E GELİNCE", "grammar": "EDAT", "contextEn": "Logistics stalled for weeks; AS FOR PR, aides stayed oddly silent."},
+    {"id": "c071", "term": "WHEN IT COMES TO", "meaningTr": "-E GELİNCE", "grammar": "EDAT", "contextEn": "Budgets soar on marketing; WHEN IT COMES TO training, pennies appear."},
+
+    {"id": "c080", "term": "ABOUT", "meaningTr": "İLE İLGİLİ", "grammar": "EDAT", "contextEn": "We argued ABOUT hazard pay long after payroll closed."},
+    {"id": "c081", "term": "CONCERNING", "meaningTr": "İLE İLGİLİ", "grammar": "EDAT", "contextEn": "A memo arrived CONCERNING expired credentials for inspectors."},
+
+    {"id": "c090", "term": "IN SUMMARY", "meaningTr": "KISACA, ÖZET OLARAK", "grammar": "CÜMLE ZARFI", "contextEn": "IN SUMMARY , every gate failed simultaneously at shift change."},
+    {"id": "c091", "term": "TO SUM UP", "meaningTr": "KISACA, ÖZET OLARAK", "grammar": "CÜMLE ZARFI", "contextEn": "TO SUM UP , we need cleaner logs before auditors return."},
+
+    {"id": "c100", "term": "EXCEPT THAT", "meaningTr": "HARİÇ (bağlı cümleci)", "grammar": "BAĞLAÇ", "contextEn": "Plans looked solid EXCEPT THAT permits never left the clerk's inbox."},
+    {"id": "c101", "term": "SAVE THAT", "meaningTr": "HARİÇ (bağlı cümleci)", "grammar": "BAĞLAÇ", "contextEn": "Nobody objected SAVE THAT one elder cited tradition quietly."},
+
+    {"id": "c110", "term": "HOWEVER", "meaningTr": "FAKAT, YİNE DE (cümle zarfı)", "grammar": "CÜMLE ZARFI", "contextEn": "Ticket sales lagged all month; HOWEVER , the finale sold out."},
+    {"id": "c111", "term": "STILL", "meaningTr": "FAKAT, YİNE DE", "grammar": "CÜMLE ZARFI", "contextEn": "Warnings flashed nightly; STILL , crews kept welding without pause."},
+
+    {"id": "c120", "term": "IN CONTRAST TO", "meaningTr": "-NIN AKSİNE", "grammar": "EDAT", "contextEn": "Rural inventories shrank IN CONTRAST TO coastal mega-warehouses."},
+    {"id": "c121", "term": "UNLIKE", "meaningTr": "-NIN AKSİNE", "grammar": "EDAT", "contextEn": "UNLIKE rivals, they kept staffed hotlines round the clock."},
+
+    {"id": "c130", "term": "THEREFORE", "meaningTr": "BU YÜZDEN, SONUÇ OLARAK", "grammar": "CÜMLE ZARFI", "contextEn": "Shipments stalled inland; THEREFORE , wholesalers shrank palettes."},
+
+    {"id": "c140", "term": "MOREOVER", "meaningTr": "AYRICA, DAHASI, BUNA EK OLARAK", "grammar": "CÜMLE ZARFI", "contextEn": "Energy dipped; MOREOVER , oxygen sensors stayed oddly stable."},
+
+    {"id": "c150", "term": "BESIDES", "meaningTr": "-NIN YANI SIRA... (bu kullanımda edat grubu)", "grammar": "EDAT", "contextEn": "BESIDES the usual permits, climbers needed tribal consent."},
+
+    {"id": "c160", "term": "MEANWHILE", "meaningTr": "BU ESNADA, BU SÜREDE", "grammar": "CÜMLE ZARFI", "contextEn": "Judges debated upstairs; MEANWHILE clerks rewrote subpoenas hurriedly."},
+
+    {"id": "c170", "term": "FOR EXAMPLE", "meaningTr": "ÖRNEĞİN", "grammar": "CÜMLE ZARFI", "contextEn": "Several codes failed—for example redundant brake sensors froze nightly."},
+
+    {"id": "c180", "term": "BECAUSE OF", "meaningTr": "-DEN DOLAYI", "grammar": "EDAT", "contextEn": "Flights diverted BECAUSE OF crosswinds over the apron."},
+
+    {"id": "c181", "term": "DUE TO", "meaningTr": "-NIN YÜZÜNDEN (-den dolayı anlamında)", "grammar": "EDAT", "contextEn": "Parades stalled DUE TO flash flooding downtown."},
+
+    {"id": "c190", "term": "SO ... THAT **", "meaningTr": "O KADAR ... Kİ (sonuç)", "grammar": "BAĞLAÇ", "contextEn": "The hall grew SO tense THAT moderators halted questions early."},
+
+    {"id": "c191", "term": "OTHERWISE", "meaningTr": "AKSİ TAKDİRDE", "grammar": "CÜMLE ZARFI", "contextEn": "Submit IDs by dusk; OTHERWISE , security rejects every badge."},
+
+    {"id": "c200", "term": "SO THAT", "meaningTr": "-MEK İÇİN, -SIN DİYE (amaç)", "grammar": "BAĞLAÇ", "contextEn": "Curators toned lights SO THAT pigments would not fade prematurely."},
+
+    {"id": "c210", "term": "AFTER", "meaningTr": "-DEN SONRA (-dıktan sonra)", "grammar": "BAĞLAÇ / EDAT", "contextEn": "They sealed the rink AFTER hoses finally stopped leaking backstage."},
+
+    {"id": "c211", "term": "BEFORE", "meaningTr": "-MEDEN ÖNCE / -DEN ÖNCE", "grammar": "BAĞLAÇ / EDAT / CÜMLE ZARFI", "contextEn": "Save checkpoints BEFORE migrating any shared databases overnight."},
+
+    {"id": "c220", "term": "AS IF", "meaningTr": "-MİŞ GİBİ", "grammar": "BAĞLAÇ", "contextEn": "He paced AS IF the verdict already hung in smoky air overhead."},
+
+    {"id": "c230", "term": "GIVEN THAT", "meaningTr": "-MESİ DİKKATE ALINIRSA", "grammar": "BAĞLAÇ", "contextEn": "Budgets froze mid-year GIVEN THAT every department missed targets."},
+
+    {"id": "c240", "term": "FOR", "meaningTr": "ÇÜNKÜ (FANTBOYS)", "grammar": "FANTBOYS", "contextEn": "We trusted the dossier FOR three editors corroborated it silently."},
+
+    {"id": "c241", "term": "AND", "meaningTr": "VE", "grammar": "FANTBOYS", "contextEn": "Reviewers flagged typos AND insisted on sharper data tables."},
+
+    {"id": "c242", "term": "BUT", "meaningTr": "FAKAT", "grammar": "FANTBOYS", "contextEn": "Floors gleamed freshly BUT corners still smelled of mildew thickly."},
+
+    {"id": "c243", "term": "OR", "meaningTr": "VEYA / YOKSA", "grammar": "FANTBOYS", "contextEn": "Deliver overnight pallets OR consolidate them to blunt freight shocks."},
+
+    {"id": "c244", "term": "YET", "meaningTr": "FAKAT", "grammar": "FANTBOYS", "contextEn": "Rover telemetry looked idle YET spectrometers still sampled dust calmly."},
+
+    {"id": "c245", "term": "SO", "meaningTr": "BU YÜZDEN (FANTBOYS)", "grammar": "FANTBOYS", "contextEn": "The highway vanished under foam SO morning drivers crawled blindly."},
+
+    {"id": "c246", "term": "NOR", "meaningTr": "NE DE", "grammar": "FANTBOYS", "contextEn": "He neither signed NOR faxed dissent before the quorum adjourned."},
+
+    {"id": "c247", "term": "THEN", "meaningTr": "SONRA / O ZAMAN", "grammar": "FANTBOYS", "contextEn": "Seal the flange THEN torque every bolt slowly clockwise afterward."},
+
+    {"id": "c250", "term": "*NOT ONLY...BUT (ALSO)...", "meaningTr": "SADECE ... DEĞİL ... AYRICA", "grammar": "PARALEL YAPI", "contextEn": "She won NOT ONLY the sprint BUT ALSO the hurdles days later calmly."},
+
+    {"id": "c260", "term": "*BOTH...AND...", "meaningTr": "HEM ... HEM DE", "grammar": "PARALEL YAPI", "contextEn": "BOTH auditors AND interns flagged discrepancies quietly overnight."},
+
+    {"id": "c270", "term": "*EITHER...OR", "meaningTr": "YA ... YA DA", "grammar": "PARALEL YAPI", "contextEn": "EITHER reschedule panels OR postpone vendor demos until Monday noon."},
+
+    {"id": "c271", "term": "*NEITHER...NOR...", "meaningTr": "NE ... NE DE", "grammar": "PARALEL YAPI", "contextEn": "NEITHER hosts NOR guests breached the blackout agreement publicly."},
+
+    {"id": "c280", "term": "ALTHOUGH", "meaningTr": "-E RAĞMEN (...sa da bağlaç)", "grammar": "BAĞLAÇ", "contextEn": "ALTHOUGH storm bells rang, conductors kept boarding calmly."},
+
+    {"id": "c281", "term": "EVEN THOUGH", "meaningTr": "-E RAĞMEN", "grammar": "BAĞLAÇ", "contextEn": "EVEN THOUGH sirens tightened, scouts kept surveying slowly upward."},
+
+    {"id": "c282", "term": "DESPITE THE FACT THAT", "meaningTr": "-E RAĞMEN (bağlı cümlecik)", "grammar": "BAĞLAÇ", "contextEn": "They flew DESPITE THE FACT THAT every advisory warned turbulence thickly overhead."},
+
+    {"id": "c283", "term": "DESPITE", "meaningTr": "-E RAĞMEN (edat)", "grammar": "EDAT", "contextEn": "Rallies continued DESPITE flood warnings scrolling downtown screens constantly."},
+
+    {"id": "c284", "term": "*NOTWITHSTANDING", "meaningTr": "-E RAĞMEN / YİNE DE", "grammar": "ÇOKLU", "contextEn": "Funds arrived NOTWITHSTANDING prior freezes on escrow accounts oddly."},
+
+    {"id": "c290", "term": "BECAUSE", "meaningTr": "-DIĞI İÇİN / ÇÜNKÜ", "grammar": "BAĞLAÇ", "contextEn": "Briefings stalled BECAUSE interpreters arrived late backstage quietly."},
+
+    {"id": "c291", "term": "*NOW THAT", "meaningTr": "— (madem ki / −dığına göre bağlamına)", "grammar": "BAĞLAÇ", "contextEn": "NOW THAT guidance published openly, auditors circled spreadsheets nervously."}
+  ]
+}

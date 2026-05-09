@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bağlaç & zarf kartları</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --panel: #181c24;
+      --text: #e8eaf0;
+      --muted: #8b929e;
+      --accent: #5b9fd4;
+      --ok: #3ecf8e;
+      --bad: #e06c75;
+      --border: #2a313d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: radial-gradient(1200px 600px at 20% -10%, #1a2230 0%, var(--bg) 55%);
+      color: var(--text);
+      padding: clamp(16px, 3vw, 40px);
+    }
+
+    header {
+      max-width: 640px;
+      margin: 0 auto 28px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      font-size: clamp(1.35rem, 4vw, 1.85rem);
+    }
+
+    .sub {
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.45;
+    }
+
+    .shell {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 22px;
+      margin-bottom: 18px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    button.tab {
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text);
+      padding: 10px 16px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background 0.15s;
+    }
+
+    button.tab[data-on="true"] {
+      background: rgba(91, 159, 212, 0.18);
+      border-color: var(--accent);
+    }
+
+    button {
+      font-family: inherit;
+    }
+
+    button.action {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: none;
+      background: var(--accent);
+      color: #0b1620;
+      font-weight: 600;
+      cursor: pointer;
+      margin-bottom: 8px;
+    }
+
+    button.action:disabled {
+      opacity: 0.45;
+      cursor: default;
+    }
+
+    button.secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    #prompt {
+      font-size: clamp(1.05rem, 3vw, 1.35rem);
+      font-weight: 600;
+      line-height: 1.35;
+      margin: 14px 0 16px;
+    }
+
+    #prompt .hilite {
+      color: var(--accent);
+      text-decoration-thickness: 2px;
+    }
+
+    #choices button.opt {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: #12161f;
+      color: var(--text);
+      margin-bottom: 8px;
+      cursor: pointer;
+      font-size: 0.93rem;
+      line-height: 1.38;
+      transition: border-color 0.12s;
+    }
+
+    #choices button.opt:hover:not(:disabled) {
+      border-color: var(--muted);
+    }
+
+    #choices button.opt:disabled {
+      cursor: default;
+      opacity: 0.92;
+    }
+
+    #feedback {
+      margin-top: 12px;
+      font-size: 0.93rem;
+      min-height: 1.35em;
+    }
+
+    #feedback.ok {
+      color: var(--ok);
+    }
+
+    #feedback.bad {
+      color: var(--bad);
+    }
+
+    footer.stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 16px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    footer.stats span strong {
+      color: var(--text);
+      display: block;
+      font-size: 1.05rem;
+    }
+
+    code {
+      font-size: 0.82em;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 1px 5px;
+      border-radius: 4px;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .stat-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 10px 14px;
+      padding: 12px 14px;
+      margin-bottom: 14px;
+      background: #12161f;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .stat-strip div strong {
+      display: block;
+      color: var(--text);
+      font-size: 1.02rem;
+      margin-top: 2px;
+    }
+
+    #unknownPanel {
+      margin-top: 12px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    #unknownPanel summary {
+      cursor: pointer;
+      color: var(--accent);
+      user-select: none;
+    }
+
+    #unknownList {
+      margin-top: 8px;
+      max-height: 140px;
+      overflow: auto;
+      padding: 8px 10px;
+      background: #0d1016;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      font-size: 0.78rem;
+      line-height: 1.45;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .btn-row button.action {
+      flex: 1;
+      min-width: 140px;
+      margin-bottom: 0;
+    }
+
+    .page-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 18px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .page-nav a.nav-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 16px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: #12161f;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: border-color 0.15s, background 0.15s;
+    }
+
+    .page-nav a.nav-btn:hover {
+      border-color: var(--accent);
+      background: #1a2230;
+    }
+
+    .page-nav a.nav-btn.secondary {
+      color: var(--muted);
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="shell">
+    <nav class="page-nav" aria-label="Ana sayfaya dönüş">
+      <a class="nav-btn" href="index.html">← Ana sayfa (kelime kartları)</a>
+      <a class="nav-btn secondary" href="#top">Sayfa başı ↑</a>
+    </nav>
+    <header id="top">
+      <h1>Bağlaç • cümle zarfı • edat kartları</h1>
+      <p class="sub">Veri <code>flashcards-data.json</code> dosyasından okunur. Bilemediklerin tarayıcıda <strong>localStorage</strong> ile saklanır (aynı adresle açtığında kaybolmaz; <code>localhost</code> veya sabit bir dosya yolu önerilir). <code>file://</code> ile açınca fetch engellenebilir; o zaman <code>python -m http.server 8080</code> ile <code>http://localhost:8080/index.html</code> kullan.</p>
+      <p class="sub">İki mod: <strong>Anlam</strong> (Türkçe karşılık) · <strong>Cümle</strong> (boşluk).</p>
+    </header>
+
+    <div class="card" id="loadCard">
+      <strong>Durum</strong>
+      <div id="loadStatus" style="margin-top:10px;font-size:0.92rem;color:var(--muted);">Yükleniyor…</div>
+    </div>
+
+    <div class="card hidden" id="quizCard">
+      <div class="stat-strip" id="statStrip">
+        <div>Destede kart<strong id="statDeck">–</strong></div>
+        <div>Bu oturum soru<strong id="statAnswered">0</strong></div>
+        <div>Doğru<strong id="statOk">0</strong></div>
+        <div>Yanlış<strong id="statBad">0</strong></div>
+        <div>Bilmedim (kayıtlı)<strong id="statStored">0</strong></div>
+        <div>Tekrar sırası<strong id="statSet">0/5</strong></div>
+      </div>
+      <div class="tabs" role="tablist">
+        <button type="button" class="tab" id="tabMeaning" data-on="true" data-mode="meaning">Anlam</button>
+        <button type="button" class="tab" id="tabSentence" data-on="false" data-mode="sentence">Cümle</button>
+      </div>
+      <div id="prompt"></div>
+      <div id="choices"></div>
+      <div class="btn-row">
+        <button type="button" class="action secondary" id="btnDontKnow">Bilmiyorum (kaydet)</button>
+        <button type="button" class="action secondary" id="btnPeek" type="button">Doğru cevabı göster</button>
+      </div>
+      <button type="button" class="action" id="btnNext">Sonraki soru →</button>
+      <div id="feedback"></div>
+      <details id="unknownPanel">
+        <summary>Kayıtlı bilemediklerim (<span id="storedCountInline">0</span>)</summary>
+        <div id="unknownList"></div>
+        <button type="button" class="action secondary" id="btnClearStored" style="margin-top:8px;width:100%;">Kayıtlı listeyi temizle</button>
+      </details>
+    </div>
+
+    <nav class="page-nav" aria-label="Ana sayfaya dönüş" style="margin-top: 8px;">
+      <a class="nav-btn" href="index.html">← Ana sayfaya dön</a>
+      <a class="nav-btn secondary" href="#top">Sayfa başı ↑</a>
+    </nav>
+  </div>
+
+  <script>
+    const REVIEW_EVERY = 5;
+    const CHOICE_COUNT = 4;
+    const LS_UNKNOWN = "conjuctions_unknown_v1";
+
+    let deck = [];
+    let mode = "meaning";
+    let queue = [];
+    let mistakeBank = [];
+    let answeredSinceReview = 0;
+    let totalAnswered = 0;
+    let current = null;
+    let opts = [];
+    let locked = false;
+    let correctOk = 0;
+    let wrongBad = 0;
+
+    const elPrompt = document.getElementById("prompt");
+    const elChoices = document.getElementById("choices");
+    const elFeedback = document.getElementById("feedback");
+    const elNext = document.getElementById("btnNext");
+    const elPeek = document.getElementById("btnPeek");
+    const elDontKnow = document.getElementById("btnDontKnow");
+    const elClearStored = document.getElementById("btnClearStored");
+    const elQuiz = document.getElementById("quizCard");
+    const elLoadStat = document.getElementById("loadStatus");
+    const elUnknownList = document.getElementById("unknownList");
+    const elStoredInline = document.getElementById("storedCountInline");
+
+    function shuffle(a) {
+      const x = a.slice();
+      for (let i = x.length - 1; i > 0; i--) {
+        const j = (Math.random() * (i + 1)) | 0;
+        [x[i], x[j]] = [x[j], x[i]];
+      }
+      return x;
+    }
+
+    function escapeHtml(s) {
+      const d = document.createElement("div");
+      d.textContent = s;
+      return d.innerHTML;
+    }
+
+    function loadUnknownStore() {
+      try {
+        const raw = localStorage.getItem(LS_UNKNOWN);
+        if (!raw) return { version: 1, entries: {} };
+        const o = JSON.parse(raw);
+        if (!o.entries || typeof o.entries !== "object") return { version: 1, entries: {} };
+        return o;
+      } catch (_) {
+        return { version: 1, entries: {} };
+      }
+    }
+
+    function saveUnknownStore(store) {
+      localStorage.setItem(LS_UNKNOWN, JSON.stringify(store));
+    }
+
+    function countStoredUnknown() {
+      return Object.keys(loadUnknownStore().entries).length;
+    }
+
+    function recordUnknown(card, reason) {
+      const store = loadUnknownStore();
+      const id = String(card.id || card.term);
+      const prev = store.entries[id] || {
+        id,
+        term: card.term,
+        meaningTr: card.meaningTr,
+        grammar: card.grammar || "",
+        count: 0,
+        modes: {},
+      };
+      prev.term = card.term;
+      prev.meaningTr = card.meaningTr;
+      prev.grammar = card.grammar || prev.grammar;
+      prev.count = (prev.count || 0) + 1;
+      prev.lastAt = new Date().toISOString();
+      prev.lastReason = reason;
+      prev.modes = prev.modes || {};
+      prev.modes[mode] = (prev.modes[mode] || 0) + 1;
+      store.entries[id] = prev;
+      saveUnknownStore(store);
+      renderUnknownList();
+    }
+
+    function renderUnknownList() {
+      const store = loadUnknownStore();
+      const rows = Object.values(store.entries).sort((a, b) => (b.lastAt || "").localeCompare(a.lastAt || ""));
+      if (elStoredInline) elStoredInline.textContent = String(rows.length);
+      if (!elUnknownList) return;
+      if (!rows.length) {
+        elUnknownList.textContent = "(Henüz kayıt yok)";
+        return;
+      }
+      elUnknownList.textContent = rows
+        .map((r) => "• " + r.term + "\n  → " + (r.meaningTr || "").replace(/\n/g, " ") + "  (" + (r.count || 1) + " kez)")
+        .join("\n\n");
+    }
+
+    async function loadDeckFromJson() {
+      const loadCard = document.getElementById("loadCard");
+      elLoadStat.textContent = "flashcards-data.json yükleniyor…";
+      try {
+        const res = await fetch("flashcards-data.json", { cache: "no-store" });
+        if (!res.ok) throw new Error(res.status + " " + res.statusText);
+        const data = await res.json();
+        const items = Array.isArray(data.items) ? data.items : [];
+        deck = items.filter((x) => x && x.term && x.meaningTr);
+        deck.forEach((d, i) => {
+          if (!d.id) d.id = String(i + 1);
+          if (!d.contextEn) d.contextEn = "";
+        });
+        if (!deck.length) throw new Error("items boş veya geçersiz");
+        elLoadStat.textContent =
+          "flashcards-data.json — " + deck.length + " kart. Kayıtlı bilemediklerim: " + countStoredUnknown() + ".";
+        elLoadStat.style.color = "var(--ok)";
+        renderUnknownList();
+        resetSession();
+        elQuiz.classList.remove("hidden");
+        if (loadCard) loadCard.classList.add("hidden");
+        nextQuestion();
+      } catch (e) {
+        elLoadStat.textContent =
+          "Yüklenemedi: " +
+          (e && e.message ? e.message : e) +
+          " — Aynı klasörde olduğundan emin ol; gerekirse yerel sunucu ile aç (ör. python -m http.server 8080). Kayıtlı bilemediklerim: " +
+          countStoredUnknown() +
+          ".";
+        elLoadStat.style.color = "var(--bad)";
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      renderUnknownList();
+      loadDeckFromJson();
+    });
+
+    function resetSession() {
+      queue = shuffle(deck.map((_, i) => i));
+      mistakeBank = [];
+      answeredSinceReview = 0;
+      totalAnswered = 0;
+      correctOk = wrongBad = 0;
+      stats();
+    }
+
+    document.querySelectorAll(".tab").forEach((tab) =>
+      tab.addEventListener("click", () => {
+        mode = tab.dataset.mode || "meaning";
+        document.querySelectorAll(".tab").forEach((t) => (t.dataset.on = String(t.dataset.mode === mode)));
+        answeredSinceReview = 0;
+        nextQuestion();
+      })
+    );
+
+    elPeek.addEventListener("click", () => {
+      if (!opts.length) return;
+      const ans = opts.find((o) => o.isCorrect);
+      elFeedback.textContent = ans ? "Cevap: " + ans.text : "";
+      elFeedback.className = "";
+    });
+
+    if (elDontKnow)
+      elDontKnow.addEventListener("click", () => {
+      if (locked || !current) return;
+      locked = true;
+      wrongBad++;
+      const mk = current.id || current.term;
+      if (!mistakeBank.includes(mk)) mistakeBank.push(mk);
+      recordUnknown(current, "bilmiyorum");
+      elChoices.querySelectorAll("button.opt").forEach((b, k) => {
+        b.disabled = true;
+        if (opts[k].isCorrect) b.style.borderColor = "#3ecf8e";
+      });
+      const ans = opts.find((o) => o.isCorrect);
+      elFeedback.textContent = "Kaydedildi. Doğru seçenek: " + (ans ? ans.text : "—");
+      elFeedback.className = "bad";
+      elNext.disabled = false;
+      stats();
+    });
+
+    if (elClearStored)
+      elClearStored.addEventListener("click", () => {
+        if (!confirm("Kayıtlı bilemediklerin silinsin mi?")) return;
+        localStorage.removeItem(LS_UNKNOWN);
+        renderUnknownList();
+        stats();
+      });
+
+    function stats() {
+      const d = document.getElementById("statDeck");
+      if (d) d.textContent = deck.length ? String(deck.length) : "–";
+      const a = document.getElementById("statAnswered");
+      if (a) a.textContent = String(totalAnswered);
+      document.getElementById("statOk").textContent = correctOk;
+      document.getElementById("statBad").textContent = wrongBad;
+      const st = document.getElementById("statStored");
+      if (st) st.textContent = String(countStoredUnknown());
+      document.getElementById("statSet").textContent = answeredSinceReview + "/" + REVIEW_EVERY;
+      if (elStoredInline) elStoredInline.textContent = String(countStoredUnknown());
+    }
+
+    function buildMeaningChoices(item) {
+      const correct = item.meaningTr.trim();
+      const pool = shuffle(
+        [...new Set(deck.map((d) => d.meaningTr.trim()).filter((m) => m && m !== correct))]
+      );
+      const wrongPick = [];
+      for (let k = 0; k < pool.length && wrongPick.length < CHOICE_COUNT - 1; k++) wrongPick.push(pool[k]);
+      while (wrongPick.length < CHOICE_COUNT - 1) wrongPick.push("[alternatif kart anlamı]");
+      const merged = shuffle(
+        wrongPick.map((text) => ({ text, isCorrect: false })).concat([{ text: correct, isCorrect: true }])
+      );
+      return merged.slice(0, CHOICE_COUNT);
+    }
+
+    function buildSentenceChoices(item) {
+      const ans = item.term.trim();
+      const pool = shuffle(deck.filter((d) => d.term !== ans).map((d) => d.term));
+      const wrong = pool.slice(0, CHOICE_COUNT - 1);
+      const fill = [...wrong.map((text) => ({ text, isCorrect: false })), { text: ans, isCorrect: true }];
+      return shuffle(fill).slice(0, CHOICE_COUNT);
+    }
+
+    function sentencePreview(item) {
+      const raw = (item.contextEn || "").trim();
+      const hole = "<<<hole>>>";
+      if (raw.includes(hole)) return raw.replace(hole, "______ ");
+      let s = raw;
+      const tt = item.term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/\.\.\./g, "\\.+");
+      try {
+        const re = new RegExp("\\b" + tt.split("\\.+").join("\\.+\\s*") + "\\b", "gi");
+        if (!s) return "(Bu kartta cümle yok)";
+        const m = re.exec(s);
+        if (!m && item.term.includes("...")) return s.replace("...", "______ ");
+        return m ? s.replace(re, "______ ") : s.replace(item.term.split(" ").join(" "), hole).replace(hole, "______ ");
+      } catch (_) {
+        return s + " ______";
+      }
+    }
+
+    function maybeInjectReviewSlot() {
+      if (answeredSinceReview < REVIEW_EVERY || !mistakeBank.length) return;
+      answeredSinceReview = 0;
+      const idxs = shuffle(
+        mistakeBank.map((id) => deck.findIndex((x) => x.id === id)).filter((i) => i >= 0)
+      );
+      if (idxs[0] != null) queue.unshift(idxs[0]);
+    }
+
+    function nextQuestion() {
+      elNext.disabled = true;
+      if (elDontKnow) elDontKnow.disabled = false;
+      locked = false;
+      elFeedback.textContent = "";
+      elFeedback.className = "";
+      if (!deck.length) return;
+
+      maybeInjectReviewSlot();
+
+      let ix = queue.shift();
+      if (ix === undefined || ix < 0) {
+        queue = shuffle(deck.map((_, i) => i));
+        ix = queue.shift();
+      }
+      current = Object.assign({}, deck[ix]);
+      if (mode === "sentence" && !(current.contextEn && String(current.contextEn).trim())) {
+        current.contextEn =
+          "Negotiators kept talking quietly <<<hole>>> midnight approached without signatures on the pact.";
+      }
+
+      if (mode === "meaning") {
+        elPrompt.innerHTML =
+          "<span style='opacity:.82;font-weight:400'>Anlam seç</span><br/><span class='hilite'>" +
+          escapeHtml(current.term) +
+          "</span>";
+        opts = buildMeaningChoices(current);
+      } else {
+        elPrompt.innerHTML =
+          "<span style='opacity:.82;font-weight:400'>Boşluğu seç</span><br/><span style='font-size:1.05rem;display:block;margin-top:10px;line-height:1.4'>" +
+          sentencePreview(current) +
+          "</span>";
+        opts = buildSentenceChoices(current);
+      }
+
+      elChoices.innerHTML = "";
+      opts.forEach((o, i) => {
+        const b = document.createElement("button");
+        b.type = "button";
+        b.className = "opt";
+        if (mode === "meaning") {
+          const pre = document.createElement("span");
+          pre.style.opacity = "0.68";
+          pre.style.marginRight = "6px";
+          pre.textContent = String.fromCharCode(65 + i) + ". ";
+          const tx = document.createElement("span");
+          tx.textContent = o.text;
+          b.appendChild(pre);
+          b.appendChild(tx);
+        } else b.textContent = o.text.length > 80 ? o.text.slice(0, 78) + "…" : o.text;
+        b.addEventListener("click", () => onPick(i));
+        elChoices.appendChild(b);
+      });
+      stats();
+    }
+
+    function onPick(i) {
+      if (locked) return;
+      locked = true;
+      const ch = opts[i];
+      elChoices.querySelectorAll("button.opt").forEach((b, k) => {
+        b.disabled = true;
+        if (opts[k].isCorrect) b.style.borderColor = "#3ecf8e";
+        else if (k === i) b.style.borderColor = ch.isCorrect ? "#3ecf8e" : "#e06c75";
+      });
+      if (ch.isCorrect) {
+        elFeedback.textContent = "Dogru.";
+        elFeedback.className = "ok";
+        correctOk++;
+      } else {
+        elFeedback.textContent = "Yanlış (kayıtlara eklendi).";
+        elFeedback.className = "bad";
+        wrongBad++;
+        const mk = current.id || current.term;
+        if (!mistakeBank.includes(mk)) mistakeBank.push(mk);
+        recordUnknown(current, "yanlis");
+      }
+      elNext.disabled = false;
+      if (elDontKnow) elDontKnow.disabled = true;
+      stats();
+    }
+
+    elNext.addEventListener("click", () => {
+      if (!locked) return;
+      answeredSinceReview++;
+      totalAnswered++;
+      stats();
+      nextQuestion();
+    });
+  </script>
+</body>
+
+</html>

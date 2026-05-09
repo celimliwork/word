@@ -254,52 +254,96 @@
       margin-bottom: 0;
     }
 
-    .page-nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 18px;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .page-nav a.nav-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 16px;
+    .ezber-box {
+      margin: 0 0 14px;
+      padding: 12px 14px;
       border-radius: 10px;
       border: 1px solid var(--border);
-      background: #12161f;
-      color: var(--text);
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 600;
-      transition: border-color 0.15s, background 0.15s;
-    }
-
-    .page-nav a.nav-btn:hover {
-      border-color: var(--accent);
-      background: #1a2230;
-    }
-
-    .page-nav a.nav-btn.secondary {
+      background: #10141c;
+      font-size: 0.82rem;
+      line-height: 1.5;
       color: var(--muted);
-      font-weight: 500;
+    }
+
+    .ezber-box .ezber-tag {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.78rem;
+      letter-spacing: 0.02em;
+    }
+
+    .ezber-box .ezber-body {
+      margin: 0;
+      color: #c5cad6;
+    }
+
+    .usage-panel {
+      margin: 0 0 16px;
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(91, 159, 212, 0.35);
+      background: rgba(91, 159, 212, 0.06);
+    }
+
+    .usage-panel .usage-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .usage-panel .usage-body {
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      color: var(--text);
+      font-style: italic;
+    }
+
+    .usage-panel .usage-body mark {
+      background: rgba(91, 159, 212, 0.35);
+      color: #eaf2ff;
+      font-style: normal;
+      font-weight: 600;
+      padding: 1px 4px;
+      border-radius: 4px;
+    }
+
+    .usage-panel.usage-empty {
+      border-style: dashed;
+      border-color: var(--border);
+      background: transparent;
+    }
+
+    .usage-panel.usage-empty .usage-body {
+      font-style: normal;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .usage-sub {
+      margin-top: 12px;
+    }
+
+    .usage-sub:first-of-type {
+      margin-top: 0;
+    }
+
+    .usage-body-tr {
+      font-style: normal;
+      color: #c5cad6;
+      font-size: 0.92rem;
     }
   </style>
 </head>
 
 <body>
   <div class="shell">
-    <nav class="page-nav" aria-label="Ana sayfaya dönüş">
-      <a class="nav-btn" href="index.html">← Ana sayfa (kelime kartları)</a>
-      <a class="nav-btn secondary" href="#top">Sayfa başı ↑</a>
-    </nav>
-    <header id="top">
-      <h1>Bağlaç • cümle zarfı • edat kartları</h1>
-      <p class="sub">Veri <code>flashcards-data.json</code> dosyasından okunur. Bilemediklerin tarayıcıda <strong>localStorage</strong> ile saklanır (aynı adresle açtığında kaybolmaz; <code>localhost</code> veya sabit bir dosya yolu önerilir). <code>file://</code> ile açınca fetch engellenebilir; o zaman <code>python -m http.server 8080</code> ile <code>http://localhost:8080/index.html</code> kullan.</p>
-      <p class="sub">İki mod: <strong>Anlam</strong> (Türkçe karşılık) · <strong>Cümle</strong> (boşluk).</p>
+    <header>
+     <a href="index.html" style="color: white;"><-- Ana sayfa</a>
     </header>
 
     <div class="card" id="loadCard">
@@ -321,6 +365,17 @@
         <button type="button" class="tab" id="tabSentence" data-on="false" data-mode="sentence">Cümle</button>
       </div>
       <div id="prompt"></div>
+      <div id="ezberNotu" class="ezber-box" hidden></div>
+      <div id="usagePanel" class="usage-panel" hidden>
+        <div id="usageEnWrap" class="usage-sub">
+          <div class="usage-label">İngilizce</div>
+          <p id="usageBody" class="usage-body"></p>
+        </div>
+        <div id="usageTrWrap" class="usage-sub" hidden>
+          <div class="usage-label">Türkçe</div>
+          <p id="usageTrBody" class="usage-body usage-body-tr"></p>
+        </div>
+      </div>
       <div id="choices"></div>
       <div class="btn-row">
         <button type="button" class="action secondary" id="btnDontKnow">Bilmiyorum (kaydet)</button>
@@ -334,11 +389,6 @@
         <button type="button" class="action secondary" id="btnClearStored" style="margin-top:8px;width:100%;">Kayıtlı listeyi temizle</button>
       </details>
     </div>
-
-    <nav class="page-nav" aria-label="Ana sayfaya dönüş" style="margin-top: 8px;">
-      <a class="nav-btn" href="index.html">← Ana sayfaya dön</a>
-      <a class="nav-btn secondary" href="#top">Sayfa başı ↑</a>
-    </nav>
   </div>
 
   <script>
@@ -347,6 +397,7 @@
     const LS_UNKNOWN = "conjuctions_unknown_v1";
 
     let deck = [];
+    let typeGuide = {};
     let mode = "meaning";
     let queue = [];
     let mistakeBank = [];
@@ -369,6 +420,12 @@
     const elLoadStat = document.getElementById("loadStatus");
     const elUnknownList = document.getElementById("unknownList");
     const elStoredInline = document.getElementById("storedCountInline");
+    const elEzber = document.getElementById("ezberNotu");
+    const elUsagePanel = document.getElementById("usagePanel");
+    const elUsageEnWrap = document.getElementById("usageEnWrap");
+    const elUsageBody = document.getElementById("usageBody");
+    const elUsageTrWrap = document.getElementById("usageTrWrap");
+    const elUsageTrBody = document.getElementById("usageTrBody");
 
     function shuffle(a) {
       const x = a.slice();
@@ -383,6 +440,120 @@
       const d = document.createElement("div");
       d.textContent = s;
       return d.innerHTML;
+    }
+
+    function resolveEzberNote(item) {
+      if (!item) return "";
+      if (item.ezberNotu) return String(item.ezberNotu);
+      const g = (item.grammar || "").trim();
+      if (g && typeGuide[g]) return typeGuide[g];
+      return typeGuide.DEFAULT || "";
+    }
+
+    function fillEzberPanel(item) {
+      if (!elEzber) return;
+      const note = resolveEzberNote(item);
+      if (!note) {
+        elEzber.innerHTML = "";
+        return;
+      }
+      elEzber.innerHTML =
+        '<p class="ezber-tag">Tür (tablo) · ' +
+        escapeHtml(item.grammar || "—") +
+        "</p><p class=\"ezber-body\">" +
+        escapeHtml(note) +
+        "</p>";
+    }
+
+    function hideExplanationPanels() {
+      if (elEzber) elEzber.hidden = true;
+      if (elUsagePanel) elUsagePanel.hidden = true;
+    }
+
+    function showExplanationPanels() {
+      if (!current) return;
+      const note = resolveEzberNote(current);
+      if (elEzber) elEzber.hidden = !note;
+
+      const en = buildUsageHtml(current);
+      const tr = buildContextTrHtml(current);
+      const hasPanel = !en.empty || !tr.empty;
+      if (elUsagePanel) {
+        elUsagePanel.hidden = !hasPanel;
+        elUsagePanel.classList.toggle("usage-empty", !hasPanel);
+      }
+      if (elUsageEnWrap) elUsageEnWrap.hidden = en.empty;
+      if (elUsageTrWrap) elUsageTrWrap.hidden = tr.empty;
+    }
+
+    /** Tam örnek cümle: yapı vurgulu */
+    function buildUsageHtml(item) {
+      const raw = (item && item.contextEn ? String(item.contextEn) : "").trim();
+      const term = (item && item.term ? String(item.term) : "").trim();
+      const hole = "<<<hole>>>";
+      if (!raw) return { html: "", empty: true };
+      if (raw.includes(hole)) {
+        const parts = raw.split(hole);
+        const escParts = parts.map((p) => escapeHtml(p));
+        const mid = "<mark>" + escapeHtml(term) + "</mark>";
+        return { html: escParts.join(mid), empty: false };
+      }
+      const tClean = term.replace(/\*\*/g, "").trim();
+      const s = raw;
+      const low = s.toLowerCase();
+      const tl = tClean.toLowerCase();
+      let idx = tl.length ? low.indexOf(tl) : -1;
+      if (idx >= 0) {
+        const before = escapeHtml(s.slice(0, idx));
+        const mid = escapeHtml(s.slice(idx, idx + tClean.length));
+        const after = escapeHtml(s.slice(idx + tClean.length));
+        return { html: before + "<mark>" + mid + "</mark>" + after, empty: false };
+      }
+      const fw = tClean.split(/\s+/).filter(Boolean)[0];
+      if (fw && fw.length > 1) {
+        const re = new RegExp("\\b" + fw.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b", "i");
+        const m = s.match(re);
+        if (m && m.index != null) {
+          const i = m.index;
+          const len = m[0].length;
+          return {
+            html:
+              escapeHtml(s.slice(0, i)) +
+              "<mark>" +
+              escapeHtml(s.slice(i, i + len)) +
+              "</mark>" +
+              escapeHtml(s.slice(i + len)),
+            empty: false,
+          };
+        }
+      }
+      return { html: escapeHtml(s), empty: false };
+    }
+
+    /** Türkçe örnek cümle; <<<hole>>> varsa term ile doldurulur */
+    function buildContextTrHtml(item) {
+      const raw = (item && item.contextTr ? String(item.contextTr) : "").trim();
+      const term = (item && item.term ? String(item.term) : "").trim();
+      const hole = "<<<hole>>>";
+      if (!raw) return { html: "", empty: true };
+      if (raw.includes(hole)) {
+        const parts = raw.split(hole);
+        const escParts = parts.map((p) => escapeHtml(p));
+        const mid = "<mark>" + escapeHtml(term) + "</mark>";
+        return { html: escParts.join(mid), empty: false };
+      }
+      return { html: escapeHtml(raw), empty: false };
+    }
+
+    function fillUsagePanel(item) {
+      if (!elUsagePanel || !elUsageBody) return;
+      const en = buildUsageHtml(item);
+      const tr = buildContextTrHtml(item);
+      elUsageBody.innerHTML = en.empty ? "" : en.html;
+      if (elUsageTrBody) elUsageTrBody.innerHTML = tr.empty ? "" : tr.html;
+      if (elUsageEnWrap) elUsageEnWrap.hidden = en.empty;
+      if (elUsageTrWrap) elUsageTrWrap.hidden = tr.empty;
+      elUsagePanel.classList.remove("usage-empty");
     }
 
     function loadUnknownStore() {
@@ -450,11 +621,13 @@
         const res = await fetch("flashcards-data.json", { cache: "no-store" });
         if (!res.ok) throw new Error(res.status + " " + res.statusText);
         const data = await res.json();
+        typeGuide = data.typeGuide && typeof data.typeGuide === "object" ? data.typeGuide : {};
         const items = Array.isArray(data.items) ? data.items : [];
         deck = items.filter((x) => x && x.term && x.meaningTr);
         deck.forEach((d, i) => {
           if (!d.id) d.id = String(i + 1);
           if (!d.contextEn) d.contextEn = "";
+          if (!d.contextTr) d.contextTr = "";
         });
         if (!deck.length) throw new Error("items boş veya geçersiz");
         elLoadStat.textContent =
@@ -523,6 +696,7 @@
       elFeedback.className = "bad";
       elNext.disabled = false;
       stats();
+      showExplanationPanels();
     });
 
     if (elClearStored)
@@ -629,6 +803,10 @@
         opts = buildSentenceChoices(current);
       }
 
+      fillEzberPanel(current);
+      fillUsagePanel(current);
+      hideExplanationPanels();
+
       elChoices.innerHTML = "";
       opts.forEach((o, i) => {
         const b = document.createElement("button");
@@ -674,6 +852,7 @@
       elNext.disabled = false;
       if (elDontKnow) elDontKnow.disabled = true;
       stats();
+      showExplanationPanels();
     }
 
     elNext.addEventListener("click", () => {

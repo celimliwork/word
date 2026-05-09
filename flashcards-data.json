@@ -27,7 +27,8 @@
       "meaningTr": "-DEN HARİÇ / -DEN BAŞKA",
       "grammar": "EDAT",
       "contextEn": "All students passed except for one.",
-      "contextTr": "Bir kişi hariç tüm öğrenciler geçti."
+      "contextTr": "Bir kişi hariç tüm öğrenciler geçti.",
+      "hintTr": "EX (dışarı) + CEPT (almak) → dışarı alınanlar = HARİÇ tutulanlar. 'Except for one' → tek kişiyi dışarı aldım."
     },
     {
       "id": "p1-03",
@@ -35,7 +36,8 @@
       "meaningTr": "-DEN HARİÇ / -DEN BAŞKA  ●  -NIN YANI SIRA (ekleme)",
       "grammar": "EDAT",
       "contextEn": "Apart from a small error, the report was accurate. / Apart from chemistry, she studies biology.",
-      "contextTr": "Küçük bir hata dışında rapor doğruydu. / Kimyanın yanı sıra biyoloji de okuyor."
+      "contextTr": "Küçük bir hata dışında rapor doğruydu. / Kimyanın yanı sıra biyoloji de okuyor.",
+      "hintTr": "APART = ayrı. 'Bir şeyden APART durmak' → ondan HARİÇ/BAŞKA durmak. Ekleme anlamında: 'yanında ayrıca durmak' → YANI SIRA."
     },
     {
       "id": "p1-04",
@@ -43,7 +45,8 @@
       "meaningTr": "-DEN HARİÇ / -DEN BAŞKA",
       "grammar": "EDAT",
       "contextEn": "Every door was locked saving the main entrance.",
-      "contextTr": "Ana giriş hariç tüm kapılar kilitliydi."
+      "contextTr": "Ana giriş hariç tüm kapılar kilitliydi.",
+      "hintTr": "SAVING = kurtarmak/saklamak. 'Hepsini kapattım, sadece şunu SAVE ettim' → o şey HARİÇ demek."
     },
     {
       "id": "p1-02",
@@ -51,7 +54,8 @@
       "meaningTr": "-DEN HARİÇ / -DEN BAŞKA",
       "grammar": "EDAT",
       "contextEn": "No one but the manager had access to the file.",
-      "contextTr": "Dosyaya yalnızca yöneticinin erişimi vardı."
+      "contextTr": "Dosyaya yalnızca yöneticinin erişimi vardı.",
+      "hintTr": "BUT normalde FAKAT demek. Ama 'no one BUT me' → benden BAŞKA kimse yok. Tek kişiyi bırakıp gerisini dışarıda bırak."
     },
     {
       "id": "p1-05",
@@ -59,7 +63,8 @@
       "meaningTr": "-NIN ARACILIĞIYLA",
       "grammar": "EDAT",
       "contextEn": "She improved her score by practising every day.",
-      "contextTr": "Her gün pratik yaparak puanını yükseltti."
+      "contextTr": "Her gün pratik yaparak puanını yükseltti.",
+      "hintTr": "BY = yanında, aracılığıyla. BY + Ving = o yolla. 'By walking' → yürüyerek."
     },
     {
       "id": "p1-10",
@@ -67,7 +72,8 @@
       "meaningTr": "-E BAKILMAKSIZIN",
       "grammar": "EDAT",
       "contextEn": "All candidates were treated equally, irrespective of age.",
-      "contextTr": "Tüm adaylar yaşa bakılmaksızın eşit muamele gördü."
+      "contextTr": "Tüm adaylar yaşa bakılmaksızın eşit muamele gördü.",
+      "hintTr": "IR (olumsuz) + RESPECT (saygı/dikkat) → dikkate almaksızın. Saygısız değil, 'dikkate almayan'."
     },
     {
       "id": "p1-06",
@@ -75,7 +81,8 @@
       "meaningTr": "-NIN ARACILIĞIYLA",
       "grammar": "EDAT",
       "contextEn": "The message was sent via email.",
-      "contextTr": "Mesaj e-posta aracılığıyla gönderildi."
+      "contextTr": "Mesaj e-posta aracılığıyla gönderildi.",
+      "hintTr": "VIA = yol üzerinden. Roma'nın 'Via Appia' yolu gibi. Bir şeyden geçerek, ARACILIĞIYLA."
     },
     {
       "id": "p1-07",
@@ -83,7 +90,8 @@
       "meaningTr": "-NIN ARACILIĞIYLA",
       "grammar": "EDAT",
       "contextEn": "He found the job through a friend.",
-      "contextTr": "İşi bir arkadaşı aracılığıyla buldu."
+      "contextTr": "İşi bir arkadaşı aracılığıyla buldu.",
+      "hintTr": "THROUGH = içinden geçerek. Tünelden through gidince öte yana çıkarsın → bir şeyin ARACILIĞIYLA."
     },
     {
       "id": "p1-11",
@@ -91,7 +99,8 @@
       "meaningTr": "-E BAKILMAKSIZIN",
       "grammar": "EDAT",
       "contextEn": "The rule applies to everyone regardless of rank.",
-      "contextTr": "Kural rütbeye bakılmaksızın herkese uygulanır."
+      "contextTr": "Kural rütbeye bakılmaksızın herkese uygulanır.",
+      "hintTr": "RE-GUARD-LESS → korumaya (guard) bakmaksızın. Hiçbir engele bakmadan → -E BAKILMAKSIZIN."
     },
     {
       "id": "p1-08",
@@ -99,7 +108,8 @@
       "meaningTr": "-NIN ARACILIĞIYLA",
       "grammar": "EDAT",
       "contextEn": "Water was removed by means of a pump.",
-      "contextTr": "Su bir pompa aracılığıyla boşaltıldı."
+      "contextTr": "Su bir pompa aracılığıyla boşaltıldı.",
+      "hintTr": "BY MEANS OF: 'means' = araç/yol. Çözüme ulaşmanın aracı → ARACILIĞIYLA."
     },
     {
       "id": "p1-09",
@@ -107,7 +117,8 @@
       "meaningTr": "-NIN ARACILIĞIYLA",
       "grammar": "EDAT",
       "contextEn": "She finished early with the help of her classmates.",
-      "contextTr": "Sınıf arkadaşlarının yardımıyla erken bitirdi."
+      "contextTr": "Sınıf arkadaşlarının yardımıyla erken bitirdi.",
+      "hintTr": "WITH THE HELP OF: tam anlamıyla 'yardımıyla'. En görsel: iki el birleşiyor."
     },
     {
       "id": "p1-12",
@@ -115,7 +126,8 @@
       "meaningTr": "-DEN ZİYADE / -NIN YERİNE",
       "grammar": "EDAT",
       "contextEn": "He chose to walk rather than take the bus.",
-      "contextTr": "Otobüse binmek yerine yürümeyi tercih etti."
+      "contextTr": "Otobüse binmek yerine yürümeyi tercih etti.",
+      "hintTr": "Terazi düşün: sol kefede A, sağda B → RATHER THAN B, A seçiyorum. -DEN ZİYADE."
     },
     {
       "id": "p1-15",
@@ -123,7 +135,8 @@
       "meaningTr": "-NIN YERİNE",
       "grammar": "EDAT",
       "contextEn": "She drank tea instead of coffee.",
-      "contextTr": "Kahve yerine çay içti."
+      "contextTr": "Kahve yerine çay içti.",
+      "hintTr": "IN STEAD OF → birisinin yerine geçmek (stead = yer). Vekil gibi: B'nin YERİNE A geçti."
     },
     {
       "id": "p1-13",
@@ -131,7 +144,8 @@
       "meaningTr": "YERİNE / BUNUN YERİNE",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The plan failed; instead, they tried a different approach.",
-      "contextTr": "Plan tutmadı; bunun yerine farklı bir yol denediler."
+      "contextTr": "Plan tutmadı; bunun yerine farklı bir yol denediler.",
+      "hintTr": "INSTEAD (edatsız) = cümle zarfı. Noktalı virgül + INSTEAD, virgül + yeni cümle gelir."
     },
     {
       "id": "p1-14",
@@ -139,7 +153,8 @@
       "meaningTr": "BİLAKİS / DAHA DOĞRUSU",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The result was not surprising; rather, it confirmed our prediction.",
-      "contextTr": "Sonuç şaşırtıcı değildi; bilakis tahminimizi doğruladı."
+      "contextTr": "Sonuç şaşırtıcı değildi; bilakis tahminimizi doğruladı.",
+      "hintTr": "RATHER (edatsız) = 'daha doğrusu'. Önceki cümledeki fikri düzeltiyor → BİLAKİS."
     },
     {
       "id": "p2-01",
@@ -147,7 +162,8 @@
       "meaningTr": "ÖZELLİKLE",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The exam was hard; in particular, the reading section was long.",
-      "contextTr": "Sınav zordu; özellikle okuma bölümü uzundu."
+      "contextTr": "Sınav zordu; özellikle okuma bölümü uzundu.",
+      "hintTr": "IN PARTICULAR: Bir grup içinden birini öne çıkarıyorsun → ÖZELLİKLE bu."
     },
     {
       "id": "p2-10",
@@ -155,7 +171,8 @@
       "meaningTr": "YANİ / DİĞER BİR DEYİŞLE",
       "grammar": "AÇIKLAMA ZARFI",
       "contextEn": "He is a minor; that is, he is under eighteen.",
-      "contextTr": "Reşit değil; yani on sekiz yaşın altında."
+      "contextTr": "Reşit değil; yani on sekiz yaşın altında.",
+      "hintTr": "THAT IS = 'yani'. Türkçede 'YANİ'nin tam karşılığı. Önceki cümleyi yeniden söylüyorsun."
     },
     {
       "id": "p2-02",
@@ -163,7 +180,8 @@
       "meaningTr": "ÖZELLİKLE",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The winters are cold here, particularly in January.",
-      "contextTr": "Kışlar burada soğuktur, özellikle ocak ayında."
+      "contextTr": "Kışlar burada soğuktur, özellikle ocak ayında.",
+      "hintTr": "PARTICULARLY: 'particle' gibi → tek bir parçacığı seçiyorsun. ÖZELLİKLE o parçacık."
     },
     {
       "id": "p2-11",
@@ -171,7 +189,8 @@
       "meaningTr": "YANİ / DİĞER BİR DEYİŞLE",
       "grammar": "AÇIKLAMA ZARFI",
       "contextEn": "Two cities were selected, namely Ankara and İzmir.",
-      "contextTr": "İki şehir seçildi: Ankara ve İzmir."
+      "contextTr": "İki şehir seçildi: Ankara ve İzmir.",
+      "hintTr": "NAMELY = name + ly → isim vererek açıklamak. 'İki kişi, namely: Ali ve Veli.'"
     },
     {
       "id": "p2-03",
@@ -179,7 +198,8 @@
       "meaningTr": "ÖZELLİKLE",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "Drink water regularly, especially in summer.",
-      "contextTr": "Düzenli su iç, özellikle yazın."
+      "contextTr": "Düzenli su iç, özellikle yazın.",
+      "hintTr": "ESPECIALLY: 'special'dan → özel olan şeye dikkat çekiyor. ÖZELLİKLE = en özel olan."
     },
     {
       "id": "p2-12",
@@ -187,7 +207,8 @@
       "meaningTr": "YANİ / DİĞER BİR DEYİŞLE",
       "grammar": "AÇIKLAMA ZARFI",
       "contextEn": "The project is over budget; in other words, we need more funding.",
-      "contextTr": "Proje bütçeyi aştı; diğer bir deyişle daha fazla fona ihtiyacımız var."
+      "contextTr": "Proje bütçeyi aştı; diğer bir deyişle daha fazla fona ihtiyacımız var.",
+      "hintTr": "IN OTHER WORDS: Aynı şeyi başka kelimelerle söylüyorsun → DİĞER BİR DEYİŞLE."
     },
     {
       "id": "p2-04",
@@ -195,7 +216,8 @@
       "meaningTr": "ÖZELLİKLE / DİKKAT ÇEKİCİ BİÇİMDE",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "Sales dropped in all regions; notably, the east saw the biggest fall.",
-      "contextTr": "Tüm bölgelerde satışlar düştü; özellikle doğuda en büyük düşüş yaşandı."
+      "contextTr": "Tüm bölgelerde satışlar düştü; özellikle doğuda en büyük düşüş yaşandı.",
+      "hintTr": "NOTABLY: 'note' = not almak. Not alınmaya değer → ÖZELLİKLE dikkat çeken."
     },
     {
       "id": "p2-05",
@@ -203,7 +225,8 @@
       "meaningTr": "ÖZELLİKLE / ÖZGÜL OLARAK",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "We need one document, specifically your birth certificate.",
-      "contextTr": "Bir belgeye ihtiyacımız var, özellikle nüfus cüzdanınıza."
+      "contextTr": "Bir belgeye ihtiyacımız var, özellikle nüfus cüzdanınıza.",
+      "hintTr": "SPECIFICALLY: 'specific' = belirli. O belirli şeyi işaret ediyorsun → ÖZELLİKLE o."
     },
     {
       "id": "p2-20",
@@ -211,7 +234,8 @@
       "meaningTr": "AYNI ŞEKİLDE / BENZER BİÇİMDE",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "He apologised; likewise, she admitted her mistake.",
-      "contextTr": "O özür diledi; aynı şekilde o da hatasını kabul etti."
+      "contextTr": "O özür diledi; aynı şekilde o da hatasını kabul etti.",
+      "hintTr": "LIKEWISE = 'like' (benzer) + 'wise' (şekilde) → aynı şekilde. AYNI ŞEKİLDE."
     },
     {
       "id": "p2-30",
@@ -219,7 +243,8 @@
       "meaningTr": "ASLINDA / HATTA",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The task seemed easy; in fact, it took three days.",
-      "contextTr": "Görev kolay görünüyordu; aslında üç gün sürdü."
+      "contextTr": "Görev kolay görünüyordu; aslında üç gün sürdü.",
+      "hintTr": "IN FACT: Görünen ile gerçeği karşılaştırıyorsun. 'Öyle sanıyordum ama IN FACT...' → ASLINDA."
     },
     {
       "id": "p2-21",
@@ -227,7 +252,8 @@
       "meaningTr": "AYNI ŞEKİLDE / BENZER BİÇİMDE",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "Group A improved; similarly, group B showed progress.",
-      "contextTr": "A grubu ilerledi; benzer şekilde B grubu da gelişme gösterdi."
+      "contextTr": "A grubu ilerledi; benzer şekilde B grubu da gelişme gösterdi.",
+      "hintTr": "SIMILARLY: 'similar' = benzer. Birincisiyle benzer bir şey söylüyorsun → AYNI ŞEKİLDE."
     },
     {
       "id": "p2-31",
@@ -235,7 +261,8 @@
       "meaningTr": "ASLINDA / GERÇEKTEN DE / HATTA",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The book was long; indeed, it had over eight hundred pages.",
-      "contextTr": "Kitap uzundu; gerçekten de sekiz yüzden fazla sayfası vardı."
+      "contextTr": "Kitap uzundu; gerçekten de sekiz yüzden fazla sayfası vardı.",
+      "hintTr": "INDEED = 'in deed' → eylemde/gerçekte. Vurgulayarak onaylıyorsun. 'Gerçekten de öyle!'"
     },
     {
       "id": "p2-32",
@@ -243,7 +270,8 @@
       "meaningTr": "ASLINDA / GERÇEKTE",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "He looked calm; actually, he was very nervous.",
-      "contextTr": "Sakin görünüyordu; aslında çok gergindi."
+      "contextTr": "Sakin görünüyordu; aslında çok gergindi.",
+      "hintTr": "ACTUALLY: 'actual' = gerçek, fiili. Göründüğü gibi değil → ASLINDA böyle."
     },
     {
       "id": "p2-33",
@@ -251,7 +279,8 @@
       "meaningTr": "ASLINDA / GERÇEKTE",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The claim was doubted; as a matter of fact, it was correct.",
-      "contextTr": "İddiaya şüpheyle bakıldı; aslında doğruydu."
+      "contextTr": "İddiaya şüpheyle bakıldı; aslında doğruydu.",
+      "hintTr": "AS A MATTER OF FACT = 'bir gerçek meselesi olarak'. Çok resmi 'aslında'. Gerçeği masaya koyuyor."
     },
     {
       "id": "p2-34",
@@ -259,7 +288,8 @@
       "meaningTr": "DOLAYISIYLA / BU SIFATLA",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "He is not a doctor as such; he only gives general advice.",
-      "contextTr": "Tam anlamıyla doktor değil; dolayısıyla yalnızca genel tavsiye veriyor."
+      "contextTr": "Tam anlamıyla doktor değil; dolayısıyla yalnızca genel tavsiye veriyor.",
+      "hintTr": "AS SUCH = 'bu sıfatla olarak'. Tam o kategoriye girmez → DOLAYISIYLA farklı muamele."
     },
     {
       "id": "p2-40",
@@ -267,7 +297,8 @@
       "meaningTr": "AKSİNE / BİLAKİS",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "He was not lazy; on the contrary, he worked harder than anyone.",
-      "contextTr": "Tembel değildi; aksine herkesten çok çalıştı."
+      "contextTr": "Tembel değildi; aksine herkesten çok çalıştı.",
+      "hintTr": "ON THE CONTRARY = 'zıttında'. Birinin iddiasını 180 derece çeviriyorsun → AKSİNE."
     },
     {
       "id": "p2-50",
@@ -275,7 +306,8 @@
       "meaningTr": "-E GELİNCE",
       "grammar": "EDAT",
       "contextEn": "I passed the exam; as for my brother, he will retake it.",
-      "contextTr": "Ben sınavı geçtim; kardeşime gelince, o yeniden girecek."
+      "contextTr": "Ben sınavı geçtim; kardeşime gelince, o yeniden girecek.",
+      "hintTr": "AS FOR: Konuyu değiştirip birine/bir şeye yöneliyorsun → -E GELİNCE."
     },
     {
       "id": "p2-51",
@@ -283,7 +315,8 @@
       "meaningTr": "-E GELİNCE",
       "grammar": "EDAT",
       "contextEn": "She is talented; when it comes to maths, she is exceptional.",
-      "contextTr": "Yetenekli; matematiğe gelince ise olağanüstü."
+      "contextTr": "Yetenekli; matematiğe gelince ise olağanüstü.",
+      "hintTr": "WHEN IT COMES TO: Tam o konuya döndüğünde ne oluyor → -E GELİNCE."
     },
     {
       "id": "p2-52",
@@ -291,7 +324,8 @@
       "meaningTr": "-E GELİNCE / -E İLİŞKİN",
       "grammar": "EDAT",
       "contextEn": "With regard to the deadline, no extension will be granted.",
-      "contextTr": "Son tarihe gelince, uzatma yapılmayacak."
+      "contextTr": "Son tarihe gelince, uzatma yapılmayacak.",
+      "hintTr": "WITH REGARD TO: REGARD = bakış. O konuya bakarak → -E İLİŞKİN."
     },
     {
       "id": "p2-53",
@@ -299,7 +333,8 @@
       "meaningTr": "-E GELİNCE / -E İLİŞKİN",
       "grammar": "EDAT",
       "contextEn": "With respect to cost, the second option is cheaper.",
-      "contextTr": "Maliyete gelince ikinci seçenek daha ucuz."
+      "contextTr": "Maliyete gelince ikinci seçenek daha ucuz.",
+      "hintTr": "WITH RESPECT TO: RESPECT = saygı. Konuya saygıyla yaklaşarak → -E İLİŞKİN."
     },
     {
       "id": "p2-54",
@@ -307,7 +342,8 @@
       "meaningTr": "-E GELİNCE / -SÖKÜZ KONUSU OLDUĞUNDA",
       "grammar": "EDAT",
       "contextEn": "In the case of children, the dosage must be reduced.",
-      "contextTr": "Çocuklar söz konusu olduğunda doz azaltılmalıdır."
+      "contextTr": "Çocuklar söz konusu olduğunda doz azaltılmalıdır.",
+      "hintTr": "IN THE CASE OF: Hukuk gibi, 'bu dava söz konusu olduğunda' → -SÖKÜZ KONUSU OLDUĞUNDA."
     },
     {
       "id": "p2-60",
@@ -315,7 +351,8 @@
       "meaningTr": "İLE İLGİLİ / HAKKINDA",
       "grammar": "EDAT",
       "contextEn": "We need to talk about the schedule.",
-      "contextTr": "Program hakkında konuşmamız gerekiyor."
+      "contextTr": "Program hakkında konuşmamız gerekiyor.",
+      "hintTr": "ABOUT = 'etrafında'. Bir şeyin etrafında dönüyorsun → o şeyle İLGİLİ."
     },
     {
       "id": "p2-61",
@@ -323,7 +360,8 @@
       "meaningTr": "İLE İLGİLİ / HAKKINDA",
       "grammar": "EDAT",
       "contextEn": "There is no clear answer as to when the results will arrive.",
-      "contextTr": "Sonuçların ne zaman geleceğine dair net bir yanıt yok."
+      "contextTr": "Sonuçların ne zaman geleceğine dair net bir yanıt yok.",
+      "hintTr": "AS TO: AS FOR'un daha kısa ve soru cümlelerine yakın hali → -E İLİŞKİN."
     },
     {
       "id": "p2-62",
@@ -331,7 +369,8 @@
       "meaningTr": "İLE İLGİLİ / HAKKINDA",
       "grammar": "EDAT",
       "contextEn": "A letter was sent concerning the missing payment.",
-      "contextTr": "Eksik ödemeyle ilgili bir mektup gönderildi."
+      "contextTr": "Eksik ödemeyle ilgili bir mektup gönderildi.",
+      "hintTr": "CONCERNING: 'concern' = endişe. O konuyu concern ediyor → İLGİLİ."
     },
     {
       "id": "p2-63",
@@ -339,7 +378,8 @@
       "meaningTr": "İLE İLGİLİ / HAKKINDA",
       "grammar": "EDAT",
       "contextEn": "Regarding your question, the answer is yes.",
-      "contextTr": "Sorunuzla ilgili cevap evet."
+      "contextTr": "Sorunuzla ilgili cevap evet.",
+      "hintTr": "REGARDING: 're-guard' → tekrar bakan. O konuya tekrar bakıyorsun → İLGİLİ."
     },
     {
       "id": "p2-64",
@@ -347,7 +387,8 @@
       "meaningTr": "İLE İLGİLİ / -E GELİNCE",
       "grammar": "EDAT",
       "contextEn": "As regards the fee, it remains unchanged this year.",
-      "contextTr": "Ücret konusunda bu yıl değişiklik yok."
+      "contextTr": "Ücret konusunda bu yıl değişiklik yok.",
+      "hintTr": "AS REGARDS: 'baktığı kadarıyla'. REGARD = bakış. O konuya baktığında → İLGİLİ."
     },
     {
       "id": "p2-65",
@@ -355,7 +396,8 @@
       "meaningTr": "İLE İLGİLİ / -E DAİR",
       "grammar": "EDAT",
       "contextEn": "New rules pertaining to data storage were announced.",
-      "contextTr": "Veri depolamayla ilgili yeni kurallar açıklandı."
+      "contextTr": "Veri depolamayla ilgili yeni kurallar açıklandı.",
+      "hintTr": "PERTAINING TO: 'pertain' = ait olmak. O konuya ait olan şeyler → DAİR."
     },
     {
       "id": "p2-70",
@@ -363,7 +405,8 @@
       "meaningTr": "KISACA / ÖZET OLARAK",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "In summary, the project was completed on time and within budget.",
-      "contextTr": "Özetle proje zamanında ve bütçe dahilinde tamamlandı."
+      "contextTr": "Özetle proje zamanında ve bütçe dahilinde tamamlandı.",
+      "hintTr": "IN SUMMARY: Summary = özet. Özetin içine giriyorsun → KISACA."
     },
     {
       "id": "p2-71",
@@ -371,7 +414,8 @@
       "meaningTr": "KISACA / ÖZET OLARAK",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "In brief, the new system is faster and more reliable.",
-      "contextTr": "Kısaca yeni sistem daha hızlı ve güvenilir."
+      "contextTr": "Kısaca yeni sistem daha hızlı ve güvenilir.",
+      "hintTr": "IN BRIEF: Brief = kısa/özlü. Avukat brifingi gibi → KISACA."
     },
     {
       "id": "p2-72",
@@ -379,7 +423,8 @@
       "meaningTr": "KISACA / ÖZET OLARAK",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "In short, we need more time to prepare.",
-      "contextTr": "Kısaca hazırlanmak için daha fazla zamana ihtiyacımız var."
+      "contextTr": "Kısaca hazırlanmak için daha fazla zamana ihtiyacımız var.",
+      "hintTr": "IN SHORT: Short = kısa. En sade hali → KISACA."
     },
     {
       "id": "p2-73",
@@ -387,7 +432,8 @@
       "meaningTr": "SONUÇ OLARAK / ÖZET OLARAK",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "In conclusion, the evidence supports the proposed theory.",
-      "contextTr": "Sonuç olarak kanıtlar önerilen teoriyi destekliyor."
+      "contextTr": "Sonuç olarak kanıtlar önerilen teoriyi destekliyor.",
+      "hintTr": "IN CONCLUSION: Conclusion = kapanış. Sonuç bölümüne giriyorsun → SONUÇ OLARAK."
     },
     {
       "id": "p2-74",
@@ -395,7 +441,8 @@
       "meaningTr": "KISACA / TOPARLAMAK GEREKİRSE",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "To sum up, both methods have advantages and drawbacks.",
-      "contextTr": "Toparlarsak her iki yöntemin de avantajları ve dezavantajları var."
+      "contextTr": "Toparlarsak her iki yöntemin de avantajları ve dezavantajları var.",
+      "hintTr": "TO SUM UP: Matematik gibi, hepsini toplayıp tek rakam → TOPARLARSAK."
     },
     {
       "id": "p2-75",
@@ -403,7 +450,8 @@
       "meaningTr": "KISACA / TOPARLAMAK GEREKİRSE",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "To wrap up, the main findings will be shared next week.",
-      "contextTr": "Özetlemek gerekirse temel bulgular önümüzdeki hafta paylaşılacak."
+      "contextTr": "Özetlemek gerekirse temel bulgular önümüzdeki hafta paylaşılacak.",
+      "hintTr": "TO WRAP UP: Hediyeyi ambalajlamak gibi. Fikri de ambalajlıyorsun → ÖZETLERSEk."
     },
     {
       "id": "p2-76",
@@ -411,7 +459,8 @@
       "meaningTr": "GENEL OLARAK / HER ŞEY GÖZ ÖNÜNE ALINDIĞINDA",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "All in all, it was a successful conference.",
-      "contextTr": "Genel olarak başarılı bir konferanstı."
+      "contextTr": "Genel olarak başarılı bir konferanstı.",
+      "hintTr": "ALL IN ALL: Her şeyi bir torbaya koyup tartıyorsun → GENEL OLARAK."
     },
     {
       "id": "p2-80",
@@ -419,7 +468,8 @@
       "meaningTr": "-DEN HARİÇ / -OLMAKLA BİRLİKTE (bağlaç)",
       "grammar": "BAĞLAÇ",
       "contextEn": "The plan was good except that the budget was too low.",
-      "contextTr": "Bütçe çok düşük olmakla birlikte plan iyiydi."
+      "contextTr": "Bütçe çok düşük olmakla birlikte plan iyiydi.",
+      "hintTr": "EXCEPT THAT: EXCEPT + THAT (ki) → bağlaç. Arkasından tam cümle. 'İyi, yalnız ki...'"
     },
     {
       "id": "p2-81",
@@ -427,7 +477,8 @@
       "meaningTr": "-DEN HARİÇ (bağlaç)",
       "grammar": "BAĞLAÇ",
       "contextEn": "The report was complete save that one table was missing.",
-      "contextTr": "Bir tablo eksik olmak dışında rapor eksiksizdi."
+      "contextTr": "Bir tablo eksik olmak dışında rapor eksiksizdi.",
+      "hintTr": "SAVE THAT: SAVING'in bağlaç hali. 'Kurtarılan tek şey şu ki...' → şu dışında her şey tamam."
     },
     {
       "id": "p3-01",
@@ -435,7 +486,8 @@
       "meaningTr": "FAKAT / YİNE DE / BUNUNLA BİRLİKTE",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The price was high; however, the quality was worth it.",
-      "contextTr": "Fiyat yüksekti; ancak kalitesi buna değdi."
+      "contextTr": "Fiyat yüksekti; ancak kalitesi buna değdi.",
+      "hintTr": "HOWEVER = 'how-ever' → nasıl olursa olsun. Cümle zarfı olarak: FAKAT/YİNE DE. Noktalı virgülden sonra gelir."
     },
     {
       "id": "p3-02",
@@ -443,7 +495,8 @@
       "meaningTr": "YİNE DE / BUNA RAĞMEN",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The road was closed; still, some drivers tried to pass.",
-      "contextTr": "Yol kapalıydı; yine de bazı sürücüler geçmeye çalıştı."
+      "contextTr": "Yol kapalıydı; yine de bazı sürücüler geçmeye çalıştı.",
+      "hintTr": "STILL = hareketsiz/sabit. Her şeye rağmen yerinden kımıldamıyor → YİNE DE."
     },
     {
       "id": "p3-10",
@@ -451,7 +504,8 @@
       "meaningTr": "AKSİNE / BUNUN KARŞISINDA",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "Exercise raises energy; conversely, inactivity leads to fatigue.",
-      "contextTr": "Egzersiz enerjiyi artırır; aksine hareketsizlik yorgunluğa yol açar."
+      "contextTr": "Egzersiz enerjiyi artırır; aksine hareketsizlik yorgunluğa yol açar.",
+      "hintTr": "CONVERSELY: 'converse' = ters çevirmek. Ayakkabıların tersini giymek gibi → AKSİNE."
     },
     {
       "id": "p3-03",
@@ -459,7 +513,8 @@
       "meaningTr": "YİNE DE / BUNA RAĞMEN",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "It was raining heavily; even so, the match continued.",
-      "contextTr": "Yoğun yağmur yağıyordu; yine de maç devam etti."
+      "contextTr": "Yoğun yağmur yağıyordu; yine de maç devam etti.",
+      "hintTr": "EVEN SO = 'öyle bile olsa'. Even = bile. Öyle olsa bile → YİNE DE."
     },
     {
       "id": "p3-11",
@@ -467,7 +522,8 @@
       "meaningTr": "ÖTE YANDAN / DİĞER YANDAN",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "Living in a city is convenient; on the other hand, it is expensive.",
-      "contextTr": "Şehirde yaşamak pratik; öte yandan pahalı."
+      "contextTr": "Şehirde yaşamak pratik; öte yandan pahalı.",
+      "hintTr": "ON THE OTHER HAND: İki elin iki tarafı gibi → ÖTE YANDAN."
     },
     {
       "id": "p3-04",
@@ -475,7 +531,8 @@
       "meaningTr": "YİNE DE / BUNA KARŞIN",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The evidence was limited; nonetheless, the committee reached a decision.",
-      "contextTr": "Kanıt sınırlıydı; yine de komite bir karara vardı."
+      "contextTr": "Kanıt sınırlıydı; yine de komite bir karara vardı.",
+      "hintTr": "NONETHELESS = 'none-the-less' → hiç de daha az değil. Engele rağmen azalmıyor → YİNE DE."
     },
     {
       "id": "p3-12",
@@ -483,7 +540,8 @@
       "meaningTr": "AKSİNE / BUNA KARŞILIK",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "Boys preferred outdoor games; in contrast, girls chose reading.",
-      "contextTr": "Erkekler açık hava oyunlarını tercih etti; buna karşılık kızlar okumayı seçti."
+      "contextTr": "Erkekler açık hava oyunlarını tercih etti; buna karşılık kızlar okumayı seçti.",
+      "hintTr": "IN CONTRAST: Fotoğrafta kontrast gibi. İki farklı şeyi yan yana koyuyorsun → BUNA KARŞILIK."
     },
     {
       "id": "p3-05",
@@ -491,7 +549,8 @@
       "meaningTr": "YİNE DE / BUNA KARŞIN",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The problem was serious; nevertheless, a solution was found.",
-      "contextTr": "Sorun ciddiydi; yine de bir çözüm bulundu."
+      "contextTr": "Sorun ciddiydi; yine de bir çözüm bulundu.",
+      "hintTr": "NEVERTHELESS = 'never-the-less' → hiçbir zaman daha az. Ne olursa olsun azalmıyor → YİNE DE."
     },
     {
       "id": "p3-13",
@@ -499,7 +558,8 @@
       "meaningTr": "AKSİNE / BUNA KARŞILIK",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The first year was difficult; by contrast, the second was much easier.",
-      "contextTr": "Birinci yıl zordu; buna karşılık ikinci yıl çok daha kolaydı."
+      "contextTr": "Birinci yıl zordu; buna karşılık ikinci yıl çok daha kolaydı.",
+      "hintTr": "BY CONTRAST: Fotoğrafçı kontrast ayarı gibi → karşılaştırarak AKSİNE."
     },
     {
       "id": "p3-06",
@@ -507,7 +567,8 @@
       "meaningTr": "YİNE DE / BUNA RAĞMEN",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The news was bad; all the same, they remained optimistic.",
-      "contextTr": "Haber kötüydü; yine de iyimserliklerini korudular."
+      "contextTr": "Haber kötüydü; yine de iyimserliklerini korudular.",
+      "hintTr": "ALL THE SAME = 'hepsi aynı'. Her şeye rağmen sonuç değişmiyor → YİNE DE aynı."
     },
     {
       "id": "p3-20",
@@ -515,7 +576,8 @@
       "meaningTr": "-NIN AKSİNE / -NIN KARŞISINDA",
       "grammar": "EDAT",
       "contextEn": "In contrast to last year, sales rose sharply this quarter.",
-      "contextTr": "Geçen yılın aksine bu çeyrekte satışlar keskin yükseldi."
+      "contextTr": "Geçen yılın aksine bu çeyrekte satışlar keskin yükseldi.",
+      "hintTr": "IN CONTRAST TO: edat hali → TO + isim öbeği. 'Ona zıt olarak' → -NIN AKSİNE."
     },
     {
       "id": "p3-21",
@@ -523,7 +585,8 @@
       "meaningTr": "-NIN AKSİNE / -NIN KARŞISINDA",
       "grammar": "EDAT",
       "contextEn": "In contrast with her sister, she prefers quiet environments.",
-      "contextTr": "Kız kardeşinin aksine sessiz ortamları tercih ediyor."
+      "contextTr": "Kız kardeşinin aksine sessiz ortamları tercih ediyor.",
+      "hintTr": "IN CONTRAST WITH: WITH + isim öbeği. 'Onunla zıtlaştırarak' → -NIN AKSİNE."
     },
     {
       "id": "p3-22",
@@ -531,7 +594,8 @@
       "meaningTr": "-NIN AKSİNE / -DEN FARKLI OLARAK",
       "grammar": "EDAT",
       "contextEn": "Unlike his brother, he enjoys reading.",
-      "contextTr": "Kardeşinin aksine okumaktan hoşlanıyor."
+      "contextTr": "Kardeşinin aksine okumaktan hoşlanıyor.",
+      "hintTr": "UNLIKE = UN (olumsuz) + LIKE (benzer). Benzemiyor → -NIN AKSİNE."
     },
     {
       "id": "p3-23",
@@ -539,7 +603,8 @@
       "meaningTr": "-NIN AKSİNE / -E KARŞIN",
       "grammar": "EDAT",
       "contextEn": "Contrary to expectations, the team won the match.",
-      "contextTr": "Beklentilerin aksine takım maçı kazandı."
+      "contextTr": "Beklentilerin aksine takım maçı kazandı.",
+      "hintTr": "CONTRARY TO: Contrary = karşıt, TO = yönelme. Karşıt yönde → -NIN AKSİNE."
     },
     {
       "id": "p3-30",
@@ -547,7 +612,8 @@
       "meaningTr": "BU NEDENLE / DOLAYISIYLA",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "She missed the bus; therefore, she was late for class.",
-      "contextTr": "Otobüsü kaçırdı; bu nedenle derse geç kaldı."
+      "contextTr": "Otobüsü kaçırdı; bu nedenle derse geç kaldı.",
+      "hintTr": "THEREFORE = 'there-fore' → 'o sebep için'. There = o yer, fore = önce/için → BU NEDENLE."
     },
     {
       "id": "p3-31",
@@ -555,7 +621,8 @@
       "meaningTr": "BÖYLECE / BU NEDENLE",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The bridge was damaged; thus, the road was closed.",
-      "contextTr": "Köprü hasar gördü; böylece yol kapatıldı."
+      "contextTr": "Köprü hasar gördü; böylece yol kapatıldı.",
+      "hintTr": "THUS = Latince 'bu şekilde'. Çok kısa, çok formal. Bilimsel metinlerde BÖYLECE."
     },
     {
       "id": "p3-32",
@@ -563,7 +630,8 @@
       "meaningTr": "DOLAYISIYLA / BU NEDENLE",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The data were incomplete; hence, no conclusion was drawn.",
-      "contextTr": "Veriler eksikti; dolayısıyla hiçbir sonuç çıkarılmadı."
+      "contextTr": "Veriler eksikti; dolayısıyla hiçbir sonuç çıkarılmadı.",
+      "hintTr": "HENCE = 'buradan çıkan sonuç'. 'Hence the name!' = İşte bu yüzden bu isim! → DOLAYISIYLA."
     },
     {
       "id": "p3-33",
@@ -571,7 +639,8 @@
       "meaningTr": "BUNA GÖRE / BUNA UYGUN OLARAK",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The rules changed; accordingly, the timetable was updated.",
-      "contextTr": "Kurallar değişti; buna göre ders programı güncellendi."
+      "contextTr": "Kurallar değişti; buna göre ders programı güncellendi.",
+      "hintTr": "ACCORDINGLY: 'accord' = uyum/anlaşma. Anlaşmaya uygun hareket → BUNA GÖRE."
     },
     {
       "id": "p3-34",
@@ -579,7 +648,8 @@
       "meaningTr": "SONUÇ OLARAK / BU NEDENLE",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "He skipped many lessons; consequently, he failed the exam.",
-      "contextTr": "Pek çok dersi atlattı; sonuç olarak sınavda başarısız oldu."
+      "contextTr": "Pek çok dersi atlattı; sonuç olarak sınavda başarısız oldu.",
+      "hintTr": "CONSEQUENTLY: 'con-sequence' → ardından gelen. Domino taşı gibi → SONUÇ OLARAK."
     },
     {
       "id": "p3-35",
@@ -587,7 +657,8 @@
       "meaningTr": "SONUÇ OLARAK / BU NEDENLE",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The river flooded; as a consequence, hundreds of homes were damaged.",
-      "contextTr": "Nehir taştı; sonuç olarak yüzlerce ev hasar gördü."
+      "contextTr": "Nehir taştı; sonuç olarak yüzlerce ev hasar gördü.",
+      "hintTr": "AS A CONSEQUENCE: CONSEQUENTLY'nin edat hali. Aynı anlam, başka yapı → SONUÇ OLARAK."
     },
     {
       "id": "p3-36",
@@ -595,7 +666,8 @@
       "meaningTr": "SONUÇ OLARAK / BU NEDENLE",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The factory closed; as a result, many workers lost their jobs.",
-      "contextTr": "Fabrika kapandı; sonuç olarak pek çok işçi işini kaybetti."
+      "contextTr": "Fabrika kapandı; sonuç olarak pek çok işçi işini kaybetti.",
+      "hintTr": "AS A RESULT: Denklemin sağ tarafı. Result = sonuç → SONUÇ OLARAK."
     },
     {
       "id": "p3-37",
@@ -603,7 +675,8 @@
       "meaningTr": "BÖYLECE / BU YOLLA",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "She cut expenses, thereby saving enough money for university.",
-      "contextTr": "Giderlerini kıstı; böylece üniversite için yeterli para biriktirdi."
+      "contextTr": "Giderlerini kıstı; böylece üniversite için yeterli para biriktirdi.",
+      "hintTr": "THEREBY = 'there-by' → o yolla. Genelde Ving ile gelir: 'thereby reducing...' → BÖYLECE."
     },
     {
       "id": "p3-40",
@@ -611,7 +684,8 @@
       "meaningTr": "AYRICA / BUNA EK OLARAK",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The hotel is affordable; also, it is close to the city centre.",
-      "contextTr": "Otel uygun fiyatlı; ayrıca şehir merkezine yakın."
+      "contextTr": "Otel uygun fiyatlı; ayrıca şehir merkezine yakın.",
+      "hintTr": "ALSO: 'Bunu da al' gibi. → AYRICA bunu da ekle. En kısa ekleme zarfı."
     },
     {
       "id": "p3-41",
@@ -619,7 +693,8 @@
       "meaningTr": "ÜSTELIK / BUNUN YANINDA (cümle zarfı)  ●  -NIN YANI SIRA (edat)",
       "grammar": "CÜMLE ZARFI / EDAT",
       "contextEn": "The task was boring; besides, it took too long. / Besides sport, he enjoys music.",
-      "contextTr": "Görev sıkıcıydı; üstelik çok uzun sürdü. / Sporun yanı sıra müzikten de hoşlanıyor."
+      "contextTr": "Görev sıkıcıydı; üstelik çok uzun sürdü. / Sporun yanı sıra müzikten de hoşlanıyor.",
+      "hintTr": "BESIDES: BE + SIDES = iki yanı var. Zarfsa 'üstelik'; edatsa isim öbeği alır 'yanı sıra'."
     },
     {
       "id": "p3-42",
@@ -627,7 +702,8 @@
       "meaningTr": "DAHASI / AYRICA",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The report was unclear; further, key figures were missing.",
-      "contextTr": "Rapor belirsizdi; dahası temel rakamlar eksikti."
+      "contextTr": "Rapor belirsizdi; dahası temel rakamlar eksikti.",
+      "hintTr": "FURTHER = 'daha ileri'. Daha ileri gidiyorsun → dahası/ayrıca daha fazla bilgi ekliyorsun."
     },
     {
       "id": "p3-43",
@@ -635,7 +711,8 @@
       "meaningTr": "ÜSTELIK / DAHASI",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The flat is small; moreover, it has no parking space.",
-      "contextTr": "Daire küçük; üstelik park yeri yok."
+      "contextTr": "Daire küçük; üstelik park yeri yok.",
+      "hintTr": "MOREOVER = 'more-over' → daha fazlası üstünde. Zaten fazla, üstüne bir de → ÜSTELIK."
     },
     {
       "id": "p3-44",
@@ -643,7 +720,8 @@
       "meaningTr": "AYRICA / DAHASI",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The candidate is experienced; furthermore, she speaks three languages.",
-      "contextTr": "Aday deneyimli; ayrıca üç dil konuşuyor."
+      "contextTr": "Aday deneyimli; ayrıca üç dil konuşuyor.",
+      "hintTr": "FURTHERMORE = FURTHER + MORE. İki kez 'daha ileri ve daha fazla' → AYRICA."
     },
     {
       "id": "p3-45",
@@ -651,7 +729,8 @@
       "meaningTr": "BUNA EK OLARAK / AYRICA",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The course is free; in addition, students receive a certificate.",
-      "contextTr": "Kurs ücretsiz; buna ek olarak öğrenciler sertifika alıyor."
+      "contextTr": "Kurs ücretsiz; buna ek olarak öğrenciler sertifika alıyor.",
+      "hintTr": "IN ADDITION: Addition = matematik toplamı. '+' işareti gibi ekleme → BUNA EK OLARAK."
     },
     {
       "id": "p3-46",
@@ -659,7 +738,8 @@
       "meaningTr": "DAHASI / ÜSTELIK",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "The phone is cheap; what is more, the battery lasts two days.",
-      "contextTr": "Telefon ucuz; dahası pil iki gün gidiyor."
+      "contextTr": "Telefon ucuz; dahası pil iki gün gidiyor.",
+      "hintTr": "WHAT'S MORE: 'Daha fazlası ne?' → daha da var! Eklemesi bitmiyor → DAHASI."
     },
     {
       "id": "p3-51",
@@ -667,7 +747,8 @@
       "meaningTr": "-NIN YANI SIRA / -E EK OLARAK",
       "grammar": "EDAT",
       "contextEn": "In addition to English, she speaks French.",
-      "contextTr": "İngilizcenin yanı sıra Fransızca da konuşuyor."
+      "contextTr": "İngilizcenin yanı sıra Fransızca da konuşuyor.",
+      "hintTr": "IN ADDITION TO: IN ADDITION'ın edat hali. TO + isim öbeği → -E EK OLARAK."
     },
     {
       "id": "p3-53",
@@ -675,7 +756,8 @@
       "meaningTr": "-NIN YANI SIRA / -E EK OLARAK",
       "grammar": "EDAT",
       "contextEn": "She teaches maths as well as physics.",
-      "contextTr": "Matematiğin yanı sıra fizik de öğretiyor."
+      "contextTr": "Matematiğin yanı sıra fizik de öğretiyor.",
+      "hintTr": "AS WELL AS: 'A as well as B' → A da, B de iyi. İkisi birlikte → -NIN YANI SIRA."
     },
     {
       "id": "p3-54",
@@ -683,7 +765,8 @@
       "meaningTr": "-NIN YANI SIRA / -DEN BAŞKA",
       "grammar": "EDAT",
       "contextEn": "Aside from a headache, she felt fine.",
-      "contextTr": "Baş ağrısı dışında kendini iyi hissediyordu."
+      "contextTr": "Baş ağrısı dışında kendini iyi hissediyordu.",
+      "hintTr": "ASIDE FROM: Bir şeyi kenara koyup devam → DIŞINDA / YANI SIRA."
     },
     {
       "id": "p3-55",
@@ -691,7 +774,8 @@
       "meaningTr": "-NIN YANI SIRA / -LE BİRLİKTE",
       "grammar": "EDAT",
       "contextEn": "Along with her degree, she completed an internship.",
-      "contextTr": "Diplomasının yanı sıra staj da tamamladı."
+      "contextTr": "Diplomasının yanı sıra staj da tamamladı.",
+      "hintTr": "ALONG WITH: Nehir boyunca birlikte yürümek gibi → YANI SIRA."
     },
     {
       "id": "p3-56",
@@ -699,7 +783,8 @@
       "meaningTr": "-NIN YANI SIRA / -LE BİRLİKTE",
       "grammar": "EDAT",
       "contextEn": "Together with her colleagues, she prepared the report.",
-      "contextTr": "Meslektaşlarıyla birlikte raporu hazırladı."
+      "contextTr": "Meslektaşlarıyla birlikte raporu hazırladı.",
+      "hintTr": "TOGETHER WITH: En görsel ipucu: iki kişi el ele → -LE BİRLİKTE."
     },
     {
       "id": "p3-57",
@@ -707,7 +792,8 @@
       "meaningTr": "-NIN YANI SIRA / -LE BİRLİKTE",
       "grammar": "EDAT",
       "contextEn": "Alongside her studies, she works part-time.",
-      "contextTr": "Öğreniminin yanı sıra yarı zamanlı çalışıyor."
+      "contextTr": "Öğreniminin yanı sıra yarı zamanlı çalışıyor.",
+      "hintTr": "ALONGSIDE: Şerit şerit yol gibi, yan yana → YANINDA / YANI SIRA."
     },
     {
       "id": "p3-58",
@@ -715,7 +801,8 @@
       "meaningTr": "-LE BİRLEŞİNCE / -NIN YANI SIRA",
       "grammar": "EDAT",
       "contextEn": "Coupled with lack of sleep, stress caused her to fall ill.",
-      "contextTr": "Uyku eksikliğiyle birleşince stres hastalanmasına neden oldu."
+      "contextTr": "Uyku eksikliğiyle birleşince stres hastalanmasına neden oldu.",
+      "hintTr": "COUPLED WITH: Tren vagonu bağlantısı gibi. İki şey birbirine kenetlenince → BİRLEŞİNCE."
     },
     {
       "id": "p3-60",
@@ -723,7 +810,8 @@
       "meaningTr": "İLK BAŞTA / BAŞLANGITA",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "At first she was nervous; later she relaxed.",
-      "contextTr": "İlk başta gergin; sonradan rahatlattı."
+      "contextTr": "İlk başta gergin; sonradan rahatlattı.",
+      "hintTr": "AT FIRST: Sıranın başında → İLK BAŞTA. Arkasından değişme gelir."
     },
     {
       "id": "p3-61",
@@ -731,7 +819,8 @@
       "meaningTr": "BAŞLANGITA / İLK OLARAK",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "Initially the plan seemed impossible; afterwards it worked.",
-      "contextTr": "Başlangıçta plan imkânsız görünüyordu; sonra işe yaradı."
+      "contextTr": "Başlangıçta plan imkânsız görünüyordu; sonra işe yaradı.",
+      "hintTr": "INITIALLY: 'initial' = baş harf. Belgenin başındaki imza gibi → BAŞLANGITA."
     },
     {
       "id": "p3-62",
@@ -739,7 +828,8 @@
       "meaningTr": "SONRA / DAHA SONRA",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "We had lunch; afterwards, we visited the museum.",
-      "contextTr": "Öğle yemeği yedik; sonra müzeyi gezdik."
+      "contextTr": "Öğle yemeği yedik; sonra müzeyi gezdik.",
+      "hintTr": "AFTERWARDS: After = sonra + wards = yön. İleriye doğru → DAHA SONRA."
     },
     {
       "id": "p3-63",
@@ -747,7 +837,8 @@
       "meaningTr": "BU ARADA / O SÜREDE",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "Dinner was cooking; in the meantime, she set the table.",
-      "contextTr": "Yemek pişiyordu; bu arada masayı kurdu."
+      "contextTr": "Yemek pişiyordu; bu arada masayı kurdu.",
+      "hintTr": "IN THE MEANTIME: Mean = orta. İki olay arasındaki orta zamanda → BU ARADA."
     },
     {
       "id": "p3-64",
@@ -755,7 +846,8 @@
       "meaningTr": "BU ARADA / O SÜREDE",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "He was studying; meanwhile, his sister was watching TV.",
-      "contextTr": "Ders çalışıyordu; bu arada kız kardeşi TV izliyordu."
+      "contextTr": "Ders çalışıyordu; bu arada kız kardeşi TV izliyordu.",
+      "hintTr": "MEANWHILE = 'mean-while' → aynı anda orta noktada. Paralel iki olay → BU ARADA."
     },
     {
       "id": "p3-70",
@@ -763,7 +855,8 @@
       "meaningTr": "ÖRNEĞİN / ÖRNEK VERMEK GEREKİRSE",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "Some fruits are rich in vitamin C; for instance, oranges and kiwi.",
-      "contextTr": "Bazı meyveler C vitamini bakımından zengindir; örneğin portakal ve kivi."
+      "contextTr": "Bazı meyveler C vitamini bakımından zengindir; örneğin portakal ve kivi.",
+      "hintTr": "FOR INSTANCE: Instance = örnek/durum. Bir durumu örnek gösteriyorsun → ÖRNEĞİN."
     },
     {
       "id": "p3-71",
@@ -771,7 +864,8 @@
       "meaningTr": "ÖRNEĞİN",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "Many animals migrate in winter; for example, swallows fly south.",
-      "contextTr": "Pek çok hayvan kışın göç eder; örneğin kırlangıçlar güneye uçar."
+      "contextTr": "Pek çok hayvan kışın göç eder; örneğin kırlangıçlar güneye uçar.",
+      "hintTr": "FOR EXAMPLE: Example = örnek. En bilinen hali → ÖRNEĞİN."
     },
     {
       "id": "p3-72",
@@ -779,7 +873,8 @@
       "meaningTr": "ÖRNEĞİN / AÇIKLAMAK GEREKİRSE",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "Habits are hard to break; to illustrate, consider how long it takes to stop smoking.",
-      "contextTr": "Alışkanlıkları kırmak zordur; açıklamak gerekirse sigarayı bırakmanın ne kadar sürdüğünü düşünün."
+      "contextTr": "Alışkanlıkları kırmak zordur; açıklamak gerekirse sigarayı bırakmanın ne kadar sürdüğünü düşünün.",
+      "hintTr": "TO ILLUSTRATE: İllüstrasyon çizmek gibi. Kafanda görsel oluşturuyorsun → AÇIKLAMAK GEREKİRSE."
     },
     {
       "id": "p4-01",
@@ -787,7 +882,8 @@
       "meaningTr": "-DEN DOLAYI / -YÜZÜnden",
       "grammar": "EDAT",
       "contextEn": "The match was cancelled because of heavy rain.",
-      "contextTr": "Maç şiddetli yağmur nedeniyle iptal edildi."
+      "contextTr": "Maç şiddetli yağmur nedeniyle iptal edildi.",
+      "hintTr": "BECAUSE OF: BECAUSE'un edat hali. OF + isim öbeği. Neden isim öbeğiyle → -DEN DOLAYI."
     },
     {
       "id": "p4-02",
@@ -795,7 +891,8 @@
       "meaningTr": "-NIN YÜZÜNDEN / -NEDENIYLE",
       "grammar": "EDAT",
       "contextEn": "The flight was delayed due to fog.",
-      "contextTr": "Uçuş sis nedeniyle gecikti."
+      "contextTr": "Uçuş sis nedeniyle gecikti.",
+      "hintTr": "DUE TO: Due = borçlu. Bu sonuç o sebebe borçlu → -NIN YÜZÜNDEN."
     },
     {
       "id": "p4-03",
@@ -803,7 +900,8 @@
       "meaningTr": "-NEDENİYLE / -YÜZÜNDEN",
       "grammar": "EDAT",
       "contextEn": "The road was closed owing to an accident.",
-      "contextTr": "Yol bir kaza nedeniyle kapatıldı."
+      "contextTr": "Yol bir kaza nedeniyle kapatıldı.",
+      "hintTr": "OWING TO: OWE = borçlu olmak. Sonuç, nedene borçlu → -NEDENİYLE."
     },
     {
       "id": "p4-04",
@@ -811,7 +909,8 @@
       "meaningTr": "-NEDENIYLE / -YÜZÜNDEN",
       "grammar": "EDAT",
       "contextEn": "School was cancelled on account of the snowstorm.",
-      "contextTr": "Kar fırtınası nedeniyle okul tatil edildi."
+      "contextTr": "Kar fırtınası nedeniyle okul tatil edildi.",
+      "hintTr": "ON ACCOUNT OF: Banka hesabına yaz. O hesap yüzünden → -NEDENİYLE."
     },
     {
       "id": "p4-05",
@@ -819,7 +918,8 @@
       "meaningTr": "-GÖZ ÖNÜNE ALINARAK / -DİKKATE ALINARAK",
       "grammar": "EDAT",
       "contextEn": "In view of the poor results, the strategy was revised.",
-      "contextTr": "Zayıf sonuçlar göz önüne alınarak strateji revize edildi."
+      "contextTr": "Zayıf sonuçlar göz önüne alınarak strateji revize edildi.",
+      "hintTr": "IN VIEW OF: VIEW = manzara/görüş. O veriye bakınca → GÖZ ÖNÜNE ALINARAK."
     },
     {
       "id": "p4-06",
@@ -827,7 +927,8 @@
       "meaningTr": "-NIN SAYESİNDE",
       "grammar": "EDAT",
       "contextEn": "Thanks to his hard work, he won a scholarship.",
-      "contextTr": "Sıkı çalışması sayesinde burs kazandı."
+      "contextTr": "Sıkı çalışması sayesinde burs kazandı.",
+      "hintTr": "THANKS TO: Teşekkür ettiğin şey sana yardım etti → SAYESİNDE."
     },
     {
       "id": "p4-07",
@@ -835,7 +936,8 @@
       "meaningTr": "-NIN SONUCU OLARAK / -NEDENİYLE",
       "grammar": "EDAT",
       "contextEn": "As a result of the storm, power was cut for hours.",
-      "contextTr": "Fırtınanın sonucu olarak saatlerce elektrik kesildi."
+      "contextTr": "Fırtınanın sonucu olarak saatlerce elektrik kesildi.",
+      "hintTr": "AS A RESULT OF: AS A RESULT'un edat hali. OF + isim öbeği → -NIN SONUCU OLARAK."
     },
     {
       "id": "p4-08",
@@ -843,7 +945,8 @@
       "meaningTr": "-NIN SONUCU OLARAK",
       "grammar": "EDAT",
       "contextEn": "As a consequence of the error, the whole file was lost.",
-      "contextTr": "Hatanın sonucu olarak tüm dosya kayboldu."
+      "contextTr": "Hatanın sonucu olarak tüm dosya kayboldu.",
+      "hintTr": "AS A CONSEQUENCE OF: Daha resmi sebep-sonuç. OF + isim öbeği → -NIN SONUCU OLARAK."
     },
     {
       "id": "p4-10",
@@ -851,7 +954,8 @@
       "meaningTr": "O KADAR ... Kİ",
       "grammar": "BAĞLAÇ",
       "contextEn": "The film was so long that some viewers fell asleep.",
-      "contextTr": "Film o kadar uzundu ki bazı seyirciler uyuyakaldı."
+      "contextTr": "Film o kadar uzundu ki bazı seyirciler uyuyakaldı.",
+      "hintTr": "SO...THAT: SO = çok, THAT = ki. Sıfat/zarf arada: SO tired THAT... → O KADAR...Kİ."
     },
     {
       "id": "p4-11",
@@ -859,7 +963,8 @@
       "meaningTr": "O KADAR ... Kİ (isim öbeğiyle)",
       "grammar": "BAĞLAÇ",
       "contextEn": "It was such a hot day that we stayed indoors.",
-      "contextTr": "O kadar sıcak bir gündü ki içeride kaldık."
+      "contextTr": "O kadar sıcak bir gündü ki içeride kaldık.",
+      "hintTr": "SUCH...THAT: İsim öbeği arada. SUCH a nice day THAT... → O KADAR güzel bir gün Kİ."
     },
     {
       "id": "p4-12",
@@ -867,7 +972,8 @@
       "meaningTr": "BU YÜZDEN (FANTBOYS koordinasyon)",
       "grammar": "FANTBOYS",
       "contextEn": "The shop was closed, so we went to another one.",
-      "contextTr": "Dükkan kapalıydı, bu yüzden başka birine gittik."
+      "contextTr": "Dükkan kapalıydı, bu yüzden başka birine gittik.",
+      "hintTr": ", SO (THAT): Virgül + SO + ana cümle. FANBOYS koordinasyon → BU YÜZDEN."
     },
     {
       "id": "p4-13",
@@ -875,7 +981,8 @@
       "meaningTr": "AKSİ TAKDİRDE / YOKSA",
       "grammar": "CÜMLE ZARFI",
       "contextEn": "Leave early; otherwise, you will miss the train.",
-      "contextTr": "Erken çık; aksi takdirde treni kaçırırsın."
+      "contextTr": "Erken çık; aksi takdirde treni kaçırırsın.",
+      "hintTr": "OTHERWISE = 'other-wise' → başka türlü. Şart bozulursa → AKSİ TAKDİRDE."
     },
     {
       "id": "p4-20",
@@ -883,7 +990,8 @@
       "meaningTr": "-MEK İÇİN / -SİN DİYE (amaç)",
       "grammar": "BAĞLAÇ",
       "contextEn": "She studied hard so that she could pass the exam.",
-      "contextTr": "Sınavı geçebilmek için çok çalıştı."
+      "contextTr": "Sınavı geçebilmek için çok çalıştı.",
+      "hintTr": "SO THAT = amaç. SO THAT + can/could/would. 'Yapabilsin diye' → -MEK İÇİN."
     },
     {
       "id": "p4-21",
@@ -891,7 +999,8 @@
       "meaningTr": "-MEK İÇİN / -SİN DİYE",
       "grammar": "BAĞLAÇ",
       "contextEn": "We arrived early in order that we could find good seats.",
-      "contextTr": "İyi yer bulabilmek için erken geldik."
+      "contextTr": "İyi yer bulabilmek için erken geldik.",
+      "hintTr": "IN ORDER THAT: SO THAT'ın resmi hali. IN ORDER = amaca göre → -MEK İÇİN."
     },
     {
       "id": "p4-22",
@@ -899,7 +1008,8 @@
       "meaningTr": "-MESİN DİYE / KORKUSUYLA",
       "grammar": "BAĞLAÇ",
       "contextEn": "She whispered for fear that she might wake the baby.",
-      "contextTr": "Bebeği uyandıracak diye fısıldadı."
+      "contextTr": "Bebeği uyandıracak diye fısıldadı.",
+      "hintTr": "FOR FEAR THAT: 'Korku için ki'. Korkudan yapıyorsun ya da yapmıyorsun → -MESİN DİYE."
     },
     {
       "id": "p4-23",
@@ -907,7 +1017,8 @@
       "meaningTr": "-MESİN DİYE",
       "grammar": "BAĞLAÇ",
       "contextEn": "He wrote it down lest he forget.",
-      "contextTr": "Unutmasın diye not etti."
+      "contextTr": "Unutmasın diye not etti.",
+      "hintTr": "LEST = eski İngilizce 'les the' → daha az olsun diye. En kısa '-mesin diye'. Formal/edebi."
     },
     {
       "id": "p4-30",
@@ -915,7 +1026,8 @@
       "meaningTr": "-DEN SONRA",
       "grammar": "BAĞLAÇ / EDAT",
       "contextEn": "She called her mother after she arrived home. / He rested after the exam.",
-      "contextTr": "Eve gelince annesini aradı. / Sınavdan sonra dinlendi."
+      "contextTr": "Eve gelince annesini aradı. / Sınavdan sonra dinlendi.",
+      "hintTr": "AFTER = 'sonra'. Bağlaç: after + SVO. Edat: after + NP. İkisi de aynı anlam."
     },
     {
       "id": "p4-31",
@@ -923,7 +1035,8 @@
       "meaningTr": "-MEDEN ÖNCE",
       "grammar": "BAĞLAÇ / EDAT / CÜMLE ZARFI",
       "contextEn": "Think carefully before you answer. / He had never travelled abroad before.",
-      "contextTr": "Cevaplamadan önce dikkatlice düşün. / Daha önce hiç yurt dışına çıkmamıştı."
+      "contextTr": "Cevaplamadan önce dikkatlice düşün. / Daha önce hiç yurt dışına çıkmamıştı.",
+      "hintTr": "BEFORE = 'önce'. Üç görevde de aynı anlam. Bağlaç / edat / yalnız."
     },
     {
       "id": "p4-32",
@@ -931,7 +1044,8 @@
       "meaningTr": "-R -RMAZ / HEMEN ...-INCE",
       "grammar": "BAĞLAÇ",
       "contextEn": "As soon as the lesson ended, the students left.",
-      "contextTr": "Ders biter bitmez öğrenciler çıktı."
+      "contextTr": "Ders biter bitmez öğrenciler çıktı.",
+      "hintTr": "AS SOON AS: AS...AS arasına SOON sıkıştırılmış → ne kadar hızlı? HEMEN. -R -RMAZ."
     },
     {
       "id": "p4-33",
@@ -939,7 +1053,8 @@
       "meaningTr": "-R -RMAZ / HEMEN ...-INCE",
       "grammar": "BAĞLAÇ",
       "contextEn": "The moment she entered the room, everyone stood up.",
-      "contextTr": "Odaya girer girmez herkes ayağa kalktı."
+      "contextTr": "Odaya girer girmez herkes ayağa kalktı.",
+      "hintTr": "THE MOMENT = 'tam o an'. Saat gibi tam o saniyede → anında. 'The moment I saw her...'"
     },
     {
       "id": "p4-34",
@@ -947,7 +1062,8 @@
       "meaningTr": "-DIĞINDA / -INCE",
       "grammar": "BAĞLAÇ",
       "contextEn": "When the alarm rings, wake up immediately.",
-      "contextTr": "Alarm çaldığında hemen uyan."
+      "contextTr": "Alarm çaldığında hemen uyan.",
+      "hintTr": "WHEN = '-diğinde'. Saat gibi: tam o zamanda. En temel zaman bağlacı."
     },
     {
       "id": "p4-35",
@@ -955,7 +1071,8 @@
       "meaningTr": "-İKEN (zaman)  ●  -E RAĞMEN / OYSAKİ (zıtlık)",
       "grammar": "BAĞLAÇ",
       "contextEn": "While she was cooking, he was reading. / While he earns a lot, he never saves.",
-      "contextTr": "O yemek pişirirken o okuyordu. / Çok kazanmasına rağmen hiç biriktirmiyor."
+      "contextTr": "O yemek pişirirken o okuyordu. / Çok kazanmasına rağmen hiç biriktirmiyor.",
+      "hintTr": "WHILE: Zaman → iki olay paralel. Zıtlık → iki cümle çelişiyor. Bağlamdan anla."
     },
     {
       "id": "p4-36",
@@ -963,7 +1080,8 @@
       "meaningTr": "-BİR ...-SE / ... OLUR OLMAZ",
       "grammar": "BAĞLAÇ / CÜMLE ZARFI",
       "contextEn": "Once you understand the rule, the rest is easy.",
-      "contextTr": "Kuralı bir kavrayınca geri kalanı kolay."
+      "contextTr": "Kuralı bir kavrayınca geri kalanı kolay.",
+      "hintTr": "ONCE = 'bir kez'. Bir kez oldu mu artık → OLUR OLMAZ / BİR KERE ...-SE."
     },
     {
       "id": "p4-37",
@@ -971,7 +1089,8 @@
       "meaningTr": "-E KADAR",
       "grammar": "BAĞLAÇ / EDAT",
       "contextEn": "Wait here until I return. / The shop is open until eight.",
-      "contextTr": "Ben dönene kadar burada bekle. / Dükkan sekize kadar açık."
+      "contextTr": "Ben dönene kadar burada bekle. / Dükkan sekize kadar açık.",
+      "hintTr": "UNTIL: Bitiş noktası var, oraya kadar sürer → -E KADAR."
     },
     {
       "id": "p4-38",
@@ -979,7 +1098,8 @@
       "meaningTr": "-E KADAR",
       "grammar": "BAĞLAÇ / EDAT",
       "contextEn": "She worked till midnight to finish the project.",
-      "contextTr": "Projeyi bitirmek için gece yarısına kadar çalıştı."
+      "contextTr": "Projeyi bitirmek için gece yarısına kadar çalıştı.",
+      "hintTr": "TILL: UNTIL'ın kısa ve günlük hali. Aynı anlam → -E KADAR."
     },
     {
       "id": "p4-39",
@@ -987,7 +1107,8 @@
       "meaningTr": "-DIĞINDE ARTIK / -E KADAR",
       "grammar": "BAĞLAÇ",
       "contextEn": "By the time she arrived, the film had already begun.",
-      "contextTr": "O geldiğinde film çoktan başlamıştı."
+      "contextTr": "O geldiğinde film çoktan başlamıştı.",
+      "hintTr": "BY THE TIME: BY = bitiş sınırı. O zaman geldiğinde iş bitmiş olacak → -DIĞINDE ARTIK."
     },
     {
       "id": "p4-40",
@@ -995,7 +1116,8 @@
       "meaningTr": "TAM...-İKEN (zaman)  ●  -DIĞI GİBİ (benzerlik)",
       "grammar": "BAĞLAÇ",
       "contextEn": "Just as I was leaving, the phone rang. / The result was just as we expected.",
-      "contextTr": "Tam çıkarken telefon çaldı. / Sonuç beklediğimiz gibiydi."
+      "contextTr": "Tam çıkarken telefon çaldı. / Sonuç beklediğimiz gibiydi.",
+      "hintTr": "JUST AS: Zaman → JUST = tam şu an. Benzerlik → JUST = aynen. 'Just' iki işi yapıyor."
     },
     {
       "id": "p4-41",
@@ -1003,7 +1125,8 @@
       "meaningTr": "SON...-DIĞINDA",
       "grammar": "BAĞLAÇ",
       "contextEn": "The last time we met, she had just started a new job.",
-      "contextTr": "Son görüştüğümüzde yeni bir işe yeni başlamıştı."
+      "contextTr": "Son görüştüğümüzde yeni bir işe yeni başlamıştı.",
+      "hintTr": "THE LAST TIME: Geçmişe bakıyorsun → o son seferinde ne olmuştu."
     },
     {
       "id": "p4-42",
@@ -1011,7 +1134,8 @@
       "meaningTr": "GELECEK SEFER...-DIĞINDA",
       "grammar": "BAĞLAÇ",
       "contextEn": "The next time you visit, call in advance.",
-      "contextTr": "Gelecek sefer ziyarete geldiğinde önceden ara."
+      "contextTr": "Gelecek sefer ziyarete geldiğinde önceden ara.",
+      "hintTr": "THE NEXT TIME: İleriye bakıyorsun → gelecek seferinde ne yapmalı."
     },
     {
       "id": "p4-43",
@@ -1019,7 +1143,8 @@
       "meaningTr": "...-R -RMAZ (devrik yapı)",
       "grammar": "CÜMLE BAŞINDA DEVRİK",
       "contextEn": "No sooner had she sat down than the doorbell rang.",
-      "contextTr": "Oturur oturmaz kapı zili çaldı."
+      "contextTr": "Oturur oturmaz kapı zili çaldı.",
+      "hintTr": "NO SOONER...THAN: 'Daha erken olmaz' + THAN karşılaştırma. Devrik: Had no sooner..."
     },
     {
       "id": "p4-44",
@@ -1027,7 +1152,8 @@
       "meaningTr": "...-R -RMAZ (devrik yapı)",
       "grammar": "CÜMLE BAŞINDA DEVRİK",
       "contextEn": "Hardly had he left when it began to rain.",
-      "contextTr": "Gider gitmez yağmur başladı."
+      "contextTr": "Gider gitmez yağmur başladı.",
+      "hintTr": "HARDLY...WHEN: 'Neredeyse değil' + WHEN. Devrik: Had hardly... İlki bitmeden ikinci başladı."
     },
     {
       "id": "p4-45",
@@ -1035,7 +1161,8 @@
       "meaningTr": "HER...-DIĞINDA / NE ZAMAN...-SA",
       "grammar": "BAĞLAÇ",
       "contextEn": "Whenever she is stressed, she goes for a walk.",
-      "contextTr": "Ne zaman stres alsa yürüyüşe çıkıyor."
+      "contextTr": "Ne zaman stres alsa yürüyüşe çıkıyor.",
+      "hintTr": "WHENEVER = WHEN + EVER → ne zaman olursa olsun. Her seferinde → HER...-DIĞINDA."
     },
     {
       "id": "p4-46",
@@ -1043,7 +1170,8 @@
       "meaningTr": "HER...-DIĞINDA",
       "grammar": "BAĞLAÇ",
       "contextEn": "Every time he speaks in public, he gets nervous.",
-      "contextTr": "Kamuoyu önünde her konuştuğunda sinirleniyor."
+      "contextTr": "Kamuoyu önünde her konuştuğunda sinirleniyor.",
+      "hintTr": "EVERY TIME: Every = her, time = seferinde. En somut hali → HER...-DIĞINDA."
     },
     {
       "id": "p4-51",
@@ -1051,7 +1179,8 @@
       "meaningTr": "-MİŞ GİBİ / SANKI",
       "grammar": "BAĞLAÇ",
       "contextEn": "He spoke as if he knew the answer.",
-      "contextTr": "Cevabı biliyormuş gibi konuştu."
+      "contextTr": "Cevabı biliyormuş gibi konuştu.",
+      "hintTr": "AS IF = 'sanki öyleymiş gibi'. IF = şart, AS = gibi. Gerçek değil ama öyle davranılıyor."
     },
     {
       "id": "p4-52",
@@ -1059,7 +1188,8 @@
       "meaningTr": "-MİŞ GİBİ / SANKI",
       "grammar": "BAĞLAÇ",
       "contextEn": "She looked as though she had not slept at all.",
-      "contextTr": "Hiç uyumamış gibi görünüyordu."
+      "contextTr": "Hiç uyumamış gibi görünüyordu.",
+      "hintTr": "AS THOUGH: AS IF ile aynı. Though = rağmen. Sanki öyle olsa da olmasa da → -MİŞ GİBİ."
     },
     {
       "id": "p4-60",
@@ -1067,7 +1197,8 @@
       "meaningTr": "-DİĞİ DİKKATE ALINIRSA / -DİĞİNDEN",
       "grammar": "BAĞLAÇ",
       "contextEn": "Given that it was his first attempt, the result was impressive.",
-      "contextTr": "İlk girişimi olduğu dikkate alınırsa sonuç etkileyiciydi."
+      "contextTr": "İlk girişimi olduğu dikkate alınırsa sonuç etkileyiciydi.",
+      "hintTr": "GIVEN THAT: GIVEN'ın bağlaç hali. THAT + tam cümle. 'Şu verilmişken' → DİKKATE ALINIRSA."
     },
     {
       "id": "p4-61",
@@ -1075,7 +1206,8 @@
       "meaningTr": "-DİĞİ DİKKATE ALINIRSA",
       "grammar": "BAĞLAÇ",
       "contextEn": "Considering that she is new, her performance is excellent.",
-      "contextTr": "Yeni olduğu göz önüne alınırsa performansı mükemmel."
+      "contextTr": "Yeni olduğu göz önüne alınırsa performansı mükemmel.",
+      "hintTr": "CONSIDERING THAT: CONSIDERING'in bağlaç hali. THAT + tam cümle. 'Şunu düşününce'."
     },
     {
       "id": "p4-62",
@@ -1083,7 +1215,8 @@
       "meaningTr": "-İ DÜŞÜNÜRSEK / GÖZ ÖNÜNE ALININCA",
       "grammar": "EDAT",
       "contextEn": "Given her experience, she is the best candidate.",
-      "contextTr": "Deneyimi göz önüne alınca en iyi aday o."
+      "contextTr": "Deneyimi göz önüne alınca en iyi aday o.",
+      "hintTr": "GIVEN = matematikte 'verilenler'. O veri zaten masada → GÖZ ÖNÜNE ALININCA."
     },
     {
       "id": "p4-63",
@@ -1091,7 +1224,8 @@
       "meaningTr": "-İ DÜŞÜNÜRSEK / -E BAKINCA",
       "grammar": "EDAT",
       "contextEn": "Considering his age, he is very fit.",
-      "contextTr": "Yaşına bakınca çok zinde."
+      "contextTr": "Yaşına bakınca çok zinde.",
+      "hintTr": "CONSIDERING: Consider = düşünmek. O etken düşünüldüğünde → -E BAKINCA."
     },
     {
       "id": "p4-64",
@@ -1099,7 +1233,8 @@
       "meaningTr": "-DİĞİ KADARIYLA / -E GÖRE",
       "grammar": "BAĞLAÇ",
       "contextEn": "As far as I know, the meeting has not been cancelled.",
-      "contextTr": "Bildiğim kadarıyla toplantı iptal edilmedi."
+      "contextTr": "Bildiğim kadarıyla toplantı iptal edilmedi.",
+      "hintTr": "AS FAR AS: Bilginin sınırına kadar gidiyorsun → BİLDİĞİM KADARIYLA."
     },
     {
       "id": "p4-65",
@@ -1107,7 +1242,8 @@
       "meaningTr": "-DİĞİ KADARIYLA",
       "grammar": "BAĞLAÇ",
       "contextEn": "So far as the records show, she has never been absent.",
-      "contextTr": "Kayıtların gösterdiği kadarıyla hiç devamsızlık yapmamış."
+      "contextTr": "Kayıtların gösterdiği kadarıyla hiç devamsızlık yapmamış.",
+      "hintTr": "SO FAR AS: AS FAR AS ile aynı, daha formal ve eski. Kayıt/kanıt cümlelerinde."
     },
     {
       "id": "p6-01",
@@ -1115,7 +1251,8 @@
       "meaningTr": "ÇÜNKÜ (FANBOYS)",
       "grammar": "FANTBOYS",
       "contextEn": "He stayed home, for he was feeling unwell.",
-      "contextTr": "Evde kaldı; çünkü kendini iyi hissetmiyordu."
+      "contextTr": "Evde kaldı; çünkü kendini iyi hissetmiyordu.",
+      "hintTr": "FOR (FANBOYS) = çünkü. Dikkat: virgül + FOR gelir. Sebep açıklıyor."
     },
     {
       "id": "p6-02",
@@ -1123,7 +1260,8 @@
       "meaningTr": "VE (FANBOYS)",
       "grammar": "FANTBOYS",
       "contextEn": "She opened the window and let in the fresh air.",
-      "contextTr": "Pencereyi açtı ve temiz havayı içeri aldı."
+      "contextTr": "Pencereyi açtı ve temiz havayı içeri aldı.",
+      "hintTr": "AND = artı işareti. A AND B → A + B. En temel bağlaç."
     },
     {
       "id": "p6-03",
@@ -1131,7 +1269,8 @@
       "meaningTr": "NE DE (FANBOYS)",
       "grammar": "FANTBOYS",
       "contextEn": "He did not apologise, nor did he explain his behaviour.",
-      "contextTr": "Özür dilemedi; ne de davranışını açıkladı."
+      "contextTr": "Özür dilemedi; ne de davranışını açıkladı.",
+      "hintTr": "NOR = NOT + OR → NE...DE. İkisi de yok. Devrik yapı gelir: nor did he..."
     },
     {
       "id": "p6-04",
@@ -1139,7 +1278,8 @@
       "meaningTr": "SONRA / O ZAMAN (FANBOYS)",
       "grammar": "FANTBOYS",
       "contextEn": "Read the instructions, then start the exercise.",
-      "contextTr": "Talimatları oku, sonra alıştırmaya başla."
+      "contextTr": "Talimatları oku, sonra alıştırmaya başla.",
+      "hintTr": "THEN = 'o zaman'. Sıralama: önce bu, THEN o. Zaman çizgisinde sonraki adım."
     },
     {
       "id": "p6-05",
@@ -1147,7 +1287,8 @@
       "meaningTr": "FAKAT / AMA (FANBOYS)",
       "grammar": "FANTBOYS",
       "contextEn": "The question was short but the answer required careful thought.",
-      "contextTr": "Soru kısaydı ama cevap dikkatli düşünmeyi gerektiriyordu."
+      "contextTr": "Soru kısaydı ama cevap dikkatli düşünmeyi gerektiriyordu.",
+      "hintTr": "BUT = ama. En bilinen zıtlık bağlacı. FANBOYS'ta iki ana cümle arası."
     },
     {
       "id": "p6-06",
@@ -1155,7 +1296,8 @@
       "meaningTr": "VEYA / YOKSA (FANBOYS)",
       "grammar": "FANTBOYS",
       "contextEn": "Study regularly or you will struggle in the exam.",
-      "contextTr": "Düzenli çalış ya da sınavda zorlanırsın."
+      "contextTr": "Düzenli çalış ya da sınavda zorlanırsın.",
+      "hintTr": "OR = veya/yoksa. Seçenek sunar ya da tehdit eder: yap, yoksa..."
     },
     {
       "id": "p6-07",
@@ -1163,7 +1305,8 @@
       "meaningTr": "FAKAT / YİNE DE (FANBOYS)",
       "grammar": "FANTBOYS",
       "contextEn": "He is young, yet he handles responsibility well.",
-      "contextTr": "Genç ama sorumluluğu iyi taşıyor."
+      "contextTr": "Genç ama sorumluluğu iyi taşıyor.",
+      "hintTr": "YET = 'henüz/ama'. BUT gibi ama daha vurgulu sürpriz hissi taşır."
     },
     {
       "id": "p6-08",
@@ -1171,7 +1314,8 @@
       "meaningTr": "BU YÜZDEN (FANBOYS)",
       "grammar": "FANTBOYS",
       "contextEn": "She was tired, so she went to bed early.",
-      "contextTr": "Yorgundu, bu yüzden erken yattı."
+      "contextTr": "Yorgundu, bu yüzden erken yattı.",
+      "hintTr": "SO = bu yüzden. FANBOYS'ta sebep-sonuç. Virgül + SO + sonuç cümlesi."
     },
     {
       "id": "p6-10",
@@ -1179,7 +1323,8 @@
       "meaningTr": "SADECE...DEĞİL, AYRICA...",
       "grammar": "PARALEL YAPI",
       "contextEn": "She not only passed the exam but also got the highest grade.",
-      "contextTr": "Sınavı geçmekle kalmadı, en yüksek notu da aldı."
+      "contextTr": "Sınavı geçmekle kalmadı, en yüksek notu da aldı.",
+      "hintTr": "NOT ONLY...BUT ALSO: İki kefeli terazi. Sadece biri değil, öbürü de. Güçlendirme kalıbı."
     },
     {
       "id": "p6-11",
@@ -1187,7 +1332,8 @@
       "meaningTr": "HEM...HEM DE",
       "grammar": "PARALEL YAPI",
       "contextEn": "Both the teacher and the students enjoyed the lesson.",
-      "contextTr": "Hem öğretmen hem öğrenciler dersin tadını çıkardı."
+      "contextTr": "Hem öğretmen hem öğrenciler dersin tadını çıkardı.",
+      "hintTr": "BOTH...AND: İkisi birden eşit ağırlıkta. BOTH A AND B → iki taraf da içeri."
     },
     {
       "id": "p6-12",
@@ -1195,7 +1341,8 @@
       "meaningTr": "YA...YA DA",
       "grammar": "PARALEL YAPI",
       "contextEn": "You can either take the bus or walk to the station.",
-      "contextTr": "Ya otobüse binebilir ya da istasyona yürüyebilirsin."
+      "contextTr": "Ya otobüse binebilir ya da istasyona yürüyebilirsin.",
+      "hintTr": "EITHER...OR: Ya biri ya öteki. Seçim yapılıyor. İkisinden biri mutlaka."
     },
     {
       "id": "p6-13",
@@ -1203,7 +1350,8 @@
       "meaningTr": "NE...NE DE",
       "grammar": "PARALEL YAPI",
       "contextEn": "Neither the manager nor the staff attended the meeting.",
-      "contextTr": "Ne yönetici ne de personel toplantıya katıldı."
+      "contextTr": "Ne yönetici ne de personel toplantıya katıldı.",
+      "hintTr": "NEITHER...NOR: İkisi de yok. NOT + NOT = NEITHER...NOR. İkisi de dışarıda."
     },
     {
       "id": "p6-14",
@@ -1211,7 +1359,8 @@
       "meaningTr": "....DEĞİL......DIR....",
       "grammar": "PARALEL YAPI",
       "contextEn": "It was not the cost but the quality that mattered.",
-      "contextTr": "Önemli olan maliyet değil kaliteydi."
+      "contextTr": "Önemli olan maliyet değil kaliteydi.",
+      "hintTr": "NOT...BUT: İlkini çıkar, ikincisini koy. Düzeltme kalıbı: A değil, B."
     },
     {
       "id": "p6-20",
@@ -1219,7 +1368,8 @@
       "meaningTr": "-E RAĞMEN / -SA DA",
       "grammar": "BAĞLAÇ",
       "contextEn": "Although the weather was cold, they went for a walk.",
-      "contextTr": "Hava soğuk olmasına rağmen yürüyüşe çıktılar."
+      "contextTr": "Hava soğuk olmasına rağmen yürüyüşe çıktılar.",
+      "hintTr": "ALTHOUGH = 'all though' → her ne kadar düşünülse de. Zıt iki cümle birleşiyor."
     },
     {
       "id": "p6-21",
@@ -1227,7 +1377,8 @@
       "meaningTr": "-E RAĞMEN / -SA BİLE",
       "grammar": "BAĞLAÇ",
       "contextEn": "Even though he studied hard, he failed the test.",
-      "contextTr": "Çok çalışmasına rağmen testi geçemedi."
+      "contextTr": "Çok çalışmasına rağmen testi geçemedi.",
+      "hintTr": "EVEN THOUGH: ALTHOUGH'dan güçlü. EVEN = bile ekliyor. Zıtlık daha vurgulu."
     },
     {
       "id": "p6-22",
@@ -1235,7 +1386,8 @@
       "meaningTr": "NE KADAR...SA DA / -E RAĞMEN",
       "grammar": "BAĞLAÇ",
       "contextEn": "Much as I wanted to help, I was too busy.",
-      "contextTr": "Yardım etmek istesem de çok meşguldüm."
+      "contextTr": "Yardım etmek istesem de çok meşguldüm.",
+      "hintTr": "MUCH AS = 'ne kadar çok olsa da'. MUCH = çok. Duygusal rağmen: 'çok istesem de...'"
     },
     {
       "id": "p6-23",
@@ -1243,7 +1395,8 @@
       "meaningTr": "-SA BİLE / -SE DAHI",
       "grammar": "BAĞLAÇ",
       "contextEn": "Even if it rains, the ceremony will take place outside.",
-      "contextTr": "Yağmur yağsa bile tören dışarıda yapılacak."
+      "contextTr": "Yağmur yağsa bile tören dışarıda yapılacak.",
+      "hintTr": "EVEN IF: Koşul henüz gerçekleşmemiş. 'Olsa bile' → varsayımsal rağmen."
     },
     {
       "id": "p6-24",
@@ -1251,7 +1404,8 @@
       "meaningTr": "-E RAĞMEN / -SA DA",
       "grammar": "BAĞLAÇ",
       "contextEn": "It was a good film, though the ending was weak.",
-      "contextTr": "İyi bir filmdi; son kısım zayıf olsa da."
+      "contextTr": "İyi bir filmdi; son kısım zayıf olsa da.",
+      "hintTr": "THOUGH: ALTHOUGH'un kısa hali. Cümle sonuna da gelebilir → en esnek rağmen."
     },
     {
       "id": "p6-25",
@@ -1259,7 +1413,8 @@
       "meaningTr": "-E RAĞMEN / -OLMASINA KARŞIN",
       "grammar": "BAĞLAÇ",
       "contextEn": "Despite the fact that she was tired, she continued working.",
-      "contextTr": "Yorgun olmasına rağmen çalışmayı sürdürdü."
+      "contextTr": "Yorgun olmasına rağmen çalışmayı sürdürdü.",
+      "hintTr": "DESPITE THE FACT THAT: DESPITE + köprü. THE FACT THAT bağlaç yapar → ardından tam cümle."
     },
     {
       "id": "p6-26",
@@ -1267,7 +1422,8 @@
       "meaningTr": "-E RAĞMEN / -OLMASINA KARŞIN",
       "grammar": "BAĞLAÇ",
       "contextEn": "In spite of the fact that he was ill, he attended the class.",
-      "contextTr": "Hasta olmasına rağmen derse katıldı."
+      "contextTr": "Hasta olmasına rağmen derse katıldı.",
+      "hintTr": "IN SPITE OF THE FACT THAT: IN SPITE OF + köprü. Aynı mantık → ardından tam cümle."
     },
     {
       "id": "p6-30",
@@ -1275,7 +1431,8 @@
       "meaningTr": "-E RAĞMEN (edat)",
       "grammar": "EDAT",
       "contextEn": "Despite the noise, she managed to concentrate.",
-      "contextTr": "Gürültüye rağmen odaklanmayı başardı."
+      "contextTr": "Gürültüye rağmen odaklanmayı başardı.",
+      "hintTr": "DESPITE: 'spite' = kin. Kinine rağmen devam → -E RAĞMEN. Edat: NP alır, cümle almaz."
     },
     {
       "id": "p6-31",
@@ -1283,7 +1440,8 @@
       "meaningTr": "-E RAĞMEN (edat)",
       "grammar": "EDAT",
       "contextEn": "In spite of her fear, she gave the speech.",
-      "contextTr": "Korkusuna rağmen konuşmayı yaptı."
+      "contextTr": "Korkusuna rağmen konuşmayı yaptı.",
+      "hintTr": "IN SPITE OF: 'spite' = kin/düşmanlık. Buna rağmen yılmadı → -E RAĞMEN. Edat."
     },
     {
       "id": "p6-32",
@@ -1292,7 +1450,8 @@
       "grammar": "BAĞLAÇ",
       "ezberNotu": "HOWEVER + sıfat/zarf + SVO. Örn: However difficult the task is, keep trying.",
       "contextEn": "However tired she was, she never gave up.",
-      "contextTr": "Ne kadar yorgun olursa olsun, hiç pes etmedi."
+      "contextTr": "Ne kadar yorgun olursa olsun, hiç pes etmedi.",
+      "hintTr": "HOWEVER + ADJ/ADV (bağlaç): Arkasından sıfat/zarf + SVO. 'Ne kadar...sa' kalıbı."
     },
     {
       "id": "p6-33",
@@ -1301,7 +1460,8 @@
       "grammar": "BAĞLAÇ",
       "ezberNotu": "NO MATTER HOW + sıfat/zarf + SVO.",
       "contextEn": "No matter how hard the question is, attempt an answer.",
-      "contextTr": "Soru ne kadar zor olursa olsun, cevap vermeye çalış."
+      "contextTr": "Soru ne kadar zor olursa olsun, cevap vermeye çalış.",
+      "hintTr": "NO MATTER HOW: 'Hiç önemi yok nasıl'. Ne kadar uç olursa → NE KADAR...SA DA."
     },
     {
       "id": "p6-34",
@@ -1309,7 +1469,8 @@
       "meaningTr": "-İKEN / OYSAKİ",
       "grammar": "BAĞLAÇ",
       "contextEn": "Whereas English uses many loanwords, Turkish uses fewer.",
-      "contextTr": "İngilizce pek çok alıntı kelime kullanırken Türkçe daha az kullanır."
+      "contextTr": "İngilizce pek çok alıntı kelime kullanırken Türkçe daha az kullanır.",
+      "hintTr": "WHEREAS = 'where + as'. İki zıt gerçeği yan yana koyar → OYSAKİ / -İKEN."
     },
     {
       "id": "p6-36",
@@ -1317,7 +1478,8 @@
       "meaningTr": "-E RAĞMEN (edat)  ●  YİNE DE (cümle zarfı)  ●  -E KARŞIN (bağlaç)",
       "grammar": "BAĞLAÇ / CÜMLE ZARFI / EDAT",
       "contextEn": "Notwithstanding the high cost, the project was approved. / The cost was high; notwithstanding, the project was approved.",
-      "contextTr": "Yüksek maliyete rağmen proje onaylandı. / Maliyet yüksekti; yine de proje onaylandı."
+      "contextTr": "Yüksek maliyete rağmen proje onaylandı. / Maliyet yüksekti; yine de proje onaylandı.",
+      "hintTr": "NOTWITHSTANDING: WITH + STAND = dayanmak. NOT withstanding → yine de dayanıyor = -E RAĞMEN / YİNE DE."
     },
     {
       "id": "p6-40",
@@ -1325,7 +1487,8 @@
       "meaningTr": "-DİĞİ İÇİN / ÇÜNKÜ",
       "grammar": "BAĞLAÇ",
       "contextEn": "She wore a coat because it was cold outside.",
-      "contextTr": "Dışarısı soğuk olduğu için palto giydi."
+      "contextTr": "Dışarısı soğuk olduğu için palto giydi.",
+      "hintTr": "BECAUSE = be + cause → sebebi olmak. En doğrudan neden bağlacı → ÇÜNKÜ."
     },
     {
       "id": "p6-41",
@@ -1333,7 +1496,8 @@
       "meaningTr": "-DİĞİ İÇİN / ÇÜNKÜ / -DEN BERİ",
       "grammar": "BAĞLAÇ",
       "contextEn": "Since the library was closed, he studied at home.",
-      "contextTr": "Kütüphane kapalı olduğu için evde çalıştı."
+      "contextTr": "Kütüphane kapalı olduğu için evde çalıştı.",
+      "hintTr": "SINCE: İki anlam. Zaman: 'since 2010'. Sebep: 'since it was cold'. Bağlamdan anla."
     },
     {
       "id": "p6-42",
@@ -1341,7 +1505,8 @@
       "meaningTr": "-DİĞİ İÇİN / ÇÜNKÜ / -İKEN",
       "grammar": "BAĞLAÇ",
       "contextEn": "As the road was icy, drivers slowed down.",
-      "contextTr": "Yol buzlu olduğundan sürücüler yavaşladı."
+      "contextTr": "Yol buzlu olduğundan sürücüler yavaşladı.",
+      "hintTr": "AS: Çok işlevli. Sebep: 'olduğu için'. Zaman: '-iken'. Benzerlik: 'gibi'. Bağlamdan anla."
     },
     {
       "id": "p6-43",
@@ -1349,7 +1514,8 @@
       "meaningTr": "-DİĞİ İÇİN / MADEM Kİ",
       "grammar": "BAĞLAÇ",
       "contextEn": "Seeing as everyone is here, let us begin.",
-      "contextTr": "Herkes burada olduğuna göre başlayalım."
+      "contextTr": "Herkes burada olduğuna göre başlayalım.",
+      "hintTr": "SEEING AS: 'Görüyorsun ya'. Gözlemle varılan sonuç → MADEM Kİ gördün."
     },
     {
       "id": "p6-44",
@@ -1357,7 +1523,8 @@
       "meaningTr": "-DİĞİ İÇİN / MADEM Kİ",
       "grammar": "BAĞLAÇ",
       "contextEn": "Seeing that it was late, she decided to take a taxi.",
-      "contextTr": "Geç olduğunu görünce taksi almaya karar verdi."
+      "contextTr": "Geç olduğunu görünce taksi almaya karar verdi.",
+      "hintTr": "SEEING THAT: SEEING AS ile aynı. THAT + tam cümle → -DİĞİNDEN."
     },
     {
       "id": "p6-45",
@@ -1365,7 +1532,8 @@
       "meaningTr": "-DİĞİ ÖLÇÜDE / -DEN DOLAYI",
       "grammar": "BAĞLAÇ",
       "contextEn": "Inasmuch as he is the director, he is responsible for the outcome.",
-      "contextTr": "Müdür olduğu ölçüde sonuçtan o sorumludur."
+      "contextTr": "Müdür olduğu ölçüde sonuçtan o sorumludur.",
+      "hintTr": "INASMUCH AS: 'O ölçüde ki'. Ölçü veriyor → -DİĞİ ÖLÇÜDE."
     },
     {
       "id": "p6-46",
@@ -1373,7 +1541,8 @@
       "meaningTr": "-DİĞİ GEREKÇESİYLE / -DİĞİ İÇİN",
       "grammar": "BAĞLAÇ",
       "contextEn": "She was dismissed on the grounds that she had broken the rules.",
-      "contextTr": "Kuralları çiğnediği gerekçesiyle görevden alındı."
+      "contextTr": "Kuralları çiğnediği gerekçesiyle görevden alındı.",
+      "hintTr": "ON THE GROUNDS THAT: Ground = zemin/gerekçe. Hukuki gerekçe gibi → -DİĞİ GEREKÇESİYLE."
     },
     {
       "id": "p6-47",
@@ -1381,7 +1550,8 @@
       "meaningTr": "-DİĞİNE GÖRE / MADEM Kİ",
       "grammar": "BAĞLAÇ",
       "contextEn": "Now that the exams are over, we can relax.",
-      "contextTr": "Sınavlar bittiğine göre artık rahatlayabiliriz."
+      "contextTr": "Sınavlar bittiğine göre artık rahatlayabiliriz.",
+      "hintTr": "NOW THAT = 'artık ki'. Durum değişti, buna göre → -DİĞİNE GÖRE / MADEM Kİ."
     },
     {
       "id": "p6-48",
@@ -1389,7 +1559,8 @@
       "meaningTr": "-DİĞİ BAKIMDAN / ŞÖYLE Kİ",
       "grammar": "BAĞLAÇ",
       "contextEn": "The plan was flawed in that it overlooked transport costs.",
-      "contextTr": "Plan şöyle ki ulaşım maliyetlerini gözden kaçırdığı için hatalıydı."
+      "contextTr": "Plan şöyle ki ulaşım maliyetlerini gözden kaçırdığı için hatalıydı.",
+      "hintTr": "IN THAT = 'onda ki'. Bir özelliğini açıklıyor → O BAKIMDAN / ŞÖYLE Kİ."
     }
   ]
 }

@@ -370,6 +370,7 @@
       <div id="choices"></div>
       <div class="btn-row">
         <button type="button" class="action secondary" id="btnDontKnow">Bilmiyorum (kaydet)</button>
+        <p id="dontKnowHint" class="sub" style="margin-top:6px;font-size:0.82rem;color:var(--muted);display:none;">Şık seçtikten sonra da aynı soruyu bilemediklerinize ekleyebilirsiniz.</p>
         <button type="button" class="action secondary" id="btnPeek" type="button">Doğru cevabı göster</button>
       </div>
       <button type="button" class="action" id="btnNext">Sonraki soru →</button>
@@ -406,6 +407,8 @@
     let sessionMissedOrder = [];
     let inRetryPhase = false;
     let totalAnswered = 0;
+    /** null | "pick" | "dontknow" — şıkla mı yoksa önce bilmiyorum ile mi kilitlendi */
+    let answeredVia = null;
     let current = null;
     let opts = [];
     let locked = false;
@@ -418,6 +421,9 @@
     const elNext = document.getElementById("btnNext");
     const elPeek = document.getElementById("btnPeek");
     const elDontKnow = document.getElementById("btnDontKnow");
+    const elDontKnowHint = document.getElementById("dontKnowHint");
+    const DONT_KNOW_LABEL = "Bilmiyorum (kaydet)";
+    const DONT_KNOW_AFTER_LABEL = "Bilemediklerime kaydet";
     const elClearStored = document.getElementById("btnClearStored");
     const elQuiz = document.getElementById("quizCard");
     const elLoadStat = document.getElementById("loadStatus");
@@ -694,22 +700,39 @@
 
     if (elDontKnow)
       elDontKnow.addEventListener("click", () => {
-      if (locked || !current) return;
-      locked = true;
-      wrongBad++;
-      noteMissThisSession();
-      recordUnknown(current, "bilmiyorum");
-      elChoices.querySelectorAll("button.opt").forEach((b, k) => {
-        b.disabled = true;
-        if (opts[k].isCorrect) b.style.borderColor = "#3ecf8e";
+        if (!current) return;
+        if (!locked) {
+          locked = true;
+          answeredVia = "dontknow";
+          wrongBad++;
+          noteMissThisSession();
+          recordUnknown(current, "bilmiyorum");
+          elChoices.querySelectorAll("button.opt").forEach((b, k) => {
+            b.disabled = true;
+            if (opts[k] && opts[k].isCorrect) b.style.borderColor = "#3ecf8e";
+          });
+          const ans = opts.find((o) => o.isCorrect);
+          elFeedback.textContent = "Kaydedildi. Doğru seçenek: " + (ans ? ans.text : "—");
+          elFeedback.className = "bad";
+          elNext.disabled = false;
+          if (elDontKnowHint) elDontKnowHint.style.display = "none";
+          elDontKnow.textContent = DONT_KNOW_LABEL;
+          stats();
+          showExplanationPanels();
+          return;
+        }
+        if (answeredVia !== "pick") return;
+        if (elDontKnow.dataset.extraListed === "1") return;
+        elDontKnow.dataset.extraListed = "1";
+        recordUnknown(current, "bilmiyorum");
+        const base = elFeedback.textContent || "";
+        if (!/Bilemediklerim listesine/i.test(base)) {
+          elFeedback.textContent = base + " Bilemediklerim listesine kaydedildi.";
+        }
+        elDontKnow.disabled = true;
+        elDontKnow.textContent = DONT_KNOW_LABEL;
+        stats();
       });
-      const ans = opts.find((o) => o.isCorrect);
-      elFeedback.textContent = "Kaydedildi. Doğru seçenek: " + (ans ? ans.text : "—");
-      elFeedback.className = "bad";
-      elNext.disabled = false;
-      stats();
-      showExplanationPanels();
-    });
 
     if (elClearStored)
       elClearStored.addEventListener("click", () => {
@@ -773,7 +796,13 @@
 
     function nextQuestion() {
       elNext.disabled = true;
-      if (elDontKnow) elDontKnow.disabled = false;
+      if (elDontKnow) {
+        elDontKnow.disabled = false;
+        elDontKnow.textContent = DONT_KNOW_LABEL;
+        delete elDontKnow.dataset.extraListed;
+      }
+      if (elDontKnowHint) elDontKnowHint.style.display = "none";
+      answeredVia = null;
       locked = false;
       elFeedback.textContent = "";
       elFeedback.className = "";
@@ -849,6 +878,7 @@
         if (opts[k].isCorrect) b.style.borderColor = "#3ecf8e";
         else if (k === i) b.style.borderColor = ch.isCorrect ? "#3ecf8e" : "#e06c75";
       });
+      answeredVia = "pick";
       if (ch.isCorrect) {
         elFeedback.textContent = "Dogru.";
         elFeedback.className = "ok";
@@ -861,7 +891,11 @@
         recordUnknown(current, "yanlis");
       }
       elNext.disabled = false;
-      if (elDontKnow) elDontKnow.disabled = true;
+      if (elDontKnow) {
+        elDontKnow.disabled = false;
+        elDontKnow.textContent = DONT_KNOW_AFTER_LABEL;
+      }
+      if (elDontKnowHint) elDontKnowHint.style.display = "block";
       stats();
       showExplanationPanels();
     }

@@ -1,25 +1,24 @@
 {
   "version": 2,
   "title": "Bağlaç • cümle zarfı • edat (metin.txt tam eşleme)",
-  "sourceNote": "metin.txt içindeki tablo satırları; Konu Özeti (a–d) şemaları ayrı kart. www.modadil / RIDVAN GÜRBÜZ kart değil.",
+  "sourceNote": "metin.txt içindeki tablo satırları; Konu Özeti (a–d) şemaları ayrı kart.",
   "settings": {
     "review_after": 5,
     "choices": 4
   },
   "typeGuide": {
-    "DEFAULT": "Tür bilgisi: tablodaki TÜR sütununa bak. Bağlaç iki cümleyi birleştirir; edat isim/Ving öbeği ister; cümle zarfı tüm cümleye yorum ekler (metindeki a–d şemaları).",
-    "EDAT": "Tür: edat. Kendinden hemen sonra isim öbeği (NP), isim cümlesi (NC) veya fiil-ing (Ving) obeu gelir; bu öbek cümlede tamamlayıcıdır. Tam bir SVO cümlesi edatın bitişiğine tek başına gelmez. Metinde d): X + NP/NC/Ving … , … SVO … veya … SVO … X + NP/NC/Ving …",
-    "BAĞLAÇ": "Tür: bağlaç (yan cümle bağlıcı). Yan cümle veya tam cümle (SVO) ile çalışır; konum cümle başı, iki SVO arası veya virgülle ikinci cümle öncesi olabilir. Metinde b): X SVO , SVO / SVO X SVO / SVO , X SVO.",
-    "CÜMLE ZARFI": "Tür: cümle zarfı. Bütün cümleye vurgu/zaman/ekleme vb. ekler. Sık kalıp: önceki cümle biter (. veya ;) sonra zarf, virgül, yeni SVO. Bazen cümle ortasında veya özneden sonra da durur. Metinde c) şemaları.",
-    "AÇIKLAMA ZARFI": "Tür: açıklama zarfı (namely, that is vb.). Önceki ifadeyi başka sözlerle açar; genelde virgülle sonraki açıklama cümlesine bağlanır.",
-    "FANTBOYS": "Tür: koordinasyon (FANBOYS: for, and, nor, but, or, yet, so …). İki ana cümle arasında gelir; arada genelde . veya , veya ; bulunur. nor sonrasında devrik cümle gelebilir. Metinde a) şeması.",
-    "PARALEL YAPI": "Tür: paralel bağlaç yapısı (not only…but also, both…and vb.). İki dilim birlikte çalışır; yüklem veya öğe paralelliği gerekir.",
-    "BAĞLAÇ / EDAT": "Tür: sözcüğe göre bağlaç veya edat. Bağlaç kullanımında ardından yan cümle/SVO; edat kullanımında ardından NP/NC/Ving öbeği gelir (metinde çift sınıflı satırlara dikkat).",
-    "BAĞLAÇ / EDAT / CÜMLE ZARFI": "Tür: bağlaç, edat veya cümle zarfı olarak farklı konumlarda kullanılabilen yapı. Cümledeki işleve göre ardından yan cümle, isim öbeği veya yeni cümle gelir.",
-    "BAĞLAÇ / CÜMLE ZARFI": "Tür: bağlaç veya cümle zarfı okuması mümkün yapı. Bağlaçsa yan cümle; cümle zarfıysa önceki cümleye bağlı yorum konumu.",
-    "BAĞLAÇ / CÜMLE ZARFI / EDAT": "Tür: çok işlevli (ör. notwithstanding). Cümlede konuma göre yan cümle, zarf veya edat+öbek olarak işler.",
-    "CÜMLE BAŞINDA DEVRİK": "Tür: devrik yapı (no sooner…than, hardly…when vb.). Olumsuzluk veya sıra zarfı cümle başına alınır; yardımcı fiil özne önüne çıkar; bağlaç + devrik kalıp birlikte ezberlenir.",
-    "Konu özeti": "Bu kart metindeki konu özetindeki şema satırıdır; tek bir İngilizce kelime değil, yerleşim kalıbıdır."
+    "DEFAULT": "Tür bilgisi: tablodaki TÜR sütununa bak. Bağlaç iki cümleyi birleştirir; edat isim/Ving öbeği ister; cümle zarfı tüm cümleye yorum ekler.",
+    "EDAT": "Tür: edat. Kendinden hemen sonra isim öbeği (NP), isim cümlesi (NC) veya fiil-ing (Ving) gelir.",
+    "BAĞLAÇ": "Tür: bağlaç. Yan cümle veya tam cümle (SVO) ile çalışır.",
+    "CÜMLE ZARFI": "Tür: cümle zarfı. Bütün cümleye vurgu/zaman/ekleme vb. ekler.",
+    "AÇIKLAMA ZARFI": "Tür: açıklama zarfı (namely, that is vb.). Önceki ifadeyi başka sözlerle açar.",
+    "FANTBOYS": "Tür: koordinasyon (FANBOYS). İki ana cümle arasında gelir.",
+    "PARALEL YAPI": "Tür: paralel bağlaç yapısı. İki dilim birlikte çalışır.",
+    "BAĞLAÇ / EDAT": "Tür: bağlaç veya edat. Bağlaç: ardından SVO; edat: ardından NP/Ving.",
+    "BAĞLAÇ / EDAT / CÜMLE ZARFI": "Tür: bağlaç, edat veya cümle zarfı olarak kullanılabilen yapı.",
+    "BAĞLAÇ / CÜMLE ZARFI": "Tür: bağlaç veya cümle zarfı olarak kullanılabilen yapı.",
+    "BAĞLAÇ / CÜMLE ZARFI / EDAT": "Tür: çok işlevli yapı (ör. notwithstanding).",
+    "CÜMLE BAŞINDA DEVRİK": "Tür: devrik yapı. Olumsuzluk cümle başına alınır; yardımcı fiil özne önüne çıkar."
   },
   "items": [
     {
@@ -27,1410 +26,1370 @@
       "term": "EXCEPT (FOR)",
       "meaningTr": "-DEN HARİÇ / -DEN BAŞKA",
       "grammar": "EDAT",
-      "contextEn": "All samples tested negative except for one control tube.",
-      "contextTr": "Kontrol tüplerinden biri hariç tüm örnekler negatif çıktı."
-    },
-    {
-      "id": "p1-02",
-      "term": "BUT (-den başka anlamında)",
-      "meaningTr": "-DEN HARİÇ / -DEN BAŞKA",
-      "grammar": "EDAT",
-      "contextEn": "The reaction mixture contained no catalyst but a trace of water.",
-      "contextTr": "Karışımda katalizör yoktu; yalnızca iz miktarda su vardı (başka madde yoktu)."
+      "contextEn": "All students passed except for one.",
+      "contextTr": "Bir kişi hariç tüm öğrenciler geçti."
     },
     {
       "id": "p1-03",
       "term": "APART FROM",
-      "meaningTr": "-DEN HARİÇ / -DEN BAŞKA",
+      "meaningTr": "-DEN HARİÇ / -DEN BAŞKA  ●  -NIN YANI SIRA (ekleme)",
       "grammar": "EDAT",
-      "contextEn": "Apart from minor noise, the signal matched the theoretical curve.",
-      "contextTr": "Küçük gürültü dışında sinyal teorik eğriyle örtüştü."
+      "contextEn": "Apart from a small error, the report was accurate. / Apart from chemistry, she studies biology.",
+      "contextTr": "Küçük bir hata dışında rapor doğruydu. / Kimyanın yanı sıra biyoloji de okuyor."
     },
     {
       "id": "p1-04",
       "term": "SAVING",
       "meaningTr": "-DEN HARİÇ / -DEN BAŞKA",
       "grammar": "EDAT",
-      "contextEn": "Every electrode was sealed, saving two ports for calibration probes.",
-      "contextTr": "Her elektrot mühürlendi; kalibrasyon probu için yalnızca iki giriş hariç."
+      "contextEn": "Every door was locked saving the main entrance.",
+      "contextTr": "Ana giriş hariç tüm kapılar kilitliydi."
+    },
+    {
+      "id": "p1-02",
+      "term": "BUT (-den başka anlamında)",
+      "meaningTr": "-DEN HARİÇ / -DEN BAŞKA",
+      "grammar": "EDAT",
+      "contextEn": "No one but the manager had access to the file.",
+      "contextTr": "Dosyaya yalnızca yöneticinin erişimi vardı."
     },
     {
       "id": "p1-05",
       "term": "BY",
-      "meaningTr": "-NIN ARACILIĞIYLA / -NIN YARDIMIYLA",
+      "meaningTr": "-NIN ARACILIĞIYLA",
       "grammar": "EDAT",
-      "contextEn": "We quantified the protein by using a standard ELISA protocol.",
-      "contextTr": "Proteini standart ELISA protokolü ile nicelendirdik."
-    },
-    {
-      "id": "p1-06",
-      "term": "VIA",
-      "meaningTr": "-NIN ARACILIĞIYLA / -NIN YARDIMIYLA",
-      "grammar": "EDAT",
-      "contextEn": "Data were transmitted via a secure fiber link to the lab server.",
-      "contextTr": "Veriler güvenli fiber bağlantısı üzerinden laboratuvar sunucusuna iletildi."
-    },
-    {
-      "id": "p1-07",
-      "term": "THROUGH",
-      "meaningTr": "-NIN ARACILIĞIYLA / -NIN YARDIMIYLA",
-      "grammar": "EDAT",
-      "contextEn": "We improved resolution through repeated averaging of the scans.",
-      "contextTr": "Taramaları tekrarlı ortalama yoluyla çözünürlüğü artırdık."
-    },
-    {
-      "id": "p1-08",
-      "term": "BY MEANS OF",
-      "meaningTr": "-NIN ARACILIĞIYLA / -NIN YARDIMIYLA",
-      "grammar": "EDAT",
-      "contextEn": "Pressure was released by means of a calibrated relief valve.",
-      "contextTr": "Basınç kalibre bir tahliye vanası aracılığıyla boşaltıldı."
-    },
-    {
-      "id": "p1-09",
-      "term": "WITH THE HELP OF",
-      "meaningTr": "-NIN ARACILIĞIYLA / -NIN YARDIMIYLA",
-      "grammar": "EDAT",
-      "contextEn": "The model was refined with the help of field measurements.",
-      "contextTr": "Model saha ölçümlerinin yardımıyla iyileştirildi."
+      "contextEn": "She improved her score by practising every day.",
+      "contextTr": "Her gün pratik yaparak puanını yükseltti."
     },
     {
       "id": "p1-10",
       "term": "IRRESPECTIVE OF",
       "meaningTr": "-E BAKILMAKSIZIN",
       "grammar": "EDAT",
-      "contextEn": "All groups were tested, irrespective of their prior experience.",
-      "contextTr": "Tüm gruplar önceki deneyimlerine bakılmaksızın test edildi."
+      "contextEn": "All candidates were treated equally, irrespective of age.",
+      "contextTr": "Tüm adaylar yaşa bakılmaksızın eşit muamele gördü."
+    },
+    {
+      "id": "p1-06",
+      "term": "VIA",
+      "meaningTr": "-NIN ARACILIĞIYLA",
+      "grammar": "EDAT",
+      "contextEn": "The message was sent via email.",
+      "contextTr": "Mesaj e-posta aracılığıyla gönderildi."
+    },
+    {
+      "id": "p1-07",
+      "term": "THROUGH",
+      "meaningTr": "-NIN ARACILIĞIYLA",
+      "grammar": "EDAT",
+      "contextEn": "He found the job through a friend.",
+      "contextTr": "İşi bir arkadaşı aracılığıyla buldu."
     },
     {
       "id": "p1-11",
       "term": "REGARDLESS OF",
       "meaningTr": "-E BAKILMAKSIZIN",
       "grammar": "EDAT",
-      "contextEn": "The trial continued regardless of short-term side effects.",
-      "contextTr": "Kısa vadeli yan etkilere rağmen deneme sürdü."
+      "contextEn": "The rule applies to everyone regardless of rank.",
+      "contextTr": "Kural rütbeye bakılmaksızın herkese uygulanır."
+    },
+    {
+      "id": "p1-08",
+      "term": "BY MEANS OF",
+      "meaningTr": "-NIN ARACILIĞIYLA",
+      "grammar": "EDAT",
+      "contextEn": "Water was removed by means of a pump.",
+      "contextTr": "Su bir pompa aracılığıyla boşaltıldı."
+    },
+    {
+      "id": "p1-09",
+      "term": "WITH THE HELP OF",
+      "meaningTr": "-NIN ARACILIĞIYLA",
+      "grammar": "EDAT",
+      "contextEn": "She finished early with the help of her classmates.",
+      "contextTr": "Sınıf arkadaşlarının yardımıyla erken bitirdi."
     },
     {
       "id": "p1-12",
       "term": "RATHER THAN",
-      "meaningTr": "-DEN ZİYADE",
+      "meaningTr": "-DEN ZİYADE / -NIN YERİNE",
       "grammar": "EDAT",
-      "contextEn": "The team extended the run rather than stopping at the first anomaly.",
-      "contextTr": "Ekip ilk anomalide durmak yerine ölçümü uzattı."
-    },
-    {
-      "id": "p1-13",
-      "term": "INSTEAD",
-      "meaningTr": "YERİNE / - DAHA ZİYADE",
-      "grammar": "CÜMLE ZARFI",
-      "contextEn": "The hypothesis was weak; instead, we collected more control data.",
-      "contextTr": "Hipotez zayıftı; bunun yerine daha fazla kontrol verisi topladık."
-    },
-    {
-      "id": "p1-14",
-      "term": "RATHER",
-      "meaningTr": "YERİNE / - DAHA ZİYADE",
-      "grammar": "CÜMLE ZARFI",
-      "contextEn": "The effect was not linear; rather, it followed a saturating curve.",
-      "contextTr": "Etki doğrusal değildi; bilakis doygunluk eğrisini izledi."
+      "contextEn": "He chose to walk rather than take the bus.",
+      "contextTr": "Otobüse binmek yerine yürümeyi tercih etti."
     },
     {
       "id": "p1-15",
       "term": "INSTEAD OF",
       "meaningTr": "-NIN YERİNE",
       "grammar": "EDAT",
-      "contextEn": "We used nitrogen instead of air to limit oxidation.",
-      "contextTr": "Oksidasyonu sınırlamak için hava yerine azot kullandık."
+      "contextEn": "She drank tea instead of coffee.",
+      "contextTr": "Kahve yerine çay içti."
+    },
+    {
+      "id": "p1-13",
+      "term": "INSTEAD",
+      "meaningTr": "YERİNE / BUNUN YERİNE",
+      "grammar": "CÜMLE ZARFI",
+      "contextEn": "The plan failed; instead, they tried a different approach.",
+      "contextTr": "Plan tutmadı; bunun yerine farklı bir yol denediler."
+    },
+    {
+      "id": "p1-14",
+      "term": "RATHER",
+      "meaningTr": "BİLAKİS / DAHA DOĞRUSU",
+      "grammar": "CÜMLE ZARFI",
+      "contextEn": "The result was not surprising; rather, it confirmed our prediction.",
+      "contextTr": "Sonuç şaşırtıcı değildi; bilakis tahminimizi doğruladı."
     },
     {
       "id": "p2-01",
       "term": "IN PARTICULAR",
       "meaningTr": "ÖZELLİKLE",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "Several factors raised the risk; in particular, humidity was high.",
-      "contextTr": "Riski artıran birkaç etken vardı; özellikle nem yüksekti."
+      "contextEn": "The exam was hard; in particular, the reading section was long.",
+      "contextTr": "Sınav zordu; özellikle okuma bölümü uzundu."
+    },
+    {
+      "id": "p2-10",
+      "term": "THAT IS",
+      "meaningTr": "YANİ / DİĞER BİR DEYİŞLE",
+      "grammar": "AÇIKLAMA ZARFI",
+      "contextEn": "He is a minor; that is, he is under eighteen.",
+      "contextTr": "Reşit değil; yani on sekiz yaşın altında."
     },
     {
       "id": "p2-02",
       "term": "PARTICULARLY",
       "meaningTr": "ÖZELLİKLE",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The error was small, particularly near the centre of the grid.",
-      "contextTr": "Hata küçüktü; özellikle ızgara merkezinde öyleydi."
+      "contextEn": "The winters are cold here, particularly in January.",
+      "contextTr": "Kışlar burada soğuktur, özellikle ocak ayında."
+    },
+    {
+      "id": "p2-11",
+      "term": "NAMELY",
+      "meaningTr": "YANİ / DİĞER BİR DEYİŞLE",
+      "grammar": "AÇIKLAMA ZARFI",
+      "contextEn": "Two cities were selected, namely Ankara and İzmir.",
+      "contextTr": "İki şehir seçildi: Ankara ve İzmir."
     },
     {
       "id": "p2-03",
       "term": "ESPECIALLY",
       "meaningTr": "ÖZELLİKLE",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The solvent is volatile, especially above 40 C.",
-      "contextTr": "Çözücü uçucudur; özellikle 40 °C üstünde."
-    },
-    {
-      "id": "p2-04",
-      "term": "NOTABLY",
-      "meaningTr": "ÖZELLİKLE",
-      "grammar": "CÜMLE ZARFI",
-      "contextEn": "The curve bent sharply; notably, the slope changed sign after day three.",
-      "contextTr": "Eğri keskin kırıldı; özellikle üçüncü gün sonra eğimin işareti değişti."
-    },
-    {
-      "id": "p2-05",
-      "term": "SPECIFICALLY",
-      "meaningTr": "ÖZELLİKLE",
-      "grammar": "CÜMLE ZARFI",
-      "contextEn": "We need the raw files, specifically the unprocessed spectra from run B.",
-      "contextTr": "Ham dosyalara ihtiyacımız var; özellikle B koşusundan işlenmemiş spektrumlara."
-    },
-    {
-      "id": "p2-10",
-      "term": "THAT IS",
-      "meaningTr": "DİĞER BİR DEYİŞLE",
-      "grammar": "AÇIKLAMA ZARFI",
-      "contextEn": "The yield doubled; that is, twice as much product formed per mole of reagent.",
-      "contextTr": "Verim ikiye katlandı; yani reaktant başına iki kat ürün oluştu."
-    },
-    {
-      "id": "p2-11",
-      "term": "NAMELY",
-      "meaningTr": "DİĞER BİR DEYİŞLE",
-      "grammar": "AÇIKLAMA ZARFI",
-      "contextEn": "Two peaks dominated the spectrum, namely the monomer and the dimer.",
-      "contextTr": "Spektrumda iki tepe baskındı: monomer ve dimer."
+      "contextEn": "Drink water regularly, especially in summer.",
+      "contextTr": "Düzenli su iç, özellikle yazın."
     },
     {
       "id": "p2-12",
       "term": "IN OTHER WORDS",
-      "meaningTr": "DİĞER BİR DEYİŞLE",
+      "meaningTr": "YANİ / DİĞER BİR DEYİŞLE",
       "grammar": "AÇIKLAMA ZARFI",
-      "contextEn": "The model is underdetermined; in other words, more parameters than equations.",
-      "contextTr": "Model yetersiz belirlenmişti; diğer bir deyişle denklem sayısından fazla parametre vardı."
+      "contextEn": "The project is over budget; in other words, we need more funding.",
+      "contextTr": "Proje bütçeyi aştı; diğer bir deyişle daha fazla fona ihtiyacımız var."
+    },
+    {
+      "id": "p2-04",
+      "term": "NOTABLY",
+      "meaningTr": "ÖZELLİKLE / DİKKAT ÇEKİCİ BİÇİMDE",
+      "grammar": "CÜMLE ZARFI",
+      "contextEn": "Sales dropped in all regions; notably, the east saw the biggest fall.",
+      "contextTr": "Tüm bölgelerde satışlar düştü; özellikle doğuda en büyük düşüş yaşandı."
+    },
+    {
+      "id": "p2-05",
+      "term": "SPECIFICALLY",
+      "meaningTr": "ÖZELLİKLE / ÖZGÜL OLARAK",
+      "grammar": "CÜMLE ZARFI",
+      "contextEn": "We need one document, specifically your birth certificate.",
+      "contextTr": "Bir belgeye ihtiyacımız var, özellikle nüfus cüzdanınıza."
     },
     {
       "id": "p2-20",
       "term": "LIKEWISE",
-      "meaningTr": "AYNI ŞEKİLDE, BUNUN GİBİ",
+      "meaningTr": "AYNI ŞEKİLDE / BENZER BİÇİMDE",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "Metal A corroded in acid; likewise, metal B showed pitting.",
-      "contextTr": "A metali asitte korozyona uğradı; benzer şekilde B metalinde çukurlaşma görüldü."
-    },
-    {
-      "id": "p2-21",
-      "term": "SIMILARLY",
-      "meaningTr": "AYNI ŞEKİLDE, BUNUN GİBİ",
-      "grammar": "CÜMLE ZARFI",
-      "contextEn": "Cell A stopped dividing; similarly, cell B entered early apoptosis.",
-      "contextTr": "A hücresi bölünmeyi durdurdu; benzer şekilde B hücresi erken apoptoza girdi."
+      "contextEn": "He apologised; likewise, she admitted her mistake.",
+      "contextTr": "O özür diledi; aynı şekilde o da hatasını kabul etti."
     },
     {
       "id": "p2-30",
       "term": "IN FACT",
-      "meaningTr": "HATTA, ASLINDA",
+      "meaningTr": "ASLINDA / HATTA",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The initial fit looked poor; in fact, the residuals were systematic.",
-      "contextTr": "İlk uyum kötü görünüyordu; aslında kalıntılar sistematikti."
+      "contextEn": "The task seemed easy; in fact, it took three days.",
+      "contextTr": "Görev kolay görünüyordu; aslında üç gün sürdü."
+    },
+    {
+      "id": "p2-21",
+      "term": "SIMILARLY",
+      "meaningTr": "AYNI ŞEKİLDE / BENZER BİÇİMDE",
+      "grammar": "CÜMLE ZARFI",
+      "contextEn": "Group A improved; similarly, group B showed progress.",
+      "contextTr": "A grubu ilerledi; benzer şekilde B grubu da gelişme gösterdi."
     },
     {
       "id": "p2-31",
       "term": "INDEED",
-      "meaningTr": "HATTA, ASLINDA",
+      "meaningTr": "ASLINDA / GERÇEKTEN DE / HATTA",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The dose was low; indeed, no toxicity was observed at six months.",
-      "contextTr": "Doz düşüktü; hatta altı ayda toksisite gözlenmedi."
+      "contextEn": "The book was long; indeed, it had over eight hundred pages.",
+      "contextTr": "Kitap uzundu; gerçekten de sekiz yüzden fazla sayfası vardı."
     },
     {
       "id": "p2-32",
       "term": "ACTUALLY",
-      "meaningTr": "HATTA, ASLINDA",
+      "meaningTr": "ASLINDA / GERÇEKTE",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The graph looked flat; actually, the slope was positive but tiny.",
-      "contextTr": "Grafik düz görünüyordu; aslında eğim pozitifti ama çok küçüktü."
+      "contextEn": "He looked calm; actually, he was very nervous.",
+      "contextTr": "Sakin görünüyordu; aslında çok gergindi."
     },
     {
       "id": "p2-33",
       "term": "AS A MATTER OF FACT",
-      "meaningTr": "HATTA, ASLINDA",
+      "meaningTr": "ASLINDA / GERÇEKTE",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The claim sounded extreme; as a matter of fact, it matched published data.",
-      "contextTr": "İddia uç görünüyordu; aslında yayımlanmış verilerle uyumluydu."
+      "contextEn": "The claim was doubted; as a matter of fact, it was correct.",
+      "contextTr": "İddiaya şüpheyle bakıldı; aslında doğruydu."
     },
     {
       "id": "p2-34",
       "term": "AS SUCH",
-      "meaningTr": "HATTA, ASLINDA",
+      "meaningTr": "DOLAYISIYLA / BU SIFATLA",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The substance is not a nutrient as such; it only stabilises the medium.",
-      "contextTr": "Madde besin olarak sayılmaz; dolayısıyla yalnızca ortamı stabilize eder."
+      "contextEn": "He is not a doctor as such; he only gives general advice.",
+      "contextTr": "Tam anlamıyla doktor değil; dolayısıyla yalnızca genel tavsiye veriyor."
     },
     {
       "id": "p2-40",
       "term": "ON THE CONTRARY",
       "meaningTr": "AKSİNE / BİLAKİS",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The method was not careless; on the contrary, every step was logged.",
-      "contextTr": "Yöntem dikkatsiz değildi; bilakis her adım kayda alındı."
+      "contextEn": "He was not lazy; on the contrary, he worked harder than anyone.",
+      "contextTr": "Tembel değildi; aksine herkesten çok çalıştı."
     },
     {
       "id": "p2-50",
       "term": "AS FOR",
       "meaningTr": "-E GELİNCE",
       "grammar": "EDAT",
-      "contextEn": "The protocol worked for bacteria; as for archaea, we need a separate medium.",
-      "contextTr": "Protokol bakteriler için işe yaradı; arkealar söz konusu olunca ayrı ortam gerekiyor."
+      "contextEn": "I passed the exam; as for my brother, he will retake it.",
+      "contextTr": "Ben sınavı geçtim; kardeşime gelince, o yeniden girecek."
     },
     {
       "id": "p2-51",
       "term": "WHEN IT COMES TO",
       "meaningTr": "-E GELİNCE",
       "grammar": "EDAT",
-      "contextEn": "The theory is clear; when it comes to experiments, funding is the bottleneck.",
-      "contextTr": "Teori net; deneylere gelince dar boğaz fon."
+      "contextEn": "She is talented; when it comes to maths, she is exceptional.",
+      "contextTr": "Yetenekli; matematiğe gelince ise olağanüstü."
     },
     {
       "id": "p2-52",
       "term": "WITH REGARD TO",
-      "meaningTr": "-E GELİNCE",
+      "meaningTr": "-E GELİNCE / -E İLİŞKİN",
       "grammar": "EDAT",
-      "contextEn": "With regard to safety limits, the committee adopted the stricter standard.",
-      "contextTr": "Güvenlik limitleri konusunda komite daha sıkı standardı benimsedi."
+      "contextEn": "With regard to the deadline, no extension will be granted.",
+      "contextTr": "Son tarihe gelince, uzatma yapılmayacak."
     },
     {
       "id": "p2-53",
       "term": "WITH RESPECT TO",
-      "meaningTr": "-E GELİNCE",
+      "meaningTr": "-E GELİNCE / -E İLİŞKİN",
       "grammar": "EDAT",
-      "contextEn": "With respect to sample size, the study met the minimum requirement.",
-      "contextTr": "Örneklem büyüklüğü açısından çalışma minimum gereksinimi karşıladı."
+      "contextEn": "With respect to cost, the second option is cheaper.",
+      "contextTr": "Maliyete gelince ikinci seçenek daha ucuz."
     },
     {
       "id": "p2-54",
       "term": "IN THE CASE OF",
-      "meaningTr": "-E GELİNCE",
+      "meaningTr": "-E GELİNCE / -SÖKÜZ KONUSU OLDUĞUNDA",
       "grammar": "EDAT",
-      "contextEn": "In the case of pregnant participants, the trial was paused.",
-      "contextTr": "Hamile katılımcılar söz konusu olduğunda deneme durduruldu."
+      "contextEn": "In the case of children, the dosage must be reduced.",
+      "contextTr": "Çocuklar söz konusu olduğunda doz azaltılmalıdır."
     },
     {
       "id": "p2-60",
       "term": "ABOUT",
-      "meaningTr": "İLE İLGİLİ",
+      "meaningTr": "İLE İLGİLİ / HAKKINDA",
       "grammar": "EDAT",
-      "contextEn": "The teams argued about the interpretation of the outlier points.",
-      "contextTr": "Ekipler aykırı noktaların yorumu hakkında tartıştı."
+      "contextEn": "We need to talk about the schedule.",
+      "contextTr": "Program hakkında konuşmamız gerekiyor."
     },
     {
       "id": "p2-61",
       "term": "AS TO",
-      "meaningTr": "İLE İLGİLİ",
+      "meaningTr": "İLE İLGİLİ / HAKKINDA",
       "grammar": "EDAT",
-      "contextEn": "Questions remained as to whether the buffer concentration was correct.",
-      "contextTr": "Tampon derişimi doğru muydu sorusu açık kaldı."
+      "contextEn": "There is no clear answer as to when the results will arrive.",
+      "contextTr": "Sonuçların ne zaman geleceğine dair net bir yanıt yok."
     },
     {
       "id": "p2-62",
       "term": "CONCERNING",
-      "meaningTr": "İLE İLGİLİ",
+      "meaningTr": "İLE İLGİLİ / HAKKINDA",
       "grammar": "EDAT",
-      "contextEn": "A notice was issued concerning expired chemical inventory in Lab 3.",
-      "contextTr": "3 numaralı laboratuvardaki süresi dolmuş kimyasal envanteriyle ilgili bildiri yayımlandı."
+      "contextEn": "A letter was sent concerning the missing payment.",
+      "contextTr": "Eksik ödemeyle ilgili bir mektup gönderildi."
     },
     {
       "id": "p2-63",
       "term": "REGARDING",
-      "meaningTr": "İLE İLGİLİ",
+      "meaningTr": "İLE İLGİLİ / HAKKINDA",
       "grammar": "EDAT",
-      "contextEn": "Regarding data privacy, all identifiers were removed before sharing.",
-      "contextTr": "Veri mahremiyetiyle ilgili paylaşımdan önce tüm tanıtıcılar kaldırıldı."
+      "contextEn": "Regarding your question, the answer is yes.",
+      "contextTr": "Sorunuzla ilgili cevap evet."
     },
     {
       "id": "p2-64",
       "term": "AS REGARDS",
-      "meaningTr": "İLE İLGİLİ",
+      "meaningTr": "İLE İLGİLİ / -E GELİNCE",
       "grammar": "EDAT",
-      "contextEn": "As regards funding, the grant covers only direct research costs.",
-      "contextTr": "Finansman konusunda hibe yalnızca doğrudan araştırma giderlerini karşılıyor."
+      "contextEn": "As regards the fee, it remains unchanged this year.",
+      "contextTr": "Ücret konusunda bu yıl değişiklik yok."
     },
     {
       "id": "p2-65",
       "term": "PERTAINING TO",
-      "meaningTr": "İLE İLGİLİ",
+      "meaningTr": "İLE İLGİLİ / -E DAİR",
       "grammar": "EDAT",
-      "contextEn": "New guidelines were published pertaining to clinical trial reporting.",
-      "contextTr": "Klinik deneme raporlamasıyla ilgili yeni kılavuzlar yayımlandı."
+      "contextEn": "New rules pertaining to data storage were announced.",
+      "contextTr": "Veri depolamayla ilgili yeni kurallar açıklandı."
     },
     {
       "id": "p2-70",
       "term": "IN SUMMARY",
-      "meaningTr": "KISACA, ÖZET OLARAK",
+      "meaningTr": "KISACA / ÖZET OLARAK",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "In summary, the drug showed efficacy without serious adverse events.",
-      "contextTr": "Özetle ilaç ciddi advers olay olmadan etkililik gösterdi."
+      "contextEn": "In summary, the project was completed on time and within budget.",
+      "contextTr": "Özetle proje zamanında ve bütçe dahilinde tamamlandı."
     },
     {
       "id": "p2-71",
       "term": "IN BRIEF",
-      "meaningTr": "KISACA, ÖZET OLARAK",
+      "meaningTr": "KISACA / ÖZET OLARAK",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "In brief, three assumptions in the model were relaxed.",
-      "contextTr": "Kısaca modeldeki üç varsayım gevşetildi."
+      "contextEn": "In brief, the new system is faster and more reliable.",
+      "contextTr": "Kısaca yeni sistem daha hızlı ve güvenilir."
     },
     {
       "id": "p2-72",
       "term": "IN SHORT",
-      "meaningTr": "KISACA, ÖZET OLARAK",
+      "meaningTr": "KISACA / ÖZET OLARAK",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "In short, we cannot reject the null hypothesis at alpha equals 0.05.",
-      "contextTr": "Kısaca sıfır hipotezini α = 0,05 düzeyinde reddedemiyoruz."
+      "contextEn": "In short, we need more time to prepare.",
+      "contextTr": "Kısaca hazırlanmak için daha fazla zamana ihtiyacımız var."
     },
     {
       "id": "p2-73",
       "term": "IN CONCLUSION",
-      "meaningTr": "KISACA, ÖZET OLARAK",
+      "meaningTr": "SONUÇ OLARAK / ÖZET OLARAK",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "In conclusion, the evidence supports a dose-dependent response.",
-      "contextTr": "Sonuç olarak kanıt doza bağımlı yanıtı destekliyor."
+      "contextEn": "In conclusion, the evidence supports the proposed theory.",
+      "contextTr": "Sonuç olarak kanıtlar önerilen teoriyi destekliyor."
     },
     {
       "id": "p2-74",
       "term": "TO SUM UP",
-      "meaningTr": "KISACA, ÖZET OLARAK",
+      "meaningTr": "KISACA / TOPARLAMAK GEREKİRSE",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "To sum up, replication is still needed in two independent cohorts.",
-      "contextTr": "Toparlarsak iki bağımsız kohortta tekrar gerekli."
+      "contextEn": "To sum up, both methods have advantages and drawbacks.",
+      "contextTr": "Toparlarsak her iki yöntemin de avantajları ve dezavantajları var."
     },
     {
       "id": "p2-75",
       "term": "TO WRAP UP",
-      "meaningTr": "KISACA, ÖZET OLARAK",
+      "meaningTr": "KISACA / TOPARLAMAK GEREKİRSE",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "To wrap up, we will archive the raw traces and publish the code.",
-      "contextTr": "Özetlemek gerekirse ham izleri arşivleyeceğiz ve kodu yayımlayacağız."
+      "contextEn": "To wrap up, the main findings will be shared next week.",
+      "contextTr": "Özetlemek gerekirse temel bulgular önümüzdeki hafta paylaşılacak."
     },
     {
       "id": "p2-76",
       "term": "ALL IN ALL",
-      "meaningTr": "KISACA, ÖZET OLARAK",
+      "meaningTr": "GENEL OLARAK / HER ŞEY GÖZ ÖNÜNE ALINDIĞINDA",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "All in all, the instrument performed within the manufacturer specification.",
-      "contextTr": "Genel olarak cihaz üretici spesifikasyonu içinde çalıştı."
+      "contextEn": "All in all, it was a successful conference.",
+      "contextTr": "Genel olarak başarılı bir konferanstı."
     },
     {
       "id": "p2-80",
       "term": "EXCEPT THAT",
-      "meaningTr": "HARİÇ (bağlaç)",
+      "meaningTr": "-DEN HARİÇ / -OLMAKLA BİRLİKTE (bağlaç)",
       "grammar": "BAĞLAÇ",
-      "contextEn": "The design was sound except that the cooling capacity was underestimated.",
-      "contextTr": "Tasarım sağlamdı; ancak soğutma kapasitesi hafife alınmıştı."
+      "contextEn": "The plan was good except that the budget was too low.",
+      "contextTr": "Bütçe çok düşük olmakla birlikte plan iyiydi."
     },
     {
       "id": "p2-81",
       "term": "SAVE THAT",
-      "meaningTr": "HARİÇ (bağlaç)",
+      "meaningTr": "-DEN HARİÇ (bağlaç)",
       "grammar": "BAĞLAÇ",
-      "contextEn": "No objections were raised save that the timeline was tight.",
-      "contextTr": "Zaman çizelgesinin sıkı olduğu dışında itiraz edilmedi."
+      "contextEn": "The report was complete save that one table was missing.",
+      "contextTr": "Bir tablo eksik olmak dışında rapor eksiksizdi."
     },
     {
       "id": "p3-01",
       "term": "HOWEVER **",
-      "meaningTr": "FAKAT, YİNE DE",
+      "meaningTr": "FAKAT / YİNE DE / BUNUNLA BİRLİKTE",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The first trial failed; however, the second showed clear benefit.",
-      "contextTr": "İlk deneme başarısız oldu; ancak ikincisi açık fayda gösterdi."
+      "contextEn": "The price was high; however, the quality was worth it.",
+      "contextTr": "Fiyat yüksekti; ancak kalitesi buna değdi."
     },
     {
       "id": "p3-02",
       "term": "STILL",
-      "meaningTr": "FAKAT, YİNE DE",
+      "meaningTr": "YİNE DE / BUNA RAĞMEN",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The signal was weak; still, the peak was reproducible across runs.",
-      "contextTr": "Sinyal zayıftı; yine de tepe tekrarlanabilirdi."
-    },
-    {
-      "id": "p3-03",
-      "term": "EVEN SO",
-      "meaningTr": "FAKAT, YİNE DE",
-      "grammar": "CÜMLE ZARFI",
-      "contextEn": "Power use was high; even so, the battery lasted the full shift.",
-      "contextTr": "Güç tüketimi yüksekti; yine de pil tüm vardiyayı dayandı."
-    },
-    {
-      "id": "p3-04",
-      "term": "NONETHELESS",
-      "meaningTr": "FAKAT, YİNE DE",
-      "grammar": "CÜMLE ZARFI",
-      "contextEn": "The model was simple; nonetheless, it predicted the trend correctly.",
-      "contextTr": "Model basitti; yine de eğilimi doğru öngördü."
-    },
-    {
-      "id": "p3-05",
-      "term": "NEVERTHELESS",
-      "meaningTr": "FAKAT, YİNE DE",
-      "grammar": "CÜMLE ZARFI",
-      "contextEn": "The risk was known; nevertheless, the board approved the study.",
-      "contextTr": "Risk biliniyordu; yine de kurul çalışmayı onayladı."
-    },
-    {
-      "id": "p3-06",
-      "term": "ALL THE SAME",
-      "meaningTr": "FAKAT, YİNE DE",
-      "grammar": "CÜMLE ZARFI",
-      "contextEn": "The warning was clear; all the same, several participants skipped training.",
-      "contextTr": "Uyarı netti; yine de birkaç katılımcı eğitimi atladı."
+      "contextEn": "The road was closed; still, some drivers tried to pass.",
+      "contextTr": "Yol kapalıydı; yine de bazı sürücüler geçmeye çalıştı."
     },
     {
       "id": "p3-10",
       "term": "CONVERSELY",
-      "meaningTr": "AKSİNE, DİĞER YANDAN",
+      "meaningTr": "AKSİNE / BUNUN KARŞISINDA",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "Urban air quality improved; conversely, ozone in rural areas rose slightly.",
-      "contextTr": "Kent hava kalitesi iyileşti; aksine kırsalda ozon hafif arttı."
+      "contextEn": "Exercise raises energy; conversely, inactivity leads to fatigue.",
+      "contextTr": "Egzersiz enerjiyi artırır; aksine hareketsizlik yorgunluğa yol açar."
+    },
+    {
+      "id": "p3-03",
+      "term": "EVEN SO",
+      "meaningTr": "YİNE DE / BUNA RAĞMEN",
+      "grammar": "CÜMLE ZARFI",
+      "contextEn": "It was raining heavily; even so, the match continued.",
+      "contextTr": "Yoğun yağmur yağıyordu; yine de maç devam etti."
     },
     {
       "id": "p3-11",
       "term": "ON THE OTHER HAND",
-      "meaningTr": "AKSİNE, DİĞER YANDAN",
+      "meaningTr": "ÖTE YANDAN / DİĞER YANDAN",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The drug acts quickly; on the other hand, its half-life is short.",
-      "contextTr": "İlaç hızlı etki eder; öte yandan yarı ömrü kısadır."
+      "contextEn": "Living in a city is convenient; on the other hand, it is expensive.",
+      "contextTr": "Şehirde yaşamak pratik; öte yandan pahalı."
+    },
+    {
+      "id": "p3-04",
+      "term": "NONETHELESS",
+      "meaningTr": "YİNE DE / BUNA KARŞIN",
+      "grammar": "CÜMLE ZARFI",
+      "contextEn": "The evidence was limited; nonetheless, the committee reached a decision.",
+      "contextTr": "Kanıt sınırlıydı; yine de komite bir karara vardı."
     },
     {
       "id": "p3-12",
       "term": "IN CONTRAST",
-      "meaningTr": "AKSİNE, DİĞER YANDAN",
+      "meaningTr": "AKSİNE / BUNA KARŞILIK",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "Group A recovered faster; in contrast, group B showed delayed healing.",
-      "contextTr": "A grubu daha hızlı iyileşti; aksine B grubunda iyileşme gecikti."
+      "contextEn": "Boys preferred outdoor games; in contrast, girls chose reading.",
+      "contextTr": "Erkekler açık hava oyunlarını tercih etti; buna karşılık kızlar okumayı seçti."
+    },
+    {
+      "id": "p3-05",
+      "term": "NEVERTHELESS",
+      "meaningTr": "YİNE DE / BUNA KARŞIN",
+      "grammar": "CÜMLE ZARFI",
+      "contextEn": "The problem was serious; nevertheless, a solution was found.",
+      "contextTr": "Sorun ciddiydi; yine de bir çözüm bulundu."
     },
     {
       "id": "p3-13",
       "term": "BY CONTRAST",
-      "meaningTr": "AKSİNE, DİĞER YANDAN",
+      "meaningTr": "AKSİNE / BUNA KARŞILIK",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "Public funding fell; by contrast, private donations increased.",
-      "contextTr": "Kamu fonu düştü; aksine özel bağışlar arttı."
+      "contextEn": "The first year was difficult; by contrast, the second was much easier.",
+      "contextTr": "Birinci yıl zordu; buna karşılık ikinci yıl çok daha kolaydı."
+    },
+    {
+      "id": "p3-06",
+      "term": "ALL THE SAME",
+      "meaningTr": "YİNE DE / BUNA RAĞMEN",
+      "grammar": "CÜMLE ZARFI",
+      "contextEn": "The news was bad; all the same, they remained optimistic.",
+      "contextTr": "Haber kötüydü; yine de iyimserliklerini korudular."
     },
     {
       "id": "p3-20",
       "term": "IN CONTRAST TO",
-      "meaningTr": "-NIN AKSİNE",
+      "meaningTr": "-NIN AKSİNE / -NIN KARŞISINDA",
       "grammar": "EDAT",
-      "contextEn": "The control arm improved in contrast to the untreated cohort.",
-      "contextTr": "Kontrol kolu tedavi edilmeyen kohorta kıyasla iyileşti."
+      "contextEn": "In contrast to last year, sales rose sharply this quarter.",
+      "contextTr": "Geçen yılın aksine bu çeyrekte satışlar keskin yükseldi."
     },
     {
       "id": "p3-21",
       "term": "IN CONTRAST WITH",
-      "meaningTr": "-NIN AKSİNE",
+      "meaningTr": "-NIN AKSİNE / -NIN KARŞISINDA",
       "grammar": "EDAT",
-      "contextEn": "Winter output was low in contrast with the summer peak load.",
-      "contextTr": "Kış verimi yaz zirve yükünün aksine düşüktü."
+      "contextEn": "In contrast with her sister, she prefers quiet environments.",
+      "contextTr": "Kız kardeşinin aksine sessiz ortamları tercih ediyor."
     },
     {
       "id": "p3-22",
       "term": "UNLIKE",
-      "meaningTr": "-NIN AKSİNE",
+      "meaningTr": "-NIN AKSİNE / -DEN FARKLI OLARAK",
       "grammar": "EDAT",
-      "contextEn": "Unlike the placebo, the active compound reduced inflammation markers.",
-      "contextTr": "Plasebonun aksine etkin bileşen inflamasyon belirteçlerini düşürdü."
+      "contextEn": "Unlike his brother, he enjoys reading.",
+      "contextTr": "Kardeşinin aksine okumaktan hoşlanıyor."
     },
     {
       "id": "p3-23",
       "term": "CONTRARY TO",
-      "meaningTr": "-NIN AKSİNE",
+      "meaningTr": "-NIN AKSİNE / -E KARŞIN",
       "grammar": "EDAT",
-      "contextEn": "Contrary to earlier reports, the gene is expressed in adult tissue.",
-      "contextTr": "Önceki raporların aksine gen yetişkin dokuda ifade edilir."
+      "contextEn": "Contrary to expectations, the team won the match.",
+      "contextTr": "Beklentilerin aksine takım maçı kazandı."
     },
     {
       "id": "p3-30",
       "term": "THEREFORE",
-      "meaningTr": "BU YÜZDEN, SONUÇ OLARAK",
+      "meaningTr": "BU NEDENLE / DOLAYISIYLA",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The reagent was unstable; therefore, we stored it at minus eighty.",
-      "contextTr": "Reaktif kararsızdı; bu nedenle eksi seksende sakladık."
+      "contextEn": "She missed the bus; therefore, she was late for class.",
+      "contextTr": "Otobüsü kaçırdı; bu nedenle derse geç kaldı."
     },
     {
       "id": "p3-31",
       "term": "THUS",
-      "meaningTr": "BU YÜZDEN, SONUÇ OLARAK",
+      "meaningTr": "BÖYLECE / BU NEDENLE",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The leak was confirmed; thus, the chamber was ventilated and sealed.",
-      "contextTr": "Sızıntı doğrulandı; böylece oda havalandırıldı ve mühürlendi."
+      "contextEn": "The bridge was damaged; thus, the road was closed.",
+      "contextTr": "Köprü hasar gördü; böylece yol kapatıldı."
     },
     {
       "id": "p3-32",
       "term": "HENCE",
-      "meaningTr": "BU YÜZDEN, SONUÇ OLARAK",
+      "meaningTr": "DOLAYISIYLA / BU NEDENLE",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "Costs rose sharply; hence, the pilot phase was shortened.",
-      "contextTr": "Maliyetler keskin arttı; dolayısıyla pilot evre kısaltıldı."
+      "contextEn": "The data were incomplete; hence, no conclusion was drawn.",
+      "contextTr": "Veriler eksikti; dolayısıyla hiçbir sonuç çıkarılmadı."
     },
     {
       "id": "p3-33",
       "term": "ACCORDINGLY",
-      "meaningTr": "BU YÜZDEN, SONUÇ OLARAK",
+      "meaningTr": "BUNA GÖRE / BUNA UYGUN OLARAK",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "Demand exceeded supply; accordingly, rationing was introduced.",
-      "contextTr": "Talep arzı aştı; buna göre kota getirildi."
+      "contextEn": "The rules changed; accordingly, the timetable was updated.",
+      "contextTr": "Kurallar değişti; buna göre ders programı güncellendi."
     },
     {
       "id": "p3-34",
       "term": "CONSEQUENTLY",
-      "meaningTr": "BU YÜZDEN, SONUÇ OLARAK",
+      "meaningTr": "SONUÇ OLARAK / BU NEDENLE",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The sensor failed twice; consequently, readings after hour twelve were discarded.",
-      "contextTr": "Sensör iki kez arızalandı; sonuç olarak on iki saat sonraki okumalar elendi."
+      "contextEn": "He skipped many lessons; consequently, he failed the exam.",
+      "contextTr": "Pek çok dersi atlattı; sonuç olarak sınavda başarısız oldu."
     },
     {
       "id": "p3-35",
       "term": "AS A CONSEQUENCE",
-      "meaningTr": "BU YÜZDEN, SONUÇ OLARAK",
+      "meaningTr": "SONUÇ OLARAK / BU NEDENLE",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The filter clogged; as a consequence, airflow dropped below the safe limit.",
-      "contextTr": "Filtre tıkandı; sonuç olarak hava akışı güvenli limitin altına düştü."
+      "contextEn": "The river flooded; as a consequence, hundreds of homes were damaged.",
+      "contextTr": "Nehir taştı; sonuç olarak yüzlerce ev hasar gördü."
     },
     {
       "id": "p3-36",
       "term": "AS A RESULT",
-      "meaningTr": "BU YÜZDEN, SONUÇ OLARAK",
+      "meaningTr": "SONUÇ OLARAK / BU NEDENLE",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The calibration drifted; as a result, all downstream analyses were paused.",
-      "contextTr": "Kalibrasyon kaydı; bu yüzden tüm aşama analizleri durduruldu."
+      "contextEn": "The factory closed; as a result, many workers lost their jobs.",
+      "contextTr": "Fabrika kapandı; sonuç olarak pek çok işçi işini kaybetti."
     },
     {
       "id": "p3-37",
       "term": "THEREBY **",
-      "meaningTr": "BU YÜZDEN, SONUÇ OLARAK",
+      "meaningTr": "BÖYLECE / BU YOLLA",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "We tightened the acceptance window, thereby reducing false positives.",
-      "contextTr": "Kabul penceresini sıkılaştırdık; böylece yanlış pozitifleri azalttık."
+      "contextEn": "She cut expenses, thereby saving enough money for university.",
+      "contextTr": "Giderlerini kıstı; böylece üniversite için yeterli para biriktirdi."
     },
     {
       "id": "p3-40",
       "term": "ALSO",
-      "meaningTr": "AYRICA, DAHASI, BUNA EK OLARAK",
+      "meaningTr": "AYRICA / BUNA EK OLARAK",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The dose was toxic in mice; also, it showed poor solubility in saline.",
-      "contextTr": "Doz farede toksikti; ayrıca salinde çözünürlüğü zayıftı."
+      "contextEn": "The hotel is affordable; also, it is close to the city centre.",
+      "contextTr": "Otel uygun fiyatlı; ayrıca şehir merkezine yakın."
     },
     {
       "id": "p3-41",
       "term": "BESIDES **",
-      "meaningTr": "AYRICA, DAHASI, BUNA EK OLARAK (cümle zarfı)",
-      "grammar": "CÜMLE ZARFI",
-      "contextEn": "The protocol was long; besides, two steps required a cold room.",
-      "contextTr": "Protokol uzundu; üstelik iki adım soğuk oda gerektiriyordu."
+      "meaningTr": "ÜSTELIK / BUNUN YANINDA (cümle zarfı)  ●  -NIN YANI SIRA (edat)",
+      "grammar": "CÜMLE ZARFI / EDAT",
+      "contextEn": "The task was boring; besides, it took too long. / Besides sport, he enjoys music.",
+      "contextTr": "Görev sıkıcıydı; üstelik çok uzun sürdü. / Sporun yanı sıra müzikten de hoşlanıyor."
     },
     {
       "id": "p3-42",
       "term": "FURTHER",
-      "meaningTr": "AYRICA, DAHASI, BUNA EK OLARAK",
+      "meaningTr": "DAHASI / AYRICA",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The baseline was noisy; further, two sensors were out of range.",
-      "contextTr": "Temel çizgi gürültülüydü; dahası iki sensör aralık dışıydı."
+      "contextEn": "The report was unclear; further, key figures were missing.",
+      "contextTr": "Rapor belirsizdi; dahası temel rakamlar eksikti."
     },
     {
       "id": "p3-43",
       "term": "MOREOVER",
-      "meaningTr": "AYRICA, DAHASI, BUNA EK OLARAK",
+      "meaningTr": "ÜSTELIK / DAHASI",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The effect was small; moreover, it was not statistically significant.",
-      "contextTr": "Etki küçüktü; üstelik istatistiksel olarak anlamlı değildi."
+      "contextEn": "The flat is small; moreover, it has no parking space.",
+      "contextTr": "Daire küçük; üstelik park yeri yok."
     },
     {
       "id": "p3-44",
       "term": "FURTHERMORE",
-      "meaningTr": "AYRICA, DAHASI, BUNA EK OLARAK",
+      "meaningTr": "AYRICA / DAHASI",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The sample was small; furthermore, recruitment stopped early.",
-      "contextTr": "Örneklem küçüktü; ayrıca kayıt erken durduruldu."
+      "contextEn": "The candidate is experienced; furthermore, she speaks three languages.",
+      "contextTr": "Aday deneyimli; ayrıca üç dil konuşuyor."
     },
     {
       "id": "p3-45",
       "term": "IN ADDITION",
-      "meaningTr": "AYRICA, DAHASI, BUNA EK OLARAK",
+      "meaningTr": "BUNA EK OLARAK / AYRICA",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The drug cleared quickly; in addition, it did not accumulate in the liver.",
-      "contextTr": "İlaç hızlı temizlendi; ek olarak karaciğerde birikmedi."
+      "contextEn": "The course is free; in addition, students receive a certificate.",
+      "contextTr": "Kurs ücretsiz; buna ek olarak öğrenciler sertifika alıyor."
     },
     {
       "id": "p3-46",
       "term": "WHAT'S MORE",
-      "meaningTr": "AYRICA, DAHASI, BUNA EK OLARAK",
+      "meaningTr": "DAHASI / ÜSTELIK",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The evidence was indirect; what is more, key controls were missing.",
-      "contextTr": "Kanıt dolaylıydı; dahası temel kontroller eksikti."
-    },
-    {
-      "id": "p3-50",
-      "term": "BESIDES",
-      "meaningTr": "-NIN YANI SIRA, -E EK OLARAK (edat)",
-      "grammar": "EDAT",
-      "contextEn": "Besides the main trial, we ran a small feasibility study.",
-      "contextTr": "Ana denemenin yanında küçük bir uygulanabilirlik çalışması yürüttük."
+      "contextEn": "The phone is cheap; what is more, the battery lasts two days.",
+      "contextTr": "Telefon ucuz; dahası pil iki gün gidiyor."
     },
     {
       "id": "p3-51",
       "term": "IN ADDITION TO",
-      "meaningTr": "-NIN YANI SIRA, -E EK OLARAK",
+      "meaningTr": "-NIN YANI SIRA / -E EK OLARAK",
       "grammar": "EDAT",
-      "contextEn": "In addition to blood tests, participants wore an activity monitor.",
-      "contextTr": "Kan testlerine ek olarak katılımcılar aktivite monitörü taktı."
-    },
-    {
-      "id": "p3-52",
-      "term": "APART FROM (ekleme)",
-      "meaningTr": "-NIN YANI SIRA, -E EK OLARAK",
-      "grammar": "EDAT",
-      "contextEn": "Apart from travel costs, the budget covers tuition and materials.",
-      "contextTr": "Seyahat masraflarının yanı sıra bütçe harç ve materyalleri karşılıyor."
+      "contextEn": "In addition to English, she speaks French.",
+      "contextTr": "İngilizcenin yanı sıra Fransızca da konuşuyor."
     },
     {
       "id": "p3-53",
       "term": "AS WELL AS",
-      "meaningTr": "-NIN YANI SIRA, -E EK OLARAK",
+      "meaningTr": "-NIN YANI SIRA / -E EK OLARAK",
       "grammar": "EDAT",
-      "contextEn": "The lab audits safety as well as data integrity each quarter.",
-      "contextTr": "Laboratuvar her çeyrek hem güvenliği hem veri bütünlüğünü denetler."
+      "contextEn": "She teaches maths as well as physics.",
+      "contextTr": "Matematiğin yanı sıra fizik de öğretiyor."
     },
     {
       "id": "p3-54",
       "term": "ASIDE FROM",
-      "meaningTr": "-NIN YANI SIRA, -E EK OLARAK",
+      "meaningTr": "-NIN YANI SIRA / -DEN BAŞKA",
       "grammar": "EDAT",
-      "contextEn": "Aside from mild headache, no adverse events were reported.",
-      "contextTr": "Hafif baş ağrısı dışında advers olay bildirilmedi."
+      "contextEn": "Aside from a headache, she felt fine.",
+      "contextTr": "Baş ağrısı dışında kendini iyi hissediyordu."
     },
     {
       "id": "p3-55",
       "term": "ALONG WITH",
-      "meaningTr": "-NIN YANI SIRA, -E EK OLARAK",
+      "meaningTr": "-NIN YANI SIRA / -LE BİRLİKTE",
       "grammar": "EDAT",
-      "contextEn": "Along with the vaccine, subjects received standard counselling.",
-      "contextTr": "Aşının yanı sıra deneklere standart danışmanlık verildi."
+      "contextEn": "Along with her degree, she completed an internship.",
+      "contextTr": "Diplomasının yanı sıra staj da tamamladı."
     },
     {
       "id": "p3-56",
       "term": "TOGETHER WITH",
-      "meaningTr": "-NIN YANI SIRA, -E EK OLARAK",
+      "meaningTr": "-NIN YANI SIRA / -LE BİRLİKTE",
       "grammar": "EDAT",
-      "contextEn": "Together with the ethics approval, we filed the clinical protocol.",
-      "contextTr": "Etik onayla birlikte klinik protokolü sunduk."
+      "contextEn": "Together with her colleagues, she prepared the report.",
+      "contextTr": "Meslektaşlarıyla birlikte raporu hazırladı."
     },
     {
       "id": "p3-57",
       "term": "ALONGSIDE",
-      "meaningTr": "-NIN YANI SIRA, -E EK OLARAK",
+      "meaningTr": "-NIN YANI SIRA / -LE BİRLİKTE",
       "grammar": "EDAT",
-      "contextEn": "Alongside genome sequencing, we recorded detailed phenotypes.",
-      "contextTr": "Genom dizilemesinin yanında ayrıntılı fenotipleri kaydettik."
+      "contextEn": "Alongside her studies, she works part-time.",
+      "contextTr": "Öğreniminin yanı sıra yarı zamanlı çalışıyor."
     },
     {
       "id": "p3-58",
       "term": "COUPLED WITH",
-      "meaningTr": "-NIN YANI SIRA, -E EK OLARAK",
+      "meaningTr": "-LE BİRLEŞİNCE / -NIN YANI SIRA",
       "grammar": "EDAT",
-      "contextEn": "Coupled with high humidity, heat stress reduced worker output.",
-      "contextTr": "Yüksek nemle birlikte ısı stresi çalışan verimini düşürdü."
+      "contextEn": "Coupled with lack of sleep, stress caused her to fall ill.",
+      "contextTr": "Uyku eksikliğiyle birleşince stres hastalanmasına neden oldu."
     },
     {
       "id": "p3-60",
       "term": "AT FIRST",
-      "meaningTr": "İLK OLARAK, BAŞTA, DAHA SONRA, BU SÜREDE, BU ESNADA",
+      "meaningTr": "İLK BAŞTA / BAŞLANGITA",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "At first, the curve looked linear; later, saturation became visible.",
-      "contextTr": "Başlangıçta eğri doğrusal görünüyordu; sonra doygunluk belirdi."
+      "contextEn": "At first she was nervous; later she relaxed.",
+      "contextTr": "İlk başta gergin; sonradan rahatlattı."
     },
     {
       "id": "p3-61",
       "term": "INITIALLY",
-      "meaningTr": "İLK OLARAK, BAŞTA, DAHA SONRA, BU SÜREDE, BU ESNADA",
+      "meaningTr": "BAŞLANGITA / İLK OLARAK",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "Initially, the cells grew slowly; afterwards, growth accelerated sharply.",
-      "contextTr": "Başlangıçta hücreler yavaş büyüdü; sonra büyüme keskin hızlandı."
+      "contextEn": "Initially the plan seemed impossible; afterwards it worked.",
+      "contextTr": "Başlangıçta plan imkânsız görünüyordu; sonra işe yaradı."
     },
     {
       "id": "p3-62",
       "term": "AFTERWARDS",
-      "meaningTr": "İLK OLARAK, BAŞTA, DAHA SONRA, BU SÜREDE, BU ESNADA",
+      "meaningTr": "SONRA / DAHA SONRA",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "We froze the samples first; afterwards, we shipped them on dry ice.",
-      "contextTr": "Önce örnekleri dondurduk; sonra kuru buzla gönderdik."
+      "contextEn": "We had lunch; afterwards, we visited the museum.",
+      "contextTr": "Öğle yemeği yedik; sonra müzeyi gezdik."
     },
     {
       "id": "p3-63",
       "term": "IN THE MEANTIME",
-      "meaningTr": "İLK OLARAK, BAŞTA, DAHA SONRA, BU SÜREDE, BU ESNADA",
+      "meaningTr": "BU ARADA / O SÜREDE",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The committee met in the morning; in the meantime, staff prepared the lab.",
-      "contextTr": "Komite sabah toplandı; bu arada personel laboratuvarı hazırladı."
+      "contextEn": "Dinner was cooking; in the meantime, she set the table.",
+      "contextTr": "Yemek pişiyordu; bu arada masayı kurdu."
     },
     {
       "id": "p3-64",
       "term": "MEANWHILE",
-      "meaningTr": "İLK OLARAK, BAŞTA, DAHA SONRA, BU SÜREDE, BU ESNADA",
+      "meaningTr": "BU ARADA / O SÜREDE",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "The reactor was cooling; meanwhile, operators logged pressure every minute.",
-      "contextTr": "Reaktör soğuyordu; bu arada operatörler basıncı her dakika kaydetti."
+      "contextEn": "He was studying; meanwhile, his sister was watching TV.",
+      "contextTr": "Ders çalışıyordu; bu arada kız kardeşi TV izliyordu."
     },
     {
       "id": "p3-70",
       "term": "FOR INSTANCE",
-      "meaningTr": "ÖRNEĞİN",
+      "meaningTr": "ÖRNEĞİN / ÖRNEK VERMEK GEREKİRSE",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "Several solvents were tested for instance acetone and ethanol.",
-      "contextTr": "Birçok çözücü test edildi; örneğin aseton ve etanol."
+      "contextEn": "Some fruits are rich in vitamin C; for instance, oranges and kiwi.",
+      "contextTr": "Bazı meyveler C vitamini bakımından zengindir; örneğin portakal ve kivi."
     },
     {
       "id": "p3-71",
       "term": "FOR EXAMPLE",
       "meaningTr": "ÖRNEĞİN",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "Many factors affect yield; for example, temperature and stirring rate.",
-      "contextTr": "Verimi birçok etken etkiler; örneğin sıcaklık ve karıştırma hızı."
+      "contextEn": "Many animals migrate in winter; for example, swallows fly south.",
+      "contextTr": "Pek çok hayvan kışın göç eder; örneğin kırlangıçlar güneye uçar."
     },
     {
       "id": "p3-72",
       "term": "TO ILLUSTRATE",
-      "meaningTr": "ÖRNEĞİN",
+      "meaningTr": "ÖRNEĞİN / AÇIKLAMAK GEREKİRSE",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "Turnover was high; to illustrate, three labs lost senior staff in one year.",
-      "contextTr": "Devamsızlık yüksekti; örneğin üç laboratuvar bir yılda kıdemli personel kaybetti."
+      "contextEn": "Habits are hard to break; to illustrate, consider how long it takes to stop smoking.",
+      "contextTr": "Alışkanlıkları kırmak zordur; açıklamak gerekirse sigarayı bırakmanın ne kadar sürdüğünü düşünün."
     },
     {
       "id": "p4-01",
       "term": "BECAUSE OF",
-      "meaningTr": "-DEN DOLAYI",
+      "meaningTr": "-DEN DOLAYI / -YÜZÜnden",
       "grammar": "EDAT",
-      "contextEn": "The launch was delayed because of strong crosswinds at the pad.",
-      "contextTr": "Fırlatıcıda sert çapraz rüzgâr yüzünden fırlatma ertelendi."
+      "contextEn": "The match was cancelled because of heavy rain.",
+      "contextTr": "Maç şiddetli yağmur nedeniyle iptal edildi."
     },
     {
       "id": "p4-02",
       "term": "DUE TO",
-      "meaningTr": "-NIN YÜZÜNDEN",
+      "meaningTr": "-NIN YÜZÜNDEN / -NEDENIYLE",
       "grammar": "EDAT",
-      "contextEn": "The session ended early due to a power outage in the building.",
-      "contextTr": "Binada elektrik kesintisi yüzünden oturum erken bitti."
+      "contextEn": "The flight was delayed due to fog.",
+      "contextTr": "Uçuş sis nedeniyle gecikti."
     },
     {
       "id": "p4-03",
       "term": "OWING TO",
-      "meaningTr": "-NEDENİYLE, -YÜZÜNDEN",
+      "meaningTr": "-NEDENİYLE / -YÜZÜNDEN",
       "grammar": "EDAT",
-      "contextEn": "Enrollment slowed owing to strict inclusion criteria.",
-      "contextTr": "Katılım katı dahil etme ölçütleri yüzünden yavaşladı."
+      "contextEn": "The road was closed owing to an accident.",
+      "contextTr": "Yol bir kaza nedeniyle kapatıldı."
     },
     {
       "id": "p4-04",
       "term": "ON ACCOUNT OF",
-      "meaningTr": "-NIN SONUCU OLARAK",
+      "meaningTr": "-NEDENIYLE / -YÜZÜNDEN",
       "grammar": "EDAT",
-      "contextEn": "Overtime was cut on account of a sharp drop in new orders.",
-      "contextTr": "Yeni siparişlerde keskin düşüş yüzünden mesai kesildi."
+      "contextEn": "School was cancelled on account of the snowstorm.",
+      "contextTr": "Kar fırtınası nedeniyle okul tatil edildi."
     },
     {
       "id": "p4-05",
       "term": "IN VIEW OF",
-      "meaningTr": "-DEN DOLAYI / dikkate alınarak (metinde hücre boş; genel edat)",
+      "meaningTr": "-GÖZ ÖNÜNE ALINARAK / -DİKKATE ALINARAK",
       "grammar": "EDAT",
-      "contextEn": "In view of the new safety data, the dose was lowered.",
-      "contextTr": "Yeni güvenlik verileri göz önüne alınarak doz düşürüldü."
+      "contextEn": "In view of the poor results, the strategy was revised.",
+      "contextTr": "Zayıf sonuçlar göz önüne alınarak strateji revize edildi."
     },
     {
       "id": "p4-06",
       "term": "THANKS TO",
       "meaningTr": "-NIN SAYESİNDE",
       "grammar": "EDAT",
-      "contextEn": "Recovery was faster thanks to early physiotherapy.",
-      "contextTr": "Erken fizyoterapi sayesinde iyileşme daha hızlı oldu."
+      "contextEn": "Thanks to his hard work, he won a scholarship.",
+      "contextTr": "Sıkı çalışması sayesinde burs kazandı."
     },
     {
       "id": "p4-07",
       "term": "AS A RESULT OF",
-      "meaningTr": "-NIN SONUCU OLARAK",
+      "meaningTr": "-NIN SONUCU OLARAK / -NEDENİYLE",
       "grammar": "EDAT",
-      "contextEn": "As a result of the contamination, two batches were destroyed.",
-      "contextTr": "Kontaminasyonun sonucu olarak iki parti imha edildi."
+      "contextEn": "As a result of the storm, power was cut for hours.",
+      "contextTr": "Fırtınanın sonucu olarak saatlerce elektrik kesildi."
     },
     {
       "id": "p4-08",
       "term": "AS A CONSEQUENCE OF",
       "meaningTr": "-NIN SONUCU OLARAK",
       "grammar": "EDAT",
-      "contextEn": "As a consequence of the breach, all passwords were reset.",
-      "contextTr": "İhlalin sonucu olarak tüm parolalar sıfırlandı."
+      "contextEn": "As a consequence of the error, the whole file was lost.",
+      "contextTr": "Hatanın sonucu olarak tüm dosya kayboldu."
     },
     {
       "id": "p4-10",
       "term": "SO ... THAT **",
       "meaningTr": "O KADAR ... Kİ",
       "grammar": "BAĞLAÇ",
-      "contextEn": "The beam was so intense that shielding was doubled.",
-      "contextTr": "Işın o kadar yoğundu ki koruma ikiye katlandı."
+      "contextEn": "The film was so long that some viewers fell asleep.",
+      "contextTr": "Film o kadar uzundu ki bazı seyirciler uyuyakaldı."
     },
     {
       "id": "p4-11",
       "term": "SUCH...THAT **",
-      "meaningTr": "O KADAR ... Kİ (such ... that)",
+      "meaningTr": "O KADAR ... Kİ (isim öbeğiyle)",
       "grammar": "BAĞLAÇ",
-      "contextEn": "It was such a narrow window that timing had to be automated.",
-      "contextTr": "Pencere o kadar dardı ki zamanlama otomatikleştirilmeliydi."
+      "contextEn": "It was such a hot day that we stayed indoors.",
+      "contextTr": "O kadar sıcak bir gündü ki içeride kaldık."
     },
     {
       "id": "p4-12",
       "term": ", SO (THAT)",
-      "meaningTr": "BU YÜZDEN (FANTBOYS)",
+      "meaningTr": "BU YÜZDEN (FANTBOYS koordinasyon)",
       "grammar": "FANTBOYS",
-      "contextEn": "Ice covered the runways<<<hole>>> all departures were held until noon.",
-      "contextTr": "Pistleri buz kapladı<<<hole>>>öğleye kadar tüm kalkışlar bekletildi."
+      "contextEn": "The shop was closed, so we went to another one.",
+      "contextTr": "Dükkan kapalıydı, bu yüzden başka birine gittik."
     },
     {
       "id": "p4-13",
       "term": "OTHERWISE",
-      "meaningTr": "AKSİ TAKDİRDE",
+      "meaningTr": "AKSİ TAKDİRDE / YOKSA",
       "grammar": "CÜMLE ZARFI",
-      "contextEn": "Save your work every hour; otherwise, you may lose unsaved analyses.",
-      "contextTr": "Her saat kaydedin; aksi halde kaydedilmemiş analizleri kaybedebilirsiniz."
+      "contextEn": "Leave early; otherwise, you will miss the train.",
+      "contextTr": "Erken çık; aksi takdirde treni kaçırırsın."
     },
     {
       "id": "p4-20",
       "term": "SO THAT",
-      "meaningTr": "-MEK İÇİN / -SİN DİYE",
+      "meaningTr": "-MEK İÇİN / -SİN DİYE (amaç)",
       "grammar": "BAĞLAÇ",
-      "contextEn": "We dimmed the lights so that sensitive dyes would not fade.",
-      "contextTr": "Hassas boyalar solmasın diye ışıkları loşturduk."
+      "contextEn": "She studied hard so that she could pass the exam.",
+      "contextTr": "Sınavı geçebilmek için çok çalıştı."
     },
     {
       "id": "p4-21",
       "term": "IN ORDER THAT",
       "meaningTr": "-MEK İÇİN / -SİN DİYE",
       "grammar": "BAĞLAÇ",
-      "contextEn": "We duplicated the slides in order that every trainee could follow the steps.",
-      "contextTr": "Her stajyerin adımları izleyebilmesi için slaytları çoğalttık."
+      "contextEn": "We arrived early in order that we could find good seats.",
+      "contextTr": "İyi yer bulabilmek için erken geldik."
     },
     {
       "id": "p4-22",
       "term": "FOR FEAR THAT",
       "meaningTr": "-MESİN DİYE / KORKUSUYLA",
       "grammar": "BAĞLAÇ",
-      "contextEn": "They sealed the chamber for fear that pressure might rise overnight.",
-      "contextTr": "Basınç gece yükselir korkusuyla odayı mühürlediler."
+      "contextEn": "She whispered for fear that she might wake the baby.",
+      "contextTr": "Bebeği uyandıracak diye fısıldadı."
     },
     {
       "id": "p4-23",
       "term": "LEST",
-      "meaningTr": "-MESİN DİYE / KORKUSUYLA",
+      "meaningTr": "-MESİN DİYE",
       "grammar": "BAĞLAÇ",
-      "contextEn": "He lowered the voltage lest the sample overheat.",
-      "contextTr": "Örnek aşırı ısınmasın diye voltajı düşürdü."
+      "contextEn": "He wrote it down lest he forget.",
+      "contextTr": "Unutmasın diye not etti."
     },
     {
       "id": "p4-30",
       "term": "AFTER",
       "meaningTr": "-DEN SONRA",
       "grammar": "BAĞLAÇ / EDAT",
-      "contextEn": "They closed the valve after the pressure gauge returned to normal.",
-      "contextTr": "Basınç göstergesi normale döndükten sonra vanayı kapattılar."
+      "contextEn": "She called her mother after she arrived home. / He rested after the exam.",
+      "contextTr": "Eve gelince annesini aradı. / Sınavdan sonra dinlendi."
     },
     {
       "id": "p4-31",
       "term": "BEFORE",
       "meaningTr": "-MEDEN ÖNCE",
       "grammar": "BAĞLAÇ / EDAT / CÜMLE ZARFI",
-      "contextEn": "Create a backup before you upgrade the database schema.",
-      "contextTr": "Veritabanı şemasını yükseltmeden önce yedek oluşturun."
+      "contextEn": "Think carefully before you answer. / He had never travelled abroad before.",
+      "contextTr": "Cevaplamadan önce dikkatlice düşün. / Daha önce hiç yurt dışına çıkmamıştı."
     },
     {
       "id": "p4-32",
       "term": "AS SOON AS",
-      "meaningTr": "...R ...RMAZ",
+      "meaningTr": "-R -RMAZ / HEMEN ...-INCE",
       "grammar": "BAĞLAÇ",
-      "contextEn": "As soon as the alarm cleared, staff re-entered the clean room.",
-      "contextTr": "Alarm soner sonmez personel temiz odaya yeniden girdi."
+      "contextEn": "As soon as the lesson ended, the students left.",
+      "contextTr": "Ders biter bitmez öğrenciler çıktı."
     },
     {
       "id": "p4-33",
       "term": "THE MOMENT",
-      "meaningTr": "...R ...RMAZ",
+      "meaningTr": "-R -RMAZ / HEMEN ...-INCE",
       "grammar": "BAĞLAÇ",
-      "contextEn": "The moment power was restored, the pumps restarted automatically.",
-      "contextTr": "Elektrik gelir gelmez pompalar otomatik yeniden çalıştı."
+      "contextEn": "The moment she entered the room, everyone stood up.",
+      "contextTr": "Odaya girer girmez herkes ayağa kalktı."
     },
     {
       "id": "p4-34",
       "term": "WHEN",
-      "meaningTr": "-DIĞINDA",
+      "meaningTr": "-DIĞINDA / -INCE",
       "grammar": "BAĞLAÇ",
-      "contextEn": "Log the reading when the temperature stabilises for five minutes.",
-      "contextTr": "Sıcaklık beş dakika sabitlendiğinde okumayı kaydedin."
+      "contextEn": "When the alarm rings, wake up immediately.",
+      "contextTr": "Alarm çaldığında hemen uyan."
     },
     {
       "id": "p4-35",
-      "term": "WHILE (zaman: -iken)",
-      "meaningTr": "-İKEN",
+      "term": "WHILE",
+      "meaningTr": "-İKEN (zaman)  ●  -E RAĞMEN / OYSAKİ (zıtlık)",
       "grammar": "BAĞLAÇ",
-      "contextEn": "While the reactor cooled, technicians inspected the welds.",
-      "contextTr": "Reaktör soğurken teknisyenler kaynakları muayene etti."
+      "contextEn": "While she was cooking, he was reading. / While he earns a lot, he never saves.",
+      "contextTr": "O yemek pişirirken o okuyordu. / Çok kazanmasına rağmen hiç biriktirmiyor."
     },
     {
       "id": "p4-36",
       "term": "ONCE",
       "meaningTr": "-BİR ...-SE / ... OLUR OLMAZ",
       "grammar": "BAĞLAÇ / CÜMLE ZARFI",
-      "contextEn": "Once the culture reaches confluence, passage the cells within 24 hours.",
-      "contextTr": "Kültür konfluansa ulaştığında hücreleri 24 saat içinde pasajlayın."
+      "contextEn": "Once you understand the rule, the rest is easy.",
+      "contextTr": "Kuralı bir kavrayınca geri kalanı kolay."
     },
     {
       "id": "p4-37",
       "term": "UNTIL",
       "meaningTr": "-E KADAR",
       "grammar": "BAĞLAÇ / EDAT",
-      "contextEn": "Keep the samples frozen until the courier arrives.",
-      "contextTr": "Kurye gelene kadar örnekleri donuk tutun."
+      "contextEn": "Wait here until I return. / The shop is open until eight.",
+      "contextTr": "Ben dönene kadar burada bekle. / Dükkan sekize kadar açık."
     },
     {
       "id": "p4-38",
       "term": "TILL",
       "meaningTr": "-E KADAR",
       "grammar": "BAĞLAÇ / EDAT",
-      "contextEn": "Wait till the indicator turns green before opening the lid.",
-      "contextTr": "Kapağı açmadan önce gösterge yeşile dönene kadar bekleyin."
+      "contextEn": "She worked till midnight to finish the project.",
+      "contextTr": "Projeyi bitirmek için gece yarısına kadar çalıştı."
     },
     {
       "id": "p4-39",
       "term": "BY THE TIME",
-      "meaningTr": "-E KADAR / -DEN ÖNCE",
+      "meaningTr": "-DIĞINDE ARTIK / -E KADAR",
       "grammar": "BAĞLAÇ",
-      "contextEn": "By the time we arrived, the reaction had already finished.",
-      "contextTr": "Vardığımızda reaksiyon çoktan tamamlanmıştı."
+      "contextEn": "By the time she arrived, the film had already begun.",
+      "contextTr": "O geldiğinde film çoktan başlamıştı."
     },
     {
       "id": "p4-40",
-      "term": "JUST AS (zaman: tam ... iken)",
-      "meaningTr": "TAM...İKEN",
+      "term": "JUST AS",
+      "meaningTr": "TAM...-İKEN (zaman)  ●  -DIĞI GİBİ (benzerlik)",
       "grammar": "BAĞLAÇ",
-      "contextEn": "<<<hole>>> the set point was reached, the controller switched to standby mode.",
-      "contextTr": "<<<hole>>>ayar noktasına ulaşıldığında denetleyici bekleme moduna geçti."
+      "contextEn": "Just as I was leaving, the phone rang. / The result was just as we expected.",
+      "contextTr": "Tam çıkarken telefon çaldı. / Sonuç beklediğimiz gibiydi."
     },
     {
       "id": "p4-41",
       "term": "THE LAST TIME",
-      "meaningTr": "SON...DIĞINDA",
+      "meaningTr": "SON...-DIĞINDA",
       "grammar": "BAĞLAÇ",
-      "contextEn": "The last time we calibrated the balance, the drift was negligible.",
-      "contextTr": "Terazi son kalibre edildiğinde sapma ihmal edilebilirdi."
+      "contextEn": "The last time we met, she had just started a new job.",
+      "contextTr": "Son görüştüğümüzde yeni bir işe yeni başlamıştı."
     },
     {
       "id": "p4-42",
       "term": "THE NEXT TIME",
-      "meaningTr": "GELECEK SEFER...",
+      "meaningTr": "GELECEK SEFER...-DIĞINDA",
       "grammar": "BAĞLAÇ",
-      "contextEn": "The next time the alarm trips, route traffic through the backup server.",
-      "contextTr": "Alarm bir daha tetiklenince trafiği yedek sunucuya yönlendirin."
+      "contextEn": "The next time you visit, call in advance.",
+      "contextTr": "Gelecek sefer ziyarete geldiğinde önceden ara."
     },
     {
       "id": "p4-43",
       "term": "NO SOONER...THAN **",
-      "meaningTr": "... OLUR OLMAZ (devrik)",
+      "meaningTr": "...-R -RMAZ (devrik yapı)",
       "grammar": "CÜMLE BAŞINDA DEVRİK",
-      "contextEn": "No sooner had the gates opened than the crowd moved forward in an orderly line.",
-      "contextTr": "Kapılar açılır açılmaz kalabalık düzenli bir sıra ile ilerledi."
+      "contextEn": "No sooner had she sat down than the doorbell rang.",
+      "contextTr": "Oturur oturmaz kapı zili çaldı."
     },
     {
       "id": "p4-44",
       "term": "HARDLY...WHEN **",
-      "meaningTr": "... OLUR OLMAZ (devrik)",
+      "meaningTr": "...-R -RMAZ (devrik yapı)",
       "grammar": "CÜMLE BAŞINDA DEVRİK",
-      "contextEn": "Hardly had the scan started when the motion artefact appeared.",
-      "contextTr": "Tarama başlar başlamaz hareket artefaktı belirdi."
+      "contextEn": "Hardly had he left when it began to rain.",
+      "contextTr": "Gider gitmez yağmur başladı."
     },
     {
       "id": "p4-45",
       "term": "WHENEVER",
-      "meaningTr": "HER...DIĞINDA",
+      "meaningTr": "HER...-DIĞINDA / NE ZAMAN...-SA",
       "grammar": "BAĞLAÇ",
-      "contextEn": "Whenever humidity exceeds sixty percent, ventilate the growth chamber.",
-      "contextTr": "Nem yüzde altmışı aştıkça büyüme odasını havalandırın."
+      "contextEn": "Whenever she is stressed, she goes for a walk.",
+      "contextTr": "Ne zaman stres alsa yürüyüşe çıkıyor."
     },
     {
       "id": "p4-46",
       "term": "EVERY TIME",
-      "meaningTr": "HER...DIĞINDA",
+      "meaningTr": "HER...-DIĞINDA",
       "grammar": "BAĞLAÇ",
-      "contextEn": "Every time the pressure spikes, the relief valve opens automatically.",
-      "contextTr": "Basınç her sıçrayınca tahliye vanası otomatik açılır."
-    },
-    {
-      "id": "p4-50",
-      "term": "JUST AS (durum: -dığı gibi)",
-      "meaningTr": "-DIĞI GİBİ",
-      "grammar": "BAĞLAÇ",
-      "contextEn": "The final spectrum looked just as we had predicted from the model.",
-      "contextTr": "Son spektrum modelden öngördüğümüz gibi çıktı."
+      "contextEn": "Every time he speaks in public, he gets nervous.",
+      "contextTr": "Kamuoyu önünde her konuştuğunda sinirleniyor."
     },
     {
       "id": "p4-51",
       "term": "AS IF",
-      "meaningTr": "-GİBİ / -MİŞ GİBİ",
+      "meaningTr": "-MİŞ GİBİ / SANKI",
       "grammar": "BAĞLAÇ",
-      "contextEn": "He adjusted the lens as if a smaller field would reveal more detail.",
-      "contextTr": "Daha küçük alan daha çok ayrıntı gösterirmiş gibi merceği ayarladı."
+      "contextEn": "He spoke as if he knew the answer.",
+      "contextTr": "Cevabı biliyormuş gibi konuştu."
     },
     {
       "id": "p4-52",
       "term": "AS THOUGH",
-      "meaningTr": "-GİBİ / -MİŞ GİBİ",
+      "meaningTr": "-MİŞ GİBİ / SANKI",
       "grammar": "BAĞLAÇ",
-      "contextEn": "The cells behaved as though they had already been stressed by heat.",
-      "contextTr": "Hücreler ısı stresine maruz kalmış gibi davrandı."
+      "contextEn": "She looked as though she had not slept at all.",
+      "contextTr": "Hiç uyumamış gibi görünüyordu."
     },
     {
       "id": "p4-60",
       "term": "GIVEN THAT",
-      "meaningTr": "-MESİ DİKKATE ALINIRSA",
+      "meaningTr": "-DİĞİ DİKKATE ALINIRSA / -DİĞİNDEN",
       "grammar": "BAĞLAÇ",
-      "contextEn": "Funding was frozen given that no milestone was met on schedule.",
-      "contextTr": "Hiçbir kilometre taşına zamanında ulaşılmadığı için fon donduruldu."
+      "contextEn": "Given that it was his first attempt, the result was impressive.",
+      "contextTr": "İlk girişimi olduğu dikkate alınırsa sonuç etkileyiciydi."
     },
     {
       "id": "p4-61",
       "term": "CONSIDERING THAT",
-      "meaningTr": "-MESİ DİKKATE ALINIRSA",
+      "meaningTr": "-DİĞİ DİKKATE ALINIRSA",
       "grammar": "BAĞLAÇ",
-      "contextEn": "We delayed recruitment considering that infection rates were rising.",
-      "contextTr": "Enfeksiyon oranları yükseldiği için kaydı erteledik."
+      "contextEn": "Considering that she is new, her performance is excellent.",
+      "contextTr": "Yeni olduğu göz önüne alınırsa performansı mükemmel."
     },
     {
       "id": "p4-62",
       "term": "GIVEN",
-      "meaningTr": "-İ DÜŞÜNÜRSEK",
+      "meaningTr": "-İ DÜŞÜNÜRSEK / GÖZ ÖNÜNE ALININCA",
       "grammar": "EDAT",
-      "contextEn": "Given the limited sample size, we reported wide confidence intervals.",
-      "contextTr": "Sınırlı örneklem büyüklüğü düşünülerek geniş güven aralıkları bildirdik."
+      "contextEn": "Given her experience, she is the best candidate.",
+      "contextTr": "Deneyimi göz önüne alınca en iyi aday o."
     },
     {
       "id": "p4-63",
       "term": "CONSIDERING",
-      "meaningTr": "-İ DÜŞÜNÜRSEK",
+      "meaningTr": "-İ DÜŞÜNÜRSEK / -E BAKINCA",
       "grammar": "EDAT",
-      "contextEn": "Considering the backlog, we paused non-urgent experiments.",
-      "contextTr": "Birikim göz önüne alınarak acil olmayan deneyler durduruldu."
+      "contextEn": "Considering his age, he is very fit.",
+      "contextTr": "Yaşına bakınca çok zinde."
     },
     {
       "id": "p4-64",
       "term": "AS FAR AS",
-      "meaningTr": "-DIĞI KADARIYLA",
+      "meaningTr": "-DİĞİ KADARIYLA / -E GÖRE",
       "grammar": "BAĞLAÇ",
-      "contextEn": "As far as we can tell, only one genotype carries the resistance allele.",
-      "contextTr": "Anladığımız kadarıyla yalnızca bir genotip direnç alelini taşıyor."
+      "contextEn": "As far as I know, the meeting has not been cancelled.",
+      "contextTr": "Bildiğim kadarıyla toplantı iptal edilmedi."
     },
     {
       "id": "p4-65",
       "term": "SO FAR AS",
-      "meaningTr": "-DIĞI KADARIYLA",
+      "meaningTr": "-DİĞİ KADARIYLA",
       "grammar": "BAĞLAÇ",
-      "contextEn": "So far as the records show, no patient received a double dose.",
-      "contextTr": "Kayıtların gösterdiği kadarıyla hiçbir hastaya çift doz verilmedi."
+      "contextEn": "So far as the records show, she has never been absent.",
+      "contextTr": "Kayıtların gösterdiği kadarıyla hiç devamsızlık yapmamış."
     },
     {
       "id": "p6-01",
       "term": "FOR",
-      "meaningTr": "ÇÜNKÜ",
+      "meaningTr": "ÇÜNKÜ (FANBOYS)",
       "grammar": "FANTBOYS",
-      "contextEn": "We trusted the calibration for three independent labs confirmed it.",
-      "contextTr": "Kalibrasyona güvendik; çünkü üç bağımsız laboratuvar doğruladı."
+      "contextEn": "He stayed home, for he was feeling unwell.",
+      "contextTr": "Evde kaldı; çünkü kendini iyi hissetmiyordu."
     },
     {
       "id": "p6-02",
       "term": "AND",
-      "meaningTr": "VE",
+      "meaningTr": "VE (FANBOYS)",
       "grammar": "FANTBOYS",
-      "contextEn": "Reviewers checked the statistics and requested clearer tables.",
-      "contextTr": "Hakemler istatistikleri kontrol etti ve daha net tablolar istedi."
+      "contextEn": "She opened the window and let in the fresh air.",
+      "contextTr": "Pencereyi açtı ve temiz havayı içeri aldı."
     },
     {
       "id": "p6-03",
       "term": "NOR",
-      "meaningTr": "NE DE",
+      "meaningTr": "NE DE (FANBOYS)",
       "grammar": "FANTBOYS",
-      "contextEn": "He neither signed the form nor returned it before the deadline.",
-      "contextTr": "Ne formu imzaladı ne de son tarihten önce iade etti."
+      "contextEn": "He did not apologise, nor did he explain his behaviour.",
+      "contextTr": "Özür dilemedi; ne de davranışını açıkladı."
     },
     {
       "id": "p6-04",
       "term": "THEN",
-      "meaningTr": "SONRA, O ZAMAN",
+      "meaningTr": "SONRA / O ZAMAN (FANBOYS)",
       "grammar": "FANTBOYS",
-      "contextEn": "Seal the container then label it with the batch code.",
-      "contextTr": "Kabı mühürle, sonra parti koduyla etiketle."
+      "contextEn": "Read the instructions, then start the exercise.",
+      "contextTr": "Talimatları oku, sonra alıştırmaya başla."
     },
     {
       "id": "p6-05",
       "term": "BUT",
-      "meaningTr": "FAKAT",
+      "meaningTr": "FAKAT / AMA (FANBOYS)",
       "grammar": "FANTBOYS",
-      "contextEn": "The baseline was stable but the treatment arm showed a drift.",
-      "contextTr": "Temel çizgi kararlıydı fakat tedavi kolunda sapma vardı."
+      "contextEn": "The question was short but the answer required careful thought.",
+      "contextTr": "Soru kısaydı ama cevap dikkatli düşünmeyi gerektiriyordu."
     },
     {
       "id": "p6-06",
       "term": "OR",
-      "meaningTr": "VEYA, YOKSA",
+      "meaningTr": "VEYA / YOKSA (FANBOYS)",
       "grammar": "FANTBOYS",
-      "contextEn": "Use sterile saline or autoclave the instruments first.",
-      "contextTr": "Önce steril salin kullan ya da aletleri otoklavla."
+      "contextEn": "Study regularly or you will struggle in the exam.",
+      "contextTr": "Düzenli çalış ya da sınavda zorlanırsın."
     },
     {
       "id": "p6-07",
       "term": "YET",
-      "meaningTr": "FAKAT",
+      "meaningTr": "FAKAT / YİNE DE (FANBOYS)",
       "grammar": "FANTBOYS",
-      "contextEn": "The probe looked idle yet it was still recording microvolt noise.",
-      "contextTr": "Prob boş görünüyordu ama hâlâ mikrovolt gürültüyü kaydediyordu."
+      "contextEn": "He is young, yet he handles responsibility well.",
+      "contextTr": "Genç ama sorumluluğu iyi taşıyor."
     },
     {
       "id": "p6-08",
       "term": "SO",
-      "meaningTr": "BU YÜZDEN",
+      "meaningTr": "BU YÜZDEN (FANBOYS)",
       "grammar": "FANTBOYS",
-      "contextEn": "Traffic was blocked so emergency vehicles used the shoulder.",
-      "contextTr": "Trafik tıkandı; bu yüzden acil araçlar banketi kullandı."
+      "contextEn": "She was tired, so she went to bed early.",
+      "contextTr": "Yorgundu, bu yüzden erken yattı."
     },
     {
       "id": "p6-10",
       "term": "*NOT ONLY...BUT (ALSO)...",
-      "meaningTr": "SADECE... DEĞİL, AYRICA...",
+      "meaningTr": "SADECE...DEĞİL, AYRICA...",
       "grammar": "PARALEL YAPI",
-      "contextEn": "The compound inhibited not only replication but also viral entry.",
-      "contextTr": "Bileşik yalnızca replikasyonu değil viral girişi de inhibe etti."
+      "contextEn": "She not only passed the exam but also got the highest grade.",
+      "contextTr": "Sınavı geçmekle kalmadı, en yüksek notu da aldı."
     },
     {
       "id": "p6-11",
       "term": "*BOTH...AND...",
       "meaningTr": "HEM...HEM DE",
       "grammar": "PARALEL YAPI",
-      "contextEn": "Both the principal investigator and the statistician reviewed the plan.",
-      "contextTr": "Hem baş araştırmacı hem istatistikçi planı gözden geçirdi."
+      "contextEn": "Both the teacher and the students enjoyed the lesson.",
+      "contextTr": "Hem öğretmen hem öğrenciler dersin tadını çıkardı."
     },
     {
       "id": "p6-12",
       "term": "*EITHER...OR",
       "meaningTr": "YA...YA DA",
       "grammar": "PARALEL YAPI",
-      "contextEn": "Either extend the follow-up or close the cohort at month twelve.",
-      "contextTr": "Takibi uzat ya da kohortu on ikinci ayda kapat."
+      "contextEn": "You can either take the bus or walk to the station.",
+      "contextTr": "Ya otobüse binebilir ya da istasyona yürüyebilirsin."
     },
     {
       "id": "p6-13",
       "term": "*NEITHER...NOR...",
       "meaningTr": "NE...NE DE",
       "grammar": "PARALEL YAPI",
-      "contextEn": "Neither the sponsor nor the site withheld safety data.",
-      "contextTr": "Ne sponsor ne merkez güvenlik verisini gizlemedi."
+      "contextEn": "Neither the manager nor the staff attended the meeting.",
+      "contextTr": "Ne yönetici ne de personel toplantıya katıldı."
     },
     {
       "id": "p6-14",
       "term": "NOT....BUT....",
       "meaningTr": "....DEĞİL......DIR....",
       "grammar": "PARALEL YAPI",
-      "contextEn": "It was not bias but small sample size that limited the conclusion.",
-      "contextTr": "Sonucu sınırlayan yanlılık değil küçük örneklem büyüklüğüydü."
+      "contextEn": "It was not the cost but the quality that mattered.",
+      "contextTr": "Önemli olan maliyet değil kaliteydi."
     },
     {
       "id": "p6-20",
       "term": "ALTHOUGH",
-      "meaningTr": "-E RAĞMEN, -SA DA, -SA BİLE, -E KARŞIN",
+      "meaningTr": "-E RAĞMEN / -SA DA",
       "grammar": "BAĞLAÇ",
-      "contextEn": "Although the dose was low, a measurable response appeared.",
-      "contextTr": "Doz düşük olmasına rağmen ölçülebilir yanıt oluştu."
+      "contextEn": "Although the weather was cold, they went for a walk.",
+      "contextTr": "Hava soğuk olmasına rağmen yürüyüşe çıktılar."
     },
     {
       "id": "p6-21",
       "term": "EVEN THOUGH",
-      "meaningTr": "-E RAĞMEN, -SA DA, -SA BİLE, -E KARŞIN",
+      "meaningTr": "-E RAĞMEN / -SA BİLE",
       "grammar": "BAĞLAÇ",
-      "contextEn": "Even though side effects were mild, monitoring continued for six months.",
-      "contextTr": "Yan etkiler hafif olsa da izleme altı ay sürdü."
+      "contextEn": "Even though he studied hard, he failed the test.",
+      "contextTr": "Çok çalışmasına rağmen testi geçemedi."
     },
     {
       "id": "p6-22",
       "term": "MUCH AS",
-      "meaningTr": "-E RAĞMEN, -SA DA, -SA BİLE, -E KARŞIN",
+      "meaningTr": "NE KADAR...SA DA / -E RAĞMEN",
       "grammar": "BAĞLAÇ",
-      "contextEn": "Much as we hoped for a cure, the trial stopped at the interim analysis.",
-      "contextTr": "İyileşme umut etsek de deneme ara analizde durduruldu."
+      "contextEn": "Much as I wanted to help, I was too busy.",
+      "contextTr": "Yardım etmek istesem de çok meşguldüm."
     },
     {
       "id": "p6-23",
       "term": "EVEN IF",
-      "meaningTr": "-E RAĞMEN, -SA DA, -SA BİLE, -E KARŞIN",
+      "meaningTr": "-SA BİLE / -SE DAHI",
       "grammar": "BAĞLAÇ",
-      "contextEn": "Even if the trend reverses, we will publish the full dataset.",
-      "contextTr": "Eğilim ters çevrilse bile tam veri setini yayımlayacağız."
+      "contextEn": "Even if it rains, the ceremony will take place outside.",
+      "contextTr": "Yağmur yağsa bile tören dışarıda yapılacak."
     },
     {
       "id": "p6-24",
-      "term": "WHILE (zıtlık: -e rağmen)",
-      "meaningTr": "-E RAĞMEN, -SA DA, -SA BİLE, -E KARŞIN",
+      "term": "THOUGH **",
+      "meaningTr": "-E RAĞMEN / -SA DA",
       "grammar": "BAĞLAÇ",
-      "contextEn": "While many labs rushed to publish, this group repeated every assay twice.",
-      "contextTr": "Birçok laboratuvar yayına koşarken bu grup her deneyi iki kez tekrarladı."
+      "contextEn": "It was a good film, though the ending was weak.",
+      "contextTr": "İyi bir filmdi; son kısım zayıf olsa da."
     },
     {
       "id": "p6-25",
-      "term": "THOUGH **",
-      "meaningTr": "-E RAĞMEN, -SA DA, -SA BİLE, -E KARŞIN",
+      "term": "DESPITE THE FACT THAT",
+      "meaningTr": "-E RAĞMEN / -OLMASINA KARŞIN",
       "grammar": "BAĞLAÇ",
-      "contextEn": "The compound was effective, expensive though it was for a student budget.",
-      "contextTr": "Bileşik etkiliydi; öğrenci bütçesi için pahalı olsa da."
+      "contextEn": "Despite the fact that she was tired, she continued working.",
+      "contextTr": "Yorgun olmasına rağmen çalışmayı sürdürdü."
     },
     {
       "id": "p6-26",
-      "term": "DESPITE THE FACT THAT",
-      "meaningTr": "-E RAĞMEN, -SA DA, -SA BİLE, -E KARŞIN",
-      "grammar": "BAĞLAÇ",
-      "contextEn": "They continued dosing despite the fact that liver enzymes had risen.",
-      "contextTr": "Karaciğer enzimleri yükselmiş olmasına rağmen dozaj sürdürüldü."
-    },
-    {
-      "id": "p6-27",
       "term": "IN SPITE OF THE FACT THAT",
-      "meaningTr": "-E RAĞMEN, -SA DA, -SA BİLE, -E KARŞIN",
+      "meaningTr": "-E RAĞMEN / -OLMASINA KARŞIN",
       "grammar": "BAĞLAÇ",
-      "contextEn": "In spite of the fact that funding ended, the team finished sequencing.",
-      "contextTr": "Fon bitmiş olmasına rağmen ekip dizilemeyi tamamladı."
+      "contextEn": "In spite of the fact that he was ill, he attended the class.",
+      "contextTr": "Hasta olmasına rağmen derse katıldı."
     },
     {
       "id": "p6-30",
       "term": "DESPITE",
-      "meaningTr": "-E RAĞMEN, -SA DA, -SA BİLE, -E KARŞIN",
+      "meaningTr": "-E RAĞMEN (edat)",
       "grammar": "EDAT",
-      "contextEn": "Recruitment continued despite flood warnings in the region.",
-      "contextTr": "Bölgede sel uyarılarına rağmen kayıt sürdü."
+      "contextEn": "Despite the noise, she managed to concentrate.",
+      "contextTr": "Gürültüye rağmen odaklanmayı başardı."
     },
     {
       "id": "p6-31",
       "term": "IN SPITE OF",
-      "meaningTr": "-E RAĞMEN, -SA DA, -SA BİLE, -E KARŞIN",
+      "meaningTr": "-E RAĞMEN (edat)",
       "grammar": "EDAT",
-      "contextEn": "The field work went ahead in spite of freezing rain.",
-      "contextTr": "Dondurucu yağmura rağmen saha çalışması ilerledi."
+      "contextEn": "In spite of her fear, she gave the speech.",
+      "contextTr": "Korkusuna rağmen konuşmayı yaptı."
     },
     {
       "id": "p6-32",
       "term": "HOWEVER + ADJ / ADV",
-      "meaningTr": "NE KADAR...SA...SIN",
+      "meaningTr": "NE KADAR...SA...SIN (bağlaç)",
       "grammar": "BAĞLAÇ",
-      "ezberNotu": "Bağlaç: HOWEVER hemen ardından sıfat (ADJ) veya zarf (ADV) alır, sonra ana cümle (SVO) gelir. (Ne kadar ... ise / olsa anlamı.)",
-      "contextEn": "<<<hole>>> steep the cost-benefit trade-off was, the panel approved the trial.",
-      "contextTr": "<<<hole>>> maliyet-fayda değişimi dik olsa da komite denemeyi onayladı."
+      "ezberNotu": "HOWEVER + sıfat/zarf + SVO. Örn: However difficult the task is, keep trying.",
+      "contextEn": "However tired she was, she never gave up.",
+      "contextTr": "Ne kadar yorgun olursa olsun, hiç pes etmedi."
     },
     {
       "id": "p6-33",
       "term": "NO MATTER HOW + ADJ / ADV",
       "meaningTr": "NE KADAR...SA...SIN",
       "grammar": "BAĞLAÇ",
-      "ezberNotu": "Bağlaç: NO MATTER HOW + sıfat/zarf + SVO. Koşul/ölçü ne olursa olsun anlamında; araya ADJ/ADV obeği girer.",
-      "contextEn": "<<<hole>>> noisy the signal was, the peak frequency stayed stable.",
-      "contextTr": "<<<hole>>> sinyal gürültülü olsa da tepe frekansı sabit kaldı."
+      "ezberNotu": "NO MATTER HOW + sıfat/zarf + SVO.",
+      "contextEn": "No matter how hard the question is, attempt an answer.",
+      "contextTr": "Soru ne kadar zor olursa olsun, cevap vermeye çalış."
     },
     {
       "id": "p6-34",
       "term": "WHEREAS",
-      "meaningTr": "İKEN / OYSAKİ",
+      "meaningTr": "-İKEN / OYSAKİ",
       "grammar": "BAĞLAÇ",
-      "contextEn": "Whereas mice showed inflammation, rats remained asymptomatic.",
-      "contextTr": "Fareler inflamasyon gösterirken sıçanlar asemptomatik kaldı."
-    },
-    {
-      "id": "p6-35",
-      "term": "WHILE (oysaki / iken)",
-      "meaningTr": "İKEN / OYSAKİ",
-      "grammar": "BAĞLAÇ",
-      "contextEn": "Imports rose while domestic production stayed flat.",
-      "contextTr": "İthalat artarken yerli üretim düz kaldı."
+      "contextEn": "Whereas English uses many loanwords, Turkish uses fewer.",
+      "contextTr": "İngilizce pek çok alıntı kelime kullanırken Türkçe daha az kullanır."
     },
     {
       "id": "p6-36",
       "term": "*NOTWITHSTANDING",
-      "meaningTr": "-E RAĞMEN / YİNE DE",
+      "meaningTr": "-E RAĞMEN (edat)  ●  YİNE DE (cümle zarfı)  ●  -E KARŞIN (bağlaç)",
       "grammar": "BAĞLAÇ / CÜMLE ZARFI / EDAT",
-      "contextEn": "Payments were released notwithstanding a pending audit.",
-      "contextTr": "Bekleyen denetim olmasına rağmen ödemeler serbest bırakıldı."
+      "contextEn": "Notwithstanding the high cost, the project was approved. / The cost was high; notwithstanding, the project was approved.",
+      "contextTr": "Yüksek maliyete rağmen proje onaylandı. / Maliyet yüksekti; yine de proje onaylandı."
     },
     {
       "id": "p6-40",
       "term": "BECAUSE",
-      "meaningTr": "-DIĞI İÇİN, ÇÜNKÜ",
+      "meaningTr": "-DİĞİ İÇİN / ÇÜNKÜ",
       "grammar": "BAĞLAÇ",
-      "contextEn": "We halted dosing because liver enzymes rose above the limit.",
-      "contextTr": "Karaciğer enzimleri limitin üstüne çıktığı için dozajı durdurduk."
+      "contextEn": "She wore a coat because it was cold outside.",
+      "contextTr": "Dışarısı soğuk olduğu için palto giydi."
     },
     {
       "id": "p6-41",
       "term": "SINCE",
-      "meaningTr": "-DIĞI İÇİN, ÇÜNKÜ",
+      "meaningTr": "-DİĞİ İÇİN / ÇÜNKÜ / -DEN BERİ",
       "grammar": "BAĞLAÇ",
-      "contextEn": "Commuters stayed home since public transport was suspended.",
-      "contextTr": "Toplu taşıma askıya alındığı için yolcular evde kaldı."
+      "contextEn": "Since the library was closed, he studied at home.",
+      "contextTr": "Kütüphane kapalı olduğu için evde çalıştı."
     },
     {
       "id": "p6-42",
       "term": "AS",
-      "meaningTr": "-DIĞI İÇİN, ÇÜNKÜ",
+      "meaningTr": "-DİĞİ İÇİN / ÇÜNKÜ / -İKEN",
       "grammar": "BAĞLAÇ",
-      "contextEn": "We paused the rollout as the logs showed a memory leak.",
-      "contextTr": "Günlükler bellek sızıntısı gösterdiğinden yayını duraklattık."
+      "contextEn": "As the road was icy, drivers slowed down.",
+      "contextTr": "Yol buzlu olduğundan sürücüler yavaşladı."
     },
     {
       "id": "p6-43",
       "term": "SEEING AS",
-      "meaningTr": "-DIĞI İÇİN, ÇÜNKÜ",
+      "meaningTr": "-DİĞİ İÇİN / MADEM Kİ",
       "grammar": "BAĞLAÇ",
-      "contextEn": "We rerouted hikers seeing as the trail was closed after the landslide.",
-      "contextTr": "Heyelan sonrası patika kapalı olduğundan yürüyüşçüleri yeniden yönlendirdik."
+      "contextEn": "Seeing as everyone is here, let us begin.",
+      "contextTr": "Herkes burada olduğuna göre başlayalım."
     },
     {
       "id": "p6-44",
       "term": "SEEING THAT",
-      "meaningTr": "-DIĞI İÇİN, ÇÜNKÜ",
+      "meaningTr": "-DİĞİ İÇİN / MADEM Kİ",
       "grammar": "BAĞLAÇ",
-      "contextEn": "Guards doubled shifts seeing that crowds would peak after the keynote.",
-      "contextTr": "Ana konuşma sonrası kalabalığın zirve yapacağını görerek nöbetleri ikiye katladılar."
+      "contextEn": "Seeing that it was late, she decided to take a taxi.",
+      "contextTr": "Geç olduğunu görünce taksi almaya karar verdi."
     },
     {
       "id": "p6-45",
       "term": "INASMUCH AS",
-      "meaningTr": "-DIĞI İÇİN, ÇÜNKÜ",
+      "meaningTr": "-DİĞİ ÖLÇÜDE / -DEN DOLAYI",
       "grammar": "BAĞLAÇ",
-      "contextEn": "Inasmuch as the data were noisy, we avoided strong claims.",
-      "contextTr": "Veri gürültülü olduğu ölçüde iddialardan kaçındık."
+      "contextEn": "Inasmuch as he is the director, he is responsible for the outcome.",
+      "contextTr": "Müdür olduğu ölçüde sonuçtan o sorumludur."
     },
     {
       "id": "p6-46",
       "term": "ON THE GROUNDS THAT",
-      "meaningTr": "-DIĞI İÇİN, ÇÜNKÜ",
+      "meaningTr": "-DİĞİ GEREKÇESİYLE / -DİĞİ İÇİN",
       "grammar": "BAĞLAÇ",
-      "contextEn": "The appeal was rejected on the grounds that consent was incomplete.",
-      "contextTr": "Onam eksik olduğu gerekçesiyle başvuru reddedildi."
+      "contextEn": "She was dismissed on the grounds that she had broken the rules.",
+      "contextTr": "Kuralları çiğnediği gerekçesiyle görevden alındı."
     },
     {
       "id": "p6-47",
-      "term": "*NOW THAT (madem ki, -dığına göre)",
-      "meaningTr": "-DIĞI İÇİN, ÇÜNKÜ",
+      "term": "*NOW THAT",
+      "meaningTr": "-DİĞİNE GÖRE / MADEM Kİ",
       "grammar": "BAĞLAÇ",
-      "contextEn": "Now that the protocol is public, external labs can replicate the assay.",
-      "contextTr": "Protokol kamuya açıklandığına göre dış laboratuvarlar deneyi tekrarlayabilir."
+      "contextEn": "Now that the exams are over, we can relax.",
+      "contextTr": "Sınavlar bittiğine göre artık rahatlayabiliriz."
     },
     {
       "id": "p6-48",
-      "term": "*IN THAT (bakımından, açısından)",
-      "meaningTr": "-DIĞI İÇİN, ÇÜNKÜ",
+      "term": "*IN THAT",
+      "meaningTr": "-DİĞİ BAKIMDAN / ŞÖYLE Kİ",
       "grammar": "BAĞLAÇ",
-      "contextEn": "The model failed in that it ignored spatial correlation between sites.",
-      "contextTr": "Model merkezler arası mekânsal korelasyonu yok saydığı için başarısız oldu."
+      "contextEn": "The plan was flawed in that it overlooked transport costs.",
+      "contextTr": "Plan şöyle ki ulaşım maliyetlerini gözden kaçırdığı için hatalıydı."
     }
   ]
 }

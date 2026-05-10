@@ -137,7 +137,9 @@ header{display:flex;align-items:center;justify-content:space-between;padding:14p
 .result-btn.primary{background:var(--accent);color:#0d0d0f;border:none;}
 .result-btn.secondary{background:transparent;color:var(--text);border:1.5px solid var(--border);}
 .result-btn.danger{background:transparent;color:var(--wrong);border:1.5px solid rgba(240,96,96,.3);}
+.result-btn.json{border-color:rgba(96,212,240,.35);color:var(--accent2);}
 .result-btn:hover{transform:scale(1.03);}
+.result-hint{max-width:520px;text-align:center;font-size:12px;color:var(--text-dim);line-height:1.55;padding:0 12px;}
 .missed-section{width:100%;max-width:660px;}
 .missed-label{font-size:11px;color:var(--text-dim);letter-spacing:2px;margin-bottom:10px;text-transform:uppercase;}
 .missed-list{display:flex;flex-direction:column;gap:6px;max-height:280px;overflow-y:auto;}
@@ -249,10 +251,12 @@ header{display:flex;align-items:center;justify-content:space-between;padding:14p
   <div class="result-label" id="result-label"></div>
   <div class="result-sub" id="result-sub"></div>
   <div class="result-actions">
-    <button class="result-btn primary" onclick="restartSame()">Tekrar Oyna</button>
-    <button class="result-btn danger" onclick="retryWrong()" id="retry-wrong-btn" style="display:none">Yanlışları Tekrar Et</button>
+    <button class="result-btn primary" onclick="retryWrong()" id="retry-wrong-btn" style="display:none">Yanlışları şimdi tekrarla</button>
+    <button class="result-btn primary" onclick="restartSame()" id="restart-full-btn">Tümünü tekrar oyna</button>
+    <button class="result-btn json" onclick="exportWrongJson()" id="export-wrong-btn" style="display:none">JSON indir</button>
     <button class="result-btn secondary" onclick="goSetup()">Menüye Dön</button>
   </div>
+  <p class="result-hint" id="result-hint" style="display:none"></p>
   <div class="missed-section" id="missed-section" style="display:none">
     <div class="missed-label">Yanlış yapılanlar</div>
     <div class="missed-list" id="missed-list"></div>
@@ -261,7 +265,18 @@ header{display:flex;align-items:center;justify-content:space-between;padding:14p
 
 <script>
 let allCards=[], deck=[], currentIdx=0, score=0, streak=0, maxStreak=0, wrongItems=[];
+
+function uniqueWrongItems(){
+  const seen=new Set(),out=[];
+  wrongItems.forEach(c=>{
+    if(!c||seen.has(c.id)) return;
+    seen.add(c.id);
+    out.push(c);
+  });
+  return out;
+}
 let answered=false, selectedMode='meaning', selectedFilter='ALL', spacingEnabled=true;
+let wrongRematchRound=false;
 let cardGroupMap={}, groupMembers={};
 
 async function loadData(){
@@ -397,13 +412,21 @@ function updateFilterCounts(){
 }
 
 /* ── GAME ── */
-function startGame(customDeck){
+function startGame(customDeck, opts){
+  opts=opts||{};
   let pool=customDeck||allCards;
   if(!customDeck&&selectedFilter!=='ALL') pool=allCards.filter(c=>(c.grammar||'').includes(selectedFilter));
   if(!pool.length){alert('Bu filtrede kart yok!');return;}
 
+  wrongRematchRound=!!opts.wrongRematch;
   deck=smartShuffle(pool);
-  currentIdx=0;score=0;streak=0;maxStreak=0;wrongItems=[];
+  currentIdx=0;
+  wrongItems=[];
+  if(wrongRematchRound){
+    streak=0;
+  }else{
+    score=0;streak=0;maxStreak=0;
+  }
 
   document.getElementById('tab-row').style.display='none';
   ['groups-screen','setup-screen','result-screen'].forEach(id=>document.getElementById(id).classList.remove('visible'));
@@ -421,7 +444,7 @@ function showQuestion(){
   document.getElementById('feedback-box').style.display='none';
   document.getElementById('next-btn').style.display='none';
   document.getElementById('fb-siblings-wrap').style.display='none';
-  document.getElementById('card-num').textContent=`${currentIdx+1} / ${deck.length}`;
+  document.getElementById('card-num').textContent=`${currentIdx+1} / ${deck.length}${wrongRematchRound?' · Yanlış turu':''}`;
   setBadge(card);
 
   if(selectedMode==='meaning') renderMeaning(card);
@@ -565,26 +588,72 @@ function showResult(){
   document.getElementById('play-screen').classList.remove('visible');
   document.getElementById('result-screen').classList.add('visible');
   document.getElementById('tab-row').style.display='flex';
-  const total=deck.length, correct=total-wrongItems.length, pct=Math.round((correct/total)*100);
+  const misses=uniqueWrongItems();
+  const total=deck.length, correct=total-misses.length, pct=Math.round((correct/total)*100);
   document.getElementById('result-score').textContent=pct+'%';
   document.getElementById('result-label').textContent=pct>=90?'🏆 Mükemmel!':pct>=70?'💪 Çok İyi!':pct>=50?'📈 Gelişiyor!':'🔁 Tekrar Gerekli';
   document.getElementById('result-sub').textContent=`${correct}/${total} doğru · ${score} puan · En uzun seri: ${maxStreak}`;
   document.getElementById('progress-bar').style.width='100%';
   document.getElementById('stat-prog').textContent=`${total}/${total}`;
-  document.getElementById('retry-wrong-btn').style.display=wrongItems.length?'inline-block':'none';
-  if(wrongItems.length){
+  const hasMiss=misses.length>0;
+  document.getElementById('retry-wrong-btn').style.display=hasMiss?'inline-block':'none';
+  document.getElementById('export-wrong-btn').style.display=hasMiss?'inline-block':'none';
+  document.getElementById('restart-full-btn').className=hasMiss?'result-btn secondary':'result-btn primary';
+  const hintEl=document.getElementById('result-hint');
+  if(hasMiss){
+    hintEl.style.display='block';
+    hintEl.textContent='«Yanlışları şimdi tekrarla» ile hemen sadece yanlışladığın kartlarla devam edersin; tam kelime havuzu ve menü ayarların silinmez. Bu pekiştirme turunda üstteki puan korunur, seri sayacı yeniden başlar. Her şeyi baştan ve sıfır puanla oynamak için «Tümünü tekrar oyna». JSON için «JSON indir».';
     document.getElementById('missed-section').style.display='block';
-    document.getElementById('missed-list').innerHTML=wrongItems.map(c=>`
+    document.getElementById('missed-list').innerHTML=misses.map(c=>`
       <div class="missed-item">
         <span class="missed-term">${c.term.replace(/\s*\*\*/g,'')}</span>
         <span class="missed-meaning">${c.meaningTr}</span>
       </div>`).join('');
+  }else{
+    hintEl.style.display='none';
+    document.getElementById('missed-section').style.display='none';
   }
 }
 
-function restartSame(){document.getElementById('missed-section').style.display='none';document.getElementById('result-screen').classList.remove('visible');startGame();}
-function retryWrong(){const w=[...wrongItems];document.getElementById('missed-section').style.display='none';document.getElementById('result-screen').classList.remove('visible');startGame(w);}
-function goSetup(){document.getElementById('result-screen').classList.remove('visible');document.getElementById('missed-section').style.display='none';switchTab('setup');}
+function exportWrongJson(){
+  const misses=uniqueWrongItems();
+  if(!misses.length){alert('İndirilecek yanlış yok.');return;}
+  const ogeler=misses.map(c=>({
+    id:c.id,
+    kelime:(c.term||'').replace(/\s*\*\*/g,''),
+    anlam:c.meaningTr||'',
+    cumleEn:c.contextEn||'',
+    cumleTr:c.contextTr||'',
+    tur:c.grammar||'',
+    ipucu:c.hintTr||''
+  }));
+  const payload={
+    kaynak:'baglac_oyunu',
+    tarih:new Date().toISOString(),
+    adet:ogeler.length,
+    ogeler
+  };
+  const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json;charset=utf-8'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  a.href=url;
+  a.download=`baglac-yanlislar-${new Date().toISOString().slice(0,10)}.json`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+function restartSame(){document.getElementById('missed-section').style.display='none';document.getElementById('result-hint').style.display='none';document.getElementById('result-screen').classList.remove('visible');startGame();}
+function retryWrong(){
+  const w=uniqueWrongItems();
+  if(!w.length){alert('Tekrar oynanacak yanlış yok.');return;}
+  document.getElementById('missed-section').style.display='none';
+  document.getElementById('result-hint').style.display='none';
+  document.getElementById('result-screen').classList.remove('visible');
+  startGame(w,{wrongRematch:true});
+}
+function goSetup(){document.getElementById('result-screen').classList.remove('visible');document.getElementById('missed-section').style.display='none';document.getElementById('result-hint').style.display='none';switchTab('setup');}
 
 document.addEventListener('keydown',e=>{
   if(e.key==='Enter'&&document.getElementById('next-btn').style.display!=='none'){nextQuestion();return;}

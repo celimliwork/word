@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YÖKDİL Bağlaç Antrenmanı</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0d0f;
+    --surface: #16161a;
+    --surface2: #1e1e24;
+    --border: #2a2a35;
+    --accent: #c8f060;
+    --accent2: #60d4f0;
+    --accent3: #f060a0;
+    --text: #e8e8f0;
+    --text-dim: #7a7a90;
+    --correct: #60f0a0;
+    --wrong: #f06060;
+    --radius: 12px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Syne', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ── HEADER ── */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 28px;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+    position: sticky; top: 0; z-index: 100;
+  }
+  .logo { font-size: 13px; font-weight: 700; color: var(--accent); letter-spacing: 3px; text-transform: uppercase; }
+  .stats-bar { display: flex; gap: 20px; align-items: center; }
+  .stat { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+  .stat-val { font-size: 20px; font-weight: 800; color: var(--accent); font-family: 'DM Mono', monospace; }
+  .stat-lbl { font-size: 9px; color: var(--text-dim); letter-spacing: 2px; text-transform: uppercase; }
+  #progress-bar-wrap { width: 140px; height: 6px; background: var(--border); border-radius: 99px; overflow: hidden; }
+  #progress-bar { height: 100%; background: var(--accent); border-radius: 99px; transition: width .4s ease; width: 0%; }
+
+  /* ── MODE SELECTOR ── */
+  #mode-screen {
+    flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 32px; padding: 40px 20px;
+  }
+  .mode-title { font-size: 36px; font-weight: 800; text-align: center; line-height: 1.1; }
+  .mode-title span { color: var(--accent); }
+  .mode-subtitle { color: var(--text-dim); font-size: 14px; text-align: center; max-width: 480px; line-height: 1.6; }
+  .mode-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; max-width: 760px; width: 100%; }
+  .mode-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px 24px;
+    cursor: pointer;
+    transition: all .2s;
+    text-align: left;
+  }
+  .mode-card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 8px 32px rgba(200,240,96,.12); }
+  .mode-card.active { border-color: var(--accent); background: rgba(200,240,96,.07); }
+  .mode-icon { font-size: 28px; margin-bottom: 12px; }
+  .mode-name { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+  .mode-desc { font-size: 12px; color: var(--text-dim); line-height: 1.5; }
+
+  .filter-row { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; max-width: 760px; }
+  .filter-btn {
+    padding: 8px 16px; border-radius: 99px; border: 1px solid var(--border);
+    background: transparent; color: var(--text-dim); cursor: pointer; font-family: 'Syne', sans-serif;
+    font-size: 12px; font-weight: 600; letter-spacing: 1px; transition: all .2s;
+  }
+  .filter-btn:hover { border-color: var(--text-dim); color: var(--text); }
+  .filter-btn.active { border-color: var(--accent); background: rgba(200,240,96,.1); color: var(--accent); }
+
+  .start-btn {
+    padding: 16px 48px; border-radius: 99px; border: none;
+    background: var(--accent); color: #0d0d0f; font-family: 'Syne', sans-serif;
+    font-size: 15px; font-weight: 800; cursor: pointer; letter-spacing: 1px;
+    transition: all .2s; text-transform: uppercase;
+  }
+  .start-btn:hover { transform: scale(1.04); box-shadow: 0 0 32px rgba(200,240,96,.4); }
+
+  /* ── GAME SCREEN ── */
+  #game-screen { flex: 1; display: none; flex-direction: column; align-items: center; padding: 40px 20px 60px; gap: 28px; }
+
+  .card-shell {
+    width: 100%; max-width: 680px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 40px 44px;
+    position: relative;
+    min-height: 200px;
+    display: flex; flex-direction: column; gap: 16px;
+  }
+
+  .card-meta { display: flex; justify-content: space-between; align-items: center; }
+  .card-type-badge {
+    font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 99px;
+  }
+  .badge-EDAT { background: rgba(96,212,240,.12); color: var(--accent2); border: 1px solid rgba(96,212,240,.25); }
+  .badge-BAĞLAÇ { background: rgba(200,240,96,.12); color: var(--accent); border: 1px solid rgba(200,240,96,.25); }
+  .badge-FANTBOYS { background: rgba(240,96,160,.12); color: var(--accent3); border: 1px solid rgba(240,96,160,.25); }
+  .badge-CÜMLE { background: rgba(160,130,255,.12); color: #c8a0ff; border: 1px solid rgba(160,130,255,.25); }
+  .badge-OTHER { background: rgba(255,200,80,.12); color: #ffc850; border: 1px solid rgba(255,200,80,.25); }
+
+  .card-num { font-size: 12px; color: var(--text-dim); font-family: 'DM Mono', monospace; }
+
+  /* MODU 1: Anlam Bul */
+  .term-display {
+    font-size: 42px; font-weight: 800; color: var(--accent);
+    letter-spacing: -1px; line-height: 1;
+  }
+  .context-en {
+    font-size: 14px; color: var(--text-dim); line-height: 1.7;
+    background: var(--surface2); border-radius: 8px; padding: 14px 18px;
+    border-left: 3px solid var(--border); font-family: 'DM Mono', monospace;
+  }
+  .blank { color: var(--accent2); font-weight: 700; }
+
+  /* MODU 2: Cümle Tamamla */
+  .sentence-display {
+    font-size: 18px; font-weight: 600; line-height: 1.7; color: var(--text);
+  }
+  .fill-blank {
+    display: inline-block; min-width: 120px; border-bottom: 2px solid var(--accent);
+    color: var(--accent2); font-family: 'DM Mono', monospace; font-size: 16px;
+    text-align: center; padding: 0 8px; vertical-align: baseline;
+  }
+
+  /* MODU 3: Gramer Türü */
+  .question-label { font-size: 14px; color: var(--text-dim); letter-spacing: 1px; }
+  .big-term { font-size: 52px; font-weight: 800; color: var(--text); letter-spacing: -2px; }
+
+  /* SEÇENEKLER */
+  .options-grid { width: 100%; max-width: 680px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .opt-btn {
+    background: var(--surface); border: 1.5px solid var(--border);
+    border-radius: var(--radius); padding: 16px 20px;
+    color: var(--text); font-family: 'Syne', sans-serif; font-size: 14px; font-weight: 600;
+    cursor: pointer; text-align: left; transition: all .15s; line-height: 1.4;
+  }
+  .opt-btn:hover:not(:disabled) { border-color: var(--accent2); background: rgba(96,212,240,.05); }
+  .opt-btn.correct { border-color: var(--correct) !important; background: rgba(96,240,160,.1) !important; color: var(--correct) !important; }
+  .opt-btn.wrong { border-color: var(--wrong) !important; background: rgba(240,96,96,.1) !important; color: var(--wrong) !important; }
+  .opt-btn:disabled { cursor: default; }
+
+  /* FEEDBACK */
+  #feedback-box {
+    width: 100%; max-width: 680px;
+    border-radius: var(--radius); padding: 20px 24px;
+    display: none; gap: 12px; flex-direction: column;
+  }
+  #feedback-box.show { display: flex; }
+  #feedback-box.ok { background: rgba(96,240,160,.07); border: 1px solid rgba(96,240,160,.2); }
+  #feedback-box.fail { background: rgba(240,96,96,.07); border: 1px solid rgba(240,96,96,.2); }
+  .fb-header { display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 700; }
+  .fb-header.ok { color: var(--correct); }
+  .fb-header.fail { color: var(--wrong); }
+  .fb-hint { font-size: 13px; color: var(--text-dim); line-height: 1.6; }
+  .fb-hint strong { color: var(--text); }
+  .fb-tr { font-size: 13px; color: var(--accent2); font-family: 'DM Mono', monospace; }
+
+  #next-btn {
+    padding: 14px 40px; border-radius: 99px; border: none;
+    background: var(--accent); color: #0d0d0f; font-family: 'Syne', sans-serif;
+    font-size: 14px; font-weight: 800; cursor: pointer; letter-spacing: 1px;
+    transition: all .2s; text-transform: uppercase; display: none;
+  }
+  #next-btn:hover { transform: scale(1.03); }
+
+  /* RESULT SCREEN */
+  #result-screen {
+    flex: 1; display: none; flex-direction: column; align-items: center;
+    justify-content: center; gap: 28px; padding: 40px 20px;
+  }
+  .result-score { font-size: 80px; font-weight: 800; color: var(--accent); line-height: 1; }
+  .result-label { font-size: 24px; font-weight: 700; }
+  .result-sub { color: var(--text-dim); font-size: 14px; }
+  .result-actions { display: flex; gap: 12px; }
+  .result-btn {
+    padding: 14px 32px; border-radius: 99px; font-family: 'Syne', sans-serif;
+    font-size: 14px; font-weight: 800; cursor: pointer; letter-spacing: 1px;
+    text-transform: uppercase; transition: all .2s;
+  }
+  .result-btn.primary { background: var(--accent); color: #0d0d0f; border: none; }
+  .result-btn.secondary { background: transparent; color: var(--text); border: 1.5px solid var(--border); }
+  .result-btn:hover { transform: scale(1.03); }
+
+  /* missed list */
+  .missed-list { width: 100%; max-width: 680px; display: flex; flex-direction: column; gap: 8px; max-height: 300px; overflow-y: auto; }
+  .missed-item {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 8px; padding: 12px 16px;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  .missed-term { font-weight: 700; color: var(--wrong); font-size: 14px; }
+  .missed-meaning { font-size: 12px; color: var(--text-dim); text-align: right; max-width: 60%; }
+
+  /* HINT TOGGLE */
+  .hint-toggle {
+    background: none; border: 1px solid var(--border); color: var(--text-dim);
+    padding: 6px 14px; border-radius: 99px; cursor: pointer; font-family: 'Syne', sans-serif;
+    font-size: 11px; font-weight: 600; letter-spacing: 1px; transition: all .2s;
+  }
+  .hint-toggle:hover { border-color: var(--accent2); color: var(--accent2); }
+  #hint-text { font-size: 12px; color: var(--accent2); background: rgba(96,212,240,.06); border-radius: 8px; padding: 10px 14px; display: none; line-height: 1.6; }
+
+  /* STREAK */
+  #streak-display { position: fixed; top: 80px; right: 24px; font-size: 13px; font-weight: 700; color: var(--accent); background: var(--surface); border: 1px solid var(--border); padding: 8px 16px; border-radius: 99px; display: none; z-index: 50; }
+
+  @media (max-width: 600px) {
+    .options-grid { grid-template-columns: 1fr; }
+    .card-shell { padding: 28px 22px; }
+    .term-display { font-size: 30px; }
+    .big-term { font-size: 36px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">YÖKDİL ⚡ Bağlaç</div>
+  <div class="stats-bar">
+    <div class="stat"><span class="stat-val" id="stat-score">0</span><span class="stat-lbl">Puan</span></div>
+    <div class="stat"><span class="stat-val" id="stat-streak">0</span><span class="stat-lbl">Seri</span></div>
+    <div class="stat" style="gap:6px">
+      <div id="progress-bar-wrap"><div id="progress-bar"></div></div>
+      <span class="stat-lbl" id="stat-prog">0 / 0</span>
+    </div>
+  </div>
+</header>
+
+<div id="streak-display">🔥 <span id="streak-val">0</span> SERI!</div>
+
+<!-- MODE SCREEN -->
+<div id="mode-screen">
+  <div class="mode-title">Bağlaç <span>Antrenman</span><br>Merkezi</div>
+  <div class="mode-subtitle">YÖKDİL için 171 bağlaç, ipuçlarıyla birlikte. Mod seç, filtrele, başla.</div>
+
+  <div class="mode-grid">
+    <div class="mode-card active" data-mode="meaning" onclick="selectMode(this)">
+      <div class="mode-icon">🎯</div>
+      <div class="mode-name">Anlam Bul</div>
+      <div class="mode-desc">Kelimeyi gör, Türkçe anlamını 4 seçenekten bul. Temel ezber için ideal.</div>
+    </div>
+    <div class="mode-card" data-mode="sentence" onclick="selectMode(this)">
+      <div class="mode-icon">✍️</div>
+      <div class="mode-name">Cümle Tamamla</div>
+      <div class="mode-desc">Cümledeki boşluğa hangi bağlaç gelir? Kullanım bağlamını pekiştir.</div>
+    </div>
+    <div class="mode-card" data-mode="grammar" onclick="selectMode(this)">
+      <div class="mode-icon">🔬</div>
+      <div class="mode-name">Gramer Türü</div>
+      <div class="mode-desc">Bu kelime Bağlaç mı, Edat mı, Cümle Zarfı mı? YÖKDİL'de çok sorulan.</div>
+    </div>
+    <div class="mode-card" data-mode="reverse" onclick="selectMode(this)">
+      <div class="mode-icon">🔄</div>
+      <div class="mode-name">Ters Çevir</div>
+      <div class="mode-desc">Türkçe anlamı gör, İngilizce kelimeyi bul. En zorlu mod.</div>
+    </div>
+  </div>
+
+  <div class="filter-row" id="filter-row">
+    <button class="filter-btn active" data-filter="ALL" onclick="selectFilter(this)">Tümü (171)</button>
+    <button class="filter-btn" data-filter="EDAT" onclick="selectFilter(this)">Edat</button>
+    <button class="filter-btn" data-filter="BAĞLAÇ" onclick="selectFilter(this)">Bağlaç</button>
+    <button class="filter-btn" data-filter="CÜMLE ZARFI" onclick="selectFilter(this)">Cümle Zarfı</button>
+    <button class="filter-btn" data-filter="FANTBOYS" onclick="selectFilter(this)">FANBOYS</button>
+    <button class="filter-btn" data-filter="PARALEL YAPI" onclick="selectFilter(this)">Paralel Yapı</button>
+  </div>
+
+  <button class="start-btn" onclick="startGame()">Başla →</button>
+</div>
+
+<!-- GAME SCREEN -->
+<div id="game-screen">
+  <div class="card-shell" id="card-shell">
+    <div class="card-meta">
+      <span class="card-type-badge" id="card-badge">EDAT</span>
+      <span class="card-num" id="card-num">1 / 20</span>
+    </div>
+    <div id="card-body"></div>
+    <button class="hint-toggle" onclick="toggleHint()">💡 İpucu</button>
+    <div id="hint-text"></div>
+  </div>
+
+  <div class="options-grid" id="options-grid"></div>
+
+  <div id="feedback-box">
+    <div class="fb-header" id="fb-header"></div>
+    <div class="fb-hint" id="fb-hint"></div>
+    <div class="fb-tr" id="fb-tr"></div>
+  </div>
+
+  <button id="next-btn" onclick="nextQuestion()">Sonraki →</button>
+</div>
+
+<!-- RESULT SCREEN -->
+<div id="result-screen">
+  <div class="result-score" id="result-score">0%</div>
+  <div class="result-label" id="result-label">Tebrikler!</div>
+  <div class="result-sub" id="result-sub"></div>
+  <div class="result-actions">
+    <button class="result-btn primary" onclick="restartSame()">Tekrar Oyna</button>
+    <button class="result-btn secondary" onclick="goMenu()">Menüye Dön</button>
+  </div>
+  <div id="missed-section" style="width:100%;max-width:680px;display:none">
+    <div style="font-size:13px;color:var(--text-dim);margin-bottom:10px;letter-spacing:1px">YANLIŞ YAPILANLAR</div>
+    <div class="missed-list" id="missed-list"></div>
+  </div>
+</div>
+
+<script>
+let allCards = [];
+let deck = [];
+let currentIdx = 0;
+let score = 0;
+let streak = 0;
+let maxStreak = 0;
+let wrongItems = [];
+let selectedMode = 'meaning';
+let selectedFilter = 'ALL';
+let answered = false;
+
+// ── LOAD JSON ──
+async function loadData() {
+  try {
+    const r = await fetch('flashcards-data.json');
+    const data = await r.json();
+    allCards = data.items;
+    updateFilterCounts();
+  } catch(e) {
+    // fallback: küçük demo
+    allCards = [
+      {id:'demo1',term:'HOWEVER',meaningTr:'FAKAT, YİNE DE',grammar:'CÜMLE ZARFI',contextEn:'The plan failed; however, they tried again.',contextTr:'Plan başarısız oldu; ancak tekrar denediler.',hintTr:'HOW-EVER → nasıl olursa olsun. Noktalı virgülden sonra gelir.'},
+      {id:'demo2',term:'DESPITE',meaningTr:'-E RAĞMEN',grammar:'EDAT',contextEn:'Despite the rain, they continued.',contextTr:'Yağmura rağmen devam ettiler.',hintTr:'spite = kin. Kinine rağmen devam.'},
+      {id:'demo3',term:'THEREFORE',meaningTr:'BU NEDENLE',grammar:'CÜMLE ZARFI',contextEn:'She was late; therefore, she missed the train.',contextTr:'Geç kaldı; bu nedenle treni kaçırdı.',hintTr:'there-fore → o sebep için.'},
+    ];
+  }
+}
+
+function updateFilterCounts() {
+  const counts = {};
+  allCards.forEach(c => {
+    const g = c.grammar || '';
+    ['EDAT','BAĞLAÇ','CÜMLE ZARFI','FANTBOYS','PARALEL YAPI'].forEach(f => {
+      if(g.includes(f)) counts[f] = (counts[f]||0)+1;
+    });
+  });
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    const f = btn.dataset.filter;
+    if(f === 'ALL') { btn.textContent = `Tümü (${allCards.length})`; return; }
+    if(counts[f]) btn.textContent = `${f} (${counts[f]})`;
+  });
+}
+
+// ── SELECTIONS ──
+function selectMode(el) {
+  document.querySelectorAll('.mode-card').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  selectedMode = el.dataset.mode;
+}
+function selectFilter(el) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  selectedFilter = el.dataset.filter;
+}
+
+// ── START ──
+function startGame() {
+  let pool = allCards;
+  if(selectedFilter !== 'ALL') pool = allCards.filter(c => (c.grammar||'').includes(selectedFilter));
+  if(pool.length === 0) { alert('Bu filtrede kart yok!'); return; }
+
+  deck = shuffle([...pool]);
+  currentIdx = 0; score = 0; streak = 0; maxStreak = 0; wrongItems = [];
+
+  document.getElementById('mode-screen').style.display = 'none';
+  document.getElementById('result-screen').style.display = 'none';
+  document.getElementById('game-screen').style.display = 'flex';
+
+  updateStats();
+  showQuestion();
+}
+
+function shuffle(arr) {
+  for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]];}
+  return arr;
+}
+
+// ── QUESTION ──
+function showQuestion() {
+  answered = false;
+  const card = deck[currentIdx];
+  document.getElementById('hint-text').style.display = 'none';
+  document.getElementById('hint-text').textContent = card.hintTr || '—';
+  document.getElementById('feedback-box').className = '';
+  document.getElementById('feedback-box').style.display = 'none';
+  document.getElementById('next-btn').style.display = 'none';
+  document.getElementById('card-num').textContent = `${currentIdx+1} / ${deck.length}`;
+
+  // badge
+  const g = card.grammar || '';
+  const badge = document.getElementById('card-badge');
+  badge.textContent = g.split('/')[0].trim();
+  if(g.includes('EDAT') && !g.includes('BAĞLAÇ')) badge.className='card-type-badge badge-EDAT';
+  else if(g.includes('FANTBOYS')) badge.className='card-type-badge badge-FANTBOYS';
+  else if(g.includes('BAĞLAÇ')) badge.className='card-type-badge badge-BAĞLAÇ';
+  else if(g.includes('ZARFI') || g.includes('PARALEL')) badge.className='card-type-badge badge-CÜMLE';
+  else badge.className='card-type-badge badge-OTHER';
+
+  if(selectedMode === 'meaning') renderMeaning(card);
+  else if(selectedMode === 'sentence') renderSentence(card);
+  else if(selectedMode === 'grammar') renderGrammar(card);
+  else renderReverse(card);
+
+  updateProgress();
+}
+
+function renderMeaning(card) {
+  document.getElementById('card-body').innerHTML = `
+    <div class="term-display">${card.term}</div>
+  `;
+  const correct = card.meaningTr;
+  const wrongs = getWrongOptions(card, 'meaningTr', 3);
+  renderOptions([correct, ...wrongs], correct, card, 'meaning');
+}
+
+function renderSentence(card) {
+  const sentence = (card.contextEn||'').replace(card.term.replace(/ \*\*/g,'').split('...')[0].trim(),
+    `<span class="blank">______</span>`);
+  document.getElementById('card-body').innerHTML = `
+    <div style="font-size:12px;color:var(--text-dim);letter-spacing:1px;margin-bottom:8px">BOŞLUĞA HANGİ KELİME GELİR?</div>
+    <div class="sentence-display">${card.contextEn.replace(card.term.replace(/\s*\*\*/g,'').split('...')[0].trim(), '<span class="fill-blank">______</span>')}</div>
+  `;
+  const correct = card.term.replace(/\s*\*\*/g,'');
+  const wrongs = getWrongOptions(card, 'term', 3);
+  renderOptions([correct, ...wrongs.map(w=>w.replace(/\s*\*\*/g,''))], correct, card, 'sentence');
+}
+
+function renderGrammar(card) {
+  document.getElementById('card-body').innerHTML = `
+    <div style="font-size:12px;color:var(--text-dim);letter-spacing:1px;margin-bottom:12px">BU KELİMENİN GRAMER TÜRÜ NEDİR?</div>
+    <div class="big-term">${card.term.replace(/\s*\*\*/g,'')}</div>
+  `;
+  const types = ['EDAT','BAĞLAÇ','CÜMLE ZARFI','FANTBOYS','PARALEL YAPI','AÇIKLAMA ZARFI'];
+  const correctType = (card.grammar||'BAĞLAÇ').split('/')[0].trim();
+  const wrongs = types.filter(t=>t!==correctType).sort(()=>Math.random()-.5).slice(0,3);
+  renderOptions([correctType,...wrongs], correctType, card, 'grammar');
+}
+
+function renderReverse(card) {
+  document.getElementById('card-body').innerHTML = `
+    <div style="font-size:12px;color:var(--text-dim);letter-spacing:1px;margin-bottom:8px">TÜRKÇE ANLAMI VERİLEN İNGİLİZCE KELİME?</div>
+    <div class="term-display" style="color:var(--accent2)">${card.meaningTr}</div>
+  `;
+  const correct = card.term.replace(/\s*\*\*/g,'');
+  const wrongs = getWrongOptions(card, 'term', 3).map(w=>w.replace(/\s*\*\*/g,''));
+  renderOptions([correct,...wrongs], correct, card, 'reverse');
+}
+
+function getWrongOptions(card, field, n) {
+  const pool = allCards.filter(c => c.id !== card.id && c[field] && c[field] !== card[field]);
+  return shuffle(pool).slice(0,n).map(c=>c[field]);
+}
+
+function renderOptions(opts, correct, card, mode) {
+  opts = shuffle(opts);
+  const grid = document.getElementById('options-grid');
+  grid.innerHTML = '';
+  opts.forEach(opt => {
+    const btn = document.createElement('button');
+    btn.className = 'opt-btn';
+    btn.textContent = opt;
+    btn.onclick = () => checkAnswer(btn, opt, correct, card, mode, grid);
+    grid.appendChild(btn);
+  });
+}
+
+function checkAnswer(btn, chosen, correct, card, mode, grid) {
+  if(answered) return;
+  answered = true;
+
+  const isCorrect = chosen === correct || chosen.replace(/\s*\*\*/g,'') === correct.replace(/\s*\*\*/g,'');
+
+  grid.querySelectorAll('.opt-btn').forEach(b => {
+    b.disabled = true;
+    const bVal = b.textContent;
+    if(bVal === correct || bVal.replace(/\s*\*\*/g,'') === correct.replace(/\s*\*\*/g,'')) b.classList.add('correct');
+    else if(b === btn && !isCorrect) b.classList.add('wrong');
+  });
+
+  if(isCorrect) {
+    score += Math.max(10, 10 + streak*2);
+    streak++;
+    if(streak > maxStreak) maxStreak = streak;
+  } else {
+    streak = 0;
+    wrongItems.push(card);
+  }
+
+  showFeedback(isCorrect, card, mode);
+  updateStats();
+
+  const streakEl = document.getElementById('streak-display');
+  document.getElementById('streak-val').textContent = streak;
+  if(streak >= 3) { streakEl.style.display='block'; setTimeout(()=>streakEl.style.display='none',1500); }
+
+  document.getElementById('next-btn').style.display = 'inline-block';
+}
+
+function showFeedback(isCorrect, card, mode) {
+  const box = document.getElementById('feedback-box');
+  const header = document.getElementById('fb-header');
+  const hint = document.getElementById('fb-hint');
+  const tr = document.getElementById('fb-tr');
+
+  box.className = 'show ' + (isCorrect ? 'ok' : 'fail');
+  box.style.display = 'flex';
+  header.className = 'fb-header ' + (isCorrect ? 'ok' : 'fail');
+  header.innerHTML = isCorrect
+    ? `✓ Doğru! ${streak>=3?'🔥 '+streak+' seri!':''}`
+    : `✗ Yanlış — Doğru: <strong>${card.term.replace(/\s*\*\*/g,'')}</strong>`;
+
+  hint.innerHTML = `<strong>Anlam:</strong> ${card.meaningTr} &nbsp;|&nbsp; <strong>Tür:</strong> ${card.grammar}`;
+  tr.textContent = card.hintTr || '';
+}
+
+function toggleHint() {
+  const h = document.getElementById('hint-text');
+  h.style.display = h.style.display === 'block' ? 'none' : 'block';
+}
+
+function nextQuestion() {
+  currentIdx++;
+  if(currentIdx >= deck.length) { showResult(); return; }
+  showQuestion();
+}
+
+// ── STATS ──
+function updateStats() {
+  document.getElementById('stat-score').textContent = score;
+  document.getElementById('stat-streak').textContent = streak;
+}
+function updateProgress() {
+  const pct = ((currentIdx) / deck.length) * 100;
+  document.getElementById('progress-bar').style.width = pct + '%';
+  document.getElementById('stat-prog').textContent = `${currentIdx} / ${deck.length}`;
+}
+
+// ── RESULT ──
+function showResult() {
+  document.getElementById('game-screen').style.display = 'none';
+  document.getElementById('result-screen').style.display = 'flex';
+
+  const total = deck.length;
+  const correct = total - wrongItems.length;
+  const pct = Math.round((correct/total)*100);
+
+  document.getElementById('result-score').textContent = pct + '%';
+  document.getElementById('result-label').textContent =
+    pct >= 90 ? '🏆 Mükemmel!' : pct >= 70 ? '💪 Çok İyi!' : pct >= 50 ? '📈 Gelişiyor!' : '🔁 Tekrar Gerekli';
+  document.getElementById('result-sub').textContent =
+    `${correct}/${total} doğru · ${score} puan · En uzun seri: ${maxStreak}`;
+
+  updateProgress();
+  document.getElementById('progress-bar').style.width = '100%';
+  document.getElementById('stat-prog').textContent = `${total} / ${total}`;
+
+  if(wrongItems.length > 0) {
+    const sec = document.getElementById('missed-section');
+    sec.style.display = 'block';
+    const list = document.getElementById('missed-list');
+    list.innerHTML = '';
+    wrongItems.forEach(c => {
+      const div = document.createElement('div');
+      div.className = 'missed-item';
+      div.innerHTML = `<span class="missed-term">${c.term.replace(/\s*\*\*/g,'')}</span><span class="missed-meaning">${c.meaningTr}</span>`;
+      list.appendChild(div);
+    });
+  }
+}
+
+function restartSame() {
+  document.getElementById('missed-section').style.display = 'none';
+  startGame();
+}
+function goMenu() {
+  document.getElementById('result-screen').style.display = 'none';
+  document.getElementById('missed-section').style.display = 'none';
+  document.getElementById('mode-screen').style.display = 'flex';
+}
+
+// ── KEYBOARD ──
+document.addEventListener('keydown', e => {
+  if(e.key === 'Enter' && document.getElementById('next-btn').style.display !== 'none') nextQuestion();
+  const map = {'1':0,'2':1,'3':2,'4':3};
+  if(map[e.key] !== undefined && !answered) {
+    const btns = document.querySelectorAll('.opt-btn:not(:disabled)');
+    if(btns[map[e.key]]) btns[map[e.key]].click();
+  }
+});
+
+// ── INIT ──
+loadData();
+</script>
+</body>
+</html>

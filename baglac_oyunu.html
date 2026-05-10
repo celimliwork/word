@@ -117,6 +117,11 @@ header{display:flex;align-items:center;justify-content:space-between;padding:14p
 .fb-sib-label{font-size:10px;color:var(--text-dim);letter-spacing:1px;text-transform:uppercase;}
 .fb-siblings{display:flex;flex-wrap:wrap;gap:6px;}
 .sib-chip{font-size:11px;padding:3px 10px;border-radius:99px;background:rgba(240,96,160,.1);border:1px solid rgba(240,96,160,.2);color:var(--accent3);}
+.fb-context-block{margin-top:12px;padding-top:12px;border-top:1px solid rgba(122,122,144,.25);display:flex;flex-direction:column;gap:8px;}
+.fb-context-label{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--text-dim);}
+.fb-context-en{font-size:13px;color:var(--text);line-height:1.65;}
+.fb-context-en em{font-style:italic;color:var(--text);}
+.fb-context-tr{font-size:12px;color:var(--text-dim);line-height:1.65;}
 
 #next-btn{padding:13px 38px;border-radius:99px;border:none;background:var(--accent);color:#0d0d0f;font-family:'Syne',sans-serif;font-size:13px;font-weight:800;cursor:pointer;letter-spacing:1px;text-transform:uppercase;transition:all .2s;display:none;}
 #next-btn:hover{transform:scale(1.03);}
@@ -520,7 +525,19 @@ function showFeedback(ok,card){
   document.getElementById('fb-header').innerHTML=ok
     ?`✓ Doğru!${streak>=3?' 🔥 '+streak+' seri!':''}`
     :`✗ Yanlış — <strong>${card.term.replace(/\s*\*\*/g,'')}</strong>`;
-  document.getElementById('fb-body').innerHTML=`<strong>Anlam:</strong> ${card.meaningTr} &nbsp;·&nbsp; <strong>Tür:</strong> ${card.grammar}`;
+  let fbBody=`<strong>Anlam:</strong> ${card.meaningTr} &nbsp;·&nbsp; <strong>Tür:</strong> ${card.grammar}`;
+  if(selectedMode==='meaning'){
+    const en=(card.contextEn||'').trim();
+    const tr=(card.contextTr||'').trim();
+    if(en||tr){
+      fbBody+=`<div class="fb-context-block">
+        <div class="fb-context-label">Cümlede nasıl kuruluyor?</div>`;
+      if(en) fbBody+=`<div class="fb-context-en"><strong>EN:</strong> <em>${en}</em></div>`;
+      if(tr) fbBody+=`<div class="fb-context-tr"><strong>TR:</strong> ${tr}</div>`;
+      fbBody+=`</div>`;
+    }
+  }
+  document.getElementById('fb-body').innerHTML=fbBody;
   document.getElementById('fb-hint-txt').textContent=card.hintTr||'';
 
   // Grup arkadaşları

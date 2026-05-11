@@ -20,6 +20,13 @@ KELİME FORMATI:
 - Tarih bilgisi dosyanın başında veya kelimelerin üstünde belirtilmiş olabilir
 - Tarih formatı: DD.MM.YYYY veya YYYYMMDD (örn: 08.01.2026 veya 08012026)
 
+ÖZEL DURUM (JSON / flashcard dışa aktarımı):
+- willaddednewwords.txt bazen bağlaç–edat–zarf kartlarının JSON çıktısı olabilir (items[]: term, meaningTr, grammar, contextEn, contextTr).
+- Bu durumda kelimeleri elle kelime=anlam satırlarına çevirmek yerine scripts/build_words_from_willadded.mjs betiğini çalıştır:
+  node scripts/build_words_from_willadded.mjs [DD.MM.YYYY] [çıktı.json]
+  İkinci argüman verilmezse çıktı adı tarihten türetilir (örn. 11.05.2026 -> words_2026_05_11.json).
+- Anlam alanı Türkçe için toLocaleLowerCase("tr-TR") ile küçük harfe indirgenir (İ/i, I/ı doğru kalsın diye).
+
 YAPILMASI GEREKENLER:
 
 1. willaddednewwords.txt dosyasını oku

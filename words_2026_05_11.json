@@ -1,0 +1,3764 @@
+[
+  {
+    "word": "except for",
+    "pronunciation": "iksept for",
+    "type": "Edat",
+    "meaning": "-den hariç / -den başka",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "All students passed except for one.",
+        "meaning": "Bir kişi hariç tüm öğrenciler geçti."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "apart from",
+    "pronunciation": "apart from",
+    "type": "Edat",
+    "meaning": "-den hariç / -den başka; -nın yanı sıra (ekleme)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Apart from a small error, the report was accurate. / Apart from chemistry, she studies biology.",
+        "meaning": "Küçük bir hata dışında rapor doğruydu. / Kimyanın yanı sıra biyoloji de okuyor."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "saving",
+    "pronunciation": "seyviğ",
+    "type": "Edat",
+    "meaning": "-den hariç / -den başka",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Every door was locked saving the main entrance.",
+        "meaning": "Ana giriş hariç tüm kapılar kilitliydi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "but",
+    "pronunciation": "bat",
+    "type": "Edat",
+    "meaning": "-den hariç / -den başka",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "No one but the manager had access to the file.",
+        "meaning": "Dosyaya yalnızca yöneticinin erişimi vardı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "by",
+    "pronunciation": "bay",
+    "type": "Edat",
+    "meaning": "-nın aracılığıyla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She improved her score by practising every day.",
+        "meaning": "Her gün pratik yaparak puanını yükseltti."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "irrespective of",
+    "pronunciation": "iristpektiv ov",
+    "type": "Edat",
+    "meaning": "-e bakılmaksızın",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "All candidates were treated equally, irrespective of age.",
+        "meaning": "Tüm adaylar yaşa bakılmaksızın eşit muamele gördü."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "via",
+    "pronunciation": "vaya",
+    "type": "Edat",
+    "meaning": "-nın aracılığıyla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The message was sent via email.",
+        "meaning": "Mesaj e-posta aracılığıyla gönderildi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "through",
+    "pronunciation": "tru",
+    "type": "Edat",
+    "meaning": "-nın aracılığıyla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He found the job through a friend.",
+        "meaning": "İşi bir arkadaşı aracılığıyla buldu."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "regardless of",
+    "pronunciation": "rigardles ov",
+    "type": "Edat",
+    "meaning": "-e bakılmaksızın",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The rule applies to everyone regardless of rank.",
+        "meaning": "Kural rütbeye bakılmaksızın herkese uygulanır."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "by means of",
+    "pronunciation": "bay minz ov",
+    "type": "Edat",
+    "meaning": "-nın aracılığıyla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Water was removed by means of a pump.",
+        "meaning": "Su bir pompa aracılığıyla boşaltıldı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "with the help of",
+    "pronunciation": "viz dı help ov",
+    "type": "Edat",
+    "meaning": "-nın aracılığıyla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She finished early with the help of her classmates.",
+        "meaning": "Sınıf arkadaşlarının yardımıyla erken bitirdi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "rather than",
+    "pronunciation": "razer den",
+    "type": "Edat",
+    "meaning": "-den ziyade / -nın yerine",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He chose to walk rather than take the bus.",
+        "meaning": "Otobüse binmek yerine yürümeyi tercih etti."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "instead of",
+    "pronunciation": "insted ov",
+    "type": "Edat",
+    "meaning": "-nın yerine",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She drank tea instead of coffee.",
+        "meaning": "Kahve yerine çay içti."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "instead",
+    "pronunciation": "insted",
+    "type": "Zarf",
+    "meaning": "yerine / bunun yerine",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The plan failed; instead, they tried a different approach.",
+        "meaning": "Plan tutmadı; bunun yerine farklı bir yol denediler."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "rather",
+    "pronunciation": "razer",
+    "type": "Zarf",
+    "meaning": "bilakis / daha doğrusu",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The result was not surprising; rather, it confirmed our prediction.",
+        "meaning": "Sonuç şaşırtıcı değildi; bilakis tahminimizi doğruladı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "in particular",
+    "pronunciation": "in particular",
+    "type": "Zarf",
+    "meaning": "özellikle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The exam was hard; in particular, the reading section was long.",
+        "meaning": "Sınav zordu; özellikle okuma bölümü uzundu."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "that is",
+    "pronunciation": "dt iz",
+    "type": "Zarf",
+    "meaning": "yani / diğer bir deyişle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He is a minor; that is, he is under eighteen.",
+        "meaning": "Reşit değil; yani on sekiz yaşın altında."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "particularly",
+    "pronunciation": "partikyularli",
+    "type": "Zarf",
+    "meaning": "özellikle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The winters are cold here, particularly in January.",
+        "meaning": "Kışlar burada soğuktur, özellikle ocak ayında."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "namely",
+    "pronunciation": "neympli",
+    "type": "Zarf",
+    "meaning": "yani / diğer bir deyişle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Two cities were selected, namely Ankara and İzmir.",
+        "meaning": "İki şehir seçildi: Ankara ve İzmir."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "especially",
+    "pronunciation": "ispeli",
+    "type": "Zarf",
+    "meaning": "özellikle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Drink water regularly, especially in summer.",
+        "meaning": "Düzenli su iç, özellikle yazın."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "in other words",
+    "pronunciation": "in adr vords",
+    "type": "Zarf",
+    "meaning": "yani / diğer bir deyişle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The project is over budget; in other words, we need more funding.",
+        "meaning": "Proje bütçeyi aştı; diğer bir deyişle daha fazla fona ihtiyacımız var."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "notably",
+    "pronunciation": "noudebli",
+    "type": "Zarf",
+    "meaning": "özellikle / dikkat çekici biçimde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Sales dropped in all regions; notably, the east saw the biggest fall.",
+        "meaning": "Tüm bölgelerde satışlar düştü; özellikle doğuda en büyük düşüş yaşandı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "specifically",
+    "pronunciation": "spesifikli",
+    "type": "Zarf",
+    "meaning": "özellikle / özgül olarak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We need one document, specifically your birth certificate.",
+        "meaning": "Bir belgeye ihtiyacımız var, özellikle nüfus cüzdanınıza."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "likewise",
+    "pronunciation": "layk vays",
+    "type": "Zarf",
+    "meaning": "aynı şekilde / benzer biçimde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He apologised; likewise, she admitted her mistake.",
+        "meaning": "O özür diledi; aynı şekilde o da hatasını kabul etti."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "in fact",
+    "pronunciation": "in fakt",
+    "type": "Zarf",
+    "meaning": "aslında / hatta",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The task seemed easy; in fact, it took three days.",
+        "meaning": "Görev kolay görünüyordu; aslında üç gün sürdü."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "similarly",
+    "pronunciation": "similerli",
+    "type": "Zarf",
+    "meaning": "aynı şekilde / benzer biçimde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Group A improved; similarly, group B showed progress.",
+        "meaning": "A grubu ilerledi; benzer şekilde B grubu da gelişme gösterdi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "indeed",
+    "pronunciation": "indid",
+    "type": "Zarf",
+    "meaning": "aslında / gerçekten de / hatta",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The book was long; indeed, it had over eight hundred pages.",
+        "meaning": "Kitap uzundu; gerçekten de sekiz yüzden fazla sayfası vardı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "actually",
+    "pronunciation": "akçuali",
+    "type": "Zarf",
+    "meaning": "aslında / gerçekte",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He looked calm; actually, he was very nervous.",
+        "meaning": "Sakin görünüyordu; aslında çok gergindi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "as a matter of fact",
+    "pronunciation": "ez e mater ov fakt",
+    "type": "Zarf",
+    "meaning": "aslında / gerçekte",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The claim was doubted; as a matter of fact, it was correct.",
+        "meaning": "İddiaya şüpheyle bakıldı; aslında doğruydu."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "as such",
+    "pronunciation": "ez saç",
+    "type": "Zarf",
+    "meaning": "dolayısıyla / bu sıfatla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He is not a doctor as such; he only gives general advice.",
+        "meaning": "Tam anlamıyla doktor değil; dolayısıyla yalnızca genel tavsiye veriyor."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "on the contrary",
+    "pronunciation": "on dı kantreri",
+    "type": "Zarf",
+    "meaning": "aksine / bilakis",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He was not lazy; on the contrary, he worked harder than anyone.",
+        "meaning": "Tembel değildi; aksine herkesten çok çalıştı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "as for",
+    "pronunciation": "ez for",
+    "type": "Edat",
+    "meaning": "-e gelince",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "I passed the exam; as for my brother, he will retake it.",
+        "meaning": "Ben sınavı geçtim; kardeşime gelince, o yeniden girecek."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "when it comes to",
+    "pronunciation": "ven it kamz tu",
+    "type": "Edat",
+    "meaning": "-e gelince",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She is talented; when it comes to maths, she is exceptional.",
+        "meaning": "Yetenekli; matematiğe gelince ise olağanüstü."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "with regard to",
+    "pronunciation": "viz rigard tu",
+    "type": "Edat",
+    "meaning": "-e gelince / -e ilişkin",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "With regard to the deadline, no extension will be granted.",
+        "meaning": "Son tarihe gelince, uzatma yapılmayacak."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "with respect to",
+    "pronunciation": "viz rispekt tu",
+    "type": "Edat",
+    "meaning": "-e gelince / -e ilişkin",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "With respect to cost, the second option is cheaper.",
+        "meaning": "Maliyete gelince ikinci seçenek daha ucuz."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "in the case of",
+    "pronunciation": "in dı keys ov",
+    "type": "Edat",
+    "meaning": "-e gelince / -söküz konusu olduğunda",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "In the case of children, the dosage must be reduced.",
+        "meaning": "Çocuklar söz konusu olduğunda doz azaltılmalıdır."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "about",
+    "pronunciation": "ebaut",
+    "type": "Edat",
+    "meaning": "ile ilgili / hakkında",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We need to talk about the schedule.",
+        "meaning": "Program hakkında konuşmamız gerekiyor."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "as to",
+    "pronunciation": "ez tu",
+    "type": "Edat",
+    "meaning": "ile ilgili / hakkında",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "There is no clear answer as to when the results will arrive.",
+        "meaning": "Sonuçların ne zaman geleceğine dair net bir yanıt yok."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "concerning",
+    "pronunciation": "kınsörniğ",
+    "type": "Edat",
+    "meaning": "ile ilgili / hakkında",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "A letter was sent concerning the missing payment.",
+        "meaning": "Eksik ödemeyle ilgili bir mektup gönderildi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "regarding",
+    "pronunciation": "rigardiğ",
+    "type": "Edat",
+    "meaning": "ile ilgili / hakkında",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Regarding your question, the answer is yes.",
+        "meaning": "Sorunuzla ilgili cevap evet."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "as regards",
+    "pronunciation": "ez rigardz",
+    "type": "Edat",
+    "meaning": "ile ilgili / -e gelince",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "As regards the fee, it remains unchanged this year.",
+        "meaning": "Ücret konusunda bu yıl değişiklik yok."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "pertaining to",
+    "pronunciation": "pıteyniğ tu",
+    "type": "Edat",
+    "meaning": "ile ilgili / -e dair",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "New rules pertaining to data storage were announced.",
+        "meaning": "Veri depolamayla ilgili yeni kurallar açıklandı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "in summary",
+    "pronunciation": "in summary",
+    "type": "Zarf",
+    "meaning": "kısaca / özet olarak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "In summary, the project was completed on time and within budget.",
+        "meaning": "Özetle proje zamanında ve bütçe dahilinde tamamlandı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "in brief",
+    "pronunciation": "in brief",
+    "type": "Zarf",
+    "meaning": "kısaca / özet olarak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "In brief, the new system is faster and more reliable.",
+        "meaning": "Kısaca yeni sistem daha hızlı ve güvenilir."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "in short",
+    "pronunciation": "in şort",
+    "type": "Zarf",
+    "meaning": "kısaca / özet olarak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "In short, we need more time to prepare.",
+        "meaning": "Kısaca hazırlanmak için daha fazla zamana ihtiyacımız var."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "in conclusion",
+    "pronunciation": "in conclujın",
+    "type": "Zarf",
+    "meaning": "sonuç olarak / özet olarak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "In conclusion, the evidence supports the proposed theory.",
+        "meaning": "Sonuç olarak kanıtlar önerilen teoriyi destekliyor."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "to sum up",
+    "pronunciation": "tu sum ap",
+    "type": "Zarf",
+    "meaning": "kısaca / toparlamak gerekirse",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "To sum up, both methods have advantages and drawbacks.",
+        "meaning": "Toparlarsak her iki yöntemin de avantajları ve dezavantajları var."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "to wrap up",
+    "pronunciation": "tu wrap ap",
+    "type": "Zarf",
+    "meaning": "kısaca / toparlamak gerekirse",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "To wrap up, the main findings will be shared next week.",
+        "meaning": "Özetlemek gerekirse temel bulgular önümüzdeki hafta paylaşılacak."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "all in all",
+    "pronunciation": "ol in ol",
+    "type": "Zarf",
+    "meaning": "genel olarak / her şey göz önüne alındığında",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "All in all, it was a successful conference.",
+        "meaning": "Genel olarak başarılı bir konferanstı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "except that",
+    "pronunciation": "iksept dt",
+    "type": "İfade",
+    "meaning": "-den hariç / -olmakla birlikte (bağlaç)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The plan was good except that the budget was too low.",
+        "meaning": "Bütçe çok düşük olmakla birlikte plan iyiydi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "save that",
+    "pronunciation": "save dt",
+    "type": "İfade",
+    "meaning": "-den hariç (bağlaç)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The report was complete save that one table was missing.",
+        "meaning": "Bir tablo eksik olmak dışında rapor eksiksizdi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "however **",
+    "pronunciation": "hav evır",
+    "type": "Zarf",
+    "meaning": "fakat / yine de / bununla birlikte",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The price was high; however, the quality was worth it.",
+        "meaning": "Fiyat yüksekti; ancak kalitesi buna değdi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "still",
+    "pronunciation": "still",
+    "type": "Zarf",
+    "meaning": "yine de / buna rağmen",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The road was closed; still, some drivers tried to pass.",
+        "meaning": "Yol kapalıydı; yine de bazı sürücüler geçmeye çalıştı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "conversely",
+    "pronunciation": "conversely",
+    "type": "Zarf",
+    "meaning": "aksine / bunun karşısında",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Exercise raises energy; conversely, inactivity leads to fatigue.",
+        "meaning": "Egzersiz enerjiyi artırır; aksine hareketsizlik yorgunluğa yol açar."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "even so",
+    "pronunciation": "ivın sou",
+    "type": "Zarf",
+    "meaning": "yine de / buna rağmen",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It was raining heavily; even so, the match continued.",
+        "meaning": "Yoğun yağmur yağıyordu; yine de maç devam etti."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "on the other hand",
+    "pronunciation": "on dı adr hand",
+    "type": "Zarf",
+    "meaning": "öte yandan / diğer yandan",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Living in a city is convenient; on the other hand, it is expensive.",
+        "meaning": "Şehirde yaşamak pratik; öte yandan pahalı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "nonetheless",
+    "pronunciation": "nonezeless",
+    "type": "Zarf",
+    "meaning": "yine de / buna karşın",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The evidence was limited; nonetheless, the committee reached a decision.",
+        "meaning": "Kanıt sınırlıydı; yine de komite bir karara vardı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "in contrast",
+    "pronunciation": "in kantrast",
+    "type": "Zarf",
+    "meaning": "aksine / buna karşılık",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Boys preferred outdoor games; in contrast, girls chose reading.",
+        "meaning": "Erkekler açık hava oyunlarını tercih etti; buna karşılık kızlar okumayı seçti."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "nevertheless",
+    "pronunciation": "neverzeless",
+    "type": "Zarf",
+    "meaning": "yine de / buna karşın",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The problem was serious; nevertheless, a solution was found.",
+        "meaning": "Sorun ciddiydi; yine de bir çözüm bulundu."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "by contrast",
+    "pronunciation": "bay kantrast",
+    "type": "Zarf",
+    "meaning": "aksine / buna karşılık",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The first year was difficult; by contrast, the second was much easier.",
+        "meaning": "Birinci yıl zordu; buna karşılık ikinci yıl çok daha kolaydı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "all the same",
+    "pronunciation": "ol dı same",
+    "type": "Zarf",
+    "meaning": "yine de / buna rağmen",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The news was bad; all the same, they remained optimistic.",
+        "meaning": "Haber kötüydü; yine de iyimserliklerini korudular."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "in contrast to",
+    "pronunciation": "in kantrast tu",
+    "type": "Edat",
+    "meaning": "-nın aksine / -nın karşısında",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "In contrast to last year, sales rose sharply this quarter.",
+        "meaning": "Geçen yılın aksine bu çeyrekte satışlar keskin yükseldi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "in contrast with",
+    "pronunciation": "in kantrast viz",
+    "type": "Edat",
+    "meaning": "-nın aksine / -nın karşısında",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "In contrast with her sister, she prefers quiet environments.",
+        "meaning": "Kız kardeşinin aksine sessiz ortamları tercih ediyor."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "unlike",
+    "pronunciation": "unlike",
+    "type": "Edat",
+    "meaning": "-nın aksine / -den farklı olarak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Unlike his brother, he enjoys reading.",
+        "meaning": "Kardeşinin aksine okumaktan hoşlanıyor."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "contrary to",
+    "pronunciation": "kantreri tu",
+    "type": "Edat",
+    "meaning": "-nın aksine / -e karşın",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Contrary to expectations, the team won the match.",
+        "meaning": "Beklentilerin aksine takım maçı kazandı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "therefore",
+    "pronunciation": "zerefore",
+    "type": "Zarf",
+    "meaning": "bu nedenle / dolayısıyla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She missed the bus; therefore, she was late for class.",
+        "meaning": "Otobüsü kaçırdı; bu nedenle derse geç kaldı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "thus",
+    "pronunciation": "zus",
+    "type": "Zarf",
+    "meaning": "böylece / bu nedenle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The bridge was damaged; thus, the road was closed.",
+        "meaning": "Köprü hasar gördü; böylece yol kapatıldı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "hence",
+    "pronunciation": "hence",
+    "type": "Zarf",
+    "meaning": "dolayısıyla / bu nedenle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The data were incomplete; hence, no conclusion was drawn.",
+        "meaning": "Veriler eksikti; dolayısıyla hiçbir sonuç çıkarılmadı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "accordingly",
+    "pronunciation": "accordingly",
+    "type": "Zarf",
+    "meaning": "buna göre / buna uygun olarak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The rules changed; accordingly, the timetable was updated.",
+        "meaning": "Kurallar değişti; buna göre ders programı güncellendi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "consequently",
+    "pronunciation": "consekvently",
+    "type": "Zarf",
+    "meaning": "sonuç olarak / bu nedenle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He skipped many lessons; consequently, he failed the exam.",
+        "meaning": "Pek çok dersi atlattı; sonuç olarak sınavda başarısız oldu."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "as a consequence",
+    "pronunciation": "ez e kansikvens",
+    "type": "Zarf",
+    "meaning": "sonuç olarak / bu nedenle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The river flooded; as a consequence, hundreds of homes were damaged.",
+        "meaning": "Nehir taştı; sonuç olarak yüzlerce ev hasar gördü."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "as a result",
+    "pronunciation": "ez e rizalt",
+    "type": "Zarf",
+    "meaning": "sonuç olarak / bu nedenle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The factory closed; as a result, many workers lost their jobs.",
+        "meaning": "Fabrika kapandı; sonuç olarak pek çok işçi işini kaybetti."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "thereby **",
+    "pronunciation": "zereby",
+    "type": "Zarf",
+    "meaning": "böylece / bu yolla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She cut expenses, thereby saving enough money for university.",
+        "meaning": "Giderlerini kıstı; böylece üniversite için yeterli para biriktirdi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "also",
+    "pronunciation": "olsou",
+    "type": "Zarf",
+    "meaning": "ayrıca / buna ek olarak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The hotel is affordable; also, it is close to the city centre.",
+        "meaning": "Otel uygun fiyatlı; ayrıca şehir merkezine yakın."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "besides **",
+    "pronunciation": "besides",
+    "type": "İfade",
+    "meaning": "üstelık / bunun yanında (cümle zarfı); -nın yanı sıra (edat)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The task was boring; besides, it took too long. / Besides sport, he enjoys music.",
+        "meaning": "Görev sıkıcıydı; üstelik çok uzun sürdü. / Sporun yanı sıra müzikten de hoşlanıyor."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "further",
+    "pronunciation": "furzer",
+    "type": "Zarf",
+    "meaning": "dahası / ayrıca",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The report was unclear; further, key figures were missing.",
+        "meaning": "Rapor belirsizdi; dahası temel rakamlar eksikti."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "moreover",
+    "pronunciation": "moreover",
+    "type": "Zarf",
+    "meaning": "üstelık / dahası",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The flat is small; moreover, it has no parking space.",
+        "meaning": "Daire küçük; üstelik park yeri yok."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "furthermore",
+    "pronunciation": "furzermore",
+    "type": "Zarf",
+    "meaning": "ayrıca / dahası",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The candidate is experienced; furthermore, she speaks three languages.",
+        "meaning": "Aday deneyimli; ayrıca üç dil konuşuyor."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "in addition",
+    "pronunciation": "in edişın",
+    "type": "Zarf",
+    "meaning": "buna ek olarak / ayrıca",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The course is free; in addition, students receive a certificate.",
+        "meaning": "Kurs ücretsiz; buna ek olarak öğrenciler sertifika alıyor."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "what's more",
+    "pronunciation": "vat's more",
+    "type": "Zarf",
+    "meaning": "dahası / üstelık",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The phone is cheap; what is more, the battery lasts two days.",
+        "meaning": "Telefon ucuz; dahası pil iki gün gidiyor."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "in addition to",
+    "pronunciation": "in edişın tu",
+    "type": "Edat",
+    "meaning": "-nın yanı sıra / -e ek olarak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "In addition to English, she speaks French.",
+        "meaning": "İngilizcenin yanı sıra Fransızca da konuşuyor."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "as well as",
+    "pronunciation": "ez well ez",
+    "type": "Edat",
+    "meaning": "-nın yanı sıra / -e ek olarak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She teaches maths as well as physics.",
+        "meaning": "Matematiğin yanı sıra fizik de öğretiyor."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "aside from",
+    "pronunciation": "aside from",
+    "type": "Edat",
+    "meaning": "-nın yanı sıra / -den başka",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Aside from a headache, she felt fine.",
+        "meaning": "Baş ağrısı dışında kendini iyi hissediyordu."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "along with",
+    "pronunciation": "along viz",
+    "type": "Edat",
+    "meaning": "-nın yanı sıra / -le birlikte",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Along with her degree, she completed an internship.",
+        "meaning": "Diplomasının yanı sıra staj da tamamladı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "together with",
+    "pronunciation": "togezer viz",
+    "type": "Edat",
+    "meaning": "-nın yanı sıra / -le birlikte",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Together with her colleagues, she prepared the report.",
+        "meaning": "Meslektaşlarıyla birlikte raporu hazırladı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "alongside",
+    "pronunciation": "alongside",
+    "type": "Edat",
+    "meaning": "-nın yanı sıra / -le birlikte",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Alongside her studies, she works part-time.",
+        "meaning": "Öğreniminin yanı sıra yarı zamanlı çalışıyor."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "coupled with",
+    "pronunciation": "caupled viz",
+    "type": "Edat",
+    "meaning": "-le birleşince / -nın yanı sıra",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Coupled with lack of sleep, stress caused her to fall ill.",
+        "meaning": "Uyku eksikliğiyle birleşince stres hastalanmasına neden oldu."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "at first",
+    "pronunciation": "at first",
+    "type": "Zarf",
+    "meaning": "ilk başta / başlangıta",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "At first she was nervous; later she relaxed.",
+        "meaning": "İlk başta gergin; sonradan rahatlattı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "initially",
+    "pronunciation": "initially",
+    "type": "Zarf",
+    "meaning": "başlangıta / ilk olarak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Initially the plan seemed impossible; afterwards it worked.",
+        "meaning": "Başlangıçta plan imkânsız görünüyordu; sonra işe yaradı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "afterwards",
+    "pronunciation": "afterwards",
+    "type": "Zarf",
+    "meaning": "sonra / daha sonra",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We had lunch; afterwards, we visited the museum.",
+        "meaning": "Öğle yemeği yedik; sonra müzeyi gezdik."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "in the meantime",
+    "pronunciation": "in dı mintime",
+    "type": "Zarf",
+    "meaning": "bu arada / o sürede",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Dinner was cooking; in the meantime, she set the table.",
+        "meaning": "Yemek pişiyordu; bu arada masayı kurdu."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "meanwhile",
+    "pronunciation": "minvile",
+    "type": "Zarf",
+    "meaning": "bu arada / o sürede",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He was studying; meanwhile, his sister was watching TV.",
+        "meaning": "Ders çalışıyordu; bu arada kız kardeşi TV izliyordu."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "for instance",
+    "pronunciation": "for instance",
+    "type": "Zarf",
+    "meaning": "örneğin / örnek vermek gerekirse",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Some fruits are rich in vitamin C; for instance, oranges and kiwi.",
+        "meaning": "Bazı meyveler C vitamini bakımından zengindir; örneğin portakal ve kivi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "for example",
+    "pronunciation": "for example",
+    "type": "Zarf",
+    "meaning": "örneğin",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Many animals migrate in winter; for example, swallows fly south.",
+        "meaning": "Pek çok hayvan kışın göç eder; örneğin kırlangıçlar güneye uçar."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "to illustrate",
+    "pronunciation": "tu illustrate",
+    "type": "Zarf",
+    "meaning": "örneğin / açıklamak gerekirse",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Habits are hard to break; to illustrate, consider how long it takes to stop smoking.",
+        "meaning": "Alışkanlıkları kırmak zordur; açıklamak gerekirse sigarayı bırakmanın ne kadar sürdüğünü düşünün."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "because of",
+    "pronunciation": "bikoz ov",
+    "type": "Edat",
+    "meaning": "-den dolayı / -yüzünden",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The match was cancelled because of heavy rain.",
+        "meaning": "Maç şiddetli yağmur nedeniyle iptal edildi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "due to",
+    "pronunciation": "due tu",
+    "type": "Edat",
+    "meaning": "-nın yüzünden / -nedenıyle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The flight was delayed due to fog.",
+        "meaning": "Uçuş sis nedeniyle gecikti."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "owing to",
+    "pronunciation": "auing tu",
+    "type": "Edat",
+    "meaning": "-nedeniyle / -yüzünden",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The road was closed owing to an accident.",
+        "meaning": "Yol bir kaza nedeniyle kapatıldı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "on account of",
+    "pronunciation": "on accaunt ov",
+    "type": "Edat",
+    "meaning": "-nedenıyle / -yüzünden",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "School was cancelled on account of the snowstorm.",
+        "meaning": "Kar fırtınası nedeniyle okul tatil edildi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "in view of",
+    "pronunciation": "in view ov",
+    "type": "Edat",
+    "meaning": "-göz önüne alınarak / -dikkate alınarak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "In view of the poor results, the strategy was revised.",
+        "meaning": "Zayıf sonuçlar göz önüne alınarak strateji revize edildi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "thanks to",
+    "pronunciation": "zanks tu",
+    "type": "Edat",
+    "meaning": "-nın sayesinde",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Thanks to his hard work, he won a scholarship.",
+        "meaning": "Sıkı çalışması sayesinde burs kazandı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "as a result of",
+    "pronunciation": "ez e rizalt ov",
+    "type": "Edat",
+    "meaning": "-nın sonucu olarak / -nedeniyle",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "As a result of the storm, power was cut for hours.",
+        "meaning": "Fırtınanın sonucu olarak saatlerce elektrik kesildi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "as a consequence of",
+    "pronunciation": "ez e kansikvens ov",
+    "type": "Edat",
+    "meaning": "-nın sonucu olarak",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "As a consequence of the error, the whole file was lost.",
+        "meaning": "Hatanın sonucu olarak tüm dosya kayboldu."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "so ... that **",
+    "pronunciation": "sou dt",
+    "type": "İfade",
+    "meaning": "o kadar ... ki",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The film was so long that some viewers fell asleep.",
+        "meaning": "Film o kadar uzundu ki bazı seyirciler uyuyakaldı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "such...that **",
+    "pronunciation": "saç dt",
+    "type": "İfade",
+    "meaning": "o kadar ... ki (isim öbeğiyle)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It was such a hot day that we stayed indoors.",
+        "meaning": "O kadar sıcak bir gündü ki içeride kaldık."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": ", so that",
+    "pronunciation": "sou dt",
+    "type": "İfade",
+    "meaning": "bu yüzden (fantboys koordinasyon)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The shop was closed, so we went to another one.",
+        "meaning": "Dükkan kapalıydı, bu yüzden başka birine gittik."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "otherwise",
+    "pronunciation": "ozerwise",
+    "type": "Zarf",
+    "meaning": "aksi takdirde / yoksa",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Leave early; otherwise, you will miss the train.",
+        "meaning": "Erken çık; aksi takdirde treni kaçırırsın."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "so that",
+    "pronunciation": "sou dt",
+    "type": "İfade",
+    "meaning": "-mek için / -sin diye (amaç)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She studied hard so that she could pass the exam.",
+        "meaning": "Sınavı geçebilmek için çok çalıştı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "in order that",
+    "pronunciation": "in order dt",
+    "type": "İfade",
+    "meaning": "-mek için / -sin diye",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We arrived early in order that we could find good seats.",
+        "meaning": "İyi yer bulabilmek için erken geldik."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "for fear that",
+    "pronunciation": "for fir dt",
+    "type": "İfade",
+    "meaning": "-mesin diye / korkusuyla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She whispered for fear that she might wake the baby.",
+        "meaning": "Bebeği uyandıracak diye fısıldadı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "lest",
+    "pronunciation": "lest",
+    "type": "İfade",
+    "meaning": "-mesin diye",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He wrote it down lest he forget.",
+        "meaning": "Unutmasın diye not etti."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "after",
+    "pronunciation": "after",
+    "type": "İfade",
+    "meaning": "-den sonra",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She called her mother after she arrived home. / He rested after the exam.",
+        "meaning": "Eve gelince annesini aradı. / Sınavdan sonra dinlendi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "before",
+    "pronunciation": "before",
+    "type": "İfade",
+    "meaning": "-meden önce",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Think carefully before you answer. / He had never travelled abroad before.",
+        "meaning": "Cevaplamadan önce dikkatlice düşün. / Daha önce hiç yurt dışına çıkmamıştı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "as soon as",
+    "pronunciation": "ez sun ez",
+    "type": "İfade",
+    "meaning": "-r -rmaz / hemen ...-ınce",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "As soon as the lesson ended, the students left.",
+        "meaning": "Ders biter bitmez öğrenciler çıktı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "the moment",
+    "pronunciation": "dı moment",
+    "type": "İfade",
+    "meaning": "-r -rmaz / hemen ...-ınce",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The moment she entered the room, everyone stood up.",
+        "meaning": "Odaya girer girmez herkes ayağa kalktı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "when",
+    "pronunciation": "ven",
+    "type": "İfade",
+    "meaning": "-dığında / -ınce",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "When the alarm rings, wake up immediately.",
+        "meaning": "Alarm çaldığında hemen uyan."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "while",
+    "pronunciation": "vile",
+    "type": "İfade",
+    "meaning": "-iken (zaman); -e rağmen / oysaki (zıtlık)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "While she was cooking, he was reading. / While he earns a lot, he never saves.",
+        "meaning": "O yemek pişirirken o okuyordu. / Çok kazanmasına rağmen hiç biriktirmiyor."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "once",
+    "pronunciation": "once",
+    "type": "İfade",
+    "meaning": "-bir ...-se / ... olur olmaz",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Once you understand the rule, the rest is easy.",
+        "meaning": "Kuralı bir kavrayınca geri kalanı kolay."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "until",
+    "pronunciation": "until",
+    "type": "İfade",
+    "meaning": "-e kadar",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Wait here until I return. / The shop is open until eight.",
+        "meaning": "Ben dönene kadar burada bekle. / Dükkan sekize kadar açık."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "till",
+    "pronunciation": "till",
+    "type": "İfade",
+    "meaning": "-e kadar",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She worked till midnight to finish the project.",
+        "meaning": "Projeyi bitirmek için gece yarısına kadar çalıştı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "by the time",
+    "pronunciation": "bay dı taym",
+    "type": "İfade",
+    "meaning": "-dığınde artık / -e kadar",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "By the time she arrived, the film had already begun.",
+        "meaning": "O geldiğinde film çoktan başlamıştı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "just as",
+    "pronunciation": "just ez",
+    "type": "İfade",
+    "meaning": "tam...-iken (zaman); -dığı gibi (benzerlik)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Just as I was leaving, the phone rang. / The result was just as we expected.",
+        "meaning": "Tam çıkarken telefon çaldı. / Sonuç beklediğimiz gibiydi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "the last time",
+    "pronunciation": "dı last taym",
+    "type": "İfade",
+    "meaning": "son...-dığında",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The last time we met, she had just started a new job.",
+        "meaning": "Son görüştüğümüzde yeni bir işe yeni başlamıştı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "the next time",
+    "pronunciation": "dı next taym",
+    "type": "İfade",
+    "meaning": "gelecek sefer...-dığında",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The next time you visit, call in advance.",
+        "meaning": "Gelecek sefer ziyarete geldiğinde önceden ara."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "no sooner...than **",
+    "pronunciation": "nou suner den",
+    "type": "İfade",
+    "meaning": "...-r -rmaz (devrik yapı)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "No sooner had she sat down than the doorbell rang.",
+        "meaning": "Oturur oturmaz kapı zili çaldı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "hardly...when **",
+    "pronunciation": "hardly ven",
+    "type": "İfade",
+    "meaning": "...-r -rmaz (devrik yapı)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Hardly had he left when it began to rain.",
+        "meaning": "Gider gitmez yağmur başladı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "whenever",
+    "pronunciation": "venever",
+    "type": "İfade",
+    "meaning": "her...-dığında / ne zaman...-sa",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Whenever she is stressed, she goes for a walk.",
+        "meaning": "Ne zaman stres alsa yürüyüşe çıkıyor."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "every time",
+    "pronunciation": "every taym",
+    "type": "İfade",
+    "meaning": "her...-dığında",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Every time he speaks in public, he gets nervous.",
+        "meaning": "Kamuoyu önünde her konuştuğunda sinirleniyor."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "as if",
+    "pronunciation": "ez if",
+    "type": "İfade",
+    "meaning": "-miş gibi / sankı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He spoke as if he knew the answer.",
+        "meaning": "Cevabı biliyormuş gibi konuştu."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "as though",
+    "pronunciation": "ez dou",
+    "type": "İfade",
+    "meaning": "-miş gibi / sankı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She looked as though she had not slept at all.",
+        "meaning": "Hiç uyumamış gibi görünüyordu."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "given that",
+    "pronunciation": "givın dt",
+    "type": "İfade",
+    "meaning": "-diği dikkate alınırsa / -diğinden",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Given that it was his first attempt, the result was impressive.",
+        "meaning": "İlk girişimi olduğu dikkate alınırsa sonuç etkileyiciydi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "considering that",
+    "pronunciation": "kınsidıriğ dt",
+    "type": "İfade",
+    "meaning": "-diği dikkate alınırsa",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Considering that she is new, her performance is excellent.",
+        "meaning": "Yeni olduğu göz önüne alınırsa performansı mükemmel."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "given",
+    "pronunciation": "givın",
+    "type": "Edat",
+    "meaning": "-i düşünürsek / göz önüne alınınca",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Given her experience, she is the best candidate.",
+        "meaning": "Deneyimi göz önüne alınca en iyi aday o."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "considering",
+    "pronunciation": "kınsidıriğ",
+    "type": "Edat",
+    "meaning": "-i düşünürsek / -e bakınca",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Considering his age, he is very fit.",
+        "meaning": "Yaşına bakınca çok zinde."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "as far as",
+    "pronunciation": "ez far ez",
+    "type": "İfade",
+    "meaning": "-diği kadarıyla / -e göre",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "As far as I know, the meeting has not been cancelled.",
+        "meaning": "Bildiğim kadarıyla toplantı iptal edilmedi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "so far as",
+    "pronunciation": "sou far ez",
+    "type": "İfade",
+    "meaning": "-diği kadarıyla",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "So far as the records show, she has never been absent.",
+        "meaning": "Kayıtların gösterdiği kadarıyla hiç devamsızlık yapmamış."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "for",
+    "pronunciation": "for",
+    "type": "İfade",
+    "meaning": "çünkü (fanboys)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He stayed home, for he was feeling unwell.",
+        "meaning": "Evde kaldı; çünkü kendini iyi hissetmiyordu."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "and",
+    "pronunciation": "and",
+    "type": "İfade",
+    "meaning": "ve (fanboys)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She opened the window and let in the fresh air.",
+        "meaning": "Pencereyi açtı ve temiz havayı içeri aldı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "nor",
+    "pronunciation": "nor",
+    "type": "İfade",
+    "meaning": "ne de (fanboys)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He did not apologise, nor did he explain his behaviour.",
+        "meaning": "Özür dilemedi; ne de davranışını açıkladı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "then",
+    "pronunciation": "zen",
+    "type": "İfade",
+    "meaning": "sonra / o zaman (fanboys)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Read the instructions, then start the exercise.",
+        "meaning": "Talimatları oku, sonra alıştırmaya başla."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "but",
+    "pronunciation": "bat",
+    "type": "İfade",
+    "meaning": "fakat / ama (fanboys)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The question was short but the answer required careful thought.",
+        "meaning": "Soru kısaydı ama cevap dikkatli düşünmeyi gerektiriyordu."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "or",
+    "pronunciation": "or",
+    "type": "İfade",
+    "meaning": "veya / yoksa (fanboys)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Study regularly or you will struggle in the exam.",
+        "meaning": "Düzenli çalış ya da sınavda zorlanırsın."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "yet",
+    "pronunciation": "yet",
+    "type": "İfade",
+    "meaning": "fakat / yine de (fanboys)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He is young, yet he handles responsibility well.",
+        "meaning": "Genç ama sorumluluğu iyi taşıyor."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "so",
+    "pronunciation": "sou",
+    "type": "İfade",
+    "meaning": "bu yüzden (fanboys)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She was tired, so she went to bed early.",
+        "meaning": "Yorgundu, bu yüzden erken yattı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "not only...but (also)...",
+    "pronunciation": "not only bat olsou",
+    "type": "İfade",
+    "meaning": "sadece...değil, ayrıca...",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She not only passed the exam but also got the highest grade.",
+        "meaning": "Sınavı geçmekle kalmadı, en yüksek notu da aldı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "both...and...",
+    "pronunciation": "boz and",
+    "type": "İfade",
+    "meaning": "hem...hem de",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Both the teacher and the students enjoyed the lesson.",
+        "meaning": "Hem öğretmen hem öğrenciler dersin tadını çıkardı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "either...or",
+    "pronunciation": "eizer or",
+    "type": "İfade",
+    "meaning": "ya...ya da",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "You can either take the bus or walk to the station.",
+        "meaning": "Ya otobüse binebilir ya da istasyona yürüyebilirsin."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "neither...nor...",
+    "pronunciation": "neizer nor",
+    "type": "İfade",
+    "meaning": "ne...ne de",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Neither the manager nor the staff attended the meeting.",
+        "meaning": "Ne yönetici ne de personel toplantıya katıldı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "not....but....",
+    "pronunciation": "not bat",
+    "type": "İfade",
+    "meaning": "....değil......dır....",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It was not the cost but the quality that mattered.",
+        "meaning": "Önemli olan maliyet değil kaliteydi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "although",
+    "pronunciation": "alzaugh",
+    "type": "İfade",
+    "meaning": "-e rağmen / -sa da",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Although the weather was cold, they went for a walk.",
+        "meaning": "Hava soğuk olmasına rağmen yürüyüşe çıktılar."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "even though",
+    "pronunciation": "ivın dou",
+    "type": "İfade",
+    "meaning": "-e rağmen / -sa bile",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Even though he studied hard, he failed the test.",
+        "meaning": "Çok çalışmasına rağmen testi geçemedi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "much as",
+    "pronunciation": "muç ez",
+    "type": "İfade",
+    "meaning": "ne kadar...sa da / -e rağmen",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Much as I wanted to help, I was too busy.",
+        "meaning": "Yardım etmek istesem de çok meşguldüm."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "even if",
+    "pronunciation": "ivın if",
+    "type": "İfade",
+    "meaning": "-sa bile / -se dahı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Even if it rains, the ceremony will take place outside.",
+        "meaning": "Yağmur yağsa bile tören dışarıda yapılacak."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "though **",
+    "pronunciation": "dou",
+    "type": "İfade",
+    "meaning": "-e rağmen / -sa da",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It was a good film, though the ending was weak.",
+        "meaning": "İyi bir filmdi; son kısım zayıf olsa da."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "despite the fact that",
+    "pronunciation": "dispayt dı fakt dt",
+    "type": "İfade",
+    "meaning": "-e rağmen / -olmasına karşın",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Despite the fact that she was tired, she continued working.",
+        "meaning": "Yorgun olmasına rağmen çalışmayı sürdürdü."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "in spite of the fact that",
+    "pronunciation": "in spayt ov dı fakt dt",
+    "type": "İfade",
+    "meaning": "-e rağmen / -olmasına karşın",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "In spite of the fact that he was ill, he attended the class.",
+        "meaning": "Hasta olmasına rağmen derse katıldı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "despite",
+    "pronunciation": "dispayt",
+    "type": "Edat",
+    "meaning": "-e rağmen (edat)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Despite the noise, she managed to concentrate.",
+        "meaning": "Gürültüye rağmen odaklanmayı başardı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "in spite of",
+    "pronunciation": "in spayt ov",
+    "type": "Edat",
+    "meaning": "-e rağmen (edat)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "In spite of her fear, she gave the speech.",
+        "meaning": "Korkusuna rağmen konuşmayı yaptı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "however + adj / adv",
+    "pronunciation": "hav evır ec adv",
+    "type": "İfade",
+    "meaning": "ne kadar...sa...sın (bağlaç)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "However tired she was, she never gave up.",
+        "meaning": "Ne kadar yorgun olursa olsun, hiç pes etmedi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "no matter how + adj / adv",
+    "pronunciation": "nou mater hau ec adv",
+    "type": "İfade",
+    "meaning": "ne kadar...sa...sın",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "No matter how hard the question is, attempt an answer.",
+        "meaning": "Soru ne kadar zor olursa olsun, cevap vermeye çalış."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "whereas",
+    "pronunciation": "veris",
+    "type": "İfade",
+    "meaning": "-iken / oysaki",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Whereas English uses many loanwords, Turkish uses fewer.",
+        "meaning": "İngilizce pek çok alıntı kelime kullanırken Türkçe daha az kullanır."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "notwithstanding",
+    "pronunciation": "notwizstanding",
+    "type": "İfade",
+    "meaning": "-e rağmen (edat); yine de (cümle zarfı); -e karşın (bağlaç)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Notwithstanding the high cost, the project was approved. / The cost was high; notwithstanding, the project was approved.",
+        "meaning": "Yüksek maliyete rağmen proje onaylandı. / Maliyet yüksekti; yine de proje onaylandı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "because",
+    "pronunciation": "bikoz",
+    "type": "İfade",
+    "meaning": "-diği için / çünkü",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She wore a coat because it was cold outside.",
+        "meaning": "Dışarısı soğuk olduğu için palto giydi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "since",
+    "pronunciation": "sins",
+    "type": "İfade",
+    "meaning": "-diği için / çünkü / -den beri",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Since the library was closed, he studied at home.",
+        "meaning": "Kütüphane kapalı olduğu için evde çalıştı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "as",
+    "pronunciation": "ez",
+    "type": "İfade",
+    "meaning": "-diği için / çünkü / -iken",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "As the road was icy, drivers slowed down.",
+        "meaning": "Yol buzlu olduğundan sürücüler yavaşladı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "seeing as",
+    "pronunciation": "siyiğ ez",
+    "type": "İfade",
+    "meaning": "-diği için / madem ki",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Seeing as everyone is here, let us begin.",
+        "meaning": "Herkes burada olduğuna göre başlayalım."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "seeing that",
+    "pronunciation": "siyiğ dt",
+    "type": "İfade",
+    "meaning": "-diği için / madem ki",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Seeing that it was late, she decided to take a taxi.",
+        "meaning": "Geç olduğunu görünce taksi almaya karar verdi."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "inasmuch as",
+    "pronunciation": "inazmaç ez",
+    "type": "İfade",
+    "meaning": "-diği ölçüde / -den dolayı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Inasmuch as he is the director, he is responsible for the outcome.",
+        "meaning": "Müdür olduğu ölçüde sonuçtan o sorumludur."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "on the grounds that",
+    "pronunciation": "on dı graundz dt",
+    "type": "İfade",
+    "meaning": "-diği gerekçesiyle / -diği için",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She was dismissed on the grounds that she had broken the rules.",
+        "meaning": "Kuralları çiğnediği gerekçesiyle görevden alındı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "now that",
+    "pronunciation": "nau dt",
+    "type": "İfade",
+    "meaning": "-diğine göre / madem ki",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Now that the exams are over, we can relax.",
+        "meaning": "Sınavlar bittiğine göre artık rahatlayabiliriz."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "in that",
+    "pronunciation": "in dt",
+    "type": "İfade",
+    "meaning": "-diği bakımdan / şöyle ki",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The plan was flawed in that it overlooked transport costs.",
+        "meaning": "Plan şöyle ki ulaşım maliyetlerini gözden kaçırdığı için hatalıydı."
+      }
+    ],
+    "date": "11.05.2026"
+  }
+]

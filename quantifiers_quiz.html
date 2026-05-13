@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quantifiers & Determiners Quiz — YDS/YÖKDİL</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0d14;
+    --surface: #16161f;
+    --card: #1e1e2e;
+    --border: #2a2a3e;
+    --accent: #e8c547;
+    --accent2: #7c6af7;
+    --accent3: #4ecdc4;
+    --correct: #2ecc8a;
+    --wrong: #e8524a;
+    --text: #e8e8f0;
+    --muted: #7070a0;
+    --white: #ffffff;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* BG texture */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: 
+      radial-gradient(ellipse 60% 40% at 80% 10%, rgba(124,106,247,0.12) 0%, transparent 60%),
+      radial-gradient(ellipse 40% 30% at 10% 80%, rgba(232,197,71,0.08) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .nav-home {
+    text-align: center;
+    padding: 16px 0 0;
+  }
+
+  .nav-home a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    padding: 8px 16px;
+    border-radius: 999px;
+    transition: color 0.2s, border-color 0.2s, background 0.2s;
+  }
+
+  .nav-home a:hover {
+    color: var(--accent);
+    border-color: rgba(232, 197, 71, 0.45);
+    background: rgba(232, 197, 71, 0.06);
+  }
+
+  /* HEADER */
+  header {
+    text-align: center;
+    padding: 40px 0 30px;
+  }
+
+  .badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent2), var(--accent));
+    color: #000;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 900;
+    line-height: 1.1;
+    background: linear-gradient(135deg, var(--white) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    color: var(--muted);
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+
+  /* PROGRESS */
+  .progress-wrap {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 24px 0 16px;
+  }
+
+  .progress-bar {
+    flex: 1;
+    height: 6px;
+    background: var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent2), var(--accent));
+    border-radius: 10px;
+    transition: width 0.5s cubic-bezier(0.4,0,0.2,1);
+    width: 0%;
+  }
+
+  .progress-text {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  .score-pill {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    color: var(--accent);
+  }
+
+  /* SCREEN */
+  .screen { display: none; }
+  .screen.active { display: block; }
+
+  /* START SCREEN */
+  .start-screen {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .start-icon {
+    font-size: 72px;
+    margin-bottom: 20px;
+    display: block;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .start-screen h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    margin-bottom: 14px;
+  }
+
+  .start-screen p {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 500px;
+    margin: 0 auto 30px;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 14px;
+    max-width: 500px;
+    margin: 0 auto 36px;
+  }
+
+  .info-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 10px;
+    text-align: center;
+  }
+
+  .info-card .num {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: var(--accent);
+    display: block;
+  }
+
+  .info-card .lbl {
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* QUESTION CARD */
+  .q-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 32px 36px;
+    margin-bottom: 18px;
+    position: relative;
+    overflow: hidden;
+    animation: slideIn 0.4s cubic-bezier(0.4,0,0.2,1);
+  }
+
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .q-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent2), var(--accent));
+  }
+
+  .q-type {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent2);
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  .q-text {
+    font-size: clamp(16px, 2.5vw, 20px);
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+
+  .q-text .blank {
+    display: inline-block;
+    min-width: 100px;
+    border-bottom: 2px solid var(--accent);
+    color: var(--accent);
+    text-align: center;
+    font-family: 'DM Mono', monospace;
+    padding: 0 8px;
+  }
+
+  .q-hint {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+  /* OPTIONS */
+  .options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .opt {
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 14px;
+    padding: 16px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    text-align: left;
+    transition: all 0.2s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .opt:hover:not(:disabled) {
+    border-color: var(--accent2);
+    background: rgba(124,106,247,0.1);
+    transform: translateY(-1px);
+  }
+
+  .opt .opt-letter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background: var(--border);
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--muted);
+    flex-shrink: 0;
+    transition: all 0.2s;
+  }
+
+  .opt:hover:not(:disabled) .opt-letter {
+    background: var(--accent2);
+    color: white;
+  }
+
+  .opt.correct {
+    border-color: var(--correct);
+    background: rgba(46,204,138,0.1);
+    color: var(--correct);
+  }
+
+  .opt.correct .opt-letter {
+    background: var(--correct);
+    color: white;
+  }
+
+  .opt.wrong {
+    border-color: var(--wrong);
+    background: rgba(232,82,74,0.1);
+    color: var(--wrong);
+  }
+
+  .opt.wrong .opt-letter {
+    background: var(--wrong);
+    color: white;
+  }
+
+  .opt:disabled { cursor: default; }
+
+  /* FEEDBACK */
+  .feedback {
+    background: var(--surface);
+    border-radius: 14px;
+    padding: 18px 22px;
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 1.7;
+    display: none;
+    border-left: 3px solid var(--accent);
+    animation: fadeIn 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .feedback.show { display: block; }
+  .feedback.correct-fb { border-left-color: var(--correct); }
+  .feedback.wrong-fb { border-left-color: var(--wrong); }
+
+  .feedback-title {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  .feedback-title.c { color: var(--correct); }
+  .feedback-title.w { color: var(--wrong); }
+
+  /* NEXT BTN */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, var(--accent2), var(--accent));
+    color: #000;
+  }
+
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(124,106,247,0.3); }
+
+  .btn-secondary {
+    background: var(--card);
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+
+  .btn-secondary:hover { border-color: var(--accent2); }
+
+  .btn-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    gap: 12px;
+  }
+
+  /* SECTION HEADER */
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 30px 0 16px;
+    padding: 16px 20px;
+    background: var(--surface);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+  }
+
+  .section-icon { font-size: 28px; }
+
+  .section-title { font-family: 'Playfair Display', serif; font-size: 18px; }
+  .section-desc { font-size: 13px; color: var(--muted); margin-top: 2px; }
+
+  /* RESULTS */
+  .results-screen {
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .trophy { font-size: 80px; margin-bottom: 20px; display: block; animation: bounce 0.6s ease; }
+
+  @keyframes bounce {
+    0% { transform: scale(0); }
+    60% { transform: scale(1.15); }
+    80% { transform: scale(0.95); }
+    100% { transform: scale(1); }
+  }
+
+  .result-score {
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    font-weight: 900;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .result-label {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .result-bars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 14px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+  }
+
+  .result-bar-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px;
+    text-align: center;
+  }
+
+  .result-bar-card .rval {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .result-bar-card .rval.green { color: var(--correct); }
+  .result-bar-card .rval.red { color: var(--wrong); }
+  .result-bar-card .rval.blue { color: var(--accent2); }
+
+  .result-bar-card .rlbl {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* REVIEW */
+  .review-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-bottom: 14px;
+    text-align: left;
+    animation: fadeIn 0.3s ease;
+  }
+
+  .review-item.missed { border-left: 3px solid var(--wrong); }
+  .review-item.correct-r { border-left: 3px solid var(--correct); }
+
+  .review-q { font-size: 14px; color: var(--muted); margin-bottom: 8px; }
+  .review-answer { font-size: 15px; font-weight: 500; }
+  .review-correct { color: var(--correct); }
+  .review-wrong-ans { color: var(--wrong); text-decoration: line-through; }
+  .review-explain { font-size: 13px; color: var(--muted); margin-top: 6px; line-height: 1.6; }
+
+  /* MODE SELECTOR */
+  .mode-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    max-width: 560px;
+    margin: 0 auto 30px;
+  }
+
+  .mode-card {
+    background: var(--card);
+    border: 2px solid var(--border);
+    border-radius: 16px;
+    padding: 22px 18px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s;
+  }
+
+  .mode-card:hover, .mode-card.selected {
+    border-color: var(--accent2);
+    background: rgba(124,106,247,0.1);
+  }
+
+  .mode-card .mode-icon { font-size: 28px; margin-bottom: 10px; }
+  .mode-card .mode-name { font-weight: 600; font-size: 15px; margin-bottom: 4px; }
+  .mode-card .mode-desc { font-size: 12px; color: var(--muted); line-height: 1.5; }
+
+  /* STREAK */
+  .streak-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .streak-lbl { font-size: 12px; color: var(--muted); }
+
+  .streak-dots { display: flex; gap: 5px; }
+
+  .streak-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--border);
+    transition: all 0.3s;
+  }
+
+  .streak-dot.hit { background: var(--accent); transform: scale(1.2); }
+
+  /* RESPONSIVE */
+  @media (max-width: 600px) {
+    .q-card { padding: 22px 20px; }
+    .options { grid-template-columns: 1fr; }
+    .mode-grid { grid-template-columns: 1fr; }
+    .info-grid { grid-template-columns: repeat(3,1fr); gap: 8px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <nav class="nav-home" aria-label="Site gezinmesi">
+    <a href="index.html">← Kelime kartları</a>
+  </nav>
+  <header>
+    <div class="badge">YDS / YÖKDİL Hazırlık</div>
+    <h1>Quantifiers &amp; Determiners</h1>
+    <p class="subtitle">Miktar İfadeleri • Tam Kapsamlı Test</p>
+  </header>
+
+  <!-- START SCREEN -->
+  <div id="startScreen" class="screen active">
+    <div class="start-screen">
+      <span class="start-icon">📚</span>
+      <h2>Hazır mısın?</h2>
+      <p>Tablodaki <strong>tüm quantifier ve determiner</strong> ifadelerini kapsayan sorular seni bekliyor. Her soru için Türkçe anlamı, kullanımı ve cümle içindeki doğru seçimi test edeceksin.</p>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <span class="num" id="totalQCount">75+</span>
+          <span class="lbl">Soru</span>
+        </div>
+        <div class="info-card">
+          <span class="num">4</span>
+          <span class="lbl">Kategori</span>
+        </div>
+        <div class="info-card">
+          <span class="num">♾️</span>
+          <span class="lbl">Tekrar</span>
+        </div>
+      </div>
+
+      <div class="mode-grid">
+        <div class="mode-card selected" data-mode="full" onclick="selectMode(this,'full')">
+          <div class="mode-icon">🎯</div>
+          <div class="mode-name">Tam Test</div>
+          <div class="mode-desc">Tüm sorular, yanlışlar sonda tekrar</div>
+        </div>
+        <div class="mode-card" data-mode="mcq" onclick="selectMode(this,'mcq')">
+          <div class="mode-icon">⚡</div>
+          <div class="mode-name">Hızlı Tur</div>
+          <div class="mode-desc">Sadece çoktan seçmeli, 30 soru</div>
+        </div>
+        <div class="mode-card" data-mode="fillblank" onclick="selectMode(this,'fillblank')">
+          <div class="mode-icon">✏️</div>
+          <div class="mode-name">Boşluk Doldur</div>
+          <div class="mode-desc">Cümle tamamlama odaklı</div>
+        </div>
+        <div class="mode-card" data-mode="translate" onclick="selectMode(this,'translate')">
+          <div class="mode-icon">🔁</div>
+          <div class="mode-name">Anlam Eşleştir</div>
+          <div class="mode-desc">İngilizce ↔ Türkçe</div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" onclick="startQuiz()" style="font-size:17px;padding:16px 40px;">
+        Başla →
+      </button>
+    </div>
+  </div>
+
+  <!-- QUIZ SCREEN -->
+  <div id="quizScreen" class="screen">
+    <div class="progress-wrap">
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+      <span class="progress-text" id="progressText">0 / 0</span>
+      <span class="score-pill" id="scorePill">✦ 0</span>
+    </div>
+
+    <div class="streak-bar">
+      <span class="streak-lbl">Seri:</span>
+      <div class="streak-dots" id="streakDots">
+        <div class="streak-dot"></div>
+        <div class="streak-dot"></div>
+        <div class="streak-dot"></div>
+        <div class="streak-dot"></div>
+        <div class="streak-dot"></div>
+      </div>
+    </div>
+
+    <div id="sectionHeader"></div>
+
+    <div class="q-card" id="questionCard">
+      <div class="q-type" id="qType"></div>
+      <div class="q-text" id="qText"></div>
+      <div class="q-hint" id="qHint"></div>
+      <div class="options" id="optionsContainer"></div>
+      <div class="feedback" id="feedback">
+        <div class="feedback-title" id="feedbackTitle"></div>
+        <div id="feedbackBody"></div>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn btn-secondary" onclick="skipQuestion()">Atla ⏭</button>
+      <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()" style="display:none;">Devam Et →</button>
+    </div>
+  </div>
+
+  <!-- RESULTS SCREEN -->
+  <div id="resultsScreen" class="screen">
+    <div class="results-screen">
+      <span class="trophy" id="trophyEmoji">🏆</span>
+      <div class="result-score" id="resultScore">0%</div>
+      <div class="result-label" id="resultLabel"></div>
+
+      <div class="result-bars">
+        <div class="result-bar-card">
+          <div class="rval green" id="rCorrect">0</div>
+          <div class="rlbl">Doğru</div>
+        </div>
+        <div class="result-bar-card">
+          <div class="rval red" id="rWrong">0</div>
+          <div class="rlbl">Yanlış</div>
+        </div>
+        <div class="result-bar-card">
+          <div class="rval blue" id="rSkipped">0</div>
+          <div class="rlbl">Atlanan</div>
+        </div>
+      </div>
+
+      <div id="reviewSection"></div>
+
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:24px;">
+        <button class="btn btn-secondary" onclick="reviewMissed()" id="retryMissedBtn">🔁 Yanlışları Tekrar</button>
+        <button class="btn btn-primary" onclick="restartQuiz()">↩ Yeni Test</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ============================================================
+// ALL QUESTIONS DATABASE
+// ============================================================
+const ALL_QUESTIONS = [
+
+  // ─────────────────────────────────────
+  // CATEGORY 1: MEANING (Anlamı Nedir?)
+  // ─────────────────────────────────────
+  {cat:'meaning', q:'<b>a lot of</b> ifadesinin Türkçe anlamı nedir?', opts:['çok (sayılabilir+sayılamaz)','az miktarda','hiç yok','birkaç tane'], ans:0,
+   exp:'"a lot of" hem sayılabilir hem sayılamaz isimlerle kullanılır ve "çok" anlamı taşır. Örn: a lot of books / a lot of water'},
+  {cat:'meaning', q:'<b>lots of</b> ile <b>a lot of</b> arasındaki fark nedir?', opts:['Hiçbir fark yok, ikisi de "çok" anlamında','lots of daha az miktarı gösterir','a lot of sadece resmi dilde kullanılır','lots of yalnızca sayılabilir isimlerle kullanılır'], ans:0,
+   exp:'lots of ve a lot of anlamca özdeştir. İkisi de "çok" demektir. lots of biraz daha günlük dile aittir.'},
+  {cat:'meaning', q:'<b>plenty of</b> ifadesinin Türkçe karşılığı hangisidir?', opts:['çok az','bol miktarda, yeterinden fazla','hiç','pek çok ama az'], ans:1,
+   exp:'"plenty of" = bol miktarda, yeterinden fazla. Örn: There is plenty of time. (Bol vakit var.)'},
+  {cat:'meaning', q:'<b>a great deal of</b> hangi anlama gelir?', opts:['biraz','büyük miktarda (sayılamayan isimlerle)','birkaç (sayılabilen)','hiçbiri değil'], ans:1,
+   exp:'"a great deal of" sadece sayılamaz isimlerle kullanılır ve "büyük miktarda" anlamı taşır. Örn: a great deal of money'},
+  {cat:'meaning', q:'<b>a great number of</b> neyi ifade eder?', opts:['büyük miktarda (sayılamayan)','büyük sayıda (sayılabilen)','az sayıda','hiç yok'], ans:1,
+   exp:'"a great number of" sayılabilir isimlerle kullanılır. "Büyük sayıda" anlamındadır. Örn: a great number of people'},
+  {cat:'meaning', q:'<b>a large amount of</b> ne demektir?', opts:['az miktarda','büyük miktarda (sayılamayan)','büyük sayıda (sayılabilen)','birkaç tane'], ans:1,
+   exp:'"a large amount of" sayılamaz isimlerle kullanılır. "Büyük miktarda" demektir. Örn: a large amount of water'},
+  {cat:'meaning', q:'<b>many</b> kelimesinin doğru Türkçe karşılığı ve kullanımı hangisidir?', opts:['çok (sayılamayan)','çok (sayılabilen, çoğul)','az (sayılabilen)','hiç yok'], ans:1,
+   exp:'"many" sayılabilir çoğul isimlerle kullanılır. "Çok" demektir. Örn: many students, many books'},
+  {cat:'meaning', q:'<b>much</b> hangi tür isimlerle kullanılır?', opts:['Sayılabilen isimler','Sayılamayan isimler','Her ikisi','Sadece olumsuz cümleler'], ans:1,
+   exp:'"much" sayılamaz isimlerle kullanılır. Örn: much water, much time, much money'},
+  {cat:'meaning', q:'<b>a few</b> ne anlama gelir?', opts:['Hiç yok','Az miktarda (sayılamayan)','Birkaç tane (sayılabilen) — yeterli sayıda','Az miktarda ama biraz var (sayılabilen)'], ans:3,
+   exp:'"a few" sayılabilir çoğul isimlerle kullanılır ve "birkaç" anlamına gelir — olumlu çağrışım taşır (biraz var).'},
+  {cat:'meaning', q:'<b>few</b> ile <b>a few</b> arasındaki temel fark nedir?', opts:['Hiç fark yoktur','few olumsuz çağrışımlı (çok az, yetersiz); a few olumlu (biraz var)','a few daha az miktarı ifade eder','few sayılamaz isimlerle kullanılır'], ans:1,
+   exp:'"few" = çok az, neredeyse yok (olumsuz). "a few" = biraz var (olumlu). Örn: I have few friends. (Çok az arkadaşım var.) / I have a few friends. (Birkaç arkadaşım var.)'},
+  {cat:'meaning', q:'<b>a little</b> ne demektir?', opts:['Hiç yok','Biraz (sayılamayan — olumlu çağrışım)','Az (sayılabilen)','Çok az (olumsuz)'], ans:1,
+   exp:'"a little" sayılamaz isimlerle kullanılır, "biraz" demektir ve olumlu çağrışım taşır. Örn: I have a little money. (Biraz param var.)'},
+  {cat:'meaning', q:'<b>little</b> ile <b>a little</b> farkı nedir?', opts:['Fark yoktur','little olumsuz (çok az, yetersiz); a little olumlu (biraz var)','a little daha az ifade eder','little sayılabilen ile kullanılır'], ans:1,
+   exp:'"little" = çok az, yetersiz (olumsuz). "a little" = biraz, yeterli miktarda (olumlu).'},
+  {cat:'meaning', q:'"only a little = little" ve "only a few = few" ne anlama gelir?', opts:['Az ama yeterli','Sadece biraz/birkaç — yani yetersiz miktarda','Hiç yok','Bol miktarda'], ans:1,
+   exp:'Bu kullanımlar "gerçekten çok az" anlamı vurgular. only a few books = sadece birkaç kitap (yeterli değil)'},
+  {cat:'meaning', q:'<b>several</b> kelimesi ne anlama gelir?', opts:['Birçok (sayılamayan)','Birçok/birkaç (sayılabilen, genelde 3-7 arası)','Hepsi','Hiçbiri'], ans:1,
+   exp:'"several" sayılabilir isimlerle kullanılır ve genelde 3 ile 7 arasında bir sayıyı ifade eder. "Birkaç/birçok" anlamında.'},
+  {cat:'meaning', q:'<b>most</b> kelimesi ne demektir?', opts:['Tümü','Büyük çoğunluğu (çoğu)','Birkaçı','İkisi de'], ans:1,
+   exp:'"most" = büyük çoğunluk, çoğu. Hem sayılabilen hem sayılamayan isimlerle kullanılabilir.'},
+  {cat:'meaning', q:'<b>any</b> kelimesi soru ve olumsuz cümlelerde ne anlamda kullanılır?', opts:['Hiç / herhangi bir','Çok','Biraz','Birkaç'], ans:0,
+   exp:'"any" soru ve olumsuz cümlelerde "hiç / herhangi bir" anlamı taşır. Örn: Do you have any money? / I don\'t have any time.'},
+  {cat:'meaning', q:'<b>no</b> determiner olarak ne anlama gelir?', opts:['Biraz','Hepsi','Hiç yok (sıfır miktar)','Birkaç'], ans:2,
+   exp:'"no" = hiç yok, sıfır. Örn: I have no money. = I don\'t have any money. Ama "no" ismin önüne gelir.'},
+  {cat:'meaning', q:'<b>some</b> olumlu cümlelerde ne anlama gelir?', opts:['Hiç yok','Biraz / birkaç tane','Hepsi','Çok az'], ans:1,
+   exp:'"some" olumlu cümlelerde "biraz / birkaç" anlamında kullanılır. Hem sayılabilen hem sayılamayanla kullanılır.'},
+  {cat:'meaning', q:'<b>both</b> ne anlama gelir ve kaç nesne için kullanılır?', opts:['Üç veya daha fazla nesne için — hepsi','İki nesnenin her ikisi de','İki nesneden biri','İki nesneden hiçbiri'], ans:1,
+   exp:'"both" = iki nesnenin her ikisi de. Örn: Both students passed. (Her iki öğrenci de geçti.)'},
+  {cat:'meaning', q:'<b>either</b> ne anlama gelir?', opts:['İki şeyden her ikisi birden','İki şeyden hiçbiri','İki şeyden herhangi biri (biri veya diğeri)','Üçten fazla'], ans:2,
+   exp:'"either" = iki seçenekten biri (ya biri ya diğeri). Örn: You can take either road. (Her iki yolu da alabilirsin — yani birini seç.)'},
+  {cat:'meaning', q:'<b>neither</b> ne anlama gelir?', opts:['Her ikisi de','Herhangi biri','İki şeyden hiçbiri (olumsuz)','Bir veya diğeri'], ans:2,
+   exp:'"neither" = iki şeyden hiçbiri. Örn: Neither answer is correct. (Her iki cevap da yanlış.)'},
+  {cat:'meaning', q:'<b>each</b> ile <b>every</b> arasındaki temel fark nedir?', opts:['Hiç fark yoktur','each bireysel olarak ele alır; every grubu bir bütün olarak ele alır','every ikil (2 kişi) için kullanılır; each sadece gruplar için','each sayılamayan, every sayılabilen için'], ans:1,
+   exp:'"each" = her biri ayrı ayrı (odak bireysel). "every" = her (grubun tamamı). Örn: Each student has a book. / Every student passed.'},
+  {cat:'meaning', q:'<b>all</b> determiner olarak ne anlama gelir?', opts:['Hiçbiri','Büyük çoğunluğu','Hepsini (bütün)','Birkaçı'], ans:2,
+   exp:'"all" = hepsi, bütün. Örn: All students passed. / All the money was spent.'},
+  {cat:'meaning', q:'<b>half</b> + of + determiner yapısı ne anlama gelir?', opts:['Tamamı','Yarısı','Çeyreği','Büyük çoğunluğu'], ans:1,
+   exp:'"half (of) + determiner" = yarısı. Örn: Half of the students passed. (Öğrencilerin yarısı geçti.)'},
+  {cat:'meaning', q:'<b>one another</b> ne anlama gelir?', opts:['Birbirini (2 kişi)','Birbirini (2\'den fazla)','Kendini','Diğerleri'], ans:1,
+   exp:'"one another" = birbirini (2\'den fazla kişi için). Örn: They helped one another. "Each other" ise 2 kişi için kullanılır.'},
+  {cat:'meaning', q:'<b>each other</b> ne anlama gelir?', opts:['Birbirini (2\'den fazla)','Birbirini (2 kişi)','Kendini','Başkasını'], ans:1,
+   exp:'"each other" = birbirini (2 kişi). Örn: They love each other. (2 kişi birbirini seviyor.)'},
+  {cat:'meaning', q:'<b>other</b> (tekil) ne anlama gelir?', opts:['Tüm diğerleri','Başka bir (tane daha)','Kendisi','Hiçbiri'], ans:1,
+   exp:'"other" = başka/diğer. Tekil sayılabilen ile: another/other. Örn: the other day (o diğer gün).'},
+  {cat:'meaning', q:'<b>the others</b> (zamir) ne anlama gelir?', opts:['Başka birileri (belirsiz)','Geri kalanların hepsi (belirli)','Bir diğeri','Hiçbiri'], ans:1,
+   exp:'"the others" = geri kalanların hepsi (belirli). Örn: Some passed, the others failed. (Bazıları geçti, geri kalanların hepsi kaldı.)'},
+  {cat:'meaning', q:'<b>others</b> (zamir) ile <b>the others</b> arasındaki fark nedir?', opts:['Fark yoktur','others = belirsiz başkaları; the others = belirli geri kalanlar','the others daha az kişiyi ifade eder','others sadece nesneler için'], ans:1,
+   exp:'"others" = başka kişiler/şeyler (belirsiz). "the others" = geri kalanlar (belirli, hepsi). Bağlama göre seçilir.'},
+  {cat:'meaning', q:'<b>another</b> ne anlama gelir?', opts:['Tüm diğerleri','Bir diğeri / bir tane daha (tekil, sayılabilen)','Diğerleri (çoğul)','Geri kalanlar'], ans:1,
+   exp:'"another" = bir tane daha, başka bir. Tekil ve belirsiz isimlerle kullanılır. Örn: another cup of tea (bir bardak daha çay)'},
+  {cat:'meaning', q:'"<b>none of</b>" ne anlama gelir ve nasıl kullanılır?', opts:['Hepsi','Birkaçı','Hiçbiri (sıfır)','Çoğunluğu'], ans:2,
+   exp:'"none of" = hiçbiri. Sayılabilen veya sayılamayan ile kullanılabilir. Örn: None of the students passed.'},
+  {cat:'meaning', q:'<b>some other</b> ne anlama gelir?', opts:['Başka bir (belirli)','Başka bazı (belirsiz)','Hepsi','Hiçbiri'], ans:1,
+   exp:'"some other" = başka bazı şeyler (belirsiz). Örn: some other people (başka bazı insanlar)'},
+  {cat:'meaning', q:'<b>any other</b> ne anlama gelir?', opts:['Hiç başka yok','Herhangi bir başkası','Tüm diğerleri','Bazı diğerleri'], ans:1,
+   exp:'"any other" = herhangi bir başkası. Genelde soru ve olumsuz cümlelerde: Do you have any other ideas?'},
+
+  // ─────────────────────────────────────
+  // CATEGORY 2: GRAMMAR (Sayılabilir/Sayılamaz)
+  // ─────────────────────────────────────
+  {cat:'grammar', q:'Aşağıdakilerden hangisi YALNIZCA sayılabilir (çoğul) isimlerle kullanılır?', opts:['much','a little','many','a great deal of'], ans:2,
+   exp:'"many" yalnızca sayılabilir çoğul isimlerle kullanılır. Örn: many books, many students'},
+  {cat:'grammar', q:'Aşağıdakilerden hangisi YALNIZCA sayılamaz isimlerle kullanılır?', opts:['many','several','a few','much'], ans:3,
+   exp:'"much" yalnızca sayılamaz isimlerle kullanılır. Örn: much water, much information'},
+  {cat:'grammar', q:'"a few" ile hangi isim türü kullanılır?', opts:['Sayılamaz','Sayılabilir tekil','Sayılabilir çoğul','Her ikisi'], ans:2,
+   exp:'"a few" sayılabilir çoğul isimlerle kullanılır. Örn: a few books, a few people'},
+  {cat:'grammar', q:'"a little" ile hangi isim türü kullanılır?', opts:['Sayılabilir çoğul','Sayılamaz','Sayılabilir tekil','Her ikisi'], ans:1,
+   exp:'"a little" sayılamaz isimlerle kullanılır. Örn: a little water, a little time'},
+  {cat:'grammar', q:'"several" hangi isim türüyle kullanılır?', opts:['Sayılamaz','Sayılabilir tekil','Sayılabilir çoğul','Her ikisi'], ans:2,
+   exp:'"several" sayılabilir çoğul isimlerle kullanılır. Örn: several books, several people'},
+  {cat:'grammar', q:'"a great deal of" hangi isim türüyle kullanılır?', opts:['Sayılabilir çoğul','Sayılamaz','Her ikisi','Sayılabilir tekil'], ans:1,
+   exp:'"a great deal of" yalnızca sayılamaz isimlerle kullanılır. Örn: a great deal of money, a great deal of information'},
+  {cat:'grammar', q:'"a great number of" hangi isim türüyle kullanılır?', opts:['Sayılamaz','Sayılabilir çoğul','Her ikisi','Sayılabilir tekil'], ans:1,
+   exp:'"a great number of" sayılabilir çoğul isimlerle kullanılır. Örn: a great number of students'},
+  {cat:'grammar', q:'"a large amount of" hangi isim türüyle kullanılır?', opts:['Sayılabilir çoğul','Her ikisi','Sayılamaz','Sayılabilir tekil'], ans:2,
+   exp:'"a large amount of" sayılamaz isimlerle kullanılır. Örn: a large amount of water, a large amount of money'},
+  {cat:'grammar', q:'"each" fiil uyumuyla nasıl kullanılır?', opts:['Çoğul fiil (are, were)','Tekil fiil (is, was, has)','Her ikisi de olabilir','Fiilin önemi yok'], ans:1,
+   exp:'"each" tekil isimle kullanılır → tekil fiil. Örn: Each student HAS a book. (has — tekil)'},
+  {cat:'grammar', q:'"both" fiil uyumuyla nasıl kullanılır?', opts:['Tekil fiil','Çoğul fiil','Her ikisi','Fiil kullanılmaz'], ans:1,
+   exp:'"both" çoğul anlamlıdır → çoğul fiil. Örn: Both students ARE here.'},
+  {cat:'grammar', q:'"neither" tekil mi çoğul mu fiil alır? (resmi kullanımda)', opts:['Her zaman çoğul','Her zaman tekil','Her ikisi de doğru','Fiilsiz kullanılır'], ans:1,
+   exp:'Resmi kullanımda "neither" tekil fiil alır. Örn: Neither answer IS correct. (Günlük dilde çoğul da kabul görür.)'},
+  {cat:'grammar', q:'"none of" ne tür fiil alır?', opts:['Sadece tekil','Sadece çoğul','Hem tekil hem çoğul (her ikisi kabul edilir)','Fiil almaz'], ans:2,
+   exp:'"none of" resmi dilde tekil, günlük dilde çoğul fiil alabilir. İkisi de kabul görür.'},
+  {cat:'grammar', q:'"every" ile kullanılan fiil türü hangisidir?', opts:['Çoğul','Tekil','Her ikisi','Fiil kullanılmaz'], ans:1,
+   exp:'"every + tekil isim" → tekil fiil. Örn: Every student HAS passed.'},
+  {cat:'grammar', q:'"all" sayılabilen isimle kullanıldığında fiil türü nedir?', opts:['Tekil fiil','Çoğul fiil','Her ikisi','Fark etmez'], ans:1,
+   exp:'"all + sayılabilen çoğul" → çoğul fiil. Örn: All students HAVE passed.'},
+  {cat:'grammar', q:'"some" hangi cümle türlerinde kullanılır?', opts:['Sadece olumsuz','Sadece soru','Olumlu ve nazik teklif/soru cümlelerinde','Sadece şart cümlelerinde'], ans:2,
+   exp:'"some" olumlu cümlelerde ve nazik teklif/istek sorularında kullanılır. Örn: Would you like some tea?'},
+  {cat:'grammar', q:'"any" hangi cümle türleriyle kullanılır?', opts:['Sadece olumlu','Soru ve olumsuz cümleler, şart cümleleri','Sadece şart','Sadece soru'], ans:1,
+   exp:'"any" olumsuz cümleler, soru cümleleri ve if-şart cümlelerinde kullanılır.'},
+  {cat:'grammar', q:'"No + isim" ile "not any + isim" arasındaki fark nedir?', opts:['Anlamca farklıdır','Anlamca aynıdır, yapı değişir','no daha güçlü olumsuzluktur','any her zaman daha resmi'], ans:1,
+   exp:'"No students" = "not any students" — aynı anlam. Ama "no" doğrudan ismin önüne gelir, fiil olumsuzlanmaz.'},
+
+  // ─────────────────────────────────────
+  // CATEGORY 3: FILL IN THE BLANK (Boşluk Doldur)
+  // ─────────────────────────────────────
+  {cat:'fill', q:'There are _____ students in the classroom. (Sınıfta çok öğrenci var.)', opts:['much','a little','many','a great deal of'], ans:2,
+   exp:'"students" sayılabilir çoğul → "many" kullanılır.'},
+  {cat:'fill', q:'I don\'t have _____ time to finish this. (Bu işi bitirmek için hiç vaktim yok.)', opts:['many','much','several','a few'], ans:1,
+   exp:'"time" sayılamaz → "much" kullanılır. Olumsuz cümlede "much" normaldir.'},
+  {cat:'fill', q:'She has _____ friends at school. (Okulda birkaç arkadaşı var — yeterince)', opts:['few','little','a few','a little'], ans:2,
+   exp:'Olumlu çağrışım + sayılabilir çoğul → "a few" kullanılır.'},
+  {cat:'fill', q:'He has _____ money left. (Çok az parası kaldı — yetersiz)', opts:['a little','little','a few','few'], ans:1,
+   exp:'Olumsuz çağrışım + sayılamaz → "little" kullanılır.'},
+  {cat:'fill', q:'We need _____ more chairs. (Birkaç tane daha sandalyeye ihtiyacımız var.)', opts:['much','a little','several','a great deal of'], ans:2,
+   exp:'"chairs" sayılabilir çoğul + "birkaç tane daha" → "several" veya "a few". Seçeneklerde "several" var.'},
+  {cat:'fill', q:'_____ of the students passed the exam. (Öğrencilerin hepsi sınavı geçti.)', opts:['None','Both','All','Neither'], ans:2,
+   exp:'"Hepsi" anlamında ve çoğul öğrenciler için "All" kullanılır.'},
+  {cat:'fill', q:'_____ answer is correct. (Her iki cevap da yanlış.)', opts:['Both','Either','Neither','None'], ans:2,
+   exp:'"Her iki cevap da değil" = "Neither". İki seçenek için olumsuz.'},
+  {cat:'fill', q:'You can choose _____ road — they both lead to the city.', opts:['neither','both','either','none'], ans:2,
+   exp:'"either" = iki seçenekten biri (ya biri ya diğeri). İki yoldan biri seçilebilir.'},
+  {cat:'fill', q:'There is _____ water in the bottle. (Şişede biraz su var — yeterli)', opts:['few','little','a little','a few'], ans:2,
+   exp:'"water" sayılamaz + olumlu çağrışım → "a little" kullanılır.'},
+  {cat:'fill', q:'_____ student must bring their ID. (Her öğrenci kimliğini getirmelidir.)', opts:['All','Both','Every','Several'], ans:2,
+   exp:'"Every + tekil isim" → "Every student". Hepsi için genelleştirme.'},
+  {cat:'fill', q:'They looked at _____ other and smiled. (Birbirlerine baktılar ve güldüler. — 2 kişi)', opts:['one another','each','every','the other'], ans:1,
+   exp:'2 kişi için "each other" kullanılır. "each" burada "each other" anlamında.'},
+  {cat:'fill', q:'I\'ve read _____ of his novels. (Romanlarından hiçbirini okumadım.)', opts:['all','some','none','both'], ans:2,
+   exp:'"none of" = hiçbirini. Olumsuz anlam.'},
+  {cat:'fill', q:'_____ of my friends came to the party. (Arkadaşlarımın çoğu partiye geldi.)', opts:['All','Most','Both','Every'], ans:1,
+   exp:'"Most of" = çoğunluğu, büyük kısmı.'},
+  {cat:'fill', q:'Can I have _____ more coffee? (Biraz daha kahve alabilir miyim?)', opts:['many','few','some','several'], ans:2,
+   exp:'Nazik soru + sayılamaz madde → "some" kullanılır. "Would you like some more?" mantığı.'},
+  {cat:'fill', q:'She spent _____ of her savings on the trip. (Birikimlerinin büyük bölümünü seyahate harcadı.)', opts:['a great number','much','a great deal','several'], ans:2,
+   exp:'"savings" = birikim (miktar olarak düşünüldüğünde sayılamaz) → "a great deal of" kullanılır.'},
+  {cat:'fill', q:'_____ the students had finished _____ the exam was over. (Öğrencilerin her biri sınav bitmeden önce bitirdi.)', opts:['Every / before','Each of / when','Both / after','All / once'], ans:1,
+   exp:'"Each of the students had finished" = her biri ayrı ayrı bitirmişti.'},
+  {cat:'fill', q:'I have _____ idea what to do. (Ne yapacağım konusunda hiçbir fikrim yok.)', opts:['no','any','some','a little'], ans:0,
+   exp:'"no idea" = hiçbir fikir yok. "no + isim" kalıbı.'},
+  {cat:'fill', q:'Do you have _____ questions? (Herhangi bir sorunuz var mı?)', opts:['some','no','any','many a'], ans:2,
+   exp:'Soru cümlesinde → "any" kullanılır.'},
+  {cat:'fill', q:'_____ half the class was absent. (Sınıfın yarısı yoktu.)', opts:['Almost','Very','Much','Quite'], ans:0,
+   exp:'"Almost half" = neredeyse yarısı. "Almost/nearly" half ile kullanılır.'},
+  {cat:'fill', q:'We have _____ information about the case. (Dava hakkında çok az bilgimiz var.)', opts:['few','little','a few','several'], ans:1,
+   exp:'"information" sayılamaz + olumsuz çağrışım → "little" kullanılır.'},
+  {cat:'fill', q:'_____ students failed the test. (Bazı öğrenciler sınavda kaldı.)', opts:['Any','No','Some','Every'], ans:2,
+   exp:'Olumlu cümle + "bazı" → "Some students".'},
+  {cat:'fill', q:'_____ of the two candidates is suitable. (İki adaydan hiçbiri uygun değil.)', opts:['None','Neither','Either','Both'], ans:1,
+   exp:'"Neither of" = iki şeyden hiçbiri.'},
+  {cat:'fill', q:'She has _____ experience in teaching. (Öğretmenlik konusunda çok deneyimi var.)', opts:['many','few','a great deal of','several'], ans:2,
+   exp:'"experience" sayılamaz + "çok" → "a great deal of" kullanılır.'},
+  {cat:'fill', q:'There are _____ reasons to celebrate. (Kutlamak için pek çok neden var.)', opts:['much','a little','plenty of','a great deal of'], ans:2,
+   exp:'"reasons" sayılabilir çoğul + "bol miktarda" → "plenty of" kullanılır.'},
+  {cat:'fill', q:'I\'ll have _____ biscuit, please. (Bir tane daha bisküvi alacağım lütfen.)', opts:['other','the other','another','some other'], ans:2,
+   exp:'"another" = bir tane daha (tekil sayılabilir, belirsiz).'},
+
+  // ─────────────────────────────────────
+  // CATEGORY 4: USAGE (Each/Every/No/None + ileri)
+  // ─────────────────────────────────────
+  {cat:'usage', q:'"Each of ___" yapısında boşluğa ne gelir?', opts:['tekil isim','zamir (zamiri)','çoğul isim veya zamir','sayılamaz isim'], ans:2,
+   exp:'"Each of" = her biri → çoğul isim ya da zamir gelir. Örn: Each of the students, each of them'},
+  {cat:'usage', q:'"Every ___" yapısında boşluğa ne gelir?', opts:['çoğul isim','zamir','tekil sayılabilir isim','sayılamaz isim'], ans:2,
+   exp:'"Every + tekil sayılabilir isim". Örn: Every student, every day, every book'},
+  {cat:'usage', q:'"No has/No + isim" kullanımı hakkında hangisi doğrudur?', opts:['No zamir olarak kullanılabilir','No + isim yapısında fiil olumsuzlanmaz','No = not any demek değildir','No çoğul fiil alır'], ans:1,
+   exp:'"No" ismin önüne gelir ve fiil olumsuzlanmaz. Örn: No student failed. (= Not any student failed.) Fiil olumludur!'},
+  {cat:'usage', q:'"None" zamir olarak kullanıldığında ne anlama gelir?', opts:['Hepsi','Hiçbiri','Bazıları','Çoğunluğu'], ans:1,
+   exp:'"None" = hiçbiri (zamir). Örn: None of them came. (Hiçbiri gelmedi.)'},
+  {cat:'usage', q:'"Each two weeks / five years" yapısı ne anlama gelir?', opts:['Her iki haftada / her beş yılda bir','İki hafta / beş yıl boyunca','İki veya beş seçeneğinden biri','Yaklaşık iki hafta'], ans:0,
+   exp:'"each two weeks" = her iki haftada bir. Bu yapıda "each" periyodik tekrarı ifade eder.'},
+  {cat:'usage', q:'"Every two weeks / five years" ne anlama gelir?', opts:['Her iki haftada bir / her beş yılda bir','İki hafta boyunca','İki veya beş seçenek','Yaklaşık iki haftada bir'], ans:0,
+   exp:'"every two weeks" = her iki haftada bir. "each" ile aynı anlam, her ikisi de kabul görür.'},
+  {cat:'usage', q:'"Not / nearly + each/every" yapısı nasıl anlam verir?', opts:['Hepsini kapsar','Neredeyse hepsini olumsuzlar (neredeyse hiçbiri)','Sadece yarısını gösterir','Belirsiz bir miktarı gösterir'], ans:1,
+   exp:'"Not every student passed" = her öğrenci geçmedi (bazıları kaldı). "Nearly every" = neredeyse hepsi.'},
+  {cat:'usage', q:'"All or Whole?" — "all the money" ile "the whole money" arasındaki fark nedir?', opts:['Hiçbir fark yok','all the money doğru; the whole money yanlış (whole + tekil sayılabilir veya sayılamaz)','whole her zaman çoğul ile kullanılır','all yalnızca sayılamayanla'], ans:1,
+   exp:'"all the money" ve "the whole money" her ikisi de doğru. Ama "whole" genellikle tekil sayılabilen: the whole story, the whole day.'},
+  {cat:'usage', q:'"All my life" ile "my whole life" nasıl kullanılır?', opts:['İkisi de doğru ve aynı anlam taşır','Sadece all my life doğrudur','Sadece my whole life doğrudur','Anlamları farklıdır'], ans:0,
+   exp:'"All my life" = "my whole life" = bütün hayatım boyunca. İkisi de doğru ve eşanlamlıdır.'},
+  {cat:'usage', q:'"Bu üç yapıda \'of\' olmayabilir" hangisi için geçerlidir?', opts:['none of, both of, all of','each of, every of, neither of','half of, all (of), both (of)','some of, any of, most of'], ans:2,
+   exp:'"half (of) the students" veya "half the students" — "of" isteğe bağlıdır. Aynı şekilde "all (of)" ve "both (of)"'},
+  {cat:'usage', q:'"a / an / one + _____ + another" yapısında boşluğa ne gelir?', opts:['çoğul isim','sayılamaz isim','tekil sayılabilir isim','zamir'], ans:2,
+   exp:'"a/an/one... another" = bir... diğeri. Örn: one hand... another hand. Tekil sayılabilir isim gelir.'},
+  {cat:'usage', q:'"one _____ the other" yapısında boşluğa ne gelir?', opts:['and','or','then','with'], ans:1,
+   exp:'"one or the other" = ikisinden biri. Seçim ifadesi.'},
+  {cat:'usage', q:'Aşağıdakilerden hangisi hem çoğul hem tekil/sayılamaz isimle kullanılabilir?', opts:['much','many','a lot of','several'], ans:2,
+   exp:'"a lot of" hem sayılabilir hem sayılamaz isimlerle kullanılabilir: a lot of books / a lot of water'},
+  {cat:'usage', q:'"other" ile "another" arasındaki temel fark nedir?', opts:['Fark yoktur','another = tekil+belirsiz; other = çoğul veya belirli (the other)','other her zaman belirlidir','another çoğullarla kullanılır'], ans:1,
+   exp:'"another" = an + other = belirsiz tekil. "other" çoğul veya "the" ile belirli tekilde kullanılır.'},
+  {cat:'usage', q:'"bir... diğeri, bir... diğer" kalıbı için hangi yapı kullanılır?', opts:['one... the other (2 nesne)','each... every','both... neither','some... any'], ans:0,
+   exp:'"one... the other" = biri... diğeri (2 nesne için). Örn: One hand washes the other. (Bir el diğerini yıkar.)'},
+  {cat:'usage', q:'Hangisi YÖKDİL/YDS\'de "scores of" anlamında kullanılan bir ifadedir?', opts:['a little of','a number of','a great deal of','a little amount'], ans:1,
+   exp:'"a number of" = birçok, pek çok. Sayılabilir çoğullarla kullanılır ve YDS/YÖKDİL\'de sık karşılaşılır.'},
+  {cat:'usage', q:'Which sentence is CORRECT?', opts:['I have much books.','She has a little friends.','They need a few more chairs.','He drinks many water.'], ans:2,
+   exp:'"a few more chairs" doğrudur. "chairs" sayılabilir → "a few". Diğerleri yanlış kullanım.'},
+  {cat:'usage', q:'Which sentence is CORRECT?', opts:['Every students must attend.','All student must attend.','Each students must attend.','Most students must attend.'], ans:3,
+   exp:'"Most students" doğrudur. "every/each" tekil isim ister; "all" çoğul isimle kullanılabilir ama "All student" yanlış (All students).'},
+  {cat:'usage', q:'"biri diğerine" — 3 veya daha fazla kişi için hangi ifade kullanılır?', opts:['each other','the other','one another','either other'], ans:2,
+   exp:'"one another" = 3 veya daha fazla kişi arasında "birbirlerine". Örn: The team members helped one another.'},
+  {cat:'usage', q:'"bir yandan... öte yandan" anlamında hangi yapı kullanılır?', opts:['either... or','one... another','on the one hand... on the other hand','both... and'], ans:2,
+   exp:'"on the one hand... on the other hand" = bir yandan... öte yandan. İngilizce akademik yazımda sık kullanılır.'},
+];
+
+// ─── STATE ────────────────────────────────
+let mode = 'full';
+let questions = [];
+let current = 0;
+let score = 0;
+let skipped = 0;
+let streak = 0;
+let maxStreak = 0;
+let answered = false;
+let missedIndices = [];
+let isReviewMode = false;
+let sessionHistory = []; // {q, chosen, correct}
+
+function selectMode(el, m) {
+  document.querySelectorAll('.mode-card').forEach(c => c.classList.remove('selected'));
+  el.classList.add('selected');
+  mode = m;
+}
+
+function buildQuestionSet() {
+  let pool = [...ALL_QUESTIONS];
+
+  // Filter by mode
+  if (mode === 'mcq') {
+    pool = shuffleArr(pool).slice(0, 30);
+  } else if (mode === 'fillblank') {
+    pool = pool.filter(q => q.cat === 'fill');
+    pool = shuffleArr(pool);
+  } else if (mode === 'translate') {
+    pool = pool.filter(q => q.cat === 'meaning');
+    pool = shuffleArr(pool);
+  } else {
+    pool = shuffleArr(pool);
+  }
+
+  return pool;
+}
+
+function startQuiz() {
+  questions = buildQuestionSet();
+  current = 0;
+  score = 0;
+  skipped = 0;
+  streak = 0;
+  missedIndices = [];
+  sessionHistory = [];
+  isReviewMode = false;
+  document.getElementById('totalQCount').textContent = ALL_QUESTIONS.length + '+';
+  showScreen('quizScreen');
+  renderQuestion();
+}
+
+function reviewMissed() {
+  if (missedIndices.length === 0) return;
+  questions = missedIndices.map(i => sessionHistory[i].q);
+  questions = shuffleArr(questions);
+  current = 0;
+  score = 0;
+  skipped = 0;
+  streak = 0;
+  missedIndices = [];
+  sessionHistory = [];
+  isReviewMode = true;
+  showScreen('quizScreen');
+  renderQuestion();
+}
+
+function restartQuiz() {
+  showScreen('startScreen');
+}
+
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+const CAT_LABELS = {
+  meaning: '📖 Anlam Sorusu',
+  grammar: '📝 Dilbilgisi — İsim Türü',
+  fill: '✏️ Boşluk Doldur',
+  usage: '🎯 Kullanım Seçimi'
+};
+
+const CAT_SECTIONS = {
+  meaning: { title: 'Anlam Kategorisi', desc: 'Her ifadenin Türkçe karşılığını ve bağlamını öğren' },
+  grammar: { title: 'Dilbilgisi Kuralları', desc: 'Sayılabilir / Sayılamaz isim uyumu ve fiil uyumu' },
+  fill: { title: 'Boşluk Doldurma', desc: 'Cümle içinde doğru quantifier\'ı seç' },
+  usage: { title: 'Kullanım ve Bağlam', desc: 'İnce farklar, yapılar ve özel kullanımlar' }
+};
+
+let lastCat = null;
+
+function renderQuestion() {
+  if (current >= questions.length) {
+    showResults();
+    return;
+  }
+
+  const q = questions[current];
+  answered = false;
+
+  // Section header
+  const sh = document.getElementById('sectionHeader');
+  if (q.cat !== lastCat) {
+    const s = CAT_SECTIONS[q.cat] || { title: q.cat, desc: '' };
+    sh.innerHTML = `
+      <div class="section-header">
+        <div class="section-icon">${CAT_LABELS[q.cat]?.split(' ')[0] || '📌'}</div>
+        <div>
+          <div class="section-title">${s.title}</div>
+          <div class="section-desc">${s.desc}</div>
+        </div>
+      </div>`;
+    lastCat = q.cat;
+  } else {
+    sh.innerHTML = '';
+  }
+
+  // Progress
+  const pct = Math.round((current / questions.length) * 100);
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('progressText').textContent = `${current + 1} / ${questions.length}`;
+  document.getElementById('scorePill').textContent = `✦ ${score}`;
+
+  // Streak dots
+  const dots = document.querySelectorAll('.streak-dot');
+  dots.forEach((d, i) => {
+    d.classList.toggle('hit', i < Math.min(streak, 5));
+  });
+
+  // Question
+  document.getElementById('qType').textContent = CAT_LABELS[q.cat] || '';
+  document.getElementById('qText').innerHTML = q.q;
+  document.getElementById('qHint').textContent = q.hint || '';
+
+  // Options
+  const optsEl = document.getElementById('optionsContainer');
+  const letters = ['A','B','C','D'];
+  optsEl.innerHTML = q.opts.map((o, i) =>
+    `<button class="opt" onclick="selectAnswer(${i})" id="opt_${i}">
+      <span class="opt-letter">${letters[i]}</span>
+      <span>${o}</span>
+    </button>`
+  ).join('');
+
+  // Feedback
+  const fb = document.getElementById('feedback');
+  fb.className = 'feedback';
+  fb.style.display = 'none';
+
+  document.getElementById('nextBtn').style.display = 'none';
+}
+
+function selectAnswer(chosen) {
+  if (answered) return;
+  answered = true;
+
+  const q = questions[current];
+  const isCorrect = chosen === q.ans;
+
+  // Style buttons
+  for (let i = 0; i < q.opts.length; i++) {
+    const btn = document.getElementById('opt_' + i);
+    btn.disabled = true;
+    if (i === q.ans) btn.classList.add('correct');
+    else if (i === chosen && !isCorrect) btn.classList.add('wrong');
+  }
+
+  // Score/streak
+  if (isCorrect) {
+    score++;
+    streak++;
+    if (streak > maxStreak) maxStreak = streak;
+  } else {
+    streak = 0;
+    missedIndices.push(sessionHistory.length);
+  }
+
+  sessionHistory.push({ q, chosen, correct: isCorrect });
+
+  // Feedback
+  const fb = document.getElementById('feedback');
+  const fbTitle = document.getElementById('feedbackTitle');
+  const fbBody = document.getElementById('feedbackBody');
+
+  fb.style.display = 'block';
+  fb.className = 'feedback show ' + (isCorrect ? 'correct-fb' : 'wrong-fb');
+  fbTitle.className = 'feedback-title ' + (isCorrect ? 'c' : 'w');
+  fbTitle.textContent = isCorrect ? '✓ Doğru!' : `✗ Yanlış — Doğru cevap: ${['A','B','C','D'][q.ans]}) ${q.opts[q.ans]}`;
+  fbBody.innerHTML = `<b>Açıklama:</b> ${q.exp}`;
+
+  // Streak dots update
+  const dots = document.querySelectorAll('.streak-dot');
+  dots.forEach((d, i) => d.classList.toggle('hit', i < Math.min(streak, 5)));
+
+  document.getElementById('nextBtn').style.display = 'inline-flex';
+}
+
+function skipQuestion() {
+  if (answered) return;
+  skipped++;
+  streak = 0;
+  missedIndices.push(sessionHistory.length);
+  sessionHistory.push({ q: questions[current], chosen: -1, correct: false });
+  nextQuestion();
+}
+
+function nextQuestion() {
+  current++;
+  renderQuestion();
+}
+
+function showResults() {
+  showScreen('resultsScreen');
+  const total = sessionHistory.length;
+  const correct = sessionHistory.filter(h => h.correct).length;
+  const wrong = sessionHistory.filter(h => !h.correct && h.chosen !== -1).length;
+  const sk = sessionHistory.filter(h => h.chosen === -1).length;
+  const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
+
+  document.getElementById('resultScore').textContent = pct + '%';
+  document.getElementById('rCorrect').textContent = correct;
+  document.getElementById('rWrong').textContent = wrong;
+  document.getElementById('rSkipped').textContent = sk;
+
+  const trophies = ['😓','😔','🤔','👍','🎉','🏆'];
+  const ti = Math.min(Math.floor(pct / 20), 5);
+  document.getElementById('trophyEmoji').textContent = trophies[ti];
+
+  const labels = ['Tekrar çalış!','İyi başlangıç!','Fena değil!','Güzel iş!','Harika!','Mükemmel! YDS\'ye hazırsın!'];
+  document.getElementById('resultLabel').textContent = labels[ti];
+
+  // Review missed
+  const missed = sessionHistory.filter((h, i) => !h.correct);
+  const reviewBtn = document.getElementById('retryMissedBtn');
+  if (missed.length === 0) {
+    reviewBtn.style.display = 'none';
+  } else {
+    reviewBtn.style.display = 'inline-flex';
+  }
+
+  // Show review list
+  const reviewSec = document.getElementById('reviewSection');
+  if (missed.length > 0) {
+    reviewSec.innerHTML = `
+      <h3 style="font-family:'Playfair Display',serif;margin:24px 0 14px;text-align:left;">📋 Kaçırdıkların</h3>
+      ${missed.map(h => `
+        <div class="review-item missed">
+          <div class="review-q">${h.q.q}</div>
+          <div class="review-answer">
+            ${h.chosen === -1 ? '<span style="color:#7070a0">Atlandı</span>' : `<span class="review-wrong-ans">${h.q.opts[h.chosen]}</span>`}
+            → <span class="review-correct">✓ ${h.q.opts[h.q.ans]}</span>
+          </div>
+          <div class="review-explain">${h.q.exp}</div>
+        </div>
+      `).join('')}
+    `;
+  } else {
+    reviewSec.innerHTML = `<p style="color:var(--correct);margin-top:16px;">🎉 Hiç yanlışın yok — mükemmel!</p>`;
+  }
+}
+
+function shuffleArr(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// Set total count
+document.getElementById('totalQCount').textContent = ALL_QUESTIONS.length;
+</script>
+</body>
+</html>

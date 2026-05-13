@@ -355,7 +355,7 @@
     "word": "that is",
     "pronunciation": "dt iz",
     "type": "Zarf",
-    "meaning": "yani / diğer bir deyişle",
+    "meaning": "yani / yanısıra",
     "v2": {
       "form": null,
       "pronunciation": null
@@ -2093,7 +2093,7 @@
     "word": "because of",
     "pronunciation": "bikoz ov",
     "type": "Edat",
-    "meaning": "-den dolayı / -yüzünden",
+    "meaning": "-den dolayı / -yüzünden / sebebiyle",
     "v2": {
       "form": null,
       "pronunciation": null
@@ -3611,7 +3611,7 @@
     "word": "as",
     "pronunciation": "ez",
     "type": "İfade",
-    "meaning": "-diği için / çünkü / -iken",
+    "meaning": "-diği için / çünkü / -iken / dıkça dikçe",
     "v2": {
       "form": null,
       "pronunciation": null
@@ -3757,6 +3757,94 @@
       {
         "sentence": "The plan was flawed in that it overlooked transport costs.",
         "meaning": "Plan şöyle ki ulaşım maliyetlerini gözden kaçırdığı için hatalıydı."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "unless",
+    "pronunciation": "anles",
+    "type": "İfade",
+    "meaning": "-mezse / olmadıkça",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "You cannot enter unless you have a ticket.",
+        "meaning": "Biletin yoksa giremezsin."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "nothing but",
+    "pronunciation": "nasıng bat",
+    "type": "İfade",
+    "meaning": "+ isim: -den başka bir şey değil / yalnızca",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "It was nothing but a misunderstanding.",
+        "meaning": "Yalnızca bir yanlış anlamadan ibaretti."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "according to",
+    "pronunciation": "akording tu",
+    "type": "İfade",
+    "meaning": "-e göre",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "According to the schedule, the train leaves at six.",
+        "meaning": "Programa göre tren saat altıda kalkıyor."
+      }
+    ],
+    "date": "11.05.2026"
+  },
+  {
+    "word": "in terms of",
+    "pronunciation": "in tırmz ov",
+    "type": "İfade",
+    "meaning": "- bakımından",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "In terms of cost, this option is better.",
+        "meaning": "Maliyet bakımından bu seçenek daha iyi."
       }
     ],
     "date": "11.05.2026"

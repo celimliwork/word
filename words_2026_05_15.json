@@ -1,0 +1,574 @@
+[
+  {
+    "word": "cautious",
+    "pronunciation": "koşəs",
+    "type": "Sıfat",
+    "meaning": "ihtiyatlı, tedbirli",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Investors remained cautious after the market fell.",
+        "meaning": "Piyasa düştükten sonra yatırımcılar ihtiyatlı kaldı."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "informative",
+    "pronunciation": "infırmətiv",
+    "type": "Sıfat",
+    "meaning": "bilgilendirici",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The documentary was informative and easy to follow.",
+        "meaning": "Belgesel bilgilendiriciydi ve takip etmesi kolaydı."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "ignorant",
+    "pronunciation": "ignırınt",
+    "type": "Sıfat",
+    "meaning": "cahil, bilgisiz",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He was ignorant of the new regulations.",
+        "meaning": "Yeni yönetmeliklerden habersizdi."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "disapproving",
+    "pronunciation": "disıpruvving",
+    "type": "Sıfat",
+    "meaning": "onaylamayan",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She gave him a disapproving look.",
+        "meaning": "Ona onaylamayan bir bakış attı."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "assured",
+    "pronunciation": "eşurd",
+    "type": "Sıfat",
+    "meaning": "kendinden emin",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He spoke in an assured voice during the interview.",
+        "meaning": "Röportaj sırasında kendinden emin bir sesle konuştu."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "confident",
+    "pronunciation": "kanfıdınt",
+    "type": "Sıfat",
+    "meaning": "kendinden emin",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "She felt confident about the exam results.",
+        "meaning": "Sınav sonuçları konusunda kendine güveniyordu."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "approving",
+    "pronunciation": "epruvving",
+    "type": "Sıfat",
+    "meaning": "onaylayan",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The manager made an approving comment on her report.",
+        "meaning": "Yönetici raporu hakkında onaylayan bir yorum yaptı."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "hopeful",
+    "pronunciation": "houpfıl",
+    "type": "Sıfat",
+    "meaning": "umutlu",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We are hopeful that peace talks will succeed.",
+        "meaning": "Barış görüşmelerinin başarılı olacağına umutluyuz."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "optimistic",
+    "pronunciation": "aptımistik",
+    "type": "Sıfat",
+    "meaning": "iyimser",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Doctors are optimistic about her recovery.",
+        "meaning": "Doktorlar iyileşmesi konusunda iyimser."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "pessimistic",
+    "pronunciation": "pesimistik",
+    "type": "Sıfat",
+    "meaning": "kötümser",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The article took a pessimistic view of the economy.",
+        "meaning": "Makale ekonomi hakkında kötümser bir bakış sundu."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "unrealistic",
+    "pronunciation": "anriəlistik",
+    "type": "Sıfat",
+    "meaning": "gerçekçi olmayan",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Their expectations were completely unrealistic.",
+        "meaning": "Beklentileri tamamen gerçekçi değildi."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "balanced",
+    "pronunciation": "balənst",
+    "type": "Sıfat",
+    "meaning": "dengeli (iki olaydan bahsederken)",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The report gave a balanced account of both sides.",
+        "meaning": "Rapor her iki tarafı da dengeli biçimde anlattı."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "realistic",
+    "pronunciation": "riəlistik",
+    "type": "Sıfat",
+    "meaning": "gerçekçi",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Set realistic goals for the first month.",
+        "meaning": "İlk ay için gerçekçi hedefler belirleyin."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "prejudiced",
+    "pronunciation": "prediacist",
+    "type": "Sıfat",
+    "meaning": "önyargılı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The judge was accused of being prejudiced.",
+        "meaning": "Hakimin önyargılı olduğu iddia edildi."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "biased",
+    "pronunciation": "bayəst",
+    "type": "Sıfat",
+    "meaning": "önyargılı, taraflı",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The survey may be biased toward younger voters.",
+        "meaning": "Anket genç seçmenlere taraflı olabilir."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "superficial",
+    "pronunciation": "supırfişəl",
+    "type": "Sıfat",
+    "meaning": "yüzeysel",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "His knowledge of the topic is superficial.",
+        "meaning": "Konuya dair bilgisi yüzeysel."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "impartial",
+    "pronunciation": "impaarşıəl",
+    "type": "Sıfat",
+    "meaning": "tarafsız, önyargısız",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "An impartial observer reviewed the evidence.",
+        "meaning": "Tarafsız bir gözlemci kanıtları inceledi."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "unbiased",
+    "pronunciation": "anbayəst",
+    "type": "Sıfat",
+    "meaning": "tarafsız, önyargısız",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "We need unbiased information before deciding.",
+        "meaning": "Karar vermeden önce tarafsız bilgiye ihtiyacımız var."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "tolerant",
+    "pronunciation": "talərənt",
+    "type": "Sıfat",
+    "meaning": "hoşgörülü, tahammüllü",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The school promotes a tolerant attitude toward diversity.",
+        "meaning": "Okul çeşitliliğe karşı hoşgörülü bir tutumu destekliyor."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "criticizing",
+    "pronunciation": "kritisaizing",
+    "type": "Sıfat",
+    "meaning": "eleştirel",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The article had a criticizing tone throughout.",
+        "meaning": "Makale baştan sona eleştirel bir tona sahipti."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "favoring",
+    "pronunciation": "feyvırıng",
+    "type": "Sıfat",
+    "meaning": "destekleyen",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "The new law is favoring small businesses.",
+        "meaning": "Yeni yasa küçük işletmeleri destekliyor."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "suspicious",
+    "pronunciation": "səspişəs",
+    "type": "Sıfat",
+    "meaning": "şüpheci",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Police became suspicious of his story.",
+        "meaning": "Polis onun anlatımından şüphelendi."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "sceptical",
+    "pronunciation": "skeptikəl",
+    "type": "Sıfat",
+    "meaning": "şüpheci",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Many experts remain sceptical about the claim.",
+        "meaning": "Birçok uzman iddiaya şüpheci yaklaşıyor."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "indifferent",
+    "pronunciation": "indifırınt",
+    "type": "Sıfat",
+    "meaning": "umursamaz, kayıtsız",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "He seemed indifferent to their complaints.",
+        "meaning": "Şikayetlerine umursamaz görünüyordu."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "sarcastic",
+    "pronunciation": "sarkaestik",
+    "type": "Sıfat",
+    "meaning": "iğneleyen ve küçümseyici",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "Her sarcastic remark embarrassed everyone.",
+        "meaning": "İğneleyici sözü herkesi utandırdı."
+      }
+    ],
+    "date": "15.05.2026"
+  },
+  {
+    "word": "appreciating",
+    "pronunciation": "eprişieyting",
+    "type": "Sıfat",
+    "meaning": "takdir eden",
+    "v2": {
+      "form": null,
+      "pronunciation": null
+    },
+    "v3": {
+      "form": null,
+      "pronunciation": null
+    },
+    "gerundInfinitive": null,
+    "examples": [
+      {
+        "sentence": "An appreciating audience applauded the performance.",
+        "meaning": "Takdir eden bir seyirci performansı alkışladı."
+      }
+    ],
+    "date": "15.05.2026"
+  }
+]
